@@ -40,9 +40,16 @@ The full documentation of WinUI can be found on [Microsoft Learn](https://learn.
 - [Windows Runtime APIs not supported in desktop apps](https://learn.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-supported-api)
 - [WinUI & Windows App SDK samples](https://learn.microsoft.com/windows/apps/get-started/samples)
 
-</br>
+## 🎁 What's in this repo
+
+This repository contains:
+
+- WinUI controls & styles
+- WinUI XAML runtime & composition engine
+- WinUI XAML compiler
 
 ## 🖼️ WinUI 3 Gallery
+
 Make sure to also check out the [WinUI 3 Gallery](https://aka.ms/winui-gallery), our interactive sample experience showing everything you can do with WinUI.
 
 <p align="center">
@@ -57,6 +64,7 @@ Make sure to also check out the [WinUI 3 Gallery](https://aka.ms/winui-gallery),
 </p>
 
 ## 📺 WinUI Community Call
+
 The WinUI Community Call is your opportunity to learn about WinUI and to engage with the WinUI team and community. Join us online on YouTube at the [Windows Developer channel](https://www.youtube.com/playlist?list=PLI_J2v67C23ZqsolUDaHoFkF1GKvGrttB).
 
 ## 📢 Contributing to WinUI
