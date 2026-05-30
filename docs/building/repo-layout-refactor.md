@@ -187,6 +187,15 @@ and targets are build infrastructure rather than runtime source, and consumers
 resolve them through `$(XamlBuildSettingsPath)` instead of reaching into the
 legacy `dxaml/msbuild` tree.
 
+## Runtime phone source
+
+Phone-specific runtime source now lives under `src/runtime/phone`. It is a
+small runtime source slice that already had a centralized `$(XcpPhonePath)`,
+making it a safe first runtime-source move before relocating the much larger
+`dxaml/xcp` tree. The phone projects keep their legacy `dxaml\phone` object
+layout so downstream WinMD and include consumers continue to use the existing
+build-output paths.
+
 ## Package restore inputs
 
 Repository-wide NuGet `packages.config` files now live under `eng/packages`.
@@ -487,8 +496,9 @@ tree. Test, phone, and controls MSBuild projects that consume runtime source
 should also prefer `$(XcpPath)` over repo-root-relative `dxaml\xcp` paths.
 Runtime build-output references should prefer `$(XcpObjPath)` over spelling
 `dxaml\xcp` under `$(ArtifactsObjDir)` or `$(XamlBuildOutputRoot)` directly.
-Phone project references and include paths should prefer `$(XcpPhonePath)` over
-spelling `$(XamlSourcePath)\phone` or repo-root-relative `dxaml\phone` directly.
+Phone project references and include paths should use `$(XcpPhonePath)` instead
+of spelling either the current `src\runtime\phone` location or legacy
+`dxaml\phone` paths directly.
 Graph augmentation projects define the same minimal path properties locally so
 their lightweight project graph files can avoid hard-coded runtime-relative
 paths without importing the full root build props. Developer initialization

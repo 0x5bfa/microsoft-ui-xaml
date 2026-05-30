@@ -40,7 +40,7 @@ class. We decided to use a code-generator to do all of that for us.
 It generates the following:
 
 * IDLs
-  * dxaml/phone/idl
+  * src/runtime/phone/idl
   * dxaml/xcp/components/maps/idl
   * dxaml/xcp/dxaml/idl
 * Metadata:
@@ -65,7 +65,7 @@ the new code generator, `XamlGen.exe`:
 
 * Extension type infos (Phone, Maps)
   * dxaml/xcp/components/maps/lib
-  * dxaml/phone/lib
+  * src/runtime/phone/lib
 * Extension XamlTypeInfo.g.h/rc/cpp
   * dxaml/xcp/dxaml/dllsrv/exts/maps
   * dxaml/xcp/dxaml/dllsrv/exts/phone
