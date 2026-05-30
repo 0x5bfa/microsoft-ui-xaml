@@ -67,7 +67,7 @@ error WMC0605: Failure Generating XAML Binary Format: Exception=External compone
 [<repo>\tests\runtime\native\external\tools\customTypes\customTypes.vcxproj]
 ```
 
-Running the build under the debugger was far more helpful.  `tools/msb.cmd` was modified as follows:
+Running the build under the debugger was far more helpful.  `tools/build/msb.cmd` was modified as follows:
 
 ```shell
 :buildIt
