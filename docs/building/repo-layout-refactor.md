@@ -262,6 +262,10 @@ the external test DLLs, so runtime external tests now import shared MSBuild
 state from `$(RuntimeNativeExternalTestPath)` instead of the legacy `dxaml/test`
 tree.
 
+The shared runtime test C++ defaults now live at `tests/runtime/common.props`.
+Runtime test projects should import it through `$(RuntimeTestPath)\common.props`
+instead of reaching back into the legacy `dxaml/test` tree.
+
 ## Controls source
 
 The WinUI controls implementation now lives under `src/controls`. The

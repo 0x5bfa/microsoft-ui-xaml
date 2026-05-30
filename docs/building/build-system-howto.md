@@ -189,7 +189,7 @@ property to `true` in your project. This will ensure that the project is built a
 
 It's fairly common (and expected) that developers will copy/paste other project files to get started on a new one. Not
 all project files have the same Imports right now, and most differ based on whether they are custom types projects in
-the `\dxaml\test` or in the `\controls` directory. The two important things are to import `Xaml.Cpp.props` at the top of
+the `\tests\runtime` or in the `\controls` directory. The two important things are to import `Xaml.Cpp.props` at the top of
 the project and `Microsoft.UI.Xaml.Build.targets` at the bottom of the project. This will ensure that the rest of the
 build system works as expected.
 

@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
-    <Import Project="$(XamlSourcePath)\test\common.props"/>
+    <Import Project="$(RuntimeTestPath)\common.props"/>
 
     <!-- TAEF.targets always sets INLINE_TEST_METHOD_MARKUP.  We don't want that defined so capture the value before the import and override it
          back to the starting value afterwards. -->

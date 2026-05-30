@@ -6,7 +6,7 @@
     <ProjectGuid>{692B5933-4B22-453F-A081-15A76C3AC385}</ProjectGuid>
   </PropertyGroup> 
   <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props" />
-  <Import Project="$(XamlSourcePath)\test\common.props" />
+  <Import Project="$(RuntimeTestPath)\common.props" />
   <Import Project="$(RuntimeNativeExternalTestPath)\common.props" />
   <PropertyGroup>
     <!--Causes loading of winrt dependencies from CoreWebView2 SDK package - required for any usage from WinUI3/WinAppSDK.

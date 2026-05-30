@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
-    <Import Project="$(XamlSourcePath)\test\common.props"/>
+    <Import Project="$(RuntimeTestPath)\common.props"/>
 
     <PropertyGroup>
         <TargetDestination>$(TestBinplaceDestinationPath)</TargetDestination>
