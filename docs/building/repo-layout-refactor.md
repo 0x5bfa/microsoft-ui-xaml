@@ -363,6 +363,9 @@ isolated test group under runtime tests.
 The LiveReorderHelper isolated test moved under
 `tests/runtime/native/isolated/controls/liveReorderHelper`, keeping
 control-adjacent isolated helper tests with the controls runtime test group.
+The ItemIndexRangeHelper isolated test moved under
+`tests/runtime/native/isolated/enterprise/itemIndexRangeHelper`, starting an
+enterprise isolated test group under runtime tests.
 
 ## Controls source
 

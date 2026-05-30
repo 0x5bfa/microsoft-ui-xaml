@@ -1049,7 +1049,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.InputPane
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ItemIndexRangeHelper", "xcp\components\ItemIndexRangeHelper\lib\Microsoft.UI.Xaml.ItemIndexRangeHelper.vcxproj", "{7DA37D6D-D8A3-4A3A-82CA-A21084CC152D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper", "xcp\components\ItemIndexRangeHelper\unittests\Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper.vcxproj", "{86790730-176F-4E18-8052-473936BF2E30}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper", "..\tests\runtime\native\isolated\enterprise\itemIndexRangeHelper\Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper.vcxproj", "{86790730-176F-4E18-8052-473936BF2E30}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.KeyboardAcceleratorUtility", "xcp\components\KeyboardAccelerator\lib\Microsoft.UI.Xaml.KeyboardAcceleratorUtility.vcxproj", "{FD988210-388A-45F0-B800-1B8C5251E527}"
 EndProject

@@ -8,7 +8,7 @@
         <ProjectGuid>{86790730-176f-4e18-8052-473936bf2e30}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
@@ -38,5 +38,5 @@
         <ProjectReference Include="$(XcpPath)\components\itemindexrangehelper\lib\Microsoft.UI.Xaml.ItemIndexRangeHelper.vcxproj" Project="{7da37d6d-d8a3-4a3a-82ca-a21084cc152d}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>
