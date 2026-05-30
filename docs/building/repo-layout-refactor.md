@@ -288,6 +288,9 @@ runtime test structure.
 The Deferral isolated test moved under
 `tests/runtime/native/isolated/framework/deferral`, with its product source
 compile item referenced through `$(XcpPath)` instead of a project-relative path.
+The SimpleProperties isolated test moved under
+`tests/runtime/native/isolated/framework/simple`, keeping generated test-local
+headers with the moved test project.
 
 ## Controls source
 

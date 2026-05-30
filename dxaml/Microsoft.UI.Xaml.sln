@@ -1121,7 +1121,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Satellite
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Framework.SimpleProperties", "xcp\components\simple\lib\Microsoft.UI.Xaml.Framework.SimpleProperties.vcxproj", "{4A1F0CE8-0B6E-4D29-9799-A629C067543A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties", "xcp\components\simple\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties.vcxproj", "{FA8AA2F0-A4B0-4CDE-842A-211380204264}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties", "..\tests\runtime\native\isolated\framework\simple\Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties.vcxproj", "{FA8AA2F0-A4B0-4CDE-842A-211380204264}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.StaticPal", "xcp\components\staticpal\lib\Microsoft.UI.Xaml.StaticPal.vcxproj", "{C766B284-6B02-474B-9A87-58B2A997BC59}"
 EndProject
