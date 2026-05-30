@@ -143,6 +143,8 @@ if not "%_initFlavor%" == "" (
     exit /b 1
 )
 
+if "%XcpRoot%" == "" set XcpRoot=%reporoot%\dxaml\xcp
+
 if "%_clean%"=="1" (
     call :callScript clean.cmd /all
     set _restore=1
@@ -170,7 +172,7 @@ if EXIST "%reporoot%\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs" 
 )
 
 if "%_targetMux%" == "1" (
-    call :buildSolution %reporoot%\dxaml\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj
+    call :buildSolution %XcpRoot%\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj
 ) else if "%_targetProduct%" == "1" (
    call :buildSolution %reporoot%\Microsoft.UI.Xaml-Product.sln
    if ERRORLEVEL 1 goto:showDurationAndExit

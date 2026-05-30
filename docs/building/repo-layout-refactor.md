@@ -111,8 +111,9 @@ should also prefer `$(XcpPath)` over repo-root-relative `dxaml\xcp` paths.
 Graph augmentation projects define the same minimal path properties locally so
 their lightweight project graph files can avoid hard-coded runtime-relative
 paths without importing the full root build props. Developer initialization
-scripts expose the runtime source root as `XcpRoot` so command aliases can also
-avoid spelling `dxaml\xcp` repeatedly.
+scripts expose the runtime source root as `XcpRoot` so command aliases and
+scripted runtime build entry points can also avoid spelling `dxaml\xcp`
+repeatedly.
 
 ## Migration rules
 
