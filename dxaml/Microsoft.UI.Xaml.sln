@@ -1149,7 +1149,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Transforms", "xcp\components\transforms\lib\Microsoft.UI.Xaml.Transforms.vcxproj", "{365CDABF-7F04-445D-A598-BA372821B5A6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms", "xcp\components\transforms\unittests\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms.vcxproj", "{8C1D8872-59A8-48B6-8C93-5C9A073BF1AE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms", "..\tests\runtime\native\isolated\foundation\transforms\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms.vcxproj", "{8C1D8872-59A8-48B6-8C93-5C9A073BF1AE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExternalTestMocks", "xcp\components\unittests\mocks\ExternalTestMocks.vcxproj", "{9E06A167-CEF3-4EF9-AADC-17714969D928}"
 EndProject
