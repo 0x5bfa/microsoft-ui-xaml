@@ -4,13 +4,14 @@ REM Copyright (c) Microsoft Corporation.
 REM Licensed under the MIT License. See LICENSE in the project root for license information.
 
 if "%RepoRoot%" == "" call "%~dp0..\..\..\init.cmd"
+if "%XcpRoot%" == "" set "XcpRoot=%RepoRoot%\dxaml\xcp"
 
 SETLOCAL
 
 REM Use "/noabi" command line argument to not prefix with ABI.
 SET PREFIXABI=%1
 SET DEV_RUNNING_CODE_GEN=true
-SET "XCP_PATH=%RepoRoot%\dxaml\xcp"
+SET "XCP_PATH=%XcpRoot%"
 SET "RUNCODEGEN_PATH=%~dp0RunCodeGen"
 SET "XBFINDEXES_PATH=%~dp0XamlGen"
 SET "UPDATE_FILES_CMD_PATH=%BuildOutputRoot%\%_BuildArch%%_BuildType%\dxaml\Codegen\updatecheckedinfiles.cmd"

@@ -537,7 +537,8 @@ their lightweight project graph files can avoid hard-coded runtime-relative
 paths without importing the full root build props. Developer initialization
 scripts expose the runtime source root as `XcpRoot` so command aliases, restore
 scripts, and scripted runtime build entry points can also avoid spelling
-`dxaml\xcp` repeatedly.
+`dxaml\xcp` repeatedly. Runtime tool wrappers should consume `XcpRoot` when
+they need the runtime source root.
 
 ## Migration rules
 
