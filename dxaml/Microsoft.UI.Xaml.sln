@@ -1277,11 +1277,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisRuntimeFramework
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisRuntimeRules", "xcp\dxaml\tools\AppAnalysis\runtime\rules\AppAnalysisRuntimeRules.vcxproj", "{9BDA9F6A-F3FB-4D5C-BA39-1101495C0029}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests", "xcp\dxaml\tools\AppAnalysis\unittests\engineTests\Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests.vcxproj", "{8A12DFCF-137A-46FE-B64E-7CDEAE719B5C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests", "..\tests\runtime\appanalysis\unittests\engineTests\Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests.vcxproj", "{8A12DFCF-137A-46FE-B64E-7CDEAE719B5C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.Unittests.pch", "xcp\dxaml\tools\AppAnalysis\unittests\pch\AppAnalysis.Unittests.pch.vcxproj", "{03587ABD-8A5E-4C2D-A68A-207C37F4BFD0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.Unittests.pch", "..\tests\runtime\appanalysis\unittests\pch\AppAnalysis.Unittests.pch.vcxproj", "{03587ABD-8A5E-4C2D-A68A-207C37F4BFD0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests", "xcp\dxaml\tools\AppAnalysis\unittests\ruleTests\Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests.vcxproj", "{9669EBDC-8C23-44F5-A337-5F2D98B15133}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests", "..\tests\runtime\appanalysis\unittests\ruleTests\Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests.vcxproj", "{9669EBDC-8C23-44F5-A337-5F2D98B15133}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XamlDiagnosticsTap", "xcp\dxaml\tools\xamldiagnostics\tap\XamlDiagnosticsTap.vcxproj", "{66C7FECE-EBB2-4D67-8FA8-BFC1C250E2EE}"
 EndProject
