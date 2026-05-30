@@ -354,6 +354,9 @@ for component tests whose project identity is `Microsoft.UI.Xaml.Tests.Isolated.
 The Gestures isolated test moved under
 `tests/runtime/native/isolated/core/gestures`, continuing the core isolated test
 group alongside Input.
+The FocusSelection isolated test moved under
+`tests/runtime/native/isolated/xaml/focus/focusSelection`, starting a XAML focus
+isolated test group under runtime tests.
 
 ## Controls source
 
