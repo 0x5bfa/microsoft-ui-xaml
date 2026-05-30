@@ -27,15 +27,15 @@ function AddAttribute
 }
 
 $toolsDir = Split-Path -Path $MyInvocation.MyCommand.Path;
-$muxControlsDir = Split-Path $toolsDir -Parent
+$muxControlsDir = Split-Path (Split-Path $toolsDir -Parent) -Parent
 $repoRoot = Split-Path $muxControlsDir -Parent
 $controlsSourceDir = Join-Path $repoRoot "src\controls"
 $controlDir = Join-Path $controlsSourceDir $projectName
 
 # TODO: check if project directory exists
 
-Copy-Item "$toolsDir\GenerateNewControlProjectFiles\NEWCONTROL.cpp" "$controlDir\$controlName.cpp"
-Copy-Item "$toolsDir\GenerateNewControlProjectFiles\NEWCONTROL.h"   "$controlDir\$controlName.h"
+Copy-Item "$toolsDir\Templates\NEWCONTROL.cpp" "$controlDir\$controlName.cpp"
+Copy-Item "$toolsDir\Templates\NEWCONTROL.h"   "$controlDir\$controlName.h"
 
 # Replace NEWCONTROL with $controlName in file contents
 $files = "$controlDir\$controlName.cpp", "$controlDir\$controlName.h"
