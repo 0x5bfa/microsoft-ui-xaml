@@ -336,6 +336,9 @@ property usage while moving the project out of the runtime source tree.
 The Transforms isolated test moved under
 `tests/runtime/native/isolated/foundation/transforms`, and the Elements
 isolated test now references it through `$(NativeIsolatedTestPath)`.
+The Imaging isolated test moved under
+`tests/runtime/native/isolated/foundation/imaging`, keeping its MockDComp and
+binplace configuration with the moved test project.
 
 ## Controls source
 
