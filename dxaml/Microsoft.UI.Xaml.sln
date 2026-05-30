@@ -1167,7 +1167,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.VisualSta
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winuri", "xcp\components\winuri\lib\winuri.vcxproj", "{0C3C2872-56A3-4ACF-B2F7-8C05710B93AE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri", "xcp\components\winuri\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri.vcxproj", "{BE35AAD3-6382-4427-BD91-92182D5FA1D9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri", "..\tests\runtime\native\isolated\framework\winuri\Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri.vcxproj", "{BE35AAD3-6382-4427-BD91-92182D5FA1D9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xamlom", "xcp\components\xamlDiagnostics\idl\xamlom.vcxproj", "{C6E1E90C-EE33-4352-A8DE-067B013C7CC9}"
 EndProject
