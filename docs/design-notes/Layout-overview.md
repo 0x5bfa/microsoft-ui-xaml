@@ -214,7 +214,7 @@ An element can be marked invalid from a measure and/or arrange perspective. This
 layout passes seen above.
 
 A core property can be marked as dirtying measurement. 
-Example from `dxaml/xcp/tools/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.Controls.cs`:
+Example from `tools/runtime/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.Controls.cs`:
 
     public class DatePicker : Microsoft.UI.Xaml.Controls.Control
     {
@@ -237,7 +237,7 @@ in `dxaml/xcp/components/metadata/StaticMetadata.g.cpp`.
 So whenever that property changes, it triggers a measure pass for the owning element.
 
 Likewise, a core property can be marked as dirtying arrangement.
-Examples from `dxaml/xcp/tools/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.Controls.cs`:
+Examples from `tools/runtime/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.Controls.cs`:
 
     [CodeGen(partial: true)]
     [DXamlIdlGroup("Main")]

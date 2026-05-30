@@ -194,13 +194,13 @@
 
     <!-- XBF -->
     <FileInfo Include="$(XamlGenOutputPath)core\StableXbfTypeIndexes.g.csv" Condition="$(XbfGenerationArg) == 'full'">
-      <Destination>xcp\tools\XCPTypesAutoGen\XamlGen</Destination>
+      <Destination>..\tools\runtime\XCPTypesAutoGen\XamlGen</Destination>
     </FileInfo>
     <FileInfo Include="$(XamlGenOutputPath)core\StableXbfPropertyIndexes.g.csv" Condition="$(XbfGenerationArg) == 'full'">
-      <Destination>xcp\tools\XCPTypesAutoGen\XamlGen</Destination>
+      <Destination>..\tools\runtime\XCPTypesAutoGen\XamlGen</Destination>
     </FileInfo>
     <FileInfo Include="$(XamlGenOutputPath)core\StableEventIndexes.g.csv" Condition="$(XbfGenerationArg) == 'full'">
-      <Destination>xcp\tools\XCPTypesAutoGen\XamlGen</Destination>
+      <Destination>..\tools\runtime\XCPTypesAutoGen\XamlGen</Destination>
     </FileInfo>
 
     <!-- WidgetSpinner XBF parsing library -->

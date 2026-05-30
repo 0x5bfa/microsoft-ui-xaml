@@ -22,7 +22,7 @@ function global:scripts { pushd $env:reporoot\scripts\$args }
 function global:idl { pushd $env:XcpRoot\dxaml\idl\winrt\$args }
 function global:elements { pushd $env:XcpRoot\core\core\elements\$args }
 function global:core { pushd $env:XcpRoot\core\$args }
-function global:codegen { pushd $env:XcpRoot\tools\XCPTypesAutoGen\XamlOM\Model\$args }
+function global:codegen { pushd $env:reporoot\tools\runtime\XCPTypesAutoGen\XamlOM\Model\$args }
 function global:masters { pushd $env:reporoot\generated\tests\visualbaselines\$args }
 function global:cb { git branch | select-string "\*" -raw }
 

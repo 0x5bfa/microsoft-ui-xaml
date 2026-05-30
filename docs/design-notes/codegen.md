@@ -48,7 +48,7 @@ It generates the following:
   * dxaml/xcp/core/metadata
 * XBF indexes
   * dxaml/xcp/core/parser
-  * dxaml/xcp/tools/XCPTypesAutoGen/XamlGen/StableXbf*.csv
+  * tools/runtime/XCPTypesAutoGen/XamlGen/StableXbf*.csv
 * Core partials (cpp/h)
   * dxaml/xcp/core/controls/generated
   * dxaml/xcp/core/elements
@@ -85,10 +85,10 @@ Improvements in new `XamlGen.exe`
 
 ### How does it work?
 
-**Code-gen location:** [dxaml/xcp/tools/xcptypesautogen/](../../dxaml/xcp/tools/xcptypesautogen)
-**VS solution:** [dxaml/xcp/tools/xcptypesautogen/xcptypesautogen.sln](../../dxaml/xcp/tools/xcptypesautogen/xcptypesautogen.sln)
+**Code-gen location:** [tools/runtime/XCPTypesAutoGen/](../../tools/runtime/XCPTypesAutoGen)
+**VS solution:** [tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln](../../tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln)
 
-Code-gen is now a build task, located at [dxaml/xcp/tools/xcptypesautogen/RunCodeGen/](../../dxaml/xcp/tools/XCPTypesAutoGen/RunCodeGen)
+Code-gen is now a build task, located at [tools/runtime/XCPTypesAutoGen/RunCodeGen/](../../tools/runtime/XCPTypesAutoGen/RunCodeGen)
 When you execute [`runcodegen.cmd`](../../dxaml/xcp/runcodegen.cmd), it simply builds this directory.
 
 RunCodeGen (the build task) does the following:
@@ -102,11 +102,11 @@ RunCodeGen (the build task) does the following:
 When `XamlGen.exe` executes
 
 * It constructs an object model that is optimized for doing code-generation for XAML. This object model is defined in
- ` dxaml/xcp/tools/xcptypesautogen/OM/...`
+ ` tools/runtime/XCPTypesAutoGen/OM/...`
   1. It reflects on the model authored by XAML devs. The model is defined in the XamlOM project at
-     `dxaml/xcp/tools/xcptypesautogen/XamlOM/Model/...`
+     `tools/runtime/XCPTypesAutoGen/XamlOM/Model/...`
   2. It executes the attributes in the model. The attributes are "builders" and can mutate the model. See
-     `dxaml/xcp/tools/xcptypesautogen/XamlOM/Builders/...`
+     `tools/runtime/XCPTypesAutoGen/XamlOM/Builders/...`
   for examples of such attributes.
   3. It does some general massaging of the model to make it more useful.
 * Model validation: it makes sure that there aren't any GUID collisions.
@@ -130,19 +130,19 @@ What does the code generator consist of?
 The easiest way is to open the `XcpTypesAutoGen.sln` solution file in VS, and just hit F5. If you were used to the old
 solution, you will now notice a cleaner structure (now that SilverlightXASD and XamlTypesAutoGen-Old is gone).
 
-It's all C# that executes. If you run code-gen through VS, it will output the files in `dxaml/xcp/tools/xcptypesautogen`,
+It's all C# that executes. If you run code-gen through VS, it will output the files in `tools/runtime/XCPTypesAutoGen`,
 right next to the solution file, so they will not get copied into the product. You need to use runcodegen.cmd if you
 want to get the files placed into the product.
 
 These are the steps to debug `XamlGen`.
 
-1. Open `XCPTypesAutoGen.sln` project from `dxaml/xcp/tools/XCPTypesAutoGen/XCPTypesAutoGen.sln`
+1. Open `XCPTypesAutoGen.sln` project from `tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln`
 2. Set project "**XamlGen**" as the default startup project
 3. Open the project properties then select the "**Debug**" tab
 4. Build the entire solution to have the dlls generated in the current dir
 5. Now you can debug with F5.
 6. If you have a problem, please break point `static int Main(String[] args)` in
-   [`XCPTypesAutoGen/XamlGen/program.cs`](../../dxaml/xcp/tools/XCPTypesAutoGen/XamlGen/Program.cs).
+   [`XCPTypesAutoGen/XamlGen/program.cs`](../../tools/runtime/XCPTypesAutoGen/XamlGen/Program.cs).
 7. The IDL output file will be in `XCPTypesAutoGen/temp/Core`
 
 ### How do I edit the T4 templates?
