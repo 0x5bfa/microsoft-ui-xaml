@@ -226,7 +226,7 @@
   <!-- Override WindowsAppSdkSelfContained target that removes WinMDs from appx manifest -->
   <Target Name="_RemoveWinMDFromAppxManifest" />
   <Target Name="CustomAfterGenerateAppPackages" AfterTargets="_GenerateAppxPackage">
-    <RunPowershellScript Path="$(MUXCProjectRoot)tools\ExtractPackageDependencies.ps1" Parameters="-sourceFile $(OutDir)\$(MSBuildProjectName).build.appxrecipe -platform $(PlatformName) -outputFile $(AppxPackageTestDir)$(AppxPackageName).dependencies.txt" FilesWritten="$(AppxPackageTestDir)$(AppxPackageName).dependencies.txt">
+    <RunPowershellScript Path="$(MUXCProjectRoot)tools\TestAppDeployment\ExtractPackageDependencies.ps1" Parameters="-sourceFile $(OutDir)\$(MSBuildProjectName).build.appxrecipe -platform $(PlatformName) -outputFile $(AppxPackageTestDir)$(AppxPackageName).dependencies.txt" FilesWritten="$(AppxPackageTestDir)$(AppxPackageName).dependencies.txt">
       <Output TaskParameter="MSBuildProcessId" ItemName="MSBuildProcessIdsToKill" />
     </RunPowershellScript>
   </Target>
