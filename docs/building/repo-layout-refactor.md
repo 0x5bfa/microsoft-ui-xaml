@@ -217,6 +217,12 @@ Native isolated-test support now lives under `tests/runtime/native/isolated`.
 Projects should use `$(NativeIsolatedTestPath)` instead of spelling out the
 legacy runtime-source test path.
 
+Native external-test infrastructure is moving under
+`tests/runtime/native/external` in small pieces. The shared infrastructure
+compile-only project moved first, with consumers using
+`$(RuntimeNativeExternalTestPath)` for source and
+`$(RuntimeNativeExternalTestObjPath)` for generated object dependencies.
+
 ## Controls source
 
 The WinUI controls implementation now lives under `src/controls`. The

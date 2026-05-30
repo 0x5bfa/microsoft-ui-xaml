@@ -31,13 +31,13 @@
             <!-- Linking it twice in the same project produces a warning though         -->
             <AdditionalDependencies Condition="'$(MSBuildProjectName)'!='Private.Native.External.Infrastructure'">
                 %(AdditionalDependencies);
-                $(TestObjPath)\native\external\infra\modulecleanup.obj;
-                $(TestObjPath)\native\external\infra\screenshothelper.obj;
-                $(TestObjPath)\native\external\infra\XamlFileTestEngine.obj;
-                $(TestObjPath)\native\external\infra\ClipboardHelper.obj;
+                $(RuntimeNativeExternalTestObjPath)\infra\modulecleanup.obj;
+                $(RuntimeNativeExternalTestObjPath)\infra\screenshothelper.obj;
+                $(RuntimeNativeExternalTestObjPath)\infra\XamlFileTestEngine.obj;
+                $(RuntimeNativeExternalTestObjPath)\infra\ClipboardHelper.obj;
             </AdditionalDependencies>
 
-            <AdditionalDependencies Condition="'$(MSBuildProjectName)'!='Windows.UI.Xaml.Tests.Native.BVTs'">%(AdditionalDependencies) $(TestObjPath)\native\external\infra\_Event.obj;</AdditionalDependencies>
+            <AdditionalDependencies Condition="'$(MSBuildProjectName)'!='Windows.UI.Xaml.Tests.Native.BVTs'">%(AdditionalDependencies) $(RuntimeNativeExternalTestObjPath)\infra\_Event.obj;</AdditionalDependencies>
             
             <DelayLoadDLLs>api-ms-win-rtcore-ntuser-private-l1-*.dll;</DelayLoadDLLs>
         </Link>
@@ -72,6 +72,6 @@
 
     <ItemGroup Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='Application'">
         <ProjectReference Condition="'$(ProjectGuid)'!='{c59fc853-80da-4b7e-bcda-3eb94d1351da}'" Include="$(RuntimeInfraTestPath)\server\Private.Infrastructure.Server.vcxproj" Project="{c59fc853-80da-4b7e-bcda-3eb94d1351da}"/>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{a814c8d3-cf4d-4e7f-a1f6-ba6d2b2e328c}'" Include="$(TestPath)\native\external\infra\Private.Native.External.Infrastructure.vcxproj" Project="{a814c8d3-cf4d-4e7f-a1f6-ba6d2b2e328c}" LinkLibraryDependencies="false"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{a814c8d3-cf4d-4e7f-a1f6-ba6d2b2e328c}'" Include="$(RuntimeNativeExternalTestPath)\infra\Private.Native.External.Infrastructure.vcxproj" Project="{a814c8d3-cf4d-4e7f-a1f6-ba6d2b2e328c}" LinkLibraryDependencies="false"/>
     </ItemGroup>
 </Project>
