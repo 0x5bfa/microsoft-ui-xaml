@@ -103,7 +103,7 @@
       <AdditionalIncludeDirectories>
         %(AdditionalIncludeDirectories);
         $(ProjectRoot)\dxaml\test\native\external\inc;
-        $(ProjectRoot)\dxaml\test\native\inc;
+        $(NativeIncPath);
         $(RuntimeInfraTestPath)\server\inc;
         $(XcpPath)\components\runtimeEnabledFeatures\inc;
       </AdditionalIncludeDirectories>

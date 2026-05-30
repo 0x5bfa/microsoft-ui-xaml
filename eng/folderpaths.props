@@ -29,8 +29,8 @@
     <NativeIsolatedTestPath>$(TestPath)\native\isolated</NativeIsolatedTestPath>
     <NativeExternalTestPath>$(TestPath)\native\external</NativeExternalTestPath>
     <InternalTestPath>$(TestPath)\native\internal</InternalTestPath>
-    <NativeIncPath>$(TestPath)\native\inc</NativeIncPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
+    <NativeIncPath>$(RuntimeTestPath)\native\inc</NativeIncPath>
     <RuntimeInfraTestPath>$(RuntimeTestPath)\infra</RuntimeInfraTestPath>
     <RuntimeManagedTestPath>$(RuntimeTestPath)\managed</RuntimeManagedTestPath>
     <ManagedTestPath>$(RuntimeManagedTestPath)</ManagedTestPath>
