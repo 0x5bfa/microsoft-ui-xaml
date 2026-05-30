@@ -658,7 +658,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesktopAcrylicBackdrop", "D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicaBackdrop", "MicaBackdrop", "{AAEE68EF-8CB5-40D2-8BC8-9A00FB0A1B6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateMockWinAppSDKPackage", "..\tools\UpdateMockWinAppSDKPackage\UpdateMockWinAppSDKPackage.csproj", "{2F1F8DCD-98F2-4C02-97BA-15105E933057}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateMockWinAppSDKPackage", "..\tools\packaging\UpdateMockWinAppSDKPackage\UpdateMockWinAppSDKPackage.csproj", "{2F1F8DCD-98F2-4C02-97BA-15105E933057}"
 	ProjectSection(ProjectDependencies) = postProject
 		{10F93BC6-DE0F-4B8D-A4C0-7A807935FD96} = {10F93BC6-DE0F-4B8D-A4C0-7A807935FD96}
 		{1CEEC8E3-419A-4304-841C-08A334B9E4FF} = {1CEEC8E3-419A-4304-841C-08A334B9E4FF}
