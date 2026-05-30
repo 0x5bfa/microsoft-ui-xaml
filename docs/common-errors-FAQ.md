@@ -35,7 +35,7 @@ A successful build may have warnings but will have 0 errors.
 As rule of thumb against build errors, running the following commands are the best way to get you to "clean state":
 * `git clean -xdf`
 * `nuget locals all -clear`
-* `tools\clean.cmd`
+* `tools\build\clean.cmd`
 
 If you get out-of-heap errors doing the build, the `/b` switch can be useful. It specifies a "background" build (only 
 runs two instances of msbuild.exe.
