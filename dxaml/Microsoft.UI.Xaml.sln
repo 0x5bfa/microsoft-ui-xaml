@@ -1017,7 +1017,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.Foc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusSelection", "xcp\components\focus\FocusSelection\lib\Microsoft.UI.Xaml.Focus.FocusSelection.vcxproj", "{06EE2711-8CE5-4ABC-B80D-3B055D7DF537}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection", "xcp\components\focus\FocusSelection\unittests\Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection.vcxproj", "{A58DF0B7-52E9-4F7F-905B-0DD365BE71E9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection", "..\tests\runtime\native\isolated\xaml\focus\focusSelection\Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection.vcxproj", "{A58DF0B7-52E9-4F7F-905B-0DD365BE71E9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusMovement", "xcp\components\focus\Movement\lib\Microsoft.UI.Xaml.Focus.FocusMovement.vcxproj", "{978E84EE-1FBE-4EB1-B9D2-31D9814DBDC3}"
 EndProject
