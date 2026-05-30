@@ -162,9 +162,10 @@ now matches their role as test assets rather than sample applications.
 
 ## Initialization scripts
 
-.NET SDK and runtime download helpers now live under `scripts/init`. They are
-part of repository initialization rather than package construction, leaving the
-`build` folder focused on packaging inputs and build-time transforms.
+.NET SDK, runtime download, and test certificate generation helpers now live
+under `scripts/init`. They are part of repository initialization rather than
+package construction, leaving the `build` folder focused on packaging inputs
+and build-time transforms.
 
 ## Packaging inputs
 
