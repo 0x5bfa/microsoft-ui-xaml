@@ -1023,7 +1023,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.Foc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.XYFocus", "xcp\components\focus\XYFocus\lib\Microsoft.UI.Xaml.Focus.XYFocus.vcxproj", "{1BFC2F99-B08B-4F54-AD99-80CBF35C216C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus", "xcp\components\focus\XYFocus\unittests\Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus.vcxproj", "{F6F263A2-4C98-4900-9DBB-0AD4A309F501}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus", "..\tests\runtime\native\isolated\xaml\focus\xyFocus\Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus.vcxproj", "{F6F263A2-4C98-4900-9DBB-0AD4A309F501}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.FocusRect", "xcp\components\FocusRect\lib\Microsoft.UI.Xaml.FocusRect.vcxproj", "{C554E0D5-58E6-4772-BAD3-2E62E3579957}"
 EndProject

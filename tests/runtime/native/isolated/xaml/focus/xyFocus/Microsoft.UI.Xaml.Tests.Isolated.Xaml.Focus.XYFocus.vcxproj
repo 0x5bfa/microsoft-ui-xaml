@@ -12,7 +12,7 @@
     <!-- UT:TARGETTYPE=DYNLINK                                 -->
     <!-- UT:TARGET_DESTINATION=NTTEST\WINDOWSTEST\dxaml\test   -->
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
 
     <Import Project="$(XcpPath)\components\unittest-uielement.props"/>
@@ -69,5 +69,5 @@
         <ProjectReference Include="$(XcpPath)\components\unittests\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>
