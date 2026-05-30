@@ -2,7 +2,7 @@
 # This will let us use existing files for pre-release builds and for final release we can use updated files. 
 # Updated files are stored under RepoRoot\BuildOutput\Temp\ThemeResources
 
-$themesDir = "$($env:RepoRoot)\controls\dev"
+$themesDir = "$($env:RepoRoot)\src\controls"
 $outDir = "$($env:RepoRoot)\BuildOutput\Temp\ThemeResources"
 
 $AutoSuggestBox = "AutoSuggestBox_themeresources.xaml"

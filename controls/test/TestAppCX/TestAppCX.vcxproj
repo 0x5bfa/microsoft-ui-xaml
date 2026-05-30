@@ -285,7 +285,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(MUXCProjectRoot)dev\dll\Microsoft.UI.Xaml.Controls.vcxproj">
+    <ProjectReference Include="$(MUXControlsSourceRoot)dll\Microsoft.UI.Xaml.Controls.vcxproj">
       <Project>{ad0c90b0-4845-4d4b-88f1-86f653f8171b}</Project>
     </ProjectReference>
     <ProjectReference Include="$(MUXProjectRoot)MergedWinMD\private\MergedWinMD.vcxproj" />

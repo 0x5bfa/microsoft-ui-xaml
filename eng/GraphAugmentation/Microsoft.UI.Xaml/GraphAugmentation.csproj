@@ -1,6 +1,6 @@
 <Project ToolsVersion="Current">
   <ItemGroup>
-    <ProjectReference Include="..\..\..\controls\dev\dll\Microsoft.UI.Xaml.Controls.vcxproj">
+    <ProjectReference Include="..\..\..\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj">
       <Targets>GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
     <ProjectReference Include="..\..\..\controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj">

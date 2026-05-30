@@ -337,26 +337,26 @@ Test code:
 
 A few files in MUXC as well:
 - Resources:
-  * \controls\dev\CommonStyles\GridViewItem_themeresources.xaml
-  * \controls\dev\CommonStyles\ListViewItem_themeresources
+  * \src\controls\CommonStyles\GridViewItem_themeresources.xaml
+  * \src\controls\CommonStyles\ListViewItem_themeresources
 
 - MuxControlsTestApp test pages:
-  * \controls\dev\CommonStyles\TestUI\GridViewPage.*
-  * \controls\dev\CommonStyles\TestUI\GroupedItemsControlPage.*
-  * \controls\dev\CommonStyles\TestUI\GroupedListViewBasePage.*
-  * \controls\dev\CommonStyles\TestUI\ItemsControlPage.*
-  * \controls\dev\CommonStyles\TestUI\ListViewAnchoringPage.*
-  * \controls\dev\CommonStyles\TestUI\ListViewBasePage.*
-  * \controls\dev\CommonStyles\TestUI\ListViewElementNameBindingPage.*
-  * \controls\dev\CommonStyles\TestUI\ListViewPage.*
-  * \controls\dev\CommonStyles\TestUI\NestedGridViewsPage.*
-  * \controls\dev\CommonStyles\TestUI\NestedItemsControlsPage.*
-  * \controls\dev\CommonStyles\TestUI\NestedListViewsPage.*
+  * \src\controls\CommonStyles\TestUI\GridViewPage.*
+  * \src\controls\CommonStyles\TestUI\GroupedItemsControlPage.*
+  * \src\controls\CommonStyles\TestUI\GroupedListViewBasePage.*
+  * \src\controls\CommonStyles\TestUI\ItemsControlPage.*
+  * \src\controls\CommonStyles\TestUI\ListViewAnchoringPage.*
+  * \src\controls\CommonStyles\TestUI\ListViewBasePage.*
+  * \src\controls\CommonStyles\TestUI\ListViewElementNameBindingPage.*
+  * \src\controls\CommonStyles\TestUI\ListViewPage.*
+  * \src\controls\CommonStyles\TestUI\NestedGridViewsPage.*
+  * \src\controls\CommonStyles\TestUI\NestedItemsControlsPage.*
+  * \src\controls\CommonStyles\TestUI\NestedListViewsPage.*
 
 
 # XAML markup resources
 
-Control templates are defined in `dxaml/xcp/dxaml/themes/generic.xaml`, while item styles are in `controls/dev/CommonStyles` for WinUI 3.
+Control templates are defined in `dxaml/xcp/dxaml/themes/generic.xaml`, while item styles are in `src/controls/CommonStyles` for WinUI 3.
 
 
 # Key methods when debugging

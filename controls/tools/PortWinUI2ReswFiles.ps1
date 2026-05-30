@@ -15,7 +15,7 @@ else
 # First, we'll delete all of the existing resw files.
 Write-Host "Deleting existing resw files..."
 
-foreach ($projectFile in (Get-ChildItem "$repoRoot\controls\dev" -Filter "*.vcxitems" -Recurse))
+foreach ($projectFile in (Get-ChildItem "$repoRoot\src\controls" -Filter "*.vcxitems" -Recurse))
 {
     Write-Host "    Deleting resw files from $($projectFile.FullName)..."
 

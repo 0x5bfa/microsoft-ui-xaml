@@ -3,7 +3,7 @@ $projectRoot = Resolve-Path "$PSScriptRoot\..\..\..\.."
 
 $packagesConfigReferences = @(
     "$projectRoot\packages.config",
-    "$projectRoot\controls\dev\dll\packages.config"
+    "$projectRoot\src\controls\dll\packages.config"
 )
 
 $propsReferences = @(

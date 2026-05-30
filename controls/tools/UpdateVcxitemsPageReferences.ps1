@@ -7,7 +7,7 @@ else
     $repoRoot = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..")
 }
 
-Get-ChildItem "$repoRoot\controls\dev" -Filter "*.vcxitems" -Recurse | ForEach-Object {
+Get-ChildItem "$repoRoot\src\controls" -Filter "*.vcxitems" -Recurse | ForEach-Object {
     $xmlDocument = [System.Xml.XmlDocument]::new()
     $xmlDocument.Load($_.FullName)
 

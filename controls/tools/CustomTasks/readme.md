@@ -6,7 +6,7 @@ _Assuming your repo is in D:\microsoft-ui-xaml-lift_
 
 Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. Edit these :
 
-      1. controls/dev/dll/packages.config
+      1. src/controls/dll/packages.config
       2. controls/tools/CustomTasks/NuSpecs/MUXCustomBuildTasks.nuspec
       3. controls/tools/CustomTasks/Properties/AssemblyInfo.cs (2 places)
       4. packages.config

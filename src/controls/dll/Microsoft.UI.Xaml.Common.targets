@@ -30,7 +30,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup>
     <Midl>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\..;$(MSBuildProjectDirectory)\..\..\idl;$(MiniWindowsSDKIncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MUXControlsSourceRoot);$(MUXCProjectRoot)idl;$(MiniWindowsSDKIncludePath)</AdditionalIncludeDirectories>
       <Enumclass>false</Enumclass>
     </Midl>
     <Link>
@@ -56,7 +56,7 @@
       <AdditionalIncludeDirectories>
         %(AdditionalIncludeDirectories);
         $(WindowsSDK_IncludePath)\winrt;
-        $(MSBuildProjectDirectory)\..\inc;
+        $(MUXControlsSourceRoot)inc;
         $(MUXControlsGeneratedSourceDir);
         $(OutDir);
       </AdditionalIncludeDirectories>

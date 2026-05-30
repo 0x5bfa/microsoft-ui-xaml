@@ -120,30 +120,30 @@ These are paths for Microsoft.UI.Xaml.Controls.
 
 ## ItemContainer
 
-- Product: \controls\dev\ItemContainer
-- Test: \controls\dev\ItemContainer\APITest & InteractionTests
+- Product: \src\controls\ItemContainer
+- Test: \src\controls\ItemContainer\APITest & InteractionTests
 
 
 ## ItemsView
 
-- Product: \controls\dev\ItemsView
-- Test: \controls\dev\ItemsView\APITest & InteractionTests
+- Product: \src\controls\ItemsView
+- Test: \src\controls\ItemsView\APITest & InteractionTests
 
 
 # XAML markup resources
 
 ## ItemContainer
 
-Style resources, including the control template, are located under \controls\dev\ItemContainer:
-- \controls\dev\ItemContainerw\ItemContainer_themeresources.xaml
-- \controls\dev\ItemContainer\ItemContainer.xaml
+Style resources, including the control template, are located under \src\controls\ItemContainer:
+- \src\controls\ItemContainerw\ItemContainer_themeresources.xaml
+- \src\controls\ItemContainer\ItemContainer.xaml
 
 
 ## ItemsView
 
-Style resources, including the control template, are located under \controls\dev\ItemsView:
-- \controls\dev\ItemsView\ItemsView_themeresources.xaml
-- \controls\dev\ItemsView\ItemsView.xaml
+Style resources, including the control template, are located under \src\controls\ItemsView:
+- \src\controls\ItemsView\ItemsView_themeresources.xaml
+- \src\controls\ItemsView\ItemsView.xaml
 
 
 # MuxControlsTestApp test pages

@@ -202,7 +202,7 @@ ThemeResource to point to an appropriate Color or Brush value in a ThemeDictiona
 ControlFillColorDefaultBrush is a Brush resource that is built is defined in `common_themeresources_any.xaml` and resolves to a 
 SolidColorBrush of #0FFFFFFF in dark theme, #B3FFFFFF in light theme and SystemColorButtonFaceColor in High Contrast theme.
 
-You can view [common_themeresources_any.xaml](..\controls\dev\CommonStyles\Common_themeresources_any.xaml) to see the resources available to you. 
+You can view [common_themeresources_any.xaml](..\src\controls\CommonStyles\Common_themeresources_any.xaml) to see the resources available to you.
 All new controls are to use brushes from this file. See [Xaml Style Guide](.\design-notes\xaml-styling-guide.md) for more info.
 
 There are also resources with `System*` names that are built into the xaml platform. These are old resources from before the windows 11 rejuvenation.

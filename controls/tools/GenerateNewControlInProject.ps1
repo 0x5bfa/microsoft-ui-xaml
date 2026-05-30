@@ -28,7 +28,9 @@ function AddAttribute
 
 $toolsDir = Split-Path -Path $MyInvocation.MyCommand.Path;
 $muxControlsDir = Split-Path $toolsDir -Parent
-$controlDir = $muxControlsDir + "\dev\$projectName"
+$repoRoot = Split-Path $muxControlsDir -Parent
+$controlsSourceDir = Join-Path $repoRoot "src\controls"
+$controlDir = Join-Path $controlsSourceDir $projectName
 
 # TODO: check if project directory exists
 
@@ -72,13 +74,13 @@ foreach ($group in $xml.Project.ItemGroup)
 $xml.Save($controlProject)
 
 # Add header file to XamlMetadataProviderGenerated.tt
-FindAndReplaceInFile ($muxControlsDir + "\dev\dll\XamlMetadataProviderGenerated.tt") "#endif" @"
+FindAndReplaceInFile (Join-Path $controlsSourceDir "dll\XamlMetadataProviderGenerated.tt") "#endif" @"
 #include "$controlName.h"
 #endif
 "@
 
 # Add new profiler id to RuntimeProfiler.h
-FindAndReplaceInFile ($muxControlsDir + "\dev\Telemetry\RuntimeProfiler.h") "(\s*ProfId_Size, .*\s*})" @"
+FindAndReplaceInFile (Join-Path $controlsSourceDir "Telemetry\RuntimeProfiler.h") "(\s*ProfId_Size, .*\s*})" @"
 
         ProfId_$controlName,`$1
 "@

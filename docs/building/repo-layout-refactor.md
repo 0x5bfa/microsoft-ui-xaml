@@ -11,7 +11,7 @@ Use these ownership buckets for new moves:
 | Area | Purpose |
 | --- | --- |
 | `src/runtime` | Runtime implementation currently rooted in `dxaml/xcp`. |
-| `src/controls` | WinUI controls implementation currently rooted in `controls/dev`. |
+| `src/controls` | WinUI controls implementation. |
 | `src/compiler` | XAML compiler source, build tasks, compiler targets, and compiler-local tools. |
 | `tests` | Runtime, controls, compiler, sample, and Helix test assets. |
 | `eng` | Shared build, packaging, versioning, signing, and pipeline infrastructure. |
@@ -68,6 +68,14 @@ Checked-in visual test baseline assets now live under
 `dxaml/test/resources/masters` so the existing test resource deployment layout
 continues to expose `resources\masters` at runtime.
 
+## Controls source
+
+The WinUI controls implementation now lives under `src/controls`. The
+`controls` tree remains the home for controls solution files, IDL, tests, and
+authoring tools. Shared MSBuild entry points use `$(MUXControlsSourceRoot)` so
+those support projects can reference controls source without reintroducing the
+old `controls/dev` path segment.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.
@@ -84,7 +92,5 @@ continues to expose `resources\masters` at runtime.
 
 1. Move compiler test project assets into `tests/compiler` once they are
    present in the checkout and their generation/update workflows are verified.
-2. Move `controls/dev` to `src/controls` after the controls solution path usage
-   is audited.
-3. Move `dxaml/xcp` to `src/runtime` last, because it has the broadest MSBuild
+2. Move `dxaml/xcp` to `src/runtime` last, because it has the broadest MSBuild
    and native project surface.

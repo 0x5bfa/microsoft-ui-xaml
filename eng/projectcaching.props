@@ -38,9 +38,9 @@
       Double-writes across projects are not good for build performance but allow specific ones to unblock.
 
       === NoiseAsset_256x256_PNG.png ===
-      Both controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj and controls\dev\dll\Microsoft.UI.Xaml.Controls.vcxproj are writing this file.
-        controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj copies the file via controls\dev\Materials\Acrylic\AcrylicBrush.vcxitems via a PackageContent item.
-        controls\dev\dll\Microsoft.UI.Xaml.Controls.vcxproj copies the file via a BinplaceItem in controls\dev\dll\Microsoft.UI.Xaml.Common.targets.
+      Both controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj and src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj are writing this file.
+        controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj copies the file via src\controls\Materials\Acrylic\AcrylicBrush.vcxitems via a PackageContent item.
+        src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj copies the file via a BinplaceItem in src\controls\dll\Microsoft.UI.Xaml.Common.targets.
       Attempting to remove either of these leads to various downstream issues.
 
       Note: Not using $(NativeAssemblyPackageLocation) since that value is based on the Platform, and there is some cross-platform referencing happening.
@@ -51,7 +51,7 @@
     <MSBuildCacheIdenticalDuplicateOutputPatterns>$(MSBuildCacheIdenticalDuplicateOutputPatterns);$(NoiseAssetOutputLocationOld);$(NoiseAssetOutputLocation)</MSBuildCacheIdenticalDuplicateOutputPatterns>
 
     <!--
-      Ignore generated\controls\dependencyproperties\** even though these files are possibly changed during the build (see controls\dev\dll\Microsoft.UI.Xaml.Common.targets::RunDependencyPropertyCodeGen).
+      Ignore generated\controls\dependencyproperties\** even though these files are possibly changed during the build (see src\controls\dll\Microsoft.UI.Xaml.Common.targets::RunDependencyPropertyCodeGen).
       These files are part of source control and any changes should be committed, so we don't want to consider them cached outputs.
     -->
     <MSBuildCacheIgnoredOutputPatterns>$(MSBuildCacheIgnoredOutputPatterns);generated\controls\dependencyproperties\**</MSBuildCacheIgnoredOutputPatterns>

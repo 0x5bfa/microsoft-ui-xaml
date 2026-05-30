@@ -361,7 +361,7 @@ For example:
 
 - `NavigationView.MenuItemTemplate` is of type `DataTemplate` so takes a `DataTemplate` type as a settable property value:
 
-[NavigationView.idl](..\..\controls\dev\NavigationView\NavigationView.idl)
+[NavigationView.idl](..\..\src\controls\NavigationView\NavigationView.idl)
 ```c#
 Microsoft.UI.Xaml.DataTemplate MenuItemTemplate { get; set; };
    
@@ -374,7 +374,7 @@ See [Data Binding in Depth](https://learn.microsoft.com/en-us/windows/uwp/data-b
 Microsoft.UI.Xaml.Controls.DataTemplateSelector MenuItemTemplateSelector { get; set; };
 ```
 
-[NavigationViewPageDataContext.xaml](..\..\controls\dev\NavigationView\TestUI\Common\NavigationViewPageDataContext.xaml)
+[NavigationViewPageDataContext.xaml](..\..\src\controls\NavigationView\TestUI\Common\NavigationViewPageDataContext.xaml)
 
 ```xml
 <muxcontrols:NavigationView
@@ -391,7 +391,7 @@ Microsoft.UI.Xaml.Controls.DataTemplateSelector MenuItemTemplateSelector { get; 
 
 Some control examples with repeated elements are `PipsPager` and `RatingControl`. They use DataTemplates to implement these elements.
 
-[PipsPager.xaml](..\..\controls\dev\PipsPager\PipsPager.xaml)
+[PipsPager.xaml](..\..\src\controls\PipsPager\PipsPager.xaml)
 ```xml
 <ScrollViewer x:Name="PipsPagerScrollViewer" VerticalScrollBarVisibility="Hidden" VerticalScrollMode="Disabled" HorizontalScrollBarVisibility="Hidden" HorizontalScrollMode="Disabled" IsHorizontalScrollChainingEnabled="False" IsVerticalScrollChainingEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Center">
     <controls:ItemsRepeater x:Name="PipsPagerItemsRepeater" ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.PipsPagerItems}">
@@ -407,7 +407,7 @@ Some control examples with repeated elements are `PipsPager` and `RatingControl`
 </ScrollViewer>
 ```
 
-[RatingControl_themeresources.xaml](..\..\controls\dev\RatingControl\RatingControl_themeresources.xaml)
+[RatingControl_themeresources.xaml](..\..\src\controls\RatingControl\RatingControl_themeresources.xaml)
 ```xml
 <DataTemplate x:Key="BackgroundGlyphDefaultTemplate">
     <TextBlock Foreground="{ThemeResource RatingControlUnselectedForeground}" Margin="-8,-8,0,0" FontSize="{StaticResource RatingControlFontSizeForRendering}" Text="&#xE734;" AutomationProperties.AccessibilityView="Raw" FontFamily="{ThemeResource SymbolThemeFontFamily}" />
@@ -422,7 +422,7 @@ It is best practice to never modify a control's visual with codebehind.
 By using binding to the exposed values from TemplateSettings, we ensure that the control
 remains customizable and re-templatable. 
 
-An example from [Expander.xaml](..\..controls\dev\InfoBadge\InfoBadge_themeresources.xaml), 
+An example from [Expander.xaml](..\..\src\controls\InfoBadge\InfoBadge_themeresources.xaml),
 where `ContentHeight` is the calculated value of ExpanderContent's height. 
 
 ```xml
@@ -438,7 +438,7 @@ the animation is kept in the template, leveraging `ExpanderTemplateSettings.Cont
 TemplateSettings properties are APIs defined in a control's `*.idl` file. 
 They also need to undergo API reviews, much like overridable themeresources.
 
-[Expander.idl](../../controls\dev\Expander\Expander.idl)
+[Expander.idl](../../src\controls\Expander\Expander.idl)
 ```c#
 runtimeclass ExpanderTemplateSettings : Microsoft.UI.Xaml.DependencyObject
 {
@@ -488,7 +488,7 @@ for more info.
 ```
 
 - `TitleBarForegroundBrush` is set for `Default` (dark), `Light`, and `HighContrast` resource dictionaries.
-- `Default` and `Light` references resource keys defined in [Common_themeresources_any.xaml](..\..\controls\dev\CommonStyles\Common_themeresources_any.xaml).
+- `Default` and `Light` references resource keys defined in [Common_themeresources_any.xaml](..\..\src\controls\CommonStyles\Common_themeresources_any.xaml).
 - `HighContrast` resources are defined in System Xaml. 
 
 - Setting a `TitleBarForegroundBrush` in the resource dictionary also **exposes it as an overridable resource for the end developers.** 
@@ -533,7 +533,7 @@ Common_themeresources_any.xaml contains all the brushes set by design during the
 [Color in Windows Page](https://learn.microsoft.com/en-us/windows/apps/design/signature-experiences/color),
 or Color page in WinUI 3 Gallery for more info.
 
-For example, looking at `TextFillColor*` in [Common_themeresources_any.xaml](..\..\controls\dev\CommonStyles\Common_themeresources_any.xaml):
+For example, looking at `TextFillColor*` in [Common_themeresources_any.xaml](..\..\src\controls\CommonStyles\Common_themeresources_any.xaml):
 
 ```xml
 <ResourceDictionary.ThemeDictionaries>

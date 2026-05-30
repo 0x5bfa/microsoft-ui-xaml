@@ -52,7 +52,7 @@ API allows the app to directly access a Composition `Visual` behind a Xaml `UIEl
 Composition APIs to set properties or animate that `Visual` directly. Xaml subscribes to property update notifications
 from Composition so we can keep track of where the element is on screen for hit testing.
 
-There is plenty of code in the controls layer (e.g., `controls/dev/ScrollPresenter/ScrollPresenter.cpp`)
+There is plenty of code in the controls layer (e.g., `src/controls/ScrollPresenter/ScrollPresenter.cpp`)
 that calls this API.
 
 
@@ -67,7 +67,7 @@ The interface allows `UIElement` to map a property name to a real Composition ob
 does this via a AnimationPropertyInfo class that has the
 `GetResolvedCompositionObject`/`GetResolvedCompositionObjectProperty` methods to complete the mapping.
 
-There is plenty of code in the controls layer (e.g., `controls/dev/ScrollPresenter/ScrollPresenter.cpp`)
+There is plenty of code in the controls layer (e.g., `src/controls/ScrollPresenter/ScrollPresenter.cpp`)
 that calls this API.
 
 Wishlist:

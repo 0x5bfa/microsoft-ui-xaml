@@ -223,7 +223,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="D:\Projects\microsoft-ui-xaml\dev\NavigationView\TestUI\NavigationViewMenuItemStretchPage.xaml.cs">
+    <Compile Update="$(MSBuildThisFileDirectory)NavigationViewMenuItemStretchPage.xaml.cs">
       <DependentUpon>NavigationViewMenuItemStretchPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>

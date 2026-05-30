@@ -113,7 +113,7 @@
     <ProjectReference Include="$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis\dll\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{2443059a-fad7-4812-b0e6-243e33f11a01}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
     <ProjectReference Include="$(XamlSourcePath)\test\infra\client\dll\Private.Infrastructure.Client.vcxproj" Project="{7e2bc80e-cf9b-4567-8e3e-d0f81b4782fd}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
     <ProjectReference Include="$(ProjectRoot)\MergedWinMD\private\MergedWinMD.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}" />
-    <ProjectReference Include="$(ProjectRoot)\controls\dev\dll\Microsoft.UI.Xaml.Controls.vcxproj" />
+    <ProjectReference Include="$(ProjectRoot)\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -153,7 +153,7 @@
     <None Include="@(MuxBinaries)">
       <Link>%(Filename)%(Extension)</Link>
     </None>
-    <None Include="$(XamlBuildOutputRoot)\controls\dev\dll\Microsoft.UI.Xaml.Controls.dll">
+    <None Include="$(XamlBuildOutputRoot)\src\controls\dll\Microsoft.UI.Xaml.Controls.dll">
       <Link>%(Filename)%(Extension)</Link>
     </None>
     <None Include="$(XamlBinaryPath)\test\infra\client\dll\Private.Infrastructure.Client.dll">

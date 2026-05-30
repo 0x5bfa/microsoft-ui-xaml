@@ -110,7 +110,7 @@
     <Content Include="@(MuxBinaries)">
       <Link>%(Filename)%(Extension)</Link>
     </Content>
-    <Content Include="$(XamlBuildOutputRoot)\controls\dev\dll\Microsoft.UI.Xaml.Controls.dll">
+    <Content Include="$(XamlBuildOutputRoot)\src\controls\dll\Microsoft.UI.Xaml.Controls.dll">
       <Link>%(Filename)%(Extension)</Link>
     </Content>
     <Content Include="$(XamlBinaryPath)\test\infra\client\dll\Private.Infrastructure.Client.dll">
@@ -204,7 +204,7 @@
       <Project>{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}</Project>
       <Name>MergedWinMD</Name>
     </ProjectReference>
-    <ProjectReference Include="$(ProjectRoot)\controls\dev\dll\Microsoft.UI.Xaml.Controls.vcxproj" />
+    <ProjectReference Include="$(ProjectRoot)\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.VCLibs.Desktop, Version=14.0" />

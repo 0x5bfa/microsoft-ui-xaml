@@ -494,5 +494,5 @@ As the content areas are empty by default, the default height for TitleBar is `T
 # Appendix
 
 Reference:
-- TitleBar implementation: See `controls/dev/TitleBar/TitleBar.idl`
+- TitleBar implementation: See `src/controls/TitleBar/TitleBar.idl`
 - Niels Laute's TitleBar in CommunityToolkit: [PR](https://github.com/CommunityToolkit/Labs-Windows/pull/459/files), [Spec](https://github.com/CommunityToolkit/Labs-Windows/discussions/454)

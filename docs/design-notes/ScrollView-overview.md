@@ -90,27 +90,27 @@ These are paths for Microsoft.UI.Xaml.Controls.
 
 ## IScrollController
 
-- Product: \controls\dev\ScrollPresenter\ScrollPresenterPrimitives.idl
-- Test: \controls\dev\ScrollPresenter\TestUI\*Controller*
+- Product: \src\controls\ScrollPresenter\ScrollPresenterPrimitives.idl
+- Test: \src\controls\ScrollPresenter\TestUI\*Controller*
 
 
 ## ScrollPresenter
 
-- Product: \controls\dev\ScrollPresenter
-- Test: \controls\dev\ScrollPresenter\APITest & InteractionTests
+- Product: \src\controls\ScrollPresenter
+- Test: \src\controls\ScrollPresenter\APITest & InteractionTests
 
 
 ## ScrollView
 
-- Product: \controls\dev\ScrollView
-- Test: \controls\dev\ScrollView\APITest & InteractionTests
+- Product: \src\controls\ScrollView
+- Test: \src\controls\ScrollView\APITest & InteractionTests
 
 
 # ScrollView XAML markup resources
 
-Style resources, including the control template, are located under \controls\dev\ScrollView:
-- \controls\dev\ScrollView\ScrollView_themeresources.xaml
-- \controls\dev\ScrollView\ScrollView.xaml
+Style resources, including the control template, are located under \src\controls\ScrollView:
+- \src\controls\ScrollView\ScrollView_themeresources.xaml
+- \src\controls\ScrollView\ScrollView.xaml
 
 
 # MuxControlsTestApp test pages
@@ -183,7 +183,7 @@ along with the ViewportManagerDownLevel class.
 
 # Factoids about the ScrollView
 
-- It uses a ScrollBarController class defined in controls/dev/ScrollView/ScrollBarController.cpp, that wraps the ScrollBar control and turns it into
+- It uses a ScrollBarController class defined in src/controls/ScrollView/ScrollBarController.cpp, that wraps the ScrollBar control and turns it into
 an IScrollController implementation. That implementation is handed off to the ScrollView's ScrollPresenter, for the HorizontalScrollController
 and VerticalScrollController properties. 
 https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.scrollpresenter.horizontalscrollcontroller?view=windows-app-sdk-1.6
