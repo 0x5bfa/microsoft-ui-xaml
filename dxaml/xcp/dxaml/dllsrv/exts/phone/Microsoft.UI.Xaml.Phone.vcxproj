@@ -42,7 +42,7 @@
   <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
   <Import Project="$(XcpPath)\project-lift.props" />
   <Import Project="$(ProjectRoot)eng\winui-version.props" />
-  <Import Project="$(ProjectRoot)\perf\pgo\Microsoft.WinUI.PGO.props" />
+  <Import Project="$(ProjectRoot)\eng\pgo\Microsoft.WinUI.PGO.props" />
   <!-- Copyright (c) Microsoft Corporation.  All rights reserved. -->
   <PropertyGroup>
     <ExtName>Phone</ExtName>

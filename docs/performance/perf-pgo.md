@@ -19,7 +19,7 @@ releases and branches.  Given a list of applicable versions, it will find the on
 (BEFORE) the time-stamp of the last commit or a fork-point from instrumented branch.  That package
 version will be installed and version references will be updated.
 
-The PGO branch is determined by variable `PGOBranch` in the [`perf\pgo\Microsoft.WinUI.PGO.props`](../../perf/pgo/Microsoft.WinUI.PGO.props) file.
+The PGO branch is determined by variable `PGOBranch` in the [`eng\pgo\Microsoft.WinUI.PGO.props`](../../eng/pgo/Microsoft.WinUI.PGO.props) file.
 
 ## Scenarios
 
@@ -60,7 +60,7 @@ E.g.
 A branch which will be PGO’d requires a slightly different handling.  Let’s say release/3.0 forked
 from main on commit 4abd4d54.  Initially, it will be configured to track main and 18b956f6 will
 be optimized with 3.0.2001312033-main.  When the configuration is changed to start tracking
-release/3.0 (change branch name $pgoBranch in perf/pgo/config.ps1 script), it will start tracking
+release/3.0 (change `PGOBranch` in the PGO props file), it will start tracking
 its own branch.
 
 E.g.
