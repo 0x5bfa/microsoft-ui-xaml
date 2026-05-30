@@ -13,7 +13,6 @@
 
     <InternalTestPath>$(XamlSourcePath)\test\native\internal</InternalTestPath>
     <InfraTestPath>$(XamlSourcePath)\test\infra</InfraTestPath>
-    <ManagedTestPath>$(XamlSourcePath)\test\managed</ManagedTestPath>
 
     <NativeIncPath>$(XamlSourcePath)\test\native\inc</NativeIncPath>
 

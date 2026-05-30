@@ -863,7 +863,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Man
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Enterprise.Moco", "test\managed\enterprise\Microsoft.UI.Xaml.Tests.Managed.Enterprise.Moco.csproj", "{49ADCBE5-50EE-4066-8AD7-B69CEA7C2985}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Media", "test\managed\media\Microsoft.UI.Xaml.Tests.Managed.Media.csproj", "{94EAC75A-EA85-4FEB-ABF6-A810D8F63537}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Media", "..\tests\runtime\managed\media\Microsoft.UI.Xaml.Tests.Managed.Media.csproj", "{94EAC75A-EA85-4FEB-ABF6-A810D8F63537}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Win32.Hosting", "test\managed\Win32\WPF\Microsoft.UI.Xaml.Tests.Managed.Win32.Hosting.csproj", "{523212E5-01E4-4BC3-BC8B-21A48708051A}"
 EndProject
