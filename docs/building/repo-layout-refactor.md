@@ -30,9 +30,9 @@ proves the path-update pattern before touching `dxaml` or `controls`.
 
 Compiler-specific build entry points should live with the compiler source when
 their MSBuild import behavior allows it. `XamlCompilerPrerequisites.sln` now
-lives under `src/compiler` alongside `XamlCompiler.sln` and the compiler
-projects it orchestrates. `XamlCompilerPublic.csproj` remains at the repo root
-until its `Directory.Build.props` behavior can be isolated.
+lives under `src/compiler` alongside `XamlCompiler.sln`, `BuildTools.sln`, and
+the compiler projects it orchestrates. `XamlCompilerPublic.csproj` remains at
+the repo root until its `Directory.Build.props` behavior can be isolated.
 
 Compiler-local developer tools should live under `src/compiler/Tools` instead
 of being nested inside product source or parser implementation folders. The
