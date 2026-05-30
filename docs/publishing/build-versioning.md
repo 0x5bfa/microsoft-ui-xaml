@@ -119,7 +119,7 @@ In the lifted repo, the FrameworkReference override mechanism is used as follows
 ```
 
 `Version.props` also set the SDK version for .Net runtime, which is used by the 
-[DownloadDotNetCoreSdk.ps1](../../build/DownloadDotNetCoreSdk.ps1) script (which is called by `init.cmd`):
+[DownloadDotNetCoreSdk.ps1](../../scripts/init/DownloadDotNetCoreSdk.ps1) script (which is called by `init.cmd`):
 
 ```xml
 <DotNetCoreSdkVersion>5.0.100-rc.2.20480.7</DotNetCoreSdkVersion>
