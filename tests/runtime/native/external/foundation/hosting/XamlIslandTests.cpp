@@ -1570,8 +1570,8 @@ DWORD WINAPI MultipleApplicationObjects_ThreadProc(_In_ LPVOID lpParameter)
         //  # ChildEBP RetAddr
         // 00 0578fbb8 6e34ab17     Microsoft_UI_Xaml_Tests_External_Foundation_Hosting!Microsoft::UI::Xaml::IApplicationFactory::CreateInstance+0x7b
         // 01 0578fc0c 6e34b242     Microsoft_UI_Xaml_Tests_External_Foundation_Hosting!Microsoft::UI::Xaml::Application::Application+0xb7
-        // 02 0578fc68 6e34cd8f     Microsoft_UI_Xaml_Tests_External_Foundation_Hosting!Microsoft::UI::Xaml::Tests::Foundation::Hosting::XamlIslandTests_Application::XamlIslandTests_Application+0x92 [G:\l-c\dxaml\test\native\external\foundation\hosting\XamlIslandTests.cpp @ 19]
-        // 03 0578fd14 75897ba9     Microsoft_UI_Xaml_Tests_External_Foundation_Hosting!Microsoft::UI::Xaml::Tests::Foundation::Hosting::MultipleApplicationObjects_ThreadProc+0x16f [G:\l-c\dxaml\test\native\external\foundation\hosting\XamlIslandTests.cpp @ 683]
+        // 02 0578fc68 6e34cd8f     Microsoft_UI_Xaml_Tests_External_Foundation_Hosting!Microsoft::UI::Xaml::Tests::Foundation::Hosting::XamlIslandTests_Application::XamlIslandTests_Application+0x92 [G:\l-c\tests\runtime\native\external\foundation\hosting\XamlIslandTests.cpp @ 19]
+        // 03 0578fd14 75897ba9     Microsoft_UI_Xaml_Tests_External_Foundation_Hosting!Microsoft::UI::Xaml::Tests::Foundation::Hosting::MultipleApplicationObjects_ThreadProc+0x16f [G:\l-c\tests\runtime\native\external\foundation\hosting\XamlIslandTests.cpp @ 683]
         // 04 0578fd24 77a4c12b     KERNEL32!BaseThreadInitThunk+0x19 [clientcore\base\win32\client\thread.c @ 77]
         // 05 0578fd7c 77a4c0ae     ntdll!__RtlUserThreadStart+0x2b [minkernel\ntdll\rtlstrt.c @ 1192]
         // 06 0578fd8c 00000000     ntdll!_RtlUserThreadStart+0x1b [minkernel\ntdll\rtlstrt.c @ 1073]

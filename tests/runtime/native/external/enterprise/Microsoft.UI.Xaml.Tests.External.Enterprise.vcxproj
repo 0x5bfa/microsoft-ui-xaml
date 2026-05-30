@@ -26,7 +26,7 @@
                 $(MSBuildThisFileDirectory)\stickyheaders;
                 $(RuntimeNativeExternalTestPath)\controls\inc;
                 $(RuntimeNativeExternalTestPath)\enterprise\inc;
-                $(NativeExternalTestPath)\foundation\inc;
+                $(RuntimeNativeExternalTestPath)\foundation\inc;
                 $(WinUIDetailsIncludePath)\abi;
                 $(WinUIDetailsIncludePath)\MockDComp;
             </AdditionalIncludeDirectories>

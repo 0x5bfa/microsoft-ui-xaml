@@ -1,7 +1,7 @@
 root=pushd %reporoot%\$*
 nt=pushd %reporoot%\$*
 native=pushd %XcpRoot%\dxaml\dllsrv\winrt\native\$*
-tfgr=pushd %reporoot%\dxaml\test\native\external\foundation\graphics\rendering
+tfgr=pushd %reporoot%\tests\runtime\native\external\foundation\graphics\rendering
 dxaml=pushd %reporoot%\dxaml\$*
 xcp=pushd %XcpRoot%\$*
 text=pushd %XcpRoot%\core\native\text\Controls\$*

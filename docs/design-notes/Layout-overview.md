@@ -395,7 +395,7 @@ DirectUI code:
 
 Test code:
 - EffectiveViewport: 
-  * dxaml/test/native/external/foundation/hosting/XamlIslandTests.cpp
+  * tests/runtime/native/external/foundation/hosting/XamlIslandTests.cpp
   * tests/runtime/native/external/framework/layout/LayoutManagerIntegrationTests.cpp
   * dxaml/xcp/components/elements/unittests/UIElementUnitTests.cpp
 - Layout:
