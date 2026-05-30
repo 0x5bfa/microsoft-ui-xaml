@@ -518,7 +518,8 @@ including the NuGet and PowerShell wrappers used by controls tooling scripts.
 
 Controls custom MSBuild task sources and their test harness now live under
 `controls/tools/BuildTasks`, with the task NuGet packaging scripts kept under
-the moved `CustomTasks/NuSpecs` tree.
+the moved `CustomTasks/NuSpecs` tree and the dedicated build-task solution
+co-located with those tools.
 
 Controls packaging helpers now live under `controls/tools/Packaging`,
 including the framework package AppX creation wrapper used after controls
