@@ -1085,7 +1085,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Offerable
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap", "..\tests\runtime\native\isolated\foundation\offerableheap\Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap.vcxproj", "{68EFE933-E49A-4F16-A2C5-4BD872D7993E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser", "xcp\components\parser\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser.vcxproj", "{0C22F3E2-D02F-40C7-B7B4-849E21242B94}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser", "..\tests\runtime\native\isolated\framework\parser\Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser.vcxproj", "{0C22F3E2-D02F-40C7-B7B4-849E21242B94}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp", "xcp\components\pch\prod\Microsoft.UI.Xaml.Precomp.vcxproj", "{CCC61973-BE99-4223-B935-353D03571E92}"
 EndProject
