@@ -509,6 +509,9 @@ Controls resource generation helpers now live under
 `controls/tools/ResourceGeneration`, including system DLL resource generation,
 visual verification update, and final-release theme resource trimming scripts.
 
+Controls developer shell helpers now live under `controls/tools/Shell`,
+including command aliases and the PowerShell profile loaded by `ps.bat`.
+
 Controls packaged test app deployment helpers now live under
 `controls/tools/TestAppDeployment`. Build integration still copies
 `CreateAppxDirectory.msbuildproj` and `InstallAppFromLayout.ps1` into the test

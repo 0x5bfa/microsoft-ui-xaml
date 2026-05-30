@@ -4,7 +4,7 @@ pushd %~dp0
 
 set PATH=%PATH%;%~dp0\tools
 
-call %~dp0\tools\addaliases.cmd
+call %~dp0\tools\Shell\addaliases.cmd
 
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -Latest -requires Microsoft.Component.MSBuild -property InstallationPath > %TEMP%\vsinstalldir.txt
 

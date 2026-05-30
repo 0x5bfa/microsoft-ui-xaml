@@ -1,4 +1,4 @@
-Write-Host "Loading tools\PSProfile.ps1"
+Write-Host "Loading tools\Shell\PSProfile.ps1"
 
 #
 # ImportCmdAlias helper
@@ -54,6 +54,6 @@ cmd.exe /c doskey /macros -p cmd.exe | ForEach-Object {
     ImportCmdAlias $_
 }
 
-$localRepoName = $script:MyInvocation.MyCommand.Path | Split-Path -Parent | Split-Path -Parent | Split-Path -Leaf
+$localRepoName = $script:MyInvocation.MyCommand.Path | Split-Path -Parent | Split-Path -Parent | Split-Path -Parent | Split-Path -Leaf
 
 $Host.UI.RawUI.WindowTitle = "$localRepoName : $(git rev-parse --abbrev-ref HEAD)"
