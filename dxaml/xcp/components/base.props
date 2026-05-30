@@ -33,7 +33,7 @@
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
             $(LiftedIXPIncludePaths);
-            $(RepoRoot)\external\inc;
+            $(RepoRoot)\external\include;
             $(ExternalDependencies);
             $(FrameworkUdkIncPath);
             $(XamlDiagPath)\idl;
