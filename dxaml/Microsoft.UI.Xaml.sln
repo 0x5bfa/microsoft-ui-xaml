@@ -961,7 +961,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Com", "xcp\components\com\lib\Microsoft.UI.Xaml.Com.vcxproj", "{38506CDD-C34A-404C-B6E2-4D1ED278DA88}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Com", "xcp\components\com\unittests\Microsoft.UI.Xaml.Tests.Isolated.Com.vcxproj", "{0B3ED62A-77EE-479C-99C5-3F065BF9903A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Com", "..\tests\runtime\native\isolated\foundation\com\Microsoft.UI.Xaml.Tests.Isolated.Com.vcxproj", "{0B3ED62A-77EE-479C-99C5-3F065BF9903A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.CompTree", "xcp\components\comptree\lib\Microsoft.UI.Xaml.CompTree.vcxproj", "{BE2A3CDF-01E2-4600-8E77-305065C1FCC0}"
 EndProject
