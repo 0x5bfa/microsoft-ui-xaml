@@ -153,7 +153,7 @@ namespace Microsoft { namespace UI { namespace Xaml { namespace Tests {
 
             loadedEvent->WaitForDefault();
 
-            // The masters will come from test\resources\masters, and will be named after the test:
+            // The masters will come from tests\runtime\resources\masters, and will be named after the test:
             // - Sample_SampleIntegrationTests_SimpleDCompValidation.master.xml contains the DComp tree.
             // - Sample_SampleIntegrationTests_SimpleDCompValidation.n.master.png contains the nth surface
             //   created on the MockDCompDevice.

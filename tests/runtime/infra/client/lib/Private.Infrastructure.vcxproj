@@ -19,7 +19,7 @@
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
             $(XcpPath)\inc;
-            $(TestPath)\resources\masters;
+            $(RuntimeTestPath)\resources\masters;
             $(XcpPath)\components\runtimeEnabledFeatures\inc;
             $(RuntimeInfraTestPath)\logging;
             $(LiftedIXPIncludePaths);

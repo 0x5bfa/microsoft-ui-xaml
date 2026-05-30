@@ -47,7 +47,7 @@
             $(XcpPath)\components\base\inc;
             $(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis\idl;
             $(XcpPath)\inc;
-            $(TestPath)\resources\masters;
+            $(RuntimeTestPath)\resources\masters;
             $(XcpPath)\components\runtimeEnabledFeatures\inc;
             $(RuntimeInfraTestPath)\logging;
             $(LiftedIXPIncludePaths);

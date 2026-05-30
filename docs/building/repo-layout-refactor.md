@@ -94,7 +94,7 @@ that test-owned location.
 
 Runtime test resource payload inputs now live under `tests/runtime/resources`.
 The resource payload project keeps the same binplace layout while no longer
-living under the legacy `dxaml/test/resources` tree.
+living under the legacy runtime resource tree.
 
 Runtime test infrastructure now lives under `tests/runtime/infra`; new and moved
 consumers should use `$(RuntimeInfraTestPath)` and
@@ -207,9 +207,9 @@ through `$(IntellisenseFolder)`, while the docs-team drop input stays under
 ## Visual test baselines
 
 Checked-in visual test baseline assets now live under
-`generated/tests/visualbaselines`. The resource project stays under
-`dxaml/test/resources/masters` so the existing test resource deployment layout
-continues to expose `resources\masters` at runtime.
+`generated/tests/visualbaselines`. The resource project that packages them now
+lives under `tests/runtime/resources/masters` while continuing to expose
+`resources\masters` at runtime.
 
 ## Controls source
 

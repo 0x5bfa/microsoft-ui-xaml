@@ -881,7 +881,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator", "test\native\isolated\tools\XbfGenerator\Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator.vcxproj", "{FCBC288D-5C21-4C43-86DC-15D4A5F9D08E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Resources", "test\resources\masters\Private.Infrastructure.Resources.vcxproj", "{B0A4D3C3-C3CD-44A3-A762-DC0C9FF4E897}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Resources", "..\tests\runtime\resources\masters\Private.Infrastructure.Resources.vcxproj", "{B0A4D3C3-C3CD-44A3-A762-DC0C9FF4E897}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codegen", "..\tests\runtime\tools\codegen\Codegen.csproj", "{680ED2F4-D0EC-4692-AFD4-E4AFF686B53D}"
 EndProject
