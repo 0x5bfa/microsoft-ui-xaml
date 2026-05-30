@@ -504,6 +504,10 @@ Controls packaged test app deployment helpers now live under
 app output directory with their original filenames, preserving runtime install
 script discovery.
 
+Controls test reporting helpers now live under `controls/tools/TestReporting`,
+grouping the unreliable-test report creation and console output scripts away
+from the `controls/tools` root.
+
 Runtime developer tools should move out of `dxaml/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
 as the first small runtime tool move. The XBF parser/viewer tools moved under
