@@ -105,7 +105,7 @@
         $(ProjectRoot)\dxaml\test\native\external\inc;
         $(ProjectRoot)\dxaml\test\native\inc;
         $(ProjectRoot)\dxaml\test\infra\server\inc;
-        $(ProjectRoot)\dxaml\xcp\components\runtimeEnabledFeatures\inc;
+        $(XcpPath)\components\runtimeEnabledFeatures\inc;
       </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>

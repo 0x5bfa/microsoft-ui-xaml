@@ -44,8 +44,8 @@
         $(ProjectIncludeDirectories);
         $(ProjectSDKMetadataPath)\abi;
         $(XamlSourcePath)\test\infra\inc\;
-        $(XamlSourcePath)\xcp\components\;
-        $(XamlSourcePath)\xcp\components\base\inc\;
+        $(XcpPath)\components\;
+        $(XcpPath)\components\base\inc\;
         $(XcpPath)\inc;
         $(XcpPath)\pal\inc;
         $(WinUIDetailsIncludePath)\abi;

@@ -76,10 +76,10 @@
             $(InfraTestObjPath)\contract;
             $(NativeIncPath);
             $(AppAnalysisTestPath)\lib;
-            $(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis\runtime\common;
+            $(XcpPath)\dxaml\tools\AppAnalysis\runtime\common;
             $(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis\idl;
-            $(XamlSourcePath)\xcp\inc;
-            $(XamlSourcePath)\xcp\components\base\inc;
+            $(XcpPath)\inc;
+            $(XcpPath)\components\base\inc;
             $(WinUIDetailsIncludePath)\MockDComp;
         </ProjectIncludeDirectories>
     </PropertyGroup>
@@ -122,10 +122,10 @@
     <ItemGroup>
         <ProjectReference Include="$(InfraTestPath)\Win32Hosting\idl\Private.Infrastructure.Hosting.vcxproj" Project="{3fd1b03c-df81-4bc7-8204-c48d16026cfb}"/>
         <ProjectReference Include="$(InfraTestPath)\contract\contract.vcxproj" Project="{37d37a5d-e167-43fe-aeca-5063c2369807}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
+        <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
         <ProjectReference Include="$(TestPath)\appanalysis\lib\AppAnalysis.RuleTester.vcxproj" Project="{ec86ba0b-109c-4022-a575-c1ef0e5e64ee}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis\runtime\common\AppAnalysisRuntimeCommon.vcxproj" Project="{d4761272-8a6c-4015-a41a-aaff4bc1d728}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis\module\AppAnalysisModule.vcxproj" Project="{2c455d44-4972-459e-9a78-6b8c5cd19c36}"/>
+        <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\runtime\common\AppAnalysisRuntimeCommon.vcxproj" Project="{d4761272-8a6c-4015-a41a-aaff4bc1d728}"/>
+        <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\module\AppAnalysisModule.vcxproj" Project="{2c455d44-4972-459e-9a78-6b8c5cd19c36}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

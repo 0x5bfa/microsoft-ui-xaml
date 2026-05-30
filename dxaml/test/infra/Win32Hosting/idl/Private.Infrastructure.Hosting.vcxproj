@@ -15,7 +15,7 @@
     <PropertyGroup>
         <DisableMidlVersionChecks>1</DisableMidlVersionChecks>
         <ProjectIncludeDirectories>
-            $(ProjectRoot)\dxaml\xcp\inc;
+            $(XcpPath)\inc;
             $(LiftedIXPGeneratedIdlPath);
             $(LiftedMRTGeneratedIdlPath);
         </ProjectIncludeDirectories>

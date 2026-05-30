@@ -24,7 +24,7 @@
 
     <PropertyGroup>
         <TestCode>true</TestCode>
-        <AppAnalysisPath>$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis</AppAnalysisPath>
+        <AppAnalysisPath>$(XcpPath)\dxaml\tools\AppAnalysis</AppAnalysisPath>
         <AppAnalysisObjPath>$(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis</AppAnalysisObjPath>
         <AppAnalysisTestPath>$(XamlSourcePath)\test\appanalysis</AppAnalysisTestPath>
         <AppAnalysisTestObjPath>$(XamlBinaryPath)\test\appanalysis</AppAnalysisTestObjPath>
@@ -40,8 +40,8 @@
             $(AppAnalysisPath)\runtime\common\;
             $(AppAnalysisTestPath)\lib\;
             $(AppAnalysisTestPath)\ruleSet\;
-            $(XamlSourcePath)\xcp\components\base\inc;
-            $(XamlSourcePath)\xcp\inc;
+            $(XcpPath)\components\base\inc;
+            $(XcpPath)\inc;
             $(ExternalDependencies)
         </ProjectIncludeDirectories>
     </PropertyGroup>
