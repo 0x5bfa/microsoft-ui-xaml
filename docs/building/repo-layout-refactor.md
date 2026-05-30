@@ -516,6 +516,10 @@ including command aliases and the PowerShell profile loaded by `ps.bat`.
 Controls shared command wrappers now live under `controls/tools/Common`,
 including the NuGet and PowerShell wrappers used by controls tooling scripts.
 
+Controls custom MSBuild task sources and their test harness now live under
+`controls/tools/BuildTasks`, with the task NuGet packaging scripts kept under
+the moved `CustomTasks/NuSpecs` tree.
+
 Controls packaging helpers now live under `controls/tools/Packaging`,
 including the framework package AppX creation wrapper used after controls
 builds, package-generation restore config, local signing stub, and build-drop

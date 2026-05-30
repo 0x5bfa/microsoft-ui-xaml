@@ -7,8 +7,8 @@ _Assuming your repo is in D:\microsoft-ui-xaml-lift_
 Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. Edit these :
 
       1. src/controls/dll/packages.config
-      2. controls/tools/CustomTasks/NuSpecs/MUXCustomBuildTasks.nuspec
-      3. controls/tools/CustomTasks/Properties/AssemblyInfo.cs (2 places)
+      2. controls/tools/BuildTasks/CustomTasks/NuSpecs/MUXCustomBuildTasks.nuspec
+      3. controls/tools/BuildTasks/CustomTasks/Properties/AssemblyInfo.cs (2 places)
       4. eng/packages/packages.config
       and increment their build version from "1.0.80" to "1.0.81" for instance.
 
@@ -16,7 +16,7 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
   - Under `controls`, run `MSBuild.exe CustomTasks.sln /restore /p:Configuration=Release /p:Platform="Any CPU"`
   -  If you get build errors, open the CustomTasks.sln solution in Visual Studio and make sure the latest dependent nugets are installed.
 
-- Under `controls\tools\CustomTasks\NuSpecs`, run `BuildNupkg.cmd` which does this:
+- Under `controls\tools\BuildTasks\CustomTasks\NuSpecs`, run `BuildNupkg.cmd` which does this:
       nuget pack MUXCustomBuildTasks.nuspec -OutputDirectory .
 
 - >In most cases, you will want to test changes to MUXCustomBuildTasks locally before pushing.
@@ -24,11 +24,11 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
    This means you only need to actually publish the package when you are satisfied that everything is correct
    For actual publishing, follow this :
 
-   Under `controls\tools\CustomTasks\NuSpecs`, run `PublishNupkg.cmd`
+   Under `controls\tools\BuildTasks\CustomTasks\NuSpecs`, run `PublishNupkg.cmd`
       You should get this kind of result:
 
-      Candidate nuget package: D:\microsoft-ui-xaml-lift\controls\tools\CustomTasks\NuSpecs\MUXCustomBuildTasks.1.0.81-winui3.nupkg
-      nuget push D:\microsoft-ui-xaml-lift\controls\tools\CustomTasks\NuSpecs\MUXCustomBuildTasks.1.0.81-winui3.nupkg -Source WinUI.Dependencies -apikey AzureDevOps
+      Candidate nuget package: D:\microsoft-ui-xaml-lift\controls\tools\BuildTasks\CustomTasks\NuSpecs\MUXCustomBuildTasks.1.0.81-winui3.nupkg
+      nuget push D:\microsoft-ui-xaml-lift\controls\tools\BuildTasks\CustomTasks\NuSpecs\MUXCustomBuildTasks.1.0.81-winui3.nupkg -Source WinUI.Dependencies -apikey AzureDevOps
       Pushing MUXCustomBuildTasks.1.0.81-winui3.nupkg to 'https://microsoft.pkgs.visualstudio.com/_packaging/1103ce32-f206-4cab-b967-dcc556dacd13/nuget/v2/'...
             PUT https://microsoft.pkgs.visualstudio.com/_packaging/1103ce32-f206-4cab-b967-dcc556dacd13/nuget/v2/
       MSBuild auto-detection: using msbuild version '16.4.0.56107' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin'.
@@ -38,12 +38,12 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
       (DevOps Activity ID: CD1C8317-38A9-4A55-AC3B-1C3A4EE0F86B))., start from the first step and increment the version one more time, because there is no way
       to forcefully overwrite an existing published version.
 
-- Under `controls\tools\CustomTasks\NuSpecs`, run `UpdateReferences.cmd`
+- Under `controls\tools\BuildTasks\CustomTasks\NuSpecs`, run `UpdateReferences.cmd`
       If you get an error :
         ```
         Exception calling "ReadAllText" with "1" argument(s): "Could not find file
         'D:\microsoft-ui-xaml-lift\src\metadata\MergedWinMD\MergedWinMD.targets'."
-        At D:\microsoft-ui-xaml-lift\controls\tools\CustomTasks\NuSpecs\UpdateReferences.ps1:61 char:5
+        At D:\microsoft-ui-xaml-lift\controls\tools\BuildTasks\CustomTasks\NuSpecs\UpdateReferences.ps1:61 char:5
         +     $fileContents = [System.IO.File]::ReadAllText($filePath)
         +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException

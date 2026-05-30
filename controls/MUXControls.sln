@@ -42,7 +42,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5EF3865D
 		tools\Common\PowershellWrapper.cmd = tools\Common\PowershellWrapper.cmd
 		tools\Shell\ps.bat = tools\Shell\ps.bat
 		tools\Shell\PSProfile.ps1 = tools\Shell\PSProfile.ps1
-		tools\CustomTasks\NuSpecs\PublishNupkg.cmd = tools\CustomTasks\NuSpecs\PublishNupkg.cmd
+		tools\BuildTasks\CustomTasks\NuSpecs\PublishNupkg.cmd = tools\BuildTasks\CustomTasks\NuSpecs\PublishNupkg.cmd
 		tools\XamlProcessing\Utils.psm1 = tools\XamlProcessing\Utils.psm1
 	EndProjectSection
 EndProject
