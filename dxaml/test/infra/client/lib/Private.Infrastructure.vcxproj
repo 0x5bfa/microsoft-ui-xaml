@@ -21,7 +21,7 @@
             $(XcpPath)\inc;
             $(InfraTestPath)\..\resources\masters;
             $(XcpPath)\components\runtimeEnabledFeatures\inc;
-            $(InfraTestPath)\logging;
+            $(RuntimeInfraTestPath)\logging;
             $(LiftedIXPIncludePaths);
             $(WinUIDetailsIncludePath)\abi;
             $(WinUIDetailsIncludePath)\MockDComp;

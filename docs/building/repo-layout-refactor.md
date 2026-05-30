@@ -110,7 +110,11 @@ shim also lives there because it only binplaces the WinUIDetails MockDComp DLL
 for runtime tests. The RPC contract now lives there as the first shared native
 runtime infra dependency, with source and generated-output paths exposed through
 `$(RuntimeInfraTestPath)` and `$(RuntimeInfraTestObjPath)` for remaining legacy
-infra consumers.
+infra consumers. Shared native test path aliases are available from the root
+folder path props so moved runtime infra projects can still consume native test
+headers. The native logging helper moved with the contract, so client infra can
+include logging headers from the runtime infra source path while the client DLL
+references the moved logging project directly.
 
 ## Runtime managed tests
 

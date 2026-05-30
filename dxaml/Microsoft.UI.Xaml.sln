@@ -839,7 +839,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "contract", "..\tests\runtim
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Invoker", "..\tests\runtime\infra\invoker\Invoker.vcxproj", "{8090DADF-AEF8-436A-98E2-76B8337E9588}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Logging", "test\infra\logging\Private.Infrastructure.Logging.vcxproj", "{8ACE23AB-6B9F-4760-BDD3-FE1C3B7D51DF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Logging", "..\tests\runtime\infra\logging\Private.Infrastructure.Logging.vcxproj", "{8ACE23AB-6B9F-4760-BDD3-FE1C3B7D51DF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Server", "test\infra\server\Private.Infrastructure.Server.vcxproj", "{C59FC853-80DA-4B7E-BCDA-3EB94D1351DA}"
 EndProject
