@@ -95,9 +95,9 @@ with other manually invoked repo tools.
 
 ## Specs documentation
 
-Feature and API design specs now live under `docs/specs`. The move keeps specs
-with the rest of the repository documentation while preserving each spec's local
-image and support-file layout.
+Feature and API design specs now live under `docs/specs`. API review specs moved
+from `docs/api-specs` to `docs/specs/api` so all checked-in specs share one docs
+root while preserving each spec's local image and support-file layout.
 
 ## Migration rules
 
