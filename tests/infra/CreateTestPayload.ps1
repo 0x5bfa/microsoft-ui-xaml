@@ -254,7 +254,7 @@ if ($Mode -eq "ScenarioTestSuite")
         Publish-Item "$($galleryTestDir.FullName)\Dependencies\$redistPlatform\*.msix" "$outpath\Test\"
     }
 
-    Publish-Item "$repoRoot\Samples\TestAutomation\scripts\*" "$outpath"
+    Publish-Item "$repoRoot\tests\samples\scripts\*" "$outpath"
 }
 
 if ($Mode -eq "PGO")

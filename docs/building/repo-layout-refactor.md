@@ -66,6 +66,12 @@ supports. `AppTestAutomationHelpers` now lives under
 `controls/test/testinfra` next to `MUXTestInfra` instead of under `Samples`, so
 the sample-app tree stays focused on sample applications.
 
+## Sample test automation
+
+Sample test orchestration scripts now live under `tests/samples/scripts`. The
+test payload still publishes them to the payload root, but their source location
+now matches their role as test assets rather than sample applications.
+
 ## Generated controls sources
 
 Checked-in generated dependency-property sources for controls now live under
