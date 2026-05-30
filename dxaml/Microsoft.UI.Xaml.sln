@@ -1157,7 +1157,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Stubs", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ValueBoxer", "xcp\components\valueboxer\lib\Microsoft.UI.Xaml.ValueBoxer.vcxproj", "{BBDD985F-5AB4-40F4-8EB9-18AB4A76169A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer", "xcp\components\valueboxer\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer.vcxproj", "{0BC11D27-A210-429D-AFEC-41101DE977A4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer", "..\tests\runtime\native\isolated\framework\valueboxer\Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer.vcxproj", "{0BC11D27-A210-429D-AFEC-41101DE977A4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.VisualStatesHelper", "xcp\components\visualstateshelper\lib\Microsoft.UI.Xaml.VisualStatesHelper.vcxproj", "{ED49C070-4A08-47C9-9B7F-3106ACEE9FD1}"
 EndProject
