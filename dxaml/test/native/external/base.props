@@ -40,7 +40,7 @@
             $(NativeExternalTestPath)\pch;
             $(NativeExternalTestPath)\inc;
             $(RuntimeInfraTestPath)\inc;
-            $(InfraTestPath)\client\inc;
+            $(RuntimeInfraTestPath)\client\inc;
             $(NativeExternalTestPath)\Automation;
             $(RuntimeInfraTestPath)\server\inc;
             $(WinUIDetailsIncludePath)\abi;

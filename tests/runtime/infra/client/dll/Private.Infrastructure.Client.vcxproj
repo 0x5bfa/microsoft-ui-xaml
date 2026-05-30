@@ -8,14 +8,14 @@
         <ProjectGuid>{7e2bc80e-cf9b-4567-8e3e-d0f81b4782fd}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XamlSourcePath)\test\common.props"/>
 
     <PropertyGroup>
         <TargetDestination>$(TestBinplaceDestinationPath)</TargetDestination>
     </PropertyGroup>
 
-    <Import Project="$(InfraTestPath)\client\base.props"/>
+    <Import Project="$(RuntimeInfraTestPath)\client\base.props"/>
 
     <PropertyGroup>
         <XamlPrecompiledShared>..\pch\precomp.h</XamlPrecompiledShared>
@@ -52,13 +52,13 @@
     <ItemGroup>
         <ProjectReference Include="$(RuntimeInfraTestPath)\Win32Hosting\idl\Private.Infrastructure.Hosting.vcxproj" Project="{3fd1b03c-df81-4bc7-8204-c48d16026cfb}"/>
         <ProjectReference Include="$(RuntimeInfraTestPath)\contract\contract.vcxproj" Project="{37d37a5d-e167-43fe-aeca-5063c2369807}"/>
-        <ProjectReference Include="$(InfraTestPath)\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
+        <ProjectReference Include="$(RuntimeInfraTestPath)\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
         <ProjectReference Include="$(XcpPhonePath)\idl\phone.vcxproj" Project="{84d22d7d-5fd0-4ccf-b8d2-c34506c6ba66}"/>
         <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
         <ProjectReference Include="..\pch\Private.Infrastructure.Client.Precomp.vcxproj" Project="{158251a1-4336-4495-8629-02fe45d473c0}"/>
-        <ProjectReference Include="$(InfraTestPath)\client\lib\Private.Infrastructure.vcxproj" Project="{08e4b92d-c2b8-49b0-98e9-bea89d48dc59}"/>
+        <ProjectReference Include="$(RuntimeInfraTestPath)\client\lib\Private.Infrastructure.vcxproj" Project="{08e4b92d-c2b8-49b0-98e9-bea89d48dc59}"/>
         <ProjectReference Include="$(RuntimeInfraTestPath)\logging\Private.Infrastructure.Logging.vcxproj" Project="{8ace23ab-6b9f-4760-bdd3-fe1c3b7d51df}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>

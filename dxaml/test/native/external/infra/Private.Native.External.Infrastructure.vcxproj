@@ -35,7 +35,7 @@
         <ClCompile Include="ClipboardHelper.cpp"/>
         <ClCompile Include="_Event.cpp"/>
 
-        <ProjectReference Include="$(InfraTestPath)\client\idl\Private.Infrastructure.vcxproj" ReferenceOutputAssembly="false"/>
+        <ProjectReference Include="$(RuntimeInfraTestPath)\client\idl\Private.Infrastructure.vcxproj" ReferenceOutputAssembly="false"/>
         <ProjectReference Include="$(RuntimeInfraTestPath)\Win32Hosting\WPF\HostingHelpers\Private.Infrastructure.Hosting.HostingHelpers.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
     </ItemGroup>
     

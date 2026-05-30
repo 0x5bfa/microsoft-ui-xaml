@@ -111,7 +111,7 @@
     <ProjectReference Include="$(XcpPath)\dxaml\dllsrv\winrt\res\common\Microsoft.ui.xaml.resources.common.vcxproj" Project="{15c55795-cd51-415e-aa93-dfb42b6565e1}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
     <ProjectReference Include="$(XcpPath)\dxaml\dllsrv\exts\phone\Microsoft.UI.Xaml.Phone.vcxproj" Project="{be2d8fe3-d933-404e-bfe4-88435d96d8e4}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
     <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\dll\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{2443059a-fad7-4812-b0e6-243e33f11a01}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
-    <ProjectReference Include="$(InfraTestPath)\client\dll\Private.Infrastructure.Client.vcxproj" Project="{7e2bc80e-cf9b-4567-8e3e-d0f81b4782fd}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="$(RuntimeInfraTestPath)\client\dll\Private.Infrastructure.Client.vcxproj" Project="{7e2bc80e-cf9b-4567-8e3e-d0f81b4782fd}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
     <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}" />
     <ProjectReference Include="$(ProjectRoot)\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj" />
   </ItemGroup>
@@ -156,7 +156,7 @@
     <None Include="$(XamlBuildOutputRoot)\src\controls\dll\Microsoft.UI.Xaml.Controls.dll">
       <Link>%(Filename)%(Extension)</Link>
     </None>
-    <None Include="$(XamlBinaryPath)\test\infra\client\dll\Private.Infrastructure.Client.dll">
+    <None Include="$(RuntimeInfraTestObjPath)\client\dll\Private.Infrastructure.Client.dll">
       <Link>%(Filename)%(Extension)</Link>
     </None>
     <None Include="$(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis\dll\Microsoft.Diagnostics.AppAnalysis.dll">

@@ -26,7 +26,7 @@
 
   <ItemGroup Condition="'$(Platform)'!='ARM64'" >
     <ProjectReference Include="..\netcore\Private.Infrastructure.Hosting.WPF.csproj" />
-    <ProjectReference Include="$(InfraTestPath)\client\cswinrt\Private.Infrastructure.CsWinRT.csproj" />
+    <ProjectReference Include="$(RuntimeInfraTestPath)\client\cswinrt\Private.Infrastructure.CsWinRT.csproj" />
   </ItemGroup>
 
   <!--Temporary workaround to address https://github.com/microsoft/CsWinRT/issues/1156 -->

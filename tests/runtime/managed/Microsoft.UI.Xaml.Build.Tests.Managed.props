@@ -26,7 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="$(ProjectRoot)\src\projection\private\Microsoft.WinUI.csproj" />
-    <ProjectReference Include="$(InfraTestPath)\client\cswinrt\Private.Infrastructure.CsWinRT.csproj" Private="False" />
+    <ProjectReference Include="$(RuntimeInfraTestPath)\client\cswinrt\Private.Infrastructure.CsWinRT.csproj" Private="False" />
     <ProjectReference Include="$(RuntimeManagedTestPath)\common\Microsoft.UI.Xaml.Tests.Managed.Common.csproj" Private="False" />
   </ItemGroup>
 </Project>

@@ -843,13 +843,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Logg
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Server", "..\tests\runtime\infra\server\Private.Infrastructure.Server.vcxproj", "{C59FC853-80DA-4B7E-BCDA-3EB94D1351DA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Client", "test\infra\client\dll\Private.Infrastructure.Client.vcxproj", "{7E2BC80E-CF9B-4567-8E3E-D0F81B4782FD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Client", "..\tests\runtime\infra\client\dll\Private.Infrastructure.Client.vcxproj", "{7E2BC80E-CF9B-4567-8E3E-D0F81B4782FD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure", "test\infra\client\idl\Private.Infrastructure.vcxproj", "{E076FA9C-3B19-431A-A566-3E771F962428}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure", "..\tests\runtime\infra\client\idl\Private.Infrastructure.vcxproj", "{E076FA9C-3B19-431A-A566-3E771F962428}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure", "test\infra\client\lib\Private.Infrastructure.vcxproj", "{08E4B92D-C2B8-49B0-98E9-BEA89D48DC59}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure", "..\tests\runtime\infra\client\lib\Private.Infrastructure.vcxproj", "{08E4B92D-C2B8-49B0-98E9-BEA89D48DC59}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Client.Precomp", "test\infra\client\pch\Private.Infrastructure.Client.Precomp.vcxproj", "{158251A1-4336-4495-8629-02FE45D473C0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Client.Precomp", "..\tests\runtime\infra\client\pch\Private.Infrastructure.Client.Precomp.vcxproj", "{158251A1-4336-4495-8629-02FE45D473C0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Hosting", "..\tests\runtime\infra\Win32Hosting\idl\Private.Infrastructure.Hosting.vcxproj", "{3FD1B03C-DF81-4BC7-8204-C48D16026CFB}"
 EndProject
@@ -1325,7 +1325,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaefHostAppManaged", "..\te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taefhostappnetcore", "..\tests\runtime\infra\taefhostappnetcore\taefhostappnetcore.csproj", "{48B40639-3C58-45F2-83FB-722886E5A79E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Private.Infrastructure.CsWinRT", "test\infra\client\cswinrt\Private.Infrastructure.CsWinRT.csproj", "{E83EA6A9-BAFA-4B68-8B6A-D59440513504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Private.Infrastructure.CsWinRT", "..\tests\runtime\infra\client\cswinrt\Private.Infrastructure.CsWinRT.csproj", "{E83EA6A9-BAFA-4B68-8B6A-D59440513504}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Adaptability", "test\native\external\adaptability\Microsoft.UI.Xaml.Tests.External.Adaptability.vcxproj", "{F0F6B6FE-3EE4-4EE3-8AAE-2FDAC0194ABD}"
 EndProject

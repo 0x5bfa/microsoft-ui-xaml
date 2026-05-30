@@ -31,23 +31,23 @@
         <TestCode>true</TestCode>
 
         <ProjectIncludeDirectories>
-            $(InfraTestPath)\client\pch;
-            $(InfraTestPath)\client\inc;
+            $(RuntimeInfraTestPath)\client\pch;
+            $(RuntimeInfraTestPath)\client\inc;
             $(RuntimeInfraTestPath)\inc;
-            $(InfraTestObjPath)\client\idl;
+            $(RuntimeInfraTestObjPath)\client\idl;
             $(PrivateInfrastructureWin32HostingObjPath)\idl;
             $(WinUIDetailsIncludePath)\abi;
             $(WinUIDetailsIncludePath)\MockDComp;
             $(RuntimeInfraTestObjPath)\contract;
             $(NativeIncPath);
             $(InternalTestPath)\inc;
-            $(InfraTestObjPath)\client\idl;
+            $(RuntimeInfraTestObjPath)\client\idl;
             $(XamlBinaryPath)\phone\idl;
             $(XcpPath)\inc;
             $(XcpPath)\components\base\inc;
             $(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis\idl;
             $(XcpPath)\inc;
-            $(InfraTestPath)\..\resources\masters;
+            $(TestPath)\resources\masters;
             $(XcpPath)\components\runtimeEnabledFeatures\inc;
             $(RuntimeInfraTestPath)\logging;
             $(LiftedIXPIncludePaths);
@@ -57,7 +57,7 @@
     <ItemGroup>
         <ProjectReference Condition="'$(ProjectGuid)'!='{3fd1b03c-df81-4bc7-8204-c48d16026cfb}'" Include="$(RuntimeInfraTestPath)\Win32Hosting\idl\Private.Infrastructure.Hosting.vcxproj" Project="{3fd1b03c-df81-4bc7-8204-c48d16026cfb}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{37d37a5d-e167-43fe-aeca-5063c2369807}'" Include="$(RuntimeInfraTestPath)\contract\contract.vcxproj" Project="{37d37a5d-e167-43fe-aeca-5063c2369807}"/>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{e076fa9c-3b19-431a-a566-3e771f962428}'" Include="$(InfraTestPath)\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{e076fa9c-3b19-431a-a566-3e771f962428}'" Include="$(RuntimeInfraTestPath)\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{84d22d7d-5fd0-4ccf-b8d2-c34506c6ba66}'" Include="$(XcpPhonePath)\idl\phone.vcxproj" Project="{84d22d7d-5fd0-4ccf-b8d2-c34506c6ba66}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{e1f36d19-f82d-474a-be26-fea52da5b6e6}'" Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
     </ItemGroup>

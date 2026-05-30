@@ -14,7 +14,7 @@
 
     <ItemGroup>
         <Compile Include="PGOXboxDashboardTests.cs"/>
-        <ProjectReference Include="$(InfraTestPath)\client\idl\Private.Infrastructure.vcxproj" />
+        <ProjectReference Include="$(RuntimeInfraTestPath)\client\idl\Private.Infrastructure.vcxproj" />
         <Reference Include="$(PrivateInfrastructureMergedWinMdPath)\Private.Infrastructure.winmd" />
         <Reference Include="@(CommonTestsReferences)" />
     </ItemGroup>

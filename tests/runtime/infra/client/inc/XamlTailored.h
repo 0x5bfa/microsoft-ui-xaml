@@ -2,7 +2,7 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 // Adapted for the public SDK from TAEF's Tailored.h
-// Note: There are two of these things. One in test\native\external\inc and one in test\infra\client\inc. And they have
+// Note: There are two of these things. One in test\native\external\inc and one in tests\runtime\infra\client\inc. And they have
 // different RunOnUIThread implementations.
 
 #pragma once
@@ -83,9 +83,9 @@ namespace Microsoft { namespace UI { namespace Xaml { namespace Tests {
 
         // Need to keep a version of this function that uses Windows.System.DispatcherQueue.
         // It is still needed in three places where the test infra is trying to retrieve the DispatcherQueue with only access to CoreWindow and running not on the required thread:
-        // dxaml\test\infra\client\lib\HostingDispatcher.cpp
-        // dxaml\test\infra\client\lib\TestServices.cpp
-        // dxaml\test\infra\client\lib\WindowHelper.cpp
+        // tests\runtime\infra\client\lib\HostingDispatcher.cpp
+        // tests\runtime\infra\client\lib\TestServices.cpp
+        // tests\runtime\infra\client\lib\WindowHelper.cpp
         // ...do we really? UWPs aren't supported anymore.
         template <typename TFunction>
         void RunOnDispatcherThread(

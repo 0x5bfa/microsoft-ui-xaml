@@ -52,7 +52,7 @@
         <ProjectReference Include="$(XcpPath)\components\metadata\lib\Microsoft.UI.Xaml.Metadata.vcxproj" Project="{23637f36-0cb9-4142-a60c-888b0efe9a4c}"/>
         <ProjectReference Include="$(XcpPath)\components\metadata\dynamicmetadatastorage\Microsoft.UI.Xaml.DynamicMetadataStorage.vcxproj" Project="{91cdc786-7b41-4339-b3dc-5854c6f04d4f}"/>
         <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
-        <ProjectReference Include="$(XamlSourcePath)\test\infra\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
+        <ProjectReference Include="$(RuntimeInfraTestPath)\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
