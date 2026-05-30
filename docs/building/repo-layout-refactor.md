@@ -471,7 +471,7 @@ old `controls/dev` path segment.
 Controls-specific build support files are moving under `controls/build` in
 small pieces. The shared MIDL props and targets live there first, with IDL and
 controls DLL projects importing them through `$(MUXCProjectRoot)build`. Native
-C++/WinRT and CRT settings live there too.
+C++/WinRT, CRT, and shared project-configuration settings live there too.
 
 ## Metadata composition
 
