@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -15,9 +15,9 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\SwipeControl.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\SwipeItem.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\SwipeItems.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)SwipeControl.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)SwipeItem.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)SwipeItems.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SwipeControl.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SwipeControlInteractionTrackerOwner.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SwipeItems.cpp" />

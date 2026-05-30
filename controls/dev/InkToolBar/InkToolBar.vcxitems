@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -20,25 +20,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBar.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarAutomationPeer.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarBallpointPenButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarCustomPen.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarCustomPenButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarCustomToggleButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarCustomToolButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarEraserButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarFlyoutItem.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarFlyoutItemAutomationPeer.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarHighlighterButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarMenuButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarMenuButtonAutomationPeer.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarPenButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarToolButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarToolButtonAutomationPeer.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarPencilButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarPenConfigurationControl.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkToolBarStencilButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBar.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarAutomationPeer.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarBallpointPenButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarCustomPen.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarCustomPenButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarCustomToggleButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarCustomToolButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarEraserButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarFlyoutItem.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarFlyoutItemAutomationPeer.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarHighlighterButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarMenuButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarMenuButtonAutomationPeer.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarPenButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarToolButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarToolButtonAutomationPeer.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarPencilButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarPenConfigurationControl.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkToolBarStencilButton.properties.cpp" />
 
     <ClCompile Condition="false" Include="$(MSBuildThisFileDirectory)InkToolBarAutomationPeer.cpp" />
   </ItemGroup>

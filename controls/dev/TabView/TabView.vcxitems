@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -24,9 +24,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)TabViewTrace.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\TabView.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\TabViewItem.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\TabViewItemTemplateSettings.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)TabView.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)TabViewItem.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)TabViewItemTemplateSettings.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TabView.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TabViewItem.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TabViewAutomationPeer.cpp" />

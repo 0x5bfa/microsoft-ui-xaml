@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -15,9 +15,9 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\RatingControl.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\RatingItemFontInfo.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\RatingItemImageInfo.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)RatingControl.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)RatingItemFontInfo.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)RatingItemImageInfo.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)RatingItemFontInfo.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)RatingItemImageInfo.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)RatingItemInfo.cpp" />

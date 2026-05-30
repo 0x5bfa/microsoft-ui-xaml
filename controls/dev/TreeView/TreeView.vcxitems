@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -32,10 +32,10 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)ViewModel.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\TreeView.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\TreeViewItem.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\TreeViewItemTemplateSettings.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\TreeViewNode.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)TreeView.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)TreeViewItem.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)TreeViewItemTemplateSettings.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)TreeViewNode.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TreeViewCollapsedEventArgs.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TreeViewDragItemsCompletedEventArgs.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TreeViewDragItemsStartingEventArgs.cpp" />

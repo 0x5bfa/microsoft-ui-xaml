@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -23,7 +23,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)ScrollInputHelper.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\ParallaxView.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)ParallaxView.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ParallaxView.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ScrollInputHelper.cpp" />
   </ItemGroup>

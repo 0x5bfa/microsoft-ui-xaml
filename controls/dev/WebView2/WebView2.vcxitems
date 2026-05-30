@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -20,8 +20,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)WebView2Utility.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\WebView2.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\WebView2AutomationPeer.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)WebView2.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)WebView2AutomationPeer.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)WebView2.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)WebView2AutomationPeer.cpp" />
   </ItemGroup>

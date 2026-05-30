@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -21,8 +21,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)PagerControlTemplateSettings.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\PagerControl.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\PagerControlTemplateSettings.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)PagerControl.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)PagerControlTemplateSettings.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)PagerControl.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)PagerControlAutomationPeer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)PagerControlTemplateSettings.cpp" />

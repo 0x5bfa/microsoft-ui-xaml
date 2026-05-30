@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -15,15 +15,15 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\Generated\Expander.properties.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\Generated\ExpanderTemplateSettings.properties.h" />
+    <ClInclude Include="$(MUXControlsGeneratedSourceDir)Expander.properties.h" />
+    <ClInclude Include="$(MUXControlsGeneratedSourceDir)ExpanderTemplateSettings.properties.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Expander.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ExpanderAutomationPeer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ExpanderTemplateSettings.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\Expander.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\ExpanderTemplateSettings.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)Expander.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)ExpanderTemplateSettings.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Expander.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ExpanderAutomationPeer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ExpanderTemplateSettings.cpp" />

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -24,8 +24,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)SelectorBarTestHooksFactory.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\SelectorBar.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\SelectorBarItem.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)SelectorBar.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)SelectorBarItem.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SelectorBar.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SelectorBarItem.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SelectorBarItemAutomationPeer.cpp" />

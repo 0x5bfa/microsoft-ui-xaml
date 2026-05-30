@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -23,8 +23,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)ToggleSplitButtonAutomationPeer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\SplitButton.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\ToggleSplitButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)SplitButton.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)ToggleSplitButton.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SplitButton.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SplitButtonAutomationPeer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SplitButtonTestApi.cpp" />

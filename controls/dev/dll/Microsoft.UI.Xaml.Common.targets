@@ -15,7 +15,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\..\Generated;$(MSBuildProjectDirectory)\..\GeneratedExperimental;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MUXControlsGeneratedSourceDir);$(MSBuildProjectDirectory)\..\GeneratedExperimental;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsWinRT>false</CompileAsWinRT>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -57,7 +57,7 @@
         %(AdditionalIncludeDirectories);
         $(WindowsSDK_IncludePath)\winrt;
         $(MSBuildProjectDirectory)\..\inc;
-        $(MSBuildProjectDirectory)\..\Generated;
+        $(MUXControlsGeneratedSourceDir);
         $(OutDir);
       </AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories>
@@ -160,7 +160,7 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SharedHelpers.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\XamlControlsResources.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)XamlControlsResources.properties.cpp" />
     <ClCompile Include="XamlControlsResources.cpp" />
     <ClCompile Include="XamlMember.cpp" />
     <ClCompile Include="XamlMetadataProvider.cpp" />
@@ -232,7 +232,7 @@
       <Value>$(StrippedMetadataWinmdPath)</Value>
     </T4ParameterValues>
     <T4ParameterValues Include="PropertiesHeadersDirectory">
-      <Value>$(MUXCProjectRoot)dev\Generated</Value>
+      <Value>$(MUXControlsGeneratedSourceDir)</Value>
     </T4ParameterValues>
   </ItemGroup>
   <ItemGroup>
@@ -571,12 +571,12 @@
     </ItemGroup>
   </Target>
   <Target Name="GetExistingGeneratedFilesForDependencyPropertyCodeGen" BeforeTargets="RunDependencyPropertyCodeGen">
-    <CreateItem Include="$(MSBuildProjectDirectory)\..\Generated\*">
+    <CreateItem Include="$(MUXControlsGeneratedSourceDir)*">
       <Output TaskParameter="Include" ItemName="DependencyPropertyCodeGenOutputs" />
     </CreateItem>
   </Target>
-  <Target Name="RunDependencyPropertyCodeGen" AfterTargets="CppWinRTMakeComponentProjection" BeforeTargets="ClCompile" Inputs="$(UnstrippedMetadataWinmdPath);@(ReferenceWinMDs)" Outputs="@(DependencyPropertyCodeGenOutputs);$(MSBuildProjectDirectory)\..\Generated\AcrylicBrush.properties.cpp">
-    <DependencyPropertyCodeGen WinMDInput="$(UnstrippedMetadataWinmdPath)" References="@(_MidlReferencesDistinct);@(ReferenceWinMDs)" OutputDirectory="$(MSBuildProjectDirectory)\..\Generated">
+  <Target Name="RunDependencyPropertyCodeGen" AfterTargets="CppWinRTMakeComponentProjection" BeforeTargets="ClCompile" Inputs="$(UnstrippedMetadataWinmdPath);@(ReferenceWinMDs)" Outputs="@(DependencyPropertyCodeGenOutputs);$(MUXControlsGeneratedSourceDir)AcrylicBrush.properties.cpp">
+    <DependencyPropertyCodeGen WinMDInput="$(UnstrippedMetadataWinmdPath)" References="@(_MidlReferencesDistinct);@(ReferenceWinMDs)" OutputDirectory="$(MUXControlsGeneratedSourceDir)">
       <Output TaskParameter="MSBuildProcessId" ItemName="MSBuildProcessIdsToKill" />
     </DependencyPropertyCodeGen>
     <Touch Files="@(DependencyPropertyCodeGenOutputs)" />
