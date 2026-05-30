@@ -73,7 +73,7 @@
             $(InfraTestPath)\server\inc;
             $(InfraTestObjPath)\Win32Hosting\idl;
             $(InfraTestPath)\inc;
-            $(InfraTestObjPath)\contract;
+            $(RuntimeInfraTestObjPath)\contract;
             $(NativeIncPath);
             $(AppAnalysisTestPath)\lib;
             $(XcpPath)\dxaml\tools\AppAnalysis\runtime\common;
@@ -121,7 +121,7 @@
 
     <ItemGroup>
         <ProjectReference Include="$(InfraTestPath)\Win32Hosting\idl\Private.Infrastructure.Hosting.vcxproj" Project="{3fd1b03c-df81-4bc7-8204-c48d16026cfb}"/>
-        <ProjectReference Include="$(InfraTestPath)\contract\contract.vcxproj" Project="{37d37a5d-e167-43fe-aeca-5063c2369807}"/>
+        <ProjectReference Include="$(RuntimeInfraTestPath)\contract\contract.vcxproj" Project="{37d37a5d-e167-43fe-aeca-5063c2369807}"/>
         <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
         <ProjectReference Include="$(AppAnalysisTestPath)\lib\AppAnalysis.RuleTester.vcxproj" Project="{ec86ba0b-109c-4022-a575-c1ef0e5e64ee}"/>
         <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\runtime\common\AppAnalysisRuntimeCommon.vcxproj" Project="{d4761272-8a6c-4015-a41a-aaff4bc1d728}"/>

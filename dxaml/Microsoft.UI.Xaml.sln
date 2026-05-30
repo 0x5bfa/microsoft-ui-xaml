@@ -835,7 +835,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.RuleTester", ".
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.Test.TestRuleSet", "..\tests\runtime\appanalysis\ruleSet\AppAnalysis.Test.TestRuleSet.vcxproj", "{BABA674D-F661-46C7-900F-7314AA39301A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "contract", "test\infra\contract\contract.vcxproj", "{37D37A5D-E167-43FE-AECA-5063C2369807}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "contract", "..\tests\runtime\infra\contract\contract.vcxproj", "{37D37A5D-E167-43FE-AECA-5063C2369807}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Invoker", "..\tests\runtime\infra\invoker\Invoker.vcxproj", "{8090DADF-AEF8-436A-98E2-76B8337E9588}"
 EndProject
