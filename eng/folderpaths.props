@@ -27,6 +27,10 @@
     <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>
     <TestPath>$(XamlSourcePath)\test</TestPath>
     <InfraTestPath>$(TestPath)\infra</InfraTestPath>
+    <NativeIsolatedTestPath>$(TestPath)\native\isolated</NativeIsolatedTestPath>
+    <NativeExternalTestPath>$(TestPath)\native\external</NativeExternalTestPath>
+    <InternalTestPath>$(TestPath)\native\internal</InternalTestPath>
+    <NativeIncPath>$(TestPath)\native\inc</NativeIncPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
     <RuntimeInfraTestPath>$(RuntimeTestPath)\infra</RuntimeInfraTestPath>
     <RuntimeManagedTestPath>$(RuntimeTestPath)\managed</RuntimeManagedTestPath>

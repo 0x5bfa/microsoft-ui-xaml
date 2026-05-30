@@ -57,7 +57,7 @@
         <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
         <ProjectReference Include="..\pch\Private.Infrastructure.Client.Precomp.vcxproj" Project="{158251a1-4336-4495-8629-02fe45d473c0}"/>
         <ProjectReference Include="$(InfraTestPath)\client\lib\Private.Infrastructure.vcxproj" Project="{08e4b92d-c2b8-49b0-98e9-bea89d48dc59}"/>
-        <ProjectReference Include="$(InfraTestPath)\logging\Private.Infrastructure.Logging.vcxproj" Project="{8ace23ab-6b9f-4760-bdd3-fe1c3b7d51df}"/>
+        <ProjectReference Include="$(RuntimeInfraTestPath)\logging\Private.Infrastructure.Logging.vcxproj" Project="{8ace23ab-6b9f-4760-bdd3-fe1c3b7d51df}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
