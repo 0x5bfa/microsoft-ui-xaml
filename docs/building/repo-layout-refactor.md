@@ -80,6 +80,12 @@ AppAnalysis test support projects now live under `tests/runtime/appanalysis`.
 `$(RuntimeTestPath)` and `$(AppAnalysisTestPath)` provide shared references for
 runtime projects and AppAnalysis unit tests that consume those support projects.
 
+## Runtime ad hoc test apps
+
+Runtime ad hoc test applications now live under `tests/runtime/adhoc`. These
+apps are test harnesses that consume built WinUI binaries, so keeping them with
+runtime tests separates them from the runtime source tree.
+
 ## Controls test infrastructure
 
 Controls test infrastructure should live with the controls test projects it

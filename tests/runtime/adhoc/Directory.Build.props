@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (c) Microsoft Corporation. Licensed under the MIT License. -->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" /> 
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\dxaml\test\Directory.Build.props" />
     <Import Project="$(ConsumeBinariesProps)"/>
     <PropertyGroup>
         <IlcTargetPlatformSdkLibPath Condition="'$(Platform)'=='x86'">$(winsdk_cpp_x86_root)\um</IlcTargetPlatformSdkLibPath>
