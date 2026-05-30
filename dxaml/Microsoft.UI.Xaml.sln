@@ -1035,7 +1035,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.GraphicsUtility", "xcp\components\graphics\lib\Microsoft.UI.Xaml.GraphicsUtility.vcxproj", "{8B386F16-9CF2-44E0-82EC-5C5129593A3C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Graphics", "xcp\components\graphics\unittests\Microsoft.UI.Xaml.Tests.Isolated.Graphics.vcxproj", "{AC75A83E-1221-430E-8C9B-684A040EC84D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Graphics", "..\tests\runtime\native\isolated\foundation\graphics\Microsoft.UI.Xaml.Tests.Isolated.Graphics.vcxproj", "{AC75A83E-1221-430E-8C9B-684A040EC84D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Media.Imaging", "xcp\components\imaging\lib\Microsoft.UI.Xaml.Media.Imaging.vcxproj", "{CD13A3EF-0FED-4512-8B12-F1B6C96F65AB}"
 EndProject
