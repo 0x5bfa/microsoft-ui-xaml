@@ -1329,7 +1329,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Private.Infrastructure.CsWi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Adaptability", "..\tests\runtime\native\external\adaptability\Microsoft.UI.Xaml.Tests.External.Adaptability.vcxproj", "{F0F6B6FE-3EE4-4EE3-8AAE-2FDAC0194ABD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Automation", "test\native\external\Automation\Microsoft.UI.Xaml.Tests.External.Automation.vcxproj", "{760F8B1C-525B-49A4-A702-64A2B8AA863A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Automation", "..\tests\runtime\native\external\Automation\Microsoft.UI.Xaml.Tests.External.Automation.vcxproj", "{760F8B1C-525B-49A4-A702-64A2B8AA863A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Controls", "test\native\external\controls\Microsoft.UI.Xaml.Tests.External.Controls.vcxproj", "{2CF2069D-1E16-47B0-BC6B-7E0CFDABAB28}"
 EndProject

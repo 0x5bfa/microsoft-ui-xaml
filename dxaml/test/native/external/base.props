@@ -41,7 +41,7 @@
             $(RuntimeNativeExternalTestPath)\inc;
             $(RuntimeInfraTestPath)\inc;
             $(RuntimeInfraTestPath)\client\inc;
-            $(NativeExternalTestPath)\Automation;
+            $(RuntimeNativeExternalTestPath)\Automation;
             $(RuntimeInfraTestPath)\server\inc;
             $(WinUIDetailsIncludePath)\abi;
             $(WinUIDetailsIncludePath)\MockDComp;

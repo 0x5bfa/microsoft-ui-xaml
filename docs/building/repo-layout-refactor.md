@@ -244,6 +244,8 @@ native external test layout.
 The enterprise external test DLL moved there next, and remaining external tests
 that consume its shared helper headers now reference them through
 `$(RuntimeNativeExternalTestPath)`.
+The Automation external test DLL moved there too; shared automation client
+headers are now exposed from the runtime native external test root.
 
 ## Controls source
 
