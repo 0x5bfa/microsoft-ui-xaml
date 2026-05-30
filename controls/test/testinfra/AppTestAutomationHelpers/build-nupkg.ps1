@@ -1,11 +1,11 @@
 [CmdLetBinding()]
 Param(
-    [string]$BuildBinDir =  $(Resolve-Path "$PSScriptRoot\..\..\BuildOutput\bin"),
-    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\PackageStore"),
+    [string]$BuildBinDir =  $(Resolve-Path "$PSScriptRoot\..\..\..\..\BuildOutput\bin"),
+    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..\PackageStore"),
     [string]$VersionOverride
 )
 
-$RootDir = $(Resolve-Path "$PSScriptRoot\..\..")
+$RootDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..")
 
 $scriptDirectory = $script:MyInvocation.MyCommand.Path | Split-Path -Parent
 

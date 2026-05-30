@@ -87,8 +87,8 @@ Anything under these directories is **test** scope:
 - `controls/test/TabViewTearOutApp/`
 - `controls/test/TestAppCX/`
 - `controls/test/IXMPTestApp/`
-- `controls/test/MUXTestInfra/` *(if present)*
-- `Samples/AppTestAutomationHelpers/`
+- `controls/test/testinfra/MUXTestInfra/`
+- `controls/test/testinfra/AppTestAutomationHelpers/`
 
 ## Common workflows
 

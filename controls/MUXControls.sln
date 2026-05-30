@@ -502,7 +502,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollView_TestUI", "..\src
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScrollView", "..\src\controls\ScrollView\ScrollView.vcxitems", "{755F5DA9-087C-55A0-98D2-B884881C3ED0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppTestAutomationHelpers", "..\Samples\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj", "{4A1CB0BC-5A0F-488D-AD8F-FA3642D18DB8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppTestAutomationHelpers", "test\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj", "{4A1CB0BC-5A0F-488D-AD8F-FA3642D18DB8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "private", "private", "{0556D6C1-B02F-415A-BC2F-27A8C398F6AF}"
 EndProject

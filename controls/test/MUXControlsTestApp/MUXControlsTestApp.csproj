@@ -178,7 +178,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="$(XamlBuildOutputRoot)Samples\AppTestAutomationHelpers\AppTestAutomationHelpers.dll" />
+    <Content Include="$(XamlBuildOutputRoot)controls\test\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.dll" />
   </ItemGroup>
 
   <Import Project="$(MUXCProjectRoot)CustomInlineTasks.targets" />
