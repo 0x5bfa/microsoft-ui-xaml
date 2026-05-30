@@ -128,7 +128,7 @@ DirectUI code:
 
 Test code:
 - tests/runtime/managed/enterprise/ScrollViewer
-- dxaml/test/managed/controls/flipview  combobox  textbox  richeditbox
+- tests/runtime/managed/controls/flipview  combobox  textbox  richeditbox
 - dxaml/test/native/external/controls/scrollviewer  flipview  semanticzoom  textbox  richeditbox  contentdialog  combobox  listbox  hub  pivot  
 - dxaml/test/native/external/foundation/input/DManip
 - dxaml/test/native/external/enterprise/CalendarView  GridView  ListView  SemanticZoom  StickyHeaders
