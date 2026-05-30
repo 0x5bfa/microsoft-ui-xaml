@@ -297,6 +297,9 @@ property wrappers with the runtime test project.
 The Math isolated test moved under
 `tests/runtime/native/isolated/foundation/math`, starting the foundation
 isolated test migration with a small self-contained project.
+The Threading isolated test moved under
+`tests/runtime/native/isolated/foundation/threading`, keeping the foundation
+isolated test projects grouped with runtime tests.
 
 ## Controls source
 
