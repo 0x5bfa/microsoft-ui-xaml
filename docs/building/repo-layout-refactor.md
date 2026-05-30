@@ -78,6 +78,13 @@ now matches their role as test assets rather than sample applications.
 part of repository initialization rather than package construction, leaving the
 `build` folder focused on packaging inputs and build-time transforms.
 
+## Packaging inputs
+
+NuGet package specs and package NOTICE content now live under
+`packaging/nuspecs`, alongside the rest of the package build inputs. The
+top-level package command still invokes the same helper script, but its source
+location now reflects that it packs WinUI packaging output.
+
 ## Generated controls sources
 
 Checked-in generated dependency-property sources for controls now live under
