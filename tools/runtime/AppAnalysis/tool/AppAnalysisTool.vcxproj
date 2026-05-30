@@ -4,27 +4,25 @@
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <PropertyGroup Label="Globals">
-        <ConfigurationType>DynamicLibrary</ConfigurationType>
-        <ProjectGuid>{2443059a-fad7-4812-b0e6-243e33f11a01}</ProjectGuid>
+        <ConfigurationType>Application</ConfigurationType>
+        <ProjectGuid>{e62773fa-ccd5-4321-adc2-b401d0eae7cf}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XcpPath)\dxaml\tools\AppAnalysis\common.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(AppAnalysisPath)\common.props"/>
 
-    <!-- Devs often build with no_mui, so force enable MUI so this builds correctly -->
     <PropertyGroup>
-        <Mui>true</Mui>
 
         <XamlPrecompiledInclude>precomp.h</XamlPrecompiledInclude>
 
+        <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) UNICODE; _UNICODE; DR_XAML_TOOL_NAME__=$(TargetName).exe;</ProjectPreprocessorDefinitions>
         <TargetDestination>$(TestBinplaceDestinationPath)\AppAnalysis</TargetDestination>
 
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
+            $(AppAnalysisPath)\common\;
             $(AppAnalysisPath)\idl\;
-            $(AppAnalysisPath)\common;
-            $(AppAnalysisPath)\runtime\rules;
-            $(AppAnalysisPath)\runtime\framework;
+            $(AppAnalysisPath)\module\;
             $(AppAnalysisObjPath)\idl;
         </ProjectIncludeDirectories>
     </PropertyGroup>
@@ -33,13 +31,13 @@
         <ClInclude Include="precomp.h"/>
         <ClInclude Include="resource.h"/>
 
-        <ResourceCompile Include="AppAnalysis.rc"/>
-        <ClCompile Include="dllmain.cpp"/>
+        <ResourceCompile Include="Main.rc"/>
+        <ClCompile Include="Main.cpp"/>
     </ItemGroup>
 
     <ItemDefinitionGroup>
         <Link>
-            <ModuleDefinitionFile>Module.def</ModuleDefinitionFile>
+            <SubSystem>console</SubSystem>
 
             <AdditionalDependencies>
                 %(AdditionalDependencies);
@@ -48,16 +46,16 @@
         </Link>
     </ItemDefinitionGroup>
 
-    <PropertyGroup>
-        <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) ___TARGETNAME="""$(TargetName).dll""";</ProjectPreprocessorDefinitions>
-    </PropertyGroup>
+    <ItemGroup>
+        <BinplaceItem Include="AppAnalysisReportStylesheet.xslt" />
+        <BinplaceItem Include="deployAppAnalysis.cmd" />
+    </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="$(AppAnalysisPath)\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
-        <ProjectReference Include="$(AppAnalysisPath)\runtime\rules\AppAnalysisRuntimeRules.vcxproj" Project="{9bda9f6a-f3fb-4d5c-ba39-1101495c0029}"/>
-        <ProjectReference Include="$(AppAnalysisPath)\runtime\framework\AppAnalysisRuntimeFramework.vcxproj" Project="{0abd262a-c1d8-440a-ac58-99fd5997fbdd}"/>
+        <ProjectReference Include="$(AppAnalysisPath)\module\AppAnalysisModule.vcxproj" Project="{2c455d44-4972-459e-9a78-6b8c5cd19c36}"/>
         <ProjectReference Include="$(AppAnalysisPath)\runtime\common\AppAnalysisRuntimeCommon.vcxproj" Project="{d4761272-8a6c-4015-a41a-aaff4bc1d728}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
 </Project>

@@ -248,7 +248,8 @@
     <WindowsUmLibPath>$(WindowsSDKCppArchRoot)um\$(WindowsSDKArch)</WindowsUmLibPath>
     <UCRTPath>$(WindowsSDKCppArchRoot)ucrt\$(WindowsSDKArch)</UCRTPath>
 
-    <AppAnalysisPath>$(XcpPath)\dxaml\tools\AppAnalysis</AppAnalysisPath>
+    <AppAnalysisPath>$(RuntimeToolsPath)\AppAnalysis</AppAnalysisPath>
+    <AppAnalysisObjPath>$(XamlBuildOutputRoot)tools\runtime\AppAnalysis</AppAnalysisObjPath>
     <AppAnalysisTestPath>$(RuntimeTestPath)\appanalysis</AppAnalysisTestPath>
 
     <DetoursPath>$(ProjectRoot)tests\runtime\tools\detours</DetoursPath>

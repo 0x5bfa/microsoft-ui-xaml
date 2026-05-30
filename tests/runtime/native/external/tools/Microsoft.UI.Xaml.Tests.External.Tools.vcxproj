@@ -38,15 +38,15 @@
         $(XamlDiagTapPath)\;
         $(XcpPath)\components\base\inc;
         $(XcpPath)\components\xamldiagnostics\inc;
-        $(XcpPath)\dxaml\tools\AppAnalysis\dll;
+        $(AppAnalysisPath)\dll;
         $(WinUIDetailsIncludePath)\abi;
         $(WinUIDetailsIncludePath)\MockDComp;
       </AdditionalIncludeDirectories>
       <DisableSpecificWarnings>%(DisableSpecificWarnings);4691</DisableSpecificWarnings>
       <ForcedUsingFiles>
         %(ForcedUsingFiles);
-        $(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis\idl\microsoft.diagnostics.appanalysis.winmd;
-        $(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis\idl\microsoft.diagnostics.appanalysis.internal.winmd;
+        $(AppAnalysisObjPath)\idl\microsoft.diagnostics.appanalysis.winmd;
+        $(AppAnalysisObjPath)\idl\microsoft.diagnostics.appanalysis.internal.winmd;
       </ForcedUsingFiles>
     </ClCompile>
     <Link>
@@ -137,7 +137,7 @@
   <ItemGroup>
     <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
     <ProjectReference Include="$(XamlDiagPath)\idl\xamlom.vcxproj" />
-    <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" />
+    <ProjectReference Include="$(AppAnalysisPath)\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" />
     <ProjectReference Include="$(RuntimeNativeExternalTestPath)\tools\customTypes\customTypes.vcxproj" />
   </ItemGroup>
   <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />

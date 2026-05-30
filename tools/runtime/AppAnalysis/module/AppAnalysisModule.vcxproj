@@ -8,8 +8,8 @@
         <ProjectGuid>{2c455d44-4972-459e-9a78-6b8c5cd19c36}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XcpPath)\dxaml\tools\AppAnalysis\common.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(AppAnalysisPath)\common.props"/>
 
     <PropertyGroup>
         <XamlPrecompiledInclude>precomp.h</XamlPrecompiledInclude>
@@ -37,5 +37,5 @@
         <ProjectReference Include="$(AppAnalysisPath)\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
 </Project>

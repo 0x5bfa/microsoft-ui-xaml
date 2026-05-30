@@ -1261,21 +1261,21 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlpch.excep", "xcp\dx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenAllXbf", "xcp\dxaml\themes\autogen\GenAllXbf.csproj", "{0D1EAEAA-7BEF-44A1-91E8-5E05E18F348E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.Diagnostics.AppAnalysis", "xcp\dxaml\tools\AppAnalysis\dll\Microsoft.Diagnostics.AppAnalysis.vcxproj", "{2443059A-FAD7-4812-B0E6-243E33F11A01}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.Diagnostics.AppAnalysis", "..\tools\runtime\AppAnalysis\dll\Microsoft.Diagnostics.AppAnalysis.vcxproj", "{2443059A-FAD7-4812-B0E6-243E33F11A01}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.Diagnostics.AppAnalysis", "xcp\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj", "{E1F36D19-F82D-474A-BE26-FEA52DA5B6E6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.Diagnostics.AppAnalysis", "..\tools\runtime\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj", "{E1F36D19-F82D-474A-BE26-FEA52DA5B6E6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisModule", "xcp\dxaml\tools\AppAnalysis\module\AppAnalysisModule.vcxproj", "{2C455D44-4972-459E-9A78-6B8C5CD19C36}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisModule", "..\tools\runtime\AppAnalysis\module\AppAnalysisModule.vcxproj", "{2C455D44-4972-459E-9A78-6B8C5CD19C36}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.Diagnostics.AppAnalysis", "xcp\dxaml\tools\AppAnalysis\sdkidl\AppAnalysis.vcxproj", "{2B89D2A5-36F3-4040-B3A9-6278ED16AB42}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.Diagnostics.AppAnalysis", "..\tools\runtime\AppAnalysis\sdkidl\AppAnalysis.vcxproj", "{2B89D2A5-36F3-4040-B3A9-6278ED16AB42}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisTool", "xcp\dxaml\tools\AppAnalysis\tool\AppAnalysisTool.vcxproj", "{E62773FA-CCD5-4321-ADC2-B401D0EAE7CF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisTool", "..\tools\runtime\AppAnalysis\tool\AppAnalysisTool.vcxproj", "{E62773FA-CCD5-4321-ADC2-B401D0EAE7CF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisRuntimeCommon", "xcp\dxaml\tools\AppAnalysis\runtime\common\AppAnalysisRuntimeCommon.vcxproj", "{D4761272-8A6C-4015-A41A-AAFF4BC1D728}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisRuntimeCommon", "..\tools\runtime\AppAnalysis\runtime\common\AppAnalysisRuntimeCommon.vcxproj", "{D4761272-8A6C-4015-A41A-AAFF4BC1D728}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisRuntimeFramework", "xcp\dxaml\tools\AppAnalysis\runtime\framework\AppAnalysisRuntimeFramework.vcxproj", "{0ABD262A-C1D8-440A-AC58-99FD5997FBDD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisRuntimeFramework", "..\tools\runtime\AppAnalysis\runtime\framework\AppAnalysisRuntimeFramework.vcxproj", "{0ABD262A-C1D8-440A-AC58-99FD5997FBDD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisRuntimeRules", "xcp\dxaml\tools\AppAnalysis\runtime\rules\AppAnalysisRuntimeRules.vcxproj", "{9BDA9F6A-F3FB-4D5C-BA39-1101495C0029}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysisRuntimeRules", "..\tools\runtime\AppAnalysis\runtime\rules\AppAnalysisRuntimeRules.vcxproj", "{9BDA9F6A-F3FB-4D5C-BA39-1101495C0029}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests", "..\tests\runtime\appanalysis\unittests\engineTests\Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests.vcxproj", "{8A12DFCF-137A-46FE-B64E-7CDEAE719B5C}"
 EndProject

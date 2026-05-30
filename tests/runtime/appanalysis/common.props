@@ -24,8 +24,6 @@
 
     <PropertyGroup>
         <TestCode>true</TestCode>
-        <AppAnalysisPath>$(XcpPath)\dxaml\tools\AppAnalysis</AppAnalysisPath>
-        <AppAnalysisObjPath>$(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis</AppAnalysisObjPath>
         <AppAnalysisTestPath Condition="'$(AppAnalysisTestPath)' == ''">$(RuntimeTestPath)\appanalysis</AppAnalysisTestPath>
         <AppAnalysisTestObjPath>$(TestObjPath)\appanalysis</AppAnalysisTestObjPath>
         <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) UNICODE; _UNICODE; WIL_SUPPRESS_PRIVATE_API_USE; MIDL_NS_PREFIX;</ProjectPreprocessorDefinitions>
