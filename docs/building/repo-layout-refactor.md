@@ -309,6 +309,9 @@ foundation test project with the runtime test tree.
 The COM isolated test moved under
 `tests/runtime/native/isolated/foundation/com`, following the same compact
 foundation test project layout.
+The OfferableHeap isolated test moved under
+`tests/runtime/native/isolated/foundation/offerableheap`, keeping the
+foundation isolated test migration moving through small self-contained projects.
 
 ## Controls source
 

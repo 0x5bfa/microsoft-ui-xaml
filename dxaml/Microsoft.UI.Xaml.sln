@@ -1083,7 +1083,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.NameScope
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.OfferableHeap", "xcp\components\offerableheap\lib\Microsoft.UI.Xaml.OfferableHeap.vcxproj", "{64AE8B11-E468-4B1F-BB3A-B570D99FB4B2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap", "xcp\components\offerableheap\unittests\Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap.vcxproj", "{68EFE933-E49A-4F16-A2C5-4BD872D7993E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap", "..\tests\runtime\native\isolated\foundation\offerableheap\Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap.vcxproj", "{68EFE933-E49A-4F16-A2C5-4BD872D7993E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser", "xcp\components\parser\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser.vcxproj", "{0C22F3E2-D02F-40C7-B7B4-849E21242B94}"
 EndProject
