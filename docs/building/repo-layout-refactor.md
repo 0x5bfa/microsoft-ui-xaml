@@ -227,6 +227,9 @@ headers from the legacy source tree. The external precompiled-header project
 also lives there and is referenced through `$(RuntimeNativeExternalTestPath)`.
 The activation external test DLL moved next, keeping its shared test props in
 the legacy external test root until the remaining external tests follow.
+The adaptability external test DLL and its custom types support project also
+moved there, with custom type compilation still imported from the legacy
+external test root while that shared target remains in place.
 
 ## Controls source
 
