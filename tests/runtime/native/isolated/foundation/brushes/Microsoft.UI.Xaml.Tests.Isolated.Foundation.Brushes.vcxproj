@@ -27,7 +27,7 @@
             $(XcpPath)\components\elements\inc;
             $(XcpPath)\components\text\inc;
             $(XcpPath)\components\contentroot\inc;
-            $(XcpPath)\components\unittests\mocks;
+            $(NativeIsolatedTestPath)\shared\mocks;
             $(XcpPath)\core\text\inc;
             $(RuntimeDCompTestPath)\inc;
             $(TestObjPath)\dcomp\idl;
@@ -61,7 +61,7 @@
         <ProjectReference Include="$(XcpPath)\components\colors\lib\Microsoft.UI.Xaml.Colors.vcxproj" Project="{6b5aed1f-fd5d-47bc-9b9a-37d56e2c2e97}"/>
         <ProjectReference Include="$(XcpPath)\components\transforms\lib\Microsoft.UI.Xaml.Transforms.vcxproj" Project="{365cdabf-7f04-445d-a598-ba372821b5a6}"/>
         <ProjectReference Include="$(XcpPath)\components\text\lib\Microsoft.UI.Xaml.Text.vcxproj" Project="{df854298-841f-4dd5-9ddf-fefbc280a6d1}"/>
-        <ProjectReference Include="$(XcpPath)\components\unittests\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
+        <ProjectReference Include="$(NativeIsolatedTestPath)\shared\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
     </ItemGroup>
 
     <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />

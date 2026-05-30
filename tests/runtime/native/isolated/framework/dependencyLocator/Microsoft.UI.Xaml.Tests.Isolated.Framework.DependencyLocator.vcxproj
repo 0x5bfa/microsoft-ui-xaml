@@ -21,6 +21,7 @@
             $(ProjectIncludeDirectories);
             $(XcpPath)\components\allocation\inc;
             $(XcpPath)\components\;
+            $(NativeIsolatedTestPath)\shared\mocks;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 

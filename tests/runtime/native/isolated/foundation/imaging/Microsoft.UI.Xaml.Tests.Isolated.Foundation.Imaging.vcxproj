@@ -27,7 +27,7 @@
             $(ProjectIncludeDirectories);
             $(RuntimeDCompTestPath)\inc;
             $(XcpPath)\components\imaging\inc;
-            $(XcpPath)\components\unittests;
+            $(NativeIsolatedTestPath)\shared\support;
             $(XcpPath)\components\offerableheap\inc;
             $(XcpPath)\components\threading\inc;
             $(XcpPath)\components\common\inc;

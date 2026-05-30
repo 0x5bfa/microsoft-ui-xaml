@@ -59,7 +59,7 @@
         <ProjectReference Include="$(XcpPath)\components\xamlDiagnostics\lib\Microsoft.UI.Xaml.XamlDiagnostics.vcxproj" Project="{0e6efb75-5844-4f7a-90aa-eaba4f6b76a9}"/>
         <ProjectReference Include="$(XcpPath)\components\style\lib\Microsoft.UI.Xaml.Style.vcxproj" Project="{a62ef27a-9759-4647-a1b9-c52ec131cb34}"/>
         <ProjectReference Include="$(XcpPath)\components\text\lib\Microsoft.UI.Xaml.Text.vcxproj" Project="{df854298-841f-4dd5-9ddf-fefbc280a6d1}"/>
-        <ProjectReference Include="$(XcpPath)\components\unittests\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
+        <ProjectReference Include="$(NativeIsolatedTestPath)\shared\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
     </ItemGroup>
 
     <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />

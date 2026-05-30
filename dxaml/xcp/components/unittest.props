@@ -49,7 +49,7 @@
 
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
-            $(XcpPath)\components\unittests\;
+            $(NativeIsolatedTestPath)\shared\support;
             $(NativeIncPath);
             $(NativeIsolatedTestPath)\inc\;
         </ProjectIncludeDirectories>

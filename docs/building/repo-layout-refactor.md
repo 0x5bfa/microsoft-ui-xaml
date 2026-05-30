@@ -406,6 +406,9 @@ mocks in `tests/runtime/native/isolated/xaml/accessKeys/shared`.
 The Collection isolated test moved under
 `tests/runtime/native/isolated/foundation/collection`, keeping collection
 coverage with the foundation isolated test group.
+Shared isolated test stubs, external mocks, and support headers moved under
+`tests/runtime/native/isolated/shared`, so component tests can reference shared
+test infrastructure through `$(NativeIsolatedTestPath)`.
 
 ## Controls source
 

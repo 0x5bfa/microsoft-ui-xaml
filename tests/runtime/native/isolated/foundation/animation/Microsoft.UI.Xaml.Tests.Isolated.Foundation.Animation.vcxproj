@@ -24,7 +24,7 @@
             $(XcpPath)\components\animation\inc;
             $(XcpPath)\components\colors\inc;
             $(XcpPath)\components\transforms\inc;
-            $(XcpPath)\components\unittests\mocks;
+            $(NativeIsolatedTestPath)\shared\mocks;
             $(RuntimeDCompTestPath)\inc;
             $(TestObjPath)\dcomp\idl;
             $(WinUIDetailsIncludePath)\abi;
