@@ -55,6 +55,9 @@ The WinUI controls implementation now lives under `/src/controls`. Controls
 solution, IDL, test, and tooling entry points continue to live under `/controls`
 and refer to the source tree through `$(MUXControlsSourceRoot)`.
 
+Metadata composition projects now live under `/src/metadata`. The MergedWinMD
+projects are referenced through `$(MergedWinMDProjectRoot)`.
+
 ## /tests
 This folder contains test assets that have been separated from product source
 trees. Compiler test entry points live under `/tests/compiler`; shared test

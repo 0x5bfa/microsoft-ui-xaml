@@ -137,7 +137,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
 
   <ItemGroup>
-    <ProjectReference Include="$(ProjectRoot)\MergedWinMD\MergedWinMD.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}"/>
+    <ProjectReference Include="$(MergedWinMDProjectRoot)MergedWinMD.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}"/>
     <ProjectReference Include="$(XamlSourcePath)\xcp\tools\GenXbfDLL\GenXbf.vcxproj" ReferenceOutputAssembly="false"  LinkLibraryDependencies="false" />
   </ItemGroup>
 

@@ -42,7 +42,7 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
       If you get an error :
         ```
         Exception calling "ReadAllText" with "1" argument(s): "Could not find file
-        'D:\microsoft-ui-xaml-lift\MergedWinMD\MergedWinMD.targets'."
+        'D:\microsoft-ui-xaml-lift\src\metadata\MergedWinMD\MergedWinMD.targets'."
         At D:\microsoft-ui-xaml-lift\controls\tools\CustomTasks\NuSpecs\UpdateReferences.ps1:61 char:5
         +     $fileContents = [System.IO.File]::ReadAllText($filePath)
         +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

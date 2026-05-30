@@ -13,6 +13,7 @@ Use these ownership buckets for new moves:
 | `src/runtime` | Runtime implementation currently rooted in `dxaml/xcp`. |
 | `src/controls` | WinUI controls implementation. |
 | `src/compiler` | XAML compiler source, build tasks, compiler targets, and compiler-local tools. |
+| `src/metadata` | Metadata composition projects that produce repo-local WinMD inputs. |
 | `tests` | Runtime, controls, compiler, sample, and Helix test assets. |
 | `eng` | Shared build, packaging, versioning, signing, and pipeline infrastructure. |
 | `tools` | Human- and CI-invoked repo tools that are not part of product source. |
@@ -75,6 +76,12 @@ The WinUI controls implementation now lives under `src/controls`. The
 authoring tools. Shared MSBuild entry points use `$(MUXControlsSourceRoot)` so
 those support projects can reference controls source without reintroducing the
 old `controls/dev` path segment.
+
+## Metadata composition
+
+The metadata merge projects now live under `src/metadata/MergedWinMD`. Shared
+MSBuild references use `$(MergedWinMDProjectRoot)` so project references do not
+depend on a root-level `MergedWinMD` folder.
 
 ## Migration rules
 

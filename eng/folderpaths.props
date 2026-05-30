@@ -28,6 +28,7 @@
     <TestPath>$(XamlSourcePath)\test</TestPath>
 
     <MuxControlsPath>$(ProjectRoot)controls</MuxControlsPath>
+    <MergedWinMDProjectRoot>$(ProjectRoot)src\metadata\MergedWinMD\</MergedWinMDProjectRoot>
   </PropertyGroup>
 
  <!-- Build artifacts related paths -->

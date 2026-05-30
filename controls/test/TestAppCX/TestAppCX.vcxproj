@@ -288,7 +288,7 @@
     <ProjectReference Include="$(MUXControlsSourceRoot)dll\Microsoft.UI.Xaml.Controls.vcxproj">
       <Project>{ad0c90b0-4845-4d4b-88f1-86f653f8171b}</Project>
     </ProjectReference>
-    <ProjectReference Include="$(MUXProjectRoot)MergedWinMD\private\MergedWinMD.vcxproj" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="..\RetargetCopyLocalFiles.targets" />

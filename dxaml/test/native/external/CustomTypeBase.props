@@ -121,7 +121,7 @@
     <ProjectReference Include="$(XamlSourcePath)\test\native\external\infra\Private.Native.External.Infrastructure.vcxproj" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
     <ProjectReference Include="$(XamlSourcePath)\test\infra\server\Private.Infrastructure.Server.vcxproj" ReferenceOutputAssembly="false"/>
     <ProjectReference Include="$(XamlSourcePath)\test\infra\client\idl\Private.Infrastructure.vcxproj" ReferenceOutputAssembly="false"/>
-    <ProjectReference Include="$(ProjectRoot)\MergedWinMD\private\MergedWinMD.vcxproj" ReferenceOutputAssembly="false" LinkLibraryDependencies="false" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" ReferenceOutputAssembly="false" LinkLibraryDependencies="false" />
   </ItemGroup>
 
   <ItemGroup>

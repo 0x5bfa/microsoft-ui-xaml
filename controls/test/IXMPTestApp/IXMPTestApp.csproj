@@ -121,7 +121,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="$(MUXControlsSourceRoot)dll\Microsoft.UI.Xaml.Controls.vcxproj" ReferenceOutputAssembly="False" />
-    <ProjectReference Include="$(MUXProjectRoot)MergedWinMD\private\MergedWinMD.vcxproj" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MUXProjectRoot)build\WinUITest.pfx" />

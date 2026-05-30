@@ -303,7 +303,7 @@
   <Import Project="msbuild\buildsettings\DualLibrary.targets" Condition="'$(ConfigurationType)'=='DynamicLibrary' and '$(ProduceStaticLibrary)'=='true'"/>
 
   <ItemGroup Condition="'$(XamlConsumesWinRT)' == 'true' and '$(XamlForcedUsingFilesForWinRtIncludesMUXWinMd)' == 'true'">
-    <ProjectReference Include="$(ProjectRoot)MergedWinMD\private\MergedWinMD.vcxproj" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" />
   </ItemGroup>
 
   <PropertyGroup>

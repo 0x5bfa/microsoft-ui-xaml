@@ -17,7 +17,7 @@
       <!-- Map to the vcxproj platform string if needed -->
       <SetPlatform Condition="'$(Platform)' == 'x86'">Platform=Win32</SetPlatform>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\MergedWinMD\MergedWinMD.vcxproj">
+    <ProjectReference Include="..\..\..\src\metadata\MergedWinMD\MergedWinMD.vcxproj">
       <Targets>GetPackagingOutputs</Targets>
     </ProjectReference>
   </ItemGroup>

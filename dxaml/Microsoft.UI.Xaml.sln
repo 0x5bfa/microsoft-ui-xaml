@@ -1311,9 +1311,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shared", "xcp\win\shared\sl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uiutils", "xcp\win\UIUtils\winrt\uiutils.vcxproj", "{C9184280-7438-4601-91C5-8BC9322AC599}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "..\MergedWinMD\MergedWinMD.vcxproj", "{25CF9F3C-2B8C-438B-92AD-0FE7CC47C30E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "..\src\metadata\MergedWinMD\MergedWinMD.vcxproj", "{25CF9F3C-2B8C-438B-92AD-0FE7CC47C30E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "..\MergedWinMD\private\MergedWinMD.vcxproj", "{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "..\src\metadata\MergedWinMD\private\MergedWinMD.vcxproj", "{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Activation", "test\native\external\activation\Microsoft.UI.Xaml.Tests.External.Activation.vcxproj", "{692B5933-4B22-453F-A081-15A76C3AC385}"
 EndProject

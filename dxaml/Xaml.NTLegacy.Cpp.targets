@@ -33,7 +33,7 @@
     </ItemGroup>
   
     <ItemGroup>
-        <ProjectReference Include="$(ProjectRoot)\MergedWinMD\private\MergedWinMD.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}"/>
+        <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}"/>
     </ItemGroup>
  
     <ItemDefinitionGroup>
