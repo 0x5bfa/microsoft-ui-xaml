@@ -178,7 +178,7 @@ Add the following line before the test implementation.
 ### How do I run tests locally?
 Follow these steps:
 1. Build the product and tests as normal using **build.cmd**
-2. Run **test\CreateTestPayload.ps1** This will produce a TestPayload directory at the repo root.
+2. Run **tests\infra\CreateTestPayload.ps1** This will produce a TestPayload directory at the repo root.
 3. Connect to a to the machine you wish to run tests on (recommendation: an amd64 VM running Windows 20H2). DO NOT
 connect via an Enhanced connection (use a basic connection instead). An Enhanced connection will cause some test
 failures. In VM connect you can change this setting from the View menu.

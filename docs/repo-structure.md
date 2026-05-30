@@ -51,4 +51,5 @@ compiler-specific tools and solutions.
 
 ## /tests
 This folder contains test assets that have been separated from product source
-trees. Compiler test entry points live under `/tests/compiler`.
+trees. Compiler test entry points live under `/tests/compiler`; shared test
+payload infrastructure lives under `/tests/infra`.
