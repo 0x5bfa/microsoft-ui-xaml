@@ -27,8 +27,8 @@
   <Import Project="$(MUXCProjectRoot)mux.controls.props" Condition="Exists('$(MUXCProjectRoot)mux.controls.props')" />
   <Import Project="$(MUXCProjectRoot)ProjectConfigurations.props" />
   <Import Project="$(MUXCProjectRoot)version.props" />
-  <Import Project="$(MUXCProjectRoot)CppWinRT.props" />
-  <Import Project="$(MUXCProjectRoot)HybridCRT.props" />
+  <Import Project="$(MUXCProjectRoot)build\CppWinRT.props" />
+  <Import Project="$(MUXCProjectRoot)build\HybridCRT.props" />
   <PropertyGroup>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
