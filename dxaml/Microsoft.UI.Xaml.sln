@@ -1031,7 +1031,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Gestures.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Gestures", "xcp\components\gestures\lib\Microsoft.UI.Xaml.Gestures.vcxproj", "{9EC4215F-0EBE-409C-8E49-65DF310C4BD0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures", "xcp\components\gestures\unittests\Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures.vcxproj", "{ACEB545A-1DF8-4320-829C-7B009065FE2F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures", "..\tests\runtime\native\isolated\core\gestures\Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures.vcxproj", "{ACEB545A-1DF8-4320-829C-7B009065FE2F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.GraphicsUtility", "xcp\components\graphics\lib\Microsoft.UI.Xaml.GraphicsUtility.vcxproj", "{8B386F16-9CF2-44E0-82EC-5C5129593A3C}"
 EndProject

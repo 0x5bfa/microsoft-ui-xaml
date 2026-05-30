@@ -351,6 +351,9 @@ mocks remain in the runtime source tree until their consumers are migrated.
 The Input isolated test moved under
 `tests/runtime/native/isolated/core/input`, starting a core isolated test group
 for component tests whose project identity is `Microsoft.UI.Xaml.Tests.Isolated.Core.*`.
+The Gestures isolated test moved under
+`tests/runtime/native/isolated/core/gestures`, continuing the core isolated test
+group alongside Input.
 
 ## Controls source
 
