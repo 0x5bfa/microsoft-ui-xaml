@@ -989,7 +989,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Dependenc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyObjectMin", "xcp\components\DependencyObject\minlib\Microsoft.UI.Xaml.DependencyObjectMin.vcxproj", "{E0DD7555-841B-40E4-967A-B6EC2DF39258}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject", "xcp\components\DependencyObject\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject.vcxproj", "{FB5FB4BA-A7A6-4F8F-96BA-F87D41141EDD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject", "..\tests\runtime\native\isolated\framework\dependencyObject\Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject.vcxproj", "{FB5FB4BA-A7A6-4F8F-96BA-F87D41141EDD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DesktopUtility", "xcp\components\DesktopUtility\lib\Microsoft.UI.Xaml.DesktopUtility.vcxproj", "{62B946C2-099D-499A-991C-A47B7CDF5263}"
 EndProject

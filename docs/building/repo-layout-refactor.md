@@ -342,6 +342,9 @@ binplace configuration with the moved test project.
 The Elements isolated test moved under
 `tests/runtime/native/isolated/foundation/elements`, with documentation links to
 the UIElement tests updated to the runtime test tree.
+The DependencyObject isolated test moved under
+`tests/runtime/native/isolated/framework/dependencyObject`, continuing the
+framework isolated test migration out of the runtime source tree.
 
 ## Controls source
 
