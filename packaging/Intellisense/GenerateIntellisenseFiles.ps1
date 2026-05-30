@@ -2,7 +2,7 @@ Set-StrictMode -Version 3.0
 $ErrorActionPreference = "Stop"
 
 # Processes the Intellisense .xml files in Intellisense/drop and generates new Intellisense
-# .xml files in Intellisense/generated.
+# .xml files in generated/packaging/intellisense.
 # See Intellisense.md for more information.
 
 $StartTime = Get-Date
@@ -19,7 +19,7 @@ if ($env:Configuration -eq '')
 }
 
 $NugetLibDir = "$RepoRoot\BuildOutput\packaging\$($env:Configuration)\lib"
-$OutputDir = "$IntellisenseRoot\generated"
+$OutputDir = Join-Path $RepoRoot "generated\packaging\intellisense"
 $WorkingDir = "$RepoRoot\BuildOutput\Intellisense"
 
 if (Test-Path $WorkingDir)
@@ -348,6 +348,11 @@ function GenerateXmlFilesForAllAssemblies()
     }
 
     Write-Host "Copying xml files from $GeneratedDir to $OutputDir"
+
+    if (-not (Test-Path $OutputDir))
+    {
+        New-Item -ItemType Directory -Path $OutputDir | Out-Null
+    }
 
     Remove-Item $OutputDir\*.xml -ErrorAction SilentlyContinue
     Copy-Item $GeneratedDir\*.xml $OutputDir\
