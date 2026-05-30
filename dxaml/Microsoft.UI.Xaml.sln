@@ -1055,7 +1055,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.KeyboardA
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Legacy", "xcp\components\legacy\lib\Microsoft.UI.Xaml.Legacy.vcxproj", "{95D07701-4AF9-48E5-B726-0D42034811C8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Legacy", "xcp\components\legacy\unittests\Microsoft.UI.Xaml.Tests.Isolated.Legacy.vcxproj", "{3CE6BC3D-50C1-426E-944E-A5F8A141375D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Legacy", "..\tests\runtime\native\isolated\foundation\legacy\Microsoft.UI.Xaml.Tests.Isolated.Legacy.vcxproj", "{3CE6BC3D-50C1-426E-944E-A5F8A141375D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Lifetime", "xcp\components\lifetime\lib\Microsoft.UI.Xaml.Lifetime.vcxproj", "{71ADA981-D444-464C-833D-290206B05240}"
 EndProject
