@@ -491,6 +491,9 @@ Build wrapper commands now live under `tools/build`, with `init.cmd` adding
 that folder to PATH so commands such as `msb`, `bz`, `bcz`, and `clean` remain
 available in initialized shells.
 
+Shared command wrappers used by multiple repo tools now live under
+`tools/common`, keeping the `tools` root focused on tool categories.
+
 Runtime developer tools should move out of `dxaml/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
 as the first small runtime tool move. The XBF parser/viewer tools moved under
