@@ -306,6 +306,9 @@ foundation test projects out of the runtime source tree.
 The Colors isolated test moved under
 `tests/runtime/native/isolated/foundation/colors`, keeping another compact
 foundation test project with the runtime test tree.
+The COM isolated test moved under
+`tests/runtime/native/isolated/foundation/com`, following the same compact
+foundation test project layout.
 
 ## Controls source
 
