@@ -8,7 +8,7 @@
         <ProjectGuid>{c59fc853-80da-4b7e-bcda-3eb94d1351da}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XamlSourcePath)\test\common.props"/>
 
     <!-- TAEF.targets always sets INLINE_TEST_METHOD_MARKUP.  We don't want that defined so capture the value before the import and override it
@@ -70,7 +70,7 @@
     <PropertyGroup>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
-            $(InfraTestPath)\server\inc;
+            $(RuntimeInfraTestPath)\server\inc;
             $(PrivateInfrastructureWin32HostingObjPath)\idl;
             $(RuntimeInfraTestPath)\inc;
             $(RuntimeInfraTestObjPath)\contract;
@@ -128,7 +128,7 @@
         <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\module\AppAnalysisModule.vcxproj" Project="{2c455d44-4972-459e-9a78-6b8c5cd19c36}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
     
     <ItemGroup>
         <BinplaceItem Include="$(WinUIDetailsRuntimesPath)\InputManagerXaml.dll">

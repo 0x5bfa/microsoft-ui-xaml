@@ -170,7 +170,7 @@ the app package.
 This is mostly hidden from the test code itself. The client library provides an API to the test code and the RPC call
 to the server component is an implementation detail.
 
-Code is under: [`dxaml\test\infra\server\`](../../dxaml/test/infra/server)
+Code is under: [`tests\runtime\infra\server\`](../../tests/runtime/infra/server)
 
 This architecture was originally created with UWP in mind, since UWP processes run in a sandbox and so are prevented from
 doing many things that a regular full-trust process can do.

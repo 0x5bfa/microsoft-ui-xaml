@@ -71,7 +71,7 @@
     </ItemGroup>
 
     <ItemGroup Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='Application'">
-        <ProjectReference Condition="'$(ProjectGuid)'!='{c59fc853-80da-4b7e-bcda-3eb94d1351da}'" Include="$(InfraTestPath)\server\Private.Infrastructure.Server.vcxproj" Project="{c59fc853-80da-4b7e-bcda-3eb94d1351da}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{c59fc853-80da-4b7e-bcda-3eb94d1351da}'" Include="$(RuntimeInfraTestPath)\server\Private.Infrastructure.Server.vcxproj" Project="{c59fc853-80da-4b7e-bcda-3eb94d1351da}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{a814c8d3-cf4d-4e7f-a1f6-ba6d2b2e328c}'" Include="$(TestPath)\native\external\infra\Private.Native.External.Infrastructure.vcxproj" Project="{a814c8d3-cf4d-4e7f-a1f6-ba6d2b2e328c}" LinkLibraryDependencies="false"/>
     </ItemGroup>
 </Project>
