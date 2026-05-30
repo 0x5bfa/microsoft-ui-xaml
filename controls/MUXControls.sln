@@ -31,23 +31,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5EF3865D
 		tools\Shell\addaliases.cmd = tools\Shell\addaliases.cmd
 		Build.cmd = Build.cmd
 		DevCmd.cmd = DevCmd.cmd
-		tools\ExtractPackageDependencies.cmd = tools\ExtractPackageDependencies.cmd
 		tools\TestAppDeployment\ExtractPackageDependencies.ps1 = tools\TestAppDeployment\ExtractPackageDependencies.ps1
 		tools\ControlGeneration\GenerateNewProperty.ps1 = tools\ControlGeneration\GenerateNewProperty.ps1
 		tools\ResourceGeneration\GenerateSystemDllImageResources.ps1 = tools\ResourceGeneration\GenerateSystemDllImageResources.ps1
 		tools\ResourceGeneration\GenerateSystemDllStringResources.ps1 = tools\ResourceGeneration\GenerateSystemDllStringResources.ps1
 		tools\ResourceGeneration\GenerateVisualVerificationUpdates.ps1 = tools\ResourceGeneration\GenerateVisualVerificationUpdates.ps1
-		tools\GenerateXamlMetadata.ps1 = tools\GenerateXamlMetadata.ps1
-		tools\GenerateXamlMetadataWindowsCodeGen.ps1 = tools\GenerateXamlMetadataWindowsCodeGen.ps1
-		tools\LaunchXde.cmd = tools\LaunchXde.cmd
-		tools\LaunchXde.ps1 = tools\LaunchXde.ps1
 		tools\MakeAppxHelper.cmd = tools\MakeAppxHelper.cmd
 		nuget.config = nuget.config
 		tools\Common\NugetWrapper.cmd = tools\Common\NugetWrapper.cmd
 		tools\Common\PowershellWrapper.cmd = tools\Common\PowershellWrapper.cmd
 		tools\Shell\ps.bat = tools\Shell\ps.bat
 		tools\Shell\PSProfile.ps1 = tools\Shell\PSProfile.ps1
-		tools\PublishNupkg.cmd = tools\PublishNupkg.cmd
+		tools\CustomTasks\NuSpecs\PublishNupkg.cmd = tools\CustomTasks\NuSpecs\PublishNupkg.cmd
 		tools\XamlProcessing\Utils.psm1 = tools\XamlProcessing\Utils.psm1
 	EndProjectSection
 EndProject
