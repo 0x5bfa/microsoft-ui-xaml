@@ -30,9 +30,10 @@
     <NativeIncPath>$(RuntimeTestPath)\native\inc</NativeIncPath>
     <RuntimeInfraTestPath>$(RuntimeTestPath)\infra</RuntimeInfraTestPath>
     <RuntimeNativeExternalTestPath>$(RuntimeTestPath)\native\external</RuntimeNativeExternalTestPath>
-    <TestPath>$(XamlSourcePath)\test</TestPath>
+    <RuntimeDCompTestPath>$(RuntimeTestPath)\dcomp</RuntimeDCompTestPath>
+    <TestPath>$(RuntimeTestPath)</TestPath>
     <NativeExternalTestPath>$(RuntimeNativeExternalTestPath)</NativeExternalTestPath>
-    <InternalTestPath>$(TestPath)\native\internal</InternalTestPath>
+    <InternalTestPath>$(RuntimeTestPath)\native\internal</InternalTestPath>
     <RuntimeManagedTestPath>$(RuntimeTestPath)\managed</RuntimeManagedTestPath>
     <ManagedTestPath>$(RuntimeManagedTestPath)</ManagedTestPath>
 

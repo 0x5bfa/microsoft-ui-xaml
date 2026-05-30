@@ -18,7 +18,7 @@
     <PropertyGroup>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
-            $(TestPath)\infra\inc;
+            $(RuntimeInfraTestPath)\inc;
             $(XcpPath)\components\AccessKeys\inc;
         </ProjectIncludeDirectories>
     </PropertyGroup>

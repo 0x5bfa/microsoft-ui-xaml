@@ -25,7 +25,7 @@
     <PropertyGroup>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
-            $(XamlSourcePath)\test\dcomp\inc;
+            $(RuntimeDCompTestPath)\inc;
             $(XcpPath)\components\imaging\inc;
             $(XcpPath)\components\unittests;
             $(XcpPath)\components\offerableheap\inc;

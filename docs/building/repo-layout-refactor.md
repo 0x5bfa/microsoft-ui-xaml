@@ -269,6 +269,10 @@ The remaining shared runtime test build defaults now live in
 `tests/runtime/RuntimeTest.Directory.Build.props` for explicit importers; it is
 not named `Directory.Build.props` at the runtime root so it does not change
 MSBuild's automatic parent-directory import behavior for runtime test projects.
+Legacy `$(TestPath)` now aliases `$(RuntimeTestPath)`, and remaining isolated
+unit-test include paths should use runtime test properties such as
+`$(RuntimeInfraTestPath)` and `$(RuntimeDCompTestPath)` instead of spelling
+`dxaml/test` paths directly.
 
 ## Controls source
 

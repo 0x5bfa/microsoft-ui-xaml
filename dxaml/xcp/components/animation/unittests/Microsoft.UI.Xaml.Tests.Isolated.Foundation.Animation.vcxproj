@@ -25,8 +25,8 @@
             $(XcpPath)\components\colors\inc;
             $(XcpPath)\components\transforms\inc;
             $(XcpPath)\components\unittests\mocks;
-            $(XamlSourcePath)\test\dcomp\inc;
-            $(XamlBinaryPath)\test\dcomp\idl;
+            $(RuntimeDCompTestPath)\inc;
+            $(TestObjPath)\dcomp\idl;
             $(WinUIDetailsIncludePath)\abi;
             $(WinUIDetailsIncludePath)\MockDComp;
         </ProjectIncludeDirectories>

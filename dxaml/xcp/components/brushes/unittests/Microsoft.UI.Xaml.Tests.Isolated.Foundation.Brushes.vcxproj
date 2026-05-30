@@ -29,8 +29,8 @@
             $(XcpPath)\components\contentroot\inc;
             $(XcpPath)\components\unittests\mocks;
             $(XcpPath)\core\text\inc;
-            $(XamlSourcePath)\test\dcomp\inc;
-            $(XamlBinaryPath)\test\dcomp\idl;
+            $(RuntimeDCompTestPath)\inc;
+            $(TestObjPath)\dcomp\idl;
             $(WinUIDetailsIncludePath)\abi;
             $(WinUIDetailsIncludePath)\MockDComp;
         </ProjectIncludeDirectories>
