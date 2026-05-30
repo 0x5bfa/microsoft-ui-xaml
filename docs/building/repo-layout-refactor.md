@@ -18,6 +18,7 @@ Use these ownership buckets for new moves:
 | `eng` | Shared build, packaging, versioning, signing, and pipeline infrastructure. |
 | `tools` | Human- and CI-invoked repo tools that are not part of product source. |
 | `generated` | Checked-in generated output, visual baselines, and large derived assets. |
+| `docs/specs` | Feature and API design specs with their local images and supporting files. |
 
 ## First completed move
 
@@ -91,6 +92,12 @@ limited to repository-wide entry points and configuration.
 
 The standalone debugger extension script now lives under `tools/dbgext`, grouped
 with other manually invoked repo tools.
+
+## Specs documentation
+
+Feature and API design specs now live under `docs/specs`. The move keeps specs
+with the rest of the repository documentation while preserving each spec's local
+image and support-file layout.
 
 ## Migration rules
 
