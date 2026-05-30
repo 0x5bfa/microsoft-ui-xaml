@@ -27,9 +27,8 @@
 
         <AppAnalysisPath>$(XcpPath)\dxaml\tools\AppAnalysis</AppAnalysisPath>
         <AppAnalysisObjPath>$(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis</AppAnalysisObjPath>
-        <AppAnalysisTestObjPath>$(XamlBinaryPath)\test\appanalysis</AppAnalysisTestObjPath>
-        <AppAnalysisTestPath>$(XamlSourcePath)\test\appanalysis</AppAnalysisTestPath>
-        <AppAnalysisTestPath>$(XamlSourcePath)\test\appanalysis</AppAnalysisTestPath>
+        <AppAnalysisTestObjPath>$(TestObjPath)\appanalysis</AppAnalysisTestObjPath>
+        <AppAnalysisTestPath Condition="'$(AppAnalysisTestPath)' == ''">$(RuntimeTestPath)\appanalysis</AppAnalysisTestPath>
 
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
@@ -44,7 +43,7 @@
             $(AppAnalysisPath)\unittests\infra\dll;
             $(AppAnalysisObjPath)\idl;
             $(AppAnalysisTestPath)\lib;
-            $(AppAnalysisTestPath)\rules;
+            $(AppAnalysisTestPath)\ruleSet;
             $(AppAnalysisTestObjPath)\idl;
             $(AppAnalysisObjPath)\unittests\infra\idl;
             $(XamlSourcePath)\test\native\inc;

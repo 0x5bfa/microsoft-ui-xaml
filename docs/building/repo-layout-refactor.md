@@ -74,6 +74,12 @@ Runtime test AppX manifest inputs now live under `tests/runtime/packages/appx`.
 They are test packaging assets rather than runtime source, and the runtime
 solution references the package project from that test-owned location.
 
+## Runtime AppAnalysis test support
+
+AppAnalysis test support projects now live under `tests/runtime/appanalysis`.
+`$(RuntimeTestPath)` and `$(AppAnalysisTestPath)` provide shared references for
+runtime projects and AppAnalysis unit tests that consume those support projects.
+
 ## Controls test infrastructure
 
 Controls test infrastructure should live with the controls test projects it

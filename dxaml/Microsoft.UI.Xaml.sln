@@ -831,9 +831,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "customTypes", "customTypes"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "customTypes", "customTypes", "{9CF625E1-47C6-40AA-A2C0-574C99687A0A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.RuleTester", "test\appanalysis\lib\AppAnalysis.RuleTester.vcxproj", "{EC86BA0B-109C-4022-A575-C1EF0E5E64EE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.RuleTester", "..\tests\runtime\appanalysis\lib\AppAnalysis.RuleTester.vcxproj", "{EC86BA0B-109C-4022-A575-C1EF0E5E64EE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.Test.TestRuleSet", "test\appanalysis\ruleSet\AppAnalysis.Test.TestRuleSet.vcxproj", "{BABA674D-F661-46C7-900F-7314AA39301A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.Test.TestRuleSet", "..\tests\runtime\appanalysis\ruleSet\AppAnalysis.Test.TestRuleSet.vcxproj", "{BABA674D-F661-46C7-900F-7314AA39301A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "contract", "test\infra\contract\contract.vcxproj", "{37D37A5D-E167-43FE-AECA-5063C2369807}"
 EndProject

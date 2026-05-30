@@ -26,6 +26,7 @@
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>
     <TestPath>$(XamlSourcePath)\test</TestPath>
+    <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
 
     <MuxControlsPath>$(ProjectRoot)controls</MuxControlsPath>
     <MergedWinMDProjectRoot>$(ProjectRoot)src\metadata\MergedWinMD\</MergedWinMDProjectRoot>
@@ -236,6 +237,7 @@
     <UCRTPath>$(WindowsSDKCppArchRoot)ucrt\$(WindowsSDKArch)</UCRTPath>
 
     <AppAnalysisPath>$(XcpPath)\dxaml\tools\AppAnalysis</AppAnalysisPath>
+    <AppAnalysisTestPath>$(RuntimeTestPath)\appanalysis</AppAnalysisTestPath>
 
     <DetoursPath>$(ProjectRoot)tests\runtime\tools\detours</DetoursPath>
 
