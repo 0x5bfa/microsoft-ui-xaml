@@ -369,6 +369,9 @@ enterprise isolated test group under runtime tests.
 The VisualStatesHelper isolated test moved under
 `tests/runtime/native/isolated/enterprise/visualStatesHelper`, continuing the
 enterprise isolated test group under runtime tests.
+The Qualifiers isolated test moved under
+`tests/runtime/native/isolated/adaptability/qualifiers`, starting an
+adaptability isolated test group under runtime tests.
 
 ## Controls source
 
