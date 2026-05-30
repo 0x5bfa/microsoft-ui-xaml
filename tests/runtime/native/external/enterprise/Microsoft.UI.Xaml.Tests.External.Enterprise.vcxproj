@@ -8,7 +8,7 @@
         <ProjectGuid>{6c6f63da-4f88-4165-bc09-7857be018055}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XamlSourcePath)\test\common.props"/>
     <Import Project="$(NativeExternalTestPath)\common.props" />
     
@@ -25,7 +25,7 @@
                 $(MSBuildThisFileDirectory)\SemanticZoom;
                 $(MSBuildThisFileDirectory)\stickyheaders;
                 $(NativeExternalTestPath)\controls\inc;
-                $(NativeExternalTestPath)\enterprise\inc;
+                $(RuntimeNativeExternalTestPath)\enterprise\inc;
                 $(NativeExternalTestPath)\foundation\inc;
                 $(WinUIDetailsIncludePath)\abi;
                 $(WinUIDetailsIncludePath)\MockDComp;
@@ -68,6 +68,6 @@
         <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(CustomTypesCompile.targets))"/>
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+    <Import Project="$(NativeExternalTestPath)\CustomTypesCompile.targets"/>
 </Project>

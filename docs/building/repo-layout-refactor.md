@@ -241,6 +241,9 @@ shared custom type compilation target from the legacy external test root.
 The sample external test DLL and its custom types support project also moved
 there; it is not solution-referenced today, but it follows the same runtime
 native external test layout.
+The enterprise external test DLL moved there next, and remaining external tests
+that consume its shared helper headers now reference them through
+`$(RuntimeNativeExternalTestPath)`.
 
 ## Controls source
 
