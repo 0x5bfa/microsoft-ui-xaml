@@ -397,6 +397,9 @@ the component tree for existing consumers.
 The Lifetime isolated test moved under
 `tests/runtime/native/isolated/foundation/lifetime`, keeping runtime lifetime
 coverage with the foundation isolated test group.
+The Legacy isolated test moved under
+`tests/runtime/native/isolated/foundation/legacy`, keeping low-level legacy
+helper coverage with the foundation isolated test group.
 
 ## Controls source
 
