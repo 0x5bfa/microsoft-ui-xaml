@@ -949,7 +949,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Brushes", "xcp\components\brushes\lib\Microsoft.UI.Xaml.Brushes.vcxproj", "{83BA909B-3BF5-4A36-8118-7F398B52CC3E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes", "xcp\components\brushes\unittests\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes.vcxproj", "{2BBFD800-5E50-403C-A1C9-49CCA9F7491C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes", "..\tests\runtime\native\isolated\foundation\brushes\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes.vcxproj", "{2BBFD800-5E50-403C-A1C9-49CCA9F7491C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Collection", "xcp\components\Collection\Lib\Microsoft.UI.Xaml.Collection.vcxproj", "{808BC3A6-A9E1-4E36-BDF7-1F3C12DE8464}"
 EndProject
