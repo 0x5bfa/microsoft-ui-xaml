@@ -330,6 +330,9 @@ of compact runtime component tests into the runtime test tree.
 The Base isolated test moved under
 `tests/runtime/native/isolated/foundation/base`, grouping its low-level
 collection and storage tests with the other foundation runtime tests.
+The Animation isolated test moved under
+`tests/runtime/native/isolated/foundation/animation`, retaining its DComp test
+property usage while moving the project out of the runtime source tree.
 
 ## Controls source
 

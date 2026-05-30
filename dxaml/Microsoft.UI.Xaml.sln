@@ -939,7 +939,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Allocatio
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Animation", "xcp\components\animation\lib\Microsoft.UI.Xaml.Animation.vcxproj", "{BB0522D9-7E95-40A1-9522-88B6F42B2DB6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation", "xcp\components\animation\unittests\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation.vcxproj", "{866995B2-99A9-46C6-8178-E41637BEC689}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation", "..\tests\runtime\native\isolated\foundation\animation\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation.vcxproj", "{866995B2-99A9-46C6-8178-E41637BEC689}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Associative", "..\tests\runtime\native\isolated\foundation\associative\Microsoft.UI.Xaml.Tests.Isolated.Associative.vcxproj", "{26D94725-0A9D-4F65-B9A3-78B9A83445D8}"
 EndProject
