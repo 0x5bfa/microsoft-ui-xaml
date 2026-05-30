@@ -1,5 +1,5 @@
 @echo OFF
-pushd %~dp0\..
+pushd %~dp0\..\..
 
 doskey ..=pushd ..
 doskey ...=pushd ..\..
