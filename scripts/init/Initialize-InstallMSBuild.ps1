@@ -7,7 +7,7 @@ param(
 )
 
 
-Import-Module -Name $PSScriptRoot\..\MSBuildFunctions.psm1 -DisableNameChecking
+Import-Module -Name $PSScriptRoot\MSBuildFunctions.psm1 -DisableNameChecking
 
 #is VS installed on this machine?
 if (Test-Path -Path "${env:ProgramFiles(x86)}\Microsoft Visual Studio\") {
