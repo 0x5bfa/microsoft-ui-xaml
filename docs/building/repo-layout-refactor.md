@@ -403,6 +403,9 @@ helper coverage with the foundation isolated test group.
 The AccessKeys isolated tests moved under
 `tests/runtime/native/isolated/xaml/accessKeys`, with shared AccessKeys test
 mocks in `tests/runtime/native/isolated/xaml/accessKeys/shared`.
+The Collection isolated test moved under
+`tests/runtime/native/isolated/foundation/collection`, keeping collection
+coverage with the foundation isolated test group.
 
 ## Controls source
 

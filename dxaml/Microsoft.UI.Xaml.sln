@@ -953,7 +953,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Collection", "xcp\components\Collection\Lib\Microsoft.UI.Xaml.Collection.vcxproj", "{808BC3A6-A9E1-4E36-BDF7-1F3C12DE8464}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Collection", "xcp\components\Collection\Unittests\Microsoft.UI.Xaml.Tests.Isolated.Collection.vcxproj", "{8BE7A3D8-890F-4AC2-8A36-BD1F736FC2C1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Collection", "..\tests\runtime\native\isolated\foundation\collection\Microsoft.UI.Xaml.Tests.Isolated.Collection.vcxproj", "{8BE7A3D8-890F-4AC2-8A36-BD1F736FC2C1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Colors", "xcp\components\colors\lib\Microsoft.UI.Xaml.Colors.vcxproj", "{6B5AED1F-FD5D-47BC-9B9A-37D56E2C2E97}"
 EndProject
