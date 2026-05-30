@@ -324,7 +324,7 @@
     <ClCompile Include="TypeInfo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(NativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
+    <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
     <ProjectReference Include="$(NativeExternalTestPath)\controls\customtypes\CustomTypes.vcxproj" />
   </ItemGroup>
   <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

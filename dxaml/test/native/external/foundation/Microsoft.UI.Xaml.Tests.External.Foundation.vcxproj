@@ -354,7 +354,7 @@
     <ClCompile Include="TypeInfo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(NativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
+    <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
     <ProjectReference Include="customTypes\CustomTypes.vcxproj" />
   </ItemGroup>
   <Import Project="$(DetoursPath)\build\native\Detours.targets" />

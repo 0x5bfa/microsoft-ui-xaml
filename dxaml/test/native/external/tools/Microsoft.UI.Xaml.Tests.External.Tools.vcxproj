@@ -138,7 +138,7 @@
     <ClCompile Include="customTypes.XamlTypeInfo.Impl.g.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(NativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
+    <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
     <ProjectReference Include="$(XamlDiagPath)\idl\xamlom.vcxproj" />
     <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" />
     <ProjectReference Include="customTypes\customTypes.vcxproj" />
