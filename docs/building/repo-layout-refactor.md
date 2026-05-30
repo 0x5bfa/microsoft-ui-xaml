@@ -394,6 +394,9 @@ The Parser isolated test moved under
 `tests/runtime/native/isolated/framework/parser`, continuing the framework
 isolated test group under runtime tests while leaving shared metadata mocks in
 the component tree for existing consumers.
+The Lifetime isolated test moved under
+`tests/runtime/native/isolated/foundation/lifetime`, keeping runtime lifetime
+coverage with the foundation isolated test group.
 
 ## Controls source
 
