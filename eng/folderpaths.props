@@ -28,6 +28,7 @@
     <TestPath>$(XamlSourcePath)\test</TestPath>
     <InfraTestPath>$(TestPath)\infra</InfraTestPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
+    <RuntimeInfraTestPath>$(RuntimeTestPath)\infra</RuntimeInfraTestPath>
     <RuntimeManagedTestPath>$(RuntimeTestPath)\managed</RuntimeManagedTestPath>
     <ManagedTestPath>$(RuntimeManagedTestPath)</ManagedTestPath>
 
@@ -104,6 +105,7 @@
     <UnmergedWinmdOutputLocation>$(Outdir)</UnmergedWinmdOutputLocation>
 
     <InfraTestObjPath>$(TestObjPath)\infra</InfraTestObjPath>
+    <RuntimeInfraTestObjPath>$(XamlBuildOutputRoot)tests\runtime\infra</RuntimeInfraTestObjPath>
 
     <PrivateInfrastructureWin32HostingObjPath>$(InfraTestObjPath)\Win32Hosting</PrivateInfrastructureWin32HostingObjPath>
   </PropertyGroup>

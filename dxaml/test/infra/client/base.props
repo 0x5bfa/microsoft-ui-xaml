@@ -38,7 +38,7 @@
             $(InfraTestObjPath)\Win32Hosting\idl;
             $(WinUIDetailsIncludePath)\abi;
             $(WinUIDetailsIncludePath)\MockDComp;
-            $(InfraTestObjPath)\contract;
+            $(RuntimeInfraTestObjPath)\contract;
             $(NativeIncPath);
             $(InternalTestPath)\inc;
             $(InfraTestObjPath)\client\idl;
@@ -56,7 +56,7 @@
 
     <ItemGroup>
         <ProjectReference Condition="'$(ProjectGuid)'!='{3fd1b03c-df81-4bc7-8204-c48d16026cfb}'" Include="$(InfraTestPath)\Win32Hosting\idl\Private.Infrastructure.Hosting.vcxproj" Project="{3fd1b03c-df81-4bc7-8204-c48d16026cfb}"/>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{37d37a5d-e167-43fe-aeca-5063c2369807}'" Include="$(InfraTestPath)\contract\contract.vcxproj" Project="{37d37a5d-e167-43fe-aeca-5063c2369807}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{37d37a5d-e167-43fe-aeca-5063c2369807}'" Include="$(RuntimeInfraTestPath)\contract\contract.vcxproj" Project="{37d37a5d-e167-43fe-aeca-5063c2369807}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{e076fa9c-3b19-431a-a566-3e771f962428}'" Include="$(InfraTestPath)\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{84d22d7d-5fd0-4ccf-b8d2-c34506c6ba66}'" Include="$(XcpPhonePath)\idl\phone.vcxproj" Project="{84d22d7d-5fd0-4ccf-b8d2-c34506c6ba66}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{e1f36d19-f82d-474a-be26-fea52da5b6e6}'" Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>

@@ -107,7 +107,10 @@ only needs the runtime test build defaults and solution reference update. The
 Invoker helper lives there too, with explicit imports back to the legacy runtime
 build props and targets while `dxaml/xcp` remains in place. The MockDComp copy
 shim also lives there because it only binplaces the WinUIDetails MockDComp DLL
-for runtime tests.
+for runtime tests. The RPC contract now lives there as the first shared native
+runtime infra dependency, with source and generated-output paths exposed through
+`$(RuntimeInfraTestPath)` and `$(RuntimeInfraTestObjPath)` for remaining legacy
+infra consumers.
 
 ## Runtime managed tests
 
