@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(InfraTestPath)\Win32Hosting\WPF\netcore\Private.Infrastructure.Hosting.WPF.csproj" />
+    <ProjectReference Include="$(RuntimeInfraTestPath)\Win32Hosting\WPF\netcore\Private.Infrastructure.Hosting.WPF.csproj" />
   </ItemGroup>
   
 </Project>

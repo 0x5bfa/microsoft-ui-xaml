@@ -25,8 +25,8 @@
 
   <ItemGroup>
     <ProjectReference Include="$(ProjectRoot)\src\projection\private\Microsoft.WinUI.csproj" />
-    <ProjectReference Include="..\..\..\client\cswinrt\Private.Infrastructure.CsWinRT.csproj" />
-    <ProjectReference Include="..\..\..\Win32Hosting\src\Microsoft.Toolkit.Win32.UI.XamlHost.csproj" />
+    <ProjectReference Include="$(InfraTestPath)\client\cswinrt\Private.Infrastructure.CsWinRT.csproj" />
+    <ProjectReference Include="$(RuntimeInfraTestPath)\Win32Hosting\src\Microsoft.Toolkit.Win32.UI.XamlHost.csproj" />
   </ItemGroup>
 
 </Project>

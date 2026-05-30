@@ -34,7 +34,7 @@
             $(WinUIDetailsIncludePath)\abi;
             $(WinUIDetailsIncludePath)\MockDComp;
             $(XcpPath)\dxaml\tools\AppAnalysis\idl;
-            $(InfraTestPath)\Win32Hosting\idl;
+            $(RuntimeInfraTestPath)\Win32Hosting\idl;
             $(LiftedIXPGeneratedIdlPath);
             $(LiftedMRTGeneratedIdlPath);
         </ProjectIncludeDirectories>
@@ -42,7 +42,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="$(InfraTestPath)\Win32Hosting\idl\Private.Infrastructure.Hosting.vcxproj" Project="{3fd1b03c-df81-4bc7-8204-c48d16026cfb}"/>
+        <ProjectReference Include="$(RuntimeInfraTestPath)\Win32Hosting\idl\Private.Infrastructure.Hosting.vcxproj" Project="{3fd1b03c-df81-4bc7-8204-c48d16026cfb}"/>
         <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
         
         <!--
