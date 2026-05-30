@@ -4,7 +4,7 @@ if ($env:RepoRoot)
 }
 else
 {
-    $repoRoot = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..")
+    $repoRoot = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..\..")
 }
 
 $muxcRoot = [System.IO.Path]::Combine($repoRoot, "controls")
