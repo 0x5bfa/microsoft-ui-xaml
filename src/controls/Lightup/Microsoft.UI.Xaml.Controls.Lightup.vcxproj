@@ -16,7 +16,7 @@
   <Import Project="$([MSBuild]::GetPathOfFileAbove(environment.props))" />
   <Import Project="$(NuGetPackageRoot)\Microsoft.Windows.CppWinRT.$(CppWinRTVersion)\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Windows.CppWinRT.$(CppWinRTVersion)\build\native\Microsoft.Windows.CppWinRT.props')" />
   <Import Project="$(MUXCProjectRoot)build\ProjectConfigurations.props" />
-  <Import Project="$(MUXCProjectRoot)version.props" />
+  <Import Project="$(MUXCProjectRoot)build\version.props" />
   <Import Project="$(MUXCProjectRoot)build\CppWinRT.props" />
   <Import Project="$(MUXCProjectRoot)build\HybridCRT.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

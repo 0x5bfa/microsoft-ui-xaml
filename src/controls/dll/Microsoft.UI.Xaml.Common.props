@@ -26,7 +26,7 @@
   <Import Project="$(NuGetPackageRoot)\Microsoft.Build.Tasks.Git.1.1.1\build\Microsoft.Build.Tasks.Git.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Build.Tasks.Git.1.1.1\build\Microsoft.Build.Tasks.Git.props')" />
   <Import Project="$(MUXCProjectRoot)mux.controls.props" Condition="Exists('$(MUXCProjectRoot)mux.controls.props')" />
   <Import Project="$(MUXCProjectRoot)build\ProjectConfigurations.props" />
-  <Import Project="$(MUXCProjectRoot)version.props" />
+  <Import Project="$(MUXCProjectRoot)build\version.props" />
   <Import Project="$(MUXCProjectRoot)build\CppWinRT.props" />
   <Import Project="$(MUXCProjectRoot)build\HybridCRT.props" />
   <PropertyGroup>
