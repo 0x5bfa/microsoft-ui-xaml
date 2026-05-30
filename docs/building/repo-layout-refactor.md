@@ -108,6 +108,9 @@ runtime tree is eventually moved under `src/runtime`. Runtime-local MSBuild
 projects and props files follow the same rule for references back into the XCP
 tree. Test, phone, and controls MSBuild projects that consume runtime source
 should also prefer `$(XcpPath)` over repo-root-relative `dxaml\xcp` paths.
+Graph augmentation projects define the same minimal path properties locally so
+their lightweight project graph files can avoid hard-coded runtime-relative
+paths without importing the full root build props.
 
 ## Migration rules
 
