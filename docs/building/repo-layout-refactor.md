@@ -468,6 +468,10 @@ authoring tools. Shared MSBuild entry points use `$(MUXControlsSourceRoot)` so
 those support projects can reference controls source without reintroducing the
 old `controls/dev` path segment.
 
+Controls-specific build support files are moving under `controls/build` in
+small pieces. The shared MIDL props and targets live there first, with IDL and
+controls DLL projects importing them through `$(MUXCProjectRoot)build`.
+
 ## Metadata composition
 
 The metadata merge projects now live under `src/metadata/MergedWinMD`. Shared

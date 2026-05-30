@@ -545,7 +545,7 @@
       </ClCompile>
     </ItemGroup>
   </Target>
-  <Import Project="$(MUXCProjectRoot)MidlShared.targets" />
+  <Import Project="$(MUXCProjectRoot)build\MidlShared.targets" />
   <Target Name="CreateReferenceWinmds" BeforeTargets="XamlMetadataCodeGenMUX;RunDependencyPropertyCodeGen">
     <ItemGroup>
       <ReferenceWinMDs Include="@(ExternalWinMDs);$(XcpObjPath)\dxaml\idl\winrt\merged\private\Merged\*.winmd" />

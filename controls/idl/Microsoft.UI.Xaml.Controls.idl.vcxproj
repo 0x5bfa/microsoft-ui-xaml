@@ -43,7 +43,7 @@
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(MUXCProjectRoot)MidlShared.props" />
+  <Import Project="$(MUXCProjectRoot)build\MidlShared.props" />
   <ItemGroup>
     <ProjectReference Include="$(XcpPath)\dxaml\idl\winrt\controls\Microsoft.ui.xaml.controls.controls.vcxproj" />
     <ProjectReference Include="$(XcpPath)\dxaml\idl\winrt\core\Microsoft.ui.xaml.coretypes.vcxproj" />
@@ -95,7 +95,7 @@
     </Midl>
   </ItemDefinitionGroup>
   <Import Project="$(CppTargetsFilePath)" />
-  <Import Project="$(MUXCProjectRoot)MidlShared.targets" />
+  <Import Project="$(MUXCProjectRoot)build\MidlShared.targets" />
   <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(NuGetPackageRoot)\Microsoft.Build.Tasks.Git.1.1.1\build\Microsoft.Build.Tasks.Git.targets" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Build.Tasks.Git.1.1.1\build\Microsoft.Build.Tasks.Git.targets')" />
