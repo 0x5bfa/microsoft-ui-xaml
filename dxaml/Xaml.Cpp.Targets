@@ -118,9 +118,9 @@
         <!-- files in the same directory that reference each other.                                                                             -->
         .;
         $(IntDir.TrimEnd('\\'));
-        $(XamlSourcePath)\xcp\dxaml\idl\winrt\controls;
-        $(XamlSourcePath)\xcp\dxaml\idl\winrt\core;
-        $(XamlSourcePath)\xcp\dxaml\idl\winrt\main;
+        $(XcpPath)\dxaml\idl\winrt\controls;
+        $(XcpPath)\dxaml\idl\winrt\core;
+        $(XcpPath)\dxaml\idl\winrt\main;
         $(WinUIDetailsIncludePath)\abi;
         $(WindowsSdxUmIncludePath);
         $(WindowsSdxSharedIncludePath);
@@ -204,7 +204,7 @@
       </PreprocessorDefinitions>
     </ResourceCompile>
     <ResourceCompile Condition="'$(Mui)'=='true'">
-      <RCConfigFile>$(XamlSourcePath)\xcp\inc\mui.rcconfig</RCConfigFile>
+      <RCConfigFile>$(XcpPath)\inc\mui.rcconfig</RCConfigFile>
       <AdditionalOptions> %(AdditionalOptions) -fm $(OutputPath)\%(Filename).muires -q %(RCConfigFile) -r </AdditionalOptions>
     </ResourceCompile>
 

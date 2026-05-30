@@ -106,7 +106,8 @@ should refer to it through `$(XcpPath)` instead of spelling
 `$(XamlSourcePath)\xcp` directly, reducing the number of edits required when the
 runtime tree is eventually moved under `src/runtime`. Runtime-local MSBuild
 projects and props files follow the same rule for references back into the XCP
-tree.
+tree. Test, phone, and controls MSBuild projects that consume runtime source
+should also prefer `$(XcpPath)` over repo-root-relative `dxaml\xcp` paths.
 
 ## Migration rules
 

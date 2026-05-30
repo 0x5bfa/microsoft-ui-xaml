@@ -45,8 +45,8 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <Import Project="$(MUXCProjectRoot)MidlShared.props" />
   <ItemGroup>
-    <ProjectReference Include="$(MUXProjectRoot)dxaml\xcp\dxaml\idl\winrt\controls\Microsoft.ui.xaml.controls.controls.vcxproj" />
-    <ProjectReference Include="$(MUXProjectRoot)dxaml\xcp\dxaml\idl\winrt\core\Microsoft.ui.xaml.coretypes.vcxproj" />
+    <ProjectReference Include="$(XcpPath)\dxaml\idl\winrt\controls\Microsoft.ui.xaml.controls.controls.vcxproj" />
+    <ProjectReference Include="$(XcpPath)\dxaml\idl\winrt\core\Microsoft.ui.xaml.coretypes.vcxproj" />
   </ItemGroup>
 
   <PropertyGroup>

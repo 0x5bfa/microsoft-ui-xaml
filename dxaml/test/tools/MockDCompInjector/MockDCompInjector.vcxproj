@@ -18,7 +18,7 @@
         <TargetDestination>$(TestBinplaceDestinationPath)</TargetDestination>
         <Dllentry>_DllMainCRTStartup</Dllentry>
         <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) UNICODE;</ProjectPreprocessorDefinitions>
-        <ProjectIncludeDirectories>$(ProjectIncludeDirectories); $(ProjectRoot)\dxaml\xcp\inc;</ProjectIncludeDirectories>
+        <ProjectIncludeDirectories>$(ProjectIncludeDirectories); $(XcpPath)\inc;</ProjectIncludeDirectories>
     </PropertyGroup>
 
     <ItemDefinitionGroup>

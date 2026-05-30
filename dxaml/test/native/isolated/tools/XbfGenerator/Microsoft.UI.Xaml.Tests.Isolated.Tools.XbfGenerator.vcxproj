@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
     <PropertyGroup>
@@ -17,7 +17,7 @@
             $(ProjectIncludeDirectories);
             $(XcpPath)\tools\genxbfdll;
             $(XamlSourcePath)\test\infra\inc\;
-            $(XamlSourcePath)\xcp\components\ExtMetadataProvider\inc\;
+            $(XcpPath)\components\ExtMetadataProvider\inc\;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 
@@ -51,7 +51,7 @@
         <ProjectReference Include="$(XcpPath)\components\ExtMetadataProvider\lib\Microsoft.UI.Xaml.ExtMetadataProvider.vcxproj" Project="{f9a1e93c-35dc-4ece-a464-8346c4126e30}"/>
         <ProjectReference Include="$(XcpPath)\components\metadata\lib\Microsoft.UI.Xaml.Metadata.vcxproj" Project="{23637f36-0cb9-4142-a60c-888b0efe9a4c}"/>
         <ProjectReference Include="$(XcpPath)\components\metadata\dynamicmetadatastorage\Microsoft.UI.Xaml.DynamicMetadataStorage.vcxproj" Project="{91cdc786-7b41-4339-b3dc-5854c6f04d4f}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
+        <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
         <ProjectReference Include="$(XamlSourcePath)\test\infra\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
     </ItemGroup>
 

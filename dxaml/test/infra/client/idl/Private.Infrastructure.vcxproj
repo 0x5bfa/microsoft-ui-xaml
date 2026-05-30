@@ -43,7 +43,7 @@
 
     <ItemGroup>
         <ProjectReference Include="$(InfraTestPath)\Win32Hosting\idl\Private.Infrastructure.Hosting.vcxproj" Project="{3fd1b03c-df81-4bc7-8204-c48d16026cfb}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
+        <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
         
         <!--
             Reference our external WinMDs, but not the IXP ones. Since the IXP winmds are merged

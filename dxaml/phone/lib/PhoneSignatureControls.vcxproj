@@ -12,9 +12,9 @@
     <Import Project="$(XamlSourcePath)\phone\common.props"/>
 
     <PropertyGroup>
-        <XcpBaseInc>$(XamlSourcePath)\xcp\components\base\inc</XcpBaseInc>
-        <XcpPalInc>$(XamlSourcePath)\xcp\pal\inc</XcpPalInc>
-        <XcpSatbaseInc>$(XamlSourcePath)\xcp\components\satellitebase\inc</XcpSatbaseInc>
+        <XcpBaseInc>$(XcpPath)\components\base\inc</XcpBaseInc>
+        <XcpPalInc>$(XcpPath)\pal\inc</XcpPalInc>
+        <XcpSatbaseInc>$(XcpPath)\components\satellitebase\inc</XcpSatbaseInc>
         <ProjectIncludeDirectories>$(ProjectIncludeDirectories) ; $(ExternalDependencies) ;</ProjectIncludeDirectories>
         <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) _HAS_EXCEPTIONS=0; </ProjectPreprocessorDefinitions>
     </PropertyGroup>
@@ -34,14 +34,14 @@
             $(ProjectIncludeDirectories);
             $(LiftedIXPIncludePaths);
             $(FrameworkUdkIncPath);
-            $(XamlSourcePath)\xcp\components\base\inc;
-            $(XamlSourcePath)\xcp\components\lifetime\inc;
-            $(XamlSourcePath)\xcp\components\onecoretransforms\inc;
-            $(XamlSourcePath)\xcp\components\pivot\inc;
-            $(XamlSourcePath)\xcp\components\Telemetry\inc;
-            $(XamlSourcePath)\xcp\components\xboxutility\inc;
-            $(XamlSourcePath)\xcp\components;
-            $(XamlSourcePath)\xcp\inc;
+            $(XcpPath)\components\base\inc;
+            $(XcpPath)\components\lifetime\inc;
+            $(XcpPath)\components\onecoretransforms\inc;
+            $(XcpPath)\components\pivot\inc;
+            $(XcpPath)\components\Telemetry\inc;
+            $(XcpPath)\components\xboxutility\inc;
+            $(XcpPath)\components;
+            $(XcpPath)\inc;
             $(XcpBaseInc);
             $(XcpPalInc);
             $(XcpPhoneObjPath)\idl;

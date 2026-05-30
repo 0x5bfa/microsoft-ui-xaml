@@ -14,7 +14,7 @@
   <PropertyGroup>
     <ProjectIncludeDirectories>
       $(ProjectIncludeDirectories);
-      $(ProjectRoot)\dxaml\xcp\inc;
+      $(XcpPath)\inc;
       $(LiftedIXPGeneratedIdlPath);
       $(LiftedMRTGeneratedIdlPath);
     </ProjectIncludeDirectories>

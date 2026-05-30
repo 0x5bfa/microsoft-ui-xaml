@@ -48,7 +48,7 @@
             $(NativeIncPath);
             $(XcpPath)\components\runtimeEnabledFeatures\inc;
             $(XcpPath)\inc;
-            $(XamlSourcePath)\xcp\components\base\inc;
+            $(XcpPath)\components\base\inc;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 </Project>
