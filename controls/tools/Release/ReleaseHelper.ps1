@@ -1,5 +1,5 @@
 Write-Verbose "PSScriptRoot: $PSScriptRoot"
-. $PSScriptRoot\ADALAuth.ps1
+. $PSScriptRoot\AdalAuth.ps1
 
 ###############################################################################
 # Retrieve-Headers
