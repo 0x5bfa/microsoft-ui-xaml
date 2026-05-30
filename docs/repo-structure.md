@@ -9,6 +9,7 @@
 - [/eng](#eng)
 - [/Helix](#helix)
 - [/src](#src)
+- [/tests](#tests)
 
 ## /build, /tools
 These folders contain scripts and other support machinery that you shouldn't 
@@ -47,3 +48,7 @@ runtime and controls trees live.
 The XAML compiler now lives under `/src/compiler`. That folder contains the
 compiler build tasks, executable host, parsing projects, MSBuild targets, and
 compiler-specific tools and solutions.
+
+## /tests
+This folder contains test assets that have been separated from product source
+trees. Compiler test entry points live under `/tests/compiler`.

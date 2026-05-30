@@ -149,9 +149,13 @@ the compiler should write its outputs to.
 
 ### Sources
 
-The source code and tests for the Xaml compiler are located under:
+The source code for the Xaml compiler is located under:
 
     src\compiler
+
+Compiler test entry points are located under:
+
+    tests\compiler
 
 With the bulk of the compiler code under:
     src\compiler\BuildTasks
@@ -161,8 +165,9 @@ ones are:
 
 * *XamlCompiler.sln*: the Xaml Compiler sollution that contains all the dev
 code.
-* *XamlCompilerTests.sln*: contains the 59 and counting projects that make all
-regression and unit tests that we subject the compiler to in our daily work.
+* *tests\compiler\XamlCompilerTests.sln*: contains the 59 and counting projects
+that make all regression and unit tests that we subject the compiler to in our
+daily work.
 
 *Note: Yes, it all builds in VS, with full intellisense and code-browsing.*
 
@@ -204,8 +209,8 @@ breakpoint should get hit at the point of failure.
 
 ### Regression and Unit Tests
 
-The XamlCompilerTests.sln contains 50 some projects that test various features
-of the Xaml Compiler in 3 distinct ways:
+The tests\compiler\XamlCompilerTests.sln contains 50 some projects that test
+various features of the Xaml Compiler in 3 distinct ways:
 
 * *Unit Tests*: we have some 300 unit tests that ensure a limited number of
 featrures work in isolation. We always keep those clean and passing. These are
