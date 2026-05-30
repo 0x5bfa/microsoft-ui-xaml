@@ -101,6 +101,10 @@ the remaining shared test infrastructure under `dxaml/test/infra`. The property
 is defined with the other root folder paths so moved runtime tests do not need
 to import `dxaml/test/Directory.Build.props`.
 
+Runtime-specific infrastructure hosts should move under `tests/runtime/infra`
+as their references are isolated. The .NET Core TAEF host moved first because it
+only needs the runtime test build defaults and solution reference update.
+
 ## Runtime managed tests
 
 Runtime managed test projects should move under `tests/runtime/managed` in
