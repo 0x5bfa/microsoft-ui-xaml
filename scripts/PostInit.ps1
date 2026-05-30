@@ -73,7 +73,7 @@ $projectPackages = @(
     'eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj',
     'eng\Microsoft.MaestroRestore.csproj',
     'controls\dev\dll\packages.config',
-    'XamlCompilerPrerequisites.sln',
+    'src\compiler\XamlCompilerPrerequisites.sln',
     'dxaml\Microsoft.UI.Xaml.sln',
     'dxaml\xcp\tools\XbfParser\XbfParser.sln',
     'src\compiler\XamlCompiler.sln'

@@ -157,7 +157,7 @@ rem First, determine if we have necessary files to build the compiler or if we s
 rem and use the compiler from a public WinUI package.
 if EXIST "%reporoot%\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs" (
     rem Build the compiler
-    call :buildSolution %reporoot%\XamlCompilerPrerequisites.sln
+    call :buildSolution %reporoot%\src\compiler\XamlCompilerPrerequisites.sln
     if ERRORLEVEL 1 goto:showDurationAndExit
 ) else (
     rem Download a recent compatible public WinUI package and copy the necessary compiler
