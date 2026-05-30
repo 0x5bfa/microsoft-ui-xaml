@@ -387,6 +387,9 @@ test group under runtime tests.
 The Graphics isolated test moved under
 `tests/runtime/native/isolated/foundation/graphics`, keeping graphics
 infrastructure isolated tests with the foundation runtime test group.
+The XamlDiagnostics isolated test moved under
+`tests/runtime/native/isolated/xaml/diagnostics`, starting a XAML diagnostics
+isolated test group under runtime tests.
 
 ## Controls source
 

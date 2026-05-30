@@ -1173,7 +1173,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xamlom", "xcp\components\xa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XamlDiagnostics", "xcp\components\xamlDiagnostics\lib\Microsoft.UI.Xaml.XamlDiagnostics.vcxproj", "{0E6EFB75-5844-4F7A-90AA-EABA4F6B76A9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics", "xcp\components\xamlDiagnostics\unittests\Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics.vcxproj", "{184A3886-DEDB-4515-9AEB-4697E55472B2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics", "..\tests\runtime\native\isolated\xaml\diagnostics\Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics.vcxproj", "{184A3886-DEDB-4515-9AEB-4697E55472B2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XboxUtility", "xcp\components\XboxUtility\lib\Microsoft.UI.Xaml.XboxUtility.vcxproj", "{B69373ED-EC7E-46EE-9FE6-76645661A3CB}"
 EndProject
