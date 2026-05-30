@@ -1115,7 +1115,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XamlResou
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.RuntimeEnabledFeatures", "xcp\components\runtimeEnabledFeatures\lib\Microsoft.UI.Xaml.RuntimeEnabledFeatures.vcxproj", "{968DC6E1-0F0A-4211-97CC-57AB0754206B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector", "xcp\components\runtimeEnabledFeatures\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector.vcxproj", "{7B6887D9-6AF1-4EA6-8842-F8D2075132A2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector", "..\tests\runtime\native\isolated\framework\runtimeEnabledFeatures\Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector.vcxproj", "{7B6887D9-6AF1-4EA6-8842-F8D2075132A2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.SatelliteBase", "xcp\components\SatelliteBase\lib\Microsoft.UI.Xaml.SatelliteBase.vcxproj", "{A0C77691-0C3E-4497-9837-178ED492F063}"
 EndProject
