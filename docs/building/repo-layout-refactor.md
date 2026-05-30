@@ -507,7 +507,8 @@ keeping the interactive release workflow next to its ADAL authentication helper.
 
 Controls resource generation helpers now live under
 `controls/tools/ResourceGeneration`, including system DLL resource generation,
-visual verification update, and final-release theme resource trimming scripts.
+visual verification update, final-release theme resource trimming scripts, and
+the baseline resources generator app.
 
 Controls developer shell helpers now live under `controls/tools/Shell`,
 including command aliases and the PowerShell profile loaded by `ps.bat`.
