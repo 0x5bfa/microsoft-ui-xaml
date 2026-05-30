@@ -77,7 +77,7 @@
       <IsWinMDFile>true</IsWinMDFile>
     </Reference>
   </ItemGroup>
-  <Import Project="$(MSBuildThisFileDirectory)\..\..\FeatureAreas.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\..\..\build\FeatureAreas.props" />
   <Import Project="$(MUXControlsSourceRoot)Interactions\ButtonInteraction\InteractionTests\ButtonInteraction_InteractionTests.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)Interactions\SliderInteraction\InteractionTests\SliderInteraction_InteractionTests.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)ColorPicker\InteractionTests\ColorPicker_InteractionTests.projitems" Label="Shared" Condition="$(FeatureColorPickerEnabled) == 'true'" />

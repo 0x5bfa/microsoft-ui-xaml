@@ -7,7 +7,7 @@
     <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
   </PropertyGroup>
   <Import Project="$([MSBuild]::GetPathOfFileAbove(environment.props))" />
-  <Import Project="$(MUXCProjectRoot)FeatureAreas.props" />
+  <Import Project="$(MUXCProjectRoot)build\FeatureAreas.props" />
   <Import Project="$(NuGetPackageRoot)\Microsoft.Windows.CppWinRT.$(CppWinRTVersion)\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Windows.CppWinRT.$(CppWinRTVersion)\build\native\Microsoft.Windows.CppWinRT.props')" />
   <Import Project="$(NuGetPackageRoot)\Microsoft.SourceLink.GitHub.1.1.1\build\Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.SourceLink.GitHub.1.1.1\build\Microsoft.SourceLink.GitHub.props')" />
   <Import Project="$(NuGetPackageRoot)\Microsoft.SourceLink.Common.1.1.1\build\Microsoft.SourceLink.Common.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.SourceLink.Common.1.1.1\build\Microsoft.SourceLink.Common.props')" />
@@ -61,7 +61,7 @@
     <!-- Don't add winmds here, add them to ExternalWinMDs in eng\productmetadata.props -->
     <Reference Include="@(ExternalWinMDs)" />
   </ItemGroup>
-  <Import Project="$(MUXCProjectRoot)ProjectImports.targets" />
+  <Import Project="$(MUXCProjectRoot)build\ProjectImports.targets" />
   <!-- We only want to perform MIDL operations in this project, so we'll remove everything else. -->
   <ItemGroup>
     <ClCompile Remove="@(ClCompile)" />

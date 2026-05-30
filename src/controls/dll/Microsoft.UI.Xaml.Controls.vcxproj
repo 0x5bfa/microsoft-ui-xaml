@@ -17,7 +17,7 @@
   <Import Project="$(ProjectRoot)\eng\pgo\Microsoft.WinUI.PGO.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <Import Project="$(MUXCProjectRoot)build\MidlShared.props" />
-  <Import Project="$(MUXCProjectRoot)ProjectImports.targets" />
+  <Import Project="$(MUXCProjectRoot)build\ProjectImports.targets" />
   <ItemGroup>
     <ProjectReference Include="$(MSBuildThisFileDirectory)..\Lightup\Microsoft.UI.Xaml.Controls.Lightup.vcxproj" />
   </ItemGroup>

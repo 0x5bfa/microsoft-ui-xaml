@@ -407,7 +407,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadialGradientBrush_Interac
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3201CCE-4A1E-492A-BFCF-273F8C2991EC}"
 	ProjectSection(SolutionItems) = preProject
-		InnerLoopAreas.props = InnerLoopAreas.props
+		build\InnerLoopAreas.props = build\InnerLoopAreas.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MUXTestInfra", "MUXTestInfra", "{633B8D7A-3207-4BD3-8159-B65710AEA6FF}"

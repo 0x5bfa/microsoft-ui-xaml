@@ -3,7 +3,7 @@
 
   <Import Project="$([MSBuild]::GetPathOfFileAbove(environment.props))" />
   <Import Project="$(MUXCProjectRoot)mux.controls.props" Condition="Exists('$(MUXCProjectRoot)mux.controls.props')" />
-  <Import Project="$(MUXCProjectRoot)FeatureAreas.props" />
+  <Import Project="$(MUXCProjectRoot)build\FeatureAreas.props" />
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
