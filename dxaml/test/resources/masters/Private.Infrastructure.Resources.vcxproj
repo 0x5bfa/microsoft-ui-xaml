@@ -21,13 +21,14 @@
     <PropertyGroup>
         <ResourceOnlyDll>true</ResourceOnlyDll>
         <Mui>false</Mui>
+        <VisualTestBaselinesDir>$(ProjectRoot)generated\tests\visualbaselines\</VisualTestBaselinesDir>
         <ProjectIncludeDirectories>$(ProjectIncludeDirectories);$(XcpPath)\inc;$(XamlBuildPath);</ProjectIncludeDirectories>
     </PropertyGroup>
 
     <ItemGroup>
-        <GenerateTestResources Include="*.xml"/>
-        <GenerateTestResources Include="*.png"/>
-        <GenerateTestResources Include="*.pdf"/>
+        <GenerateTestResources Include="$(VisualTestBaselinesDir)*.xml"/>
+        <GenerateTestResources Include="$(VisualTestBaselinesDir)*.png"/>
+        <GenerateTestResources Include="$(VisualTestBaselinesDir)*.pdf"/>
 
         <ClInclude Include="TestResource.h"/>
 
@@ -38,10 +39,10 @@
          that isn't in the release WinMD.  In those cases, we'll want to grab the masters from the release
          folder, not the base folder, to allow for differences between the two. -->
     <ItemGroup Condition="'$(MUXFinalRelease)' == 'true'">
-        <GenerateReleaseTestResources Include="release\*.xml"/>
-        <GenerateReleaseTestResources Include="release\*.png"/>
-        <GenerateReleaseTestResources Include="release\*.pdf"/>
-        <GenerateTestResources Remove="@(GenerateReleaseTestResources -> '%(Filename)%(Extension)')"/>
+        <GenerateReleaseTestResources Include="$(VisualTestBaselinesDir)release\*.xml"/>
+        <GenerateReleaseTestResources Include="$(VisualTestBaselinesDir)release\*.png"/>
+        <GenerateReleaseTestResources Include="$(VisualTestBaselinesDir)release\*.pdf"/>
+        <GenerateTestResources Remove="@(GenerateReleaseTestResources -> '$(VisualTestBaselinesDir)%(Filename)%(Extension)')"/>
         <GenerateTestResources Include="@(GenerateReleaseTestResources)"/>
     </ItemGroup>
 

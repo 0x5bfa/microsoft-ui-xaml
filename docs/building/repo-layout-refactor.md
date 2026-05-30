@@ -61,6 +61,13 @@ Checked-in package IntelliSense XML now lives under
 through `$(IntellisenseFolder)`, while the docs-team drop input stays under
 `packaging/Intellisense/drop`.
 
+## Visual test baselines
+
+Checked-in visual test baseline assets now live under
+`generated/tests/visualbaselines`. The resource project stays under
+`dxaml/test/resources/masters` so the existing test resource deployment layout
+continues to expose `resources\masters` at runtime.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.
@@ -77,9 +84,7 @@ through `$(IntellisenseFolder)`, while the docs-team drop input stays under
 
 1. Move compiler test project assets into `tests/compiler` once they are
    present in the checkout and their generation/update workflows are verified.
-2. Move visual baselines into the generated-assets area with clear update
-   tooling.
-3. Move `controls/dev` to `src/controls` after the controls solution path usage
+2. Move `controls/dev` to `src/controls` after the controls solution path usage
    is audited.
-4. Move `dxaml/xcp` to `src/runtime` last, because it has the broadest MSBuild
+3. Move `dxaml/xcp` to `src/runtime` last, because it has the broadest MSBuild
    and native project surface.
