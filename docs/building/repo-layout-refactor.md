@@ -409,6 +409,9 @@ coverage with the foundation isolated test group.
 Shared isolated test stubs, external mocks, and support headers moved under
 `tests/runtime/native/isolated/shared`, so component tests can reference shared
 test infrastructure through `$(NativeIsolatedTestPath)`.
+The remaining KeyDownUp source-only unit test files moved under
+`tests/runtime/native/isolated/controls/keyDownUp`, keeping those test sources
+with the controls isolated test tree without changing project participation.
 
 ## Controls source
 
