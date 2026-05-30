@@ -68,12 +68,6 @@ Write-Host "Restoring Maestro and ensuring authentication..."
 msbuild -nologo -t:Restore $repoRoot\eng\Microsoft.MaestroRestore.csproj -v:$Verbosity -p:Configuration=Release -p:NugetInteractive=true -p:PublishReadyToRun=true
 
 Write-Host "Restoring additional packages..."
-$xcpRoot = $env:XcpRoot
-if (-not $xcpRoot)
-{
-    $xcpRoot = Join-Path $repoRoot 'dxaml\xcp'
-}
-
 $isOssBuild = -not (Test-Path $repoRoot\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs)
 $pgoPackagesConfig = if ($isOssBuild) { 'eng\pgo\packages.OSS.config' } else { 'eng\pgo\packages.config' }
 $projectPackages = @(
@@ -83,7 +77,7 @@ $projectPackages = @(
     (Join-Path $repoRoot 'src\controls\dll\packages.config'),
     (Join-Path $repoRoot 'src\compiler\XamlCompilerPrerequisites.sln'),
     (Join-Path $repoRoot 'dxaml\Microsoft.UI.Xaml.sln'),
-    (Join-Path $xcpRoot 'tools\XbfParser\XbfParser.sln'),
+    (Join-Path $repoRoot 'tools\runtime\XbfParser\XbfParser.sln'),
     (Join-Path $repoRoot 'src\compiler\XamlCompiler.sln')
 )
 

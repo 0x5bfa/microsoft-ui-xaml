@@ -205,7 +205,7 @@
 
     <!-- WidgetSpinner XBF parsing library -->
     <FileInfo Include="$(XamlGenOutputPath)core\StableXbfIndexMetadata.g.cs">
-      <Destination>xcp\tools\XbfParser\WidgetSpinner\Metadata</Destination>
+      <Destination>..\tools\runtime\XbfParser\WidgetSpinner\Metadata</Destination>
     </FileInfo>
 
     <!-- xcp\components\simple -->
