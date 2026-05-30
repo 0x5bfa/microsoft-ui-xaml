@@ -4,7 +4,7 @@ REM Copyright (c) Microsoft Corporation.
 REM Licensed under the MIT License. See LICENSE in the project root for license information.
 
 SETLOCAL
-call csc ..\..\src\compiler\Tools\FixMasters\FixMasters.cs /out:%temp%\fixmasters.exe
+call csc "%~dp0tools\FixMasters\FixMasters.cs" /out:"%temp%\fixmasters.exe"
 if NOT %ERRORLEVEL%==0 goto failedCopy
 
 del /q /s TestMasters
@@ -98,7 +98,7 @@ CALL :copyProject "RegressionProjects\Features\StaticLibs\StaticLibInRuntimeComp
 
 CALL :copyProject "RegressionProjects\Features\CustomAppXaml\CustomAppXaml\obj\x86\Debug" "RegressionProjects\Features\CustomAppXaml\CustomAppXaml"
 
-call %temp%\fixmasters.exe
+call "%temp%\fixmasters.exe"
 if NOT %ERRORLEVEL%==0 goto failedCopy
 
 echo.
