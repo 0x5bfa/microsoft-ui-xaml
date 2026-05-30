@@ -3,7 +3,7 @@
 ## Add-Aliases.ps1  
 ##
 ## Sets some common aliases for PowerShell consoles.
-## Mostly based on aliases found in the ..\aliases file
+## Mostly based on aliases found in the aliases file next to this script.
 ##
 ##############################################################################  
 

@@ -165,9 +165,10 @@ now matches their role as test assets rather than sample applications.
 .NET SDK, runtime download, MSBuild install, and test certificate generation
 helpers now live under `scripts/init`. The checked-in post-init restore step
 lives there too, while `scripts/PostInit.ps1` remains available as a custom
-hook. They are part of repository initialization rather than package
-construction, leaving the `build` folder focused on packaging inputs and
-build-time transforms.
+hook. Command prompt and PowerShell alias definitions are co-located there as
+initialization shell helpers. They are part of repository initialization rather
+than package construction, leaving the `build` folder focused on packaging
+inputs and build-time transforms.
 
 ## Packaging inputs
 
