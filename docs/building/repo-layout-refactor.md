@@ -515,6 +515,10 @@ including command aliases and the PowerShell profile loaded by `ps.bat`.
 Controls shared command wrappers now live under `controls/tools/Common`,
 including the NuGet and PowerShell wrappers used by controls tooling scripts.
 
+Controls packaging helpers now live under `controls/tools/Packaging`,
+including the framework package AppX creation wrapper used after controls
+builds.
+
 Controls source maintenance helpers now live under
 `controls/tools/SourceMaintenance`, including namespace update, vcxitems page
 reference cleanup, and text template processing scripts.
