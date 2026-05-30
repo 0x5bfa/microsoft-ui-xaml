@@ -39,7 +39,7 @@
             $(ProjectIncludeDirectories);
             $(NativeExternalTestPath)\pch;
             $(NativeExternalTestPath)\inc;
-            $(InfraTestPath)\inc;
+            $(RuntimeInfraTestPath)\inc;
             $(InfraTestPath)\client\inc;
             $(NativeExternalTestPath)\Automation;
             $(InfraTestPath)\server\inc;

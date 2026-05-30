@@ -33,7 +33,7 @@
         <ProjectIncludeDirectories>
             $(InfraTestPath)\client\pch;
             $(InfraTestPath)\client\inc;
-            $(InfraTestPath)\inc;
+            $(RuntimeInfraTestPath)\inc;
             $(InfraTestObjPath)\client\idl;
             $(InfraTestObjPath)\Win32Hosting\idl;
             $(WinUIDetailsIncludePath)\abi;

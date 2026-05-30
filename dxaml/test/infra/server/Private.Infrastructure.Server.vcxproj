@@ -72,7 +72,7 @@
             $(ProjectIncludeDirectories);
             $(InfraTestPath)\server\inc;
             $(InfraTestObjPath)\Win32Hosting\idl;
-            $(InfraTestPath)\inc;
+            $(RuntimeInfraTestPath)\inc;
             $(RuntimeInfraTestObjPath)\contract;
             $(NativeIncPath);
             $(AppAnalysisTestPath)\lib;
