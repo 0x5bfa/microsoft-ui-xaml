@@ -265,6 +265,10 @@ tree.
 The shared runtime test C++ defaults now live at `tests/runtime/common.props`.
 Runtime test projects should import it through `$(RuntimeTestPath)\common.props`
 instead of reaching back into the legacy `dxaml/test` tree.
+The remaining shared runtime test build defaults now live in
+`tests/runtime/RuntimeTest.Directory.Build.props` for explicit importers; it is
+not named `Directory.Build.props` at the runtime root so it does not change
+MSBuild's automatic parent-directory import behavior for runtime test projects.
 
 ## Controls source
 
