@@ -483,6 +483,10 @@ limited to repository-wide entry points and configuration.
 The standalone debugger extension script now lives under `tools/dbgext`, grouped
 with other manually invoked repo tools.
 
+Clang-oriented developer helpers now live under `tools/clang`, with `init.cmd`
+adding that folder to PATH so the short command names remain available in
+initialized shells.
+
 Runtime developer tools should move out of `dxaml/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
 as the first small runtime tool move. The XBF parser/viewer tools moved under
