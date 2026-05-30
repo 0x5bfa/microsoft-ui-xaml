@@ -21,7 +21,7 @@
     
     <ItemDefinitionGroup>
         <XamlProduct>
-            <AssociatedSolution>$(ProjectRoot)dxaml\Microsoft.UI.Xaml.sln</AssociatedSolution>
+            <AssociatedSolution>$(ProjectRoot)src\runtime\Microsoft.UI.Xaml.sln</AssociatedSolution>
         </XamlProduct>
     </ItemDefinitionGroup>
 
