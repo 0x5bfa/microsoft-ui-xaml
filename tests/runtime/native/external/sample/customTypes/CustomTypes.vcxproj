@@ -6,7 +6,7 @@
     <ProjectGuid>{760516A0-E9DB-4A65-B463-774814047298}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Condition="'$(BuildingWithBuildExe)'!='true'" Project="$([MSBuild]::GetPathOfFileAbove(Xaml.NTLegacy.Cpp.props))" />
+  <Import Condition="'$(BuildingWithBuildExe)'!='true'" Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.NTLegacy.Cpp.props" />
   <PropertyGroup>
     <!-- We can't place the generated type metadata in the Windows namespace, so keeping with the convention
       the private infrastructure uses to work around this we place it in the private namespace -->
@@ -37,5 +37,5 @@
     <ClInclude Include="Sample.CustomButton.h" />
     <ClCompile Include="Sample.CustomButton.cpp" />
   </ItemGroup>
-  <Import Condition="'$(BuildingWithBuildExe)'!='true'" Project="$([MSBuild]::GetPathOfFileAbove(Xaml.NTLegacy.Cpp.targets))"/>
+  <Import Condition="'$(BuildingWithBuildExe)'!='true'" Project="$(XamlSourcePath)\Xaml.NTLegacy.Cpp.targets"/>
 </Project>
