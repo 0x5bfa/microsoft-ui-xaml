@@ -841,7 +841,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Invoker", "..\tests\runtime
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Logging", "..\tests\runtime\infra\logging\Private.Infrastructure.Logging.vcxproj", "{8ACE23AB-6B9F-4760-BDD3-FE1C3B7D51DF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Server", "test\infra\server\Private.Infrastructure.Server.vcxproj", "{C59FC853-80DA-4B7E-BCDA-3EB94D1351DA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Server", "..\tests\runtime\infra\server\Private.Infrastructure.Server.vcxproj", "{C59FC853-80DA-4B7E-BCDA-3EB94D1351DA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Client", "test\infra\client\dll\Private.Infrastructure.Client.vcxproj", "{7E2BC80E-CF9B-4567-8E3E-D0F81B4782FD}"
 EndProject
