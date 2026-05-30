@@ -8,7 +8,7 @@
         <ProjectGuid>{31cf3222-2966-4a79-8586-4bdde928b561}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
@@ -16,7 +16,7 @@
         <ClInclude Include="VisualTransitionTableOptimizedLookupUnitTests.h"/>
 
         <ClCompile Include="VisualTransitionTableOptimizedLookupUnitTests.cpp"/>
-        <ClCompile Include="..\VisualTransitionTableOptimizedLookup.cpp"/>
+        <ClCompile Include="$(XcpPath)\components\deferral\VisualTransitionTableOptimizedLookup.cpp"/>
     </ItemGroup>
 
     <PropertyGroup>
@@ -41,5 +41,5 @@
         <ProjectReference Include="$(XcpPath)\core\parser\core\Parser.Core.vcxproj" Project="{4c54ca57-3fdb-4bd4-a5cd-6f89f8f3d46b}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>

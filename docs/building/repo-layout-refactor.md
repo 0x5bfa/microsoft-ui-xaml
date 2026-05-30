@@ -285,6 +285,9 @@ isolated test migration out of `dxaml/xcp`.
 The RuntimeEnabledFeatureDetector isolated test moved under
 `tests/runtime/native/isolated/framework/runtimeEnabledFeatures` with the same
 runtime test structure.
+The Deferral isolated test moved under
+`tests/runtime/native/isolated/framework/deferral`, with its product source
+compile item referenced through `$(XcpPath)` instead of a project-relative path.
 
 ## Controls source
 
