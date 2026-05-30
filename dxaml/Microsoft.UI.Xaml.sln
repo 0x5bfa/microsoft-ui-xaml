@@ -1139,7 +1139,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Theming", "xcp\components\theming\lib\Microsoft.UI.Xaml.Theming.vcxproj", "{EB1E79FA-171B-4812-B0EE-FD162A81DC3B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming", "xcp\components\theming\unittests\Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming.vcxproj", "{5FD60B9C-3241-4BBC-8C99-BC7A8F776D7B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming", "..\tests\runtime\native\isolated\controls\theming\Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming.vcxproj", "{5FD60B9C-3241-4BBC-8C99-BC7A8F776D7B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ThemingInterop", "xcp\components\theminginterop\lib\Microsoft.UI.Xaml.ThemingInterop.vcxproj", "{ED34E0C6-AA5E-45C8-B793-58E3A4171E19}"
 EndProject
