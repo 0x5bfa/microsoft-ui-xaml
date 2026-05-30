@@ -18,6 +18,7 @@ Note that developer usage documentation can be found separately on docs.microsof
 
 ### Repo Layout
 To get an understanding of how the repository is laid out, see the [repo structure](repo-structure.md) doc.
+For the ongoing path cleanup direction, see the [repository layout refactor](./building/repo-layout-refactor.md) doc.
 
 ### Developer Guide
 The [developer guide](./building/developer-guide.md) contains information on how to do the day-to-day tasks in this repo, as well as the tools and setup required to get going.

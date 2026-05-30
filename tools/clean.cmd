@@ -101,9 +101,9 @@ if "%deletePackages%"=="1" (
         rd /s /q %reporoot%\src\packages
     )
     
-    if exist %reporoot%\src\XamlCompiler\packages (
-        echo Deleting src\XamlCompiler\packages...
-        rd /s /q %reporoot%\src\XamlCompiler\packages
+    if exist %reporoot%\src\compiler\packages (
+        echo Deleting src\compiler\packages...
+        rd /s /q %reporoot%\src\compiler\packages
     )
     
     echo Deleting %reporoot%\PackageStore...

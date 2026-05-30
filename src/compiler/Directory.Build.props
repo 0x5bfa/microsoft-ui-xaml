@@ -7,7 +7,7 @@
     <PublicMUXDir>$(ArtifactsBinDir)Product\</PublicMUXDir>
     <GenerateProjectSpecificOutputFolder>True</GenerateProjectSpecificOutputFolder>
     <TestCertificatePath>$(ProjectRoot)build\WinUITest.pfx</TestCertificatePath>
-    <XamlCompilerTargetsPath>$(ObjectPathRoot)\src\XamlCompiler\BuildTasks\Microsoft.UI.Xaml.Markup.Compiler\Targets</XamlCompilerTargetsPath>
+    <XamlCompilerTargetsPath>$(ObjectPathRoot)\src\compiler\BuildTasks\Microsoft.UI.Xaml.Markup.Compiler\Targets</XamlCompilerTargetsPath>
     <DebugSymbols>true</DebugSymbols>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>$(ProjectRoot)eng\key.snk</AssemblyOriginatorKeyFile>

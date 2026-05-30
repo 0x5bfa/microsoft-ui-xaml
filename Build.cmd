@@ -155,7 +155,7 @@ rem before we build the solutions that consume them.
 rem
 rem First, determine if we have necessary files to build the compiler or if we should download
 rem and use the compiler from a public WinUI package.
-if EXIST "%reporoot%\src\XamlCompiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs" (
+if EXIST "%reporoot%\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs" (
     rem Build the compiler
     call :buildSolution %reporoot%\XamlCompilerPrerequisites.sln
     if ERRORLEVEL 1 goto:showDurationAndExit

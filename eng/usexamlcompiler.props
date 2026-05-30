@@ -3,7 +3,7 @@
   <PropertyGroup>
     <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
     <TargetPlatformMinVersion Condition="'$(TargetPlatformMinVersion)' == ''">$(TargetPlatformVersion)</TargetPlatformMinVersion>
-    <!-- Mimic src\XamlCompiler\Targets\Microsoft.UI.Xaml.Markup.Compiler.interop.targets, but using the in-repo copy of the package -->
+    <!-- Mimic src\compiler\Targets\Microsoft.UI.Xaml.Markup.Compiler.interop.targets, but using the in-repo copy of the package -->
     <XamlCompilerOutDir Condition=" '$(MSBuildRuntimeType)' == 'Core' and '$(XamlCompilerOutDir)' == '' ">$(ToolsPackageLocation)\net8.0\</XamlCompilerOutDir>
     <XamlCompilerOutDir Condition=" '$(XamlCompilerOutDir)' == '' ">$(ToolsPackageLocation)\net472\</XamlCompilerOutDir>
     <GenXbfPath>$(ArtifactsBinRoot)GenXbf</GenXbfPath>
@@ -16,11 +16,11 @@
   
   <Target Name="EnsureCompilerExists" BeforeTargets="Build" Condition="'$(SkipXamlCompilerProjectReferences)' == 'true'">
     <Error Condition="!Exists('$(XamlCompilerTaskPath)')"
-        Text="$(XamlCompilerTaskPath) does not exist, which is needed to compile XAML.  Please build $(ProjectRoot)src\XamlCompiler\Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj before building $(MSBuildProjectName)$(MSBuildProjectExtension)." />
+        Text="$(XamlCompilerTaskPath) does not exist, which is needed to compile XAML.  Please build $(ProjectRoot)src\compiler\Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj before building $(MSBuildProjectName)$(MSBuildProjectExtension)." />
     <Error Condition="!Exists('$(XamlCompilerJsonTaskPath)')"
-        Text="$(XamlCompilerJsonTaskPath) does not exist, which is needed to compile XAML.  Please build $(ProjectRoot)src\XamlCompiler\Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj before building $(MSBuildProjectName)$(MSBuildProjectExtension)." />
+        Text="$(XamlCompilerJsonTaskPath) does not exist, which is needed to compile XAML.  Please build $(ProjectRoot)src\compiler\Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj before building $(MSBuildProjectName)$(MSBuildProjectExtension)." />
     <Error Condition="!Exists('$(XamlCompilerExePath)')"
-        Text="$(XamlCompilerExePath) does not exist, which is needed to compile XAML.  Please build $(ProjectRoot)src\XamlCompiler\Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj before building $(MSBuildProjectName)$(MSBuildProjectExtension)." />
+        Text="$(XamlCompilerExePath) does not exist, which is needed to compile XAML.  Please build $(ProjectRoot)src\compiler\Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj before building $(MSBuildProjectName)$(MSBuildProjectExtension)." />
   </Target>
 
   <Import Project="$(XamlCompilerPropsAndTargetsDirectory)Microsoft.UI.Xaml.Markup.Compiler.props" Condition="'$(ExcludeRestorePackageImports)'!='true'"/>
