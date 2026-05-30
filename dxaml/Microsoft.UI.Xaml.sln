@@ -1355,7 +1355,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Man
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Framework", "..\tests\runtime\managed\framework\Microsoft.UI.Xaml.Tests.Managed.Framework.csproj", "{BC495EE4-E028-4811-97E6-B4D1EA723F9C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Convergence", "test\native\external\convergence\Microsoft.UI.Xaml.Tests.External.Convergence.vcxproj", "{DB425549-D335-4A8A-A971-FB5034F5D778}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Convergence", "..\tests\runtime\native\external\convergence\Microsoft.UI.Xaml.Tests.External.Convergence.vcxproj", "{DB425549-D335-4A8A-A971-FB5034F5D778}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gencompheadersandidl", "..\eng\gencompheadersandidl\gencompheadersandidl.vcxproj", "{85684433-45C4-4445-B7E3-0ECBE16D3A8F}"
 EndProject
