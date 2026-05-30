@@ -32,6 +32,14 @@ lives under `src/compiler` alongside `XamlCompiler.sln` and the compiler
 projects it orchestrates. `XamlCompilerPublic.csproj` remains at the repo root
 until its `Directory.Build.props` behavior can be isolated.
 
+## Compiler test entry points
+
+Compiler-specific test entry points now live under `tests/compiler`.
+`XamlCompilerTests.sln`, `runtests.cmd`, and `copynewmasters.cmd` moved there
+so the source tree can keep compiler implementation separate from compiler test
+orchestration. The compiler source solution references unit-test projects
+through `tests/compiler`.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.
@@ -46,9 +54,8 @@ until its `Directory.Build.props` behavior can be isolated.
 
 ## Future candidates
 
-1. Move compiler regression tests from `src/compiler/Tests` to `tests/compiler`
-   after the compiler solutions and test scripts can tolerate the new relative
-   path.
+1. Move compiler test project assets into `tests/compiler` once they are
+   present in the checkout and their generation/update workflows are verified.
 2. Move Helix and top-level test scripts under `tests/infra`.
 3. Move `controls/dev/Generated`, IntelliSense XML, and visual baselines into a
    generated-assets area with clear update tooling.

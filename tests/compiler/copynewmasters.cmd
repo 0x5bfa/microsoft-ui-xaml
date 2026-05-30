@@ -4,7 +4,7 @@ REM Copyright (c) Microsoft Corporation.
 REM Licensed under the MIT License. See LICENSE in the project root for license information.
 
 SETLOCAL
-call csc tools\fixmasters\fixmasters.cs /out:%temp%\fixmasters.exe
+call csc ..\..\src\compiler\Tools\FixMasters\FixMasters.cs /out:%temp%\fixmasters.exe
 if NOT %ERRORLEVEL%==0 goto failedCopy
 
 del /q /s TestMasters
@@ -115,6 +115,6 @@ goto :EOF
 echo ## Updating %~2 to %~1
 echo.
 
-robocopy "%BuildOutputRoot%\%_BuildArch%%_BuildType%\src\compiler\Tests\%~2" "TestMasters\%~1" *.g.* /XF *.g.obj /XF *.nuget.g.* /XF *.backup /s /r:0 /z /ndl
+robocopy "%BuildOutputRoot%\%_BuildArch%%_BuildType%\tests\compiler\%~2" "TestMasters\%~1" *.g.* /XF *.g.obj /XF *.nuget.g.* /XF *.backup /s /r:0 /z /ndl
 if %ERRORLEVEL% GTR 1 goto :failedCopy
 EXIT /B 0
