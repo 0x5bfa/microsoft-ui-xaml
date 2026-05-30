@@ -8,7 +8,7 @@
         <ProjectGuid>{0abd262a-c1d8-440a-ac58-99fd5997fbdd}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(AppAnalysisPath)\common.props"/>
 
     <PropertyGroup>
@@ -34,5 +34,5 @@
         <ProjectReference Include="$(AppAnalysisPath)\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
     </ItemGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

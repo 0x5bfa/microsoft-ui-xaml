@@ -46,5 +46,5 @@
     </BinplaceLinked>
   </ItemGroup>
   
-  <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets"/>
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets"/>
 </Project>

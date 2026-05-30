@@ -15,7 +15,7 @@
     <!--                                                                              -->
     <!-- ***************************************************************************/ -->
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="..\sources.props"/>
 
     <PropertyGroup>
@@ -38,5 +38,5 @@
         <ProjectReference Include="..\winrtpch\wrtdxamlpch.vcxproj" Project="{845d8296-bec7-4e97-8da9-db26a3a6d8c9}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

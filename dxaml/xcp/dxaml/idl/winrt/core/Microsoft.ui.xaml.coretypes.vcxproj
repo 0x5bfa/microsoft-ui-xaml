@@ -7,7 +7,7 @@
     <MergeWinMd>false</MergeWinMd>
     <ProjectName>Microsoft.ui.xaml.coretypes</ProjectName>
   </PropertyGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props" />
  
   <Import Project="$(XcpPath)\project-lift.props" />
 
@@ -19,5 +19,5 @@
     <Midl Include="microsoft.ui.xaml.coretypes.idl" CopyToPublicHeadersPath="true" />
     <Midl Include="microsoft.ui.xaml.coretypes2.idl" CopyToPublicHeadersPath="true" />
   </ItemGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

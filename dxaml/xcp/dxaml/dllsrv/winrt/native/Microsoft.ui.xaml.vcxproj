@@ -39,7 +39,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <ProjectGuid>{d6a86b75-c0d2-4761-844c-9d83a130af69}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props" />
   <Import Project="$(XcpPath)\project-lift.props" />
   <Import Project="..\sources.props" />
   <Import Project="$(ProjectRoot)eng\winui-version.props" />
@@ -66,7 +66,7 @@
     <ProjectReference Include="$(XcpPath)\dxaml\idl\winrt\merged\private\microsoft.ui.xaml.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}" />
     <ProjectReference Include="$(XcpPath)\dxaml\manifest\manifest.vcxproj" Project="{439d8d30-7118-4da6-956b-ee0c5b92d6a9}" />
   </ItemGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
   <!-- TODO: BEGIN HACK: Remove this WindowsAppSDKAggregatePackage hack when the file path bug is fixed in the Microsoft.InteractiveExperiences package -->
   <PropertyGroup Condition="'$(IsInternalWinUIBuild)' == 'true'">
     <WindowsAppSDKAggregatePackage>true</WindowsAppSDKAggregatePackage>

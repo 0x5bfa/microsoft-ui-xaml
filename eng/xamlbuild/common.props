@@ -120,7 +120,7 @@
        <DisableProjectRootFeatureStagingXmlSearch>true</DisableProjectRootFeatureStagingXmlSearch>
     </PropertyGroup>
 
-    <Import Project="$(XamlSourcePath)\use-public-sdk.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)use-public-sdk.props"/>
 
     <ItemGroup>
         <IDLReference Include="$(XcpPath)\dxaml\idl\winrt\merged\Microsoft.ui.xaml.vcxproj" Project="{869EA267-A81A-49ED-8404-812C2A03E25A}"/>

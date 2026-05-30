@@ -5,7 +5,7 @@
     <ProjectGuid>{FFD35DA8-9859-4626-89B7-DC9C94BCCAD8}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.NTLegacy.Cpp.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.NTLegacy.Cpp.props" />
   <PropertyGroup>
     <RootNamespace>Private.Foundation.CustomTypes</RootNamespace>
     <ProjectName>Microsoft.UI.Xaml.Tests.External.Foundation.CustomTypes</ProjectName>
@@ -32,5 +32,5 @@
       <Destination>$(TestBinplaceDestinationPath)</Destination>
     </BinplaceItem>
   </ItemGroup>
-  <Import Project="$(XamlSourcePath)\Xaml.NTLegacy.Cpp.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.NTLegacy.Cpp.targets" />
 </Project>

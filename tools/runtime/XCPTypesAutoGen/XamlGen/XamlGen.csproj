@@ -1958,7 +1958,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
   <Target Name="BeforeBuild">
     <Message Text="Platform = $(Platform) arch=$(arch)" />
   </Target>

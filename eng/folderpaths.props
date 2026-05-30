@@ -25,6 +25,7 @@
     <XamlSourcePath>$(ProjectRoot)dxaml\</XamlSourcePath>
     <XamlTargetsPath>$(ProjectRoot)eng\</XamlTargetsPath>
     <XamlBuildSettingsPath>$(XamlTargetsPath)buildsettings\</XamlBuildSettingsPath>
+    <XamlBuildRulesPath>$(XamlTargetsPath)xamlbuild\</XamlBuildRulesPath>
 
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(ProjectRoot)src\runtime\phone</XcpPhonePath>

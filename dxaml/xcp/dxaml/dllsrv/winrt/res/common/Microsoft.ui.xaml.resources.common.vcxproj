@@ -42,7 +42,7 @@
         <ResourceOnlyDll>true</ResourceOnlyDll>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
 
     <Import Project="..\sources.props"/>
 
@@ -57,5 +57,5 @@
         <PackageContent Include="$(OutDir)$(TargetName).dll" PackageLocation="$(NativeAssemblyPackageLocation)"/>
     </ItemGroup>
     
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

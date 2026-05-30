@@ -8,7 +8,7 @@
         <ProjectGuid>{66c7fece-ebb2-4d67-8fa8-bfc1c250e2ee}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\project-lift.props"/>
 
     <!-- TAEF.targets always sets INLINE_TEST_METHOD_MARKUP.  We don't want that defined so capture the value before the import and override it
@@ -93,5 +93,5 @@
         <ProjectReference Include="$(XamlDiagPath)\idl\xamlom.vcxproj" Project="{c6e1e90c-ee33-4352-a8de-067b013c7cc9}"/>
     </ItemGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

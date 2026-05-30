@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <Import Project="$(XcpPath)\common.props"/>
-    <Import Project="$(XamlSourcePath)\atl.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\atl.props"/>
 
     <PropertyGroup>
         <Dllentry>_DllMainCRTStartup</Dllentry>

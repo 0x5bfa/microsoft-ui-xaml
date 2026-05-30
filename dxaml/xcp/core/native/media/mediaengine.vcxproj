@@ -15,7 +15,7 @@
     <!--                                                                              -->
     <!-- ***************************************************************************/ -->
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\project-lift.props"/>
 
     <Import Project="$(XcpPath)\core\common.props"/>
@@ -58,5 +58,5 @@
         <XamlPrecompiledObj>mediaengine.obj</XamlPrecompiledObj>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

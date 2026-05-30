@@ -8,7 +8,7 @@
         <ProjectGuid>{08a6e6d8-217c-42f6-bf54-d1dd5c08ed66}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
@@ -39,5 +39,5 @@
         <ProjectReference Include="$(XcpPath)\components\pivot\lib\Microsoft.UI.Xaml.Pivot.vcxproj" Project="{80037dd4-5988-441f-8a1e-390a4b7c50ee}"/>
     </ItemGroup>
 
-    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

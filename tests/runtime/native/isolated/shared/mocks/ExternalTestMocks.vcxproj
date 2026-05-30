@@ -8,7 +8,7 @@
         <ProjectGuid>{9e06a167-cef3-4ef9-aadc-17714969d928}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
@@ -33,5 +33,5 @@
         <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
     </ItemGroup>
 
-    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

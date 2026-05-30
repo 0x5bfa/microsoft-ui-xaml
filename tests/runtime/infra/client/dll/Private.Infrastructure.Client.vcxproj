@@ -8,7 +8,7 @@
         <ProjectGuid>{7e2bc80e-cf9b-4567-8e3e-d0f81b4782fd}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(RuntimeTestPath)\common.props"/>
 
     <PropertyGroup>
@@ -60,5 +60,5 @@
         <ProjectReference Include="$(RuntimeInfraTestPath)\logging\Private.Infrastructure.Logging.vcxproj" Project="{8ace23ab-6b9f-4760-bdd3-fe1c3b7d51df}"/>
     </ItemGroup>
 
-    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

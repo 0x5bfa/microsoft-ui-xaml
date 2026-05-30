@@ -214,7 +214,7 @@
       </None>
     </ItemGroup>
   </Target>
-  <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 
   <!-- Disable "Error: We do not support building UWP AppContainer applications for ARM64EC",

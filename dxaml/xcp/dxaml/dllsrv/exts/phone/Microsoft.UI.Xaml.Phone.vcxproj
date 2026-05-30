@@ -39,7 +39,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <ProjectGuid>{be2d8fe3-d933-404e-bfe4-88435d96d8e4}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props" />
   <Import Project="$(XcpPath)\project-lift.props" />
   <Import Project="$(ProjectRoot)eng\winui-version.props" />
   <Import Project="$(ProjectRoot)\eng\pgo\Microsoft.WinUI.PGO.props" />
@@ -99,6 +99,6 @@
     <PackageContent Include="$(OutDir)$(TargetName).dll" PackageLocation="$(NativeAssemblyPackageLocation)" />
     <PackageContent Include="$(OutDir)$(TargetName).dll.mui" PackageLocation="$(NativeAssemblyPackageLocation)\en-us" />
   </ItemGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
   <Import Project="$(PkgMicrosoft_PGO_Helpers_Cpp)\build\Microsoft.PGO-Helpers.Cpp.targets" />
 </Project>

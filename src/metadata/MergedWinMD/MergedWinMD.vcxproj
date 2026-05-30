@@ -43,7 +43,7 @@
     <StripVelocityFromMetadata>true</StripVelocityFromMetadata>
     <GenerateWinRTClassRegistration>true</GenerateWinRTClassRegistration>
   </PropertyGroup>
-  <Import Project="$(MSBuildThisFileDirectory)..\..\..\dxaml\Xaml.Cpp.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\eng\xamlbuild\Xaml.Cpp.Props" />
   <ItemGroup>
     <AdditionalWinMDsForClassRegistration Include="$(XcpObjPath)\dxaml\idl\winrt\main\microsoft.ui.xaml.private.winmd" />
   </ItemGroup>
@@ -51,5 +51,5 @@
     <!-- Don't add files here, add them to OutputWinmds -->
     <PackageContent Include="$(OutputWinmds)" PackageLocation="$(WinMDPackageLocation)" />
   </ItemGroup>
-  <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

@@ -8,7 +8,7 @@
         <ProjectGuid>{4d75f86e-1c8e-40b3-9767-d8a7cdca82eb}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\project-lift.props"/>
     <Import Project="$(XcpPath)\common.props"/>
 
@@ -28,5 +28,5 @@
         <XamlPrecompiledInclude>precomp.hpp</XamlPrecompiledInclude>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

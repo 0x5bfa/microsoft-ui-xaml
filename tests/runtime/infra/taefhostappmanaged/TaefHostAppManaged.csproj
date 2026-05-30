@@ -277,7 +277,7 @@
       </Content>
     </ItemGroup>
   </Target>
-  <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
   <PropertyGroup>
     <MarkupCompilePass1DependsOn>$(MarkupCompilePass1DependsOn)</MarkupCompilePass1DependsOn>
   </PropertyGroup>

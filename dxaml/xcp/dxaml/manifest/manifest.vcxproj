@@ -8,7 +8,7 @@
         <ProjectGuid>{439d8d30-7118-4da6-956b-ee0c5b92d6a9}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\project-lift.props"/>
 
     <PropertyGroup>
@@ -30,7 +30,7 @@
         </EtwManifest>
     </ItemDefinitionGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
     
     <Target Name="GetMrtPackagingOutputs" />
 </Project>

@@ -9,7 +9,7 @@
         <SkipProject>true</SkipProject>
     </PropertyGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.Managed.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.Managed.props"/>
     <Import Project="$(RuntimeTestPath)\common.props"/>
 
     <ItemGroup>
@@ -29,5 +29,5 @@
         </References>
     </PropertyGroup>
 
-    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>
