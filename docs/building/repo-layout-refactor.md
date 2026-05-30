@@ -91,6 +91,14 @@ The fusion-manifest transform used by ad hoc app registration now lives under
 `eng`, next to the target that invokes it. This removes the last checked-in
 helper from the historical `build` folder.
 
+## Package restore inputs
+
+Repository-wide NuGet `packages.config` files now live under `eng/packages`.
+They feed initialization and shared version extraction, so grouping them under
+`eng` keeps dependency restore inputs with the rest of the build infrastructure.
+`Packages.props` remains at the repository root because CentralPackageVersions
+projects discover it by walking parent directories.
+
 ## Generated controls sources
 
 Checked-in generated dependency-property sources for controls now live under

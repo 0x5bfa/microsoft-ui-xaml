@@ -52,7 +52,7 @@ If you want to manually schedule a pipeline run, use the following steps:
 ## More Info
 
 * During the build, localized .mui files get copied over from the nuget package version specified. The version number 
-is automatically updated in `packages.config` for the `WinUILocalizationResources` 
+is automatically updated in `eng/packages/packages.config` for the `WinUILocalizationResources`
 package.
 * Updates to .resw files are checked-in as part of the PR the pipeline opens
 

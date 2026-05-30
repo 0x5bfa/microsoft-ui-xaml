@@ -9,7 +9,7 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
       1. src/controls/dll/packages.config
       2. controls/tools/CustomTasks/NuSpecs/MUXCustomBuildTasks.nuspec
       3. controls/tools/CustomTasks/Properties/AssemblyInfo.cs (2 places)
-      4. packages.config
+      4. eng/packages/packages.config
       and increment their build version from "1.0.80" to "1.0.81" for instance.
 
 - Build CustomTasks.sln for Release

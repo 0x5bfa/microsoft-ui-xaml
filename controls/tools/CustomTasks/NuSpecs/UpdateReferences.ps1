@@ -2,7 +2,7 @@ $nugetVersion = ([xml](Get-Content -Raw $PSScriptRoot\MUXCustomBuildTasks.nuspec
 $projectRoot = Resolve-Path "$PSScriptRoot\..\..\..\.."
 
 $packagesConfigReferences = @(
-    "$projectRoot\packages.config",
+    "$projectRoot\eng\packages\packages.config",
     "$projectRoot\src\controls\dll\packages.config"
 )
 
