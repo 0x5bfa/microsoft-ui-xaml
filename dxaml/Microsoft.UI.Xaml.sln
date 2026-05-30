@@ -885,7 +885,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Reso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codegen", "test\tools\codegen\Codegen.csproj", "{680ED2F4-D0EC-4692-AFD4-E4AFF686B53D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MockDCompInjector", "test\tools\MockDCompInjector\MockDCompInjector.vcxproj", "{FA82DBDB-93A1-49CE-930C-301381B43AA6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MockDCompInjector", "..\tests\runtime\tools\MockDCompInjector\MockDCompInjector.vcxproj", "{FA82DBDB-93A1-49CE-930C-301381B43AA6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "..\tests\runtime\tools\XmlValidation\UnitTests\UnitTests.csproj", "{02A5AB77-1C04-4F45-AAFD-469C3509FBCC}"
 EndProject
