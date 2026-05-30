@@ -13,7 +13,7 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
       and increment their build version from "1.0.80" to "1.0.81" for instance.
 
 - Build CustomTasks.sln for Release
-  - Under `controls`, run `MSBuild.exe CustomTasks.sln /restore /p:Configuration=Release /p:Platform="Any CPU"`
+  - Under `controls\tools\BuildTasks`, run `MSBuild.exe CustomTasks.sln /restore /p:Configuration=Release /p:Platform="Any CPU"`
   -  If you get build errors, open the CustomTasks.sln solution in Visual Studio and make sure the latest dependent nugets are installed.
 
 - Under `controls\tools\BuildTasks\CustomTasks\NuSpecs`, run `BuildNupkg.cmd` which does this:

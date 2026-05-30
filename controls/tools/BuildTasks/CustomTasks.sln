@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomTasks", "tools\BuildTasks\CustomTasks\CustomTasks.csproj", "{BFC20F72-5AAE-4271-AD74-AD423A365528}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomTasks", "CustomTasks\CustomTasks.csproj", "{BFC20F72-5AAE-4271-AD74-AD423A365528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomTasksTool", "tools\BuildTasks\CustomTasksTool\CustomTasksTool.csproj", "{6565DE44-A8B8-4D89-B445-96CC8E100FE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomTasksTool", "CustomTasksTool\CustomTasksTool.csproj", "{6565DE44-A8B8-4D89-B445-96CC8E100FE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
