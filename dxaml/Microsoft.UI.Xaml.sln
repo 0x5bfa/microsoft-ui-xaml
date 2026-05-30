@@ -887,9 +887,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codegen", "test\tools\codeg
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MockDCompInjector", "test\tools\MockDCompInjector\MockDCompInjector.vcxproj", "{FA82DBDB-93A1-49CE-930C-301381B43AA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "test\tools\XmlValidation\UnitTests\UnitTests.csproj", "{02A5AB77-1C04-4F45-AAFD-469C3509FBCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "..\tests\runtime\tools\XmlValidation\UnitTests\UnitTests.csproj", "{02A5AB77-1C04-4F45-AAFD-469C3509FBCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidation", "test\tools\XmlValidation\XmlValidation\XmlValidation.csproj", "{0AF9EADA-BB7D-48DA-B169-1C91F8E011D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidation", "..\tests\runtime\tools\XmlValidation\XmlValidation\XmlValidation.csproj", "{0AF9EADA-BB7D-48DA-B169-1C91F8E011D6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "xcp\common\common.vcxproj", "{4D75F86E-1C8E-40B3-9767-D8A7CDCA82EB}"
 EndProject

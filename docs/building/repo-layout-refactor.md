@@ -59,6 +59,13 @@ The top-level test payload entry points and Helix orchestration now live under
 companion scripts, and the `Helix` project/scripts tree moved there so
 repo-level test orchestration is grouped with other separated test assets.
 
+## Runtime test tools
+
+Runtime-specific test tools should move out of `dxaml/test/tools` as their
+references are isolated. `XmlValidation` now lives under
+`tests/runtime/tools/XmlValidation`, while the runtime solution keeps project
+references to it for developer convenience.
+
 ## Controls test infrastructure
 
 Controls test infrastructure should live with the controls test projects it
