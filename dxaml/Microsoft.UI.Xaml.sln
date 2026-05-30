@@ -1131,7 +1131,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Terminate
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Text", "xcp\components\text\lib\Microsoft.UI.Xaml.Text.vcxproj", "{DF854298-841F-4DD5-9DDF-FEFBC280A6D1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Text", "xcp\components\text\unittests\Microsoft.UI.Xaml.Tests.Isolated.Text.vcxproj", "{70EB3E6F-12C8-4402-9D4D-9B0E462BD039}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Text", "..\tests\runtime\native\isolated\foundation\text\Microsoft.UI.Xaml.Tests.Isolated.Text.vcxproj", "{70EB3E6F-12C8-4402-9D4D-9B0E462BD039}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ThemeAnimationsHelper", "xcp\components\themeanimationshelper\lib\Microsoft.UI.Xaml.ThemeAnimationsHelper.vcxproj", "{C9CBA2D3-6D77-464C-B0D9-B02DA694B0C2}"
 EndProject
