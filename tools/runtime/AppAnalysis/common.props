@@ -3,8 +3,8 @@
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <PropertyGroup>
-        <AppAnalysisPath>$(XcpPath)\dxaml\tools\AppAnalysis</AppAnalysisPath>
-        <AppAnalysisObjPath>$(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis</AppAnalysisObjPath>
+        <AppAnalysisPath Condition="'$(AppAnalysisPath)' == ''">$(RuntimeToolsPath)\AppAnalysis</AppAnalysisPath>
+        <AppAnalysisObjPath Condition="'$(AppAnalysisObjPath)' == ''">$(XamlBuildOutputRoot)tools\runtime\AppAnalysis</AppAnalysisObjPath>
         <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) UNICODE; _UNICODE; WIL_SUPPRESS_PRIVATE_API_USE; MIDL_NS_PREFIX;</ProjectPreprocessorDefinitions>
     </PropertyGroup>
 

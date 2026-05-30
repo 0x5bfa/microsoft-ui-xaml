@@ -10,9 +10,9 @@
         <MergeWinMd>false</MergeWinMd>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
 
-    <Import Project="$(XcpPath)\dxaml\tools\AppAnalysis\common.props"/>
+    <Import Project="$(AppAnalysisPath)\common.props"/>
 
     <PropertyGroup>
         <ProjectIncludeDirectories>$(ProjectIncludeDirectories);</ProjectIncludeDirectories>
@@ -31,5 +31,5 @@
         <Midl Include="Microsoft.Diagnostics.AppAnalysis.Internal.idl"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
 </Project>

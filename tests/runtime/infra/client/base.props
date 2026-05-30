@@ -45,7 +45,7 @@
             $(XamlBinaryPath)\phone\idl;
             $(XcpPath)\inc;
             $(XcpPath)\components\base\inc;
-            $(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis\idl;
+            $(AppAnalysisObjPath)\idl;
             $(XcpPath)\inc;
             $(RuntimeTestPath)\resources\masters;
             $(XcpPath)\components\runtimeEnabledFeatures\inc;
@@ -59,6 +59,6 @@
         <ProjectReference Condition="'$(ProjectGuid)'!='{37d37a5d-e167-43fe-aeca-5063c2369807}'" Include="$(RuntimeInfraTestPath)\contract\contract.vcxproj" Project="{37d37a5d-e167-43fe-aeca-5063c2369807}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{e076fa9c-3b19-431a-a566-3e771f962428}'" Include="$(RuntimeInfraTestPath)\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{84d22d7d-5fd0-4ccf-b8d2-c34506c6ba66}'" Include="$(XcpPhonePath)\idl\phone.vcxproj" Project="{84d22d7d-5fd0-4ccf-b8d2-c34506c6ba66}"/>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{e1f36d19-f82d-474a-be26-fea52da5b6e6}'" Include="$(XcpPath)\dxaml\tools\AppAnalysis\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{e1f36d19-f82d-474a-be26-fea52da5b6e6}'" Include="$(AppAnalysisPath)\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
     </ItemGroup>
 </Project>

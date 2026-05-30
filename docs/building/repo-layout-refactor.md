@@ -458,7 +458,10 @@ project references using `$(RuntimeToolsPath)`. The runtime code generation
 toolchain moved under `tools/runtime/XCPTypesAutoGen`, including the
 checked-in stable XBF index inputs that `runcodegen.cmd` updates. The
 XamlDiagnostics TAP test DLL moved under `tools/runtime/xamldiagnostics/tap`,
-with external tool tests consuming it through `$(XamlDiagTapPath)`.
+with external tool tests consuming it through `$(XamlDiagTapPath)`. The
+AppAnalysis runtime diagnostics toolchain moved under `tools/runtime/AppAnalysis`,
+with shared references flowing through `$(AppAnalysisPath)` and
+`$(AppAnalysisObjPath)`.
 
 ## Specs documentation
 

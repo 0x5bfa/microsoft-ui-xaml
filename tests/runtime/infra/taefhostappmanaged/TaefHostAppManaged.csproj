@@ -116,7 +116,7 @@
     <Content Include="$(RuntimeInfraTestObjPath)\client\dll\Private.Infrastructure.Client.dll">
       <Link>%(Filename)%(Extension)</Link>
     </Content>
-    <Content Include="$(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis\dll\Microsoft.Diagnostics.AppAnalysis.dll">
+    <Content Include="$(AppAnalysisObjPath)\dll\Microsoft.Diagnostics.AppAnalysis.dll">
       <Link>%(Filename)%(Extension)</Link>
     </Content>
     <Content Include="$(TaefPkgDirectory)lib\uap10.0.16299\TE.AppXUnitTestClient.Managed.dll">
@@ -188,7 +188,7 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <Name>Microsoft.UI.Xaml.Phone</Name>
     </ProjectReference>
-    <ProjectReference Include="$(XcpPath)\dxaml\tools\AppAnalysis\dll\Microsoft.Diagnostics.AppAnalysis.vcxproj">
+    <ProjectReference Include="$(AppAnalysisPath)\dll\Microsoft.Diagnostics.AppAnalysis.vcxproj">
       <Project>{2443059a-fad7-4812-b0e6-243e33f11a01}</Project>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
