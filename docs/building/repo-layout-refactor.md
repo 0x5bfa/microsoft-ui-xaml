@@ -494,6 +494,10 @@ available in initialized shells.
 Shared command wrappers used by multiple repo tools now live under
 `tools/common`, keeping the `tools` root focused on tool categories.
 
+Controls build machine maintenance helpers now live under
+`controls/tools/BuildMachine`, keeping the queue/build-machine scripts grouped
+with their shared ADAL-backed helper module.
+
 Controls new-control scaffolding helpers now live under
 `controls/tools/ControlGeneration`, with reusable `NEWCONTROL` templates under
 that folder's `Templates` directory.
