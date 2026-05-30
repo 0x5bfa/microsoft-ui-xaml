@@ -294,6 +294,9 @@ headers with the moved test project.
 The ValueBoxer isolated test moved under
 `tests/runtime/native/isolated/framework/valueboxer`, keeping its test stubs and
 property wrappers with the runtime test project.
+The Math isolated test moved under
+`tests/runtime/native/isolated/foundation/math`, starting the foundation
+isolated test migration with a small self-contained project.
 
 ## Controls source
 
