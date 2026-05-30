@@ -181,7 +181,7 @@
     <Content Include="$(XamlBuildOutputRoot)controls\test\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.dll" />
   </ItemGroup>
 
-  <Import Project="$(MUXCProjectRoot)CustomInlineTasks.targets" />
+  <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
   <Import Project="..\RetargetCopyLocalFiles.targets" />
   <Import Project="..\TestApp.targets" />
 

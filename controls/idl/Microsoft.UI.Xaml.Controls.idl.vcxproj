@@ -96,7 +96,7 @@
   </ItemDefinitionGroup>
   <Import Project="$(CppTargetsFilePath)" />
   <Import Project="$(MUXCProjectRoot)MidlShared.targets" />
-  <Import Project="$(MUXCProjectRoot)CustomInlineTasks.targets" />
+  <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(NuGetPackageRoot)\Microsoft.Build.Tasks.Git.1.1.1\build\Microsoft.Build.Tasks.Git.targets" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Build.Tasks.Git.1.1.1\build\Microsoft.Build.Tasks.Git.targets')" />
     <Import Project="$(NuGetPackageRoot)\Microsoft.SourceLink.Common.1.1.1\build\Microsoft.SourceLink.Common.targets" Condition="Exists('$(NuGetPackageRoot)\Microsoft.SourceLink.Common.1.1.1\build\Microsoft.SourceLink.Common.targets')" />

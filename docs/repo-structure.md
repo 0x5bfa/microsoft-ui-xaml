@@ -23,7 +23,7 @@ Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
 Build wrapper commands live under `/tools/build`.
 Shared command wrappers live under `/tools/common`.
 Controls build machine maintenance helpers live under `/controls/tools/BuildMachine`.
-Controls custom MSBuild task sources and solution live under `/controls/tools/BuildTasks`.
+Controls custom MSBuild task sources, targets, and solution live under `/controls/tools/BuildTasks`.
 Controls scaffolding helpers live under `/controls/tools/ControlGeneration`.
 Controls release helper scripts live under `/controls/tools/Release`.
 Controls resource generation helpers live under `/controls/tools/ResourceGeneration`.

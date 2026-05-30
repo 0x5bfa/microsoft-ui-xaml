@@ -244,7 +244,7 @@
     -->
   </ItemGroup>
   <Import Project="$(CppTargetsFilePath)" />
-  <Import Project="$(MUXCProjectRoot)CustomInlineTasks.targets" />
+  <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
   <!-- We make it so that devs just include the en-us version of their string resources in the project. This is because
        we only want people editing the en-us version (it's the only file that's input to the localization process) and
        because if we use ** in the item target then the project shows 60+ 'resources.resw' files and it is completely unusable.

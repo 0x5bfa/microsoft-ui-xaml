@@ -520,7 +520,8 @@ Controls custom MSBuild task sources and their test harness now live under
 `controls/tools/BuildTasks`, with the task NuGet packaging scripts kept under
 the moved `CustomTasks/NuSpecs` tree and the dedicated build-task solution
 co-located with those tools. The cleanup project that invokes the custom
-`KillMSBuild` task also lives in this folder with its runtime config.
+`KillMSBuild` task also lives in this folder with its runtime config. The
+shared inline MSBuild task target file is grouped here too.
 
 Controls packaging helpers now live under `controls/tools/Packaging`,
 including the framework package AppX creation wrapper used after controls
