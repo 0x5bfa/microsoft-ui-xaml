@@ -1179,7 +1179,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XboxUtili
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XString", "xcp\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj", "{F9DA8380-5504-4ACC-BDE0-72CD5981826D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Strings", "xcp\components\xstring\unittests\Microsoft.UI.Xaml.Tests.Isolated.Strings.vcxproj", "{A60D1F91-0FAF-4E03-93ED-BFF510A10EFB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Strings", "..\tests\runtime\native\isolated\foundation\xstring\Microsoft.UI.Xaml.Tests.Isolated.Strings.vcxproj", "{A60D1F91-0FAF-4E03-93ED-BFF510A10EFB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "download", "xcp\control\download\download.vcxproj", "{D94B047D-1978-4BCD-A124-7302766133B6}"
 EndProject

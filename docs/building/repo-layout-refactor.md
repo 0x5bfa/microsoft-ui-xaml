@@ -300,6 +300,9 @@ isolated test migration with a small self-contained project.
 The Threading isolated test moved under
 `tests/runtime/native/isolated/foundation/threading`, keeping the foundation
 isolated test projects grouped with runtime tests.
+The XString isolated test moved under
+`tests/runtime/native/isolated/foundation/xstring`, continuing to pull small
+foundation test projects out of the runtime source tree.
 
 ## Controls source
 
