@@ -41,13 +41,13 @@ if (Test-Path "$repoRoot\build\PipelineScripts\GetLKGCompilerPackageInfoIfNeeded
 # So we need x86 and x64 for GenXbf no matter what.
 
 # The others we'll pull down as needed.
-$mainPkgs.Add("packages.config")
-$mainPkgs.Add("packages.x86.config")
-$mainPkgs.Add("packages.x64.config")
+$mainPkgs.Add("eng\packages\packages.config")
+$mainPkgs.Add("eng\packages\packages.x86.config")
+$mainPkgs.Add("eng\packages\packages.x64.config")
 
 if (($buildPlatform -ne "x86") -and ($buildPlatform -ne "x64"))
 {
-    $mainPkgs.Add("packages.$buildPlatform.config")
+    $mainPkgs.Add("eng\packages\packages.$buildPlatform.config")
 }
 
 Write-Host "Restoring packages for build platform $buildPlatform..." -NoNewline

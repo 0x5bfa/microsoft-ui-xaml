@@ -38,7 +38,7 @@ Use Visual Studio Installer:
 ## 6. Remove Public Package Parts
 
 1. You can do it from installed tab
-2. Quicker way will be Edit `packages.config` and delete entries for `Microsoft.WindowsAppSDK.*` with public versions (e.g. 1.8.x).
+2. Quicker way will be edit `eng/packages/packages.config` and delete entries for `Microsoft.WindowsAppSDK.*` with public versions (e.g. 1.8.x).
 
 ## 7. Clean .vcxproj References
 

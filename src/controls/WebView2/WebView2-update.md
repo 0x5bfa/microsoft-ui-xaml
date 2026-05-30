@@ -87,7 +87,7 @@ example, if an API was previously experimental before but is currently final, ol
        instructions in this document (besides step 4 used for private SDKs) are related to the runtime we include for 
        tests.
    * Update the Runtime version in 
-     * `\packages.config`
+     * `\eng\packages\packages.config`
        * This is what actually gives the nuget package we're creating a version number. We use the SDK number, but it's 
          technically arbitrary
      * `\dxaml\test\infra\taefhostappmanaged\TaefHostAppManaged.csproj`

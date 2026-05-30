@@ -14,9 +14,9 @@
 
 All of Xaml’s dependencies are listed in package config files or solutions.
 
-> Note: several of the versions in [packages.config](../../packages.config) must be kept in sync with [eng\versions.props](../../eng/versions.props)
+> Note: several of the versions in [packages.config](../../eng/packages/packages.config) must be kept in sync with [eng\versions.props](../../eng/versions.props)
 
-This is mostly in the [packages.config](../../packages.config) file:
+This is mostly in the [packages.config](../../eng/packages/packages.config) file:
 
 ```xml
 <packages>
@@ -36,20 +36,20 @@ There are also per-architecture packages.*.config files. For example packages.x6
 ```
 
 The complete list of all package dependency lists (restore files):
-* [packages.config](../../packages.config)
-* packages.[arch].config ([x86](../packages.x86.config), [x64](../../packages.x64.config), [arm64](../../packages.arm64.config))
+* [packages.config](../../eng/packages/packages.config)
+* packages.[arch].config ([x86](../../eng/packages/packages.x86.config), [x64](../../eng/packages/packages.x64.config), [arm64](../../eng/packages/packages.arm64.config), [arm64ec](../../eng/packages/packages.arm64ec.config))
 * [src\controls\dll\packages.config](../../src/controls/dll/packages.config) (contains reference to Microsoft.Web.WebView2)
 * [src\compiler\BuildTools.sln](../../src/compiler/BuildTools.sln)
 
 There are scripts in the scripts directory to update the reference to IXP and to CSWinRT:
-* UpdateIxp (updates packages*.config)
-* UpdateCSWinRT (updates packages.config and eng\versions.props)
+* UpdateIxp (updates eng/packages/packages*.config)
+* UpdateCSWinRT (updates eng/packages/packages.config and eng\versions.props)
 
 There is also a script in the scripts directory to update the reference to the WebView2 SDK and Edge version:
 * [UpdateWebView2](../../src/controls/WebView2/WebView2-update.md)
     * Updates SDK reference in [src\controls\dll\packages.config](../../src/controls/dll/packages.config) and
     [eng\versions.props](../../eng/versions.props)
-    * Updates Edge version in [packages.config](../../packages.config), 
+    * Updates Edge version in [packages.config](../../eng/packages/packages.config),
     [Microsoft.UI.DCPP.Dependencies.Edge.nuspec](../../dxaml/external/Microsoft.UI.DCPP.Dependencies.Edge.nuspec), and 
     [TaefHostAppManaged.csproj](../../dxaml/test/infra/taefhostappmanaged/TaefHostAppManaged.csproj)
 
@@ -84,7 +84,7 @@ and only in isolated source files that are clearly identified as light-up code.
 
 ## Versions.props
 
-> Note: several of the versions in [eng\versions.props](../../eng/versions.props) must be kept in sync with [packages.config](../../packages.config)
+> Note: several of the versions in [eng\versions.props](../../eng/versions.props) must be kept in sync with [packages.config](../../eng/packages/packages.config)
 
 TBD
 

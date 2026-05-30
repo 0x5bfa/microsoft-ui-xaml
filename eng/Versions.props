@@ -13,8 +13,8 @@
     <MicrosoftCsWinRtPackageName>Microsoft.Windows.CsWinRT</MicrosoftCsWinRtPackageName>
     <LocalizedMUIFilesPackageName>Microsoft.Internal.WinUILocalizationResources</LocalizedMUIFilesPackageName>
     <!-- Determine the configured versions based upon the architecture specific nuget packages -->
-    <PackagesPlatformConfigFile>$(MSBuildThisFileDirectory)..\packages.$(Platform).config</PackagesPlatformConfigFile>
-    <PackagesPlatformConfigFile Condition="!Exists('$(PackagesPlatformConfigFile)')">$(MSBuildThisFileDirectory)..\packages.x86.config</PackagesPlatformConfigFile>
+    <PackagesPlatformConfigFile>$(MSBuildThisFileDirectory)packages\packages.$(Platform).config</PackagesPlatformConfigFile>
+    <PackagesPlatformConfigFile Condition="!Exists('$(PackagesPlatformConfigFile)')">$(MSBuildThisFileDirectory)packages\packages.x86.config</PackagesPlatformConfigFile>
     <PackagesPlatformConfigContents>$([System.IO.File]::ReadAllText("$(PackagesPlatformConfigFile)"))</PackagesPlatformConfigContents>
     <MicrosoftWindowsSDKCppNugetPackageVersion>$([System.Text.RegularExpressions.Regex]::Match($(PackagesPlatformConfigContents), 'Microsoft.Windows.SDK.cpp.*?version="(.*?)"').Groups[1].Value)</MicrosoftWindowsSDKCppNugetPackageVersion>
     <!-- Determine if this is an internal build, and change some values if not -->
@@ -25,7 +25,7 @@
     <LiftedIXPPackageName>Microsoft.WindowsAppSDK.InteractiveExperiences</LiftedIXPPackageName>
     <FoundationPackageName>Microsoft.WindowsAppSDK.Foundation</FoundationPackageName>
     <!-- Determine the configured versions based upon the architecture neutral nuget packages -->
-    <PackagesConfigFile>$(MSBuildThisFileDirectory)..\packages.config</PackagesConfigFile>
+    <PackagesConfigFile>$(MSBuildThisFileDirectory)packages\packages.config</PackagesConfigFile>
     <PackagesConfigContents>$([System.IO.File]::ReadAllText("$(PackagesConfigFile)"))</PackagesConfigContents>
     <LocalizedMUIFilesPackageVersion>$([System.Text.RegularExpressions.Regex]::Match($(PackagesConfigContents), 'Microsoft.Internal.WinUILocalizationResources.*?version="(.*?)"').Groups[1].Value)</LocalizedMUIFilesPackageVersion>
     <MicrosoftWindowsSDKContractsVersion>$([System.Text.RegularExpressions.Regex]::Match($(PackagesConfigContents), 'Microsoft.Windows.SDK.Contracts.*?version="(.*?)"').Groups[1].Value)</MicrosoftWindowsSDKContractsVersion>
