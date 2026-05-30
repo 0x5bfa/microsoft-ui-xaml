@@ -1319,7 +1319,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Ext
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\src\projection\Microsoft.WinUI.csproj", "{50E251B1-B7C4-4D8F-A8AC-7B06BF5210C3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "taefhostapp", "test\infra\taefhostapp\taefhostapp.vcxproj", "{7109C292-DCD9-43DC-AA23-70FC9D835B15}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "taefhostapp", "..\tests\runtime\infra\taefhostapp\taefhostapp.vcxproj", "{7109C292-DCD9-43DC-AA23-70FC9D835B15}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaefHostAppManaged", "test\infra\taefhostappmanaged\TaefHostAppManaged.csproj", "{8761499A-7280-43C4-A32F-7F41C47CA6DF}"
 EndProject
