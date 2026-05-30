@@ -837,7 +837,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.Test.TestRuleSe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "contract", "test\infra\contract\contract.vcxproj", "{37D37A5D-E167-43FE-AECA-5063C2369807}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Invoker", "test\infra\invoker\Invoker.vcxproj", "{8090DADF-AEF8-436A-98E2-76B8337E9588}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Invoker", "..\tests\runtime\infra\invoker\Invoker.vcxproj", "{8090DADF-AEF8-436A-98E2-76B8337E9588}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Logging", "test\infra\logging\Private.Infrastructure.Logging.vcxproj", "{8ACE23AB-6B9F-4760-BDD3-FE1C3B7D51DF}"
 EndProject
