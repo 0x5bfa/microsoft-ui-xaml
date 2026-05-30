@@ -1,7 +1,7 @@
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = "Stop"
 
-# Processes the Intellisense .xml files in Intellisense/drop and generates new Intellisense
+# Processes the Intellisense .xml files in packaging/intellisense/drop and generates new Intellisense
 # .xml files in generated/packaging/intellisense.
 # See Intellisense.md for more information.
 

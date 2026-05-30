@@ -247,7 +247,7 @@ output is separated from handwritten controls source.
 Checked-in package IntelliSense XML now lives under
 `generated/packaging/intellisense`. The package project consumes that directory
 through `$(IntellisenseFolder)`, while the docs-team drop input stays under
-`packaging/Intellisense/drop`.
+`packaging/intellisense/drop`.
 
 ## Visual test baselines
 

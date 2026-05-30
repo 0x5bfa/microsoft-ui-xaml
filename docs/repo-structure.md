@@ -10,6 +10,7 @@
 - [/eng](#eng)
 - [/external](#external)
 - [/generated](#generated)
+- [/packaging](#packaging)
 - [/src](#src)
 - [/tests](#tests)
 
@@ -76,6 +77,11 @@ This folder contains checked-in generated output and generated baselines.
 Generated controls dependency-property sources live under `/generated/controls/dependencyproperties`.
 Generated package IntelliSense XML lives under `/generated/packaging/intellisense`.
 Visual test baselines live under `/generated/tests/visualbaselines`.
+
+## /packaging
+This folder contains package construction inputs. NuGet package specs live under
+`/packaging/nuspecs`, package build assets under `/packaging/build`, and
+IntelliSense drop processing under `/packaging/intellisense`.
 
 ## /src
 This is where source code for repo-local tools and source components outside the
