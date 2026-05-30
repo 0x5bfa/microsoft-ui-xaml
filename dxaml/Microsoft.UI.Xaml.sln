@@ -1075,7 +1075,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Metadata"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Components.Moco", "xcp\components\moco\lib\Microsoft.UI.Xaml.Components.Moco.vcxproj", "{056BDEDC-7099-4B6A-A170-F59B55FFD8D8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco", "xcp\components\moco\unittests\Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco.vcxproj", "{44BAF6B8-988A-4321-8C12-29B02A695B17}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco", "..\tests\runtime\native\isolated\controls\moco\Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco.vcxproj", "{44BAF6B8-988A-4321-8C12-29B02A695B17}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Mrt", "xcp\components\mrt\lib\Microsoft.UI.Xaml.Mrt.vcxproj", "{DD66FBF9-B48E-41AE-BCEE-B2548E39001B}"
 EndProject
