@@ -92,6 +92,11 @@ Runtime test theme dictionaries now live under `tests/runtime/themes`. They are
 test payload assets and are binplaced into the runtime test theme folder from
 that test-owned location.
 
+Runtime test projects outside `dxaml/test` should use `$(InfraTestPath)` for
+the remaining shared test infrastructure under `dxaml/test/infra`. The property
+is defined with the other root folder paths so moved runtime tests do not need
+to import `dxaml/test/Directory.Build.props`.
+
 ## Runtime managed tests
 
 Runtime managed test projects should move under `tests/runtime/managed` in

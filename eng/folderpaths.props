@@ -26,6 +26,7 @@
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>
     <TestPath>$(XamlSourcePath)\test</TestPath>
+    <InfraTestPath>$(TestPath)\infra</InfraTestPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
     <RuntimeManagedTestPath>$(RuntimeTestPath)\managed</RuntimeManagedTestPath>
     <ManagedTestPath>$(XamlSourcePath)\test\managed</ManagedTestPath>
