@@ -1059,7 +1059,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Lifetime", "xcp\components\lifetime\lib\Microsoft.UI.Xaml.Lifetime.vcxproj", "{71ADA981-D444-464C-833D-290206B05240}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Lifetime", "xcp\components\lifetime\unittests\Microsoft.UI.Xaml.Tests.Isolated.Lifetime.vcxproj", "{C84A4EE9-85FA-42F3-AD6D-567E93ACC5CF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Lifetime", "..\tests\runtime\native\isolated\foundation\lifetime\Microsoft.UI.Xaml.Tests.Isolated.Lifetime.vcxproj", "{C84A4EE9-85FA-42F3-AD6D-567E93ACC5CF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.LiveReorderHelper", "xcp\components\livereorderhelper\lib\Microsoft.UI.Xaml.LiveReorderHelper.vcxproj", "{CECCE5C4-D7C0-49B9-BB89-7E7EDFC0FA5B}"
 EndProject
