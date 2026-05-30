@@ -276,6 +276,9 @@ unit-test include paths should use runtime test properties such as
 The WinUri isolated test project is now under
 `tests/runtime/native/isolated/framework/winuri`, starting the move of
 component-local isolated test projects out of the runtime source tree.
+The DependencyLocator isolated test moved next under
+`tests/runtime/native/isolated/framework/dependencyLocator` using the same
+runtime-test-owned layout.
 
 ## Controls source
 

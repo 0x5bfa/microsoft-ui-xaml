@@ -983,7 +983,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyLocator", "xcp\components\dependencyLocator\lib\Microsoft.UI.Xaml.DependencyLocator.vcxproj", "{E2FFD843-5C31-491B-B58E-8A0BF55875CA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator", "xcp\components\dependencyLocator\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator.vcxproj", "{BAB1B581-BFA3-4932-AA23-22BAAFED1793}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator", "..\tests\runtime\native\isolated\framework\dependencyLocator\Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator.vcxproj", "{BAB1B581-BFA3-4932-AA23-22BAAFED1793}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyObject", "xcp\components\DependencyObject\lib\Microsoft.UI.Xaml.DependencyObject.vcxproj", "{F7139209-4407-43F4-B04B-CDDFCBFD5A65}"
 EndProject
