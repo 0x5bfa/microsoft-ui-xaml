@@ -1403,7 +1403,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Ext
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "customTypes", "customTypes", "{741AEB17-AAEC-4FB1-9275-7FE9615477AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "themes", "test\themes\themes.csproj", "{440894AC-8285-4BC4-B384-62ABE04420D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "themes", "..\tests\runtime\themes\themes.csproj", "{440894AC-8285-4BC4-B384-62ABE04420D0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinplaceTestDependencies", "test\infra\BinplaceTestDependencies.csproj", "{7BCC726A-76C5-42CC-8368-70C32849BCC9}"
 EndProject
