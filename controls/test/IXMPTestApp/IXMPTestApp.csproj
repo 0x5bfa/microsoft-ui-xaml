@@ -197,7 +197,7 @@
   </PropertyGroup>
   <Import Project="$(CSharpTargetsFilePath)" />
   <Import Project="..\RetargetCopyLocalFiles.targets" />
-  <Import Project="$(MUXCProjectRoot)CustomInlineTasks.targets" />
+  <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
   <Import Project="..\TestApp.targets" />
   <!-- The WinUI component package's BeforeCommon.targets disables WindowsAppSDKSelfContained for UWP apps
        via CustomBeforeMicrosoftCommonTargets. In this repo we build the framework from source, so we need
