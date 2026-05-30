@@ -15,7 +15,7 @@
   <Import Project="$(MUXCProjectRoot)mux.controls.props" />
   <Import Project="$(MUXCProjectRoot)ProjectConfigurations.props" />
   <Import Project="$(MUXCProjectRoot)version.props" />
-  <Import Project="$(MUXCProjectRoot)CppWinRT.props" />
+  <Import Project="$(MUXCProjectRoot)build\CppWinRT.props" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DE10DFE2-5EA3-452A-B055-FC60E330AFBB}</ProjectGuid>
     <Keyword>DynamicLibrary</Keyword>
