@@ -291,6 +291,9 @@ compile item referenced through `$(XcpPath)` instead of a project-relative path.
 The SimpleProperties isolated test moved under
 `tests/runtime/native/isolated/framework/simple`, keeping generated test-local
 headers with the moved test project.
+The ValueBoxer isolated test moved under
+`tests/runtime/native/isolated/framework/valueboxer`, keeping its test stubs and
+property wrappers with the runtime test project.
 
 ## Controls source
 
