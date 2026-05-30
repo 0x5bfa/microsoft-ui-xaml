@@ -378,6 +378,9 @@ isolated test group under runtime tests.
 The Theming isolated test moved under
 `tests/runtime/native/isolated/controls/theming`, continuing the controls
 isolated test group under runtime tests.
+The Pivot isolated test moved under
+`tests/runtime/native/isolated/controls/pivot`, continuing the controls
+isolated test group under runtime tests.
 
 ## Controls source
 
