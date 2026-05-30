@@ -312,6 +312,9 @@ foundation test project layout.
 The OfferableHeap isolated test moved under
 `tests/runtime/native/isolated/foundation/offerableheap`, keeping the
 foundation isolated test migration moving through small self-contained projects.
+The Brushes isolated test moved under
+`tests/runtime/native/isolated/foundation/brushes`, retaining its DComp test
+property usage while moving the project out of the runtime source tree.
 
 ## Controls source
 
