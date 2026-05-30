@@ -196,6 +196,14 @@ making it a safe first runtime-source move before relocating the much larger
 layout so downstream WinMD and include consumers continue to use the existing
 build-output paths.
 
+## Runtime solution entry point
+
+The main runtime solution now lives at `src/runtime/Microsoft.UI.Xaml.sln`.
+This keeps the runtime build entry point with the runtime-owned source slices
+that have already moved under `src/runtime`, while its project references
+continue to point back to legacy `dxaml/xcp` paths until those projects move in
+smaller groups.
+
 ## Package restore inputs
 
 Repository-wide NuGet `packages.config` files now live under `eng/packages`.
