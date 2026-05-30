@@ -21,6 +21,8 @@ namespace CustomTasksTool
         private static readonly string projectRoot = Path.GetFullPath(Path.Combine(Assembly.GetExecutingAssembly().Location, @"..\..\..\..\..\..\..")) + @"\";
         private static readonly string configuration = Environment.GetEnvironmentVariable("_BuildType") ?? "chk";
         private static readonly string platform = Environment.GetEnvironmentVariable("_BuildArch") ?? "x86";
+        private static readonly string buildObjPath = Path.Combine(projectRoot, "BuildOutput", "obj", $"{platform}{configuration}");
+        private static readonly string xcpObjPath = Path.Combine(buildObjPath, "dxaml", "xcp");
 
         static void Main(string[] args)
         {
@@ -69,10 +71,10 @@ namespace CustomTasksTool
                     $@"{projectRoot}packages\Microsoft.Internal.WinUIDetails.1.810.0-experimental.20250821.0\lib\uap10.0\Microsoft.UI.Text.winmd",
                     $@"{projectRoot}packages\Microsoft.Web.WebView2.1.0.3719.77\lib\Microsoft.Web.WebView2.Core.winmd",
                     $@"{projectRoot}packages\Microsoft.WindowsAppSDK.Foundation.TransportPackage\1.1.0-20220628.1.develop.nightly\lib\uap10.0\Microsoft.Windows.ApplicationModel.Resources.winmd",
-                    $@"{projectRoot}BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\Microsoft.Foundation.winmd",
-                    $@"{projectRoot}BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\Microsoft.Graphics.winmd",
-                    $@"{projectRoot}BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\Microsoft.UI.winmd",
-                    $@"{projectRoot}BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\Microsoft.UI.Xaml.winmd",
+                    XcpObjFile("dxaml", "idl", "winrt", "merged", "private", "Merged", "Microsoft.Foundation.winmd"),
+                    XcpObjFile("dxaml", "idl", "winrt", "merged", "private", "Merged", "Microsoft.Graphics.winmd"),
+                    XcpObjFile("dxaml", "idl", "winrt", "merged", "private", "Merged", "Microsoft.UI.winmd"),
+                    XcpObjFile("dxaml", "idl", "winrt", "merged", "private", "Merged", "Microsoft.UI.Xaml.winmd"),
                     $@"{projectRoot}packages\Microsoft.Windows.SDK.cpp.10.0.18362.5\c\References\10.0.18362.0\Windows.AI.MachineLearning.MachineLearningContract.winmd",
                     $@"{projectRoot}packages\Microsoft.Windows.SDK.cpp.10.0.18362.5\c\References\10.0.18362.0\Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract.winmd",
                     $@"{projectRoot}packages\Microsoft.Windows.SDK.cpp.10.0.18362.5\c\References\10.0.18362.0\Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd",
@@ -163,10 +165,10 @@ namespace CustomTasksTool
                     $@"{projectRoot}packages\Microsoft.WindowsAppSDK.Foundation.TransportPackage\1.1.0-20220628.1.develop.nightly\lib\uap10.0\Microsoft.Windows.ApplicationModel.Resources.winmd",
                     $@"{projectRoot}packages\Microsoft.Internal.WinUIDetails.1.810.0-experimental.20250821.0\lib\uap10.0\Microsoft.UI.Text.winmd",
                     $@"{projectRoot}packages\Microsoft.Web.WebView2.1.0.3719.77\lib\Microsoft.Web.WebView2.Core.winmd",
-                    $@"{projectRoot}BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\Microsoft.Foundation.winmd",
-                    $@"{projectRoot}BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\Microsoft.Graphics.winmd",
-                    $@"{projectRoot}BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\Microsoft.UI.winmd",
-                    $@"{projectRoot}BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\Microsoft.UI.Xaml.winmd"
+                    XcpObjFile("dxaml", "idl", "winrt", "merged", "private", "Merged", "Microsoft.Foundation.winmd"),
+                    XcpObjFile("dxaml", "idl", "winrt", "merged", "private", "Merged", "Microsoft.Graphics.winmd"),
+                    XcpObjFile("dxaml", "idl", "winrt", "merged", "private", "Merged", "Microsoft.UI.winmd"),
+                    XcpObjFile("dxaml", "idl", "winrt", "merged", "private", "Merged", "Microsoft.UI.Xaml.winmd")
                 },
 
                 OutputDirectory = $@"{projectRoot}generated\controls\dependencyproperties"
@@ -295,20 +297,30 @@ namespace CustomTasksTool
                 taskItemList.Add(new TaskItem(itemSpec, itemMetadata));
             }
 
-            AddTaskItem($@"{projectRoot}\BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\controls\microsoft.ui.xaml.controls.controls.winmd");
-            AddTaskItem($@"{projectRoot}\BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\controls\microsoft.ui.xaml.controls.controls2.winmd");
-            AddTaskItem($@"{projectRoot}\BuildOutput\obj\{platform}{configuration}\controls\idl\Unmerged\Microsoft.UI.Xaml.Controls.g.winmd", "Microsoft.UI.Xaml.Controls.dll");
-            AddTaskItem($@"{projectRoot}\BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\core\microsoft.ui.xaml.coretypes.winmd");
-            AddTaskItem($@"{projectRoot}\BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\core\microsoft.ui.xaml.coretypes2.winmd");
-            AddTaskItem($@"{projectRoot}\BuildOutput\obj\{platform}{configuration}\dxaml\phone\idl\Microsoft.UI.Xaml.Phone.winmd", "Microsoft.UI.Xaml.Phone.dll");
-            AddTaskItem($@"{projectRoot}\BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\main\microsoft.ui.xaml.winmd");
+            AddTaskItem(XcpObjFile("dxaml", "idl", "winrt", "controls", "microsoft.ui.xaml.controls.controls.winmd"));
+            AddTaskItem(XcpObjFile("dxaml", "idl", "winrt", "controls", "microsoft.ui.xaml.controls.controls2.winmd"));
+            AddTaskItem(ObjFile("controls", "idl", "Unmerged", "Microsoft.UI.Xaml.Controls.g.winmd"), "Microsoft.UI.Xaml.Controls.dll");
+            AddTaskItem(XcpObjFile("dxaml", "idl", "winrt", "core", "microsoft.ui.xaml.coretypes.winmd"));
+            AddTaskItem(XcpObjFile("dxaml", "idl", "winrt", "core", "microsoft.ui.xaml.coretypes2.winmd"));
+            AddTaskItem(ObjFile("dxaml", "phone", "idl", "Microsoft.UI.Xaml.Phone.winmd"), "Microsoft.UI.Xaml.Phone.dll");
+            AddTaskItem(XcpObjFile("dxaml", "idl", "winrt", "main", "microsoft.ui.xaml.winmd"));
             AddTaskItem($@"{projectRoot}\packages\Microsoft.Internal.WinUIDetails.1.810.0-experimental.20250821.0\lib\uap10.0\Microsoft.UI.Text.winmd", "WinUIEdit.dll");
             AddTaskItem($@"{projectRoot}\packages\Microsoft.Web.WebView2.1.0.3719.77\lib\Microsoft.Web.WebView2.Core.winmd", "Microsoft.Web.WebView2.Core.dll");
-            AddTaskItem($@"{projectRoot}\BuildOutput\obj\{platform}{configuration}\dxaml\xcp\dxaml\idl\winrt\main\microsoft.ui.xaml.private.winmd");
+            AddTaskItem(XcpObjFile("dxaml", "idl", "winrt", "main", "microsoft.ui.xaml.private.winmd"));
 
             test.WinMDs = taskItemList.ToArray();
 
             test.Execute();
+        }
+
+        private static string ObjFile(params string[] pathParts)
+        {
+            return Path.Combine(new[] { buildObjPath }.Concat(pathParts).ToArray());
+        }
+
+        private static string XcpObjFile(params string[] pathParts)
+        {
+            return Path.Combine(new[] { xcpObjPath }.Concat(pathParts).ToArray());
         }
 
         private static void TestRunPowershellScript()
