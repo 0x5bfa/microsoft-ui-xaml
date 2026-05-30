@@ -83,6 +83,12 @@ The metadata merge projects now live under `src/metadata/MergedWinMD`. Shared
 MSBuild references use `$(MergedWinMDProjectRoot)` so project references do not
 depend on a root-level `MergedWinMD` folder.
 
+## Repo tools
+
+The Visual Studio helper project that refreshes the mock Windows App SDK package
+now lives under `tools/UpdateMockWinAppSDKPackage`, keeping root-level files
+limited to repository-wide entry points and configuration.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.
