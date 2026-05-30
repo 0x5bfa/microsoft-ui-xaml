@@ -234,6 +234,8 @@ The convergence external test DLL moved there as another small self-contained
 runtime native external test project.
 The external infrastructure integration test DLL moved there too, keeping its
 sources with the other runtime native external tests.
+The quality external test DLL moved there as another self-contained runtime
+native external test project.
 
 ## Controls source
 
