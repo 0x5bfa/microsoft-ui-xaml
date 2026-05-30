@@ -257,6 +257,10 @@ through `$(RuntimeNativeExternalTestPath)`.
 The foundation external test DLL and its custom types support project moved
 there next; remaining native external consumers now include foundation helper
 headers through `$(RuntimeNativeExternalTestPath)`.
+The shared native external test props and custom-type targets moved there after
+the external test DLLs, so runtime external tests now import shared MSBuild
+state from `$(RuntimeNativeExternalTestPath)` instead of the legacy `dxaml/test`
+tree.
 
 ## Controls source
 

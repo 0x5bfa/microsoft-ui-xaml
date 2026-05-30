@@ -9,13 +9,13 @@
 
   <PropertyGroup>
     <NativeIsolatedTestPath>$(RuntimeTestPath)\native\isolated</NativeIsolatedTestPath>
-    <NativeExternalTestPath>$(XamlSourcePath)\test\native\external</NativeExternalTestPath>
+    <NativeExternalTestPath>$(RuntimeNativeExternalTestPath)</NativeExternalTestPath>
 
     <InternalTestPath>$(XamlSourcePath)\test\native\internal</InternalTestPath>
     <NativeIncPath>$(RuntimeTestPath)\native\inc</NativeIncPath>
 
     <AppAnalysisTestObjPath>$(TestObjPath)\appanalysis</AppAnalysisTestObjPath>
-    <NativeExternalTestObjPath>$(TestObjPath)\native\external\</NativeExternalTestObjPath>
+    <NativeExternalTestObjPath>$(RuntimeNativeExternalTestObjPath)\</NativeExternalTestObjPath>
       
     <MakePriExeFullPath>$(WindowsSdkToolLocation)\makepri.exe</MakePriExeFullPath>
     <MakeAppxExeFullPath>$(WindowsSdkToolLocation)\makeappx.exe</MakeAppxExeFullPath>

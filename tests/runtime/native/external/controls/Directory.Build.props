@@ -5,17 +5,17 @@
   <PropertyGroup>
     <SharedCustomTypes>Controls</SharedCustomTypes>
   </PropertyGroup>
-  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\test\native\external\Directory.Build.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\Directory.Build.props" />
   <PropertyGroup>
     <SharedCustomTypesDir>$(MSBuildThisFileDirectory)customtypes</SharedCustomTypesDir>
     <SharedCustomTypesGeneratedFilesDir>$(BaseIntermediateOutputPath)customtypes\generated</SharedCustomTypesGeneratedFilesDir>
-    <ProjectIncludeDirectories>$([System.String]::Copy('$(ProjectIncludeDirectories)').Replace('$(NativeExternalTestPath)\$(SharedCustomTypes)\customtypes', '$(SharedCustomTypesDir)').Replace('$(NativeExternalTestObjPath)\$(SharedCustomTypes)\customtypes\generated', '$(SharedCustomTypesGeneratedFilesDir)'))</ProjectIncludeDirectories>
+    <ProjectIncludeDirectories>$([System.String]::Copy('$(ProjectIncludeDirectories)').Replace('$(RuntimeNativeExternalTestPath)\$(SharedCustomTypes)\customtypes', '$(SharedCustomTypesDir)').Replace('$(RuntimeNativeExternalTestObjPath)\$(SharedCustomTypes)\customtypes\generated', '$(SharedCustomTypesGeneratedFilesDir)'))</ProjectIncludeDirectories>
     <ProjectIncludeDirectories>
         $(ProjectIncludeDirectories);
         $(RuntimeNativeExternalTestPath)\controls\inc;
     </ProjectIncludeDirectories>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Remove="$(NativeExternalTestPath)\$(SharedCustomTypes)\customtypes\CustomTypes.vcxproj" />
+    <ProjectReference Remove="$(RuntimeNativeExternalTestPath)\$(SharedCustomTypes)\customtypes\CustomTypes.vcxproj" />
   </ItemGroup>
 </Project>

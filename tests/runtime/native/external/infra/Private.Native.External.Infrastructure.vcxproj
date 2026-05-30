@@ -10,7 +10,7 @@
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XamlSourcePath)\test\common.props"/>
-    <Import Project="$(NativeExternalTestPath)\base.props"/>
+    <Import Project="$(RuntimeNativeExternalTestPath)\base.props"/>
 
     <ItemDefinitionGroup>
         <ClCompile>

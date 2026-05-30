@@ -8,7 +8,7 @@
         <TargetDestination>$(TestBinplaceDestinationPath)</TargetDestination>
     </PropertyGroup>
 
-    <Import Project="$(NativeExternalTestPath)\base.props"/>
+    <Import Project="$(RuntimeNativeExternalTestPath)\base.props"/>
 
     <PropertyGroup>
         <XamlPrecompiledShared>$(RuntimeNativeExternalTestPath)\pch\pch.h</XamlPrecompiledShared>

@@ -363,8 +363,8 @@ to support this depends on the MSBuild project name being `customTypes.vcxproj`.
 that follow this pattern. The following things are important to consider when working with these projects:
 - The resulting `.dll` from this project is not used, and instead the generated code is compiled directly into the test
 binary that wants to use those types.
-- These projects should include the [CustomTypeBase.props](../../dxaml/test/native/external/CustomTypeBase.props) file in
-the `\dxaml\test\native\external` directory. See existing inclusion of this file for projects that currently do this.
+- These projects should include the [CustomTypeBase.props](../../tests/runtime/native/external/CustomTypeBase.props) file in
+the `\tests\runtime\native\external` directory. See existing inclusion of this file for projects that currently do this.
 - All `*.xbf` and `*.xaml` files are binplaced to `$(TestBinplaceDestinationPath)`. This is because in order for APIs
 like `Frame.Navigate` to work, the file containing the `Page` must be located next to the test binary.
 

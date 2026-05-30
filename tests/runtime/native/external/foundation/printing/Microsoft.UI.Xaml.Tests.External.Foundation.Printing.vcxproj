@@ -11,7 +11,7 @@
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XamlSourcePath)\test\common.props"/>
-    <Import Project="$(NativeExternalTestPath)\common.props"/>
+    <Import Project="$(RuntimeNativeExternalTestPath)\common.props"/>
 
     <ItemGroup>
         <ClInclude Include="PrintingIntegrationTestSuite.h"/>

@@ -13,7 +13,7 @@
     <RootNamespace>Private.Tests.Adaptability.StateTriggerTests</RootNamespace>
     <ProjectName>Microsoft.UI.Xaml.Tests.External.Adaptability.CustomTypes</ProjectName>
   </PropertyGroup>
-  <Import Project="$(ProjectRoot)\dxaml\test\native\external\CustomTypeBase.props" />
+  <Import Project="$(RuntimeNativeExternalTestPath)\CustomTypeBase.props" />
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClCompile Include="pch.cpp">
