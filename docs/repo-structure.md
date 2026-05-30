@@ -40,6 +40,7 @@ For more information on the build system, see the [build system design](build-sy
 ## /generated
 This folder contains checked-in generated output and generated baselines.
 Generated controls dependency-property sources live under `/generated/controls/dependencyproperties`.
+Generated package IntelliSense XML lives under `/generated/packaging/intellisense`.
 
 ## /src
 This is where source code for repo-local tools and source components outside the

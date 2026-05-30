@@ -54,6 +54,13 @@ Checked-in generated dependency-property sources for controls now live under
 refer to this location through `$(MUXControlsGeneratedSourceDir)` so generated
 output is separated from handwritten controls source.
 
+## Generated package IntelliSense
+
+Checked-in package IntelliSense XML now lives under
+`generated/packaging/intellisense`. The package project consumes that directory
+through `$(IntellisenseFolder)`, while the docs-team drop input stays under
+`packaging/Intellisense/drop`.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.
@@ -70,8 +77,8 @@ output is separated from handwritten controls source.
 
 1. Move compiler test project assets into `tests/compiler` once they are
    present in the checkout and their generation/update workflows are verified.
-2. Move IntelliSense XML and visual baselines into the generated-assets area
-   with clear update tooling.
+2. Move visual baselines into the generated-assets area with clear update
+   tooling.
 3. Move `controls/dev` to `src/controls` after the controls solution path usage
    is audited.
 4. Move `dxaml/xcp` to `src/runtime` last, because it has the broadest MSBuild
