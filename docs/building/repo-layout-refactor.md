@@ -86,6 +86,12 @@ Runtime ad hoc test applications now live under `tests/runtime/adhoc`. These
 apps are test harnesses that consume built WinUI binaries, so keeping them with
 runtime tests separates them from the runtime source tree.
 
+## Runtime test themes
+
+Runtime test theme dictionaries now live under `tests/runtime/themes`. They are
+test payload assets and are binplaced into the runtime test theme folder from
+that test-owned location.
+
 ## Controls test infrastructure
 
 Controls test infrastructure should live with the controls test projects it
