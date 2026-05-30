@@ -1145,7 +1145,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ThemingIn
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Threading", "xcp\components\threading\lib\Microsoft.UI.Xaml.Threading.vcxproj", "{84B53D4A-4ACA-45FA-ABED-71590C405915}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading", "xcp\components\threading\unittests\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading.vcxproj", "{96149DD6-9516-4684-8FD8-00B1F8BF9443}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading", "..\tests\runtime\native\isolated\foundation\threading\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading.vcxproj", "{96149DD6-9516-4684-8FD8-00B1F8BF9443}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Transforms", "xcp\components\transforms\lib\Microsoft.UI.Xaml.Transforms.vcxproj", "{365CDABF-7F04-445D-A598-BA372821B5A6}"
 EndProject
