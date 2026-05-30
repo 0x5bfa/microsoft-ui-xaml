@@ -10,6 +10,7 @@ Use these ownership buckets for new moves:
 
 | Area | Purpose |
 | --- | --- |
+| `.github` | GitHub workflows, templates, policies, Copilot instructions, and agent skills. |
 | `src/runtime` | Runtime implementation currently rooted in `dxaml/xcp`. |
 | `src/controls` | WinUI controls implementation. |
 | `src/compiler` | XAML compiler source, build tasks, compiler targets, and compiler-local tools. |
@@ -482,6 +483,11 @@ MSBuild references use `$(MergedWinMDProjectRoot)` so project references do not
 depend on a root-level `MergedWinMD` folder.
 
 ## Repo tools
+
+GitHub-facing repository metadata lives under `.github`. Copilot instructions
+and repo-local agent skills moved there from `src/.github` so `src` stays
+focused on source components and GitHub can discover the metadata from its
+standard location.
 
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping

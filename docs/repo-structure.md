@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+- [/.github](#github)
 - [/build, /tools](#build-tools)
 - [/controls](#controls)
 - [/docs](#docs)
@@ -10,6 +11,11 @@
 - [/generated](#generated)
 - [/src](#src)
 - [/tests](#tests)
+
+## /.github
+This folder contains GitHub repository metadata, including workflows, issue and
+pull request templates, resource-management policy, Copilot instructions, and
+agent skills.
 
 ## /build, /tools
 These folders contain scripts and other support machinery that you shouldn't 
