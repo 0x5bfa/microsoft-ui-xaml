@@ -237,7 +237,7 @@
 
     <AppAnalysisPath>$(XcpPath)\dxaml\tools\AppAnalysis</AppAnalysisPath>
 
-    <DetoursPath>$(XamlSourcePath)\test\tools\detours</DetoursPath>
+    <DetoursPath>$(ProjectRoot)tests\runtime\tools\detours</DetoursPath>
 
     <CLR_REF_PATH Condition="'$(arch)'=='amd64'">$(SystemRoot)\Microsoft.NET\Framework64\v4.0.30319</CLR_REF_PATH>
     <CLR_REF_PATH Condition="'$(arch)'=='x86'">$(SystemRoot)\Microsoft.NET\Framework\v4.0.30319</CLR_REF_PATH>

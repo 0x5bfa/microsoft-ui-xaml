@@ -62,9 +62,10 @@ repo-level test orchestration is grouped with other separated test assets.
 ## Runtime test tools
 
 Runtime-specific test tools should move out of `dxaml/test/tools` as their
-references are isolated. `XmlValidation`, `MockDCompInjector`, and the test
-`codegen` helper now live under `tests/runtime/tools`, while the runtime
-solution keeps project references to them for developer convenience.
+references are isolated. `XmlValidation`, `MockDCompInjector`, `detours`, and
+the test `codegen` helper now live under `tests/runtime/tools`. The runtime
+solution keeps project references to the project-based tools, and `DetoursPath`
+centralizes the remaining detours import consumers.
 
 ## Controls test infrastructure
 
