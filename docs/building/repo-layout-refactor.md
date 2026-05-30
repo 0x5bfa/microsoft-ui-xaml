@@ -118,7 +118,9 @@ references the moved logging project directly. The native TAEF host app also
 lives under runtime infra, while continuing to package the legacy private
 infrastructure client from its current output location. The managed TAEF host
 app lives next to it and uses shared root path properties for runtime and
-private infrastructure project references.
+private infrastructure project references. The test dependency binplace project
+also lives there because it prepares runtime test dependency payloads rather
+than legacy runtime source.
 
 ## Runtime managed tests
 

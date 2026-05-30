@@ -1405,7 +1405,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "customTypes", "customTypes"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "themes", "..\tests\runtime\themes\themes.csproj", "{440894AC-8285-4BC4-B384-62ABE04420D0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinplaceTestDependencies", "test\infra\BinplaceTestDependencies.csproj", "{7BCC726A-76C5-42CC-8368-70C32849BCC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinplaceTestDependencies", "..\tests\runtime\infra\BinplaceTestDependencies.csproj", "{7BCC726A-76C5-42CC-8368-70C32849BCC9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{5254DA80-1197-4471-BB27-F90407B6A5A2}"
 EndProject
