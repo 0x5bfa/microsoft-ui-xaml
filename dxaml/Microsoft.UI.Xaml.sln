@@ -1347,7 +1347,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Ext
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tools.Shared.CustomTypes", "test\native\external\tools\customTypes\customTypes.vcxproj", "{33AC7EE6-1069-4118-B204-2A2129FE0406}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Win32", "test\native\external\Win32\Microsoft.UI.Xaml.Tests.External.Win32.vcxproj", "{F1EF69B5-3656-490D-A85E-B8088FBC6DA5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Win32", "..\tests\runtime\native\external\Win32\Microsoft.UI.Xaml.Tests.External.Win32.vcxproj", "{F1EF69B5-3656-490D-A85E-B8088FBC6DA5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Controls", "..\tests\runtime\managed\controls\Microsoft.UI.Xaml.Tests.Managed.Controls.csproj", "{741FBF8D-9524-415C-B288-7A95D2E81CCD}"
 EndProject

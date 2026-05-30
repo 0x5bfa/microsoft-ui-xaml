@@ -236,6 +236,8 @@ The external infrastructure integration test DLL moved there too, keeping its
 sources with the other runtime native external tests.
 The quality external test DLL moved there as another self-contained runtime
 native external test project.
+The Win32 external test DLL moved there too, while continuing to import the
+shared custom type compilation target from the legacy external test root.
 
 ## Controls source
 
