@@ -116,7 +116,9 @@ headers. The native logging helper moved with the contract, so client infra can
 include logging headers from the runtime infra source path while the client DLL
 references the moved logging project directly. The native TAEF host app also
 lives under runtime infra, while continuing to package the legacy private
-infrastructure client from its current output location.
+infrastructure client from its current output location. The managed TAEF host
+app lives next to it and uses shared root path properties for runtime and
+private infrastructure project references.
 
 ## Runtime managed tests
 

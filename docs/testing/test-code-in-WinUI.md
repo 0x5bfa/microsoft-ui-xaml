@@ -115,7 +115,7 @@ The test code could get executed in one of three possible processes:
     * C++: `taefhostapp.exe`
         `tests\runtime\infra\taefhostapp`
     * C#: `TaefHostAppManaged.exe`
-        `dxaml\test\infra\taefhostappmanaged`
+        `tests\runtime\infra\taefhostappmanaged`
 
 ### Win32Explicit
 

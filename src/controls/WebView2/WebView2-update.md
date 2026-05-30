@@ -90,7 +90,7 @@ example, if an API was previously experimental before but is currently final, ol
      * `\eng\packages\packages.config`
        * This is what actually gives the nuget package we're creating a version number. We use the SDK number, but it's 
          technically arbitrary
-     * `\dxaml\test\infra\taefhostappmanaged\TaefHostAppManaged.csproj`
+     * `\tests\runtime\infra\taefhostappmanaged\TaefHostAppManaged.csproj`
        * This is the binplace logic
        * Note in this path, any terminating .0 gets dropped (ie. Use 80.0.333 rather than 8.0.333.0)
      * `\packaging\nuspecs\Microsoft.UI.DCPP.Dependencies.Edge.nuspec`

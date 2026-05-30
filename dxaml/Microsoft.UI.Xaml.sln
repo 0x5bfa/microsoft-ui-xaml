@@ -1321,7 +1321,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\src\p
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "taefhostapp", "..\tests\runtime\infra\taefhostapp\taefhostapp.vcxproj", "{7109C292-DCD9-43DC-AA23-70FC9D835B15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaefHostAppManaged", "test\infra\taefhostappmanaged\TaefHostAppManaged.csproj", "{8761499A-7280-43C4-A32F-7F41C47CA6DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaefHostAppManaged", "..\tests\runtime\infra\taefhostappmanaged\TaefHostAppManaged.csproj", "{8761499A-7280-43C4-A32F-7F41C47CA6DF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taefhostappnetcore", "..\tests\runtime\infra\taefhostappnetcore\taefhostappnetcore.csproj", "{48B40639-3C58-45F2-83FB-722886E5A79E}"
 EndProject
