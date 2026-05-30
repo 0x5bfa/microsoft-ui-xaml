@@ -9,13 +9,12 @@
         <SkipProject>true</SkipProject>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.Managed.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.Managed.props"/>
     <Import Project="$(XamlSourcePath)\test\common.props"/>
-    <Import Project="$(ManagedTestPath)\common.props"/>
 
     <ItemGroup>
         <Compile Include="PGOXboxDashboardTests.cs"/>
-        <ProjectReference Include="$(XamlSourcePath)\test\infra\client\idl\Private.Infrastructure.vcxproj" />
+        <ProjectReference Include="$(InfraTestPath)\client\idl\Private.Infrastructure.vcxproj" />
         <Reference Include="$(PrivateInfrastructureMergedWinMdPath)\Private.Infrastructure.winmd" />
         <Reference Include="@(CommonTestsReferences)" />
     </ItemGroup>
@@ -30,5 +29,5 @@
         </References>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>
