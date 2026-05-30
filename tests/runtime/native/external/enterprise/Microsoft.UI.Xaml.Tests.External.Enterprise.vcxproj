@@ -24,7 +24,7 @@
                 $(MSBuildThisFileDirectory)\rangeselection;
                 $(MSBuildThisFileDirectory)\SemanticZoom;
                 $(MSBuildThisFileDirectory)\stickyheaders;
-                $(NativeExternalTestPath)\controls\inc;
+                $(RuntimeNativeExternalTestPath)\controls\inc;
                 $(RuntimeNativeExternalTestPath)\enterprise\inc;
                 $(NativeExternalTestPath)\foundation\inc;
                 $(WinUIDetailsIncludePath)\abi;

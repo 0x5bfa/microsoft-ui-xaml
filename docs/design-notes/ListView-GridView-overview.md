@@ -318,13 +318,13 @@ DirectUI code:
   * dxaml/xcp/dxaml/lib/SelectorItemAutomationPeer_partial.h / .cpp
 
 Test code:
-- dxaml/test/native/external/controls/itemscontrol
-- dxaml/test/native/external/controls/itemsstackpanel
-- dxaml/test/native/external/controls/listviewbaseconnectedanimations
-- dxaml/test/native/external/controls/listviewbaseheaderitem
-- dxaml/test/native/external/controls/listviewbaseitem
-- dxaml/test/native/external/controls/variablesizedwrapgrid
-- dxaml/test/native/external/controls/wrapgrid
+- tests/runtime/native/external/controls/itemscontrol
+- tests/runtime/native/external/controls/itemsstackpanel
+- tests/runtime/native/external/controls/listviewbaseconnectedanimations
+- tests/runtime/native/external/controls/listviewbaseheaderitem
+- tests/runtime/native/external/controls/listviewbaseitem
+- tests/runtime/native/external/controls/variablesizedwrapgrid
+- tests/runtime/native/external/controls/wrapgrid
 - tests/runtime/native/external/enterprise/datavirtualization
 - tests/runtime/native/external/enterprise/GridView
 - tests/runtime/native/external/enterprise/ItemsControl

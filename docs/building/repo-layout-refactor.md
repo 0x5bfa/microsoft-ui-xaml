@@ -251,6 +251,9 @@ next, with compiler-debugging docs updated to point at the new custom types
 project path.
 The framework external test DLL moved there next, with layout design-note test
 references updated to point at the new runtime native external test location.
+The controls external test DLL and its custom types support project moved there
+next; remaining native external consumers now include controls helper headers
+through `$(RuntimeNativeExternalTestPath)`.
 
 ## Controls source
 

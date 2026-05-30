@@ -1331,11 +1331,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Ext
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Automation", "..\tests\runtime\native\external\Automation\Microsoft.UI.Xaml.Tests.External.Automation.vcxproj", "{760F8B1C-525B-49A4-A702-64A2B8AA863A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Controls", "test\native\external\controls\Microsoft.UI.Xaml.Tests.External.Controls.vcxproj", "{2CF2069D-1E16-47B0-BC6B-7E0CFDABAB28}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Controls", "..\tests\runtime\native\external\controls\Microsoft.UI.Xaml.Tests.External.Controls.vcxproj", "{2CF2069D-1E16-47B0-BC6B-7E0CFDABAB28}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Enterprise", "..\tests\runtime\native\external\enterprise\Microsoft.UI.Xaml.Tests.External.Enterprise.vcxproj", "{6C6F63DA-4F88-4165-BC09-7857BE018055}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Controls.CustomTypes", "test\native\external\controls\customtypes\CustomTypes.vcxproj", "{2908CFE7-EF42-44EC-B87A-D1A170B70E41}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Controls.CustomTypes", "..\tests\runtime\native\external\controls\customtypes\CustomTypes.vcxproj", "{2908CFE7-EF42-44EC-B87A-D1A170B70E41}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Foundation", "test\native\external\foundation\Microsoft.UI.Xaml.Tests.External.Foundation.vcxproj", "{1FF9CB13-F29E-4756-B3FC-D450E43F2A0A}"
 EndProject

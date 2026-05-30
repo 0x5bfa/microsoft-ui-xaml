@@ -27,7 +27,7 @@
         $(MSBuildThisFileDirectory)\provider;
         $(MSBuildThisFileDirectory)\regression;
         $(MSBuildThisFileDirectory)\xamluiabridge;
-        $(NativeExternalTestPath)\controls\inc;
+        $(RuntimeNativeExternalTestPath)\controls\inc;
         $(WinUIDetailsIncludePath)\abi;
         $(WinUIDetailsIncludePath)\MockDComp;
       </AdditionalIncludeDirectories>
