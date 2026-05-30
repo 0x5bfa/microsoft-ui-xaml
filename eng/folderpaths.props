@@ -27,6 +27,8 @@
     <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>
     <TestPath>$(XamlSourcePath)\test</TestPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
+    <RuntimeManagedTestPath>$(RuntimeTestPath)\managed</RuntimeManagedTestPath>
+    <ManagedTestPath>$(XamlSourcePath)\test\managed</ManagedTestPath>
 
     <MuxControlsPath>$(ProjectRoot)controls</MuxControlsPath>
     <MergedWinMDProjectRoot>$(ProjectRoot)src\metadata\MergedWinMD\</MergedWinMDProjectRoot>
