@@ -5,28 +5,28 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <ProjectGuid>{760F8B1C-525B-49A4-A702-64A2B8AA863A}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props" />
   <Import Project="$(XamlSourcePath)\test\common.props" />
   <Import Project="$(NativeExternalTestPath)\common.props" />
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>
         %(AdditionalIncludeDirectories);
-        $(NativeExternalTestPath)\automation\automationpeer;
-        $(NativeExternalTestPath)\automation\AutoSuggest;
-        $(NativeExternalTestPath)\automation\events;
-        $(NativeExternalTestPath)\automation\patterns;
-        $(NativeExternalTestPath)\automation\patterns\customnavigation;
-        $(NativeExternalTestPath)\automation\patterns\RangeValue;
-        $(NativeExternalTestPath)\automation\patterns\Scroll;
-        $(NativeExternalTestPath)\automation\patterns\synchronizedinput;
-        $(NativeExternalTestPath)\automation\patterns\text;
-        $(NativeExternalTestPath)\automation\patterns\textedit;
-        $(NativeExternalTestPath)\automation\patterns\textrange;
-        $(NativeExternalTestPath)\automation\patterns\window;
-        $(NativeExternalTestPath)\automation\provider;
-        $(NativeExternalTestPath)\automation\regression;
-        $(NativeExternalTestPath)\automation\xamluiabridge;
+        $(MSBuildThisFileDirectory)\automationpeer;
+        $(MSBuildThisFileDirectory)\AutoSuggest;
+        $(MSBuildThisFileDirectory)\events;
+        $(MSBuildThisFileDirectory)\patterns;
+        $(MSBuildThisFileDirectory)\patterns\customnavigation;
+        $(MSBuildThisFileDirectory)\patterns\RangeValue;
+        $(MSBuildThisFileDirectory)\patterns\Scroll;
+        $(MSBuildThisFileDirectory)\patterns\synchronizedinput;
+        $(MSBuildThisFileDirectory)\patterns\text;
+        $(MSBuildThisFileDirectory)\patterns\textedit;
+        $(MSBuildThisFileDirectory)\patterns\textrange;
+        $(MSBuildThisFileDirectory)\patterns\window;
+        $(MSBuildThisFileDirectory)\provider;
+        $(MSBuildThisFileDirectory)\regression;
+        $(MSBuildThisFileDirectory)\xamluiabridge;
         $(NativeExternalTestPath)\controls\inc;
         $(WinUIDetailsIncludePath)\abi;
         $(WinUIDetailsIncludePath)\MockDComp;
@@ -107,6 +107,6 @@
   <ItemGroup>
     <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
   </ItemGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(CustomTypesCompile.targets))" />
+  <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(NativeExternalTestPath)\CustomTypesCompile.targets" />
 </Project>

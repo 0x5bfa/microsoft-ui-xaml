@@ -682,8 +682,8 @@ namespace Microsoft { namespace UI { namespace Xaml { namespace Tests { namespac
         });
 
         // How to use and init AutomationNotificationHandler, please refer to the source code of following two files:
-        // dxaml/test/native/external/Automation/AutomationClient/AutomationEventHandler.h
-        // dxaml/test/native/external/Automation/events/NotificationEventTests.cpp
+        // tests/runtime/native/external/Automation/AutomationClient/AutomationEventHandler.h
+        // tests/runtime/native/external/Automation/events/NotificationEventTests.cpp
         wrl::ComPtr<AutomationClient::AutomationNotificationHandler> notificationEventHandler;
 
         UIAutomationHelper::RunOnCorrectThreadForUIA([&]()
