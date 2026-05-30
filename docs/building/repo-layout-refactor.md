@@ -381,6 +381,9 @@ isolated test group under runtime tests.
 The Pivot isolated test moved under
 `tests/runtime/native/isolated/controls/pivot`, continuing the controls
 isolated test group under runtime tests.
+The Moco isolated test moved under
+`tests/runtime/native/isolated/controls/moco`, continuing the controls isolated
+test group under runtime tests.
 
 ## Controls source
 
