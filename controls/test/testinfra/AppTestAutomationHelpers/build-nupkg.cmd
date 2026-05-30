@@ -1,3 +1,3 @@
 @echo off
 
-%~dp0\..\..\..\..\tools\PowershellWrapper.cmd %~dpn0.ps1 %*
+%~dp0\..\..\..\..\tools\common\PowershellWrapper.cmd %~dpn0.ps1 %*
