@@ -24,6 +24,14 @@ Use these ownership buckets for new moves:
 the compiler is a relatively self-contained source area, and moving it first
 proves the path-update pattern before touching `dxaml` or `controls`.
 
+## Compiler entry points
+
+Compiler-specific build entry points should live with the compiler source when
+their MSBuild import behavior allows it. `XamlCompilerPrerequisites.sln` now
+lives under `src/compiler` alongside `XamlCompiler.sln` and the compiler
+projects it orchestrates. `XamlCompilerPublic.csproj` remains at the repo root
+until its `Directory.Build.props` behavior can be isolated.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.

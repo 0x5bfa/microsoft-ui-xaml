@@ -46,4 +46,4 @@ runtime and controls trees live.
 
 The XAML compiler now lives under `/src/compiler`. That folder contains the
 compiler build tasks, executable host, parsing projects, MSBuild targets, and
-compiler-specific tools.
+compiler-specific tools and solutions.

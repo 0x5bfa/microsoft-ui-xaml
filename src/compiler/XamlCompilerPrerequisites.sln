@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler", "src\compiler\Microsoft.UI.Xaml.Markup.Compiler.csproj", "{CF0F4BDA-9030-4749-9102-7739049412F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler", "Microsoft.UI.Xaml.Markup.Compiler.csproj", "{CF0F4BDA-9030-4749-9102-7739049412F5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.Executable", "src\compiler\Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj", "{5A98F9F4-BB19-428C-96B7-87FBF8FB91FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.Executable", "Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj", "{5A98F9F4-BB19-428C-96B7-87FBF8FB91FE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.IO", "src\compiler\Exe\Microsoft.UI.Xaml.Markup.Compiler.IO\Microsoft.UI.Xaml.Markup.Compiler.IO.csproj", "{1FBDE93D-5C21-4761-87D6-2504F772BF28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.IO", "Exe\Microsoft.UI.Xaml.Markup.Compiler.IO\Microsoft.UI.Xaml.Markup.Compiler.IO.csproj", "{1FBDE93D-5C21-4761-87D6-2504F772BF28}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop", "src\compiler\Exe\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop.csproj", "{A1175D44-D47D-4D3E-A319-CEFC7170D29C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop", "Exe\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop.csproj", "{A1175D44-D47D-4D3E-A319-CEFC7170D29C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildGenXbfForMSBuild", "eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj", "{3CB5C51E-1F39-4EDC-8949-28812FC1C40E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildGenXbfForMSBuild", "..\..\eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj", "{3CB5C51E-1F39-4EDC-8949-28812FC1C40E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAugmentation", "eng\GraphAugmentation\XamlCompilerPrerequisites\GraphAugmentation.csproj", "{7B882373-BB18-4823-A503-F228AD742E68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAugmentation", "..\..\eng\GraphAugmentation\XamlCompilerPrerequisites\GraphAugmentation.csproj", "{7B882373-BB18-4823-A503-F228AD742E68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
