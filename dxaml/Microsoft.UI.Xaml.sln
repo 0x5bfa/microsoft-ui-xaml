@@ -979,7 +979,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Deferral", "xcp\components\deferral\lib\Microsoft.UI.Xaml.Deferral.vcxproj", "{B686A4D4-EF60-411C-98C7-FD43225DC80F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral", "xcp\components\deferral\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral.vcxproj", "{31CF3222-2966-4A79-8586-4BDDE928B561}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral", "..\tests\runtime\native\isolated\framework\deferral\Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral.vcxproj", "{31CF3222-2966-4A79-8586-4BDDE928B561}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyLocator", "xcp\components\dependencyLocator\lib\Microsoft.UI.Xaml.DependencyLocator.vcxproj", "{E2FFD843-5C31-491B-B58E-8A0BF55875CA}"
 EndProject
