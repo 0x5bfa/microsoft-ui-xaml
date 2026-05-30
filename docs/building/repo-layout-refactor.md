@@ -96,12 +96,15 @@ that test-owned location.
 
 Runtime managed test projects should move under `tests/runtime/managed` in
 small groups. The media, AccessKeys, animation, common, enterprise, framework,
-controls, foundation, and Win32 managed test projects moved first because they
-already consume the shared managed test props. `$(RuntimeManagedTestPath)`
-identifies the new home, while `$(ManagedTestPath)` keeps existing managed test
-shared props available during the migration. The shared managed test props now
-reference the common managed test sources through `$(RuntimeManagedTestPath)`
-so moved and not-yet-moved projects use the same common assembly.
+controls, foundation, Win32, and Lifetime managed test projects moved first
+because they already consume the shared managed test props.
+`$(RuntimeManagedTestPath)` identifies the new home, while `$(ManagedTestPath)`
+keeps existing managed test shared props available during the migration. The
+shared managed test props now reference the common managed test sources through
+`$(RuntimeManagedTestPath)` so moved and not-yet-moved projects use the same
+common assembly. Non-SDK managed test projects under the new tree explicitly
+import the local managed `Directory.Build.props` before importing the shared
+managed test props.
 
 ## Controls test infrastructure
 
