@@ -1301,7 +1301,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coretext", "xcp\core\text\c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpXbf", "..\tools\runtime\DumpXbf\DumpXbf.csproj", "{8632C717-C327-4FBD-A7E2-85F73C859333}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenXbf", "xcp\tools\GenXbfDLL\GenXbf.vcxproj", "{42577057-854D-443D-AB59-F4E44C8F5207}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenXbf", "..\tools\runtime\GenXbfDLL\GenXbf.vcxproj", "{42577057-854D-443D-AB59-F4E44C8F5207}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleXbfViewer", "..\tools\runtime\XbfParser\SampleXbfViewer\SampleXbfViewer.csproj", "{BB6CE1D3-AA88-4F8E-BA21-E1DE94571DC3}"
 EndProject
