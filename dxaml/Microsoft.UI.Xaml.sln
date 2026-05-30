@@ -1097,7 +1097,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Pivot", "xcp\components\pivot\lib\Microsoft.UI.Xaml.Pivot.vcxproj", "{80037DD4-5988-441F-8A1E-390A4B7C50EE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot", "xcp\components\pivot\unittests\Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot.vcxproj", "{08A6E6D8-217C-42F6-BF54-D1DD5C08ED66}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot", "..\tests\runtime\native\isolated\controls\pivot\Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot.vcxproj", "{08A6E6D8-217C-42F6-BF54-D1DD5C08ED66}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.PrimitiveDependencyObjects", "xcp\components\primitiveDependencyObjects\lib\Microsoft.UI.Xaml.PrimitiveDependencyObjects.vcxproj", "{4BAF458D-DF02-4F8C-BB5A-97CEEB30027C}"
 EndProject
