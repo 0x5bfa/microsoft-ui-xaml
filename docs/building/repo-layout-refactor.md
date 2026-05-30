@@ -34,6 +34,11 @@ lives under `src/compiler` alongside `XamlCompiler.sln` and the compiler
 projects it orchestrates. `XamlCompilerPublic.csproj` remains at the repo root
 until its `Directory.Build.props` behavior can be isolated.
 
+Compiler-local developer tools should live under `src/compiler/Tools` instead
+of being nested inside product source or parser implementation folders. The
+BindingPath `PathVisualizer` tool now lives there alongside the other
+compiler-local tools.
+
 ## Compiler test entry points
 
 Compiler-specific test entry points now live under `tests/compiler`.
