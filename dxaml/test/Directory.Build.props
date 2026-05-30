@@ -12,8 +12,6 @@
     <NativeExternalTestPath>$(XamlSourcePath)\test\native\external</NativeExternalTestPath>
 
     <InternalTestPath>$(XamlSourcePath)\test\native\internal</InternalTestPath>
-    <InfraTestPath>$(XamlSourcePath)\test\infra</InfraTestPath>
-
     <NativeIncPath>$(XamlSourcePath)\test\native\inc</NativeIncPath>
 
     <AppAnalysisTestObjPath>$(TestObjPath)\appanalysis</AppAnalysisTestObjPath>
