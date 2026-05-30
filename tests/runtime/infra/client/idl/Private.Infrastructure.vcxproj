@@ -9,7 +9,7 @@
         <IsWinmdProject>true</IsWinmdProject>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
 
     <PropertyGroup>
         <DisableMidlVersionChecks>1</DisableMidlVersionChecks>  <!-- MIDL version checks do not work with [experimental] (which is used in lifted IXP idl files) -->
@@ -52,5 +52,5 @@
         <Reference Include="@(ExternalWinmds)" Exclude="@(IxpWinmds)"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>

@@ -145,7 +145,7 @@
     <PrivateMUXDir>$(XamlBinaryPath)\xcp\dxaml\idl\winrt\merged\private\$(MergedWinMDOutputDir)</PrivateMUXDir>
     <PublicMergedWinMDDir>$(XamlBuildOutputRoot)MergedWinMD\$(MergedWinMDOutputDir)</PublicMergedWinMDDir>
     <PrivateMergedWinMDDir>$(XamlBuildOutputRoot)MergedWinMD\private\$(MergedWinMDOutputDir)</PrivateMergedWinMDDir>
-    <PrivateInfrastructureMergedWinMdPath>$(InfraTestObjPath)\client\idl\$(MergedWinMDOutputDir)</PrivateInfrastructureMergedWinMdPath>
+    <PrivateInfrastructureMergedWinMdPath>$(RuntimeInfraTestObjPath)\client\idl\$(MergedWinMDOutputDir)</PrivateInfrastructureMergedWinMdPath>
     <PrivateInfrastructureWin32HostingMergedWinMdPath>$(PrivateInfrastructureWin32HostingObjPath)\idl\$(MergedWinMDOutputDir)</PrivateInfrastructureWin32HostingMergedWinMdPath>
     <PrivateInfrastructureHostingHelpersGeneratedWinMdPath>$(PrivateInfrastructureWin32HostingObjPath)\WPF\HostingHelpers\</PrivateInfrastructureHostingHelpersGeneratedWinMdPath>
   </PropertyGroup>

@@ -2,7 +2,7 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 //  Adapted for the public SDK from TAEF's Tailored.h
-// Note: There are two of these things. One in test\native\external\inc and one in test\infra\client\inc. And they have
+// Note: There are two of these things. One in test\native\external\inc and one in tests\runtime\infra\client\inc. And they have
 // different RunOnUIThread implementations.
 
 #pragma once

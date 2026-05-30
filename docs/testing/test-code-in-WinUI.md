@@ -134,7 +134,7 @@ other hosting modes won't have code to set up its DWXS, and can't run in `Win32E
 
 TAEF executes the test, but we also have a set of libraries that constitute a test infrastructure for the MUX tests.
 This infra is responsible for creating and destroying the Xaml host and providing useful services to the test code
-(such as input injection). The code is all under: [`dxaml\test\infra`](../../dxaml/test/infra).
+(such as input injection). The code is all under: [`tests\runtime\infra`](../../tests/runtime/infra).
 
 ### Client component
 

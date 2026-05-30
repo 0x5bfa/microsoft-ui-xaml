@@ -113,7 +113,7 @@
     <Content Include="$(XamlBuildOutputRoot)\src\controls\dll\Microsoft.UI.Xaml.Controls.dll">
       <Link>%(Filename)%(Extension)</Link>
     </Content>
-    <Content Include="$(XamlBinaryPath)\test\infra\client\dll\Private.Infrastructure.Client.dll">
+    <Content Include="$(RuntimeInfraTestObjPath)\client\dll\Private.Infrastructure.Client.dll">
       <Link>%(Filename)%(Extension)</Link>
     </Content>
     <Content Include="$(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis\dll\Microsoft.Diagnostics.AppAnalysis.dll">
@@ -194,7 +194,7 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <Name>Microsoft.Diagnostics.AppAnalysis</Name>
     </ProjectReference>
-    <ProjectReference Include="$(InfraTestPath)\client\dll\Private.Infrastructure.Client.vcxproj">
+    <ProjectReference Include="$(RuntimeInfraTestPath)\client\dll\Private.Infrastructure.Client.vcxproj">
       <Project>{7e2bc80e-cf9b-4567-8e3e-d0f81b4782fd}</Project>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
