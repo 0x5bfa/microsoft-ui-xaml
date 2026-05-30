@@ -24,7 +24,7 @@ being produced for inner loop and testing purposes, but will be decommissioned a
 ### WinUI 3 "Transport Package"
 
 The WinUI 3 build now produces a
-[Microsoft.WinAppSDK.WinUI.TransportPackage](../build/nuspecs/Microsoft.WinAppSDK.WinUI.TransportPackage.nuspec)
+[Microsoft.WindowsAppSDK.WinUI](../packaging/nuspecs/Microsoft.WindowsAppSDK.WinUI.nuspec)
 nupkg, which has substantially similar content to the standalone Microsoft.WinUI nupkg. The purpose of the transport
 package is to use nuget packaging and publishing solely to convey WinUI 3 artifacts to Windows App SDK. The WinUI 3
 build publishes the transport package as a pipeline artifact (under \packaging), and also pushes it to an internal feed
