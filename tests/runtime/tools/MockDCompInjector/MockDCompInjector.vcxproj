@@ -8,7 +8,7 @@
         <ProjectGuid>{fa82dbdb-93a1-49ce-930c-301381b43aa6}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XamlSourcePath)\test\common.props"/>
 
     <!-- Helps an app with loading Microsoft.UI.Xaml.dll from an alternative location and injecting MockDComp.dll on app loading -->
@@ -43,5 +43,5 @@
         <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) ___TARGETNAME="""$(TargetName).$(Targettype)""";</ProjectPreprocessorDefinitions>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>

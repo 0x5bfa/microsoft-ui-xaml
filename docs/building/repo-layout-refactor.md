@@ -64,7 +64,9 @@ repo-level test orchestration is grouped with other separated test assets.
 Runtime-specific test tools should move out of `dxaml/test/tools` as their
 references are isolated. `XmlValidation` now lives under
 `tests/runtime/tools/XmlValidation`, while the runtime solution keeps project
-references to it for developer convenience.
+references to it for developer convenience. `MockDCompInjector` also lives
+under `tests/runtime/tools`, keeping runtime-only helper projects with the test
+assets that consume them.
 
 ## Controls test infrastructure
 
