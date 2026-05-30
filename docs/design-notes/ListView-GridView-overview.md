@@ -332,8 +332,8 @@ Test code:
 - dxaml/test/native/external/enterprise/SemanticZoom
 - dxaml/test/native/external/enterprise/StickyHeaders
 
-- dxaml/test/managed/enterprise/ItemsPresenter
-- dxaml/test/managed/enterprise/Moco
+- tests/runtime/managed/enterprise/ItemsPresenter
+- tests/runtime/managed/enterprise/Moco
 
 A few files in MUXC as well:
 - Resources:
