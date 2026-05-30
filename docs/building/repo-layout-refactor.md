@@ -449,7 +449,10 @@ Runtime developer tools should move out of `dxaml/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
 as the first small runtime tool move. The XBF parser/viewer tools moved under
 `tools/runtime/XbfParser`, with initialization restore and generated
-WidgetSpinner metadata paths updated to the new tool-owned location.
+WidgetSpinner metadata paths updated to the new tool-owned location. The
+standalone `SplitGenericXaml` project also moved under
+`tools/runtime/SplitGenericXaml`; runtime theme generation still builds its
+local copy from `dxaml/xcp/dxaml/themes/autogen`.
 
 ## Specs documentation
 
