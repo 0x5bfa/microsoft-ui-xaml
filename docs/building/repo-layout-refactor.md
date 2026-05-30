@@ -494,6 +494,10 @@ available in initialized shells.
 Shared command wrappers used by multiple repo tools now live under
 `tools/common`, keeping the `tools` root focused on tool categories.
 
+Controls new-control scaffolding helpers now live under
+`controls/tools/ControlGeneration`, with reusable `NEWCONTROL` templates under
+that folder's `Templates` directory.
+
 Runtime developer tools should move out of `dxaml/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
 as the first small runtime tool move. The XBF parser/viewer tools moved under

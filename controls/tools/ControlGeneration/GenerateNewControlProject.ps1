@@ -30,7 +30,7 @@ function AddAttribute
 }
 
 $toolsDir = Split-Path -Path $MyInvocation.MyCommand.Path;
-$muxControlsDir = Split-Path $toolsDir -Parent
+$muxControlsDir = Split-Path (Split-Path $toolsDir -Parent) -Parent
 $repoRoot = Split-Path $muxControlsDir -Parent
 $controlsSourceDir = Join-Path $repoRoot "src\controls"
 $controlDir = Join-Path $controlsSourceDir $controlName
@@ -42,7 +42,7 @@ if (!$newDir)
     exit 1
 }
 
-$from = $toolsDir + "\GenerateNewControlProjectFiles\*"
+$from = Join-Path $toolsDir "Templates\*"
 Copy-Item $from $controlDir -Recurse
 
 # Replace NEWCONTROL with $controlName in file names
