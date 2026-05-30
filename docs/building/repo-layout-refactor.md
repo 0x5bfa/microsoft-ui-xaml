@@ -506,7 +506,8 @@ Controls packaged test app deployment helpers now live under
 `controls/tools/TestAppDeployment`. Build integration still copies
 `CreateAppxDirectory.msbuildproj` and `InstallAppFromLayout.ps1` into the test
 app output directory with their original filenames, preserving runtime install
-script discovery.
+script discovery. Test app dependency extraction and AppX dependency XML
+generation scripts also live in this folder.
 
 Controls test reporting helpers now live under `controls/tools/TestReporting`,
 grouping the unreliable-test report creation and console output scripts away

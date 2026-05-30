@@ -24,7 +24,7 @@ Build wrapper commands live under `/tools/build`.
 Shared command wrappers live under `/tools/common`.
 Controls build machine maintenance helpers live under `/controls/tools/BuildMachine`.
 Controls scaffolding helpers live under `/controls/tools/ControlGeneration`.
-Controls test app deployment helpers live under `/controls/tools/TestAppDeployment`.
+Controls test app deployment and dependency helpers live under `/controls/tools/TestAppDeployment`.
 Controls test reporting helpers live under `/controls/tools/TestReporting`.
 
 ## /controls
