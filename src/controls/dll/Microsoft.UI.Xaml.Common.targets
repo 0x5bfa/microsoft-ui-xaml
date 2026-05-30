@@ -367,8 +367,8 @@
     </CreateProperty>
   </Target>
   <!-- Controls styles were missing in packaged generic.xaml file. Merge MUX Generic.xaml with MUXC Generic.xaml and ThemeResource.xaml -->
-  <Target Name="MergeMuxMuxcGenericResourceFiles" AfterTargets="GenerateThemeResourceFile" Inputs="$(ScriptPath)GenerateMergedXaml.ps1;$(XcpPath)\dxaml\themes\generic.xaml;$(OutDir)generic.xaml;$(OutDir)themeresources.xaml" Outputs="$(TempRoot)\generic.xaml">
-    <RunPowershellScript Path="$(ScriptPath)GenerateMergedXaml.ps1" Parameters="-XamlFileList &quot;$(XcpPath)\dxaml\themes\generic.xaml;$(OutDir)generic.xaml;$(OutDir)themeresources.xaml&quot; -MergedXamlFilePath &quot;$(TempRoot)\generic.xaml&quot;" FilesWritten="$(TempRoot)\generic.xaml" />
+  <Target Name="MergeMuxMuxcGenericResourceFiles" AfterTargets="GenerateThemeResourceFile" Inputs="$(ScriptPath)XamlProcessing\GenerateMergedXaml.ps1;$(XcpPath)\dxaml\themes\generic.xaml;$(OutDir)generic.xaml;$(OutDir)themeresources.xaml" Outputs="$(TempRoot)\generic.xaml">
+    <RunPowershellScript Path="$(ScriptPath)XamlProcessing\GenerateMergedXaml.ps1" Parameters="-XamlFileList &quot;$(XcpPath)\dxaml\themes\generic.xaml;$(OutDir)generic.xaml;$(OutDir)themeresources.xaml&quot; -MergedXamlFilePath &quot;$(TempRoot)\generic.xaml&quot;" FilesWritten="$(TempRoot)\generic.xaml" />
   </Target>
   <!-- Copy merged MUX's generic.xaml and MUXC's generic.xaml and ThemeResources file to the package -->
   <Target Name="CopyMergedMuxMuxcGenericResourceFile" AfterTargets="MergeMuxMuxcGenericResourceFiles">

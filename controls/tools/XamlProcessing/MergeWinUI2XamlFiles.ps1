@@ -44,7 +44,7 @@ if ($env:RepoRoot)
 }
 else
 {
-    $repoRoot = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..")
+    $repoRoot = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..\..")
 }
 
 if ($env:BuildOutputRoot)
