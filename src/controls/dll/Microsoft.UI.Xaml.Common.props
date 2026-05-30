@@ -19,7 +19,7 @@
     <SdkPlatform Condition="'$(Platform)' == 'Win32'">x86</SdkPlatform>
     <SdkPlatform Condition="'$(Platform)' == 'ARM64EC'">x64</SdkPlatform>
   </PropertyGroup>
-  <Import Project="$(MUXCProjectRoot)FeatureAreas.props" />
+  <Import Project="$(MUXCProjectRoot)build\FeatureAreas.props" />
   <Import Project="$(NuGetPackageRoot)\Microsoft.Windows.CppWinRT.$(CppWinRTVersion)\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Windows.CppWinRT.$(CppWinRTVersion)\build\native\Microsoft.Windows.CppWinRT.props')" />
   <Import Project="$(NuGetPackageRoot)\Microsoft.SourceLink.GitHub.1.1.1\build\Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.SourceLink.GitHub.1.1.1\build\Microsoft.SourceLink.GitHub.props')" />
   <Import Project="$(NuGetPackageRoot)\Microsoft.SourceLink.Common.1.1.1\build\Microsoft.SourceLink.Common.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.SourceLink.Common.1.1.1\build\Microsoft.SourceLink.Common.props')" />

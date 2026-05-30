@@ -59,7 +59,7 @@ foreach ($file in $files)
 }
 
 # Add project to FeatureAreas.props
-$featureAreasProps = $muxControlsDir + "\FeatureAreas.props";
+$featureAreasProps = Join-Path $muxControlsDir "build\FeatureAreas.props";
 [xml]$xml = Get-Content $featureAreasProps
 $featureEnabledName = "Feature" + $controlName + "Enabled"
 foreach ($group in $xml.Project.ChildNodes)
@@ -75,7 +75,7 @@ foreach ($group in $xml.Project.ChildNodes)
 
             # Control dependencies list
             $controlDependenciesNode = $xml.CreateElement("PropertyGroup",$xml.Project.NamespaceURI);
-            $controlDependenciesCondition = "Exists('InnerLoopAreas.props') And `$(SolutionName) == 'MUXControlsInnerLoop' And `$(" + $featureEnabledName + ") == 'true'"
+            $controlDependenciesCondition = "Exists('`$(InnerLoopAreasProps)') And `$(SolutionName) == 'MUXControlsInnerLoop' And `$(" + $featureEnabledName + ") == 'true'"
             AddAttribute $xml $controlDependenciesNode "Condition" $controlDependenciesCondition
             # Make node have empty content and not be a one liner
             $controlDependenciesNode.InnerText = "";
@@ -96,7 +96,7 @@ foreach ($group in $xml.Project.ChildNodes)
 $xml.Save($featureAreasProps)
 
 # Add project to MUXC project via ProjectImports.targets
-$muxProject = $muxControlsDir + "\ProjectImports.targets";
+$muxProject = Join-Path $muxControlsDir "build\ProjectImports.targets";
 [xml]$xml = Get-Content $muxProject
 [xml]$xml = Get-Content $muxProject
 foreach ($group in $xml.Project.ImportGroup)
