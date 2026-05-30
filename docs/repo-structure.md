@@ -23,6 +23,7 @@ Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
 Build wrapper commands live under `/tools/build`.
 Shared command wrappers live under `/tools/common`.
 Controls scaffolding helpers live under `/controls/tools/ControlGeneration`.
+Controls test app deployment helpers live under `/controls/tools/TestAppDeployment`.
 
 ## /controls
 This folder contains controls solution, IDL, test, and tooling entry points.

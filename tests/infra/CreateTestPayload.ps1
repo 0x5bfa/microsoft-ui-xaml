@@ -168,7 +168,7 @@ if ($Mode -eq "DevTestSuite" -or $Mode -eq "ScenarioTestSuite")
     Publish-Item "$repoRoot\tests\infra\scripts\*" "$outpath"
     Publish-Item "$repoRoot\tests\infra\Helix\scripts\*" "$outpath"
     Publish-Item "$repoRoot\tests\infra\Helix\common\test\*" "$outpath"
-    Publish-Item "$repoRoot\controls\tools\EnableMUXControlsTestAppManagedDebugging.*" "$outpath"
+    Publish-Item "$repoRoot\controls\tools\TestAppDeployment\EnableMUXControlsTestAppManagedDebugging.*" "$outpath"
     
     Publish-Item "$binpath\TestDependencies\dotnet-windowsdesktop-runtime-installer.exe" "$outpath"
 }
