@@ -859,7 +859,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Man
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests", "..\tests\runtime\managed\animation\Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests.csproj", "{1B3FD2E3-93C7-4C16-A64D-CA88F24EEF06}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Common", "test\managed\common\Microsoft.UI.Xaml.Tests.Managed.Common.csproj", "{9340A16B-C175-43FF-BF53-6EBB828A8348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Common", "..\tests\runtime\managed\common\Microsoft.UI.Xaml.Tests.Managed.Common.csproj", "{9340A16B-C175-43FF-BF53-6EBB828A8348}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Enterprise.Moco", "test\managed\enterprise\Microsoft.UI.Xaml.Tests.Managed.Enterprise.Moco.csproj", "{49ADCBE5-50EE-4066-8AD7-B69CEA7C2985}"
 EndProject

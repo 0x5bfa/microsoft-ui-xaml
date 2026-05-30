@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="$(XamlSourcePath)\test\managed\common\AssemblySetup.cs" />
+    <Compile Include="$(RuntimeManagedTestPath)\common\AssemblySetup.cs" />
   </ItemGroup>
 
   <Import Project="taef.managed.props"/>
@@ -27,6 +27,6 @@
   <ItemGroup>
     <ProjectReference Include="$(ProjectRoot)\src\projection\private\Microsoft.WinUI.csproj" />
     <ProjectReference Include="$(InfraTestPath)\client\cswinrt\Private.Infrastructure.CsWinRT.csproj" Private="False" />
-    <ProjectReference Include="$(XamlSourcePath)\test\managed\common\Microsoft.UI.Xaml.Tests.Managed.Common.csproj" Private="False" />
+    <ProjectReference Include="$(RuntimeManagedTestPath)\common\Microsoft.UI.Xaml.Tests.Managed.Common.csproj" Private="False" />
   </ItemGroup>
 </Project>
