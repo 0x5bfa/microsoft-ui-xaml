@@ -238,6 +238,9 @@ The quality external test DLL moved there as another self-contained runtime
 native external test project.
 The Win32 external test DLL moved there too, while continuing to import the
 shared custom type compilation target from the legacy external test root.
+The sample external test DLL and its custom types support project also moved
+there; it is not solution-referenced today, but it follows the same runtime
+native external test layout.
 
 ## Controls source
 

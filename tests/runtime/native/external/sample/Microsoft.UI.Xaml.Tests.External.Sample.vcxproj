@@ -5,7 +5,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <ProjectGuid>{760F8B1C-525B-49A4-A702-64A2B8AA863A}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props" />
   <Import Project="$(XamlSourcePath)\test\common.props" />
   <Import Project="$(NativeExternalTestPath)\common.props" />
   <ItemDefinitionGroup>
@@ -32,8 +32,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
-    <ProjectReference Include="customTypes\CustomTypes.vcxproj" />
+    <ProjectReference Include="$(RuntimeNativeExternalTestPath)\sample\customTypes\CustomTypes.vcxproj" />
   </ItemGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(CustomTypesCompile.targets))" />
+  <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(NativeExternalTestPath)\CustomTypesCompile.targets" />
 </Project>
