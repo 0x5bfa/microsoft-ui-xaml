@@ -29,7 +29,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props" />
   <Import Project="$(XamlSourcePath)\test\common.props" />
   <PropertyGroup>
     <TestExtensionsPath>$(XamlBuildOutputRoot)\MergedWinMD\private\TestExtensions.xml</TestExtensionsPath>
@@ -62,7 +62,7 @@
     <WriteToFile FilePath="%(AppxManifestFile.BuildOutputPath)" Contents="$(AppxManifestContentsWithReplacement)" />
   </Target>
   <ItemGroup>
-    <ProjectReference Include="$(ProjectRoot)\MergedWinMD\private\MergedWinMD.vcxproj" ReferenceOutputAssembly="false" LinkLibraryDependencies="false" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" ReferenceOutputAssembly="false" LinkLibraryDependencies="false" />
   </ItemGroup>
   <ItemGroup>
     <BinplaceItem Include="@(AppxManifestFile -> '%(BuildOutputPath)')" />
@@ -71,5 +71,5 @@
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
 </Project>
