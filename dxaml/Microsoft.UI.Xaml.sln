@@ -1283,7 +1283,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppAnalysis.Unittests.pch",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests", "..\tests\runtime\appanalysis\unittests\ruleTests\Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests.vcxproj", "{9669EBDC-8C23-44F5-A337-5F2D98B15133}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XamlDiagnosticsTap", "xcp\dxaml\tools\xamldiagnostics\tap\XamlDiagnosticsTap.vcxproj", "{66C7FECE-EBB2-4D67-8FA8-BFC1C250E2EE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XamlDiagnosticsTap", "..\tools\runtime\xamldiagnostics\tap\XamlDiagnosticsTap.vcxproj", "{66C7FECE-EBB2-4D67-8FA8-BFC1C250E2EE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PALDebug", "xcp\pal\debug\PALDebug.vcxproj", "{F1BEDBAB-6F95-4A90-8352-F54BF17F6FD0}"
 EndProject
