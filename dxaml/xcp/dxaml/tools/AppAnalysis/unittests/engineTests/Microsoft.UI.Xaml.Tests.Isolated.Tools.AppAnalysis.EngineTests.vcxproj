@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis\unittests\unittest.props"/>
+    <Import Project="$(XcpPath)\dxaml\tools\AppAnalysis\unittests\unittest.props"/>
 
     <ItemDefinitionGroup>
         <ClCompile>

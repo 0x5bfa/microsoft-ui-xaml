@@ -18,7 +18,7 @@
         </ClCompile>
     </ItemDefinitionGroup>
 
-    <Import Project="$(XamlSourcePath)\xcp\project-lift.props"/>
+    <Import Project="$(XcpPath)\project-lift.props"/>
     <Import Project="..\sources.props"/>
 
     <PropertyGroup>
@@ -34,8 +34,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\xamlDiagnostics\idl\xamlom.vcxproj" />
+        <ProjectReference Include="$(XcpPath)\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}"/>
+        <ProjectReference Include="$(XcpPath)\components\xamlDiagnostics\idl\xamlom.vcxproj" />
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

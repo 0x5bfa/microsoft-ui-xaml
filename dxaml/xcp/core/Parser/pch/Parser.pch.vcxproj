@@ -18,7 +18,7 @@
         </ClCompile>
     </ItemDefinitionGroup>
 
-    <Import Project="$(XamlSourcePath)\xcp\project-lift.props"/>
+    <Import Project="$(XcpPath)\project-lift.props"/>
     <Import Project="..\sources.props"/>
 
     <PropertyGroup>

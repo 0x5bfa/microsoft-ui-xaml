@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
     <!-- Satisfy "UT", which currently doesn't parse includes. -->
@@ -36,7 +36,7 @@
 
     <ItemGroup>
         <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\AccessKeys\ModeContainer\lib\AccessKeys.AKModeContainer.vcxproj" Project="{02e9ec89-0748-495e-b70e-a2403c88381e}"/>
+        <ProjectReference Include="$(XcpPath)\components\AccessKeys\ModeContainer\lib\AccessKeys.AKModeContainer.vcxproj" Project="{02e9ec89-0748-495e-b70e-a2403c88381e}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

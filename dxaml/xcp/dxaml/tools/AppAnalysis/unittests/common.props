@@ -25,7 +25,7 @@
     <PropertyGroup>
         <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) UNICODE; _UNICODE; WIL_SUPPRESS_PRIVATE_API_USE; MIDL_NS_PREFIX;</ProjectPreprocessorDefinitions>
 
-        <AppAnalysisPath>$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis</AppAnalysisPath>
+        <AppAnalysisPath>$(XcpPath)\dxaml\tools\AppAnalysis</AppAnalysisPath>
         <AppAnalysisObjPath>$(XamlBinaryPath)\xcp\dxaml\tools\AppAnalysis</AppAnalysisObjPath>
         <AppAnalysisTestObjPath>$(XamlBinaryPath)\test\appanalysis</AppAnalysisTestObjPath>
         <AppAnalysisTestPath>$(XamlSourcePath)\test\appanalysis</AppAnalysisTestPath>
@@ -48,8 +48,8 @@
             $(AppAnalysisTestObjPath)\idl;
             $(AppAnalysisObjPath)\unittests\infra\idl;
             $(XamlSourcePath)\test\native\inc;
-            $(XamlSourcePath)\xcp\components\base\inc;
-            $(XamlSourcePath)\xcp\inc;
+            $(XcpPath)\components\base\inc;
+            $(XcpPath)\inc;
         </ProjectIncludeDirectories>
 
         <!-- we can't share the pre-compiled header since the flag WIN_DLL is defined by our tests -->

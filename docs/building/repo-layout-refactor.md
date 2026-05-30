@@ -104,7 +104,9 @@ root while preserving each spec's local image and support-file layout.
 Runtime source remains under `dxaml/xcp` for now. Shared MSBuild entry points
 should refer to it through `$(XcpPath)` instead of spelling
 `$(XamlSourcePath)\xcp` directly, reducing the number of edits required when the
-runtime tree is eventually moved under `src/runtime`.
+runtime tree is eventually moved under `src/runtime`. Runtime-local MSBuild
+projects and props files follow the same rule for references back into the XCP
+tree.
 
 ## Migration rules
 

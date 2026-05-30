@@ -22,7 +22,7 @@
     <!-- including with <>. That's not really a great thing to do and I'd rather we -->
     <!-- catch it here than allow us to shadow over a header file silently.         -->
     <PropertyGroup>
-        <XamlDiagPath>$(XamlSourcePath)\xcp\components\xamldiagnostics</XamlDiagPath>
+        <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
         <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);

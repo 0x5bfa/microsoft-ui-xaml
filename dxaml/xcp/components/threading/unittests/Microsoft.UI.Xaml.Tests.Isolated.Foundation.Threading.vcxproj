@@ -13,7 +13,7 @@
     <!-- UT:TARGET_DESTINATION=NTTEST\WINDOWSTEST\dxaml\test   -->
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
 
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
@@ -39,7 +39,7 @@
 
     <ItemGroup>
         <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\threading\lib\Microsoft.UI.Xaml.Threading.vcxproj" Project="{84b53d4a-4aca-45fa-abed-71590c405915}"/>
+        <ProjectReference Include="$(XcpPath)\components\threading\lib\Microsoft.UI.Xaml.Threading.vcxproj" Project="{84b53d4a-4aca-45fa-abed-71590c405915}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

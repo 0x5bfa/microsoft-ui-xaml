@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
     <PropertyGroup>
@@ -36,7 +36,7 @@
 
     <ItemGroup>
         <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\pivot\lib\Microsoft.UI.Xaml.Pivot.vcxproj" Project="{80037dd4-5988-441f-8a1e-390a4b7c50ee}"/>
+        <ProjectReference Include="$(XcpPath)\components\pivot\lib\Microsoft.UI.Xaml.Pivot.vcxproj" Project="{80037dd4-5988-441f-8a1e-390a4b7c50ee}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

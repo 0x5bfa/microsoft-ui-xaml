@@ -18,7 +18,7 @@
     <!-- traditional XCP directories. In time as we move more of Jupiter into -->
     <!-- this new model we'll be able to depricate these.                     -->
     <PropertyGroup>
-        <XamlDiagPath>$(XamlSourcePath)\xcp\components\xamldiagnostics</XamlDiagPath>
+        <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
         <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
         <LegacyIncludes>
             $(XcpPath)\inc;
@@ -89,7 +89,7 @@
         </ProjectIncludeDirectories>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\dxaml\idl\winrt\merged\microsoft.ui.xaml.vcxproj" Project="{869EA267-A81A-49ED-8404-812C2A03E25A}"/>
+        <ProjectReference Include="$(XcpPath)\dxaml\idl\winrt\merged\microsoft.ui.xaml.vcxproj" Project="{869EA267-A81A-49ED-8404-812C2A03E25A}"/>
         <ProjectReference Include="$(XamlDiagPath)\idl\xamlom.vcxproj" />
     </ItemGroup>
 </Project>

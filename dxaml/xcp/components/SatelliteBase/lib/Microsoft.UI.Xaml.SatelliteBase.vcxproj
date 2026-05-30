@@ -11,12 +11,12 @@
     <!-- Copyright (c) Microsoft Corporation.  All rights reserved. -->
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
 
     <Import Project="$(XcpPath)\components\common.props"/>
 
     <PropertyGroup>
-        <XcpSatbaseInc>$(XamlSourcePath)\xcp\components\SatelliteBase\inc</XcpSatbaseInc>
+        <XcpSatbaseInc>$(XcpPath)\components\SatelliteBase\inc</XcpSatbaseInc>
 
         <ProjectIncludeDirectories>$(ProjectIncludeDirectories); $(XcpSatbaseInc); $(FrameworkUdkIncPath);</ProjectIncludeDirectories>
     </PropertyGroup>

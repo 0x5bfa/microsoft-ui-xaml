@@ -37,7 +37,7 @@
         <ProjectIncludeDirectories>
             ..\lib;
             $(ProjectIncludeDirectories);
-            $(XamlSourcePath)\xcp\components\satellitebase\inc;
+            $(XcpPath)\components\satellitebase\inc;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 

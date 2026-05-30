@@ -6,7 +6,7 @@
         <ConfigurationType>DynamicLibrary</ConfigurationType>
     </PropertyGroup>
 
-    <Import Project="$(XamlSourcePath)\xcp\project-lift.props"/>
+    <Import Project="$(XcpPath)\project-lift.props"/>
 
     <PropertyGroup>
         <ResourceOnlyDll>true</ResourceOnlyDll>

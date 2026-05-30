@@ -9,10 +9,10 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
 
     <PropertyGroup>
-        <XamlDiagPath>$(XamlSourcePath)\xcp\components\xamldiagnostics</XamlDiagPath>
+        <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
         <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
     </PropertyGroup>
 
@@ -25,16 +25,16 @@
             $(XamlDiagPath)\inc;
             $(XamlDiagPath)\idl;
             $(XamlDiagObjPath)\idl;
-            $(XamlSourcePath)\xcp\dxaml\lib;
-            $(XamlSourcePath)\xcp\components;
-            $(XamlSourcePath)\xcp\components\diagnosticsInterop\inc;
-            $(XamlSourcePath)\xcp\components\resources\inc;
-            $(XamlSourcePath)\xcp\components\UIBridgeFocus\inc;
-            $(XamlSourcePath)\xcp\components\comptree\inc;
-            $(XamlSourcePath)\xcp\components\graphics\inc;
-            $(XamlSourcePath)\xcp\components\transforms\inc;
-            $(XamlSourcePath)\xcp\components\collection\inc;
-            $(XamlSourcePath)\xcp\plat\win\desktop;
+            $(XcpPath)\dxaml\lib;
+            $(XcpPath)\components;
+            $(XcpPath)\components\diagnosticsInterop\inc;
+            $(XcpPath)\components\resources\inc;
+            $(XcpPath)\components\UIBridgeFocus\inc;
+            $(XcpPath)\components\comptree\inc;
+            $(XcpPath)\components\graphics\inc;
+            $(XcpPath)\components\transforms\inc;
+            $(XcpPath)\components\collection\inc;
+            $(XcpPath)\plat\win\desktop;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 

@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest-uielement.props"/>
 
     <!-- Satisfy "UT", which currently doesn't parse includes. -->
@@ -94,15 +94,15 @@
 
     <ItemGroup>
         <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\winuri\lib\winuri.vcxproj" Project="{0c3c2872-56a3-4acf-b2f7-8c05710b93ae}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\mrt\lib\Microsoft.UI.Xaml.Mrt.vcxproj" Project="{dd66fbf9-b48e-41ae-bcee-b2548e39001b}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\deferral\lib\Microsoft.UI.Xaml.Deferral.vcxproj" Project="{b686a4d4-ef60-411c-98c7-fd43225dc80f}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\colors\lib\Microsoft.UI.Xaml.Colors.vcxproj" Project="{6b5aed1f-fd5d-47bc-9b9a-37d56e2c2e97}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\runtimeEnabledFeatures\lib\Microsoft.UI.Xaml.RuntimeEnabledFeatures.vcxproj" Project="{968dc6e1-0f0a-4211-97cc-57ab0754206b}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\legacy\lib\Microsoft.UI.Xaml.Legacy.vcxproj" Project="{95d07701-4af9-48e5-b726-0d42034811c8}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\transforms\lib\Microsoft.UI.Xaml.Transforms.vcxproj" Project="{365cdabf-7f04-445d-a598-ba372821b5a6}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\core\parser\core\Parser.Core.vcxproj" Project="{4c54ca57-3fdb-4bd4-a5cd-6f89f8f3d46b}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\text\lib\Microsoft.UI.Xaml.Text.vcxproj" Project="{df854298-841f-4dd5-9ddf-fefbc280a6d1}"/>
+        <ProjectReference Include="$(XcpPath)\components\winuri\lib\winuri.vcxproj" Project="{0c3c2872-56a3-4acf-b2f7-8c05710b93ae}"/>
+        <ProjectReference Include="$(XcpPath)\components\mrt\lib\Microsoft.UI.Xaml.Mrt.vcxproj" Project="{dd66fbf9-b48e-41ae-bcee-b2548e39001b}"/>
+        <ProjectReference Include="$(XcpPath)\components\deferral\lib\Microsoft.UI.Xaml.Deferral.vcxproj" Project="{b686a4d4-ef60-411c-98c7-fd43225dc80f}"/>
+        <ProjectReference Include="$(XcpPath)\components\colors\lib\Microsoft.UI.Xaml.Colors.vcxproj" Project="{6b5aed1f-fd5d-47bc-9b9a-37d56e2c2e97}"/>
+        <ProjectReference Include="$(XcpPath)\components\runtimeEnabledFeatures\lib\Microsoft.UI.Xaml.RuntimeEnabledFeatures.vcxproj" Project="{968dc6e1-0f0a-4211-97cc-57ab0754206b}"/>
+        <ProjectReference Include="$(XcpPath)\components\legacy\lib\Microsoft.UI.Xaml.Legacy.vcxproj" Project="{95d07701-4af9-48e5-b726-0d42034811c8}"/>
+        <ProjectReference Include="$(XcpPath)\components\transforms\lib\Microsoft.UI.Xaml.Transforms.vcxproj" Project="{365cdabf-7f04-445d-a598-ba372821b5a6}"/>
+        <ProjectReference Include="$(XcpPath)\core\parser\core\Parser.Core.vcxproj" Project="{4c54ca57-3fdb-4bd4-a5cd-6f89f8f3d46b}"/>
+        <ProjectReference Include="$(XcpPath)\components\text\lib\Microsoft.UI.Xaml.Text.vcxproj" Project="{df854298-841f-4dd5-9ddf-fefbc280a6d1}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

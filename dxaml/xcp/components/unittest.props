@@ -49,7 +49,7 @@
 
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
-            $(XamlSourcePath)\xcp\components\unittests\;
+            $(XcpPath)\components\unittests\;
             $(XamlSourcePath)\test\native\inc\;
             $(XamlSourcePath)\test\native\isolated\inc\;
         </ProjectIncludeDirectories>

@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\project-lift.props"/>
+    <Import Project="$(XcpPath)\project-lift.props"/>
 
     <!-- TAEF.targets always sets INLINE_TEST_METHOD_MARKUP.  We don't want that defined so capture the value before the import and override it
          back to the starting value afterwards. -->
@@ -28,7 +28,7 @@
     <PropertyGroup>
         <Dllentry>_DllMainCRTStartup</Dllentry>
         <TargetDestination>$(TestBinplaceDestinationPath)</TargetDestination>
-        <XamlDiagPath>$(XamlSourcePath)\xcp\components\xamldiagnostics</XamlDiagPath>
+        <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
         <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
         <Mui>false</Mui>
         <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) _WCTYPE_INLINE_DEFINED; UNICODE; _UNICODE;</ProjectPreprocessorDefinitions>
@@ -64,8 +64,8 @@
             $(ProjectIncludeDirectories)
             $(LiftedIXPIncludePaths);
             $(ExternalDependencies);
-            $(XamlSourcePath)\xcp\inc;
-            $(XamlSourcePath)\xcp\components\base\inc;
+            $(XcpPath)\inc;
+            $(XcpPath)\components\base\inc;
             $(XamlDiagPath)\inc;
             $(XamlDiagObjPath)\idl;
         </ProjectIncludeDirectories>

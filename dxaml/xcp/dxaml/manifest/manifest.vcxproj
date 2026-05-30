@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\project-lift.props"/>
+    <Import Project="$(XcpPath)\project-lift.props"/>
 
     <PropertyGroup>
         <TargetDestination>retail</TargetDestination>
@@ -20,7 +20,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <EtwManifest Include="$(XamlSourcePath)\xcp\plat\win\desktop\Microsoft-Windows-XAML-ETW.man"/>
+        <EtwManifest Include="$(XcpPath)\plat\win\desktop\Microsoft-Windows-XAML-ETW.man"/>
     </ItemGroup>
 
     <ItemDefinitionGroup>
