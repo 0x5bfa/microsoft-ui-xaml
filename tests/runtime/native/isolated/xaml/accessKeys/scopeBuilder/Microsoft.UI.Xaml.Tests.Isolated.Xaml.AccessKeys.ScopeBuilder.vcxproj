@@ -5,30 +5,32 @@
 
     <PropertyGroup Label="Globals">
         <ConfigurationType>DynamicLibrary</ConfigurationType>
-        <ProjectGuid>{73d9c6f0-f662-4df5-bd64-90f77f898731}</ProjectGuid>
+        <ProjectGuid>{f6538552-4e73-48a7-a286-83d8db4256d8}</ProjectGuid>
     </PropertyGroup>
 
     <!-- Satisfy "UT", which currently doesn't parse includes. -->
     <!-- UT:TARGETTYPE=DYNLINK                                 -->
     <!-- UT:TARGET_DESTINATION=NTTEST\WINDOWSTEST\dxaml\test   -->
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
 
-    <Import Project="$(XcpPath)\components\unittest.props"/>
+    <Import Project="$(XcpPath)\components\unittest-do.props"/>
 
     <PropertyGroup>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
             $(XcpPath)\components\accesskeys\inc;
-            $(XcpPath)\components\accesskeys\unittests;
+            $(MSBuildThisFileDirectory)..\shared;
+            $(XcpPath)\components\Focus\inc;
+            $(XcpPath)\components\input\inc;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 
     <ItemGroup>
-        <ClInclude Include="InputInterceptorUnitTests.h"/>
+        <ClInclude Include="ScopeBuilderUnitTests.h"/>
 
-        <ClCompile Include="InputInterceptorUnitTests.cpp"/>
+        <ClCompile Include="ScopeBuilderUnitTests.cpp"/>
     </ItemGroup>
 
     <ItemDefinitionGroup>
@@ -39,7 +41,9 @@
 
     <ItemGroup>
         <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
+        <ProjectReference Include="$(XcpPath)\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj" Project="{f9da8380-5504-4acc-bde0-72cd5981826d}"/>
+        <ProjectReference Include="$(XcpPath)\components\AccessKeys\AccessKey\lib\AccessKeys.AKAccessKey.vcxproj" Project="{f43ad9ae-a7c4-4e99-8d9f-fe2dbed5a568}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>
