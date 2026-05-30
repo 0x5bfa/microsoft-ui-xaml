@@ -14,7 +14,8 @@ $scriptsDir = $PSScriptRoot
 $customScriptsDir = "$repoRoot\scripts\"
 $preInitScript = "$customScriptsDir\PreInit.ps1"
 $preRestoreToolsScript = "$customScriptsDir\PreRestoreTools.ps1"
-$postInitScript = "$customScriptsDir\PostInit.ps1"
+$postInitScript = "$scriptsDir\PostInit.ps1"
+$customPostInitScript = "$customScriptsDir\PostInit.ps1"
 
 # Run PreInit.ps1 if it exists
 if (Test-Path $preInitScript) {
@@ -38,9 +39,14 @@ if (Test-Path $preRestoreToolsScript) {
 # Restores tool packages (if .nuget\tools\packages.config exists)
 . "$scriptsDir\Restore-ToolPackages.ps1" -RepoRoot $repoRoot -Verbosity $Verbosity
 
-# Run PostInit.ps1 if it exists
+# Run the checked-in post-init restore step.
 if (Test-Path $postInitScript) {
     . $postInitScript -RepoRoot $repoRoot -Verbosity $Verbosity
+}
+
+# Run custom PostInit.ps1 if it exists.
+if (Test-Path $customPostInitScript) {
+    . $customPostInitScript -RepoRoot $repoRoot -Verbosity $Verbosity
 }
 
 if (Test-Path "$env:reporoot\docs\init-known-issues.md") {
