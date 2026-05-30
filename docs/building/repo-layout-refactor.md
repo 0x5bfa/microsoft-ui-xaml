@@ -282,6 +282,9 @@ runtime-test-owned layout.
 The CValue isolated test also moved under
 `tests/runtime/native/isolated/framework/CValue`, continuing the framework
 isolated test migration out of `dxaml/xcp`.
+The RuntimeEnabledFeatureDetector isolated test moved under
+`tests/runtime/native/isolated/framework/runtimeEnabledFeatures` with the same
+runtime test structure.
 
 ## Controls source
 
