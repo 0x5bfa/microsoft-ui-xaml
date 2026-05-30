@@ -96,13 +96,13 @@ Runtime test resource payload inputs now live under `tests/runtime/resources`.
 The resource payload project keeps the same binplace layout while no longer
 living under the legacy `dxaml/test/resources` tree.
 
-Runtime test projects outside `dxaml/test` should use `$(InfraTestPath)` for
-the remaining shared test infrastructure under `dxaml/test/infra`. The property
-is defined with the other root folder paths so moved runtime tests do not need
-to import `dxaml/test/Directory.Build.props`.
+Runtime test infrastructure now lives under `tests/runtime/infra`; new and moved
+consumers should use `$(RuntimeInfraTestPath)` and
+`$(RuntimeInfraTestObjPath)`. The legacy infra wrapper has been removed now that
+the runtime infra projects have moved.
 
-Runtime-specific infrastructure hosts should move under `tests/runtime/infra`
-as their references are isolated. The .NET Core TAEF host moved first because it
+Runtime-specific infrastructure hosts live under `tests/runtime/infra`. The
+.NET Core TAEF host moved first because it
 only needs the runtime test build defaults and solution reference update. The
 Invoker helper lives there too, with explicit imports back to the legacy runtime
 build props and targets while `dxaml/xcp` remains in place. The MockDComp copy

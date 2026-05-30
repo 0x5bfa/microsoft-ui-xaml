@@ -26,7 +26,6 @@
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>
     <TestPath>$(XamlSourcePath)\test</TestPath>
-    <InfraTestPath>$(TestPath)\infra</InfraTestPath>
     <NativeIsolatedTestPath>$(TestPath)\native\isolated</NativeIsolatedTestPath>
     <NativeExternalTestPath>$(TestPath)\native\external</NativeExternalTestPath>
     <InternalTestPath>$(TestPath)\native\internal</InternalTestPath>
@@ -108,7 +107,6 @@
     <MergedWinmdOutputLocation>$(Outdir)$(MergedWinMDOutputDir)\</MergedWinmdOutputLocation>
     <UnmergedWinmdOutputLocation>$(Outdir)</UnmergedWinmdOutputLocation>
 
-    <InfraTestObjPath>$(TestObjPath)\infra</InfraTestObjPath>
     <RuntimeInfraTestObjPath>$(XamlBuildOutputRoot)tests\runtime\infra</RuntimeInfraTestObjPath>
 
     <PrivateInfrastructureWin32HostingObjPath>$(RuntimeInfraTestObjPath)\Win32Hosting</PrivateInfrastructureWin32HostingObjPath>

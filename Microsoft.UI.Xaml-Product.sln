@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "src\proj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{5C938342-381C-477C-A3E3-F42240C8E7D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinplaceTestDependencies", "dxaml\test\infra\BinplaceTestDependencies.csproj", "{F601430F-FFE4-47C0-9B51-7996974407BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinplaceTestDependencies", "tests\runtime\infra\BinplaceTestDependencies.csproj", "{F601430F-FFE4-47C0-9B51-7996974407BD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "packaging\Microsoft.WinUI.csproj", "{4F815569-DAD9-47CB-AB1B-19467941674F}"
 EndProject

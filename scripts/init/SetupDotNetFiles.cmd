@@ -4,4 +4,4 @@ rem Any files populated in this way should have their destination file added to 
 @echo off
 
 echo Initializing repo for %_DotNetMoniker%... 
-copy /y %1\dxaml\test\infra\taefhostappnetcore\WinRT.Host.runtimeconfig.json.%_DotNetMoniker% %1\dxaml\test\infra\taefhostappnetcore\WinRT.Host.runtimeconfig.json >NUL
+copy /y %1\tests\runtime\infra\taefhostappnetcore\WinRT.Host.runtimeconfig.json.%_DotNetMoniker% %1\tests\runtime\infra\taefhostappnetcore\WinRT.Host.runtimeconfig.json >NUL
