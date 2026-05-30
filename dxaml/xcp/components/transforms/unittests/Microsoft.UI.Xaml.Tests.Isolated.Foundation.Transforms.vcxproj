@@ -23,8 +23,8 @@
             $(XcpPath)\components\collection\inc;
             $(XcpPath)\components\transforms\inc;
             $(XcpPath)\components\graphics\inc;
-            $(XamlSourcePath)\test\dcomp\inc;
-            $(XamlBinaryPath)\test\dcomp\idl;
+            $(RuntimeDCompTestPath)\inc;
+            $(TestObjPath)\dcomp\idl;
             $(WinUIDetailsIncludePath)\abi;
             $(WinUIDetailsIncludePath)\MockDComp;
         </ProjectIncludeDirectories>

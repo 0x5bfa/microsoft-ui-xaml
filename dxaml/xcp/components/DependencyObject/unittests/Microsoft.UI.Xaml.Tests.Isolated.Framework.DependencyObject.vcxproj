@@ -33,7 +33,7 @@
     <PropertyGroup>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
-            $(TestPath)\infra\inc;
+            $(RuntimeInfraTestPath)\inc;
             $(XcpPath)\components\collection\inc;
         </ProjectIncludeDirectories>
     </PropertyGroup>
