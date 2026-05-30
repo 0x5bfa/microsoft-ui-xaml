@@ -213,6 +213,10 @@ Checked-in visual test baseline assets now live under
 lives under `tests/runtime/resources/masters` while continuing to expose
 `resources\masters` at runtime.
 
+Native isolated-test support now lives under `tests/runtime/native/isolated`.
+Projects should use `$(NativeIsolatedTestPath)` instead of spelling out the
+legacy runtime-source test path.
+
 ## Controls source
 
 The WinUI controls implementation now lives under `src/controls`. The

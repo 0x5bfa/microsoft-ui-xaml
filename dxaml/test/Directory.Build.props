@@ -8,7 +8,7 @@
   <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
 
   <PropertyGroup>
-    <NativeIsolatedTestPath>$(XamlSourcePath)\test\native\isolated</NativeIsolatedTestPath>
+    <NativeIsolatedTestPath>$(RuntimeTestPath)\native\isolated</NativeIsolatedTestPath>
     <NativeExternalTestPath>$(XamlSourcePath)\test\native\external</NativeExternalTestPath>
 
     <InternalTestPath>$(XamlSourcePath)\test\native\internal</InternalTestPath>

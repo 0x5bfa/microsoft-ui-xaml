@@ -53,7 +53,7 @@
         <ProjectReference Include="$(XcpPath)\common\common.vcxproj" Project="{4d75f86e-1c8e-40b3-9767-d8a7cdca82eb}"/>
         <ProjectReference Include="$(XcpPath)\hostpalplatmisc.vcxproj" Project="{379aa0e5-75bd-4ac3-9e9d-2168f400f1b0}"/>
         <ProjectReference Include="$(XcpPath)\pal\debug\PALDebug.vcxproj" Project="{aebb76ae-fbd9-4c2d-b0c0-3b7ff5963d7d}"/>
-        <ProjectReference Include="$(XamlSourcePath)\test\native\isolated\shared\Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj" Project="{3ea83b4a-7041-4ea2-9e18-9e571b97451f}"/>
+        <ProjectReference Include="$(NativeIsolatedTestPath)\shared\Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj" Project="{3ea83b4a-7041-4ea2-9e18-9e571b97451f}"/>
         <ProjectReference Include="$(XcpPath)\components\unittests\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
     </ItemGroup>
 

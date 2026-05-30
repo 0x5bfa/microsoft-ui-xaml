@@ -21,7 +21,7 @@
     <PropertyGroup>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories)
-            $(XamlSourcePath)\test\native\isolated\inc;
+            $(NativeIsolatedTestPath)\inc;
             $(AppAnalysisPath)\dll\;
         </ProjectIncludeDirectories>
     </PropertyGroup>
