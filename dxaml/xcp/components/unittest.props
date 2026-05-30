@@ -50,7 +50,7 @@
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
             $(XcpPath)\components\unittests\;
-            $(XamlSourcePath)\test\native\inc\;
+            $(NativeIncPath);
             $(XamlSourcePath)\test\native\isolated\inc\;
         </ProjectIncludeDirectories>
     </PropertyGroup>

@@ -46,7 +46,7 @@
             $(AppAnalysisTestPath)\ruleSet;
             $(AppAnalysisTestObjPath)\idl;
             $(AppAnalysisObjPath)\unittests\infra\idl;
-            $(XamlSourcePath)\test\native\inc;
+            $(NativeIncPath);
             $(XcpPath)\components\base\inc;
             $(XcpPath)\inc;
         </ProjectIncludeDirectories>
