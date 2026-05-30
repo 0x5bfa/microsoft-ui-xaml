@@ -92,6 +92,10 @@ Runtime test theme dictionaries now live under `tests/runtime/themes`. They are
 test payload assets and are binplaced into the runtime test theme folder from
 that test-owned location.
 
+Runtime test resource payload inputs now live under `tests/runtime/resources`.
+The resource payload project keeps the same binplace layout while no longer
+living under the legacy `dxaml/test/resources` tree.
+
 Runtime test projects outside `dxaml/test` should use `$(InfraTestPath)` for
 the remaining shared test infrastructure under `dxaml/test/infra`. The property
 is defined with the other root folder paths so moved runtime tests do not need
