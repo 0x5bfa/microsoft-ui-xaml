@@ -348,6 +348,9 @@ framework isolated test migration out of the runtime source tree.
 The Metadata isolated test moved under
 `tests/runtime/native/isolated/framework/metadata`, while the shared metadata
 mocks remain in the runtime source tree until their consumers are migrated.
+The Input isolated test moved under
+`tests/runtime/native/isolated/core/input`, starting a core isolated test group
+for component tests whose project identity is `Microsoft.UI.Xaml.Tests.Isolated.Core.*`.
 
 ## Controls source
 

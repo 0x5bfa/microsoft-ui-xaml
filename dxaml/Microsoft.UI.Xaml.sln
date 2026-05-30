@@ -1043,7 +1043,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Input", "xcp\components\input\lib\Microsoft.UI.Xaml.Input.vcxproj", "{911DF019-BDA7-47D0-B3ED-3DB1807EEFE1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Core.Input", "xcp\components\input\unittests\Microsoft.UI.Xaml.Tests.Isolated.Core.Input.vcxproj", "{662FBD01-58E4-43E5-852D-48726BE04818}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Core.Input", "..\tests\runtime\native\isolated\core\input\Microsoft.UI.Xaml.Tests.Isolated.Core.Input.vcxproj", "{662FBD01-58E4-43E5-852D-48726BE04818}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.InputPane", "xcp\components\inputpane\lib\Microsoft.UI.Xaml.InputPane.vcxproj", "{9F887B18-729E-4C7A-A577-45523FF4BAF9}"
 EndProject
