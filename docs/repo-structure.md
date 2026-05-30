@@ -7,7 +7,6 @@
 - [/docs](#docs)
 - [/dxaml](#dxaml)
 - [/eng](#eng)
-- [/Helix](#helix)
 - [/src](#src)
 - [/tests](#tests)
 
@@ -37,10 +36,6 @@ for Microsoft.UI.Xaml.dll and Microsoft.UI.Xaml.Phone.dll.
 All build system and other engineering related files go in this directory.
 For more information on the build system, see the [build system design](build-system-design.md)
 
-## /Helix
-This folder contains scripts as it pertains to running tests in Helix. You shouldn't
-need to edit these for most changes, unless you are doing test infrastructure work.
-
 ## /src
 This is where source code for repo-local tools and source components outside the
 runtime and controls trees live.
@@ -52,4 +47,4 @@ compiler-specific tools and solutions.
 ## /tests
 This folder contains test assets that have been separated from product source
 trees. Compiler test entry points live under `/tests/compiler`; shared test
-payload infrastructure lives under `/tests/infra`.
+payload and Helix infrastructure lives under `/tests/infra`.

@@ -42,11 +42,10 @@ through `tests/compiler`.
 
 ## Shared test infrastructure
 
-The top-level test payload entry points now live under `tests/infra`.
-`CreateTestPayload.cmd`, `CreateTestPayload.ps1`, and their companion scripts
-moved there so repo-level test orchestration is grouped with other separated
-test assets. Helix remains at the repo root until pipeline project references
-can be moved and validated separately.
+The top-level test payload entry points and Helix orchestration now live under
+`tests/infra`. `CreateTestPayload.cmd`, `CreateTestPayload.ps1`, their
+companion scripts, and the `Helix` project/scripts tree moved there so
+repo-level test orchestration is grouped with other separated test assets.
 
 ## Migration rules
 
@@ -64,11 +63,9 @@ can be moved and validated separately.
 
 1. Move compiler test project assets into `tests/compiler` once they are
    present in the checkout and their generation/update workflows are verified.
-2. Move Helix under `tests/infra` after pipeline project references are
-   audited.
-3. Move `controls/dev/Generated`, IntelliSense XML, and visual baselines into a
+2. Move `controls/dev/Generated`, IntelliSense XML, and visual baselines into a
    generated-assets area with clear update tooling.
-4. Move `controls/dev` to `src/controls` after the controls solution path usage
+3. Move `controls/dev` to `src/controls` after the controls solution path usage
    is audited.
-5. Move `dxaml/xcp` to `src/runtime` last, because it has the broadest MSBuild
+4. Move `dxaml/xcp` to `src/runtime` last, because it has the broadest MSBuild
    and native project surface.

@@ -166,8 +166,8 @@ if ($Mode -eq "DevTestSuite" -or $Mode -eq "ScenarioTestSuite")
 
     # Publish items from repo:
     Publish-Item "$repoRoot\tests\infra\scripts\*" "$outpath"
-    Publish-Item "$repoRoot\Helix\scripts\*" "$outpath"
-    Publish-Item "$repoRoot\Helix\common\test\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\scripts\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\common\test\*" "$outpath"
     Publish-Item "$repoRoot\controls\tools\EnableMUXControlsTestAppManagedDebugging.*" "$outpath"
     
     Publish-Item "$binpath\TestDependencies\dotnet-windowsdesktop-runtime-installer.exe" "$outpath"
@@ -259,8 +259,8 @@ if ($Mode -eq "PGO")
     Publish-Item "$binpath\TestDependencies\pgosweep.exe" "$outpath"
 
     # Publish items from repo:
-    Publish-Item "$repoRoot\Helix\scripts\*" "$outpath"
-    Publish-Item "$repoRoot\Helix\common\test\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\scripts\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\common\test\*" "$outpath"
 }
 
 if ($ShowPayload)

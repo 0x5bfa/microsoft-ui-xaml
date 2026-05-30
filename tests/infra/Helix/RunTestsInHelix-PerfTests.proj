@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <HelixCorrelationPayload Include="..\TestPayload\$(Platform)$(Configuration)" />
+    <HelixCorrelationPayload Include="..\..\..\TestPayload\$(Platform)$(Configuration)" />
   </ItemGroup>
 
   <ItemGroup>

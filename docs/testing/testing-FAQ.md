@@ -29,7 +29,7 @@
   - [My PR/CI build failed due to failed tests. How can I get more info?](#my-prci-build-failed-due-to-failed-tests-how-can-i-get-more-info)
   - [How do I understand and debug a pipeline test failure?](#how-do-i-understand-and-debug-a-pipeline-test-failure)
   - [How do I get complete logs for a test that passed?](#how-do-i-get-complete-logs-for-a-test-that-passed)
-  - [My Pipeline failed with: "Error: The process 'C:\Program Files\dotnet\dotnet.exe' failed with exit code 1. Dotnet command failed with non-zero exit code on the following projects : d:\a\1\s\Helix\RunTestsInHelix.proj".](#my-pipeline-failed-with-error-the-process-cprogram-filesdotnetdotnetexe-failed-with-exit-code-1-dotnet-command-failed-with-non-zero-exit-code-on-the-following-projects--da1shelixruntestsinhelixproj)
+  - [My Pipeline failed with: "Error: The process 'C:\Program Files\dotnet\dotnet.exe' failed with exit code 1. Dotnet command failed with non-zero exit code on the following projects : d:\a\1\s\tests\infra\Helix\RunTestsInHelix.proj".](#my-pipeline-failed-with-error-the-process-cprogram-filesdotnetdotnetexe-failed-with-exit-code-1-dotnet-command-failed-with-non-zero-exit-code-on-the-following-projects--da1stestsinfrahelixruntestsinhelixproj)
   - [How do I get to crash dumps?](#how-do-i-get-to-crash-dumps)
   - [Can I log in to one of the ADO VMs where my test failed?](#can-i-log-in-to-one-of-the-ado-vms-where-my-test-failed)
   - [On the 'Tests' tab of a build, I see tests marked as Passed, Failed or Other. What is 'Other'?](#on-the-tests-tab-of-a-build-i-see-tests-marked-as-passed-failed-or-other-what-is-other)
@@ -431,7 +431,7 @@ give enough information (or is missing), try running the test locally to reprodu
 ### How do I get complete logs for a test that passed?
 See the section above - the test output is available in the Pipelines page, or can be downloaded via Artifacts.
 
-### My Pipeline failed with: "Error: The process 'C:\Program Files\dotnet\dotnet.exe' failed with exit code 1. Dotnet command failed with non-zero exit code on the following projects : d:\a\1\s\Helix\RunTestsInHelix.proj".
+### My Pipeline failed with: "Error: The process 'C:\Program Files\dotnet\dotnet.exe' failed with exit code 1. Dotnet command failed with non-zero exit code on the following projects : d:\a\1\s\tests\infra\Helix\RunTestsInHelix.proj".
 This is the error that is raised when the *Run Test in Helix* task hits an error.
 It usually is the result of one or more test failures. In this case, the error will be accompanied
 by error output from *OutputTestResults* that looks like:
