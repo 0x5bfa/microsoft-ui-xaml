@@ -877,9 +877,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Ext
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Test", "test\native\external\test\Microsoft.UI.Xaml.Tests.External.Test.vcxproj", "{A236264B-BC96-4F3D-B185-B866B2FEBF30}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Shared", "test\native\isolated\shared\Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj", "{3EA83B4A-7041-4EA2-9E18-9E571B97451F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Shared", "..\tests\runtime\native\isolated\shared\Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj", "{3EA83B4A-7041-4EA2-9E18-9E571B97451F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator", "test\native\isolated\tools\XbfGenerator\Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator.vcxproj", "{FCBC288D-5C21-4C43-86DC-15D4A5F9D08E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator", "..\tests\runtime\native\isolated\tools\XbfGenerator\Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator.vcxproj", "{FCBC288D-5C21-4C43-86DC-15D4A5F9D08E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Resources", "..\tests\runtime\resources\masters\Private.Infrastructure.Resources.vcxproj", "{B0A4D3C3-C3CD-44A3-A762-DC0C9FF4E897}"
 EndProject

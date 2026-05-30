@@ -51,7 +51,7 @@
             $(ProjectIncludeDirectories);
             $(XcpPath)\components\unittests\;
             $(NativeIncPath);
-            $(XamlSourcePath)\test\native\isolated\inc\;
+            $(NativeIsolatedTestPath)\inc\;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 
@@ -85,6 +85,6 @@
 
     <ItemGroup Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='Application'">
         <ProjectReference Include="@(BaseComplibs)"/>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{3ea83b4a-7041-4ea2-9e18-9e571b97451f}'" Include="$(XamlSourcePath)\test\native\isolated\shared\Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj" Project="{3ea83b4a-7041-4ea2-9e18-9e571b97451f}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{3ea83b4a-7041-4ea2-9e18-9e571b97451f}'" Include="$(NativeIsolatedTestPath)\shared\Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj" Project="{3ea83b4a-7041-4ea2-9e18-9e571b97451f}"/>
     </ItemGroup>
 </Project>
