@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -25,9 +25,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)MapIcon.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\MapControl.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\MapElementsLayer.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\MapIcon.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)MapControl.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)MapElementsLayer.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)MapIcon.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MapControl.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MapLayer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MapElement.cpp" />

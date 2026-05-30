@@ -15,7 +15,7 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Generated\MicaBackdrop.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)MicaBackdrop.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MicaBackdrop.cpp" />
   </ItemGroup>
   <ItemGroup>

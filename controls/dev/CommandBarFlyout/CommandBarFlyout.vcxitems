@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -15,9 +15,9 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\CommandBarFlyoutCommandBar.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\CommandBarFlyoutCommandBarAutomationProperties.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\CommandBarFlyoutCommandBarTemplateSettings.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)CommandBarFlyoutCommandBar.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)CommandBarFlyoutCommandBarAutomationProperties.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)CommandBarFlyoutCommandBarTemplateSettings.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)CommandBarFlyout.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)CommandBarFlyoutCommandBar.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)CommandBarFlyoutCommandBarAutomationProperties.cpp" />

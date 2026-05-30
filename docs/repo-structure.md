@@ -7,6 +7,7 @@
 - [/docs](#docs)
 - [/dxaml](#dxaml)
 - [/eng](#eng)
+- [/generated](#generated)
 - [/src](#src)
 - [/tests](#tests)
 
@@ -35,6 +36,10 @@ for Microsoft.UI.Xaml.dll and Microsoft.UI.Xaml.Phone.dll.
 ## /eng
 All build system and other engineering related files go in this directory.
 For more information on the build system, see the [build system design](build-system-design.md)
+
+## /generated
+This folder contains checked-in generated output and generated baselines.
+Generated controls dependency-property sources live under `/generated/controls/dependencyproperties`.
 
 ## /src
 This is where source code for repo-local tools and source components outside the

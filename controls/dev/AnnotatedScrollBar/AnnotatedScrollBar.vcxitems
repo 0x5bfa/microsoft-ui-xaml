@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -23,8 +23,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)AnnotatedScrollBarTrace.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\AnnotatedScrollBar.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\AnnotatedScrollBarLabel.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)AnnotatedScrollBar.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)AnnotatedScrollBarLabel.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)AnnotatedScrollBar.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)AnnotatedScrollBarDetailLabelRequestedEventArgs.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)AnnotatedScrollBarScrollingEventArgs.cpp" />

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -94,11 +94,11 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)LayoutsTestHooksLinedFlowLayoutItemLockedEventArgs.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\FlowLayout.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\ItemsRepeater.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\StackLayout.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\UniformGridLayout.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\LinedFlowLayout.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)FlowLayout.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)ItemsRepeater.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)StackLayout.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)UniformGridLayout.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)LinedFlowLayout.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ItemCollectionTransition.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ItemCollectionTransitionCompletedEventArgs.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ItemCollectionTransitionProgress.cpp" />

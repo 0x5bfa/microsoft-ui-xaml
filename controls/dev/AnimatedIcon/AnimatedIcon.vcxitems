@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -27,7 +27,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)AnimatedVisuals\AnimatedChevronRightDownSmallVisualSource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\AnimatedIcon.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)AnimatedIcon.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)AnimatedIcon.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)AnimatedIconTestHooks.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)AnimatedVisuals\AnimatedAcceptVisualSource.cpp" />

@@ -47,6 +47,13 @@ The top-level test payload entry points and Helix orchestration now live under
 companion scripts, and the `Helix` project/scripts tree moved there so
 repo-level test orchestration is grouped with other separated test assets.
 
+## Generated controls sources
+
+Checked-in generated dependency-property sources for controls now live under
+`generated/controls/dependencyproperties`. Build inputs and authoring tools
+refer to this location through `$(MUXControlsGeneratedSourceDir)` so generated
+output is separated from handwritten controls source.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.
@@ -63,8 +70,8 @@ repo-level test orchestration is grouped with other separated test assets.
 
 1. Move compiler test project assets into `tests/compiler` once they are
    present in the checkout and their generation/update workflows are verified.
-2. Move `controls/dev/Generated`, IntelliSense XML, and visual baselines into a
-   generated-assets area with clear update tooling.
+2. Move IntelliSense XML and visual baselines into the generated-assets area
+   with clear update tooling.
 3. Move `controls/dev` to `src/controls` after the controls solution path usage
    is audited.
 4. Move `dxaml/xcp` to `src/runtime` last, because it has the broadest MSBuild

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -16,12 +16,12 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\NavigationView.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\NavigationViewItem.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\NavigationViewItemBase.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\NavigationViewItemPresenter.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\NavigationViewItemPresenterTemplateSettings.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\NavigationViewTemplateSettings.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)NavigationView.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)NavigationViewItem.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)NavigationViewItemBase.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)NavigationViewItemPresenter.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)NavigationViewItemPresenterTemplateSettings.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)NavigationViewTemplateSettings.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)NavigationViewAutomationPeer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)NavigationViewItemCollapsedEventArgs.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)NavigationViewItemExpandingEventArgs.cpp" />
@@ -43,7 +43,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)TopNavigationViewDataProvider.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\Generated\NavigationViewItemPresenterTemplateSettings.properties.h" />
+    <ClInclude Include="$(MUXControlsGeneratedSourceDir)NavigationViewItemPresenterTemplateSettings.properties.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)NavigationViewAutomationPeer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)NavigationViewItemCollapsedEventArgs.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)NavigationViewItemExpandingEventArgs.h" />

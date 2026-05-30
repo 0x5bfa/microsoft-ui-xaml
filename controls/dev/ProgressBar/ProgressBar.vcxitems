@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -15,15 +15,15 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\Generated\ProgressBar.properties.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\Generated\ProgressBarTemplateSettings.properties.h" />
+    <ClInclude Include="$(MUXControlsGeneratedSourceDir)ProgressBar.properties.h" />
+    <ClInclude Include="$(MUXControlsGeneratedSourceDir)ProgressBarTemplateSettings.properties.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ProgressBar.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ProgressBarAutomationPeer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ProgressBarTemplateSettings.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\ProgressBar.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\ProgressBarTemplateSettings.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)ProgressBar.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)ProgressBarTemplateSettings.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ProgressBar.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ProgressBarAutomationPeer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ProgressBarTemplateSettings.cpp" />

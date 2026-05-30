@@ -65,7 +65,7 @@ foreach ($group in $xml.Project.ItemGroup)
         $group.AppendChild($include);    
         
         $include = $xml.CreateElement("ClCompile", $xml.Project.NamespaceURI);
-        AddAttribute $xml $include "Include" "`$(MSBuildThisFileDirectory)..\Generated\$controlName.properties.cpp"
+        AddAttribute $xml $include "Include" "`$(MUXControlsGeneratedSourceDir)$controlName.properties.cpp"
         $group.AppendChild($include);        
     }
 }

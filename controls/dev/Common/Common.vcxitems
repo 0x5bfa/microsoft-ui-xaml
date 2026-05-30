@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -17,9 +17,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)ColorConversion.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)CornerRadiusFilterConverter.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)LifetimeHandler.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\CornerRadiusFilterConverter.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)CornerRadiusFilterConverter.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)CornerRadiusToThicknessConverter.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\CornerRadiusToThicknessConverter.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)CornerRadiusToThicknessConverter.properties.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)ColorConversion.h" />

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -15,8 +15,8 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\TeachingTip.properties.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\TeachingTipTemplateSettings.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)TeachingTip.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)TeachingTipTemplateSettings.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TeachingTip.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TeachingTipAutomationPeer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TeachingTipClosedEventArgs.cpp" />
@@ -44,8 +44,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\Generated\TeachingTip.properties.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\Generated\TeachingTipTemplateSettings.properties.h" />
+    <ClInclude Include="$(MUXControlsGeneratedSourceDir)TeachingTip.properties.h" />
+    <ClInclude Include="$(MUXControlsGeneratedSourceDir)TeachingTipTemplateSettings.properties.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)TeachingTip.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)TeachingTipAutomationPeer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)TeachingTipClosedEventArgs.h" />

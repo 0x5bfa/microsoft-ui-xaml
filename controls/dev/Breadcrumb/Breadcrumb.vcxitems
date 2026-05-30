@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -26,7 +26,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)BreadcrumbIterator.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\BreadcrumbBar.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)BreadcrumbBar.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)BreadcrumbBar.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)BreadcrumbBarItem.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)BreadcrumbBarElementFactory.cpp" />

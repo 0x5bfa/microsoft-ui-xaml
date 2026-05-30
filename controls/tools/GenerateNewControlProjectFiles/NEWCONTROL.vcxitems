@@ -18,7 +18,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)NEWCONTROL.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\NEWCONTROL.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)NEWCONTROL.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)NEWCONTROL.cpp" />
   </ItemGroup>
   <ItemGroup >

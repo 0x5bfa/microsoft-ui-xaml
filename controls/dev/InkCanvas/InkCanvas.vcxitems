@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\Generated\InkCanvas.properties.cpp" />
+    <ClCompile Include="$(MUXControlsGeneratedSourceDir)InkCanvas.properties.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)InkCanvas.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)InkCanvasAutomationPeer.cpp"/>
   </ItemGroup>

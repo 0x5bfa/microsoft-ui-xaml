@@ -5,6 +5,7 @@
     <MUXCProjectRoot>$(MSBuildThisFileDirectory)</MUXCProjectRoot>
     <MUXProjectRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..'))\</MUXProjectRoot>
     <ProjectRoot>$(MUXProjectRoot)</ProjectRoot>
+    <MUXControlsGeneratedSourceDir>$(ProjectRoot)generated\controls\dependencyproperties\</MUXControlsGeneratedSourceDir>
     <NuGetPackageRoot Condition="'$(NuGetPackageRoot)' == ''">$(MUXProjectRoot)packages</NuGetPackageRoot>
     <NugetPackageDirectory>$(NuGetPackageRoot)</NugetPackageDirectory>
   </PropertyGroup>
