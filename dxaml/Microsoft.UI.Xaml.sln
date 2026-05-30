@@ -883,7 +883,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Resources", "test\resources\masters\Private.Infrastructure.Resources.vcxproj", "{B0A4D3C3-C3CD-44A3-A762-DC0C9FF4E897}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codegen", "test\tools\codegen\Codegen.csproj", "{680ED2F4-D0EC-4692-AFD4-E4AFF686B53D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codegen", "..\tests\runtime\tools\codegen\Codegen.csproj", "{680ED2F4-D0EC-4692-AFD4-E4AFF686B53D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MockDCompInjector", "..\tests\runtime\tools\MockDCompInjector\MockDCompInjector.vcxproj", "{FA82DBDB-93A1-49CE-930C-301381B43AA6}"
 EndProject
