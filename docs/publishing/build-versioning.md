@@ -51,7 +51,7 @@ There is also a script in the scripts directory to update the reference to the W
     [eng\versions.props](../../eng/versions.props)
     * Updates Edge version in [packages.config](../../eng/packages/packages.config),
     [Microsoft.UI.DCPP.Dependencies.Edge.nuspec](../../packaging/nuspecs/Microsoft.UI.DCPP.Dependencies.Edge.nuspec), and
-    [TaefHostAppManaged.csproj](../../dxaml/test/infra/taefhostappmanaged/TaefHostAppManaged.csproj)
+    [TaefHostAppManaged.csproj](../../tests/runtime/infra/taefhostappmanaged/TaefHostAppManaged.csproj)
 
 ## Package sources
 
