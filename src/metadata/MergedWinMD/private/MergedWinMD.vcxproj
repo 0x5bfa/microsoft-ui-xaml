@@ -38,18 +38,25 @@
     <ProjectConfiguration Include="Release|AnyCPU" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{25CF9F3C-2B8C-438B-92AD-0FE7CC47C30E}</ProjectGuid>
-    <!-- This project produces the final public metadata, so strip the velocity features from it -->
-    <StripVelocityFromMetadata>true</StripVelocityFromMetadata>
-    <GenerateWinRTClassRegistration>true</GenerateWinRTClassRegistration>
+    <ProjectGuid>{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="$(MSBuildThisFileDirectory)..\dxaml\Xaml.Cpp.props" />
+  <PropertyGroup>
+    <IncludePrivateMetadata>true</IncludePrivateMetadata>
+    <GenerateWinRTClassRegistration>true</GenerateWinRTClassRegistration>
+    <IncludeIxpExtensions>true</IncludeIxpExtensions>
+    <IncludeMrtExtensions>true</IncludeMrtExtensions>
+  </PropertyGroup>
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props" />
+  <PropertyGroup>
+    <!-- This project binplaces to the test location (since it contains private metadata -->
+    <TargetDestination>$(TestBinplaceDestinationPath)</TargetDestination>
+    <!-- This project produces the same output winmds as the parent, but also includes the private metadata -->
+    <OutputWinmds>$(OutputWinmds)$(MergedWinmdOutputLocation)\Microsoft.UI.Private.winmd;</OutputWinmds>
+  </PropertyGroup>
   <ItemGroup>
-    <AdditionalWinMDsForClassRegistration Include="$(ArtifactsObjDir)dxaml\xcp\dxaml\idl\winrt\main\microsoft.ui.xaml.private.winmd" />
-  </ItemGroup>
-  <ItemGroup>
-    <!-- Don't add files here, add them to OutputWinmds -->
-    <PackageContent Include="$(OutputWinmds)" PackageLocation="$(WinMDPackageLocation)" />
+    <PackageContent Include="$(OutDir)LiftedWinRTClassRegistrations.xml">
+      <PackageLocation>$(BuildTargetsPackageLocation)</PackageLocation>
+    </PackageContent>
   </ItemGroup>
   <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>

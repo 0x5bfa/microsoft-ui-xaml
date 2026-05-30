@@ -87,6 +87,6 @@
   </Target>
   
   <ItemGroup>
-    <ProjectReference Include="$(ProjectRoot)\MergedWinMD\MergedWinMD.vcxproj" ReferenceOutputAssembly="false" LinkLibraryDependencies="false" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)MergedWinMD.vcxproj" ReferenceOutputAssembly="false" LinkLibraryDependencies="false" />
   </ItemGroup>
 </Project>

@@ -200,7 +200,7 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <Name>Private.Infrastructure.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\MergedWinMD\private\MergedWinMD.vcxproj">
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj">
       <Project>{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}</Project>
       <Name>MergedWinMD</Name>
     </ProjectReference>

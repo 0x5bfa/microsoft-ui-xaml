@@ -36,9 +36,9 @@
     <ProjectReference Include="$(ProjectRoot)src\projection\private\Microsoft.WinUI.csproj"
                       Condition="'$(UsingMicrosoftNETSdk)' == 'true' and '$(IncludePrivateMetadata)' == 'true'" 
                       ReferenceOutputAssembly="false" Private="false" />
-    <ProjectReference Include="$(ProjectRoot)MergedWinMD\MergedWinMD.vcxproj"
+    <ProjectReference Include="$(MergedWinMDProjectRoot)MergedWinMD.vcxproj"
                       Condition="'$(UsingMicrosoftNETSdk)' != 'true' and '$(MSBuildProjectExtension)'!='.wapproj'"
                       ReferenceOutputAssembly="false" Private="false" LinkLibraryDependencies="false"/>
   </ItemGroup>
 
-</Project> 
+</Project>

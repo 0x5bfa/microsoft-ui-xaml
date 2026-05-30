@@ -9,7 +9,7 @@
   <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
   
   <PropertyGroup>
-    <NuGetPackageRoot Condition="'$(NuGetPackageRoot)' == ''">$(MSBuildThisFileDirectory)..\packages</NuGetPackageRoot>
+    <NuGetPackageRoot Condition="'$(NuGetPackageRoot)' == ''">$(ProjectRoot)packages</NuGetPackageRoot>
 
     <!--Causes loading of winrt dependencies from CoreWebView2 SDK package - required for any usage from WinUI3/WinAppSDK.
         Note end-user WASDK apps get this implicitly via $(MicrosoftWindowsAppSDKPackageDir). -->

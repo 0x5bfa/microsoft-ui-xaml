@@ -28,7 +28,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MergedWinMD\private\MergedWinMD.vcxproj" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" />
   </ItemGroup>
 
   <ItemGroup>
