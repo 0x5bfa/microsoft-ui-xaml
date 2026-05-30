@@ -225,6 +225,8 @@ compile-only project moved first, with consumers using
 external-test headers live there too, so consumers no longer need to include
 headers from the legacy source tree. The external precompiled-header project
 also lives there and is referenced through `$(RuntimeNativeExternalTestPath)`.
+The activation external test DLL moved next, keeping its shared test props in
+the legacy external test root until the remaining external tests follow.
 
 ## Controls source
 
