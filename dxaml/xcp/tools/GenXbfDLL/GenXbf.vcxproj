@@ -6,7 +6,7 @@
     <ProjectGuid>{42577057-854d-443d-ab59-f4e44c8f5207}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
-  <Import Project="$(XamlSourcePath)\xcp\project-lift.props" />
+  <Import Project="$(XcpPath)\project-lift.props" />
   <Import Project="$(XcpPath)\common.props" />
   <Import Project="$(ProjectRoot)eng\winui-version.props"/>
 

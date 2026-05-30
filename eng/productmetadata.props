@@ -70,10 +70,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <UnMergedMuxProject Include="$(XamlSourcePath)\xcp\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj"/>
-    <UnMergedMuxProject Include="$(XamlSourcePath)\xcp\dxaml\idl\winrt\main\Microsoft.ui.xaml-main.vcxproj"/>
-    <UnMergedMuxProject Include="$(XamlSourcePath)\xcp\dxaml\idl\winrt\controls\Microsoft.ui.xaml.controls.controls.vcxproj"/>
-    <UnMergedMuxProject Include="$(XamlSourcePath)\xcp\dxaml\idl\winrt\core\Microsoft.ui.xaml.coretypes.vcxproj" />
+    <UnMergedMuxProject Include="$(XcpPath)\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj"/>
+    <UnMergedMuxProject Include="$(XcpPath)\dxaml\idl\winrt\main\Microsoft.ui.xaml-main.vcxproj"/>
+    <UnMergedMuxProject Include="$(XcpPath)\dxaml\idl\winrt\controls\Microsoft.ui.xaml.controls.controls.vcxproj"/>
+    <UnMergedMuxProject Include="$(XcpPath)\dxaml\idl\winrt\core\Microsoft.ui.xaml.coretypes.vcxproj" />
     <UnMergedMuxProject Include="$(XamlSourcePath)\phone\idl\phone.vcxproj" />
     <UnMergedMuxControlsWinMdProject Include="$(MuxControlsPath)\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj" />
   </ItemGroup>

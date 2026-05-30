@@ -99,6 +99,13 @@ Feature and API design specs now live under `docs/specs`. API review specs moved
 from `docs/api-specs` to `docs/specs/api` so all checked-in specs share one docs
 root while preserving each spec's local image and support-file layout.
 
+## Runtime path preparation
+
+Runtime source remains under `dxaml/xcp` for now. Shared MSBuild entry points
+should refer to it through `$(XcpPath)` instead of spelling
+`$(XamlSourcePath)\xcp` directly, reducing the number of edits required when the
+runtime tree is eventually moved under `src/runtime`.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.

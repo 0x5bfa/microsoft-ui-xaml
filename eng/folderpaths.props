@@ -23,7 +23,7 @@
     <XamlTargetsPath>$(XamlSourcePath)MSBuild\</XamlTargetsPath>
     <XamlBuildSettingsPath>$(XamlTargetsPath)BuildSettings\</XamlBuildSettingsPath>
 
-    <XcpPath>$(XamlSourcePath)\xcp</XcpPath>
+    <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>
     <TestPath>$(XamlSourcePath)\test</TestPath>
 
@@ -235,7 +235,7 @@
     <WindowsUmLibPath>$(WindowsSDKCppArchRoot)um\$(WindowsSDKArch)</WindowsUmLibPath>
     <UCRTPath>$(WindowsSDKCppArchRoot)ucrt\$(WindowsSDKArch)</UCRTPath>
 
-    <AppAnalysisPath>$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis</AppAnalysisPath>
+    <AppAnalysisPath>$(XcpPath)\dxaml\tools\AppAnalysis</AppAnalysisPath>
 
     <DetoursPath>$(XamlSourcePath)\test\tools\detours</DetoursPath>
 
