@@ -512,6 +512,10 @@ visual verification update, and final-release theme resource trimming scripts.
 Controls developer shell helpers now live under `controls/tools/Shell`,
 including command aliases and the PowerShell profile loaded by `ps.bat`.
 
+Controls source maintenance helpers now live under
+`controls/tools/SourceMaintenance`, including namespace update, vcxitems page
+reference cleanup, and text template processing scripts.
+
 Controls packaged test app deployment helpers now live under
 `controls/tools/TestAppDeployment`. Build integration still copies
 `CreateAppxDirectory.msbuildproj` and `InstallAppFromLayout.ps1` into the test
