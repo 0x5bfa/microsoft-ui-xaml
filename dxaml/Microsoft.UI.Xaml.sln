@@ -1161,7 +1161,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.VisualStatesHelper", "xcp\components\visualstateshelper\lib\Microsoft.UI.Xaml.VisualStatesHelper.vcxproj", "{ED49C070-4A08-47C9-9B7F-3106ACEE9FD1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper", "xcp\components\visualstateshelper\unittests\Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper.vcxproj", "{68724E7D-566C-46D1-95B3-77E748D9B3F2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper", "..\tests\runtime\native\isolated\enterprise\visualStatesHelper\Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper.vcxproj", "{68724E7D-566C-46D1-95B3-77E748D9B3F2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.VisualStateMachine", "xcp\components\vsm\lib\Microsoft.UI.Xaml.VisualStateMachine.vcxproj", "{AE6A3CB3-2D5F-4A15-843A-7D1DAC6395D3}"
 EndProject
