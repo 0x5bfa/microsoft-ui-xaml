@@ -15,7 +15,7 @@
             is specified to include everything from the static library
             
             We've specified /WHOLEARCHIVE:Microsoft.UI.Xaml.Tests.External.Precomp.lib
-            in $(NativeExternalTestPath)\common.props, so we've handled the case this warning
+            in $(RuntimeNativeExternalTestPath)\common.props, so we've handled the case this warning
             is telling us about.  As such, we'll suppress this warning. -->
         <MSBuildWarningsAsMessages>LNK4264</MSBuildWarningsAsMessages>
     </PropertyGroup>
@@ -32,7 +32,7 @@
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XamlSourcePath)\test\common.props"/>
-    <Import Project="$(NativeExternalTestPath)\base.props"/>
+    <Import Project="$(RuntimeNativeExternalTestPath)\base.props"/>
 
     <!-- This is a shared precompiled header. We do this so we can have multiple  -->
     <!-- isolated test DLLs without causing the obj output to grow 50MB+ per DLL. -->

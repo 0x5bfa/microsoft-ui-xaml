@@ -13,7 +13,7 @@
     <RootNamespace>Private.Tests.Controls.CustomTypes</RootNamespace>
     <ProjectName>Microsoft.UI.Xaml.Tests.External.Controls.CustomTypes</ProjectName>
   </PropertyGroup>
-  <Import Project="$(ProjectRoot)\dxaml\test\native\external\CustomTypeBase.props" />
+  <Import Project="$(RuntimeNativeExternalTestPath)\CustomTypeBase.props" />
   <!-- This is temporary until we end up merging the custom types projects with the actual tests.  As  -->
   <!-- an intermediate step we are converting our tests to use a pch.h precompiled header (instead of  -->
   <!-- precomp.h) so that both the test code and Xaml generated files will use the same precompile     -->

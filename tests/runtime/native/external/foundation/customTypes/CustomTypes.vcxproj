@@ -10,7 +10,7 @@
     <RootNamespace>Private.Foundation.CustomTypes</RootNamespace>
     <ProjectName>Microsoft.UI.Xaml.Tests.External.Foundation.CustomTypes</ProjectName>
   </PropertyGroup>
-  <Import Project="$(ProjectRoot)\dxaml\test\native\external\CustomTypeBase.props" />
+  <Import Project="$(RuntimeNativeExternalTestPath)\CustomTypeBase.props" />
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClCompile Include="pch.cpp">
