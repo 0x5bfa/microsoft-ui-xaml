@@ -113,9 +113,9 @@ Runtime build-output references should prefer `$(XcpObjPath)` over spelling
 Graph augmentation projects define the same minimal path properties locally so
 their lightweight project graph files can avoid hard-coded runtime-relative
 paths without importing the full root build props. Developer initialization
-scripts expose the runtime source root as `XcpRoot` so command aliases and
-scripted runtime build entry points can also avoid spelling `dxaml\xcp`
-repeatedly.
+scripts expose the runtime source root as `XcpRoot` so command aliases, restore
+scripts, and scripted runtime build entry points can also avoid spelling
+`dxaml\xcp` repeatedly.
 
 ## Migration rules
 

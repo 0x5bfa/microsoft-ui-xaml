@@ -68,27 +68,31 @@ Write-Host "Restoring Maestro and ensuring authentication..."
 msbuild -nologo -t:Restore $repoRoot\eng\Microsoft.MaestroRestore.csproj -v:$Verbosity -p:Configuration=Release -p:NugetInteractive=true -p:PublishReadyToRun=true
 
 Write-Host "Restoring additional packages..."
-$xcpPath = 'dxaml\xcp'
+$xcpRoot = $env:XcpRoot
+if (-not $xcpRoot)
+{
+    $xcpRoot = Join-Path $repoRoot 'dxaml\xcp'
+}
+
+$isOssBuild = -not (Test-Path $repoRoot\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs)
+$perfPackagesConfig = if ($isOssBuild) { 'perf\packages.OSS.config' } else { 'perf\packages.config' }
 $projectPackages = @(
-    'perf\packages.config',
-    'eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj',
-    'eng\Microsoft.MaestroRestore.csproj',
-    'src\controls\dll\packages.config',
-    'src\compiler\XamlCompilerPrerequisites.sln',
-    'dxaml\Microsoft.UI.Xaml.sln',
-    "$xcpPath\tools\XbfParser\XbfParser.sln",
-    'src\compiler\XamlCompiler.sln'
+    (Join-Path $repoRoot $perfPackagesConfig),
+    (Join-Path $repoRoot 'eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj'),
+    (Join-Path $repoRoot 'eng\Microsoft.MaestroRestore.csproj'),
+    (Join-Path $repoRoot 'src\controls\dll\packages.config'),
+    (Join-Path $repoRoot 'src\compiler\XamlCompilerPrerequisites.sln'),
+    (Join-Path $repoRoot 'dxaml\Microsoft.UI.Xaml.sln'),
+    (Join-Path $xcpRoot 'tools\XbfParser\XbfParser.sln'),
+    (Join-Path $repoRoot 'src\compiler\XamlCompiler.sln')
 )
 
 # Check if this is an OSS build, where not all files are available
-if (-not (Test-Path $repoRoot\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs))
+if ($isOssBuild)
 {
-    # Use smaller perf config when building OSS
-    $projectPackages = $projectPackages | ForEach-Object { $_ -replace 'perf\\packages.config', 'perf\packages.OSS.config' }
-
     # We don't have all necessary files to build the compiler, so also restore
     # the project which uses the public compiler
-    $projectPackages += 'XamlCompilerPublic.csproj'
+    $projectPackages += Join-Path $repoRoot 'XamlCompilerPublic.csproj'
 }
 
 $installed = 0
@@ -96,7 +100,7 @@ foreach ($project in $projectPackages)
 {
     Write-Host "Restoring $project"
     Write-Progress "Restoring additional packages..." -PercentComplete (100 * $installed / $projectPackages.Count)
-    nuget restore $repoRoot\$project -ConfigFile $repoRoot\nuget.config -PackagesDirectory $repoRoot\packages -Verbosity $Verbosity
+    nuget restore $project -ConfigFile $repoRoot\nuget.config -PackagesDirectory $repoRoot\packages -Verbosity $Verbosity
     $installed++
 }
 Write-Host -ForegroundColor Green Done.
