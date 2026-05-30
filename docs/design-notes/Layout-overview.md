@@ -397,7 +397,7 @@ Test code:
 - EffectiveViewport: 
   * tests/runtime/native/external/foundation/hosting/XamlIslandTests.cpp
   * tests/runtime/native/external/framework/layout/LayoutManagerIntegrationTests.cpp
-  * dxaml/xcp/components/elements/unittests/UIElementUnitTests.cpp
+  * tests/runtime/native/isolated/foundation/elements/UIElementUnitTests.cpp
 - Layout:
   * tests/runtime/native/external/framework/layout/LayoutInformationIntegrationTests.cpp
   * tests/runtime/native/external/framework/layout/LayoutTests.cpp
