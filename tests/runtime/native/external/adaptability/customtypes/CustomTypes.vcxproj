@@ -2,7 +2,7 @@
 <!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. See LICENSE in the project root for license information. -->
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Condition="'$(BuildingWithBuildExe)'!='true'" Project="$([MSBuild]::GetPathOfFileAbove(Xaml.NTLegacy.Cpp.props))" />
+  <Import Condition="'$(BuildingWithBuildExe)'!='true'" Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.NTLegacy.Cpp.props" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DCCE1BAA-3415-43D5-936C-75861BCC1F9A}</ProjectGuid>
   </PropertyGroup>
@@ -40,5 +40,5 @@
     <ClInclude Include="StateTrigger.CustomStateTrigger.h" />
     <ClCompile Include="StateTrigger.CustomStateTrigger.cpp" />
   </ItemGroup>
-  <Import Condition="'$(BuildingWithBuildExe)'!='true'" Project="$([MSBuild]::GetPathOfFileAbove(Xaml.NTLegacy.Cpp.targets))" />
+  <Import Condition="'$(BuildingWithBuildExe)'!='true'" Project="$(XamlSourcePath)\Xaml.NTLegacy.Cpp.targets" />
 </Project>
