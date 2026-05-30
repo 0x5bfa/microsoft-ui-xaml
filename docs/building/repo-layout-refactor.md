@@ -221,7 +221,9 @@ Native external-test infrastructure is moving under
 `tests/runtime/native/external` in small pieces. The shared infrastructure
 compile-only project moved first, with consumers using
 `$(RuntimeNativeExternalTestPath)` for source and
-`$(RuntimeNativeExternalTestObjPath)` for generated object dependencies.
+`$(RuntimeNativeExternalTestObjPath)` for generated object dependencies. Shared
+external-test headers live there too, so consumers no longer need to include
+headers from the legacy source tree.
 
 ## Controls source
 
