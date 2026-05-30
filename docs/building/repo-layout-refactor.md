@@ -103,7 +103,9 @@ to import `dxaml/test/Directory.Build.props`.
 
 Runtime-specific infrastructure hosts should move under `tests/runtime/infra`
 as their references are isolated. The .NET Core TAEF host moved first because it
-only needs the runtime test build defaults and solution reference update.
+only needs the runtime test build defaults and solution reference update. The
+Invoker helper lives there too, with explicit imports back to the legacy runtime
+build props and targets while `dxaml/xcp` remains in place.
 
 ## Runtime managed tests
 
