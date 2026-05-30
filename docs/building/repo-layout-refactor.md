@@ -512,6 +512,9 @@ visual verification update, and final-release theme resource trimming scripts.
 Controls developer shell helpers now live under `controls/tools/Shell`,
 including command aliases and the PowerShell profile loaded by `ps.bat`.
 
+Controls shared command wrappers now live under `controls/tools/Common`,
+including the NuGet and PowerShell wrappers used by controls tooling scripts.
+
 Controls source maintenance helpers now live under
 `controls/tools/SourceMaintenance`, including namespace update, vcxitems page
 reference cleanup, and text template processing scripts.
