@@ -30,7 +30,8 @@ information about the controls section of the repo.
 
 ## /docs
 This is where the repo documentation lives, including this document.
-Feature and API design specs live under `/docs/specs`.
+Feature and API design specs live under `/docs/specs`, with API review specs
+under `/docs/specs/api`.
 
 Note that developer usage documentation can be found separately on docs.microsoft.com.
 
