@@ -47,7 +47,7 @@
         <ProjectReference Include="$(XcpPath)\components\metadata\lib\Microsoft.UI.Xaml.Metadata.vcxproj" Project="{23637f36-0cb9-4142-a60c-888b0efe9a4c}"/>
         <ProjectReference Include="$(XcpPath)\components\metadata\mocks\Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj" Project="{2b9a325f-17af-40f1-98c9-2aa7856b77e7}"/>
         <ProjectReference Include="$(XcpPath)\components\lifetime\lib\Microsoft.UI.Xaml.Lifetime.vcxproj" Project="{71ada981-d444-464c-833d-290206b05240}"/>
-        <ProjectReference Include="$(XcpPath)\components\unittests\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
+        <ProjectReference Include="$(NativeIsolatedTestPath)\shared\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
         <ProjectReference Include="$(XcpPath)\components\telemetry\Microsoft.UI.Xaml.Instrumentation.vcxproj" Project="{073bb1fb-9ce9-4b52-becb-47bd8a77c6ca}"/>
         <ProjectReference Include="$(XcpPath)\components\colors\lib\Microsoft.UI.Xaml.Colors.vcxproj" Project="{6b5aed1f-fd5d-47bc-9b9a-37d56e2c2e97}"/>
         <ProjectReference Include="$(XcpPath)\components\animation\lib\Microsoft.UI.Xaml.Animation.vcxproj" Project="{bb0522d9-7e95-40a1-9522-88b6f42b2db6}"/>

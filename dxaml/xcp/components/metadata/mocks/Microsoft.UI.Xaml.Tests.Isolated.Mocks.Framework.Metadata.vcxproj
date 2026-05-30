@@ -19,7 +19,7 @@
             $(ProjectIncludeDirectories);
             $(TestExternalDependencies);
             $(XcpPath)\components\criticalsection\inc;
-            $(XcpPath)\components\unittests;
+            $(NativeIsolatedTestPath)\shared\support;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 

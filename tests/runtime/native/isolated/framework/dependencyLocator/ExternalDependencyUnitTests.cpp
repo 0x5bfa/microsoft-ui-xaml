@@ -5,7 +5,7 @@
 
 #include "ExternalDependencyUnitTests.h"
 #include <ExternalDependency.h>
-#include <unittests\mocks\MockExternalDependency.h>
+#include <MockExternalDependency.h>
 #include <shlwapi.h>
 
 // Local helper to resolve a path relative to Microsoft.UI.Xaml.dll.
