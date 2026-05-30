@@ -24,6 +24,7 @@ Build wrapper commands live under `/tools/build`.
 Shared command wrappers live under `/tools/common`.
 Controls scaffolding helpers live under `/controls/tools/ControlGeneration`.
 Controls test app deployment helpers live under `/controls/tools/TestAppDeployment`.
+Controls test reporting helpers live under `/controls/tools/TestReporting`.
 
 ## /controls
 This folder contains controls solution, IDL, test, and tooling entry points.
