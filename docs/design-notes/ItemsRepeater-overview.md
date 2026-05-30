@@ -98,15 +98,15 @@ and s_IsVerboseDebugOutputEnabled (for verbose) flags set to true.
 
 These are paths for Microsoft.UI.Xaml.Controls.
 
-- Product: \controls\dev\Repeater
-- Test: \controls\dev\Repeater\APITest & InteractionTests
-- MuxControlsTestApp test pages: \controls\dev\Repeater\TestUI
+- Product: \src\controls\Repeater
+- Test: \src\controls\Repeater\APITest & InteractionTests
+- MuxControlsTestApp test pages: \src\controls\Repeater\TestUI
 
 
 # Key methods when debugging
 
 You may want to set breakpoints in these methods:  
-- A majority of methods in \controls\dev\Repeater\ItemsRepeater.cpp are interesting, like ItemsRepeater::MeasureOverride / ItemsRepeater::ArrangeOverride.
+- A majority of methods in \src\controls\Repeater\ItemsRepeater.cpp are interesting, like ItemsRepeater::MeasureOverride / ItemsRepeater::ArrangeOverride.
 - FlowLayoutAlgorithm's Measure, Generate and GetAnchorIndex for StackLayout & UniformGridLayout.
 - ElementManager::EnsureElementRealized
 - VirtualizationInfo::MoveOwnershipToXXXX

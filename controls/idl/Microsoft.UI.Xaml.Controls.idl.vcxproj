@@ -90,7 +90,7 @@
   </ImportGroup>
   <ItemDefinitionGroup>
     <Midl>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory);$(MUXCProjectRoot)dev;$(LiftedIXPIncludePaths)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory);$(MUXControlsSourceRoot);$(LiftedIXPIncludePaths)</AdditionalIncludeDirectories>
       <NoWarn>$(NoWarn);5135</NoWarn>
     </Midl>
   </ItemDefinitionGroup>

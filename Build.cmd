@@ -174,7 +174,7 @@ if "%_targetMux%" == "1" (
 ) else if "%_targetProduct%" == "1" (
    call :buildSolution %reporoot%\Microsoft.UI.Xaml-Product.sln
    if ERRORLEVEL 1 goto:showDurationAndExit
-   call :buildSolution %reporoot%\controls\dev\dll\Microsoft.UI.Xaml.Controls.vcxproj
+   call :buildSolution %reporoot%\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj
    if not "%_nomock%"=="1" call :buildMockPackage
 ) else if "%_targetProdTest%" == "1" (
    call :buildSolution %reporoot%\dxaml\Microsoft.UI.Xaml.sln
@@ -205,16 +205,16 @@ if not "%_quiet%"=="1" (
     echo BUILD SUCCEEDED.
 )
 
-git diff --exit-code "controls/dev/dll/XamlMetadataProviderGenerated.h" > nul
+git diff --exit-code "src/controls/dll/XamlMetadataProviderGenerated.h" > nul
 if ERRORLEVEL 1 (
     set _muxcIXMPChanged=1
 )
 if "%_muxcIXMPChanged%"=="1" (
     echo ---
     echo:
-    echo Generated file 'controls/dev/dll/XamlMetadataProviderGenerated.h' has changed.
+    echo Generated file 'src/controls/dll/XamlMetadataProviderGenerated.h' has changed.
     echo If this is intended then use the following command to include it in your commit:
-    echo     git add controls/dev/dll/XamlMetadataProviderGenerated.h
+    echo     git add src/controls/dll/XamlMetadataProviderGenerated.h
     echo: 
 )
 

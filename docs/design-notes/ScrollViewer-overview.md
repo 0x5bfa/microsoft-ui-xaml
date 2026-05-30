@@ -133,13 +133,13 @@ Test code:
 - dxaml/test/native/external/foundation/input/DManip
 - dxaml/test/native/external/enterprise/CalendarView  GridView  ListView  SemanticZoom  StickyHeaders
 
-- controls/dev/CommonStyles/TestUI/ScrollViewerPage.xaml
-- controls/dev/CommonStyles/TestUI/ScrollViewerPage.xaml.cs
+- src/controls/CommonStyles/TestUI/ScrollViewerPage.xaml
+- src/controls/CommonStyles/TestUI/ScrollViewerPage.xaml.cs
 
 
 # ScrollViewer XAML markup resources
 
-Style resources, including the control template, are located under controls/dev/CommonStyles/ScrollViewer_themeresources.xaml for WinUI 3.
+Style resources, including the control template, are located under src/controls/CommonStyles/ScrollViewer_themeresources.xaml for WinUI 3.
 
 
 # Key methods when debugging

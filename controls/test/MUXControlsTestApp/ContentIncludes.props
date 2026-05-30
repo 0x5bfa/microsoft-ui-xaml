@@ -18,7 +18,7 @@
     <Content Include="$(MSBuildThisFileDirectory)verification\*.xml">
       <Link>verification\%(Filename)%(Extension)</Link>
     </Content>
-    <Content Include="$(MUXCProjectRoot)dev\dll\DensityStyles\Compact.xaml" />
-    <Content Include="$(XamlBuildOutputRoot)controls\dev\dll\generated\DensityStyles\Compact.xbf" />
+    <Content Include="$(MUXControlsSourceRoot)dll\DensityStyles\Compact.xaml" />
+    <Content Include="$(XamlBuildOutputRoot)src\controls\dll\generated\DensityStyles\Compact.xbf" />
   </ItemGroup>
 </Project>

@@ -120,7 +120,7 @@
     <NoWarn>$(NoWarn);0105;2008</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="$(MUXCProjectRoot)dev\dll\Microsoft.UI.Xaml.Controls.vcxproj" ReferenceOutputAssembly="False" />
+    <ProjectReference Include="$(MUXControlsSourceRoot)dll\Microsoft.UI.Xaml.Controls.vcxproj" ReferenceOutputAssembly="False" />
     <ProjectReference Include="$(MUXProjectRoot)MergedWinMD\private\MergedWinMD.vcxproj" />
   </ItemGroup>
   <ItemGroup>
@@ -191,7 +191,7 @@
     <PackageReference Include="Microsoft.Taef" Version="$(TaefNugetPackageVersion)" />
     <PackageReference Include="MUXCustomBuildTasks" Version="$(MuxCustomBuildTasksPackageVersion)" />
   </ItemGroup>
-  <Import Project="$(MUXCProjectRoot)dev\CommonManaged\CommonManaged.projitems" Label="Shared" />
+  <Import Project="$(MUXControlsSourceRoot)CommonManaged\CommonManaged.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0' ">
     <VisualStudioVersion>15.0</VisualStudioVersion>
   </PropertyGroup>

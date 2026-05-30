@@ -47,13 +47,13 @@ SegmentedItem consider using ItemsRepeater for large number of items even though
 
 # Debugging and telemetry considerations
 
-<!-- Specify which KEYWORD_xxx is used for debug logging, in \dev\Telemetry\TraceLogging.h.
+<!-- Specify which KEYWORD_xxx is used for debug logging, in \src\controls\Telemetry\TraceLogging.h.
      Example:  #define KEYWORD_TABVIEW 0x0000000000000040
 
      Consider using a test hooks for access to private data and notifications.
-     Example:  \dev\ScrollPresenter\ScrollPresenterTestHooks.idl
+     Example:  \src\controls\ScrollPresenter\ScrollPresenterTestHooks.idl
 
-     Specify the RuntimeProfiler ID assigned to the new control in \dev\Telemetry\RuntimeProfiler.h.
+     Specify the RuntimeProfiler ID assigned to the new control in \src\controls\Telemetry\RuntimeProfiler.h.
      Example:   ProfId_PersonPicture == 3
 -->
 

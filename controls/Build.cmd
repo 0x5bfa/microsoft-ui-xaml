@@ -44,7 +44,7 @@ if "%_targetMUXControls%" == "1" (
 ) else if "%_targetProject%" == "1" (
     call :buildSolution %reporoot%\controls\%_targetProjectPath% /m
 ) else if "%_targetProduct%" == "1" (
-    call :buildSolution %reporoot%\controls\dev\dll\Microsoft.UI.Xaml.Controls.vcxproj /m
+    call :buildSolution %reporoot%\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj /m
 )
 goto:eof
 

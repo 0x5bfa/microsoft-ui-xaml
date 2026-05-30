@@ -17,7 +17,7 @@
   </ItemDefinitionGroup>
   <!-- We're going to include the .vcxitems in order to get their <Page> includes -
        everything else is ignored, since this is a C# project. -->
-  <Import Project="$(MUXCProjectRoot)dev\**\*.vcxitems" />
+  <Import Project="$(MUXControlsSourceRoot)**\*.vcxitems" />
   <ItemGroup>
     <PageToTest Include="@(Page)" />
   </ItemGroup>

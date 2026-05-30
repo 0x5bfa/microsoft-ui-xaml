@@ -125,7 +125,7 @@ Build your changes. If you are making changes to Microsoft.UI.Xaml.dll the quick
 
 If you are making changes to Microsoft.UI.Xaml.Controls.dll, use:
 
-`msb controls\dev\dll\Microsoft.UI.Xaml.Controls.vcxproj`
+`msb src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj`
 
 These commands will only rebuild these respective dlls. Since it is only incrementally building the changed .cpp/.h files
 it will normally be very quick (a couple of seconds). If you change a common header it might trigger a broader rebuild.

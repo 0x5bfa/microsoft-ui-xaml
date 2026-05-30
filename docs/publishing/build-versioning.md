@@ -38,7 +38,7 @@ There are also per-architecture packages.*.config files. For example packages.x6
 The complete list of all package dependency lists (restore files):
 * [packages.config](../../packages.config)
 * packages.[arch].config ([x86](../packages.x86.config), [x64](../../packages.x64.config), [arm64](../../packages.arm64.config))
-* [controls\dev\dll\packages.config](../../controls/dev/dll/packages.config) (contains reference to Microsoft.Web.WebView2)
+* [src\controls\dll\packages.config](../../src/controls/dll/packages.config) (contains reference to Microsoft.Web.WebView2)
 * [src\BuildTools.sln](../../src/BuildTools.sln)
 
 There are scripts in the scripts directory to update the reference to IXP and to CSWinRT:
@@ -46,8 +46,8 @@ There are scripts in the scripts directory to update the reference to IXP and to
 * UpdateCSWinRT (updates packages.config and eng\versions.props)
 
 There is also a script in the scripts directory to update the reference to the WebView2 SDK and Edge version:
-* [UpdateWebView2](../../controls/dev/WebView2/WebView2-update.md)
-    * Updates SDK reference in [controls\dev\dll\packages.config](../../controls/dev/dll/packages.config) and 
+* [UpdateWebView2](../../src/controls/WebView2/WebView2-update.md)
+    * Updates SDK reference in [src\controls\dll\packages.config](../../src/controls/dll/packages.config) and
     [eng\versions.props](../../eng/versions.props)
     * Updates Edge version in [packages.config](../../packages.config), 
     [Microsoft.UI.DCPP.Dependencies.Edge.nuspec](../../dxaml/external/Microsoft.UI.DCPP.Dependencies.Edge.nuspec), and 

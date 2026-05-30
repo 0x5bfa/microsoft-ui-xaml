@@ -5,7 +5,7 @@ Param(
     [string]$BuildType = "chk"
 )
 
-$xamlFilesPattern = "controls\dev\*.xaml"
+$xamlFilesPattern = "src\controls\*.xaml"
 
 # This file does git operations to XAML files, so we'll want to make sure that no changes to those files currently exist.
 $gitXamlStatus = & git status -s $xamlFilesPattern
@@ -69,7 +69,7 @@ if ($env:_BuildType)
 $outDir = "$BuildOutputRoot\$BuildArch$BuildType\controls\tools\"
 [System.Collections.Generic.List[string]]$xamlFilesHandled = [System.Collections.Generic.List[string]]::new()
 
-Get-ChildItem "$repoRoot\controls\dev" -Filter "*.vcxitems" -Recurse | ForEach-Object {
+Get-ChildItem "$repoRoot\src\controls" -Filter "*.vcxitems" -Recurse | ForEach-Object {
     $pathToProject = $_.DirectoryName
     $xamlFiles = Get-ChildItem "$pathToProject\*.xaml" | Sort-Object -Property @{Expression = {$_.Name.Length}; Descending = $True}
 
