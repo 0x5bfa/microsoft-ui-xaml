@@ -45,7 +45,7 @@
   </PropertyGroup>
   <Import Project="$(MSBuildThisFileDirectory)..\..\..\dxaml\Xaml.Cpp.props" />
   <ItemGroup>
-    <AdditionalWinMDsForClassRegistration Include="$(ArtifactsObjDir)dxaml\xcp\dxaml\idl\winrt\main\microsoft.ui.xaml.private.winmd" />
+    <AdditionalWinMDsForClassRegistration Include="$(XcpObjPath)\dxaml\idl\winrt\main\microsoft.ui.xaml.private.winmd" />
   </ItemGroup>
   <ItemGroup>
     <!-- Don't add files here, add them to OutputWinmds -->

@@ -207,7 +207,7 @@
     <Page Include="@(PageRequiringCustomCompilation)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(MUXProjectRoot)dxaml\xcp\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj" />
+    <ProjectReference Include="$(XcpPath)\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj" />
     <!--
       The above project reference will merge WinUI and IXP winmds, and produce a Microsoft.WinUI, Microsoft.Composition,
       and Microsoft.Input winmds. So here we reference the external winmds, but exclude IXP.
@@ -367,8 +367,8 @@
     </CreateProperty>
   </Target>
   <!-- Controls styles were missing in packaged generic.xaml file. Merge MUX Generic.xaml with MUXC Generic.xaml and ThemeResource.xaml -->
-  <Target Name="MergeMuxMuxcGenericResourceFiles" AfterTargets="GenerateThemeResourceFile" Inputs="$(ScriptPath)GenerateMergedXaml.ps1;$(MUXProjectRoot)dxaml\xcp\dxaml\themes\generic.xaml;$(OutDir)generic.xaml;$(OutDir)themeresources.xaml" Outputs="$(TempRoot)\generic.xaml">
-    <RunPowershellScript Path="$(ScriptPath)GenerateMergedXaml.ps1" Parameters="-XamlFileList &quot;$(MUXProjectRoot)dxaml\xcp\dxaml\themes\generic.xaml;$(OutDir)generic.xaml;$(OutDir)themeresources.xaml&quot; -MergedXamlFilePath &quot;$(TempRoot)\generic.xaml&quot;" FilesWritten="$(TempRoot)\generic.xaml" />
+  <Target Name="MergeMuxMuxcGenericResourceFiles" AfterTargets="GenerateThemeResourceFile" Inputs="$(ScriptPath)GenerateMergedXaml.ps1;$(XcpPath)\dxaml\themes\generic.xaml;$(OutDir)generic.xaml;$(OutDir)themeresources.xaml" Outputs="$(TempRoot)\generic.xaml">
+    <RunPowershellScript Path="$(ScriptPath)GenerateMergedXaml.ps1" Parameters="-XamlFileList &quot;$(XcpPath)\dxaml\themes\generic.xaml;$(OutDir)generic.xaml;$(OutDir)themeresources.xaml&quot; -MergedXamlFilePath &quot;$(TempRoot)\generic.xaml&quot;" FilesWritten="$(TempRoot)\generic.xaml" />
   </Target>
   <!-- Copy merged MUX's generic.xaml and MUXC's generic.xaml and ThemeResources file to the package -->
   <Target Name="CopyMergedMuxMuxcGenericResourceFile" AfterTargets="MergeMuxMuxcGenericResourceFiles">
@@ -548,7 +548,7 @@
   <Import Project="$(MUXCProjectRoot)MidlShared.targets" />
   <Target Name="CreateReferenceWinmds" BeforeTargets="XamlMetadataCodeGenMUX;RunDependencyPropertyCodeGen">
     <ItemGroup>
-      <ReferenceWinMDs Include="@(ExternalWinMDs);$(XamlBuildOutputRoot)\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\*.winmd" />
+      <ReferenceWinMDs Include="@(ExternalWinMDs);$(XcpObjPath)\dxaml\idl\winrt\merged\private\Merged\*.winmd" />
       <T4ParameterValues Include="ReferenceWinmds">
         <Value>@(_MidlReferencesDistinct);@(ReferenceWinMDs)</Value>
       </T4ParameterValues>
