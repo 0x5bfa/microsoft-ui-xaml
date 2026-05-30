@@ -505,6 +505,10 @@ that folder's `Templates` directory.
 Controls release helper scripts now live under `controls/tools/Release`,
 keeping the interactive release workflow next to its ADAL authentication helper.
 
+Controls resource generation helpers now live under
+`controls/tools/ResourceGeneration`, including system DLL resource generation,
+visual verification update, and final-release theme resource trimming scripts.
+
 Controls packaged test app deployment helpers now live under
 `controls/tools/TestAppDeployment`. Build integration still copies
 `CreateAppxDirectory.msbuildproj` and `InstallAppFromLayout.ps1` into the test

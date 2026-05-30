@@ -25,6 +25,7 @@ Shared command wrappers live under `/tools/common`.
 Controls build machine maintenance helpers live under `/controls/tools/BuildMachine`.
 Controls scaffolding helpers live under `/controls/tools/ControlGeneration`.
 Controls release helper scripts live under `/controls/tools/Release`.
+Controls resource generation helpers live under `/controls/tools/ResourceGeneration`.
 Controls test app deployment and dependency helpers live under `/controls/tools/TestAppDeployment`.
 Controls test reporting helpers live under `/controls/tools/TestReporting`.
 Controls XAML processing and WinUI 2 migration helpers live under `/controls/tools/XamlProcessing`.
