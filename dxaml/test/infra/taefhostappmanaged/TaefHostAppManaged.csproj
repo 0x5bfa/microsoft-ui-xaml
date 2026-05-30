@@ -157,7 +157,7 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="$(MicrosoftNETCoreUniversalWindowsPlatformVersion)" />
     <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="$(MicrosoftWindowsSDKContractsVersion)" />
   </ItemGroup>
-  <Import Project="$(XamlSourcePath)\test\managed\taef.managed.props" />
+  <Import Project="$(RuntimeManagedTestPath)\taef.managed.props" />
   <ItemGroup>
     <Reference Include="TE.AppXUnitTestClient.Managed">
       <HintPath>$(TaefManagedRefPath)TE.AppXUnitTestClient.Managed.dll</HintPath>

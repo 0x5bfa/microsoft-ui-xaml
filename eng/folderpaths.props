@@ -29,7 +29,7 @@
     <InfraTestPath>$(TestPath)\infra</InfraTestPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
     <RuntimeManagedTestPath>$(RuntimeTestPath)\managed</RuntimeManagedTestPath>
-    <ManagedTestPath>$(XamlSourcePath)\test\managed</ManagedTestPath>
+    <ManagedTestPath>$(RuntimeManagedTestPath)</ManagedTestPath>
 
     <MuxControlsPath>$(ProjectRoot)controls</MuxControlsPath>
     <MergedWinMDProjectRoot>$(ProjectRoot)src\metadata\MergedWinMD\</MergedWinMDProjectRoot>

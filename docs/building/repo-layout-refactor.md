@@ -104,15 +104,14 @@ small groups. The media, AccessKeys, animation, common, enterprise, framework,
 controls, foundation, Win32, Lifetime, and PGO managed test projects moved
 first. The CompileBinding package assets also live in this test-owned tree even
 though they are not a project.
-`$(RuntimeManagedTestPath)` identifies the new home, while `$(ManagedTestPath)`
-keeps existing managed test shared props available during the migration. The
-shared managed test props now reference the common managed test sources through
-`$(RuntimeManagedTestPath)` so moved and not-yet-moved projects use the same
-common assembly. Non-SDK managed test projects under the new tree explicitly
-import the local managed `Directory.Build.props` before importing the shared
-managed test props. The PGO test project imports the repo build props and
-targets by path because it is a legacy project that does not consume the shared
-managed test props directly.
+`$(RuntimeManagedTestPath)` identifies the new home, and `$(ManagedTestPath)`
+is now an alias for that location for compatibility with existing project
+imports. The shared managed test props live in the new tree and reference the
+common managed test sources through `$(RuntimeManagedTestPath)`. Non-SDK managed
+test projects under the new tree explicitly import the local managed
+`Directory.Build.props` before importing the shared managed test props. The PGO
+test project imports the repo build props and targets by path because it is a
+legacy project that does not consume the shared managed test props directly.
 
 ## Controls test infrastructure
 
