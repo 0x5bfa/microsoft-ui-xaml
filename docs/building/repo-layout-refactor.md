@@ -41,11 +41,12 @@ compiler-local tools.
 
 ## Compiler test entry points
 
-Compiler-specific test entry points now live under `tests/compiler`.
+Compiler-specific test entry points and support helpers now live under `tests/compiler`.
 `XamlCompilerTests.sln`, `runtests.cmd`, and `copynewmasters.cmd` moved there
 so the source tree can keep compiler implementation separate from compiler test
-orchestration. The compiler source solution references unit-test projects
-through `tests/compiler`.
+orchestration. The `FixMasters` helper used by `copynewmasters.cmd` now lives
+under `tests/compiler/tools`. The compiler source solution references unit-test
+projects through `tests/compiler`.
 
 ## Shared test infrastructure
 
