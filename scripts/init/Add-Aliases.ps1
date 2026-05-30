@@ -18,7 +18,7 @@ function global:idl { pushd $env:reporoot\dxaml\xcp\dxaml\idl\winrt\$args }
 function global:elements { pushd $env:reporoot\dxaml\xcp\core\core\elements\$args }
 function global:core { pushd $env:reporoot\dxaml\xcp\core\$args }
 function global:codegen { pushd $env:reporoot\dxaml\xcp\tools\XCPTypesAutoGen\XamlOM\Model\$args }
-function global:masters { pushd $env:reporoot\dxaml\test\resources\masters\$args }
+function global:masters { pushd $env:reporoot\generated\tests\visualbaselines\$args }
 function global:cb { git branch | select-string "\*" -raw }
 
 function global:ctp { & "$env:reporoot\tests\infra\CreateTestPayload.cmd" $args; pushd "$env:reporoot\TestPayload\$env:BUILDPLATFORM$env:_BuildType" }

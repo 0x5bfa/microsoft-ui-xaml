@@ -166,7 +166,7 @@ namespace Microsoft { namespace UI { namespace Xaml { namespace Tests {
             // Failed comparisons are copied to the Pictures library (C:\Data\Users\Public\Pictures\ on phone)
             // under the XamlTAEFOutput folder. If any master is missing, the comparison automatically fails.
             // This can be used to create masters for new tests: run the test without any masters, then verify
-            // that the output is expected, copy the file back to the test\resources\masters folder, and give
+            // that the output is expected, copy the file back to the generated\tests\visualbaselines folder, and give
             // them the proper name.
             TestServices::Utilities->VerifyMockDCompOutput(MockDComp::SurfaceComparison::ReferencedOnly);
         }

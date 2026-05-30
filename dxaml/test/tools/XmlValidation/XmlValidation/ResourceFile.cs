@@ -16,11 +16,15 @@ namespace XmlValidation
         public ResourceFile(string fileName)
             : base(fileName)
         {
-            var dirName = Path.GetDirectoryName(fileName);
-            var isMaster = dirName.EndsWith(@"\test\resources\masters", StringComparison.OrdinalIgnoreCase);
+            var normalizedFileName = fileName.Replace(Path.AltDirectorySeparatorChar, Path.DirectorySeparatorChar);
+            var dirName = Path.GetDirectoryName(normalizedFileName);
+            var isMaster =
+                dirName.EndsWith(@"\test\resources\masters", StringComparison.OrdinalIgnoreCase) ||
+                dirName.EndsWith(@"\generated\tests\visualbaselines", StringComparison.OrdinalIgnoreCase) ||
+                dirName.IndexOf(@"\generated\tests\visualbaselines\", StringComparison.OrdinalIgnoreCase) >= 0;
             if (isMaster)
             {
-                var resName = Path.GetFileName(fileName);
+                var resName = Path.GetFileName(normalizedFileName);
                 this.resData = Interop.ReadTestResource(resName);
             }
         }
