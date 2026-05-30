@@ -1351,7 +1351,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Ext
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Controls", "..\tests\runtime\managed\controls\Microsoft.UI.Xaml.Tests.Managed.Controls.csproj", "{741FBF8D-9524-415C-B288-7A95D2E81CCD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Foundation", "test\managed\foundation\Microsoft.UI.Xaml.Tests.Managed.Foundation.csproj", "{611FFF31-8AD1-4BC1-B830-25DAF0B75CFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Foundation", "..\tests\runtime\managed\foundation\Microsoft.UI.Xaml.Tests.Managed.Foundation.csproj", "{611FFF31-8AD1-4BC1-B830-25DAF0B75CFC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Framework", "..\tests\runtime\managed\framework\Microsoft.UI.Xaml.Tests.Managed.Framework.csproj", "{BC495EE4-E028-4811-97E6-B4D1EA723F9C}"
 EndProject
