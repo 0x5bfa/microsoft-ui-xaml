@@ -15,7 +15,7 @@
         <XamlPrecompiledInclude>precomp.h</XamlPrecompiledInclude>
     </PropertyGroup>
   
-    <Import Project="$(XamlSourcePath)\msbuild\buildsettings\ETWManifestUsage.props"/>
+    <Import Project="$(XamlBuildSettingsPath)\ETWManifestUsage.props"/>
 
     <ItemGroup>
         <ProjectReference Include="$(AppAnalysisPath)\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>

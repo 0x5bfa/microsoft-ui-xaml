@@ -26,7 +26,7 @@
         </ProjectIncludeDirectories>
     </PropertyGroup>
   
-    <Import Project="$(XamlSourcePath)\msbuild\buildsettings\ETWManifestUsage.props"/>
+    <Import Project="$(XamlBuildSettingsPath)\ETWManifestUsage.props"/>
 
     <ItemGroup>
         <ClInclude Include="EtwEventRecordTests.h"/>

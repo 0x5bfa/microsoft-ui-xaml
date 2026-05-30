@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
-    <Import Project="$(XamlSourcePath)\msbuild\buildsettings\MIDLRpc.props"/>
+    <Import Project="$(XamlBuildSettingsPath)\MIDLRpc.props"/>
     <Import Project="$(RuntimeTestPath)\common.props"/>
 
     <ItemGroup>

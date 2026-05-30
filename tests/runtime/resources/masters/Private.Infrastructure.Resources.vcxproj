@@ -46,7 +46,7 @@
         <GenerateTestResources Include="@(GenerateReleaseTestResources)"/>
     </ItemGroup>
 
-    <Import Project="$(XamlSourcePath)\MSBuild\BuildSettings\GenerateTestResources.Targets" />
+    <Import Project="$(XamlBuildSettingsPath)\GenerateTestResources.targets" />
 
     <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>

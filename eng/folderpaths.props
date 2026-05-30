@@ -20,8 +20,8 @@
   <PropertyGroup>
     <ProjectRelativePath>$([MSBuild]::MakeRelative($(ProjectRoot), $(MSBuildProjectDirectory)))</ProjectRelativePath>
     <XamlSourcePath>$(ProjectRoot)dxaml\</XamlSourcePath>
-    <XamlTargetsPath>$(XamlSourcePath)MSBuild\</XamlTargetsPath>
-    <XamlBuildSettingsPath>$(XamlTargetsPath)BuildSettings\</XamlBuildSettingsPath>
+    <XamlTargetsPath>$(ProjectRoot)eng\</XamlTargetsPath>
+    <XamlBuildSettingsPath>$(XamlTargetsPath)buildsettings\</XamlBuildSettingsPath>
 
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>

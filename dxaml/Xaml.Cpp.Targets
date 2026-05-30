@@ -6,15 +6,15 @@
   </PropertyGroup>
 
   <!-- If we have MIDL sources, but didn't include the custom midl target file.  default to OLE -->
-  <Import Condition="'$(XamlMidlOptions)'==''" Project="msbuild\BuildSettings\MIDLOle.props"/>
+  <Import Condition="'$(XamlMidlOptions)'==''" Project="$(XamlBuildSettingsPath)\MIDLOle.props"/>
 
   <!-- Handle our special version of precompiled headers -->
   <!-- For experimental Clang compilation, work to get precompiled headers is not done. -->
-  <Import Condition="'$(ExperimentalClang)' != 'true'" Project="msbuild\BuildSettings\PrecompHeader.targets" />
+  <Import Condition="'$(ExperimentalClang)' != 'true'" Project="$(XamlBuildSettingsPath)\PrecompHeader.targets" />
 
   <!-- Windows Prformance Trace preprocessing -->
-  <Import Project="msbuild\BuildSettings\TraceWPP.targets" />
-  <Import  Condition="'$(ConfigurationType)'=='ETW_ALT'" Project="msbuild\BuildSettings\EtwManifestAlt.targets" />
+  <Import Project="$(XamlBuildSettingsPath)\TraceWPP.targets" />
+  <Import  Condition="'$(ConfigurationType)'=='ETW_ALT'" Project="$(XamlBuildSettingsPath)\ETWManifestAlt.targets" />
 
   <!-- Fix up some stuff that MSBuild turns on for us -->
   <PropertyGroup>
@@ -300,7 +300,7 @@
   <!-- If we were requested to produce both a static and dynamic library then import the dual library targets.  Note: This must occur after   -->
   <!-- Microsoft.Cpp.Targets because we need to override a warning message task that says we are producing a lib in a DynamicLibrary          -->
   <!-- project and we need to do it via an import so that we don't override this task except in this special case.                            -->
-  <Import Project="msbuild\buildsettings\DualLibrary.targets" Condition="'$(ConfigurationType)'=='DynamicLibrary' and '$(ProduceStaticLibrary)'=='true'"/>
+  <Import Project="$(XamlBuildSettingsPath)\DualLibrary.targets" Condition="'$(ConfigurationType)'=='DynamicLibrary' and '$(ProduceStaticLibrary)'=='true'"/>
 
   <ItemGroup Condition="'$(XamlConsumesWinRT)' == 'true' and '$(XamlForcedUsingFilesForWinRtIncludesMUXWinMd)' == 'true'">
     <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" />

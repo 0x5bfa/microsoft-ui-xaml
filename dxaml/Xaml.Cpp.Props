@@ -73,12 +73,12 @@
 
   <!-- This can probably be cleaned up.  We have a number of tests that intend to compile to OBJs (not libs) so they specify no target  -->
   <!-- However, we haven't figured out yet how to do that with MSBuild.  So if there is no ConfigurationType defined, assume static lib -->
-  <Import Condition="'$(ConfigurationType)'=='Unknown'" Project="msbuild\buildsettings\LibraryCompile.props" />
+  <Import Condition="'$(ConfigurationType)'=='Unknown'" Project="$(XamlBuildSettingsPath)\LibraryCompile.props" />
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
 
-  <Import Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='StaticLibrary'" Project="msbuild\buildsettings\LibraryCompile.props" />
-  <Import Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='Application'" Project="msbuild\buildsettings\ModuleLink.props" />
+  <Import Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='StaticLibrary'" Project="$(XamlBuildSettingsPath)\LibraryCompile.props" />
+  <Import Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='Application'" Project="$(XamlBuildSettingsPath)\ModuleLink.props" />
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
 
