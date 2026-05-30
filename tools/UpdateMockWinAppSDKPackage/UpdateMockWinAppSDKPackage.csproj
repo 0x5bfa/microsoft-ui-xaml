@@ -27,9 +27,9 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <Import Project="Directory.Build.props" />
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
   <Import Project="$(NugetPackageDirectory)\MUXCustomBuildTasks.$(MuxCustomBuildTasksPackageVersion)\build\MUXCustomBuildTasks.targets" />
-  <Import Project="Directory.Build.targets" />
+  <Import Project="$(ProjectRoot)Directory.Build.targets" />
   <PropertyGroup>
     <!-- OutDir doesn't contain the project name since this is only a partial project.  We'll add it manually. -->
     <OutDir>$([System.IO.Path]::GetFullPath("$(OutDir)UpdateMockWinAppSDKPackage\"))</OutDir>

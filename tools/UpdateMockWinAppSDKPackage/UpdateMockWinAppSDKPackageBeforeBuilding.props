@@ -2,12 +2,12 @@
 <!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. See LICENSE in the project root for license information. -->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ProjectReference Include="$(ProjectRoot)UpdateMockWinAppSDKPackage.csproj" ReferenceOutputAssembly="false" Condition="'$(BuildingInsideVisualStudio)' == 'true'" />
+    <ProjectReference Include="$(ProjectRoot)tools\UpdateMockWinAppSDKPackage\UpdateMockWinAppSDKPackage.csproj" ReferenceOutputAssembly="false" Condition="'$(BuildingInsideVisualStudio)' == 'true'" />
   </ItemGroup>
 
   <Target Name="EnsureBuildAfterUpdatingMockWinAppSDK" BeforeTargets="Build" Condition="'$(BuildingInsideVisualStudio)' == 'true'" />
   <Target Name="GetMockWinAppSDKUpdatedMarkerFilePath" BeforeTargets="EnsureBuildAfterUpdatingMockWinAppSDK" Condition="'$(BuildingInsideVisualStudio)' == 'true'">
-    <MSBuild Projects="$(ProjectRoot)UpdateMockWinAppSDKPackage.csproj" Targets="GetUpdatedMarkerFilePath">
+    <MSBuild Projects="$(ProjectRoot)tools\UpdateMockWinAppSDKPackage\UpdateMockWinAppSDKPackage.csproj" Targets="GetUpdatedMarkerFilePath">
       <Output TaskParameter="TargetOutputs" ItemName="UpdatedMarkerFilePath" />
     </MSBuild>
   </Target>
