@@ -8,8 +8,8 @@
         <ProjectGuid>{8a12dfcf-137a-46fe-b64e-7cdeae719b5c}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XcpPath)\dxaml\tools\AppAnalysis\unittests\unittest.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(AppAnalysisTestPath)\unittests\unittest.props"/>
 
     <ItemDefinitionGroup>
         <ClCompile>
@@ -46,5 +46,5 @@
         <ProjectReference Include="$(AppAnalysisPath)\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{e1f36d19-f82d-474a-be26-fea52da5b6e6}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>

@@ -79,6 +79,9 @@ solution references the package project from that test-owned location.
 AppAnalysis test support projects now live under `tests/runtime/appanalysis`.
 `$(RuntimeTestPath)` and `$(AppAnalysisTestPath)` provide shared references for
 runtime projects and AppAnalysis unit tests that consume those support projects.
+The AppAnalysis engine and rule unit-test projects now live under
+`tests/runtime/appanalysis/unittests`, alongside their AppAnalysis-specific
+test props and precompiled-header project.
 
 ## Runtime ad hoc test apps
 
