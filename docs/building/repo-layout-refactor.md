@@ -490,7 +490,7 @@ local copy from `dxaml/xcp/dxaml/themes/autogen`. `GenXbfDLL` moved under
 `tools/runtime/GenXbfDLL` as a build-integrated runtime tool, with MSBuild
 project references using `$(RuntimeToolsPath)`. The runtime code generation
 toolchain moved under `tools/runtime/XCPTypesAutoGen`, including the
-checked-in stable XBF index inputs that `runcodegen.cmd` updates. The
+checked-in stable XBF index inputs and the `runcodegen.cmd` wrapper. The
 XamlDiagnostics TAP test DLL moved under `tools/runtime/xamldiagnostics/tap`,
 with external tool tests consuming it through `$(XamlDiagTapPath)`. The
 AppAnalysis runtime diagnostics toolchain moved under `tools/runtime/AppAnalysis`,

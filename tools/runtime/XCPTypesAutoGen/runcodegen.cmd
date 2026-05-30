@@ -3,18 +3,17 @@
 REM Copyright (c) Microsoft Corporation.
 REM Licensed under the MIT License. See LICENSE in the project root for license information.
 
-if "%RepoRoot%" == "" call %~dp0\..\..\init.cmd
+if "%RepoRoot%" == "" call "%~dp0..\..\..\init.cmd"
 
 SETLOCAL
 
 REM Use "/noabi" command line argument to not prefix with ABI.
 SET PREFIXABI=%1
 SET DEV_RUNNING_CODE_GEN=true
-SET "XCP_PATH=%~dp0"
-IF "%XCP_PATH:~-1%"=="\" SET "XCP_PATH=%XCP_PATH:~0,-1%"
-SET "RUNCODEGEN_PATH=%RepoRoot%\tools\runtime\XCPTypesAutoGen\RunCodeGen"
-SET "XBFINDEXES_PATH=%RepoRoot%\tools\runtime\XCPTypesAutoGen\XamlGen"
-SET UPDATE_FILES_CMD_PATH=%BuildOutputRoot%\%_BuildArch%%_BuildType%\dxaml\Codegen\updatecheckedinfiles.cmd
+SET "XCP_PATH=%RepoRoot%\dxaml\xcp"
+SET "RUNCODEGEN_PATH=%~dp0RunCodeGen"
+SET "XBFINDEXES_PATH=%~dp0XamlGen"
+SET "UPDATE_FILES_CMD_PATH=%BuildOutputRoot%\%_BuildArch%%_BuildType%\dxaml\Codegen\updatecheckedinfiles.cmd"
 
 @echo.
 @echo.
@@ -27,9 +26,9 @@ SET UPDATE_FILES_CMD_PATH=%BuildOutputRoot%\%_BuildArch%%_BuildType%\dxaml\Codeg
 
 @echo *** Reverting local updates to XBF Stable Indexes.
 @echo.
-git checkout HEAD %XBFINDEXES_PATH%\*.g.csv
+git checkout HEAD "%XBFINDEXES_PATH%\*.g.csv"
 
-pushd %RUNCODEGEN_PATH%
+pushd "%RUNCODEGEN_PATH%"
 REM We do a rebuild here just in case there's something wrong with incremental codegen builds.
 REM The user has manually requested a CodeGen update, let's make sure it's a clean one.
 call msbuild /bl /t:rebuild
@@ -56,7 +55,7 @@ goto :eof
 @echo *                                                                          *
 @echo ****************************************************************************
 @echo.
-call %UPDATE_FILES_CMD_PATH%
+call "%UPDATE_FILES_CMD_PATH%"
 @echo.
 goto :eof
 
