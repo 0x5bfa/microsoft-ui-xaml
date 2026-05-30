@@ -1039,7 +1039,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Media.Imaging", "xcp\components\imaging\lib\Microsoft.UI.Xaml.Media.Imaging.vcxproj", "{CD13A3EF-0FED-4512-8B12-F1B6C96F65AB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging", "xcp\components\imaging\unittests\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging.vcxproj", "{547989FD-9376-4574-8DD7-2B9E07782D9B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging", "..\tests\runtime\native\isolated\foundation\imaging\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging.vcxproj", "{547989FD-9376-4574-8DD7-2B9E07782D9B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Input", "xcp\components\input\lib\Microsoft.UI.Xaml.Input.vcxproj", "{911DF019-BDA7-47D0-B3ED-3DB1807EEFE1}"
 EndProject
