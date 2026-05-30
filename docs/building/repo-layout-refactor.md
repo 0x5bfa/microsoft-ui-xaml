@@ -85,6 +85,12 @@ NuGet package specs and package NOTICE content now live under
 top-level package command still invokes the same helper script, but its source
 location now reflects that it packs WinUI packaging output.
 
+## Build transforms
+
+The fusion-manifest transform used by ad hoc app registration now lives under
+`eng`, next to the target that invokes it. This removes the last checked-in
+helper from the historical `build` folder.
+
 ## Generated controls sources
 
 Checked-in generated dependency-property sources for controls now live under
