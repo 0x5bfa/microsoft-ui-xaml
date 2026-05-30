@@ -41,4 +41,9 @@ This folder contains scripts as it pertains to running tests in Helix. You shoul
 need to edit these for most changes, unless you are doing test infrastructure work.
 
 ## /src
-This is where source code for the Xaml Compiler and VSIX are located.
+This is where source code for repo-local tools and source components outside the
+runtime and controls trees live.
+
+The XAML compiler now lives under `/src/compiler`. That folder contains the
+compiler build tasks, executable host, parsing projects, MSBuild targets, and
+compiler-specific tools.

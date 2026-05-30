@@ -62,7 +62,7 @@ confusing ways.
 An accidental regression that crashed the XAML compiler had the following unhelpful error output:
 
 ```build
-<repo>\src\XamlCompiler\Targets\Microsoft.UI.Xaml.Markup.Compiler.interop.targets(629,9): XamlCompiler
+<repo>\src\compiler\Targets\Microsoft.UI.Xaml.Markup.Compiler.interop.targets(629,9): XamlCompiler
 error WMC0605: Failure Generating XAML Binary Format: Exception=External component has thrown an exception.
 [<repo>\dxaml\test\native\external\tools\customTypes\customTypes.vcxproj]
 ```

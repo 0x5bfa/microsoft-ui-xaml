@@ -151,10 +151,10 @@ the compiler should write its outputs to.
 
 The source code and tests for the Xaml compiler are located under:
 
-    src\XamlCompiler
+    src\compiler
 
 With the bulk of the compiler code under:
-    src\XamlCompiler\BuildTasks
+    src\compiler\BuildTasks
 
 There are several files and folders of interest here, but the most important
 ones are:

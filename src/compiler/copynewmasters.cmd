@@ -115,6 +115,6 @@ goto :EOF
 echo ## Updating %~2 to %~1
 echo.
 
-robocopy "%BuildOutputRoot%\%_BuildArch%%_BuildType%\src\XamlCompiler\Tests\%~2" "TestMasters\%~1" *.g.* /XF *.g.obj /XF *.nuget.g.* /XF *.backup /s /r:0 /z /ndl
+robocopy "%BuildOutputRoot%\%_BuildArch%%_BuildType%\src\compiler\Tests\%~2" "TestMasters\%~1" *.g.* /XF *.g.obj /XF *.nuget.g.* /XF *.backup /s /r:0 /z /ndl
 if %ERRORLEVEL% GTR 1 goto :failedCopy
 EXIT /B 0

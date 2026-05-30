@@ -76,11 +76,11 @@ $projectPackages = @(
     'XamlCompilerPrerequisites.sln',
     'dxaml\Microsoft.UI.Xaml.sln',
     'dxaml\xcp\tools\XbfParser\XbfParser.sln',
-    'src\XamlCompiler\XamlCompiler.sln'
+    'src\compiler\XamlCompiler.sln'
 )
 
 # Check if this is an OSS build, where not all files are available
-if (-not (Test-Path $repoRoot\src\XamlCompiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs))
+if (-not (Test-Path $repoRoot\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs))
 {
     # Use smaller perf config when building OSS
     $projectPackages = $projectPackages | ForEach-Object { $_ -replace 'perf\\packages.config', 'perf\packages.OSS.config' }
