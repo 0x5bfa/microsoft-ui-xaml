@@ -331,6 +331,8 @@ MUXTestInfra communicates with the test app via 'hidden' UIElements.
 E.g. there is a CheckBox named 'IdleStateEnteredCheckBox' that gets checked when the app goes idle. The test process can
 monitor the state of this checkbox to determine when to continue test execution after a call to WaitForIdle.
 
+The project lives under `controls\test\testinfra\AppTestAutomationHelpers`.
+
 These are shared outside of the repo for partner teams:
 * The WindowsAppSDK aggregator repo (see below)
 

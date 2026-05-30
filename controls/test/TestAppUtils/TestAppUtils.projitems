@@ -25,6 +25,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\..\Samples\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj" />
   </ItemGroup>
 </Project>

@@ -59,6 +59,13 @@ The top-level test payload entry points and Helix orchestration now live under
 companion scripts, and the `Helix` project/scripts tree moved there so
 repo-level test orchestration is grouped with other separated test assets.
 
+## Controls test infrastructure
+
+Controls test infrastructure should live with the controls test projects it
+supports. `AppTestAutomationHelpers` now lives under
+`controls/test/testinfra` next to `MUXTestInfra` instead of under `Samples`, so
+the sample-app tree stays focused on sample applications.
+
 ## Generated controls sources
 
 Checked-in generated dependency-property sources for controls now live under
