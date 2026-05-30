@@ -43,7 +43,7 @@
   <Import Project="$(XcpPath)\project-lift.props" />
   <Import Project="..\sources.props" />
   <Import Project="$(ProjectRoot)eng\winui-version.props" />
-  <Import Project="$(ProjectRoot)\perf\pgo\Microsoft.WinUI.PGO.props" />
+  <Import Project="$(ProjectRoot)\eng\pgo\Microsoft.WinUI.PGO.props" />
   <PropertyGroup>
     <Mui>true</Mui>
     <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) _DAYTONA_;</ProjectPreprocessorDefinitions>

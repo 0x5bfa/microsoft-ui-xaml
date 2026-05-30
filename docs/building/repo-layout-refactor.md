@@ -108,6 +108,13 @@ They feed initialization and shared version extraction, so grouping them under
 `Packages.props` remains at the repository root because CentralPackageVersions
 projects discover it by walking parent directories.
 
+## PGO build inputs
+
+PGO build configuration now lives under `eng/pgo`. The PGO props file is
+imported by product projects and reads its local package restore config from
+that folder, keeping top-level directories focused on source, tests, docs, and
+repo entry points.
+
 ## Generated controls sources
 
 Checked-in generated dependency-property sources for controls now live under

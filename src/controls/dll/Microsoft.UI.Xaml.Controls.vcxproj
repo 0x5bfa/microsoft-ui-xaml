@@ -14,7 +14,7 @@
     <!-- We only need XamlCompiler to provide us with XBF -->
     <XamlCodeGenerationControlFlags>NoPageCodeGen;NoTypeInfoCodeGen</XamlCodeGenerationControlFlags>
   </PropertyGroup>
-  <Import Project="$(ProjectRoot)\perf\pgo\Microsoft.WinUI.PGO.props" />
+  <Import Project="$(ProjectRoot)\eng\pgo\Microsoft.WinUI.PGO.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <Import Project="$(MUXCProjectRoot)MidlShared.props" />
   <Import Project="$(MUXCProjectRoot)ProjectImports.targets" />
