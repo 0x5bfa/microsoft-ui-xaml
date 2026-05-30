@@ -389,7 +389,7 @@
     </CreateProperty>
   </Target>
   <Target Name="DeleteInputValidate" BeforeTargets="PrepareForBuild" Condition="'$(MUXFinalRelease)'=='true'">
-    <RunPowershellScript Path="$(ScriptPath)UpdateThemeResources.ps1" />
+    <RunPowershellScript Path="$(ScriptPath)ResourceGeneration\UpdateThemeResources.ps1" />
   </Target>
   <Target Name="RemovePageRequiringCustomCompilation" AfterTargets="BeforeBuildGenerateSources" BeforeTargets="MarkupCompilePass2" Condition="'@(PageRequiringCustomCompilation)' != ''">
     <Message Text="RemovePageRequiringCustomCompilation" />

@@ -35,7 +35,7 @@ $resourceHelperString = @"
 foreach ($imagePath in $ImagePaths.Split(";", [System.StringSplitOptions]::RemoveEmptyEntries))
 {
     $currentLocation = Get-Location
-    Set-Location $PSScriptRoot\..\..\src\controls\dll
+    Set-Location $PSScriptRoot\..\..\..\src\controls\dll
     $imagePath = (Resolve-Path $imagePath -Relative).Replace("\", "\\")
     Set-Location $currentLocation
 
