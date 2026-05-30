@@ -9,7 +9,7 @@ if ($env:RepoRoot)
 }
 else
 {
-    $repoRoot = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..")
+    $repoRoot = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..\..")
 }
 
 # First, we'll delete all of the existing resw files.

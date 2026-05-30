@@ -27,6 +27,7 @@ Controls scaffolding helpers live under `/controls/tools/ControlGeneration`.
 Controls release helper scripts live under `/controls/tools/Release`.
 Controls test app deployment and dependency helpers live under `/controls/tools/TestAppDeployment`.
 Controls test reporting helpers live under `/controls/tools/TestReporting`.
+Controls XAML processing and WinUI 2 migration helpers live under `/controls/tools/XamlProcessing`.
 
 ## /controls
 This folder contains controls solution, IDL, test, and tooling entry points.

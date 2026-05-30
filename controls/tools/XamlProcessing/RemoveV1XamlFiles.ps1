@@ -1,4 +1,4 @@
-$devDir = [System.IO.Path]::GetFullPath([System.IO.Path]::Combine($PSScriptRoot, "..", "dev"))
+$devDir = [System.IO.Path]::GetFullPath([System.IO.Path]::Combine($PSScriptRoot, "..", "..", "dev"))
 
 $v1XamlFiles = Get-ChildItem $devDir -Recurse -Filter *_v1.xaml
 $vcxItemsFiles = Get-ChildItem $devDir -Recurse -Filter *.vcxitems
