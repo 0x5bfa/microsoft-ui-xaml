@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\msbuild\buildsettings\MIDLOle.props"/>
+    <Import Project="$(XamlBuildSettingsPath)\MIDLOle.props"/>
 
     <ItemDefinitionGroup>
         <Midl>

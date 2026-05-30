@@ -25,5 +25,5 @@
         </ItemGroup>
     </Target>
 
-    <Import Project="msbuild\BuildSettings\SkipProjectBuild.targets" Condition="('$(BuildTestCode)'=='false' and '$(TestCode)'!='') or ('$(SkipProject)'=='true' and '$(BuildAll)'!='true')" />
+    <Import Project="$(XamlBuildSettingsPath)\SkipProjectBuild.targets" Condition="('$(BuildTestCode)'=='false' and '$(TestCode)'!='') or ('$(SkipProject)'=='true' and '$(BuildAll)'!='true')" />
 </Project>

@@ -4,7 +4,7 @@
 
     <Import Project="$(XamlSourcePath)\common.props"/>
 
-    <Import Project="$(XamlSourcePath)\msbuild\buildsettings\ETWManifestUsage.props"/>
+    <Import Project="$(XamlBuildSettingsPath)\ETWManifestUsage.props"/>
 
     <!-- # CASE_SENSITIVE_COMPARE                    -->
     <!--                                             -->

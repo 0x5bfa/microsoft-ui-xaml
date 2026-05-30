@@ -10,7 +10,7 @@
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(AppAnalysisTestPath)\unittests\unittest.props"/>
-    <Import Project="$(XamlSourcePath)\msbuild\buildsettings\ETWManifestUsage.props"/>
+    <Import Project="$(XamlBuildSettingsPath)\ETWManifestUsage.props"/>
 
     <ItemDefinitionGroup>
         <ClCompile>

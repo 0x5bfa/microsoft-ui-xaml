@@ -180,6 +180,13 @@ The fusion-manifest transform used by ad hoc app registration now lives under
 `eng`, next to the target that invokes it. This removes the last checked-in
 helper from the historical `build` folder.
 
+## XAML build settings
+
+Shared XAML MSBuild settings now live under `eng/buildsettings`. These props
+and targets are build infrastructure rather than runtime source, and consumers
+resolve them through `$(XamlBuildSettingsPath)` instead of reaching into the
+legacy `dxaml/msbuild` tree.
+
 ## Package restore inputs
 
 Repository-wide NuGet `packages.config` files now live under `eng/packages`.
