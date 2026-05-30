@@ -19,7 +19,7 @@ In particular: /build/NuSpecs enables .nupkg generation
 
 The mock Windows App SDK package update helper lives under
 `/tools/packaging/UpdateMockWinAppSDKPackage`.
-Standalone debugger extension scripts live under `/tools/dbgext`.
+Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
 
 ## /controls
 This folder contains controls solution, IDL, test, and tooling entry points.

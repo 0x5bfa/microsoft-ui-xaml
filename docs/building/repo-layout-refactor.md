@@ -480,8 +480,8 @@ The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
 
-The standalone debugger extension script now lives under `tools/dbgext`, grouped
-with other manually invoked repo tools.
+The standalone debugger extension script now lives under
+`tools/debugging/dbgext`, grouped with other manually invoked repo tools.
 
 Clang-oriented developer helpers now live under `tools/clang`, with `init.cmd`
 adding that folder to PATH so the short command names remain available in
