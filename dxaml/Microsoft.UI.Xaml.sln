@@ -1103,7 +1103,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Primitive
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Qualifiers", "xcp\components\qualifiers\lib\Microsoft.UI.Xaml.Qualifiers.vcxproj", "{664BB810-5217-4EB3-85C0-C7AB5E34060B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers", "xcp\components\qualifiers\unittests\Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers.vcxproj", "{D82C40B8-9902-4565-8248-4C629F9E9024}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers", "..\tests\runtime\native\isolated\adaptability\qualifiers\Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers.vcxproj", "{D82C40B8-9902-4565-8248-4C629F9E9024}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.OneCoreTransforms", "xcp\components\OneCoreTransforms\lib\Microsoft.UI.Xaml.OneCoreTransforms.vcxproj", "{4D59A898-7E24-4650-BAA0-7FE2BB6C82D4}"
 EndProject
