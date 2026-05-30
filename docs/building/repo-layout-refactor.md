@@ -393,6 +393,9 @@ infrastructure isolated tests with the foundation runtime test group.
 The XamlDiagnostics isolated test moved under
 `tests/runtime/native/isolated/xaml/diagnostics`, starting a XAML diagnostics
 isolated test group under runtime tests.
+The DXamlCore TIP isolated test moved under
+`tests/runtime/native/isolated/xaml/dxamlCore`, keeping DXamlCore test coverage
+with the other XAML isolated runtime tests.
 The Parser isolated test moved under
 `tests/runtime/native/isolated/framework/parser`, continuing the framework
 isolated test group under runtime tests.

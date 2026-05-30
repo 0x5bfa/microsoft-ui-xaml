@@ -1421,7 +1421,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\packa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DB18C28D-3251-4E68-99F6-498BE2C7BFDD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DxamlCoreTipUnitTests", "xcp\dxaml\lib\unittests\Microsoft.UI.Xaml.Tests.Isolated.winrtfoundation.DXamlCore.vcxproj", "{8D345449-2A7A-4EC3-A8CA-AFA07DD31A78}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DxamlCoreTipUnitTests", "..\tests\runtime\native\isolated\xaml\dxamlCore\Microsoft.UI.Xaml.Tests.Isolated.winrtfoundation.DXamlCore.vcxproj", "{8D345449-2A7A-4EC3-A8CA-AFA07DD31A78}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unittests", "unittests", "{A62ED376-F2C7-4A59-A8EE-6E63D8150524}"
 EndProject

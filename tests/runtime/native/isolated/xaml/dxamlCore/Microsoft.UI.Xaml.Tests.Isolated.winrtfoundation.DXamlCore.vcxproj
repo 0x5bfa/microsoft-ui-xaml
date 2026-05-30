@@ -9,8 +9,8 @@
     <ProjectGuid>{8D345449-2A7A-4EC3-A8CA-AFA07DD31A78}</ProjectGuid>
   </PropertyGroup>
 
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
-  <Import Project="..\sources.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.Cpp.props" />
+  <Import Project="$(XcpPath)\dxaml\lib\sources.props" />
     
   <PropertyGroup>
     <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) TEST_CODE=1;</ProjectPreprocessorDefinitions>
@@ -39,7 +39,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
     
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+  <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
