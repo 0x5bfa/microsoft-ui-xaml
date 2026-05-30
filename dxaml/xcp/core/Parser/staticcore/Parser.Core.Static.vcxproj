@@ -8,7 +8,7 @@
         <ProjectGuid>{bc600eb1-a9fd-45d5-8dff-28d793544e20}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
 
     <!-- Task 14117377: Remove try/catch dependencies -->
 
@@ -110,5 +110,5 @@
         <ProjectReference Include="..\staticpch\Parser.pch.vcxproj" Project="{0e9adea7-7e96-4f7c-9ce1-7b82ff6f70c4}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

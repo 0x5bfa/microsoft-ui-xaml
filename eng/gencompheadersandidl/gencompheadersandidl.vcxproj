@@ -6,7 +6,7 @@
     <IgnorePrivateMUXMetadataDir>true</IgnorePrivateMUXMetadataDir>
     <ProjectGuid>{85684433-45C4-4445-B7E3-0ECBE16D3A8F}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="..\..\dxaml\Xaml.Cpp.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\xamlbuild\Xaml.Cpp.Props" />
   <!--
     This project just generates the .idl and .h files that match the .winmd files from the comp nuget so that we can consume them.
     Any project that needs them can just include the $(LiftedIXPGeneratedIdlPath) in the $(ProjectIncludeDirectories)
@@ -44,5 +44,5 @@
   <Target Name="_CopyGeneratedIxpHeaders" Inputs="@(_GeneratedIxpHeaders)" Outputs="@(_GeneratedIxpHeaders->'$(XamlPublicHeadersPath)\%(Filename)%(Extension)')" AfterTargets="_GenerateIxpHeadersAndIDLs">
     <Copy SourceFiles="@(_GeneratedIxpHeaders)" DestinationFolder="$(XamlPublicHeadersPath)" SkipUnchangedFiles="true" />
   </Target>
-  <Import Project="..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

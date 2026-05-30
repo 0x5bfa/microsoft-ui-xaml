@@ -5,7 +5,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <ProjectGuid>{42577057-854d-443d-ab59-f4e44c8f5207}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="$(MSBuildThisFileDirectory)..\..\..\dxaml\Xaml.Cpp.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\eng\xamlbuild\Xaml.Cpp.Props" />
   <Import Project="$(XcpPath)\project-lift.props" />
   <Import Project="$(XcpPath)\common.props" />
   <Import Project="$(ProjectRoot)eng\winui-version.props"/>
@@ -146,5 +146,5 @@
     <ProjectReference Include="$(XcpPath)\hostpalplatmisc.vcxproj" Project="{379aa0e5-75bd-4ac3-9e9d-2168f400f1b0}"/>
     
   </ItemGroup>
-  <Import Project="$(MSBuildThisFileDirectory)..\..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

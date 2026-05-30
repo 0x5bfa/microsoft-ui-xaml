@@ -9,7 +9,7 @@
         <UseHybridCRT>false</UseHybridCRT>
     </PropertyGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest-stubs.props"/>
 
@@ -77,7 +77,7 @@
         <ProjectReference Include="$(XcpPath)\components\threading\lib\Microsoft.UI.Xaml.Threading.vcxproj" Project="{84b53d4a-4aca-45fa-abed-71590c405915}"/>
     </ItemGroup>
 
-    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
     
     <ItemGroup>
         <BinplaceItem Include="imageframes\*">

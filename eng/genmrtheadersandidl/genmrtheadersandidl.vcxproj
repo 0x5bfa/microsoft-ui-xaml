@@ -6,7 +6,7 @@
     <IgnorePrivateMUXMetadataDir>true</IgnorePrivateMUXMetadataDir>
     <ProjectGuid>{27E83BDC-BBF2-44E0-B968-0335C2BD150D}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="..\..\dxaml\Xaml.Cpp.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\xamlbuild\Xaml.Cpp.Props" />
   <!--
     This project just generates the .idl and .h files that match the .winmd files from the
     Lifted MRT nuget  so that we can consume them. Any project that needs them can just include
@@ -45,5 +45,5 @@
   <Target Name="_CopyGeneratedMRTHeaders" Inputs="@(_GeneratedMRTHeaders)" Outputs="@(_GeneratedMRTHeaders->'$(XamlPublicHeadersPath)\%(Filename)%(Extension)')" AfterTargets="_GenerateMRTHeadersAndIDLs">
     <Copy SourceFiles="@(_GeneratedMRTHeaders)" DestinationFolder="$(XamlPublicHeadersPath)" SkipUnchangedFiles="true" />
   </Target>
-  <Import Project="..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

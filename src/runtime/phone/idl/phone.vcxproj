@@ -10,7 +10,7 @@
         <ProjectName>Microsoft.UI.Xaml.Phone</ProjectName>
     </PropertyGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
 
     <PropertyGroup>
         <DisableMidlVersionChecks>1</DisableMidlVersionChecks>  <!-- MIDL version checks do not work with [experimental] (which is used in lifted IXP idl files) -->
@@ -39,5 +39,5 @@
         </ProjectIncludeDirectories>
     </PropertyGroup>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>

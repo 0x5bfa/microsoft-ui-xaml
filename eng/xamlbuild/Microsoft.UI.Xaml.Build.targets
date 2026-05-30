@@ -6,7 +6,7 @@
         <Error Text="A project can only be native or managed but both were specified!" Condition="'$(NativeCode)'=='true' And '$(ManagedCode)'=='true'"/>
     </Target>
 
-    <Import Project="$(XamlSourcePath)\Xaml.Cpp.targets" Condition="'$(NativeCode)'=='true'" />
+    <Import Project="$(MSBuildThisFileDirectory)Xaml.Cpp.Targets" Condition="'$(NativeCode)'=='true'" />
     <Import Project="$(XamlBuildSettingsPath)\Microsoft.UI.Xaml.Build.CSharp.targets" Condition="'$(ManagedCode)'=='true'" />
 
     <Import Project="$(XamlBuildSettingsPath)\Microsoft.UI.Xaml.Build.Custom.targets" />

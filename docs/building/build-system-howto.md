@@ -189,19 +189,20 @@ property to `true` in your project. This will ensure that the project is built a
 
 It's fairly common (and expected) that developers will copy/paste other project files to get started on a new one. Not
 all project files have the same Imports right now, and most differ based on whether they are custom types projects in
-the `\tests\runtime` or in the `\controls` directory. The two important things are to import `Xaml.Cpp.props` at the top of
-the project and `Microsoft.UI.Xaml.Build.targets` at the bottom of the project. This will ensure that the rest of the
-build system works as expected.
+the `\tests\runtime` or in the `\controls` directory. The two important things are to import `Xaml.Cpp.Props` from
+`eng\xamlbuild` at the top of the project and `Microsoft.UI.Xaml.Build.targets` from the same folder at the bottom of
+the project. These imports often run before shared folder properties are available, so use a path relative to the
+project file and adjust the `..\..` depth for the project's location.
 
 #### C++
 
 ```xml
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+  <Import Project="$(MSBuildThisFileDirectory)..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
 
   <!-- Interesting project stuff  -->
 
-  <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
 </Project>
 ```
 
@@ -348,7 +349,7 @@ project use one of our shared precompiled headers, set the following property:
 </PropertyGroup>
 ```
 
-See [dxaml\msbuild\buildsettings\PreCompHeader.targets](../../dxaml/msbuild/buildsettings/PreCompHeader.targets).
+See [eng\buildsettings\PreCompHeader.targets](../../eng/buildsettings/PreCompHeader.targets).
 
 ### Using CPP/WinRT
 

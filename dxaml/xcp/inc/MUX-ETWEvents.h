@@ -3,7 +3,7 @@
 
 // In order to avoid polluting the global namespace with Started, Completed, Canceled, Error
 // (from Microsoft-Windows-XAML-ETWEvents.h)
-// _HIDE_GLOBAL_ASYNC_STATUS is defined in ProjectPreprocessorDefinitions in dxaml\common.props
+// _HIDE_GLOBAL_ASYNC_STATUS is defined in ProjectPreprocessorDefinitions in eng\xamlbuild\common.props
 // (For some reason defining it here did not work)
 
 #pragma warning(push)

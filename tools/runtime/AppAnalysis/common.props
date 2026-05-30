@@ -29,8 +29,8 @@
         <ProjectPreprocessorDefinitions Condition="'$(Configuration)'=='Debug'">$(ProjectPreprocessorDefinitions) DEBUG;</ProjectPreprocessorDefinitions>
     </PropertyGroup>
 
-    <Import Project="$(XamlSourcePath)\atl.props"/>
-    <Import Project="$(XamlSourcePath)\use-public-sdk.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\eng\xamlbuild\atl.props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\eng\xamlbuild\use-public-sdk.props"/>
 
     <PropertyGroup>
         <ProjectIncludeDirectories>

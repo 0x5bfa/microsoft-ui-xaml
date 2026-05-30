@@ -187,6 +187,16 @@ and targets are build infrastructure rather than runtime source, and consumers
 resolve them through `$(XamlBuildSettingsPath)` instead of reaching into the
 legacy `dxaml/msbuild` tree.
 
+## XAML build rules
+
+Shared XAML MSBuild entry points now live under `eng/xamlbuild`. These files
+define common runtime build behavior rather than product source, and consumers
+that import after common folder props can resolve them through
+`$(XamlBuildRulesPath)`. Projects that import these rules before common props
+use `$(MSBuildThisFileDirectory)` relative paths instead, so
+`$(XamlSourcePath)` can stay focused on the legacy runtime source root until
+`dxaml/xcp` moves.
+
 ## Runtime phone source
 
 Phone-specific runtime source now lives under `src/runtime/phone`. It is a

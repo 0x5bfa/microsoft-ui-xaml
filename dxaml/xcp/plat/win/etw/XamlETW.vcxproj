@@ -8,7 +8,7 @@
         <EtwManifest>Microsoft-Windows-XAML-ETW</EtwManifest>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.Props))"/>
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.Targets))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Targets"/>
 
 </Project>
