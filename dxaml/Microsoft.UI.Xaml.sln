@@ -1135,7 +1135,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ThemeAnimationsHelper", "xcp\components\themeanimationshelper\lib\Microsoft.UI.Xaml.ThemeAnimationsHelper.vcxproj", "{C9CBA2D3-6D77-464C-B0D9-B02DA694B0C2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper", "xcp\components\themeanimationshelper\unittests\Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper.vcxproj", "{2BE58F46-4EB3-4C10-AC55-5033F1520153}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper", "..\tests\runtime\native\isolated\foundation\themeanimationshelper\Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper.vcxproj", "{2BE58F46-4EB3-4C10-AC55-5033F1520153}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Theming", "xcp\components\theming\lib\Microsoft.UI.Xaml.Theming.vcxproj", "{EB1E79FA-171B-4812-B0EE-FD162A81DC3B}"
 EndProject

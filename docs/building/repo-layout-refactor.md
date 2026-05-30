@@ -315,6 +315,9 @@ foundation isolated test migration moving through small self-contained projects.
 The Brushes isolated test moved under
 `tests/runtime/native/isolated/foundation/brushes`, retaining its DComp test
 property usage while moving the project out of the runtime source tree.
+The ThemeAnimationsHelper isolated test moved under
+`tests/runtime/native/isolated/foundation/themeanimationshelper`, continuing the
+foundation isolated test migration with another self-contained project.
 
 ## Controls source
 
