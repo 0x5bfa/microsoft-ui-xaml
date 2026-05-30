@@ -79,7 +79,7 @@ We do NOT create an .appx/.msix for the tests. The test package is deployed as l
 same layout as an installed app would have. The test gets executed from there.
 
 The test package uses one of the appxmanifests from:
-`dxaml\test\packages\appx\`
+`tests\runtime\packages\appx\`
 The specific manifest used depends on the test metadata (specifically `UAP:AppXManifest` property).
 
 ### UWP or WPF host

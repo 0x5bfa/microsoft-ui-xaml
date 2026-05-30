@@ -1411,7 +1411,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{52
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "appx", "appx", "{707517C5-6043-433D-A0B5-B59C2A013758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "packages", "test\packages\appx\packages.csproj", "{1F38AD30-B0E3-4055-9F58-52D5934ACA4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "packages", "..\tests\runtime\packages\appx\packages.csproj", "{1F38AD30-B0E3-4055-9F58-52D5934ACA4A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "resources", "test\resources\res\resources.csproj", "{0315018D-47C9-4D39-996F-737F202FDA56}"
 EndProject

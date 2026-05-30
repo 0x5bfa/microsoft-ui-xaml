@@ -68,6 +68,12 @@ command wrapper is co-located with that helper. The runtime solution keeps
 project references to the project-based tools, and `DetoursPath` centralizes
 the remaining detours import consumers.
 
+## Runtime test packages
+
+Runtime test AppX manifest inputs now live under `tests/runtime/packages/appx`.
+They are test packaging assets rather than runtime source, and the runtime
+solution references the package project from that test-owned location.
+
 ## Controls test infrastructure
 
 Controls test infrastructure should live with the controls test projects it
