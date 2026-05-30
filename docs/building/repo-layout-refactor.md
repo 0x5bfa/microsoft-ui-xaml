@@ -279,6 +279,9 @@ component-local isolated test projects out of the runtime source tree.
 The DependencyLocator isolated test moved next under
 `tests/runtime/native/isolated/framework/dependencyLocator` using the same
 runtime-test-owned layout.
+The CValue isolated test also moved under
+`tests/runtime/native/isolated/framework/CValue`, continuing the framework
+isolated test migration out of `dxaml/xcp`.
 
 ## Controls source
 

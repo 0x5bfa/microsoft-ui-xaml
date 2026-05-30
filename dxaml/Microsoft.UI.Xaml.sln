@@ -975,7 +975,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.CriticalS
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.CValue", "xcp\components\CValue\lib\Microsoft.UI.Xaml.CValue.vcxproj", "{A96CF4EA-7170-4AFF-90A5-5FCE1055270F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue", "xcp\components\CValue\unittests\Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue.vcxproj", "{5CAE5B49-FAD9-4F7F-B3D0-832E5BEE83E2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue", "..\tests\runtime\native\isolated\framework\CValue\Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue.vcxproj", "{5CAE5B49-FAD9-4F7F-B3D0-832E5BEE83E2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Deferral", "xcp\components\deferral\lib\Microsoft.UI.Xaml.Deferral.vcxproj", "{B686A4D4-EF60-411C-98C7-FD43225DC80F}"
 EndProject
