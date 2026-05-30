@@ -40,6 +40,7 @@ exit /b 4
 set RepoRoot=%~dp0
 rem Remove the trailing backslash
 set RepoRoot=%RepoRoot:~0,-1%
+set XcpRoot=%RepoRoot%\dxaml\xcp
 
 set EnvOnly=
 set EnvCheck=
@@ -146,6 +147,7 @@ rem To set enviroment variables, use SetEnviromentVariable
 rem See top of file for reasoning
 call :SetEnviromentVariable _DotNetMoniker %_DotNetMoniker%
 call :SetEnviromentVariable RepoRoot "%RepoRoot%"
+call :SetEnviromentVariable XcpRoot "%XcpRoot%"
 
 shift
 goto:parseArgs
