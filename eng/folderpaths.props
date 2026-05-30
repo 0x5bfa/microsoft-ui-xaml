@@ -19,12 +19,15 @@
   <!-- Source related paths-->
   <PropertyGroup>
     <ProjectRelativePath>$([MSBuild]::MakeRelative($(ProjectRoot), $(MSBuildProjectDirectory)))</ProjectRelativePath>
+    <ProjectOutputRelativePath>$(ProjectRelativePath)</ProjectOutputRelativePath>
+    <ProjectOutputRelativePath Condition="'$(ProjectRelativePath)' == 'src\runtime\phone\idl'">dxaml\phone\idl</ProjectOutputRelativePath>
+    <ProjectOutputRelativePath Condition="'$(ProjectRelativePath)' == 'src\runtime\phone\lib'">dxaml\phone\lib</ProjectOutputRelativePath>
     <XamlSourcePath>$(ProjectRoot)dxaml\</XamlSourcePath>
     <XamlTargetsPath>$(ProjectRoot)eng\</XamlTargetsPath>
     <XamlBuildSettingsPath>$(XamlTargetsPath)buildsettings\</XamlBuildSettingsPath>
 
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
-    <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>
+    <XcpPhonePath>$(ProjectRoot)src\runtime\phone</XcpPhonePath>
     <RuntimeToolsPath>$(ProjectRoot)tools\runtime</RuntimeToolsPath>
     <XamlDiagTapPath>$(RuntimeToolsPath)\xamldiagnostics\tap</XamlDiagTapPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
@@ -69,8 +72,8 @@
       If the BaseIntermediateOutputPath property is supplied, just use that. Our CsWinRT generation creates projects that are already located
       in the buildoutput, so we don't use the project relative path for that.
     -->
-    <BaseOutputPath Condition="'$(BaseOutputPath)'==''">$(XamlBuildOutputRoot)$(ProjectRelativePath)\</BaseOutputPath>
-    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'==''">$(XamlBuildOutputRoot)$(ProjectRelativePath)\</BaseIntermediateOutputPath>
+    <BaseOutputPath Condition="'$(BaseOutputPath)'==''">$(XamlBuildOutputRoot)$(ProjectOutputRelativePath)\</BaseOutputPath>
+    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'==''">$(XamlBuildOutputRoot)$(ProjectOutputRelativePath)\</BaseIntermediateOutputPath>
     <BaseIntermediateOutputPath Condition="'$(GenerateProjectSpecificOutputFolder)' == 'true'">$(BaseIntermediateOutputPath)$(MSBuildProjectName)\</BaseIntermediateOutputPath>
     <!--
       Most of our projects don't need to differentiate between intermediates directories and output directories, and just put both directories' files in the same place.
@@ -101,7 +104,7 @@
     <GeneratedFilesDir>$(BaseIntermediateOutputPath)generated\</GeneratedFilesDir>
     <IntDir>$(BaseIntermediateOutputPath)</IntDir>
     <XamlBinaryPath>$(XamlBuildOutputRoot)dxaml</XamlBinaryPath>
-    <XamlBuildPath>$(XamlBuildOutputRoot)\$(ProjectRelativePath)\</XamlBuildPath>
+    <XamlBuildPath>$(XamlBuildOutputRoot)\$(ProjectOutputRelativePath)\</XamlBuildPath>
 
     <XcpObjPath>$(XamlBinaryPath)\xcp</XcpObjPath>
     <XcpPhoneObjPath>$(XamlBinaryPath)\phone</XcpPhoneObjPath>

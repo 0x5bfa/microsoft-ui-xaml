@@ -213,7 +213,7 @@ namespace CustomTasks
                         {
                             // Microsoft.UI.Xaml.Media.Animation.Transition is a special case - it's technically activatable,
                             // but its CreateInstance method is in a private interface, meaning that it can only be activated internally
-                            // by types that need to set it as their composable base - see dxaml/phone/lib/ThemeTransitions.cpp.
+                            // by types that need to set it as their composable base - see src/runtime/phone/lib/ThemeTransitions.cpp.
                             // Since it *is* a type that will be activated, however, we still need to add it to our activatable type table.
                             if (type.Name == "ITransitionFactory")
                             {

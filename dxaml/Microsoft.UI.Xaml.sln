@@ -1375,7 +1375,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5104FBAA-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eng", "eng", "{CA39DBC4-4C30-47DA-A83D-4519422BAB7E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhoneSignatureControls", "phone\lib\PhoneSignatureControls.vcxproj", "{1DE4AAD6-BC27-4945-A219-1DF04667ACC1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhoneSignatureControls", "..\src\runtime\phone\lib\PhoneSignatureControls.vcxproj", "{1DE4AAD6-BC27-4945-A219-1DF04667ACC1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "phone", "phone", "{4E3E5C16-17E0-4123-897D-DE9E656AAD4D}"
 EndProject
@@ -1383,7 +1383,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{A28A332C-843
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "idl", "idl", "{7583868D-D7BE-4508-90BD-088214A5CC77}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Phone", "phone\idl\phone.vcxproj", "{84D22D7D-5FD0-4CCF-B8D2-C34506C6BA66}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Phone", "..\src\runtime\phone\idl\phone.vcxproj", "{84D22D7D-5FD0-4CCF-B8D2-C34506C6BA66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OneCoreTransforms", "OneCoreTransforms", "{8C181C3C-5CA7-45E9-A133-63010715232C}"
 EndProject

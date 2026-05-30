@@ -444,7 +444,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.coretypes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml-main", "..\dxaml\xcp\dxaml\idl\winrt\main\Microsoft.ui.xaml-main.vcxproj", "{5876E568-B204-4219-8C08-9E8124EDAB9C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Phone", "..\dxaml\phone\idl\phone.vcxproj", "{84D22D7D-5FD0-4CCF-B8D2-C34506C6BA66}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Phone", "..\src\runtime\phone\idl\phone.vcxproj", "{84D22D7D-5FD0-4CCF-B8D2-C34506C6BA66}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "..\src\metadata\MergedWinMD\private\MergedWinMD.vcxproj", "{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}"
 EndProject
