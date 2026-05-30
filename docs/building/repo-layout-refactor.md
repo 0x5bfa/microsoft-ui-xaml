@@ -384,6 +384,9 @@ isolated test group under runtime tests.
 The Moco isolated test moved under
 `tests/runtime/native/isolated/controls/moco`, continuing the controls isolated
 test group under runtime tests.
+The Graphics isolated test moved under
+`tests/runtime/native/isolated/foundation/graphics`, keeping graphics
+infrastructure isolated tests with the foundation runtime test group.
 
 ## Controls source
 
