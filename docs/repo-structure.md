@@ -8,6 +8,7 @@
 - [/docs](#docs)
 - [/dxaml](#dxaml)
 - [/eng](#eng)
+- [/external](#external)
 - [/generated](#generated)
 - [/src](#src)
 - [/tests](#tests)
@@ -65,6 +66,10 @@ for Microsoft.UI.Xaml.dll and Microsoft.UI.Xaml.Phone.dll.
 ## /eng
 All build system and other engineering related files go in this directory.
 For more information on the build system, see the [build system design](build-system-design.md)
+
+## /external
+This folder contains checked-in third-party dependencies. Header-only
+dependencies live under `/external/include`.
 
 ## /generated
 This folder contains checked-in generated output and generated baselines.

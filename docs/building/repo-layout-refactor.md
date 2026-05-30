@@ -17,6 +17,7 @@ Use these ownership buckets for new moves:
 | `src/metadata` | Metadata composition projects that produce repo-local WinMD inputs. |
 | `tests` | Runtime, controls, compiler, sample, and Helix test assets. |
 | `eng` | Shared build, packaging, versioning, signing, and pipeline infrastructure. |
+| `external/include` | Checked-in third-party header dependencies. |
 | `tools` | Human- and CI-invoked repo tools that are not part of product source. |
 | `generated` | Checked-in generated output, visual baselines, and large derived assets. |
 | `docs/specs` | Feature and API design specs with their local images and supporting files. |
@@ -488,6 +489,10 @@ GitHub-facing repository metadata lives under `.github`. Copilot instructions
 and repo-local agent skills moved there from `src/.github` so `src` stays
 focused on source components and GitHub can discover the metadata from its
 standard location.
+
+Checked-in third-party headers now live under `external/include`, replacing the
+abbreviated `external/inc` path while keeping runtime include path consumers
+centralized in shared MSBuild props.
 
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
