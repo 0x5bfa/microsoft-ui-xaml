@@ -321,6 +321,9 @@ foundation isolated test migration with another self-contained project.
 The Text isolated test moved under
 `tests/runtime/native/isolated/foundation/text`, keeping the compact text test
 project with the runtime test tree.
+The Flyweight isolated test moved under
+`tests/runtime/native/isolated/foundation/flyweight`, keeping another compact
+foundation-style isolated test project with runtime tests.
 
 ## Controls source
 

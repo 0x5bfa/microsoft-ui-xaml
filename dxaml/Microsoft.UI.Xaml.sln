@@ -1007,7 +1007,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ExtMetada
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Flyweight", "xcp\components\flyweight\lib\Microsoft.UI.Xaml.Flyweight.vcxproj", "{88536608-BAB9-49F1-9CC6-36B7F8E73D8A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Flyweight", "xcp\components\flyweight\unittests\Microsoft.UI.Xaml.Tests.Isolated.Flyweight.vcxproj", "{8E64B605-59BF-4176-8D85-05BF0DD2D646}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Flyweight", "..\tests\runtime\native\isolated\foundation\flyweight\Microsoft.UI.Xaml.Tests.Isolated.Flyweight.vcxproj", "{8E64B605-59BF-4176-8D85-05BF0DD2D646}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusObserver", "xcp\components\focus\FocusObserver\Microsoft.UI.Xaml.Focus.FocusObserver.vcxproj", "{1FFF959E-2082-4106-AFB3-543842FCD029}"
 EndProject
