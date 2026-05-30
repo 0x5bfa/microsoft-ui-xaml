@@ -10,7 +10,7 @@ We assure our community that their input is invaluable to us, and we are dedicat
 
 
 ## Public Post on Github
-- The drafted spec from is posted as a PR under the `./specs/` directory.  
+- The drafted spec from is posted as a PR under the `docs/specs/` directory.
 
     - Example PR: [Popup placement properties API spec](https://github.com/microsoft/microsoft-ui-xaml/pull/4905)
     - Every spec will link to this public spec markdown file. <!-- TODO: Add link once it is public --> 
@@ -105,4 +105,4 @@ We will carefully consider each contribution and update the spec to reflect the 
 ### Passive Monitoring of Relevant Feedback and Issues 
 
 - Continuous monitoring for any late feedback or issues is passively maintained.  
-- Future enhancements or changes based on post-implementation feedback are considered in subsequent spec reviews. 
+- Future enhancements or changes based on post-implementation feedback are considered in subsequent spec reviews.
