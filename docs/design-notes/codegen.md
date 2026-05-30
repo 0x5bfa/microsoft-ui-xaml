@@ -89,7 +89,7 @@ Improvements in new `XamlGen.exe`
 **VS solution:** [tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln](../../tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln)
 
 Code-gen is now a build task, located at [tools/runtime/XCPTypesAutoGen/RunCodeGen/](../../tools/runtime/XCPTypesAutoGen/RunCodeGen)
-When you execute [`runcodegen.cmd`](../../dxaml/xcp/runcodegen.cmd), it simply builds this directory.
+When you execute [`runcodegen.cmd`](../../tools/runtime/XCPTypesAutoGen/runcodegen.cmd), it simply builds this directory.
 
 RunCodeGen (the build task) does the following:
 
@@ -160,9 +160,9 @@ more intuitive.
 ## Running
 
 It needs to be manually executed to generate the code files, otherwise build system reports that the files are not
-updated. The script file is `runcodegen.cmd` which exists at `dxaml/xcp` folder. Whenever the changes are made in
-template C# files, the script has to be run to generate the code files. The codegen tool is smart enough to only
-generate code files if it detects new changes.
+updated. The script file is `tools/runtime/XCPTypesAutoGen/runcodegen.cmd`. Whenever the changes are made in template
+C# files, the script has to be run to generate the code files. The codegen tool is smart enough to only generate code
+files if it detects new changes.
 
 ## Codegen attributes
 
