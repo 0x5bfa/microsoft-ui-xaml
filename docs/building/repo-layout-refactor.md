@@ -556,6 +556,10 @@ Controls XAML processing and WinUI 2 migration helpers now live under
 `controls/tools/XamlProcessing`, including the generic XAML merge script used
 by the controls build.
 
+Controls test-app build helpers now live under `controls/test/build`, keeping
+the controls test root focused on test entry points and automatically discovered
+MSBuild defaults.
+
 Runtime developer tools should move out of `dxaml/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
 as the first small runtime tool move. The XBF parser/viewer tools moved under

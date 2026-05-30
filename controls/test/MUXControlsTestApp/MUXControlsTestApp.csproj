@@ -182,8 +182,8 @@
   </ItemGroup>
 
   <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
-  <Import Project="..\RetargetCopyLocalFiles.targets" />
-  <Import Project="..\TestApp.targets" />
+  <Import Project="..\build\RetargetCopyLocalFiles.targets" />
+  <Import Project="..\build\TestApp.targets" />
 
   <!-- Filter old style pages before duplicate check -->
   <Target Name="FilterLegacyStylePages" BeforeTargets="CheckForDuplicateItems">

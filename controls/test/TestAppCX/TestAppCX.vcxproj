@@ -291,7 +291,7 @@
     <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <Import Project="..\RetargetCopyLocalFiles.targets" />
+  <Import Project="..\build\RetargetCopyLocalFiles.targets" />
   <!-- This project sometimes randomly encounters the error "MSPDBCMF(0,0): Error CMF1002: internal error (PDB error code = 0)",
        which kills the whole build even though we aren't presently using this project for anything.  We'll disable building it for now
        until we can fix that issue.  Bug 23824964 tracks actually fixing this error. -->
