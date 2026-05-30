@@ -246,6 +246,9 @@ that consume its shared helper headers now reference them through
 `$(RuntimeNativeExternalTestPath)`.
 The Automation external test DLL moved there too; shared automation client
 headers are now exposed from the runtime native external test root.
+The tools external test DLL and its custom types support project moved there
+next, with compiler-debugging docs updated to point at the new custom types
+project path.
 
 ## Controls source
 
