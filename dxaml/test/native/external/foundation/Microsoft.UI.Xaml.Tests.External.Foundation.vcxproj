@@ -39,7 +39,7 @@
         $(DRIVERS_INC_PATH);
         $(FrameworkUdkIncPath);
         $(LiftedIXPIncludePaths);
-        $(NativeExternalTestPath)\controls\inc;
+        $(RuntimeNativeExternalTestPath)\controls\inc;
         $(RuntimeNativeExternalTestPath)\enterprise\inc;
         $(NativeExternalTestPath)\foundation\graphics\animation;
         $(NativeExternalTestPath)\foundation\graphics\swapchain;

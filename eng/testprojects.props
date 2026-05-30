@@ -68,7 +68,7 @@
       is in the path
 
       For example the following path:
-        \dxaml\test\native\external\controls\primitives\JumpListItemBackgroundConverter\Microsoft.UI.Xaml.Tests.External.Controls.Primitives.JumpListItemBackgroundConverter
+        \tests\runtime\native\external\controls\primitives\JumpListItemBackgroundConverter\Microsoft.UI.Xaml.Tests.External.Controls.Primitives.JumpListItemBackgroundConverter
 
       could be shortened to:
         \dxaml\test\native\Microsoft.UI.Xaml.Tests.External.Controls.Primitives.JumpListItemBackgroundConverter
