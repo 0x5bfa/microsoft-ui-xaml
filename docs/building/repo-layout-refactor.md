@@ -360,6 +360,9 @@ isolated test group under runtime tests.
 The RelativePanel isolated test moved under
 `tests/runtime/native/isolated/controls/relativePanel`, starting a controls
 isolated test group under runtime tests.
+The LiveReorderHelper isolated test moved under
+`tests/runtime/native/isolated/controls/liveReorderHelper`, keeping
+control-adjacent isolated helper tests with the controls runtime test group.
 
 ## Controls source
 

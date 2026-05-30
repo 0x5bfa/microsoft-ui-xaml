@@ -1063,7 +1063,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.LiveReorderHelper", "xcp\components\livereorderhelper\lib\Microsoft.UI.Xaml.LiveReorderHelper.vcxproj", "{CECCE5C4-D7C0-49B9-BB89-7E7EDFC0FA5B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper", "xcp\components\livereorderhelper\unittests\Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper.vcxproj", "{8D396D52-C5A7-4CB0-A86E-D866475457C8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper", "..\tests\runtime\native\isolated\controls\liveReorderHelper\Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper.vcxproj", "{8D396D52-C5A7-4CB0-A86E-D866475457C8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Math", "xcp\components\math\lib\Microsoft.UI.Xaml.Math.vcxproj", "{BBABDB8F-DB10-4CA7-9D8E-0634B5B2A183}"
 EndProject
