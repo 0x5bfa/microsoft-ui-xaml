@@ -64,7 +64,7 @@ An accidental regression that crashed the XAML compiler had the following unhelp
 ```build
 <repo>\src\compiler\Targets\Microsoft.UI.Xaml.Markup.Compiler.interop.targets(629,9): XamlCompiler
 error WMC0605: Failure Generating XAML Binary Format: Exception=External component has thrown an exception.
-[<repo>\dxaml\test\native\external\tools\customTypes\customTypes.vcxproj]
+[<repo>\tests\runtime\native\external\tools\customTypes\customTypes.vcxproj]
 ```
 
 Running the build under the debugger was far more helpful.  `tools/msb.cmd` was modified as follows:
@@ -84,7 +84,7 @@ exit /b %ERRORLEVEL%
 ```
 
 The failing directory was then rebuilt using the msb.cmd wrapper to get it going under the debugger:
-`msb <repo>\dxaml\test\native\external\tools\customTypes\customTypes.vcxproj`
+`msb <repo>\tests\runtime\native\external\tools\customTypes\customTypes.vcxproj`
 
 WinDbgX then popped up and began debugging the build process which hosted GenXbf.dll.  As it ran the problem became
 obvious because an `ASSERT` statement was causing the process to failfast.  Closer inspection led to the root cause
