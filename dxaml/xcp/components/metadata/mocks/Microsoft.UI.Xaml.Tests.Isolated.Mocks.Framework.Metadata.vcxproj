@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\base.props"/>
 
     <PropertyGroup>

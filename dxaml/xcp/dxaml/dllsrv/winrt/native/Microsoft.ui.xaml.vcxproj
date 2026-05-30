@@ -40,7 +40,7 @@
     <ProjectGuid>{d6a86b75-c0d2-4761-844c-9d83a130af69}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
-  <Import Project="$(XamlSourcePath)\xcp\project-lift.props" />
+  <Import Project="$(XcpPath)\project-lift.props" />
   <Import Project="..\sources.props" />
   <Import Project="$(ProjectRoot)eng\winui-version.props" />
   <Import Project="$(ProjectRoot)\perf\pgo\Microsoft.WinUI.PGO.props" />

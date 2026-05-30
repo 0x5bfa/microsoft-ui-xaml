@@ -12,7 +12,7 @@
     <!-- UT:TARGET_DESTINATION=NTTEST\WINDOWSTEST\dxaml\test -->
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
 
     <Import Project="$(XcpPath)\components\unittest.props"/>
 

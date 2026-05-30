@@ -12,7 +12,7 @@
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
 
-    <Import Project="$(XamlSourcePath)\xcp\dxaml\tools\AppAnalysis\common.props"/>
+    <Import Project="$(XcpPath)\dxaml\tools\AppAnalysis\common.props"/>
 
     <PropertyGroup>
         <ProjectIncludeDirectories>$(ProjectIncludeDirectories);</ProjectIncludeDirectories>

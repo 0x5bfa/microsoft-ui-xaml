@@ -2,7 +2,7 @@
 <!-- Copyright (c) Microsoft Corporation. Licensed under the MIT License. See LICENSE in the project root for license information. -->
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
 
     <!-- Some WinRT components used for testing requires RuntimeClass's GetRuntimeClassName/GetTrustLevel implementations, -->
     <!-- which require __WRL_STRICT__ & __WRL_FORCE_INSPECTABLE_CLASS_MACRO__ to be undefined, so the project.mk is split  -->

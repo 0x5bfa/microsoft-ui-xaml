@@ -8,7 +8,7 @@
     <ProjectName>Microsoft.ui.xaml-main</ProjectName>
   </PropertyGroup>
   <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
-  <Import Project="$(XamlSourcePath)\xcp\project-lift.props" />
+  <Import Project="$(XcpPath)\project-lift.props" />
   <ItemGroup>
     <Midl Include="windows.foundation.declarations.idl" CopyToPublicHeadersPath="true" />
     <Midl Include="microsoft.ui.xaml.idl" CopyToPublicHeadersPath="true" />

@@ -7,7 +7,7 @@
     <ProjectGuid>{379aa0e5-75bd-4ac3-9e9d-2168f400f1b0}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
-  <Import Project="$(XamlSourcePath)\xcp\project-lift.props" />
+  <Import Project="$(XcpPath)\project-lift.props" />
   <PropertyGroup>
     <TargetDestination>retail</TargetDestination>
   </PropertyGroup>

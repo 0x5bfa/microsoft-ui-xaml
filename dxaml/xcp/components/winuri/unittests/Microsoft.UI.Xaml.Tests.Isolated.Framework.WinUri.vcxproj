@@ -12,7 +12,7 @@
     <!-- UT:TARGET_DESTINATION=NTTEST\WINDOWSTEST\dxaml\test -->
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
 
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
@@ -46,15 +46,15 @@
 
     <ItemGroup>
         <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\winuri\lib\winuri.vcxproj" Project="{0c3c2872-56a3-4acf-b2f7-8c05710b93ae}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\allocation\lib\Microsoft.UI.Xaml.Allocation.vcxproj" Project="{502b46a0-df35-4692-8275-ce66e7fdd741}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj" Project="{f9da8380-5504-4acc-bde0-72cd5981826d}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\staticpal\lib\Microsoft.UI.Xaml.StaticPal.vcxproj" Project="{c766b284-6b02-474b-9a87-58b2a997bc59}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\common\common.vcxproj" Project="{4d75f86e-1c8e-40b3-9767-d8a7cdca82eb}"/>
+        <ProjectReference Include="$(XcpPath)\components\winuri\lib\winuri.vcxproj" Project="{0c3c2872-56a3-4acf-b2f7-8c05710b93ae}"/>
+        <ProjectReference Include="$(XcpPath)\components\allocation\lib\Microsoft.UI.Xaml.Allocation.vcxproj" Project="{502b46a0-df35-4692-8275-ce66e7fdd741}"/>
+        <ProjectReference Include="$(XcpPath)\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj" Project="{f9da8380-5504-4acc-bde0-72cd5981826d}"/>
+        <ProjectReference Include="$(XcpPath)\components\staticpal\lib\Microsoft.UI.Xaml.StaticPal.vcxproj" Project="{c766b284-6b02-474b-9a87-58b2a997bc59}"/>
+        <ProjectReference Include="$(XcpPath)\common\common.vcxproj" Project="{4d75f86e-1c8e-40b3-9767-d8a7cdca82eb}"/>
         <ProjectReference Include="$(XcpPath)\hostpalplatmisc.vcxproj" Project="{379aa0e5-75bd-4ac3-9e9d-2168f400f1b0}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\pal\debug\PALDebug.vcxproj" Project="{aebb76ae-fbd9-4c2d-b0c0-3b7ff5963d7d}"/>
+        <ProjectReference Include="$(XcpPath)\pal\debug\PALDebug.vcxproj" Project="{aebb76ae-fbd9-4c2d-b0c0-3b7ff5963d7d}"/>
         <ProjectReference Include="$(XamlSourcePath)\test\native\isolated\shared\Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj" Project="{3ea83b4a-7041-4ea2-9e18-9e571b97451f}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\unittests\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
+        <ProjectReference Include="$(XcpPath)\components\unittests\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

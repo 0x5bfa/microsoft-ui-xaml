@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest.props"/>
 
     <!-- Satisfy "UT", which currently doesn't parse includes. -->
@@ -38,8 +38,8 @@
 
     <ItemGroup>
         <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\AccessKeys\AccessKey\lib\AccessKeys.AKAccessKey.vcxproj" Project="{f43ad9ae-a7c4-4e99-8d9f-fe2dbed5a568}"/>
-        <ProjectReference Include="$(XamlSourcePath)\xcp\components\AccessKeys\Parser\lib\AccessKeys.AKParser.vcxproj" Project="{ed253c25-0512-4fd8-b050-3c3c6835f2ef}"/>
+        <ProjectReference Include="$(XcpPath)\components\AccessKeys\AccessKey\lib\AccessKeys.AKAccessKey.vcxproj" Project="{f43ad9ae-a7c4-4e99-8d9f-fe2dbed5a568}"/>
+        <ProjectReference Include="$(XcpPath)\components\AccessKeys\Parser\lib\AccessKeys.AKParser.vcxproj" Project="{ed253c25-0512-4fd8-b050-3c3c6835f2ef}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

@@ -11,7 +11,7 @@
     <!-- The purpose of this lib is to only contain the symbols that the XbfGen tool cares about. -->
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\projectbase.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
 
     <Import Project="$(XcpPath)\components\common.props"/>
 
