@@ -295,6 +295,6 @@ set EnvironmentInitialized=1
 if "%NoTitle%"=="" (
    title DCPP %RepoRoot% - %_BuildArch%%_BuildType%
 )
-doskey /macrofile=%RepoRoot%\scripts\aliases
+doskey /macrofile=%RepoRoot%\scripts\init\aliases
 
 exit /b 0
