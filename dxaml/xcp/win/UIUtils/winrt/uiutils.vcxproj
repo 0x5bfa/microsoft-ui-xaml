@@ -16,7 +16,7 @@
     <!-- ***************************************************************************/ -->
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\xcp\project-lift.props"/>
+    <Import Project="$(XcpPath)\project-lift.props"/>
     <Import Project="$(XcpPath)\common.props"/>
 
     <ItemGroup>

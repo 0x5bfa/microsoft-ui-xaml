@@ -68,6 +68,7 @@ Write-Host "Restoring Maestro and ensuring authentication..."
 msbuild -nologo -t:Restore $repoRoot\eng\Microsoft.MaestroRestore.csproj -v:$Verbosity -p:Configuration=Release -p:NugetInteractive=true -p:PublishReadyToRun=true
 
 Write-Host "Restoring additional packages..."
+$xcpPath = 'dxaml\xcp'
 $projectPackages = @(
     'perf\packages.config',
     'eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj',
@@ -75,7 +76,7 @@ $projectPackages = @(
     'src\controls\dll\packages.config',
     'src\compiler\XamlCompilerPrerequisites.sln',
     'dxaml\Microsoft.UI.Xaml.sln',
-    'dxaml\xcp\tools\XbfParser\XbfParser.sln',
+    "$xcpPath\tools\XbfParser\XbfParser.sln",
     'src\compiler\XamlCompiler.sln'
 )
 

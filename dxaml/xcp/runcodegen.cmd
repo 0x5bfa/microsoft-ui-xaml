@@ -10,8 +10,10 @@ SETLOCAL
 REM Use "/noabi" command line argument to not prefix with ABI.
 SET PREFIXABI=%1
 SET DEV_RUNNING_CODE_GEN=true
-SET RUNCODEGEN_PATH=%RepoRoot%\dxaml\xcp\tools\XCPTypesAutoGen\RunCodeGen
-SET XBFINDEXES_PATH=%RepoRoot%\dxaml\xcp\tools\XCPTypesAutoGen\XamlGen
+SET "XCP_PATH=%~dp0"
+IF "%XCP_PATH:~-1%"=="\" SET "XCP_PATH=%XCP_PATH:~0,-1%"
+SET "RUNCODEGEN_PATH=%XCP_PATH%\tools\XCPTypesAutoGen\RunCodeGen"
+SET "XBFINDEXES_PATH=%XCP_PATH%\tools\XCPTypesAutoGen\XamlGen"
 SET UPDATE_FILES_CMD_PATH=%BuildOutputRoot%\%_BuildArch%%_BuildType%\dxaml\Codegen\updatecheckedinfiles.cmd
 
 @echo.
