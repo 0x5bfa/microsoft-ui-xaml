@@ -392,8 +392,7 @@ The XamlDiagnostics isolated test moved under
 isolated test group under runtime tests.
 The Parser isolated test moved under
 `tests/runtime/native/isolated/framework/parser`, continuing the framework
-isolated test group under runtime tests while leaving shared metadata mocks in
-the component tree for existing consumers.
+isolated test group under runtime tests.
 The Lifetime isolated test moved under
 `tests/runtime/native/isolated/foundation/lifetime`, keeping runtime lifetime
 coverage with the foundation isolated test group.
@@ -409,6 +408,10 @@ coverage with the foundation isolated test group.
 Shared isolated test stubs, external mocks, and support headers moved under
 `tests/runtime/native/isolated/shared`, so component tests can reference shared
 test infrastructure through `$(NativeIsolatedTestPath)`.
+Shared framework metadata mocks moved under
+`tests/runtime/native/isolated/shared/mocks/metadata`, so parser, metadata,
+ValueBoxer, and focus isolated tests no longer reference metadata test mocks
+from the component source tree.
 The remaining KeyDownUp source-only unit test files moved under
 `tests/runtime/native/isolated/controls/keyDownUp`, keeping those test sources
 with the controls isolated test tree without changing project participation.
