@@ -49,10 +49,10 @@ one. `VerifyCanAssociate` will confirm that we're not setting the same object, t
 it will raise an error.
 
 Note that not all properties have association restrictions. Those that care are annotated with a
-`[RequiresMultipleAssociationCheck]` tag in codegen (see `dxaml/xcp/tools/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.Media.cs`).
+`[RequiresMultipleAssociationCheck]` tag in codegen (see `tools/runtime/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.Media.cs`).
 One example is `Border.Child`. If an element is the child of one Border, it can't be the child of
 another. Some properties, like
-`ItemsControl.ItemsHost` (see `dxaml/xcp/tools/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.Controls.cs`),
+`ItemsControl.ItemsHost` (see `tools/runtime/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.Controls.cs`),
 don't have such a restriction. These are typically properties that don't actually put the object in the tree.
 [`ItemsControl.ItemsHost`](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.itemscontrol.itemspanel?view=windows-app-sdk-1.1)
 isn't in the tree; it's just a template for the panel that controls the layout of the items. The same `Grid` can serve

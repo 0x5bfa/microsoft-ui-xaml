@@ -117,7 +117,7 @@ Runs static analysis on the built binaries: currently, only performs WinMD compa
 
 These WinMD compat tests will fail if a new type is added to a shipped contract or if a type in a shipped contract has
 been modified in some way (e.g., adding a new property). To remedy these failures, you should add a new contract
-version in dxaml\xcp\tools\XCPTypesAutoGen\XamlOM\Model\Contracts.cs and then attach the new types, properties, or
+version in tools\runtime\XCPTypesAutoGen\XamlOM\Model\Contracts.cs and then attach the new types, properties, or
 methods to that new contract version instead of the existing contract version. Note that the number used in Xaml
 codegen's `[Platform]` and `[Version]` tags do not need to match the version of the contract. You can have a
 `[Platform(2, typeof(Microsoft.UI.Xaml.WinUIContract), 4)]` that ties type version 2 to contract version 4, for example.

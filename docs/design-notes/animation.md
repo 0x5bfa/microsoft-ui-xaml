@@ -61,7 +61,7 @@ that calls this API.
 The
 [`UIElement.StartAnimation`](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.uielement.startanimation?view=windows-app-sdk-1.2)
 API allows Composition animations to animate Xaml objects. It works by having `UIElement` implement Composition's
-`IAnimationObject` interface (see `dxaml/xcp/tools/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.cs`).
+`IAnimationObject` interface (see `tools/runtime/XCPTypesAutoGen/XamlOM/Model/Microsoft.UI.Xaml.cs`).
 The interface allows `UIElement` to map a property name to a real Composition object wrapped inside the
 `UIElement` to be animated by the Composition animation. The interface
 does this via a AnimationPropertyInfo class that has the

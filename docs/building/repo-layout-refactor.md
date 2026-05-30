@@ -454,7 +454,9 @@ standalone `SplitGenericXaml` project also moved under
 `tools/runtime/SplitGenericXaml`; runtime theme generation still builds its
 local copy from `dxaml/xcp/dxaml/themes/autogen`. `GenXbfDLL` moved under
 `tools/runtime/GenXbfDLL` as a build-integrated runtime tool, with MSBuild
-project references using `$(RuntimeToolsPath)`.
+project references using `$(RuntimeToolsPath)`. The runtime code generation
+toolchain moved under `tools/runtime/XCPTypesAutoGen`, including the
+checked-in stable XBF index inputs that `runcodegen.cmd` updates.
 
 ## Specs documentation
 
