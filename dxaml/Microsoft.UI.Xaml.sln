@@ -1299,7 +1299,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xcpcore", "xcp\core\xcpcore
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coretext", "xcp\core\text\coretext.vcxproj", "{8F008900-E6E3-4443-92ED-34FBAD8042B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpXbf", "xcp\tools\DumpXbf\DumpXbf.csproj", "{8632C717-C327-4FBD-A7E2-85F73C859333}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpXbf", "..\tools\runtime\DumpXbf\DumpXbf.csproj", "{8632C717-C327-4FBD-A7E2-85F73C859333}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenXbf", "xcp\tools\GenXbfDLL\GenXbf.vcxproj", "{42577057-854D-443D-AB59-F4E44C8F5207}"
 EndProject

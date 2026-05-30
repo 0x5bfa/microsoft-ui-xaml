@@ -445,6 +445,10 @@ limited to repository-wide entry points and configuration.
 The standalone debugger extension script now lives under `tools/dbgext`, grouped
 with other manually invoked repo tools.
 
+Runtime developer tools should move out of `dxaml/xcp/tools` when they are not
+product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
+as the first small runtime tool move.
+
 ## Specs documentation
 
 Feature and API design specs now live under `docs/specs`. API review specs moved
