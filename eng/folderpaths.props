@@ -32,6 +32,7 @@
     <NativeIsolatedTestPath>$(RuntimeTestPath)\native\isolated</NativeIsolatedTestPath>
     <NativeIncPath>$(RuntimeTestPath)\native\inc</NativeIncPath>
     <RuntimeInfraTestPath>$(RuntimeTestPath)\infra</RuntimeInfraTestPath>
+    <RuntimeNativeExternalTestPath>$(RuntimeTestPath)\native\external</RuntimeNativeExternalTestPath>
     <RuntimeManagedTestPath>$(RuntimeTestPath)\managed</RuntimeManagedTestPath>
     <ManagedTestPath>$(RuntimeManagedTestPath)</ManagedTestPath>
 
@@ -108,6 +109,7 @@
     <UnmergedWinmdOutputLocation>$(Outdir)</UnmergedWinmdOutputLocation>
 
     <RuntimeInfraTestObjPath>$(XamlBuildOutputRoot)tests\runtime\infra</RuntimeInfraTestObjPath>
+    <RuntimeNativeExternalTestObjPath>$(XamlBuildOutputRoot)tests\runtime\native\external</RuntimeNativeExternalTestObjPath>
 
     <PrivateInfrastructureWin32HostingObjPath>$(RuntimeInfraTestObjPath)\Win32Hosting</PrivateInfrastructureWin32HostingObjPath>
   </PropertyGroup>
