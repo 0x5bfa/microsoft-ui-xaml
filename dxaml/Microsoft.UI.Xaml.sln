@@ -1303,9 +1303,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpXbf", "..\tools\runtime
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenXbf", "xcp\tools\GenXbfDLL\GenXbf.vcxproj", "{42577057-854D-443D-AB59-F4E44C8F5207}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleXbfViewer", "xcp\tools\XbfParser\SampleXbfViewer\SampleXbfViewer.csproj", "{BB6CE1D3-AA88-4F8E-BA21-E1DE94571DC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleXbfViewer", "..\tools\runtime\XbfParser\SampleXbfViewer\SampleXbfViewer.csproj", "{BB6CE1D3-AA88-4F8E-BA21-E1DE94571DC3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WidgetSpinner", "xcp\tools\XbfParser\WidgetSpinner\WidgetSpinner.csproj", "{767D7345-33A0-43A3-9625-DB78B24DD1CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WidgetSpinner", "..\tools\runtime\XbfParser\WidgetSpinner\WidgetSpinner.csproj", "{767D7345-33A0-43A3-9625-DB78B24DD1CD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shared", "xcp\win\shared\sl\shared.vcxproj", "{E5804231-9D90-4E97-812D-855BA72B8426}"
 EndProject
