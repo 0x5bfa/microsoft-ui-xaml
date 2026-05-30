@@ -13,7 +13,6 @@
   <PropertyGroup>
     <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
     <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
-    <XamlDiagTapPath>$(XcpPath)\dxaml\tools\xamldiagnostics\tap</XamlDiagTapPath>
     <!-- $REVIEW: This comment is probably not correct and is probably as a result of a multiline comment being placed on a single value in a multivalue property set -->
     <!-- Some types appear in microsoft.diagnostics.appanalysis.winmd that are expected in another 'assembly'. -->
     <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions);MIDL_NS_PREFIX;</ProjectPreprocessorDefinitions>
@@ -40,7 +39,6 @@
         $(XcpPath)\components\base\inc;
         $(XcpPath)\components\xamldiagnostics\inc;
         $(XcpPath)\dxaml\tools\AppAnalysis\dll;
-        $(XcpPath)\dxaml\tools\xamldiagnostics\tap;
         $(WinUIDetailsIncludePath)\abi;
         $(WinUIDetailsIncludePath)\MockDComp;
       </AdditionalIncludeDirectories>
