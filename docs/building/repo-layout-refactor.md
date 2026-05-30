@@ -223,7 +223,8 @@ compile-only project moved first, with consumers using
 `$(RuntimeNativeExternalTestPath)` for source and
 `$(RuntimeNativeExternalTestObjPath)` for generated object dependencies. Shared
 external-test headers live there too, so consumers no longer need to include
-headers from the legacy source tree.
+headers from the legacy source tree. The external precompiled-header project
+also lives there and is referenced through `$(RuntimeNativeExternalTestPath)`.
 
 ## Controls source
 

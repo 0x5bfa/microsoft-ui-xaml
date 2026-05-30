@@ -65,7 +65,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="$(NativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
+        <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

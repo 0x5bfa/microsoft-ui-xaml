@@ -248,7 +248,7 @@
     <ClCompile Include="xdefer\tests\ElementDeferralTests.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(NativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
+    <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="customTypes\App.xaml" />

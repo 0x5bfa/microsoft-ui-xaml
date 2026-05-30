@@ -34,7 +34,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="$(NativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" Project="{c34f3204-817a-4715-83ad-173f686adb5a}"/>
+        <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" Project="{c34f3204-817a-4715-83ad-173f686adb5a}"/>
     </ItemGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />

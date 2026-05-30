@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
 <!-- Licensed under the MIT License. See LICENSE in the project root for license information. -->
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11,7 +11,7 @@
     <Import Project="$(NativeExternalTestPath)\base.props"/>
 
     <PropertyGroup>
-        <XamlPrecompiledShared>$(NativeExternalTestPath)\pch\pch.h</XamlPrecompiledShared>
+        <XamlPrecompiledShared>$(RuntimeNativeExternalTestPath)\pch\pch.h</XamlPrecompiledShared>
 
         <!-- When compiling with the current _MSC_VER (instead of the faked 1710), many deprecated functions are exposed -->
         <!-- Since these are tests, the deprecated functions may actually need to be called                              -->
@@ -64,7 +64,7 @@
     </ItemDefinitionGroup>
 
     <ItemGroup>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{c34f3204-817a-4715-83ad-173f686adb5a}'" Include="$(NativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" Project="{c34f3204-817a-4715-83ad-173f686adb5a}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{c34f3204-817a-4715-83ad-173f686adb5a}'" Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" Project="{c34f3204-817a-4715-83ad-173f686adb5a}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{e076fa9c-3b19-431a-a566-3e771f962428}'" Include="$(RuntimeInfraTestPath)\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
         <ProjectReference Include="$(XcpPath)\components\xamlDiagnostics\idl\xamlom.vcxproj" />
         <ProjectReference Include="$(RuntimeInfraTestPath)\Win32Hosting\WPF\HostingHelpers\Private.Infrastructure.Hosting.HostingHelpers.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />

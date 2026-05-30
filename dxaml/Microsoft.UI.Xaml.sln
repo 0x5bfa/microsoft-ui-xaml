@@ -871,7 +871,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Man
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Native.External.Infrastructure", "..\tests\runtime\native\external\infra\Private.Native.External.Infrastructure.vcxproj", "{A814C8D3-CF4D-4E7F-A1F6-BA6D2B2E328C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Precomp", "test\native\external\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj", "{C34F3204-817A-4715-83AD-173F686ADB5A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Precomp", "..\tests\runtime\native\external\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj", "{C34F3204-817A-4715-83AD-173F686ADB5A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Quality", "test\native\external\quality\Microsoft.UI.Xaml.Tests.External.Quality.vcxproj", "{9C9CB6E3-9806-4FEE-988B-AEE06EC46844}"
 EndProject
