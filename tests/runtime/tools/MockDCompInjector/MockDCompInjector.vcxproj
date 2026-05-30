@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Xaml.Cpp.props"/>
-    <Import Project="$(XamlSourcePath)\test\common.props"/>
+    <Import Project="$(RuntimeTestPath)\common.props"/>
 
     <!-- Helps an app with loading Microsoft.UI.Xaml.dll from an alternative location and injecting MockDComp.dll on app loading -->
     <!-- assuming it is all in the same directory along with Mock10.dll                                                        -->

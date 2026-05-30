@@ -6,7 +6,7 @@
     <ProjectGuid>{760F8B1C-525B-49A4-A702-64A2B8AA863A}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props" />
-  <Import Project="$(XamlSourcePath)\test\common.props" />
+  <Import Project="$(RuntimeTestPath)\common.props" />
   <Import Project="$(RuntimeNativeExternalTestPath)\common.props" />
   <ItemDefinitionGroup>
     <ClCompile>

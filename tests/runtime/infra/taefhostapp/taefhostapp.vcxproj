@@ -53,7 +53,7 @@
   </PropertyGroup>
   <!-- We need this for basic environment stuff to work correctly -->
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Project="$(XamlSourcePath)\test\common.props" />
+  <Import Project="$(RuntimeTestPath)\common.props" />
   <!-- TAEF.targets always sets INLINE_TEST_METHOD_MARKUP.  We don't want that defined so capture the value before the import and override it
          back to the starting value afterwards. -->
   <ItemDefinitionGroup>

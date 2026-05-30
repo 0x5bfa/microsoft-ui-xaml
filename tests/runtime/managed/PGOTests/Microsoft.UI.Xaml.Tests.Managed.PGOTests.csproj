@@ -10,7 +10,7 @@
     </PropertyGroup>
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\dxaml\Microsoft.UI.Xaml.Build.Managed.props"/>
-    <Import Project="$(XamlSourcePath)\test\common.props"/>
+    <Import Project="$(RuntimeTestPath)\common.props"/>
 
     <ItemGroup>
         <Compile Include="PGOXboxDashboardTests.cs"/>

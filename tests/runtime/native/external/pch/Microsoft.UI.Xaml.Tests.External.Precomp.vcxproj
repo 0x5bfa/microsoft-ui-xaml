@@ -31,7 +31,7 @@
     </ItemDefinitionGroup>
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
-    <Import Project="$(XamlSourcePath)\test\common.props"/>
+    <Import Project="$(RuntimeTestPath)\common.props"/>
     <Import Project="$(RuntimeNativeExternalTestPath)\base.props"/>
 
     <!-- This is a shared precompiled header. We do this so we can have multiple  -->
