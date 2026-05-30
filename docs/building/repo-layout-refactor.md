@@ -375,6 +375,9 @@ adaptability isolated test group under runtime tests.
 The XYFocus isolated test moved under
 `tests/runtime/native/isolated/xaml/focus/xyFocus`, continuing the XAML focus
 isolated test group under runtime tests.
+The Theming isolated test moved under
+`tests/runtime/native/isolated/controls/theming`, continuing the controls
+isolated test group under runtime tests.
 
 ## Controls source
 
