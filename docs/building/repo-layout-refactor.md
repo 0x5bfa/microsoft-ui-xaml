@@ -324,6 +324,9 @@ project with the runtime test tree.
 The Flyweight isolated test moved under
 `tests/runtime/native/isolated/foundation/flyweight`, keeping another compact
 foundation-style isolated test project with runtime tests.
+The Associative isolated test moved under
+`tests/runtime/native/isolated/foundation/associative`, continuing the migration
+of compact runtime component tests into the runtime test tree.
 
 ## Controls source
 
