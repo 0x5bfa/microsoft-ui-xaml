@@ -8,8 +8,8 @@
   </ItemGroup>
   <Target Name="CreateAppxDirectory" BeforeTargets="Binplace" Condition="'$(IsPackagedTestApp)' == 'true'">
     <ItemGroup>
-      <DeploymentFiles Include="$(MSBuildThisFileDirectory)tools\CreateAppxDirectory.msbuildproj" />
-      <DeploymentFiles Include="$(MSBuildThisFileDirectory)tools\InstallAppFromLayout.ps1" />
+      <DeploymentFiles Include="$(MSBuildThisFileDirectory)tools\TestAppDeployment\CreateAppxDirectory.msbuildproj" />
+      <DeploymentFiles Include="$(MSBuildThisFileDirectory)tools\TestAppDeployment\InstallAppFromLayout.ps1" />
     </ItemGroup>
     <Copy SourceFiles="@(DeploymentFiles)" DestinationFiles="$(OutDir)%(Filename)%(Extension)" SkipUnchangedFiles="True" />
     <PropertyGroup>

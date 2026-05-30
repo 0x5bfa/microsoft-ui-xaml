@@ -498,6 +498,12 @@ Controls new-control scaffolding helpers now live under
 `controls/tools/ControlGeneration`, with reusable `NEWCONTROL` templates under
 that folder's `Templates` directory.
 
+Controls packaged test app deployment helpers now live under
+`controls/tools/TestAppDeployment`. Build integration still copies
+`CreateAppxDirectory.msbuildproj` and `InstallAppFromLayout.ps1` into the test
+app output directory with their original filenames, preserving runtime install
+script discovery.
+
 Runtime developer tools should move out of `dxaml/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
 as the first small runtime tool move. The XBF parser/viewer tools moved under
