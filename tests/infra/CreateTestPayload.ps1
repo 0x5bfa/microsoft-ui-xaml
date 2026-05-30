@@ -39,7 +39,7 @@ if($Platform -eq "x64")
     $Arch = "amd64"
 }
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 
 if(!$BinSourceRoot)
 {
@@ -165,7 +165,7 @@ if ($Mode -eq "DevTestSuite" -or $Mode -eq "ScenarioTestSuite")
     Publish-Item "$binpath\TestDependencies\crt\vc_redist.$redistPlatform.exe" "$outpath"
 
     # Publish items from repo:
-    Publish-Item "$repoRoot\Test\scripts\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\scripts\*" "$outpath"
     Publish-Item "$repoRoot\Helix\scripts\*" "$outpath"
     Publish-Item "$repoRoot\Helix\common\test\*" "$outpath"
     Publish-Item "$repoRoot\controls\tools\EnableMUXControlsTestAppManagedDebugging.*" "$outpath"

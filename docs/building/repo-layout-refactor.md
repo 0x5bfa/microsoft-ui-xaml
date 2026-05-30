@@ -40,6 +40,14 @@ so the source tree can keep compiler implementation separate from compiler test
 orchestration. The compiler source solution references unit-test projects
 through `tests/compiler`.
 
+## Shared test infrastructure
+
+The top-level test payload entry points now live under `tests/infra`.
+`CreateTestPayload.cmd`, `CreateTestPayload.ps1`, and their companion scripts
+moved there so repo-level test orchestration is grouped with other separated
+test assets. Helix remains at the repo root until pipeline project references
+can be moved and validated separately.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.
@@ -56,7 +64,8 @@ through `tests/compiler`.
 
 1. Move compiler test project assets into `tests/compiler` once they are
    present in the checkout and their generation/update workflows are verified.
-2. Move Helix and top-level test scripts under `tests/infra`.
+2. Move Helix under `tests/infra` after pipeline project references are
+   audited.
 3. Move `controls/dev/Generated`, IntelliSense XML, and visual baselines into a
    generated-assets area with clear update tooling.
 4. Move `controls/dev` to `src/controls` after the controls solution path usage
