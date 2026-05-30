@@ -127,7 +127,7 @@ DirectUI code:
 - dxaml/xcp/dxaml/lib/InputSiteAdapter.cpp
 
 Test code:
-- dxaml/test/managed/enterprise/ScrollViewer
+- tests/runtime/managed/enterprise/ScrollViewer
 - dxaml/test/managed/controls/flipview  combobox  textbox  richeditbox
 - dxaml/test/native/external/controls/scrollviewer  flipview  semanticzoom  textbox  richeditbox  contentdialog  combobox  listbox  hub  pivot  
 - dxaml/test/native/external/foundation/input/DManip
