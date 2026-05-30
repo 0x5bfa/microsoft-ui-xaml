@@ -67,7 +67,7 @@
         <ProjectReference Condition="'$(ProjectGuid)'!='{c34f3204-817a-4715-83ad-173f686adb5a}'" Include="$(NativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" Project="{c34f3204-817a-4715-83ad-173f686adb5a}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{e076fa9c-3b19-431a-a566-3e771f962428}'" Include="$(InfraTestPath)\client\idl\Private.Infrastructure.vcxproj" Project="{e076fa9c-3b19-431a-a566-3e771f962428}"/>
         <ProjectReference Include="$(XcpPath)\components\xamlDiagnostics\idl\xamlom.vcxproj" />
-        <ProjectReference Include="$(InfraTestPath)\Win32Hosting\WPF\HostingHelpers\Private.Infrastructure.Hosting.HostingHelpers.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
+        <ProjectReference Include="$(RuntimeInfraTestPath)\Win32Hosting\WPF\HostingHelpers\Private.Infrastructure.Hosting.HostingHelpers.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='Application'">

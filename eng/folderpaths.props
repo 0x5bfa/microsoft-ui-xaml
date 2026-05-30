@@ -111,7 +111,7 @@
     <InfraTestObjPath>$(TestObjPath)\infra</InfraTestObjPath>
     <RuntimeInfraTestObjPath>$(XamlBuildOutputRoot)tests\runtime\infra</RuntimeInfraTestObjPath>
 
-    <PrivateInfrastructureWin32HostingObjPath>$(InfraTestObjPath)\Win32Hosting</PrivateInfrastructureWin32HostingObjPath>
+    <PrivateInfrastructureWin32HostingObjPath>$(RuntimeInfraTestObjPath)\Win32Hosting</PrivateInfrastructureWin32HostingObjPath>
   </PropertyGroup>
 
   <!-- Platform winmd paths -->
