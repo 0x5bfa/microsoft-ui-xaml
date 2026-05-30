@@ -855,7 +855,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Infrastructure.Host
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Toolkit.Win32.UI.XamlHost", "test\infra\Win32Hosting\src\Microsoft.Toolkit.Win32.UI.XamlHost.csproj", "{5CBC81FB-B34E-4479-A34E-6AF99D5045A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.AccessKeys", "test\managed\AccessKeys\Microsoft.UI.Xaml.Tests.Managed.AccessKeys.csproj", "{63DDA92D-4E89-4E9E-841B-9E83C3D348B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.AccessKeys", "..\tests\runtime\managed\AccessKeys\Microsoft.UI.Xaml.Tests.Managed.AccessKeys.csproj", "{63DDA92D-4E89-4E9E-841B-9E83C3D348B4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests", "test\managed\animation\Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests.csproj", "{1B3FD2E3-93C7-4C16-A64D-CA88F24EEF06}"
 EndProject
