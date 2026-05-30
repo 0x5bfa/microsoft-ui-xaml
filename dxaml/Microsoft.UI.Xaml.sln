@@ -1337,9 +1337,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Ext
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Controls.CustomTypes", "..\tests\runtime\native\external\controls\customtypes\CustomTypes.vcxproj", "{2908CFE7-EF42-44EC-B87A-D1A170B70E41}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Foundation", "test\native\external\foundation\Microsoft.UI.Xaml.Tests.External.Foundation.vcxproj", "{1FF9CB13-F29E-4756-B3FC-D450E43F2A0A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Foundation", "..\tests\runtime\native\external\foundation\Microsoft.UI.Xaml.Tests.External.Foundation.vcxproj", "{1FF9CB13-F29E-4756-B3FC-D450E43F2A0A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Foundation.CustomTypes", "test\native\external\foundation\customTypes\CustomTypes.vcxproj", "{FFD35DA8-9859-4626-89B7-DC9C94BCCAD8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Foundation.CustomTypes", "..\tests\runtime\native\external\foundation\customTypes\CustomTypes.vcxproj", "{FFD35DA8-9859-4626-89B7-DC9C94BCCAD8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Framework", "..\tests\runtime\native\external\framework\Microsoft.UI.Xaml.Tests.External.Framework.vcxproj", "{291A6012-8CA1-488A-B14F-D1B1B5C778B2}"
 EndProject

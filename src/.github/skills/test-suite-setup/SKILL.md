@@ -63,14 +63,14 @@ When this skill is invoked:
    | `dxaml/xcp/components/text/**` | `External.Foundation` (text tests), `Isolated.Text` | WPF / None |
    | `dxaml/xcp/components/focus/**` | `Isolated.Xaml.Focus.*` | None |
    | `dxaml/xcp/components/accesskeys/**` | `Isolated.AccessKeys.*` | None |
-   | `dxaml/test/native/external/foundation/**` | `External.Foundation` | WPF |
-   | `dxaml/test/native/external/framework/**` | `External.Framework` | WPF |
-   | `dxaml/test/native/external/controls/**` | `External.Controls` | WPF |
-   | `dxaml/test/native/external/automation/**` | `External.Automation` | WPF |
-   | `dxaml/test/native/external/enterprise/**` | `External.Enterprise` | WPF |
-   | `dxaml/test/native/external/win32/**` | `External.Win32` | WPF |
-   | `dxaml/test/native/external/activation/**` | `External.Activation` | WPF |
-   | `dxaml/test/native/external/tools/**` | `External.Tools` | WPF |
+   | `tests/runtime/native/external/foundation/**` | `External.Foundation` | WPF |
+   | `tests/runtime/native/external/framework/**` | `External.Framework` | WPF |
+   | `tests/runtime/native/external/controls/**` | `External.Controls` | WPF |
+   | `tests/runtime/native/external/Automation/**` | `External.Automation` | WPF |
+   | `tests/runtime/native/external/enterprise/**` | `External.Enterprise` | WPF |
+   | `tests/runtime/native/external/Win32/**` | `External.Win32` | WPF |
+   | `tests/runtime/native/external/activation/**` | `External.Activation` | WPF |
+   | `tests/runtime/native/external/tools/**` | `External.Tools` | WPF |
    | `dxaml/test/resources/**` (images, GIFs, masters) | `Isolated.Foundation.Imaging`, `External.Foundation` | None / WPF |
    | `dxaml/test/managed/**` | `Managed.*` | WPF |
    | `controls/dev/**` (WinUI controls source) | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
@@ -93,7 +93,7 @@ When this skill is invoked:
 
    2. **Match by naming convention** — extract keywords from the changed file path and look for test DLLs with matching names:
       - Changed `dxaml/xcp/components/<area>/**` → look for `*Isolated.<Area>*` or `*External.<Area>*`
-      - Changed `dxaml/test/native/external/<area>/**` → match `*External.<Area>*`
+      - Changed `tests/runtime/native/external/<area>/**` → match `*External.<Area>*`
       - Changed `dxaml/test/native/isolated/<area>/**` → match `*Isolated.<Area>*`
       - Changed `controls/dev/<ControlName>/**` → match `*MUXControls*` and `*<ControlName>*`
 
@@ -506,7 +506,7 @@ All test DLLs are in `TestPayload\<platform><config>\Test\`. Here is the complet
 | `dxaml/xcp/**` (core runtime) | `External.Foundation`, `External.Framework`, `External.Controls` |
 | `controls/dev/**` (WinUI controls) | `MUXControls.Test.dll`, `External.Controls` |
 | `dxaml/xcp/components/imaging/**` | `Isolated.Foundation.Imaging` |
-| `dxaml/test/native/external/<area>/**` | `External.<Area>` |
+| `tests/runtime/native/external/<area>/**` | `External.<Area>` |
 | `dxaml/test/resources/` (GIF/image assets) | `Isolated.Foundation.Imaging`, `External.Foundation` |
 | `controls/test/**` | `MUXControls.Test.dll` |
 

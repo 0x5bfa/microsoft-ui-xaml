@@ -14,7 +14,7 @@ if (-not $env:XcpRoot)
 
 function global:root { pushd $env:reporoot }
 function global:native { pushd $env:XcpRoot\dxaml\dllsrv\winrt\native\$args }
-function global:tfgr { pushd $env:reporoot\dxaml\test\native\external\foundation\graphics\rendering\$args }
+function global:tfgr { pushd $env:reporoot\tests\runtime\native\external\foundation\graphics\rendering\$args }
 function global:dxaml { pushd $env:reporoot\dxaml\$args }
 function global:xcp { pushd $env:XcpRoot\$args }
 function global:text { pushd $env:XcpRoot\core\native\text\Controls\$args }

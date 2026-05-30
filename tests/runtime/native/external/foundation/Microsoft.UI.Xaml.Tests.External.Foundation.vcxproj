@@ -5,7 +5,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <ProjectGuid>{1FF9CB13-F29E-4756-B3FC-D450E43F2A0A}</ProjectGuid>
   </PropertyGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\dxaml\Xaml.Cpp.props" />
   <Import Project="$(XamlSourcePath)\test\common.props" />
   <Import Project="$(NativeExternalTestPath)\common.props" />
   <ItemDefinitionGroup>
@@ -41,8 +41,8 @@
         $(LiftedIXPIncludePaths);
         $(RuntimeNativeExternalTestPath)\controls\inc;
         $(RuntimeNativeExternalTestPath)\enterprise\inc;
-        $(NativeExternalTestPath)\foundation\graphics\animation;
-        $(NativeExternalTestPath)\foundation\graphics\swapchain;
+        $(RuntimeNativeExternalTestPath)\foundation\graphics\animation;
+        $(RuntimeNativeExternalTestPath)\foundation\graphics\swapchain;
         $(ONECOREUAPDRIVERS_INC_PATH);
         $(ProjectIncludeDirectories);
         $(XcpObjPath)\dxaml\idl\com;
@@ -354,9 +354,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
-    <ProjectReference Include="customTypes\CustomTypes.vcxproj" />
+    <ProjectReference Include="$(RuntimeNativeExternalTestPath)\foundation\customTypes\CustomTypes.vcxproj" />
   </ItemGroup>
   <Import Project="$(DetoursPath)\build\native\Detours.targets" />
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
-  <Import Project="$([MSBuild]::GetPathOfFileAbove(CustomTypesCompile.targets))" />
+  <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
+  <Import Project="$(NativeExternalTestPath)\CustomTypesCompile.targets" />
 </Project>
