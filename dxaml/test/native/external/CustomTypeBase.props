@@ -102,7 +102,7 @@
       <DisableSpecificWarnings>4453</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>
         %(AdditionalIncludeDirectories);
-        $(ProjectRoot)\dxaml\test\native\external\inc;
+        $(RuntimeNativeExternalTestPath)\inc;
         $(NativeIncPath);
         $(RuntimeInfraTestPath)\server\inc;
         $(XcpPath)\components\runtimeEnabledFeatures\inc;
