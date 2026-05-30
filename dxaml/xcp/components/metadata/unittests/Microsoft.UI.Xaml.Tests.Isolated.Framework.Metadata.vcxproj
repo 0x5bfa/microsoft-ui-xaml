@@ -20,7 +20,7 @@
             $(ProjectIncludeDirectories)
             $(XcpPath)\components\collection\inc;
             $(XcpPath)\components\metadata\mocks\;
-            $(XamlSourcePath)\test\infra\inc\;
+            $(RuntimeInfraTestPath)\inc\;
             $(XcpPath)\components\criticalsection\inc;
             $(XcpPath)\components\staticpal\mocks\;
         </ProjectIncludeDirectories>

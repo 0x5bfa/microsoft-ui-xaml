@@ -43,7 +43,7 @@
         $(NativeIsolatedTestPath)\inc;
         $(ProjectIncludeDirectories);
         $(ProjectSDKMetadataPath)\abi;
-        $(XamlSourcePath)\test\infra\inc\;
+        $(RuntimeInfraTestPath)\inc\;
         $(XcpPath)\components\;
         $(XcpPath)\components\base\inc\;
         $(XcpPath)\inc;

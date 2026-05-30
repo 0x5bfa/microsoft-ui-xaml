@@ -16,7 +16,7 @@
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
             $(XcpPath)\tools\genxbfdll;
-            $(XamlSourcePath)\test\infra\inc\;
+            $(RuntimeInfraTestPath)\inc\;
             $(XcpPath)\components\ExtMetadataProvider\inc\;
         </ProjectIncludeDirectories>
     </PropertyGroup>

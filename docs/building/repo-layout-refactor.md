@@ -120,7 +120,9 @@ infrastructure client from its current output location. The managed TAEF host
 app lives next to it and uses shared root path properties for runtime and
 private infrastructure project references. The test dependency binplace project
 also lives there because it prepares runtime test dependency payloads rather
-than legacy runtime source.
+than legacy runtime source. Shared native runtime infra headers live there too,
+with remaining legacy client, server, and native test consumers referencing them
+through `$(RuntimeInfraTestPath)`.
 
 ## Runtime managed tests
 
