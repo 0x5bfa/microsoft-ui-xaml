@@ -390,6 +390,10 @@ infrastructure isolated tests with the foundation runtime test group.
 The XamlDiagnostics isolated test moved under
 `tests/runtime/native/isolated/xaml/diagnostics`, starting a XAML diagnostics
 isolated test group under runtime tests.
+The Parser isolated test moved under
+`tests/runtime/native/isolated/framework/parser`, continuing the framework
+isolated test group under runtime tests while leaving shared metadata mocks in
+the component tree for existing consumers.
 
 ## Controls source
 
