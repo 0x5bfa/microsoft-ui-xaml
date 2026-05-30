@@ -30,7 +30,7 @@
         <ProjectIncludeDirectories>
             $(XcpPath)\dxaml\idl\winrt;
             $(XcpPath)\inc;
-            $(XamlSourcePath)\phone\idl;
+            $(XcpPhonePath)\idl;
             $(WinUIDetailsIncludePath)\abi;
             $(WinUIDetailsIncludePath)\MockDComp;
             $(XcpPath)\dxaml\tools\AppAnalysis\idl;

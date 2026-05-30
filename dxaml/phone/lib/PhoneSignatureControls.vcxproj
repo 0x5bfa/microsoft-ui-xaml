@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XamlSourcePath)\phone\common.props"/>
+    <Import Project="$(XcpPhonePath)\common.props"/>
 
     <PropertyGroup>
         <XcpBaseInc>$(XcpPath)\components\base\inc</XcpBaseInc>

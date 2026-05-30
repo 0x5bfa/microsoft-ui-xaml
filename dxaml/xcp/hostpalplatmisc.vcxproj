@@ -48,7 +48,7 @@
         $(XcpPath)\plat\win\desktop;
         $(XcpObjPath)\dxaml\manifest\native;
         $(XcpObjPath)\win\shared\inc;
-        $(XamlSourcePath)\phone\inc;
+        $(XcpPhonePath)\inc;
         $(FrameworkUdkIncPath);
     </ProjectIncludeDirectories>
   </PropertyGroup>

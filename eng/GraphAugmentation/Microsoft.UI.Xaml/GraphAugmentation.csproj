@@ -7,7 +7,7 @@
     <ProjectReference Include="..\..\..\controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj">
       <Targets>BuildGenerateSources;GetPackagingOutputs;GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\dxaml\phone\idl\phone.vcxproj">
+    <ProjectReference Include="$(XcpPhonePath)\idl\phone.vcxproj">
       <Targets>BuildGenerateSources;GetPackagingOutputs;GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
     <ProjectReference Include="$(XcpPath)\components\pch\prod\Microsoft.UI.Xaml.Precomp.vcxproj">

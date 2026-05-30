@@ -16,7 +16,7 @@
         <DisableMidlVersionChecks>1</DisableMidlVersionChecks>  <!-- MIDL version checks do not work with [experimental] (which is used in lifted IXP idl files) -->
     </PropertyGroup>
 
-    <Import Project="$(XamlSourcePath)\phone\common.props"/>
+    <Import Project="$(XcpPhonePath)\common.props"/>
 
     <ItemDefinitionGroup>
         <Midl>

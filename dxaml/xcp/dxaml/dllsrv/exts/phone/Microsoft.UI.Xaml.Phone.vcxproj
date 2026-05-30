@@ -56,8 +56,8 @@
             $(LiftedIXPIncludePaths);
             $(ProjectIncludeDirectories);
             $(XcpPath)\components\pivot\inc;
-            $(XamlSourcePath)\phone\inc;
-            $(XamlSourcePath)\phone\lib;
+            $(XcpPhonePath)\inc;
+            $(XcpPhonePath)\lib;
             $(XcpPhoneObjPath)\idl;
             $(TempDir);
         </ProjectIncludeDirectories>

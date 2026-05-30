@@ -89,7 +89,7 @@
             $(XcpPath)\core\imaging\imagingprovider;
             $(XcpPath)\components\KeyboardAccelerator\inc;
             $(ModernInternalSdkIncludePathL);
-            $(XamlSourcePath)\phone\inc;
+            $(XcpPhonePath)\inc;
             $(FrameworkUdkIncPath);
         </ProjectIncludeDirectories>
     </PropertyGroup>
