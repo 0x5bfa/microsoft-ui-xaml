@@ -865,9 +865,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Man
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Media", "..\tests\runtime\managed\media\Microsoft.UI.Xaml.Tests.Managed.Media.csproj", "{94EAC75A-EA85-4FEB-ABF6-A810D8F63537}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Win32.Hosting", "test\managed\Win32\WPF\Microsoft.UI.Xaml.Tests.Managed.Win32.Hosting.csproj", "{523212E5-01E4-4BC3-BC8B-21A48708051A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Win32.Hosting", "..\tests\runtime\managed\Win32\WPF\Microsoft.UI.Xaml.Tests.Managed.Win32.Hosting.csproj", "{523212E5-01E4-4BC3-BC8B-21A48708051A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Win32.Common", "test\managed\Win32\Common\Microsoft.UI.Xaml.Tests.Managed.Win32.Common.csproj", "{6943FA20-1F38-4884-8D84-D345C17F1401}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Win32.Common", "..\tests\runtime\managed\Win32\Common\Microsoft.UI.Xaml.Tests.Managed.Win32.Common.csproj", "{6943FA20-1F38-4884-8D84-D345C17F1401}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Private.Native.External.Infrastructure", "test\native\external\infra\Private.Native.External.Infrastructure.vcxproj", "{A814C8D3-CF4D-4E7F-A1F6-BA6D2B2E328C}"
 EndProject
