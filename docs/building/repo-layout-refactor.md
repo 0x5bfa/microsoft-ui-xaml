@@ -339,6 +339,9 @@ isolated test now references it through `$(NativeIsolatedTestPath)`.
 The Imaging isolated test moved under
 `tests/runtime/native/isolated/foundation/imaging`, keeping its MockDComp and
 binplace configuration with the moved test project.
+The Elements isolated test moved under
+`tests/runtime/native/isolated/foundation/elements`, with documentation links to
+the UIElement tests updated to the runtime test tree.
 
 ## Controls source
 
