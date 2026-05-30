@@ -357,6 +357,9 @@ group alongside Input.
 The FocusSelection isolated test moved under
 `tests/runtime/native/isolated/xaml/focus/focusSelection`, starting a XAML focus
 isolated test group under runtime tests.
+The RelativePanel isolated test moved under
+`tests/runtime/native/isolated/controls/relativePanel`, starting a controls
+isolated test group under runtime tests.
 
 ## Controls source
 

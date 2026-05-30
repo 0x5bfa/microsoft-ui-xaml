@@ -1109,7 +1109,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.OneCoreTr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.RelativePanel", "xcp\components\relativepanel\lib\Microsoft.UI.Xaml.RelativePanel.vcxproj", "{5CED1575-13FC-4C58-85E7-D5A44848AA6F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel", "xcp\components\relativepanel\unittests\Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel.vcxproj", "{18E1385F-A460-4F60-BF09-FA8936E5AD99}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel", "..\tests\runtime\native\isolated\controls\relativePanel\Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel.vcxproj", "{18E1385F-A460-4F60-BF09-FA8936E5AD99}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XamlResources", "xcp\components\resources\lib\Microsoft.UI.Xaml.XamlResources.vcxproj", "{834D7BB9-3CC6-43F5-8DF9-2AC39EC2D8EF}"
 EndProject
