@@ -318,6 +318,9 @@ property usage while moving the project out of the runtime source tree.
 The ThemeAnimationsHelper isolated test moved under
 `tests/runtime/native/isolated/foundation/themeanimationshelper`, continuing the
 foundation isolated test migration with another self-contained project.
+The Text isolated test moved under
+`tests/runtime/native/isolated/foundation/text`, keeping the compact text test
+project with the runtime test tree.
 
 ## Controls source
 
