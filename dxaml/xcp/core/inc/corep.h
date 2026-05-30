@@ -672,7 +672,7 @@ private:
 //  This class is final from the point of view of Microsoft.UI.Xaml.dll
 //  meaning that close to 400 method calls could be devirtualized by
 //  marking it final. However the test code class XCbfCoreServices in
-//  xcp\tools\GenXbfDLL does derive from CCoreServices.
+//  tools\runtime\GenXbfDLL does derive from CCoreServices.
 //  In the short term just mark the most frequently-called methods of
 //  CCoreServices that are not overridden by XCbfCoreServices as final,
 //  rather than marking the whole class final.

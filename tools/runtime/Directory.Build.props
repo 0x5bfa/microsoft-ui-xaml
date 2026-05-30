@@ -3,7 +3,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..\'))" />
   <PropertyGroup>
-    <!-- Runtime tools in this folder are developer utilities, so do not binplace them. -->
+    <!-- Runtime tools default to developer utilities; build-integrated tools can override this. -->
     <BinplaceOutputAssemblies>false</BinplaceOutputAssemblies>
   </PropertyGroup>
 </Project>

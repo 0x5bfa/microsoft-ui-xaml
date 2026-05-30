@@ -452,7 +452,9 @@ as the first small runtime tool move. The XBF parser/viewer tools moved under
 WidgetSpinner metadata paths updated to the new tool-owned location. The
 standalone `SplitGenericXaml` project also moved under
 `tools/runtime/SplitGenericXaml`; runtime theme generation still builds its
-local copy from `dxaml/xcp/dxaml/themes/autogen`.
+local copy from `dxaml/xcp/dxaml/themes/autogen`. `GenXbfDLL` moved under
+`tools/runtime/GenXbfDLL` as a build-integrated runtime tool, with MSBuild
+project references using `$(RuntimeToolsPath)`.
 
 ## Specs documentation
 

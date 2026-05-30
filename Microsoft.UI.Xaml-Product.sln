@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "packagin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "src\metadata\MergedWinMD\MergedWinMD.vcxproj", "{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenXbf", "dxaml\xcp\tools\GenXbfDLL\GenXbf.vcxproj", "{42577057-854D-443D-AB59-F4E44C8F5207}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenXbf", "tools\runtime\GenXbfDLL\GenXbf.vcxproj", "{42577057-854D-443D-AB59-F4E44C8F5207}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

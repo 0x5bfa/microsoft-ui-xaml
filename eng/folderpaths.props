@@ -25,6 +25,7 @@
 
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>
+    <RuntimeToolsPath>$(ProjectRoot)tools\runtime</RuntimeToolsPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
     <NativeIsolatedTestPath>$(RuntimeTestPath)\native\isolated</NativeIsolatedTestPath>
     <NativeIncPath>$(RuntimeTestPath)\native\inc</NativeIncPath>
