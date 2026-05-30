@@ -110,7 +110,8 @@ part of repository initialization rather than package construction, leaving the
 NuGet package specs and package NOTICE content now live under
 `packaging/nuspecs`, alongside the rest of the package build inputs. The
 top-level package command still invokes the same helper script, but its source
-location now reflects that it packs WinUI packaging output.
+location now reflects that it packs WinUI packaging output. The Edge runtime
+dependency nuspec used by WebView2 test package updates also lives there.
 
 ## Build transforms
 
