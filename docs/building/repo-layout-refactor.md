@@ -95,9 +95,9 @@ that test-owned location.
 ## Runtime managed tests
 
 Runtime managed test projects should move under `tests/runtime/managed` in
-small groups. The media and AccessKeys managed test projects moved first
-because they are small projects that already consume the shared managed test
-props. `$(RuntimeManagedTestPath)` identifies the new home, while
+small groups. The media, AccessKeys, and animation managed test projects moved
+first because they are small projects that already consume the shared managed
+test props. `$(RuntimeManagedTestPath)` identifies the new home, while
 `$(ManagedTestPath)` keeps existing managed test shared props available during
 the migration.
 

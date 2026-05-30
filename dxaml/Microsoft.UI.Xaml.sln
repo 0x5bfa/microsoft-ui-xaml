@@ -857,7 +857,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Toolkit.Win32.UI.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.AccessKeys", "..\tests\runtime\managed\AccessKeys\Microsoft.UI.Xaml.Tests.Managed.AccessKeys.csproj", "{63DDA92D-4E89-4E9E-841B-9E83C3D348B4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests", "test\managed\animation\Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests.csproj", "{1B3FD2E3-93C7-4C16-A64D-CA88F24EEF06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests", "..\tests\runtime\managed\animation\Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests.csproj", "{1B3FD2E3-93C7-4C16-A64D-CA88F24EEF06}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Tests.Managed.Common", "test\managed\common\Microsoft.UI.Xaml.Tests.Managed.Common.csproj", "{9340A16B-C175-43FF-BF53-6EBB828A8348}"
 EndProject
