@@ -89,6 +89,9 @@ The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/UpdateMockWinAppSDKPackage`, keeping root-level files
 limited to repository-wide entry points and configuration.
 
+The standalone debugger extension script now lives under `tools/dbgext`, grouped
+with other manually invoked repo tools.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.
