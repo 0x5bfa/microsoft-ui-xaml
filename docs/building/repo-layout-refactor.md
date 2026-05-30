@@ -517,7 +517,8 @@ including the NuGet and PowerShell wrappers used by controls tooling scripts.
 
 Controls packaging helpers now live under `controls/tools/Packaging`,
 including the framework package AppX creation wrapper used after controls
-builds.
+builds, package-generation restore config, local signing stub, and build-drop
+publishing helper.
 
 Controls source maintenance helpers now live under
 `controls/tools/SourceMaintenance`, including namespace update, vcxitems page
