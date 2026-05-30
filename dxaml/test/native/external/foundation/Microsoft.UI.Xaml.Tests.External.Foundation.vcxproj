@@ -40,7 +40,7 @@
         $(FrameworkUdkIncPath);
         $(LiftedIXPIncludePaths);
         $(NativeExternalTestPath)\controls\inc;
-        $(NativeExternalTestPath)\enterprise\inc;
+        $(RuntimeNativeExternalTestPath)\enterprise\inc;
         $(NativeExternalTestPath)\foundation\graphics\animation;
         $(NativeExternalTestPath)\foundation\graphics\swapchain;
         $(ONECOREUAPDRIVERS_INC_PATH);

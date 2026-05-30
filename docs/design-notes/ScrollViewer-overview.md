@@ -131,7 +131,7 @@ Test code:
 - tests/runtime/managed/controls/flipview  combobox  textbox  richeditbox
 - dxaml/test/native/external/controls/scrollviewer  flipview  semanticzoom  textbox  richeditbox  contentdialog  combobox  listbox  hub  pivot  
 - dxaml/test/native/external/foundation/input/DManip
-- dxaml/test/native/external/enterprise/CalendarView  GridView  ListView  SemanticZoom  StickyHeaders
+- tests/runtime/native/external/enterprise/CalendarView  GridView  ListView  SemanticZoom  StickyHeaders
 
 - src/controls/CommonStyles/TestUI/ScrollViewerPage.xaml
 - src/controls/CommonStyles/TestUI/ScrollViewerPage.xaml.cs

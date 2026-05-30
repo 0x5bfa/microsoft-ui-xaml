@@ -325,12 +325,12 @@ Test code:
 - dxaml/test/native/external/controls/listviewbaseitem
 - dxaml/test/native/external/controls/variablesizedwrapgrid
 - dxaml/test/native/external/controls/wrapgrid
-- dxaml/test/native/external/enterprise/datavirtualization
-- dxaml/test/native/external/enterprise/GridView
-- dxaml/test/native/external/enterprise/ItemsControl
-- dxaml/test/native/external/enterprise/ListView
-- dxaml/test/native/external/enterprise/SemanticZoom
-- dxaml/test/native/external/enterprise/StickyHeaders
+- tests/runtime/native/external/enterprise/datavirtualization
+- tests/runtime/native/external/enterprise/GridView
+- tests/runtime/native/external/enterprise/ItemsControl
+- tests/runtime/native/external/enterprise/ListView
+- tests/runtime/native/external/enterprise/SemanticZoom
+- tests/runtime/native/external/enterprise/StickyHeaders
 
 - tests/runtime/managed/enterprise/ItemsPresenter
 - tests/runtime/managed/enterprise/Moco

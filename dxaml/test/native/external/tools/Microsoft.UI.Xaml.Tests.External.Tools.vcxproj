@@ -31,7 +31,7 @@
         $(MSBuildThisFileDirectory)\customTypes;
         $(BaseIntermediateOutputPath)\customTypes\generated;
         $(LiftedIXPIncludePaths);
-        $(NativeExternalTestPath)\enterprise\inc;
+        $(RuntimeNativeExternalTestPath)\enterprise\inc;
         $(NativeExternalTestPath)\tools\AppAnalysis;
         $(XamlBinaryPath)\xcp\components\xamldiagnostics\idl;
         $(XamlDiagObjPath)\idl;
