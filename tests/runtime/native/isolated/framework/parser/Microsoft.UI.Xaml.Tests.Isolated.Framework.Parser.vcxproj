@@ -30,7 +30,7 @@
             $(XcpPath)\components\Parser\inc\;
             $(XcpPath)\components\theming\inc\;
             $(XcpPath)\components\theminginterop\inc\;
-            $(XcpPath)\components\metadata\mocks\;
+            $(NativeIsolatedTestPath)\shared\mocks\metadata;
             $(XcpPath)\core\inc\;
             $(XcpPath)\core\Parser\;
             $(XcpPath)\pal\inc\;

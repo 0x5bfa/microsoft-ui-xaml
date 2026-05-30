@@ -12,7 +12,7 @@
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
             $(XcpPath)\components\staticpal\mocks\;
-            $(XcpPath)\components\metadata\mocks\;
+            $(NativeIsolatedTestPath)\shared\mocks\metadata;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 
@@ -27,7 +27,7 @@
         <ProjectReference Condition="'$(ProjectGuid)'!='{4baf458d-df02-4f8c-bb5a-97ceeb30027c}'" Include="$(XcpPath)\components\primitiveDependencyObjects\lib\Microsoft.UI.Xaml.PrimitiveDependencyObjects.vcxproj" Project="{4baf458d-df02-4f8c-bb5a-97ceeb30027c}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{f9da8380-5504-4acc-bde0-72cd5981826d}'" Include="$(XcpPath)\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj" Project="{f9da8380-5504-4acc-bde0-72cd5981826d}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{23637f36-0cb9-4142-a60c-888b0efe9a4c}'" Include="$(XcpPath)\components\metadata\lib\Microsoft.UI.Xaml.Metadata.vcxproj" Project="{23637f36-0cb9-4142-a60c-888b0efe9a4c}"/>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{2b9a325f-17af-40f1-98c9-2aa7856b77e7}'" Include="$(XcpPath)\components\metadata\mocks\Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj" Project="{2b9a325f-17af-40f1-98c9-2aa7856b77e7}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{2b9a325f-17af-40f1-98c9-2aa7856b77e7}'" Include="$(NativeIsolatedTestPath)\shared\mocks\metadata\Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj" Project="{2b9a325f-17af-40f1-98c9-2aa7856b77e7}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{4d59a898-7e24-4650-baa0-7fe2bb6c82d4}'" Include="$(XcpPath)\components\OneCoreTransforms\lib\Microsoft.UI.Xaml.OneCoreTransforms.vcxproj" Project="{4d59a898-7e24-4650-baa0-7fe2bb6c82d4}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{eb1e79fa-171b-4812-b0ee-fd162a81dc3b}'" Include="$(XcpPath)\components\theming\lib\Microsoft.UI.Xaml.Theming.vcxproj" Project="{eb1e79fa-171b-4812-b0ee-fd162a81dc3b}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{834d7bb9-3cc6-43f5-8df9-2ac39ec2d8ef}'" Include="$(XcpPath)\components\resources\lib\Microsoft.UI.Xaml.XamlResources.vcxproj" Project="{834d7bb9-3cc6-43f5-8df9-2ac39ec2d8ef}"/>

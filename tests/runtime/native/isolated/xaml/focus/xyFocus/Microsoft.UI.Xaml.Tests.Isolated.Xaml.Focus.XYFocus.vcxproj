@@ -22,7 +22,7 @@
             $(ProjectIncludeDirectories);
             $(XcpPath)\components\focus\inc;
             $(XcpPath)\components\focus\xyfocus\inc;
-            $(XcpPath)\components\metadata\mocks\;
+            $(NativeIsolatedTestPath)\shared\mocks\metadata;
             $(XcpPath)\components\valueboxer\inc;
             $(XcpPath)\components\collection\inc;
             $(XcpPath)\components\focusrect\inc;

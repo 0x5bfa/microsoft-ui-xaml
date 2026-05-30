@@ -12,7 +12,7 @@
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
             $(XcpPath)\components\staticpal\mocks\;
-            $(XcpPath)\components\metadata\mocks\;
+            $(NativeIsolatedTestPath)\shared\mocks\metadata;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 
@@ -32,7 +32,7 @@
     <ItemGroup Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='Application'">
         <ProjectReference Condition="'$(ProjectGuid)'!='{f9da8380-5504-4acc-bde0-72cd5981826d}'" Include="$(XcpPath)\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj" Project="{f9da8380-5504-4acc-bde0-72cd5981826d}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{23637f36-0cb9-4142-a60c-888b0efe9a4c}'" Include="$(XcpPath)\components\metadata\lib\Microsoft.UI.Xaml.Metadata.vcxproj" Project="{23637f36-0cb9-4142-a60c-888b0efe9a4c}"/>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{2b9a325f-17af-40f1-98c9-2aa7856b77e7}'" Include="$(XcpPath)\components\metadata\mocks\Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj" Project="{2b9a325f-17af-40f1-98c9-2aa7856b77e7}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{2b9a325f-17af-40f1-98c9-2aa7856b77e7}'" Include="$(NativeIsolatedTestPath)\shared\mocks\metadata\Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj" Project="{2b9a325f-17af-40f1-98c9-2aa7856b77e7}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{4c54ca57-3fdb-4bd4-a5cd-6f89f8f3d46b}'" Include="$(XcpPath)\core\parser\core\Parser.Core.vcxproj" Project="{4c54ca57-3fdb-4bd4-a5cd-6f89f8f3d46b}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{95d07701-4af9-48e5-b726-0d42034811c8}'" Include="$(XcpPath)\components\legacy\lib\Microsoft.UI.Xaml.Legacy.vcxproj" Project="{95d07701-4af9-48e5-b726-0d42034811c8}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{0c3c2872-56a3-4acf-b2f7-8c05710b93ae}'" Include="$(XcpPath)\components\winuri\lib\winuri.vcxproj" Project="{0c3c2872-56a3-4acf-b2f7-8c05710b93ae}"/>
