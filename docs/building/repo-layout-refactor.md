@@ -273,6 +273,9 @@ Legacy `$(TestPath)` now aliases `$(RuntimeTestPath)`, and remaining isolated
 unit-test include paths should use runtime test properties such as
 `$(RuntimeInfraTestPath)` and `$(RuntimeDCompTestPath)` instead of spelling
 `dxaml/test` paths directly.
+The WinUri isolated test project is now under
+`tests/runtime/native/isolated/framework/winuri`, starting the move of
+component-local isolated test projects out of the runtime source tree.
 
 ## Controls source
 
