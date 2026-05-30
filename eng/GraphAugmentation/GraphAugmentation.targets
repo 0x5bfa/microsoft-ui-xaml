@@ -7,6 +7,7 @@
     <ProjectRoot>$(MSBuildThisFileDirectory)..\..\</ProjectRoot>
     <XamlSourcePath>$(ProjectRoot)dxaml\</XamlSourcePath>
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
+    <XcpPhonePath>$(XamlSourcePath)phone</XcpPhonePath>
     <WindowsSDKBuildToolsArchFolder Condition="'$(WindowsSDKBuildToolsArchFolder)' == '' And '$([System.Runtime.InteropServices.RuntimeInformation]::ProcessArchitecture)'== 'X64'">x64</WindowsSDKBuildToolsArchFolder>
     <WindowsSDKBuildToolsArchFolder Condition="'$(WindowsSDKBuildToolsArchFolder)' == ''">x86</WindowsSDKBuildToolsArchFolder>
   </PropertyGroup>

@@ -4,7 +4,7 @@
     <ProjectReference Include="..\..\..\controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj">
       <Targets>BuildGenerateSources</Targets>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\dxaml\phone\idl\phone.vcxproj">
+    <ProjectReference Include="$(XcpPhonePath)\idl\phone.vcxproj">
       <Targets>BuildGenerateSources;GetPackagingOutputs</Targets>
     </ProjectReference>
     <ProjectReference Include="$(XcpPath)\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj">

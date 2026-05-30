@@ -176,6 +176,8 @@ tree. Test, phone, and controls MSBuild projects that consume runtime source
 should also prefer `$(XcpPath)` over repo-root-relative `dxaml\xcp` paths.
 Runtime build-output references should prefer `$(XcpObjPath)` over spelling
 `dxaml\xcp` under `$(ArtifactsObjDir)` or `$(XamlBuildOutputRoot)` directly.
+Phone project references and include paths should prefer `$(XcpPhonePath)` over
+spelling `$(XamlSourcePath)\phone` or repo-root-relative `dxaml\phone` directly.
 Graph augmentation projects define the same minimal path properties locally so
 their lightweight project graph files can avoid hard-coded runtime-relative
 paths without importing the full root build props. Developer initialization

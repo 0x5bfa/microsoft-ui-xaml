@@ -1,7 +1,7 @@
 <Project ToolsVersion="Current">
   <Import Project="..\GraphAugmentation.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\dxaml\phone\idl\phone.vcxproj">
+    <ProjectReference Include="$(XcpPhonePath)\idl\phone.vcxproj">
       <Targets>BuildGenerateSources;GetPackagingOutputs;GetTargetPathWithTargetPlatformMoniker</Targets>
       <Properties>Configuration=$(Configuration);Platform=$(WindowsSDKBuildToolsArchFolder);CurrentSolutionConfigurationContents=;ShouldUnsetParentConfigurationAndPlatform=false</Properties>
     </ProjectReference>

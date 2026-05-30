@@ -76,7 +76,7 @@
             $(XcpPath)\core\imaging\imagingprovider;
             $(XcpPath)\components\KeyboardAccelerator\inc;
             $(XcpPath)\components\OneCoreTransforms\inc;
-            $(XamlSourcePath)\phone\inc;
+            $(XcpPhonePath)\inc;
             $(XcpPath)\components\math\inc;
         </ProjectIncludeDirectories>
 

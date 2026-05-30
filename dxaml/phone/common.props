@@ -5,8 +5,6 @@
     <Import Project="$(XamlSourcePath)\common.props"/>
 
     <PropertyGroup>
-        <XcpPhonePath>$(XamlSourcePath)\phone</XcpPhonePath>
-        <XcpPhoneObjPath>$(XamlBinaryPath)\phone</XcpPhoneObjPath>
         <ProjectPreprocessorDefinitions>
             $(ProjectPreprocessorDefinitions)
             __WRL_STRICT__;
