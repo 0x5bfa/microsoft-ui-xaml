@@ -345,6 +345,9 @@ the UIElement tests updated to the runtime test tree.
 The DependencyObject isolated test moved under
 `tests/runtime/native/isolated/framework/dependencyObject`, continuing the
 framework isolated test migration out of the runtime source tree.
+The Metadata isolated test moved under
+`tests/runtime/native/isolated/framework/metadata`, while the shared metadata
+mocks remain in the runtime source tree until their consumers are migrated.
 
 ## Controls source
 

@@ -8,7 +8,7 @@
         <ProjectGuid>{0ae6eb62-e81a-4402-8a5c-453ec13b5544}</ProjectGuid>
     </PropertyGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
     <Import Project="$(XcpPath)\components\unittest-stubs.props"/>
 
@@ -44,5 +44,5 @@
         <ProjectReference Include="$(XcpPath)\components\metadata\mocks\Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj" Project="{2b9a325f-17af-40f1-98c9-2aa7856b77e7}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>
