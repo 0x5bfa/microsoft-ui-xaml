@@ -7,17 +7,22 @@
 ##
 ##############################################################################  
 
+if (-not $env:XcpRoot)
+{
+    $env:XcpRoot = "$env:reporoot\dxaml\xcp"
+}
+
 function global:root { pushd $env:reporoot }
-function global:native { pushd $env:reporoot\dxaml\xcp\dxaml\dllsrv\winrt\native\$args }
+function global:native { pushd $env:XcpRoot\dxaml\dllsrv\winrt\native\$args }
 function global:tfgr { pushd $env:reporoot\dxaml\test\native\external\foundation\graphics\rendering\$args }
 function global:dxaml { pushd $env:reporoot\dxaml\$args }
-function global:xcp { pushd $env:reporoot\dxaml\xcp\$args }
-function global:text { pushd $env:reporoot\dxaml\xcp\core\native\text\Controls\$args }
+function global:xcp { pushd $env:XcpRoot\$args }
+function global:text { pushd $env:XcpRoot\core\native\text\Controls\$args }
 function global:scripts { pushd $env:reporoot\scripts\$args }
-function global:idl { pushd $env:reporoot\dxaml\xcp\dxaml\idl\winrt\$args }
-function global:elements { pushd $env:reporoot\dxaml\xcp\core\core\elements\$args }
-function global:core { pushd $env:reporoot\dxaml\xcp\core\$args }
-function global:codegen { pushd $env:reporoot\dxaml\xcp\tools\XCPTypesAutoGen\XamlOM\Model\$args }
+function global:idl { pushd $env:XcpRoot\dxaml\idl\winrt\$args }
+function global:elements { pushd $env:XcpRoot\core\core\elements\$args }
+function global:core { pushd $env:XcpRoot\core\$args }
+function global:codegen { pushd $env:XcpRoot\tools\XCPTypesAutoGen\XamlOM\Model\$args }
 function global:masters { pushd $env:reporoot\generated\tests\visualbaselines\$args }
 function global:cb { git branch | select-string "\*" -raw }
 
