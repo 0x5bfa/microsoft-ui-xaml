@@ -113,7 +113,7 @@ The test code could get executed in one of three possible processes:
 * WPF: `te.processhost.exe` (built into TAEF)
 * UWP: (our own custom host app)
     * C++: `taefhostapp.exe`
-        `dxaml\test\infra\taefhostapp`
+        `tests\runtime\infra\taefhostapp`
     * C#: `TaefHostAppManaged.exe`
         `dxaml\test\infra\taefhostappmanaged`
 

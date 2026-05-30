@@ -114,7 +114,9 @@ infra consumers. Shared native test path aliases are available from the root
 folder path props so moved runtime infra projects can still consume native test
 headers. The native logging helper moved with the contract, so client infra can
 include logging headers from the runtime infra source path while the client DLL
-references the moved logging project directly.
+references the moved logging project directly. The native TAEF host app also
+lives under runtime infra, while continuing to package the legacy private
+infrastructure client from its current output location.
 
 ## Runtime managed tests
 
