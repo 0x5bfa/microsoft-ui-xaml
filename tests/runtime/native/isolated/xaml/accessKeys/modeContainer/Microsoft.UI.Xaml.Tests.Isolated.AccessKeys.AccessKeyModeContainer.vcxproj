@@ -5,33 +5,22 @@
 
     <PropertyGroup Label="Globals">
         <ConfigurationType>DynamicLibrary</ConfigurationType>
-        <ProjectGuid>{f6538552-4e73-48a7-a286-83d8db4256d8}</ProjectGuid>
+        <ProjectGuid>{a8ca0489-7254-4603-ae5d-2c60a3aa2b02}</ProjectGuid>
     </PropertyGroup>
+
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
+    <Import Project="$(XcpPath)\components\unittest.props"/>
 
     <!-- Satisfy "UT", which currently doesn't parse includes. -->
     <!-- UT:TARGETTYPE=DYNLINK                                 -->
     <!-- UT:TARGET_DESTINATION=NTTEST\WINDOWSTEST\dxaml\test   -->
-
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XcpPath)\projectbase.props"/>
-
-    <Import Project="$(XcpPath)\components\unittest-do.props"/>
-
     <PropertyGroup>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
-            $(XcpPath)\components\accesskeys\inc;
-            $(XcpPath)\components\accesskeys\unittests;
-            $(XcpPath)\components\Focus\inc;
-            $(XcpPath)\components\input\inc;
+            $(XcpPath)\components\AccessKeys\inc;
         </ProjectIncludeDirectories>
     </PropertyGroup>
-
-    <ItemGroup>
-        <ClInclude Include="ScopeBuilderUnitTests.h"/>
-
-        <ClCompile Include="ScopeBuilderUnitTests.cpp"/>
-    </ItemGroup>
 
     <ItemDefinitionGroup>
         <Link>
@@ -40,10 +29,15 @@
     </ItemDefinitionGroup>
 
     <ItemGroup>
-        <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
-        <ProjectReference Include="$(XcpPath)\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj" Project="{f9da8380-5504-4acc-bde0-72cd5981826d}"/>
-        <ProjectReference Include="$(XcpPath)\components\AccessKeys\AccessKey\lib\AccessKeys.AKAccessKey.vcxproj" Project="{f43ad9ae-a7c4-4e99-8d9f-fe2dbed5a568}"/>
+        <ClInclude Include="BasicModeContainerUnitTests.h"/>
+
+        <ClCompile Include="BasicModeContainerUnitTests.cpp"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <ItemGroup>
+        <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
+        <ProjectReference Include="$(XcpPath)\components\AccessKeys\ModeContainer\lib\AccessKeys.AKModeContainer.vcxproj" Project="{02e9ec89-0748-495e-b70e-a2403c88381e}"/>
+    </ItemGroup>
+
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>

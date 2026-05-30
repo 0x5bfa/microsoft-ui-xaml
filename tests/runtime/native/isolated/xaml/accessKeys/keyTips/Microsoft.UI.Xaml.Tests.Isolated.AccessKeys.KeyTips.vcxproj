@@ -5,32 +5,31 @@
 
     <PropertyGroup Label="Globals">
         <ConfigurationType>DynamicLibrary</ConfigurationType>
-        <ProjectGuid>{391a3bf0-8c98-47c5-a944-f98812faf01c}</ProjectGuid>
+        <ProjectGuid>{85356d48-ea39-4204-8e1a-f2d2a6e39f01}</ProjectGuid>
     </PropertyGroup>
+
+    <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\..\dxaml\Xaml.Cpp.props"/>
+    <Import Project="$(XcpPath)\projectbase.props"/>
+    <Import Project="$(XcpPath)\components\unittest-uielement.props"/>
 
     <!-- Satisfy "UT", which currently doesn't parse includes. -->
     <!-- UT:TARGETTYPE=DYNLINK                                 -->
     <!-- UT:TARGET_DESTINATION=NTTEST\WINDOWSTEST\dxaml\test   -->
-
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Xaml.Cpp.props))"/>
-    <Import Project="$(XcpPath)\projectbase.props"/>
-
-    <Import Project="$(XcpPath)\components\unittest-do.props"/>
-
     <PropertyGroup>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
-            $(XcpPath)\components\accesskeys\inc;
-            $(XcpPath)\components\focus\inc;
             $(XcpPath)\components\collection\inc;
-            $(XcpPath)\components\accesskeys\unittests;
+            $(XcpPath)\components\input\inc;
+            $(XcpPath)\win\inc;
+            $(XcpPath)\win\shared\inc;
+            $(XcpPath)\dxaml\lib;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 
     <ItemGroup>
-        <ClInclude Include="TreeAnalyzerUnitTests.h"/>
+        <ClInclude Include="KeytipAutomaticPlacementAlgorithmUnitTests.h"/>
 
-        <ClCompile Include="TreeAnalyzerUnitTests.cpp"/>
+        <ClCompile Include="KeytipAutomaticPlacementAlgorithmUnitTests.cpp"/>
     </ItemGroup>
 
     <ItemDefinitionGroup>
@@ -41,11 +40,10 @@
 
     <ItemGroup>
         <ProjectReference Include="$(XcpPath)\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{0ee23677-77e1-49c9-8b89-ad1a1fd0c6f4}"/>
-        <ProjectReference Include="$(XcpPath)\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj" Project="{f9da8380-5504-4acc-bde0-72cd5981826d}"/>
-        <ProjectReference Include="$(XcpPath)\components\cvalue\lib\Microsoft.UI.Xaml.CValue.vcxproj" Project="{a96cf4ea-7170-4aff-90a5-5fce1055270f}"/>
-        <ProjectReference Include="$(XcpPath)\components\elements\lib\Microsoft.UI.Xaml.Elements.vcxproj" Project="{425451f3-e2fe-49a1-a7f5-a3776e963b5e}"/>
-        <ProjectReference Include="$(XcpPath)\components\transforms\lib\Microsoft.UI.Xaml.Transforms.vcxproj" Project="{365cdabf-7f04-445d-a598-ba372821b5a6}"/>
+        <ProjectReference Include="$(XcpPath)\components\AccessKeys\KeyTips\lib\AccessKeys.KeyTips.vcxproj" Project="{ff31e3f5-8c72-4428-9bfd-1f3589ff0f1e}"/>
+        <ProjectReference Include="$(XcpPath)\components\text\lib\Microsoft.UI.Xaml.Text.vcxproj" Project="{df854298-841f-4dd5-9ddf-fefbc280a6d1}"/>
+        <ProjectReference Include="$(XcpPath)\components\unittests\stubs\Microsoft.UI.Xaml.Stubs.vcxproj" Project="{ec5bfab1-619b-45cb-b8ec-db81f3c7811b}"/>
     </ItemGroup>
 
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Microsoft.UI.Xaml.Build.targets))" />
+    <Import Project="$(XamlSourcePath)\Microsoft.UI.Xaml.Build.targets" />
 </Project>

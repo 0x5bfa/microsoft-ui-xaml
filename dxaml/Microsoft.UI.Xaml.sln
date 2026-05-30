@@ -905,33 +905,33 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.UIBridgeF
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKAccessKey", "xcp\components\AccessKeys\AccessKey\lib\AccessKeys.AKAccessKey.vcxproj", "{F43AD9AE-A7C4-4E99-8D9F-FE2DBED5A568}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey", "xcp\components\AccessKeys\AccessKey\unittests\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey.vcxproj", "{AD3FA5E1-3712-4ECB-A2AD-D8219C41277A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey", "..\tests\runtime\native\isolated\xaml\accessKeys\accessKey\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey.vcxproj", "{AD3FA5E1-3712-4ECB-A2AD-D8219C41277A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKExport", "xcp\components\AccessKeys\Export\lib\AccessKeys.AKExport.vcxproj", "{753E2DE1-40B0-45D8-A231-5B41CF4CD88E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor", "xcp\components\AccessKeys\InputInterceptor\unittests\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor.vcxproj", "{73D9C6F0-F662-4DF5-BD64-90F77F898731}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor", "..\tests\runtime\native\isolated\xaml\accessKeys\inputInterceptor\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor.vcxproj", "{73D9C6F0-F662-4DF5-BD64-90F77F898731}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.KeyTips", "xcp\components\AccessKeys\KeyTips\lib\AccessKeys.KeyTips.vcxproj", "{FF31E3F5-8C72-4428-9BFD-1F3589FF0F1E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips", "xcp\components\AccessKeys\KeyTips\unittests\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips.vcxproj", "{85356D48-EA39-4204-8E1A-F2D2A6E39F01}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips", "..\tests\runtime\native\isolated\xaml\accessKeys\keyTips\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips.vcxproj", "{85356D48-EA39-4204-8E1A-F2D2A6E39F01}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKModeContainer", "xcp\components\AccessKeys\ModeContainer\lib\AccessKeys.AKModeContainer.vcxproj", "{02E9EC89-0748-495E-B70E-A2403C88381E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer", "xcp\components\AccessKeys\ModeContainer\unittests\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer.vcxproj", "{A8CA0489-7254-4603-AE5D-2C60A3AA2B02}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer", "..\tests\runtime\native\isolated\xaml\accessKeys\modeContainer\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer.vcxproj", "{A8CA0489-7254-4603-AE5D-2C60A3AA2B02}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner", "xcp\components\AccessKeys\Owner\unittests\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner.vcxproj", "{E479825C-ACAB-41D6-A644-969A9E3457AF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner", "..\tests\runtime\native\isolated\xaml\accessKeys\owner\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner.vcxproj", "{E479825C-ACAB-41D6-A644-969A9E3457AF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKParser", "xcp\components\AccessKeys\Parser\lib\AccessKeys.AKParser.vcxproj", "{ED253C25-0512-4FD8-B050-3C3C6835F2EF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser", "xcp\components\AccessKeys\Parser\unittests\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser.vcxproj", "{8DFF014B-FA6B-487C-A0A7-E80DD69EB981}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser", "..\tests\runtime\native\isolated\xaml\accessKeys\parser\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser.vcxproj", "{8DFF014B-FA6B-487C-A0A7-E80DD69EB981}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKScope", "xcp\components\AccessKeys\Scope\unittests\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKScope.vcxproj", "{6CD2B0AD-0BD1-4FE0-B61E-F878996C5EEC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKScope", "..\tests\runtime\native\isolated\xaml\accessKeys\scope\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKScope.vcxproj", "{6CD2B0AD-0BD1-4FE0-B61E-F878996C5EEC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeBuilder", "xcp\components\AccessKeys\ScopeBuilder\unittests\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeBuilder.vcxproj", "{F6538552-4E73-48A7-A286-83D8DB4256D8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeBuilder", "..\tests\runtime\native\isolated\xaml\accessKeys\scopeBuilder\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeBuilder.vcxproj", "{F6538552-4E73-48A7-A286-83D8DB4256D8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeTree", "xcp\components\AccessKeys\ScopeTree\unittests\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeTree.vcxproj", "{96E53D6B-78DE-46E7-93F4-FEF8195DF39D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeTree", "..\tests\runtime\native\isolated\xaml\accessKeys\scopeTree\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeTree.vcxproj", "{96E53D6B-78DE-46E7-93F4-FEF8195DF39D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer", "xcp\components\AccessKeys\TreeAnalyzer\unittests\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer.vcxproj", "{391A3BF0-8C98-47C5-A944-F98812FAF01C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer", "..\tests\runtime\native\isolated\xaml\accessKeys\treeAnalyzer\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer.vcxproj", "{391A3BF0-8C98-47C5-A944-F98812FAF01C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Allocation", "xcp\components\allocation\lib\Microsoft.UI.Xaml.Allocation.vcxproj", "{502B46A0-DF35-4692-8275-CE66E7FDD741}"
 EndProject
