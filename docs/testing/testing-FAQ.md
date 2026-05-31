@@ -183,9 +183,9 @@ Follow these steps:
 connect via an Enhanced connection (use a basic connection instead). An Enhanced connection will cause some test
 failures. In VM connect you can change this setting from the View menu.
 4. Copy this TestPayload directory to the machine you wish to run tests on.
-5. On the test machine, launch an admin cmd prompt. Run **testmachine-prerun.cmd** in the TestPayload directory
+5. On the test machine, launch an admin cmd prompt. Run **scripts\runtime\testmachine-prerun.cmd** in the TestPayload directory
 (one-time setup).
-6. In the cmd prompt, type `runtests *MyTestName` to run tests.  (note the `runtests.cmd` script wraps te.exe, you can
+6. In the cmd prompt, type `scripts\runtime\runtests *MyTestName` to run tests.  (note the `scripts\runtime\runtests.cmd` script wraps te.exe, you can
    also use te.exe directly if you wish)
 
 ### Can I run the tests on my dev machine?
@@ -215,15 +215,15 @@ All of our tests are written using TAEF. The tests are run by executing te.exe w
 
 `te.exe [path to test binaries] /select:"[testQuery]"`
 
-You can choose to run tests with the simpler [runtests.cmd](#runtests.cmd) syntax, or with more options via the
+You can choose to run tests with the simpler [scripts\runtime\runtests.cmd](#runtestscmd) syntax, or with more options via the
 [te.exe](#te.exe) syntax.
 
 ### RunTests.cmd
-We have a simple wrapper to run tests: `runtests.cmd`. By default this will run tests in UWP HostingMode. Only native
+We have a simple wrapper to run tests: `scripts\runtime\runtests.cmd`. By default this will run tests in UWP HostingMode. Only native
 C++ tests can be run in UWP mode. If you run managed C# tests in UWP mode, it will fail on launch with reason "blocked".
 The syntax for using this command is:
 
-`runtests.cmd <partial_test_name> [<optional_parameters>]`
+`scripts\runtime\runtests.cmd <partial_test_name> [<optional_parameters>]`
 
 The script will automatically assume a wildcard before the given test name. It also runs with the `/p:SkipConsoleWindowMinimize` flag.
 There are more details on these flags below.
@@ -232,17 +232,17 @@ There are more details on these flags below.
 
 This will run all tests that end with the name "ResizeTest". Default HostingMode is UWP:
 
-`runtests.cmd ResizeTest`
+`scripts\runtime\runtests.cmd ResizeTest`
 
 This will run all tests that end with the name "ResizeTest" in WPF hosting mode:
 
-`runtests.cmd -wpfMode ResizeTest`
+`scripts\runtime\runtests.cmd -wpfMode ResizeTest`
 
 There's also a "win32Explicit" hosting mode:
 
-`runtests.cmd -win32explicit TwoIslandsInSameWindow`
+`scripts\runtime\runtests.cmd -win32explicit TwoIslandsInSameWindow`
 
-Run `runtests.cmd -?` for the current list of arguments runtests supports.
+Run `scripts\runtime\runtests.cmd -?` for the current list of arguments runtests supports.
 
 ### TE.exe
 
@@ -375,7 +375,7 @@ connection modes.
 The steps are the same as for local builds, except instead of running `tools\build\scripts\Build.cmd` and `tests\infra\payload\scripts\CreateTestPayload.ps1`, you can
 download the TestPayload from the build. Go to the build report page. Click 'published' and download the 'TestPayload'
 folder or the 'ScenarioTestSuitePayload' folder (for Tests or Scenario App Tests). Unzip this file and use it the same
-way as described above (`testmachine-setup.cmd` and the `runtests.cmd`).
+way as described above (`scripts\runtime\testmachine-prerun.cmd` and `scripts\runtime\runtests.cmd`).
 
 ![](images/pipeline-testpayload-links.jpg)
 
@@ -644,7 +644,7 @@ The tests get run the same way as the functional tests. The only difference is w
 you pass `-Mode ScenarioTestSuite`. This will create a test payload to run the Sample App Tests. From there, the
 workflow is the same as running the functional tests.
 
-You can run all the sample app tests by running `runsampleapptests.cmd` from the root of the TestPayload.
+You can run all the sample app tests by running `scripts\samples\runsampleapptests.cmd` from the root of the TestPayload.
 
 ## Static tests
 

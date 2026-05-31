@@ -165,10 +165,10 @@ if ($Mode -eq "DevTestSuite" -or $Mode -eq "ScenarioTestSuite")
     Publish-Item "$binpath\TestDependencies\crt\vc_redist.$redistPlatform.exe" "$outpath"
 
     # Publish items from repo:
-    Publish-Item "$repoRoot\tests\infra\payload\scripts\runtime\*" "$outpath"
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\commands\*" "$outpath"
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath"
-    Publish-Item "$repoRoot\tools\controls\TestAppDeployment\scripts\EnableMUXControlsTestAppManagedDebugging.*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\payload\scripts\runtime\*" "$outpath\scripts\runtime"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\commands\*" "$outpath\scripts\helix\commands"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath\scripts\helix\test"
+    Publish-Item "$repoRoot\tools\controls\TestAppDeployment\scripts\EnableMUXControlsTestAppManagedDebugging.*" "$outpath\scripts\controls\deployment"
 
     Publish-Item "$binpath\TestDependencies\dotnet-windowsdesktop-runtime-installer.exe" "$outpath"
 }
@@ -254,7 +254,7 @@ if ($Mode -eq "ScenarioTestSuite")
         Publish-Item "$($galleryTestDir.FullName)\Dependencies\$redistPlatform\*.msix" "$outpath\Test\"
     }
 
-    Publish-Item "$repoRoot\tests\samples\scripts\*" "$outpath"
+    Publish-Item "$repoRoot\tests\samples\scripts\*" "$outpath\scripts\samples"
 }
 
 if ($Mode -eq "PGO")
@@ -272,8 +272,8 @@ if ($Mode -eq "PGO")
     Publish-Item "$binpath\TestDependencies\pgosweep.exe" "$outpath"
 
     # Publish items from repo:
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\commands\*" "$outpath"
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\commands\*" "$outpath\scripts\helix\commands"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath\scripts\helix\test"
 }
 
 if ($ShowPayload)

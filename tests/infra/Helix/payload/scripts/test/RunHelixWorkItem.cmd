@@ -4,5 +4,4 @@ rem usage: RunHelixWorkItem [testbinaries] (/taefQuery [taefQuery] /taefParamete
 : we cannot directly pass it to Powershell. Instead we pass the arguments via a file which 
 : the script will parse.
 echo %* > args.txt
-copy /y %HELIX_CORRELATION_PAYLOAD%\RunHelixWorkItem.ps1 .
-powershell -NonInteractive -ExecutionPolicy Bypass .\RunHelixWorkItem.ps1 -ArgsFile .\args.txt
+powershell -NonInteractive -ExecutionPolicy Bypass -File "%~dp0RunHelixWorkItem.ps1" -ArgsFile .\args.txt

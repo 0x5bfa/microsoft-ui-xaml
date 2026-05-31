@@ -92,7 +92,7 @@ public:
     END_TEST_METHOD()
 
     // Recommended command line:
-    //  runtests.cmd -win32explicit ApplicationLikeFileExplorerStress -runIgnoredTests /testmode:loop /looptest:1 /loop:10
+    //  scripts\runtime\runtests.cmd -win32explicit ApplicationLikeFileExplorerStress -runIgnoredTests /testmode:loop /looptest:1 /loop:10
     // It may take a few tries.
     // Race condition in XamlControlsResources creation during Xaml startup (affects FileExplorer)
     BEGIN_TEST_METHOD(ApplicationLikeFileExplorerStress)
