@@ -1,6 +1,6 @@
 # Debugging
 
-> See [Testing In WinUI FAQ](../testing-FAQ.md) and [WinUI CI Test System Overview](../test-system-overview.md)
+> See [Testing In WinUI FAQ](../testing/testing-FAQ.md) and [WinUI CI Test System Overview](../testing/test-system-overview.md)
 > for instruction for general debugging instructions for testing your changes.
 
 [Debugging Tips](debugging-tips.md) contains some useful tips for diagnosis and debugging. You are encouraged to update 
@@ -24,12 +24,12 @@ these docs if you have anything to add or amend.
 You first need to perform a full build using the `build.cmd` script in the root of the repo.
 
 To build and test any of the sample apps in the repo, including the WinUI Gallery, see 
-[building sample apps](../building-sample-apps.md)
+[building sample apps](../building/building-sample-apps.md)
 
 To create an app following all the same steps as someone externally using the preview builds, but using an 
 internal build. See [Writing an app against an official internal build](../writing-an-app-with-internal-build.md)
 
-To create a new app inside the repo using local bits, see [Creating a new test app in the repo](../building-new-repo-app.md)
+To create a new app inside the repo using local bits, see [Creating a new test app in the repo](../building/building-new-repo-app.md)
 
 ## Testing and debugging private bits in different app configurations
 One way to test updated product binaries with an app that's already installed is
@@ -52,7 +52,7 @@ a directory such as `c:\repos\MyApp\MyApp (Package)\bin\x86\Debug\AppX\MyApp`
 Usually, the output of build command in VS shows the location at some point.
 You can also find an app's install location using the `scripts\find-appx` script.
 
-For more information on creating a manual test app in VS and iterating on your changes see [Ad-Hoc testing of local build with fast innerloop](../ad-hoc-testing-of-local-build-with-fast-inner-loop.md).
+For more information on creating a manual test app in VS and iterating on your changes see [Ad-Hoc testing of local build with fast innerloop](../building/ad-hoc-testing-of-local-build-with-fast-inner-loop.md).
 
 > If your VS app is using WinUI binaries from [FrameworkPackage](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/deployment-architecture#framework-package) and you want your app to use the you provided, follow section `local and DLL Redirection` below and use the combination of all steps 1-3a and 3b and add your binaries to location provided in 3b. This is useful in debugging in cases where one cannot use self contained packaging to replace binaries like when bug replicates only in framework package config and not self contained deployment config.
 ### Overwriting WinUI binaries in a Store-deployed app
