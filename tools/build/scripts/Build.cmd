@@ -183,10 +183,10 @@ if "%_targetMux%" == "1" (
    call :buildSolution %reporoot%\src\runtime\solutions\Microsoft.UI.Xaml.sln
    if ERRORLEVEL 1 goto:showDurationAndExit
    if not "%_nomock%"=="1" call :buildMockPackage
-   call :buildSolution %reporoot%\controls\solutions\MUXControls.sln /restore
+   call :buildSolution %reporoot%\solutions\controls\MUXControls.sln /restore
 ) else if "%_targetTest%" == "1" (
    if not "%_nomock%"=="1" call :buildMockPackage
-   call :buildSolution %reporoot%\controls\solutions\MUXControls.sln /restore
+   call :buildSolution %reporoot%\solutions\controls\MUXControls.sln /restore
 )
 if ERRORLEVEL 1 goto:showDurationAndExit
 

@@ -4,7 +4,6 @@
 
 - [/.github](#github)
 - [/tools](#tools)
-- [/controls](#controls)
 - [/docs](#docs)
 - [/eng](#eng)
 - [/external](#external)
@@ -48,23 +47,6 @@ Controls source maintenance helpers live under `/tools/controls/SourceMaintenanc
 Controls test app deployment, installation, and dependency helpers live under `/tools/controls/TestAppDeployment/scripts`.
 Controls test reporting helpers live under `/tools/controls/TestReporting/scripts`.
 Controls XAML processing and WinUI 2 migration helpers live under `/tools/controls/XamlProcessing/scripts`.
-
-## /controls
-This folder contains controls solution and tooling entry points.
-The Microsoft.UI.Xaml.Controls.dll implementation source lives under `/src/controls`.
-Controls-specific build support lives under `/controls/build`, including
-feature-area selection, project import manifests, and shared props/targets.
-The controls build command implementation lives under `/tools/controls/Build/scripts`.
-Root controls props files are thin wrappers where MSBuild discovery depends on
-their names. Controls-specific `Directory.Build.props` and
-`Directory.Build.targets` implementations also live under `/controls/build`.
-Controls test apps, test infrastructure, and shared test helpers live under
-`/tests/controls`. Control-specific test UI, API test, and interaction test
-shared projects live under `/tests/controls/testui`,
-`/tests/controls/apitests`, and `/tests/controls/interactiontests`.
-
-See the [layout refactor notes](building/repo-layout-refactor.md) for more
-information about the controls section of the repo.
 
 ## /docs
 This is where the repo documentation lives, including this document.
@@ -131,9 +113,9 @@ compiler build tasks, executable host, parsing projects, MSBuild targets, and
 compiler-specific tools and solutions.
 
 The WinUI controls implementation now lives under `/src/controls`. Controls
-IDL inputs live under `/src/controls/idl`. Controls solution, test, and tooling
-entry points continue to live under `/controls` and refer to the source tree
-through `$(MUXControlsSourceRoot)`.
+IDL inputs live under `/src/controls/idl`. Controls solution and build-support
+entry points live under `/solutions/controls` and `/eng/controls`, and refer to
+the source tree through `$(MUXControlsSourceRoot)`.
 
 The Microsoft.UI.Xaml.dll runtime implementation now lives under
 `/src/runtime/xcp`, with runtime solution entry points and phone-specific source
