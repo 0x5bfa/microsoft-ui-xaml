@@ -150,7 +150,7 @@
     <WinUIGalleryTestDataOutputPath>$(ArtifactsBinRoot)\$(TestBinplaceDestinationPath)\WinUIGalleryTestData.xml</WinUIGalleryTestDataOutputPath>
   </PropertyGroup>
   <Target Name="GenerateWinUIGalleryTestData" AfterTargets="AfterBuild" Inputs="$(WinUIGalleryControlInfoDataPath)" Outputs="$(WinUIGalleryTestDataOutputPath)">
-    <RunPowershellScript Path="$(MSBuildThisFileDirectory)ScenarioAppTests\GenerateWinUIGalleryTestData.ps1" Parameters="-InputWinUIGalleryJsonFilePath $(WinUIGalleryControlInfoDataPath) -OutputXmlFilePath $(WinUIGalleryTestDataOutputPath)" FilesWritten="$(WinUIGalleryTestDataOutputPath)" />
+    <RunPowershellScript Path="$(MSBuildThisFileDirectory)..\tools\ScenarioAppTests\GenerateWinUIGalleryTestData.ps1" Parameters="-InputWinUIGalleryJsonFilePath $(WinUIGalleryControlInfoDataPath) -OutputXmlFilePath $(WinUIGalleryTestDataOutputPath)" FilesWritten="$(WinUIGalleryTestDataOutputPath)" />
   </Target>
   <Target Name="CopyDotNet" AfterTargets="Build">
     <Copy

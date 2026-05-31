@@ -52,11 +52,11 @@ Controls XAML processing and WinUI 2 migration helpers live under `/controls/too
 This folder contains controls solution, IDL, test, and tooling entry points.
 The Microsoft.UI.Xaml.Controls.dll implementation source lives under `/src/controls`.
 Controls-specific build support lives under `/controls/build`, including
-the controls build command implementation, feature-area selection, project
-import manifests, and shared props/targets. Root controls props files are thin wrappers
-where MSBuild discovery depends on their names. Controls-specific
-`Directory.Build.props` and `Directory.Build.targets` implementations also live
-under `/controls/build`.
+feature-area selection, project import manifests, and shared props/targets.
+The controls build command implementation lives under `/controls/tools/Build`.
+Root controls props files are thin wrappers where MSBuild discovery depends on
+their names. Controls-specific `Directory.Build.props` and
+`Directory.Build.targets` implementations also live under `/controls/build`.
 Controls test apps live under `/controls/test/apps` as they are migrated, and
 test-app build helpers live under `/controls/test/build`.
 
