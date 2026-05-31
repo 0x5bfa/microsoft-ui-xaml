@@ -781,6 +781,8 @@ notes live under `docs/design-notes`, grouped by feature or runtime area.
 WebView2 dependency update and version-history docs now live under
 `docs/publishing`, keeping dependency publishing workflows out of the controls
 implementation source tree.
+The WebView2 build/run guide now lives under `docs/building`, keeping sample
+workflow docs with the other build documentation.
 
 The `docs` root is intentionally limited to the developer documentation index
 and repository structure overview. New docs should pick an existing category
