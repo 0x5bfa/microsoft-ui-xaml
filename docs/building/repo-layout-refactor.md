@@ -595,6 +595,9 @@ Shared command wrappers used by multiple repo tools now live under
 Developer environment setup helpers now live under `tools/setup`. The
 root-level `OneTimeSetup.cmd` wrapper remains the stable entry point, while the
 PowerShell implementation is grouped with other manually invoked repo tools.
+The Visual Studio developer command prompt setup implementation lives there too,
+with the root-level `DevCmd.cmd` preserved as the stable entry point used by
+initialization scripts.
 
 Controls build machine maintenance helpers now live under
 `controls/tools/BuildMachine`, keeping the queue/build-machine scripts grouped
