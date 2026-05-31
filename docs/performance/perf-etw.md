@@ -13,7 +13,7 @@ This document describes how to add ETW events to WinUI.
 
 A manifest maps GUIDs and IDs back to event providers (e.g. Microsoft-Windows-XAML) and event names (e.g. RenderWalk). Without the right manifest, WPA can't resolve event IDs back to event names, and can't display the logged events.
 
-![](../images/wpa-unrecognized-event-id.png)
+![](images/wpa-unrecognized-event-id.png)
 
 Here, new events are showing up as events number 586 and 587. Without a way to resolve them, WPA won't be able to display the event names or any of the fields associated with these events. Interestingly, the provider for these events are showing as a GUID (531a35ab-63ce-4bcf-aa98-f88c7a89e455), even though this is the same GUID as Microsoft-Windows-XAML which WPA recognizes.
 
@@ -77,7 +77,7 @@ activity.Stop();
 
 These events then show up in WPA:
 
-![](../images/wpa-tracelogging-event.png)
+![](images/wpa-tracelogging-event.png)
 
 Note that the type of the new events is TraceLogging. WPA can interpret these events without installing anything, and there's also no associated event ID to interpret.
 
