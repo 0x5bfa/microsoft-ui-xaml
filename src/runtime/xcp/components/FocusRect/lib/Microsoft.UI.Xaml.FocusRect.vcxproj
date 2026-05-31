@@ -29,7 +29,7 @@
             $(XcpPath)\components\scaling\inc\;
             $(XcpPath)\plat\win\desktop\;
             $(XcpPath)\control\inc\;
-            $(XcpPath)\core\controls\generated;
+            $(RuntimeGeneratedControlsPath);
             $(XcpPath)\core;
             $(XcpPath)\core\inc\;
             $(XcpPath)\core\text\inc\;

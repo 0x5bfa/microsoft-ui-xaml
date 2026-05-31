@@ -83,7 +83,7 @@
           $(XcpPath)\core\inc;
           $(XcpPath)\core\parser;
           $(XcpPath)\core\imaging\ImagingProvider;
-          $(XcpPath)\core\controls\generated;
+          $(RuntimeGeneratedControlsPath);
           $(XcpPath)\plat\win\common;
           $(XcpPath)\plat\win\browserdesktop;
           $(XcpPath)\host\win\browserdesktop;

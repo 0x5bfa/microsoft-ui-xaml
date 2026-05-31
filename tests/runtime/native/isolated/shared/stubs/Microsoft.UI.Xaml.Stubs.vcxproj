@@ -64,7 +64,7 @@
             $(XcpPath)\dxaml\lib\;
             $(XcpPath)\dxaml\lib\winrtgeneratedclasses\;
             $(XcpPath)\win\inc\;
-            $(XcpPath)\core\controls\generated\;
+            $(RuntimeGeneratedControlsPath);
             $(XcpPath)\core\native\text\Controls\;
             $(XcpPath)\components\xboxutility\inc\;
             $(XcpPath)\components\diagnosticsInterop\inc\;

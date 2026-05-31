@@ -1344,8 +1344,8 @@
     </Project>
   </Folder>
   <Folder Name="/dxaml/xcp/core/controls/" />
-  <Folder Name="/dxaml/xcp/core/controls/generated/">
-    <Project Path="../xcp/core/controls/generated/CoreControlsGenerated.vcxproj">
+  <Folder Name="/src/runtime/generated/core/controls/">
+    <Project Path="../generated/core/controls/CoreControlsGenerated.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>

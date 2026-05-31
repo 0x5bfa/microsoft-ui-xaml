@@ -31,7 +31,7 @@
           $(XcpPath)\win\inc;
           $(XcpPath)\control\inc;
           $(XcpPath)\core\native\text\Controls;
-          $(XcpPath)\core\controls\generated;
+          $(RuntimeGeneratedControlsPath);
           $(XcpPath)\dxaml\lib;
         </ProjectIncludeDirectories>
     </PropertyGroup>

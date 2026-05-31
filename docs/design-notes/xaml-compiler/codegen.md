@@ -50,7 +50,7 @@ It generates the following:
   * src/runtime/xcp/core/parser
   * tools/runtime/XCPTypesAutoGen/XamlGen/StableXbf*.csv
 * Core partials (cpp/h)
-  * src/runtime/xcp/core/controls/generated
+  * src/runtime/generated/core/controls
   * src/runtime/xcp/core/elements
 * Framework partials (cpp/h)
   * src/runtime/xcp/dxaml/lib/winrtfactories
