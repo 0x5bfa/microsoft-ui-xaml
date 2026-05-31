@@ -106,6 +106,13 @@ The external tools ETW integration tests now live under
 test root for input-event and layout-causality ETW coverage consumed by the
 external tools test DLL.
 
+## Runtime XamlBinding test support
+
+The external tools XamlBindingHelper integration tests now live under
+`tests/runtime/xamlbinding/integration`. `$(XamlBindingTestPath)` provides the
+shared test root, while the XamlBindingHelper test XAML payload remains with
+the runtime resource payloads under `tests/runtime/resources`.
+
 ## Runtime ad hoc test apps
 
 Runtime ad hoc test applications now live under `tests/runtime/adhoc`. These
