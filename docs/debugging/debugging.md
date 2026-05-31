@@ -6,6 +6,8 @@
 [Debugging Tips](debugging-tips.md) contains some useful tips for diagnosis and debugging. You are encouraged to update 
 these docs if you have anything to add or amend.
 
+[TraceLogging telemetry events](telemetry-events.md) explains the event syntax and how to monitor emitted events.
+
 ## Table of Contents
 
 - [Manual Testing](#manual-testing)
