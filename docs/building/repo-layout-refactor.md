@@ -82,13 +82,14 @@ directly instead of the removed root wrappers and legacy `dxaml/test` layout.
 ## Runtime test tools
 
 Runtime-specific test tools should move out of `dxaml/test/tools` as their
-references are isolated. `XmlValidation`, `MockDCompInjector`, `detours`, and
-the test `codegen` helper now live under `tests/runtime/tools`. The `codegen`
-command wrapper is co-located with that helper. The runtime solution keeps
-project references to the project-based tools, and `DetoursPath` centralizes
-the remaining detours import consumers. The external tools custom types support
-project now lives under `tests/runtime/tools/customTypes`; projects consume it
-through `$(RuntimeToolsCustomTypesPath)` and generated includes through
+references are isolated. `XmlValidation`, `MockDCompInjector`, `detours`, the
+XBF generator test tool, and the test `codegen` helper now live under
+`tests/runtime/tools`. The `codegen` command wrapper is co-located with that
+helper. The runtime solution keeps project references to the project-based
+tools, and `DetoursPath` centralizes the remaining detours import consumers.
+The external tools custom types support project now lives under
+`tests/runtime/tools/customTypes`; projects consume it through
+`$(RuntimeToolsCustomTypesPath)` and generated includes through
 `$(RuntimeToolsCustomTypesObjPath)`.
 
 ## Runtime test packages
