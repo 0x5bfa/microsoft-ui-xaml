@@ -243,7 +243,7 @@
   <Import Project="$(MUXControlsTestRoot)testui\RadioMenuFlyoutItem\RadioMenuFlyoutItem_TestUI.projitems" Label="Shared" Condition="$(FeatureRadioMenuFlyoutItemEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\RatingControl\RatingControl_TestUI.projitems" Label="Shared" Condition="$(FeatureRatingControlEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)Repeater\TestUI\Repeater_TestUI.projitems" Label="Shared" Condition="$(FeatureRepeaterEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)ScrollPresenter\TestUI\ScrollPresenter_TestUI.projitems" Label="Shared" Condition="$(FeatureScrollPresenterEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)testui\ScrollPresenter\ScrollPresenter_TestUI.projitems" Label="Shared" Condition="$(FeatureScrollPresenterEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\ScrollView\ScrollView_TestUI.projitems" Label="Shared" Condition="$(FeatureScrollViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)ItemsView\TestUI\ItemsView_TestUI.projitems" Label="Shared" Condition="$(FeatureItemsViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\SplitButton\SplitButton_TestUI.projitems" Label="Shared" Condition="$(FeatureSplitButtonEnabled) == 'true'" />

@@ -453,7 +453,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollPresenter_APITests", 
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollPresenter_InteractionTests", "..\src\controls\ScrollPresenter\InteractionTests\ScrollPresenter_InteractionTests.shproj", "{8FAAD013-139C-8D2A-2285-45F717D9E64A}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollPresenter_TestUI", "..\src\controls\ScrollPresenter\TestUI\ScrollPresenter_TestUI.shproj", "{0EC52FD5-42FE-3EB4-84E0-79EC9B5A014E}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollPresenter_TestUI", "..\tests\controls\testui\ScrollPresenter\ScrollPresenter_TestUI.shproj", "{0EC52FD5-42FE-3EB4-84E0-79EC9B5A014E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScrollPresenter", "..\src\controls\ScrollPresenter\ScrollPresenter.vcxitems", "{359544AA-A8CD-715C-CC36-F770E6E81AA0}"
 EndProject
@@ -1584,7 +1584,7 @@ Global
 		..\src\controls\Expander\APITests\Expander_APITests.projitems*{0589a608-fb9c-49bf-9ea3-06ca805f3a9d}*SharedItemsImports = 13
 		..\tests\controls\testui\TitleBar\TitleBar_TestUI.projitems*{0c05e2f0-f21f-4e60-a5bd-b4f5eb655c1d}*SharedItemsImports = 13
 		..\src\controls\Telemetry\Telemetry.vcxitems*{0db22ba9-6053-459b-baf5-e82ea1c78ab3}*SharedItemsImports = 9
-		..\src\controls\ScrollPresenter\TestUI\ScrollPresenter_TestUI.projitems*{0ec52fd5-42fe-3eb4-84e0-79ec9b5a014e}*SharedItemsImports = 13
+		..\tests\controls\testui\ScrollPresenter\ScrollPresenter_TestUI.projitems*{0ec52fd5-42fe-3eb4-84e0-79ec9b5a014e}*SharedItemsImports = 13
 		..\src\controls\ProgressBar\ProgressBar.vcxitems*{0f61c8bd-d066-4812-a02b-e95ce18a985d}*SharedItemsImports = 9
 		..\tests\controls\testui\RatingControl\RatingControl_TestUI.projitems*{10c52fd4-52fc-43b3-94af-895c9b5a014c}*SharedItemsImports = 13
 		..\tests\controls\testui\Interactions\ButtonInteraction\ButtonInteraction_TestUI.projitems*{11b35f24-72b2-4228-9960-0d1ea283e1af}*SharedItemsImports = 13
@@ -1764,7 +1764,7 @@ Global
 		..\src\controls\Repeater\APITests\Repeater_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\Repeater\TestUI\Repeater_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\ScrollPresenter\APITests\ScrollPresenter_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\ScrollPresenter\TestUI\ScrollPresenter_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\ScrollPresenter\ScrollPresenter_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\ScrollView\APITests\ScrollView_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\ScrollView\ScrollView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\SelectorBar\APITests\SelectorBar_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5

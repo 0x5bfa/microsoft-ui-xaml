@@ -107,7 +107,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScrollPresenter", "ScrollPr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScrollPresenter", "..\src\controls\ScrollPresenter\ScrollPresenter.vcxitems", "{359544AA-A8CD-715C-CC36-F770E6E81AA0}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollPresenter_TestUI", "..\src\controls\ScrollPresenter\TestUI\ScrollPresenter_TestUI.shproj", "{0EC52FD5-42FE-3EB4-84E0-79EC9B5A014E}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollPresenter_TestUI", "..\tests\controls\testui\ScrollPresenter\ScrollPresenter_TestUI.shproj", "{0EC52FD5-42FE-3EB4-84E0-79EC9B5A014E}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PersonPicture_APITests", "..\src\controls\PersonPicture\APITests\PersonPicture_APITests.shproj", "{5243EF2C-F250-48BD-B633-39CC2A0A38AA}"
 EndProject
@@ -873,7 +873,7 @@ Global
 		..\src\controls\lights\ApiTests\Lights_ApiTests\Lights_ApiTests.projitems*{02ed27be-97e4-4327-bb96-8b3fa6869c48}*SharedItemsImports = 13
 		..\src\controls\RadioButtons\APITests\RadioButtons_APITests.projitems*{0352711a-d79a-4d82-8255-916d29522ae0}*SharedItemsImports = 13
 		..\src\controls\Telemetry\Telemetry.vcxitems*{0db22ba9-6053-459b-baf5-e82ea1c78ab3}*SharedItemsImports = 9
-		..\src\controls\ScrollPresenter\TestUI\ScrollPresenter_TestUI.projitems*{0ec52fd5-42fe-3eb4-84e0-79ec9b5a014e}*SharedItemsImports = 13
+		..\tests\controls\testui\ScrollPresenter\ScrollPresenter_TestUI.projitems*{0ec52fd5-42fe-3eb4-84e0-79ec9b5a014e}*SharedItemsImports = 13
 		..\src\controls\ProgressBar\ProgressBar.vcxitems*{0f61c8bd-d066-4812-a02b-e95ce18a985d}*SharedItemsImports = 9
 		..\tests\controls\testui\RatingControl\RatingControl_TestUI.projitems*{10c52fd4-52fc-43b3-94af-895c9b5a014c}*SharedItemsImports = 13
 		..\tests\controls\testui\Interactions\ButtonInteraction\ButtonInteraction_TestUI.projitems*{11b35f24-72b2-4228-9960-0d1ea283e1af}*SharedItemsImports = 13

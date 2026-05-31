@@ -91,7 +91,7 @@ These are paths for Microsoft.UI.Xaml.Controls.
 ## IScrollController
 
 - Product: \src\controls\ScrollPresenter\ScrollPresenterPrimitives.idl
-- Test: \src\controls\ScrollPresenter\TestUI\*Controller*
+- Test: \tests\controls\testui\ScrollPresenter\*Controller*
 
 
 ## ScrollPresenter

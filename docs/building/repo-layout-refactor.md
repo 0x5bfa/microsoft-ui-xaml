@@ -758,6 +758,8 @@ under direct `tests/controls/testui` feature folders as well.
 Materials TestUI shared projects moved under `tests/controls/testui/Materials`
 so Acrylic and Reveal test UI stays grouped by its feature family outside
 controls source.
+ScrollPresenter TestUI now lives under `tests/controls/testui/ScrollPresenter`,
+continuing the move of control-specific test pages out of product source.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
