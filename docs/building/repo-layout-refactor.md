@@ -519,6 +519,9 @@ keeping opt-in test project build behavior out of the `eng` root.
 Windows SDK override props and targets now live under `eng/sdkconfig`, keeping
 early SDK package import configuration together.
 
+Repository folder path props now live under `eng/paths`, keeping central path
+definitions out of the `eng` root.
+
 Common build configuration props and ARM64EC target overrides now live under
 `eng/configuration`, grouping repo-wide defaults and platform/configuration
 defaults together.

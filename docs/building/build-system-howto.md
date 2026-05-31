@@ -53,7 +53,7 @@ MSBuild project file. The following values are provided for you for common locat
 <TestDependenciesResourcesDestinationPath>$(BinplaceRootPath)\TestDependencies</TestDependenciesResourcesDestinationPath>
 ```
 
-These properties, alongside many others, are defined in [eng\folderpaths.props](../../eng/folderpaths.props)
+These properties, alongside many others, are defined in [eng\paths\folderpaths.props](../../eng/paths/folderpaths.props)
 
 You can set the destination for your project like this:
 

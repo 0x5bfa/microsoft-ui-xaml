@@ -76,6 +76,7 @@ Standalone build transform assets live under `/eng/transforms`.
 Build temp-folder setup lives under `/eng/tempfolder`.
 Project-based restore helpers live under `/eng/restore`.
 Versioning props and dependency details live under `/eng/versioning`.
+Repository-wide path definitions live under `/eng/paths`.
 Common build configuration and repo-wide build defaults live under `/eng/configuration`.
 Build-output consumption helpers live under `/eng/consumebinaries`.
 CRT/STL linkage rules live under `/eng/crtstl`.

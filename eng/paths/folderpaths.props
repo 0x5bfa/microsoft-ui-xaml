@@ -179,7 +179,7 @@
   <!-- TestInProduction paths -->
   <PropertyGroup Condition="Exists('$(NugetPackageDirectory)\Microsoft.Windows.TestInProduction')">
     <!-- Use the production package -->
-    <TIPPackagesConfigContents>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)..\build\packages.TestInProduction.config"))</TIPPackagesConfigContents>
+    <TIPPackagesConfigContents>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)..\..\build\packages.TestInProduction.config"))</TIPPackagesConfigContents>
     <TestInProductionPackageVersion>$([System.Text.RegularExpressions.Regex]::Match($(TIPPackagesConfigContents), 'Microsoft.Windows.TestInProduction.*?version="(.*?)"').Groups[1].Value)</TestInProductionPackageVersion>
     <TestInProductionPkgDirectory>$(NugetPackageDirectory)\Microsoft.Windows.TestInProduction.$(TestInProductionPackageVersion)</TestInProductionPkgDirectory>
     <TestInProductionTargetsFile>$(TestInProductionPkgDirectory)\build\native\Microsoft.Windows.TestInProduction.targets</TestInProductionTargetsFile>
