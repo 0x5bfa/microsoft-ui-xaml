@@ -37,9 +37,9 @@ When in doubt, use MSBuild.
 
 ### 1. Check if bt is installed
 
-Run `bt --version`.  If bt is missing, run the `scripts/install-bt.ps1` script
-from this skill's directory to download and install it.  Periodically run it to
-update bt as well.
+Run `bt --version`. If bt is missing, run `tools/build/scripts/install-bt.ps1`
+from the repo root to download and install it. Periodically run it to update bt
+as well.
 
 ### 2. Pick the right binlog
 
