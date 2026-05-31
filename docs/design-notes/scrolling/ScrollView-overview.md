@@ -14,10 +14,10 @@ The IScrollController interface is a standard contract used for the communicatio
 importantly, it allows plugging in other scrolling widgets than your typical scrollbar. One of those alternatives is our own AnnotatedScrollBar control.
 
 ScrollView with shy (mouse over content) ScrollBar and with expanded (mouse over scrollbar) ScrollBar:  
-![ScrollView with ScrollBars](Images/ScrollView-with-scrollbars.png)
+![ScrollView with ScrollBars](images/ScrollView-with-scrollbars.png)
 
 ScrollView with alternative IScrollController implementation:  
-![ScrollView with AnnotatedScrollBar](Images/ScrollView-with-custom-scrollcontroller.png)
+![ScrollView with AnnotatedScrollBar](images/ScrollView-with-custom-scrollcontroller.png)
 
 The InteractionTracker produces translation and scale transforms that get applied to the manipulated content independently of the UI thread, 
 for smooth visual changes.
@@ -81,7 +81,7 @@ Inside the ScrollView control template, we have four key elements:
 - a little square separator between the scrollbars, which is a Border.
 
 Typical layout:  
-![Layout approximation](Images/ScrollViewTypicalParts.png)
+![Layout approximation](images/ScrollViewTypicalParts.png)
 
 
 # Key source code locations

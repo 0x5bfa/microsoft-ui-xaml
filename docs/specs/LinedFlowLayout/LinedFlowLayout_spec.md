@@ -41,7 +41,7 @@ may be cropped to fit in their line.
 
 The canonical usage for the `LinedFlowLayout` is to display picture collections. 
 
-![Illustration of canonical LinedFlowLayout usage](Images/LinedFlowLayout_Background.png)
+![Illustration of canonical LinedFlowLayout usage](images/LinedFlowLayout_Background.png)
 
 # Conceptual pages (How To)
 
@@ -129,7 +129,7 @@ XAML
 </Page>
 ```
 
-![LinedFlowLayout example with default property values](Images/LinedFlowLayout_Conceptual1.png)
+![LinedFlowLayout example with default property values](images/LinedFlowLayout_Conceptual1.png)
 
 There is no spacing between the lines and the items within a line. The items are packed to the left by default.
 
@@ -170,7 +170,7 @@ XAML
 </Page>
 ```
 
-![LinedFlowLayout example with explicit sizing and spacing](Images/LinedFlowLayout_Conceptual2.png)
+![LinedFlowLayout example with explicit sizing and spacing](images/LinedFlowLayout_Conceptual2.png)
 
 The items are packed to the left by default. This is due to the default `LinedFlowLayout.ItemsJustification` 
 value of `Start`, and default `LinedFlowLayout.ItemsStretch` value of `None`. Changing the `ItemsJustification` 
@@ -212,7 +212,7 @@ XAML
 </Page>
 ```
 
-![LinedFlowLayout example with empty space evenly distributed between items](Images/LinedFlowLayout_Conceptual3.png)
+![LinedFlowLayout example with empty space evenly distributed between items](images/LinedFlowLayout_Conceptual3.png)
 
 ## Example with items stretching to fill the lines
 
@@ -252,7 +252,7 @@ XAML
 </Page>
 ```
 
-![LinedFlowLayout example with explicit sizing and spacing](Images/LinedFlowLayout_Conceptual4.png)
+![LinedFlowLayout example with explicit sizing and spacing](images/LinedFlowLayout_Conceptual4.png)
 
 
 # API pages
@@ -306,7 +306,7 @@ _These values are a copy of [UniformGridLayout.ItemsJustification](https://docs.
 
 An enumeration value that indicates how items are aligned. The default is `Start`.
 
-![Illustration of LinedFlowLayout's ItemsJustification values](Images/LinedFlowLayout_ItemsJustification.png)
+![Illustration of LinedFlowLayout's ItemsJustification values](images/LinedFlowLayout_ItemsJustification.png)
 
 The `ItemsJustification` property affects the _arrange_ pass of layout.
 
@@ -348,7 +348,7 @@ _Property name and enum values are copied from [UniformGridLayout.ItemsStretch](
 
 An enumeration value that indicates how items are sized to fill the available space. The default is `None`.
 
-![Illustration of LinedFlowLayout's ItemsStretch values](Images/LinedFlowLayout_ItemsStretch.png)
+![Illustration of LinedFlowLayout's ItemsStretch values](images/LinedFlowLayout_ItemsStretch.png)
 
 The `ItemsStretch` property affects the _measure_ pass of layout.
 
@@ -373,9 +373,9 @@ XAML
 In the two examples below, the `ItemsStretch` property is set to `None` and `Fill` respectively.
 Note that the last line is not affected by the property value.
 
-![Illustration of ItemsStretch's None value](Images/LinedFlowLayout_ItemsStretchNone.png)
+![Illustration of ItemsStretch's None value](images/LinedFlowLayout_ItemsStretchNone.png)
 
-![Illustration of ItemsStretch's Fill value](Images/LinedFlowLayout_ItemsStretchFill.png)
+![Illustration of ItemsStretch's Fill value](images/LinedFlowLayout_ItemsStretchFill.png)
 
 
 ## LinedFlowLayout.MinItemSpacing property
@@ -397,7 +397,7 @@ The minimum space (in pixels) between items on the horizontal axis. Default is z
 
 In the example below, the `MinItemSpacing` property is set to 6.
 
-![Illustration of LinedFlowLayout's MinItemSpacing property](Images/LinedFlowLayout_MinItemSpacing.png)
+![Illustration of LinedFlowLayout's MinItemSpacing property](images/LinedFlowLayout_MinItemSpacing.png)
 
 ### Remarks
 
@@ -442,7 +442,7 @@ The space (in pixels) between items on the vertical axis. Default is zero.
 
 In the example below, the `LineSpacing` property is set to 10.
 
-![Illustration of LinedFlowLayout's LineSpacing property](Images/LinedFlowLayout_LineSpacing.png)
+![Illustration of LinedFlowLayout's LineSpacing property](images/LinedFlowLayout_LineSpacing.png)
 
 
 _Spec note:_
@@ -486,7 +486,7 @@ of the item at index 0 as a fallback value.
 
 In the example below, the `LineHeight` property is set to 96.
 
-![Illustration of LinedFlowLayout's LineHeight property](Images/LinedFlowLayout_LineHeight.png)
+![Illustration of LinedFlowLayout's LineHeight property](images/LinedFlowLayout_LineHeight.png)
 
 _Spec note:_
 _Because the Orientation property see [LinedFlowLayout.Orientation](#riverflowlayoutorientation-property) may be added at a later time,_
@@ -887,7 +887,7 @@ The `ItemsView.RequestedRangeStartIndex` and `ItemsView.RequestedRangeLength` pr
 | 195 | 67 |
 | 303 | 65 |
 
-![Illustration of LinedFlowLayout RequestedRangeStartIndex and RequestedRangeLength](Images/LinedFlowLayout_RequestedRange.png)
+![Illustration of LinedFlowLayout RequestedRangeStartIndex and RequestedRangeLength](images/LinedFlowLayout_RequestedRange.png)
 
 After the 5 `ItemsInfoRequested` event occurrences, the `ItemsView.RequestedRangeStartIndex` property returns the value 303,
 while the `ItemsView.RequestedRangeLength` property returns the value 65.
@@ -1009,7 +1009,7 @@ _This method is used in the AnnotatedScrollBar scenario to make sure that when t
 predefined Label, the ItemsView content ends up at the exact offset associated with that Label. Otherwise the scroll offset 
 may be off by a few lines._
 
-![Illustration of LinedFlowLayout LockItemToLine usage](Images/LinedFlowLayout_LockItemToLine.png)
+![Illustration of LinedFlowLayout LockItemToLine usage](images/LinedFlowLayout_LockItemToLine.png)
 
 _Application code can call this method to determine Label values to be used by an AnnotatedScrollBar. This guarantees that when 
 a user scrolls to an AnnotatedScrollBar label, the user lands exactly with the item represented by that label at the top of the 
@@ -1336,7 +1336,7 @@ Namespace: Microsoft.UI.Xaml.Controls
 _Spec note:_
 _Equivalent to UniformGridLayoutItemsJustification enum: https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.uniformgridlayoutitemsjustification?view=winui-2.7_
 
-![Illustration of LinedFlowLayout's ItemsJustification property](Images/LinedFlowLayout_ItemsJustification.png)
+![Illustration of LinedFlowLayout's ItemsJustification property](images/LinedFlowLayout_ItemsJustification.png)
 
 ## LinedFlowLayoutItemsStretch enum
 

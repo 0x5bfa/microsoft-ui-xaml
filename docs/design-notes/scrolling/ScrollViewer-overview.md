@@ -75,10 +75,10 @@ Inside the ScrollViewer control template, we have four key elements:
 - a little square separator between the scrollbars
 
 Typical layout:  
-![Layout approximation without headers](Images/ScrollViewerTypicalParts.png)
+![Layout approximation without headers](images/ScrollViewerTypicalParts.png)
 
 Rare usage with headers:  
-![Layout approximation with headers](Images/ScrollViewerControlTemplate.png)
+![Layout approximation with headers](images/ScrollViewerControlTemplate.png)
 
 
 # Key source code locations
@@ -179,7 +179,7 @@ You may want to keep track of these fields:
 - DirectManipulation-driven touch manipulations (i.e. scrolling and zooming) are enabled when the touched UIElement's ManipulationMode property includes ManipulationModes.System.
 Every UIElement in its parent path to ScrollViewer.Content must also include the System flag, or else no manipulation is triggered.
 
-- The MuxControlsTestApp found under WinUI 3's \BuildOutput\bin\amd64chk\Test\UnpackagedApps\MUXControlsTestApp folder has a basic test page dedicated to the ScrollViewer, called !["ScrollViewer"](Images/ScrollViewerTestPage.jpg).
+- The MuxControlsTestApp found under WinUI 3's \BuildOutput\bin\amd64chk\Test\UnpackagedApps\MUXControlsTestApp folder has a basic test page dedicated to the ScrollViewer, called !["ScrollViewer"](images/ScrollViewerTestPage.jpg).
 
 - There is a special ScrollViewer at the root of the UI tree called 'RootScrollViewer' which involves software keyboards: the app's UI is shrunk vertically when the soft keyboard appears and expanded when it disappears.
 
