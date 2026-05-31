@@ -673,6 +673,9 @@ the command paths directly.
 Controls shared build support files live under `controls/build`, while the
 controls build command implementation now lives under
 `tools/controls/Build/scripts`.
+Controls solution entry points now live under `controls/solutions`, keeping the
+controls root focused on MSBuild auto-discovery wrappers and controls-owned
+configuration files.
 The root-level `controls/Build.cmd` wrapper was removed and solution items now
 point at `tools/controls/Build/scripts/Build.cmd`. Root-level controls props files that
 are discovered by MSBuild remain as thin wrappers over their implementations in

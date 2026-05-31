@@ -32,6 +32,7 @@ function AddAttribute
 $toolsDir = Split-Path (Split-Path -Path $MyInvocation.MyCommand.Path) -Parent
 $repoRoot = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..\..\..")
 $muxControlsDir = Join-Path $repoRoot "controls"
+$muxControlsSolutionsDir = Join-Path $muxControlsDir "solutions"
 $controlsSourceDir = Join-Path $repoRoot "src\controls"
 $controlsTestDir = Join-Path $repoRoot "tests\controls"
 $controlDir = Join-Path $controlsSourceDir $controlName
@@ -160,11 +161,11 @@ FindAndReplaceInFile (Join-Path $controlsSourceDir "Telemetry\RuntimeProfiler.h"
 $id = get-random
 
 # We need double backslash for C# strings below
-$cleanMuxControlsDir = $muxControlsDir.Replace("\","\\") + "\\"
+$cleanMuxControlsSolutionsDir = $muxControlsSolutionsDir.Replace("\","\\") + "\\"
 $cleanControlsSourceDir = $controlsSourceDir.Replace("\","\\") + "\\"
 $cleanControlsTestDir = $controlsTestDir.Replace("\","\\") + "\\"
 
-Write-Output "$cleanMuxControlsDir"
+Write-Output "$cleanMuxControlsSolutionsDir"
 
 $assemblies=(
     "System","EnvDTE","EnvDTE80", "Microsoft.VisualStudio.Interop"
@@ -194,8 +195,8 @@ namespace SolutionHelper
             var solutionNames = new List<string>(){"MUXControls.sln","MUXControlsInnerLoop.sln"};
             foreach(var solutionName in solutionNames)
             {
-                Console.WriteLine("Opening solution: $($cleanMuxControlsDir)" + solutionName);
-                solution.Open("$cleanMuxControlsDir" + solutionName);
+                Console.WriteLine("Opening solution: $($cleanMuxControlsSolutionsDir)" + solutionName);
+                solution.Open("$cleanMuxControlsSolutionsDir" + solutionName);
                 Console.WriteLine("Opened solution");
                 var sourceFolder = solution.Projects.Item(1);
     
