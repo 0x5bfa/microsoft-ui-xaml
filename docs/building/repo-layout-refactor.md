@@ -765,8 +765,8 @@ PowerShell profile loaded by `ps.bat`. The root-level `controls/DevCmd.cmd`
 wrapper was removed; controls developers should use
 `tools/controls/Shell/scripts/DevCmd.cmd` directly.
 
-Controls shared command wrappers now live under `tools/controls/Common/scripts`,
-including the NuGet and PowerShell wrappers used by controls tooling scripts.
+Controls tooling scripts now use the shared command wrappers under
+`tools/common/scripts`, including the NuGet and PowerShell wrappers.
 
 Controls custom MSBuild task sources and their test harness now live under
 `tools/controls/BuildTasks`, with the task NuGet package inputs and publish

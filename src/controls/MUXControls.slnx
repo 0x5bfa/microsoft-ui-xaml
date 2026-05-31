@@ -167,8 +167,8 @@
   <Folder Name="/Tools/">
     <File Path="../../tools/controls/Build/scripts/Build.cmd" />
     <File Path="../../tools/controls/BuildTasks/packaging/MUXCustomBuildTasks/scripts/PublishNupkg.cmd" />
-    <File Path="../../tools/controls/Common/scripts/NugetWrapper.cmd" />
-    <File Path="../../tools/controls/Common/scripts/PowershellWrapper.cmd" />
+    <File Path="../../tools/common/scripts/NugetWrapper.cmd" />
+    <File Path="../../tools/common/scripts/PowershellWrapper.cmd" />
     <File Path="../../tools/controls/ControlGeneration/scripts/GenerateNewProperty.ps1" />
     <File Path="../../tools/controls/Packaging/scripts/MakeAppxHelper.cmd" />
     <File Path="../../tools/controls/ResourceGeneration/scripts/GenerateSystemDllImageResources.ps1" />
