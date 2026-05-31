@@ -610,7 +610,9 @@ Controls build command implementation and shared build support files live under
 `controls/build`, while the root-level `controls/Build.cmd` remains the stable
 entry point used by solution files and developer workflows. Root-level controls
 props files that are discovered by MSBuild remain as thin wrappers over their
-implementations in `controls/build`.
+implementations in `controls/build`. The controls `Directory.Build.props` and
+`Directory.Build.targets` implementations also live in `controls/build`, while
+the root files remain as MSBuild auto-discovery wrappers.
 
 Controls build machine maintenance helpers now live under
 `controls/tools/BuildMachine`, keeping the queue/build-machine scripts grouped

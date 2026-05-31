@@ -56,7 +56,9 @@ Controls-specific build support lives under `/controls/build`, including
 the controls build command implementation, feature-area selection, project
 import manifests, and shared props/targets. Root command entry points are kept
 for compatibility where needed, and root controls props files are thin wrappers
-where MSBuild discovery depends on their names.
+where MSBuild discovery depends on their names. Controls-specific
+`Directory.Build.props` and `Directory.Build.targets` implementations also live
+under `/controls/build`.
 Controls test-app build helpers live under `/controls/test/build`.
 
 See the [layout refactor notes](building/repo-layout-refactor.md) for more
