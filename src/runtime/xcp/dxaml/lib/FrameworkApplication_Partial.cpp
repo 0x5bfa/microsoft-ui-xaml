@@ -74,7 +74,7 @@ Cleanup:
     RRETURN(hr);
 }
 
-// Invoked as part of the desktop app initialization path, see startup-overview.md for more info.
+// Invoked as part of the desktop app initialization path, see docs/design-notes/app-lifecycle/startup-overview.md for more info.
 _Check_return_ HRESULT FrameworkApplication::StartOnCurrentThreadImpl(_In_ xaml::IApplicationInitializationCallback* pCallback)
 {
     g_spApplicationInitializationCallback = pCallback;
@@ -159,7 +159,7 @@ _Check_return_ HRESULT FrameworkApplication::RemoveIslandImpl(_In_ xaml_hosting:
 }
 
 // Shared startup for UWP and desktop apps
-// See startup-overview.md for details
+// See docs/design-notes/app-lifecycle/startup-overview.md for details
 _Check_return_ HRESULT FrameworkApplicationFactory::StartImpl(_In_opt_ xaml::IApplicationInitializationCallback* pCallback)
 {
     g_spApplicationInitializationCallback = pCallback;

@@ -257,7 +257,7 @@ to avoid relying on messages from the top-level HWND.
 
 ### Object Lifetime/Threading Improvements
 
-See also: [xaml-shutdown](../xaml-shutdown.md)
+See also: [xaml-shutdown](../app-lifecycle/xaml-shutdown.md)
 
 **Issue #1:  WindowsXamlManager instance creation order (FIXED)**
 

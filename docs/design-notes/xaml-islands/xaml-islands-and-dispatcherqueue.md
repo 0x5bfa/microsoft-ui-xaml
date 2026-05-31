@@ -18,7 +18,7 @@
 
 ## Overview
 *This is part of XAML's strategy for organized shutdown.  See
-[xaml-shutdown.md](../xaml-shutdown.md) for more information.*
+[xaml-shutdown.md](../app-lifecycle/xaml-shutdown.md) for more information.*
 
 This page describes the design for Lifted XAML's dependency on DispatcherQueue, specifically for XAML Islands scenarios.
 

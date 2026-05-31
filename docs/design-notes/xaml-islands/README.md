@@ -16,8 +16,8 @@ over time and some thoughts about the future.
 * [desktopwindowxamlsource](desktopwindowxamlsource.md) - API spec for the `DesktopWindowXamlSource` type.
 * [xaml-island-type](xaml-island-type.md) - API spec for the `XamlIsland` API.
 * Information about the Xaml app model and lifetime:
-  * [startup-overview](../startup-overview.md) 
-  * [xaml-shutdown](../xaml-shutdown.md) 
+  * [startup-overview](../app-lifecycle/startup-overview.md)
+  * [xaml-shutdown](../app-lifecycle/xaml-shutdown.md)
   * [xaml-islands-and-dispatcher-queue](./xaml-islands-and-dispatcherqueue.md)
 
 
