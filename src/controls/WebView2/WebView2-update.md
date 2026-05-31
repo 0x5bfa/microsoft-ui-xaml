@@ -82,7 +82,7 @@ example, if an API was previously experimental before but is currently final, ol
 
 1. Run `UpdateWebView2.cmd`. This can be found in the `\scripts` folder. For help, run `UpdateWebView2.cmd /?`. 
    This script will:
-   * Update the SDK version in `\eng\versions.props` and `\src\controls\dll\packages.config`
+   * Update the SDK version in `\eng\versioning\Versions.props` and `\src\controls\dll\packages.config`
      > Updating these numbers is actually the only thing that needs to happen to consume a new, public SDK. All other 
        instructions in this document (besides step 4 used for private SDKs) are related to the runtime we include for 
        tests.

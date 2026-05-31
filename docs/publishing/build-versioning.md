@@ -14,7 +14,7 @@
 
 All of Xaml’s dependencies are listed in package config files or solutions.
 
-> Note: several of the versions in [packages.config](../../eng/packages/packages.config) must be kept in sync with [eng\versions.props](../../eng/versions.props)
+> Note: several of the versions in [packages.config](../../eng/packages/packages.config) must be kept in sync with [eng\versioning\Versions.props](../../eng/versioning/Versions.props)
 
 This is mostly in the [packages.config](../../eng/packages/packages.config) file:
 
@@ -43,12 +43,12 @@ The complete list of all package dependency lists (restore files):
 
 There are scripts in the scripts directory to update the reference to IXP and to CSWinRT:
 * UpdateIxp (updates eng/packages/packages*.config)
-* UpdateCSWinRT (updates eng/packages/packages.config and eng\versions.props)
+* UpdateCSWinRT (updates eng/packages/packages.config and eng\versioning\Versions.props)
 
 There is also a script in the scripts directory to update the reference to the WebView2 SDK and Edge version:
 * [UpdateWebView2](../../src/controls/WebView2/WebView2-update.md)
     * Updates SDK reference in [src\controls\dll\packages.config](../../src/controls/dll/packages.config) and
-    [eng\versions.props](../../eng/versions.props)
+    [eng\versioning\Versions.props](../../eng/versioning/Versions.props)
     * Updates Edge version in [packages.config](../../eng/packages/packages.config),
     [Microsoft.UI.DCPP.Dependencies.Edge.nuspec](../../packaging/nuspecs/Microsoft.UI.DCPP.Dependencies.Edge.nuspec), and
     [TaefHostAppManaged.csproj](../../tests/runtime/infra/taefhostappmanaged/TaefHostAppManaged.csproj)
@@ -84,7 +84,7 @@ and only in isolated source files that are clearly identified as light-up code.
 
 ## Versions.props
 
-> Note: several of the versions in [eng\versions.props](../../eng/versions.props) must be kept in sync with [packages.config](../../eng/packages/packages.config)
+> Note: several of the versions in [eng\versioning\Versions.props](../../eng/versioning/Versions.props) must be kept in sync with [packages.config](../../eng/packages/packages.config)
 
 TBD
 
@@ -112,7 +112,7 @@ In the lifted repo, the FrameworkReference override mechanism is used as follows
 * In the root of the lifted repo is a `Directory.Build.Targets` that gets included by all projects in the repo, 
 * this imports `eng\sdkconfig\sdkconfig.targets`,
 * and this sets the `<FrameworkReference>` overrides to 10.0.`TargetPlatformVersion`.`MicrosoftWindowsSDKNetRefPackVersionSuffixOverride`. 
-* That value is defined in [eng\versions.props](../../eng/versions.props), for example
+* That value is defined in [eng\versioning\Versions.props](../../eng/versioning/Versions.props), for example
 
 ```xml
 <MicrosoftWindowsSDKNetRefPackVersionSuffixOverride>8-preview</MicrosoftWindowsSDKNetRefPackVersionSuffixOverride>

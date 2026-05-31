@@ -562,6 +562,9 @@ GraphAugmentation helper projects that appear in solution files.
 Final-release build defines now live under `eng/finalrelease`, keeping the
 `MUXFinalRelease` prerelease constants in a named build settings bucket.
 
+Versioning props and dependency details now live under `eng/versioning`, keeping
+package version extraction and WinUI file-version defines together.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.

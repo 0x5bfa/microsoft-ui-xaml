@@ -8,7 +8,7 @@
     <PkgMicrosoft_PGO_Helpers_Cpp>$(NuGetPackageDirectory)\Microsoft.Internal.PGO-Helpers.Cpp.$(PGOHelpersVersion)</PkgMicrosoft_PGO_Helpers_Cpp>
   </PropertyGroup>
 
-  <Import Project="$(MSBuildThisFileDirectory)..\winui-version.props" Condition="'$(ProductMajorVersion)' == ''"/>
+  <Import Project="$(MSBuildThisFileDirectory)..\versioning\winui-version.props" Condition="'$(ProductMajorVersion)' == ''"/>
 
   <PropertyGroup>
     <PGOBranch>main</PGOBranch>

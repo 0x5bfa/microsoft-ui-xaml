@@ -8,7 +8,7 @@
 $dotnetInstallScript = "$env:TEMP\dotnet-install.ps1"
 
 $repoInstallDir  = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..\.dotnet")
-$versionPropsFileProject = ([xml](Get-Content -Raw "$PSScriptRoot\..\..\eng\versions.props")).Project
+$versionPropsFileProject = ([xml](Get-Content -Raw "$PSScriptRoot\..\..\eng\versioning\Versions.props")).Project
 #dotNetSdkChannel and dotNetSdkVNextChannel refer to the current Long Term Support and Standard Term Support versions of .NET, respectively. 
 $dotNetSdkChannel = $versionPropsFileProject.SelectSingleNode('//dotNetSdkChannel').InnerText
 $dotNetSdkVNextChannel  = $versionPropsFileProject.SelectSingleNode('//dotNetSdkVNextChannel').InnerText
@@ -28,7 +28,7 @@ $x86InstallDir  = "$x64InstallDir\x86"
 # If quality is present, it will check for the presence of the channel argument.
 # If the channel argument is also present, it will use both the channel and quality arguments.
 # If the quality argument is present but the channel argument is not, it will output an error message.
-# If neither the version nor quality arguments are present, it will use the channel specified in the dotNet7SdkChannel/dotNet8SdkChannel variables in eng/versions.props
+# If neither the version nor quality arguments are present, it will use the channel specified in the dotNet7SdkChannel/dotNet8SdkChannel variables in eng/versioning/Versions.props
 
 if (-not [string]::IsNullOrEmpty($version)) 
 {
@@ -71,7 +71,7 @@ elseif (-not [string]::IsNullOrEmpty($channel))
 }
 else 
 {
-    #Picks up Channel Version specified in eng/Versions.props
+    #Picks up Channel Version specified in eng/versioning/Versions.props
 
     $backupChannel = $dotNetSdkChannel
 
