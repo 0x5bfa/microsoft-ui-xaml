@@ -69,6 +69,7 @@ All build system and other engineering related files go in this directory.
 For more information on the build system, see the [build system design](build-system-design.md)
 WebView2-specific build workaround targets live under `/eng/webview2`.
 Shared signing inputs live under `/eng/signing`.
+Standalone build transform assets live under `/eng/transforms`.
 
 ## /external
 This folder contains checked-in third-party dependencies. Header-only
