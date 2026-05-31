@@ -48,7 +48,7 @@ where HWNDs aren't available.
 * Accelerators -- See [xaml-islands](xaml-islands.md)
 * Access Key -- See [xaml-islands](xaml-islands.md)
 * message pumps -- Same as "message loop".  A windows programming concept going back to Windows 3.0 (or earlier?).  See [docs](https://learn.microsoft.com/en-us/windows/win32/learnwin32/window-messages)
-* UIA providers -- See [uia](../Uia.md)
+* UIA providers -- See [uia](../input/Uia.md)
 * Code walk through for:
   * Island APIs
   * Navigate focus
