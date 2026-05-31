@@ -192,7 +192,7 @@ Then rebuild.
 
 ### Deploying and Debugging
 
-After a successful build, projects that have imported usexamlcompiler.props
+After a successful build, projects that have imported `eng\xamlcompiler\usexamlcompiler.props`
 will automatically pick up the newly built compiler.
 
 Note that:
@@ -231,7 +231,7 @@ reviewers can validate code changes in all 4 languages.
 We require all Xaml Compiler fixes to be accompanied by a regression test.
 
 However, our regression tests do not consume from a NuGet package, instead importing
-the usexamlcompiler.props file to consume the Xaml compiler and WinUI binaries directly
+the `eng\xamlcompiler\usexamlcompiler.props` file to consume the Xaml compiler and WinUI binaries directly
 from the build for quick inner loop development.  Before checking in a change, you should also validate
 the real-world NuGet scenario works by building perf/scenarios/MeasureMUX-set.sln.  To do this:
 

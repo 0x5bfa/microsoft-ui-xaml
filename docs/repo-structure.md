@@ -80,6 +80,7 @@ MSBuild cache configuration lives under `/eng/projectcaching`.
 Shared test-project build settings live under `/eng/testprojects`.
 Windows SDK override configuration lives under `/eng/sdkconfig`.
 Package layout build rules live under `/eng/packaging`.
+In-repo XAML compiler consumption hooks live under `/eng/xamlcompiler`.
 
 ## /external
 This folder contains checked-in third-party dependencies. Header-only

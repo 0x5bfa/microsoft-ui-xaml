@@ -56,7 +56,7 @@
   <Import Project="eng\midl\midl.props" Condition="'$(IsWinmdProject)' == 'true'" />
   <Import Project="eng\productmetadata.props" />
   <Import Project="eng\packaging\packaging.props" />
-  <Import Project="eng\usexamlcompiler.props" Condition="'$(UseXamlCompiler)'=='true'" />
+  <Import Project="eng\xamlcompiler\usexamlcompiler.props" Condition="'$(UseXamlCompiler)'=='true'" />
   <Import Project="eng\testprojects\testprojects.props" Condition="'$(TestCode)'=='true'" />
   <Import Project="eng\muxfinalrelease.props" />
   <Import Project="eng\adhoc\adhocapp.props" Condition="'$(AdHocApp)'=='true'" />
