@@ -72,7 +72,7 @@ else {
 }
 
 # Microsoft.VisualStudio.Component.VC.ATL.ARM64 is not installed by default, 
-# so use it as a rough signal that "vs_installer .vsconfig_buildtools ..." needs to be run.
+# so use it as a rough signal that "vs_installer tools\setup\vsconfig\buildtools.vsconfig ..." needs to be run.
 $hasAtl = Test-Path (Join-Path $vsInstallDir "VC\Tools\MSVC\*\atlmfc\lib\arm64")
 $needsDownload = -not $msbuildUpToDate 
 

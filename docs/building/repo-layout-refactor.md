@@ -700,6 +700,8 @@ one-time bootstrap entry point and its PowerShell implementation live under
 setup implementation lives under `tools/setup/shell/scripts`. There are no shallow
 setup compatibility wrappers; repo-local callers and external jobs should call
 the command paths directly.
+Visual Studio component config files now live under `tools/setup/vsconfig`, so
+environment setup inputs stay with the setup scripts that consume them.
 
 Controls shared build support files live under `eng/controls/build`, while the
 controls build command implementation now lives under

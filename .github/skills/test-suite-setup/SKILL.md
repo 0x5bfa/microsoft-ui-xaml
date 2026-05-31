@@ -211,7 +211,7 @@ When this skill is invoked:
 
 - Windows 10/11 (20H2 or later recommended)
 - Visual Studio 2022 with C++ workloads and Spectre mitigation libs
-  - If missing Spectre libs, import the `.vsconfig` file from the repo root via VS Installer
+  - If missing Spectre libs, import `tools\setup\vsconfig\winui.vsconfig` via VS Installer
 - Admin privileges (required for test machine setup and running tests)
 - A visible desktop session (tests launch UI apps and send input — do NOT run over minimized RDP or locked screen)
 

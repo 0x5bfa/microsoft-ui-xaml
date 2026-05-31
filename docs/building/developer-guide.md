@@ -27,7 +27,7 @@ coding related information to help get started with the repository.
 
 ## TL;DR for setup/build
 
-* Install the latest Visual Studio, then the .vsconfig file [(details)](#install-visual-studio)
+* Install the latest Visual Studio, then the `tools\setup\vsconfig\winui.vsconfig` file [(details)](#install-visual-studio)
 * Clone the repo [(details)](#clone-the-winui-repo)
 * In cmd, from the repo directory, run `tools\setup\init\scripts\init.cmd`. Or in PowerShell, run `tools\setup\init\scripts\init.ps1`. [(details)](#initialize-cmd-or-powershell-with-support-for-vs-build-tools)
 * Run `tools\build\scripts\Build.cmd` [(details)](#building-winui)
@@ -74,10 +74,10 @@ Visual Studio installation has all the necessary components. See the
 We have a .vcsconfig file in the root of the repository that will ensure your Visual Studio installation has all the
 necessary components and workloads installed. You can install this through the Visual Studio Installer.
 
-1) Download the [.vsconfig file](../../.vsconfig) from the root of the repo
-2) When you download the file it will be named "vsconfig" (without the dot). Rename to ".vsconfig"
+1) Download the [winui.vsconfig file](../../tools/setup/vsconfig/winui.vsconfig) from the repo
+2) When you download the file it may be named "winui.vsconfig.txt". Rename it to "winui.vsconfig"
 3) Open the Visual Studio Installer, select “More” on your product card and then "Import configuration"
-4) Specify the .vsconfig file location and select “Review Details”
+4) Specify the `winui.vsconfig` file location and select "Review Details"
 
 For more information, see the
 [official documentation](https://docs.microsoft.com/en-us/visualstudio/install/import-export-installation-configurations#import-a-configuration).

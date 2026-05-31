@@ -129,10 +129,10 @@ This typically happens when building with the default `/m:4` parallelism on mach
 ### Missing Spectre mitigation libs
 **Symptom:** Build errors about missing Spectre mitigation libraries from Visual Studio.
 
-**Fix:** Import the `.vsconfig` file from the repo root via Visual Studio Installer:
+**Fix:** Import `tools\setup\vsconfig\winui.vsconfig` via Visual Studio Installer:
 1. Open Visual Studio Installer
 2. Click "More" → "Import configuration"
-3. Select `<repo-root>\.vsconfig`
+3. Select `<repo-root>\tools\setup\vsconfig\winui.vsconfig`
 4. Install the missing components
 
 ### `DevEnvDir environment variable not set`

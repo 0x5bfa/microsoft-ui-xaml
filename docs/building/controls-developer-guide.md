@@ -28,7 +28,7 @@ Microsoft.NET.TargetFrameworkInference.targets(92,5): error NETSDK1013: The Targ
 ### Try these fixes
 a. Ensure that you launched src\controls\solutions\MUXControls.slnx after running tools\setup\init\scripts\init.cmd which sets up the appropriate environment variables.
 
-b. Ensure that you have visual studio setup correctly using the .vsconfig file. See [developer-guide](./developer-guide.md) for instructions
+b. Ensure that you have visual studio setup correctly using the `tools\setup\vsconfig\winui.vsconfig` file. See [developer-guide](./developer-guide.md) for instructions
 
 c. run 'git clean -dfx' to clean the repo from any stale files and start from the beginning again.
 
