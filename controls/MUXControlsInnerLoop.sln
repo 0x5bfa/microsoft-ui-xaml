@@ -305,9 +305,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonStyles", "CommonStyle
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommonStyles", "..\src\controls\CommonStyles\CommonStyles.vcxitems", "{3A07FA59-C5C1-4B46-8B31-043F9CA91226}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUXControlsTestApp", "test\MUXControlsTestApp\MSTest\MUXControlsTestApp.csproj", "{FBC396F5-26DD-4CA3-981E-C7BC9FEA4546}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUXControlsTestApp", "test\apps\MUXControlsTestApp\MSTest\MUXControlsTestApp.csproj", "{FBC396F5-26DD-4CA3-981E-C7BC9FEA4546}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUXControlsTestApp.TAEF", "test\MUXControlsTestApp\TAEF\MUXControlsTestApp.TAEF.csproj", "{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUXControlsTestApp.TAEF", "test\apps\MUXControlsTestApp\TAEF\MUXControlsTestApp.TAEF.csproj", "{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MUXControls.Test.Shared", "test\MUXControls.Test\MUXControls.Test.Shared.shproj", "{E9FC52CD-519A-41BB-8092-523FFA9D5617}"
 EndProject
@@ -323,7 +323,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadioMenuFlyoutItem_Interac
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadioMenuFlyoutItem_TestUI", "..\src\controls\RadioMenuFlyoutItem\TestUI\RadioMenuFlyoutItem_TestUI.shproj", "{50E838A2-A886-46C9-AB0B-A57F510CE643}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MUXControlsTestApp.Shared", "test\MUXControlsTestApp\MUXControlsTestApp.Shared.shproj", "{6AA772A6-CBF7-4FF3-8864-BC9366015DC2}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MUXControlsTestApp.Shared", "test\apps\MUXControlsTestApp\MUXControlsTestApp.Shared.shproj", "{6AA772A6-CBF7-4FF3-8864-BC9366015DC2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControls.Test", "test\MUXControls.Test\MSTest\MUXControls.Test.csproj", "{D59C7B8E-5C09-4856-8AF3-25585A888707}"
 EndProject
@@ -1035,7 +1035,7 @@ Global
 		..\src\controls\SampleControl\APITests\SampleControl_APITests.projitems*{65521a02-7166-48be-b524-8f8f0ecc3a76}*SharedItemsImports = 13
 		..\src\controls\RatingControl\RatingControl.vcxitems*{655f5da8-f87b-45af-88d1-a884881c3edf}*SharedItemsImports = 9
 		..\src\controls\Breadcrumb\TestUI\Breadcrumb_TestUI.projitems*{657121b7-3e4f-4c76-abe2-0221a7997929}*SharedItemsImports = 13
-		test\MUXControlsTestApp\MUXControlsTestApp.Shared.projitems*{6aa772a6-cbf7-4ff3-8864-bc9366015dc2}*SharedItemsImports = 13
+		test\apps\MUXControlsTestApp\MUXControlsTestApp.Shared.projitems*{6aa772a6-cbf7-4ff3-8864-bc9366015dc2}*SharedItemsImports = 13
 		..\src\controls\Materials\MicaBackdrop\MicaBackdrop.vcxitems*{71abd2f5-1ae8-45e9-814c-f8362fe1ad33}*SharedItemsImports = 9
 		..\src\controls\RadialGradientBrush\InteractionTests\RadialGradientBrush_InteractionTests.projitems*{74d18b1b-5f6b-4534-945b-131e8e3206fb}*SharedItemsImports = 13
 		..\src\controls\ScrollView\ScrollView.vcxitems*{755f5da9-087c-55a0-98d2-b884881c3ed0}*SharedItemsImports = 9

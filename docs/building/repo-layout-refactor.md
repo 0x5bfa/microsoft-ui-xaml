@@ -681,8 +681,9 @@ by the controls build.
 Controls test-app build helpers now live under `controls/test/build`, keeping
 the controls test root focused on test entry points and automatically discovered
 MSBuild defaults. Controls test apps should move under `controls/test/apps` as
-their references are isolated; `IXMPTestApp`, `TabViewTearOutApp`, and
-`TestAppCX` now live there as the first small test-app moves.
+their references are isolated; `IXMPTestApp`, `TabViewTearOutApp`,
+`TestAppCX`, and `MUXControlsTestApp` now live there as the first test-app
+moves.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
