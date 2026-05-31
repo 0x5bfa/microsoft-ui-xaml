@@ -1,7 +1,7 @@
 # Building & Running
 
 ## Build Controls in WinUI 3.0
-1. Follow the instructions to [clone the WinUI repo](../../../docs/developer-guide.md#clone-the-winui-repo).
+1. Follow the instructions to [clone the WinUI repo](developer-guide.md#clone-the-winui-repo).
 2. Initialize your environment
     * Running `init` with no additional parameters should be fine for WebView2 purposes.
 3. Build entire WinUI repo
@@ -13,7 +13,7 @@
 Other build options:
 * Rebuild MUXC without using incremental build:
     * `msbuild <repo>\controls\MUXControls.sln /t:Rebuild`
-* For additional scoped builds, see the options in [controls\build.cmd](../../build.cmd).
+* For additional scoped builds, see the options in [controls\Build.cmd](../../controls/Build.cmd).
 
 Additional notes:
 * Multi-proc builds (default for `msb.cmd`) are not yet supported for MUXC. 
@@ -22,7 +22,8 @@ Therefore, use `msbuild.exe` (defaults to single-proc) as the build command (or 
 debugging.
 
 ## Run WebView2 sample (MUXControlsTestApp)
-1. Using the instructions in the [Testing FAQ](../../../docs/testing-faq.md), run `testmachine-prerun.cmd` if it has not
+1. Using the instructions in the [Testing FAQ](../testing/testing-FAQ.md), run
+   [`testmachine-prerun.cmd`](../../tests/infra/scripts/testmachine-prerun.cmd) if it has not
 already been run.
 2. Navigate to `<repo>\BuildOutput\bin\x86chk\Test` and run `MuxControlsTestApp.appx` to install.  
 Run using the option in the install dialog, or as you would any other installed application.
