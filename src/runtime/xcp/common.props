@@ -27,7 +27,7 @@
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
             $(LiftedIXPIncludePaths);
-            $(RepoRoot)\external\include;
+            $(RepoRoot)\src\runtime\thirdparty\include;
             $(ExternalDependencies);
             $(CompIncludes);
             $(XamlDiagPath)\idl;
