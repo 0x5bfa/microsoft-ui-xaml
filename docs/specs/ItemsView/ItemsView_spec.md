@@ -111,7 +111,7 @@ to True by default. We have run out of time to implement this feature in v1._
 By default, the `ItemsView` uses a `StackLayout` which stacks the collection items vertically, and uses 
 a selection mode that allows the selection of one item at the time.
 
-![ItemsView example with default Layout and SelectionMode property values](Images/ItemsView_Conceptual1.png)
+![ItemsView example with default Layout and SelectionMode property values](images/ItemsView_Conceptual1.png)
 
 
 In the following example, the default layout is replaced with a `LinedFlowLayout` layout which lays out the 
@@ -140,7 +140,7 @@ XAML
 </Page>
 ```
 
-![ItemsView example with LinedFlowLayout layout](Images/ItemsView_Conceptual2.png)
+![ItemsView example with LinedFlowLayout layout](images/ItemsView_Conceptual2.png)
 
 
 In the following example, the [`SelectionMode`](#itemsviewselectionmode-property) is changed from 
@@ -173,7 +173,7 @@ XAML
 </Page>
 ```
 
-![ItemsView example with Multiple SelectionMode property](Images/ItemsView_Conceptual3.png)
+![ItemsView example with Multiple SelectionMode property](images/ItemsView_Conceptual3.png)
 
 
 Following are four typical use cases of the `ItemsView` regarding the ability to select 
@@ -1388,18 +1388,18 @@ item's point used to evaluate the distance to the viewport ratio point.
 
 | **`horizontalViewportRatio` value** | **`verticalViewportRatio` value** | **Returned value** | **Illustration** |
 |-|-|-|-|
-|  0.0 |  0.0 |  7 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (0.0, 0.0)](Images/TryGetItemIndexScenario1.png) |
-|  1.0 |  0.0 | 12 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (1.0, 0.0)](Images/TryGetItemIndexScenario2.png) |
-|  1.0 |  1.0 | 21 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (1.0, 1.0)](Images/TryGetItemIndexScenario3.png) |
-|  0.0 |  1.0 | 19 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (0.0, 1.0)](Images/TryGetItemIndexScenario4.png) |
-|  1.0 |  2.0 | 25 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (1.0, 2.0)](Images/TryGetItemIndexScenario5.png) |
-| -1.0 | -1.0 | 16 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (-1.0, -1.0)](Images/TryGetItemIndexScenario6.png) |
+|  0.0 |  0.0 |  7 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (0.0, 0.0)](images/TryGetItemIndexScenario1.png) |
+|  1.0 |  0.0 | 12 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (1.0, 0.0)](images/TryGetItemIndexScenario2.png) |
+|  1.0 |  1.0 | 21 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (1.0, 1.0)](images/TryGetItemIndexScenario3.png) |
+|  0.0 |  1.0 | 19 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (0.0, 1.0)](images/TryGetItemIndexScenario4.png) |
+|  1.0 |  2.0 | 25 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (1.0, 2.0)](images/TryGetItemIndexScenario5.png) |
+| -1.0 | -1.0 | 16 | ![Illustration of ItemsView's TryGetItemIndex method with arguments (-1.0, -1.0)](images/TryGetItemIndexScenario6.png) |
 
 Because the `Layout.IndexBasedLayoutOrientation` is `Horizontal`, TryGetItemIndex(1.0, 1.0, out index) 
 returns index 32 instead 29 in the following example, even though the bottom/right corner of 
 item 29 is closer to the bottom/right corner of the red viewport.
 
-![Illustration of Layout.IndexBasedLayoutOrientation's effect on ItemsView.TryGetItemIndex](Images/TryGetItemIndexScenario7.png)
+![Illustration of Layout.IndexBasedLayoutOrientation's effect on ItemsView.TryGetItemIndex](images/TryGetItemIndexScenario7.png)
 
 The concept of `Layout.IndexBasedLayoutOrientation` also exists so that when item 32 has keyboard focus, 
 hitting the right arrow key has no effect even though item 29 is on its right.
@@ -1431,7 +1431,7 @@ public sealed partial class MainPage : Page
 The developer wants to update a label based on the first item at the top of the viewport with at least 10 visible 
 pixels vertically, and the last item at the bottom of the viewport with at least 10 visible pixels.
 
-![Illustration of ItemsView's TryGetItemIndex method advanced scenario](Images/FirstAndLastRelevantItems.png)
+![Illustration of ItemsView's TryGetItemIndex method advanced scenario](images/FirstAndLastRelevantItems.png)
 
 C#
 ```cs
