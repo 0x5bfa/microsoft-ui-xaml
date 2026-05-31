@@ -15,7 +15,7 @@ This is a collection of documentations which provide a high level design oriente
 * [XAML Rendering Architecture](./rendering.md) -  This document gives a high-level overview of how the XAML rendering engine works, primarily covering integration with the system compositor
 * [UI Thread ticking](./ui-thread-ticking.md) - A writeup on ticks in ui thread and how layout, animation and other parts of UI depend on it
 * [Xaml theming resources](./resources.md) - A writeup on everthing about Xaml theming resources and how they are created and used
-* [Read-Only Text Controls Architecture](./text-controls.md) - This document describes the architecture of XAML’s read-only text controls, and supporting functionality in the XAML platform to make them fully functional in a XAML application.
+* [Read-Only Text Controls Architecture](./text/text-controls.md) - This document describes the architecture of XAML’s read-only text controls, and supporting functionality in the XAML platform to make them fully functional in a XAML application.
 * [Custom titlebar](./customtitlebar.md) - Explains the inner working of custom titlebar feature in Desktop WinUI 3 apps, including glass window concept
 * [Unconstrained Popups](./popups/unconstrained-popup.md) - A spec about a new(er) option for ContentDialogPlacement: UnconstrainedPopup
 
