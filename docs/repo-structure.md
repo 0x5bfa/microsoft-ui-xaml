@@ -75,6 +75,7 @@ Standalone build transform assets live under `/eng/transforms`.
 Project-based restore helpers live under `/eng/restore`.
 Shared MIDL build rules live under `/eng/midl`.
 MSBuild cache configuration lives under `/eng/projectcaching`.
+Shared test-project build settings live under `/eng/testprojects`.
 
 ## /external
 This folder contains checked-in third-party dependencies. Header-only
