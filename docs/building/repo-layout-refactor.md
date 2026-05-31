@@ -559,6 +559,9 @@ that external package wrapper separate from root-level build imports.
 Graph build support targets now live under `eng/graph`, separate from the
 GraphAugmentation helper projects that appear in solution files.
 
+Final-release build defines now live under `eng/finalrelease`, keeping the
+`MUXFinalRelease` prerelease constants in a named build settings bucket.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.

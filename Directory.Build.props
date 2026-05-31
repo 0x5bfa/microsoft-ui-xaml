@@ -51,7 +51,7 @@
   <Import Project="eng\packaging\packaging.props" />
   <Import Project="eng\xamlcompiler\usexamlcompiler.props" Condition="'$(UseXamlCompiler)'=='true'" />
   <Import Project="eng\testprojects\testprojects.props" Condition="'$(TestCode)'=='true'" />
-  <Import Project="eng\muxfinalrelease.props" />
+  <Import Project="eng\finalrelease\muxfinalrelease.props" />
   <Import Project="eng\adhoc\adhocapp.props" Condition="'$(AdHocApp)'=='true'" />
   <Import Project="eng\projectcaching\projectcaching.props" />
 </Project>
