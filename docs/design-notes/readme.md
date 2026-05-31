@@ -24,6 +24,7 @@ This is a collection of documentations which provide a high level design oriente
 
 ### Coding resources
 
-* [Guide to WinUI codebase pointers](./pointers.md)
+* [Guide to WinUI codebase pointers](./developer-guides/pointers.md)
+* [DebugSettings](./developer-guides/debug-settings.md)
 * [Startup path for WinUI application](./app-lifecycle/startup-overview.md)
-* [Xaml Behaviors](./xamlbehaviors.md) - Lists deprecated features which are still in codebase and getting slowly phased out
+* [Xaml Behaviors](./developer-guides/xamlbehaviors.md) - Lists deprecated features which are still in codebase and getting slowly phased out

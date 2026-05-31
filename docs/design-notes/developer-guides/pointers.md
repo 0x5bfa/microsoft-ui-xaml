@@ -115,7 +115,7 @@ ptr.try_as<winrt::typeB>()   // dynamic cast
 * Optimised pointer which does COM pointer like ref counting but for non-COM XAML objects in core layer as AddRef and 
   Release functions are not virtual functions. xref_ptr is templated and can make direct (compile type computed) calls for each type.
 
-File: [`src/runtime/xcp/components/base/inc/inc/xref_ptr.h`](../../src/runtime/xcp/components/base/inc/inc/xref_ptr.h)
+File: [`src/runtime/xcp/components/base/inc/inc/xref_ptr.h`](../../../src/runtime/xcp/components/base/inc/inc/xref_ptr.h)
 
 #### Usage
 ```c++
@@ -139,9 +139,9 @@ ptr = checked_cast<T>(raw_pointer);  //better as it does better checks to make s
   cleanup decisions.   
 * Used in a class member to denote persistent, strong references to an owned object. 
 * Bool operator overloaded, can be used directly in boolean cases like if statements. `==` and `!=` are also overloaded but and works with raw pointers and `nullptr`
-* A detailed discussion exists here: [XAML/C# Object Lifetime Design](./runtime-core/xaml-object-lifetime.md)
+* A detailed discussion exists here: [XAML/C# Object Lifetime Design](../runtime-core/xaml-object-lifetime.md)
 
-File: [`src/runtime/xcp/components/lifetime/inc/TrackerPtr.h`](../../src/runtime/xcp/components/lifetime/inc/TrackerPtr.h)
+File: [`src/runtime/xcp/components/lifetime/inc/TrackerPtr.h`](../../../src/runtime/xcp/components/lifetime/inc/TrackerPtr.h)
 
 ### ctl::WeakRefPtr
 
@@ -278,15 +278,15 @@ fooEventHandler.AttachEventHandler(rawpointer,
 
 * General case applicable anywhere
  
-![General case of when to use smart pointer, raw pointer based on lifetime of object](../images/pointers1.jpg)
+![General case of when to use smart pointer, raw pointer based on lifetime of object](../../images/pointers1.jpg)
 
 * In a C++/WinRT project / controls folder
 
-![Case of when to use smart pointer, COM pointer or STL pointer in a C++/WinRT project](../images/pointers2.jpg)
+![Case of when to use smart pointer, COM pointer or STL pointer in a C++/WinRT project](../../images/pointers2.jpg)
  
 * In core and dxaml layers of WinUI codebase
  
- ![Core and dxaml layers of WinUI - using xref_ptr , comPtr](../images/pointers3.jpg)
+ ![Core and dxaml layers of WinUI - using xref_ptr , comPtr](../../images/pointers3.jpg)
 
 * If a XAML type exists in codegen files (.g.h, .g.cpp), that means it is ready to be exposed in .winmd file. Make sure 
   it has a `TrackerPtr` type pointing to it (which the codegen will do automatically). The general rule within the 
