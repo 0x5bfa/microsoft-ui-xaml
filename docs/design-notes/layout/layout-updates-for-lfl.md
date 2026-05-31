@@ -76,9 +76,9 @@ move to an item based on its physical location, rather than index.
 
 | **`IndexBasedLayoutOrientation` value** | **Description** | **Illustration** |
 |-|-|-|
-| None | There is no correlation between the items' layout and their index number. | ![Illustration of IndexBasedLayoutOrientation's None value](Images/Layout_NoneIndexBasedLayoutOrientation.png) |
-| TopToBottom | Items are laid out vertically with increasing indices. | ![Illustration of IndexBasedLayoutOrientation's TopToBottom value](Images/Layout_TopToBottomIndexBasedLayoutOrientation.png) |
-| LeftToRight | Items are laid out horizontally with increasing indices. | ![Illustration of IndexBasedLayoutOrientation's LeftToRight value](Images/Layout_LeftToRightIndexBasedLayoutOrientation.png) |
+| None | There is no correlation between the items' layout and their index number. | ![Illustration of IndexBasedLayoutOrientation's None value](images/Layout_NoneIndexBasedLayoutOrientation.png) |
+| TopToBottom | Items are laid out vertically with increasing indices. | ![Illustration of IndexBasedLayoutOrientation's TopToBottom value](images/Layout_TopToBottomIndexBasedLayoutOrientation.png) |
+| LeftToRight | Items are laid out horizontally with increasing indices. | ![Illustration of IndexBasedLayoutOrientation's LeftToRight value](images/Layout_LeftToRightIndexBasedLayoutOrientation.png) |
 
 
 ## Layout.SetIndexBasedLayoutOrientation protected method

@@ -216,5 +216,5 @@ Recent File Explorer Photos Gallery UI.
 # Related docs
 
 The [ItemsView](../specs/ItemsView/ItemsView_spec.md), [ItemContainer](../specs/ItemContainer/itemcontainer-functional-spec.md), [ItemCollectionTransitionProvider](../specs/ItemCollectionTransitionProvider/ItemCollectionTransitionProvider-spec.md),
-[LinedFlowLayout](../specs/LinedFlowLayout/LinedFlowLayout_spec.md), [Layout updates for LinedFlowLayout](layout-updates-for-lfl.md) documents provide lots of information about the expected
+[LinedFlowLayout](../specs/LinedFlowLayout/LinedFlowLayout_spec.md), [Layout updates for LinedFlowLayout](layout/layout-updates-for-lfl.md) documents provide lots of information about the expected
 behaviors.
