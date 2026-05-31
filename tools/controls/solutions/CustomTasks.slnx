@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="../BuildTasks/CustomTasks/CustomTasks.csproj" />
-  <Project Path="../BuildTasks/CustomTasksTool/CustomTasksTool.csproj" />
-</Solution>

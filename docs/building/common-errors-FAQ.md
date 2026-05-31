@@ -52,9 +52,9 @@ You can delete the NUGET_PACKAGES environment variable from your system environm
 
 If you get an error related to unable to find package versions in package store, similar to below:
 ```
- D:\xaml\tests\controls\MUXControls.Test\MUXControls.Test.csproj : error NU1102: Unable to find package Microsoft.NETCore.App.Crossgen2.win-x64 with version (= 8.0.21) [D:\xaml\src\controls\solutions\MUXControls.slnx]
- D:\xaml\tests\controls\MUXControls.Test\MUXControls.Test.csproj : error NU1102:   - Found 65 version(s) in WinUI.Dependencies [ Nearest version: 8.0.20 ] [D:\xaml\src\controls\solutions\MUXControls.slnx]
- D:\xaml\tests\controls\MUXControls.Test\MUXControls.Test.csproj : error NU1102:   - Found 0 version(s) in packagestore [D:\xaml\src\controls\solutions\MUXControls.slnx]
+ D:\xaml\tests\controls\MUXControls.Test\MUXControls.Test.csproj : error NU1102: Unable to find package Microsoft.NETCore.App.Crossgen2.win-x64 with version (= 8.0.21) [D:\xaml\src\controls\MUXControls.slnx]
+ D:\xaml\tests\controls\MUXControls.Test\MUXControls.Test.csproj : error NU1102:   - Found 65 version(s) in WinUI.Dependencies [ Nearest version: 8.0.20 ] [D:\xaml\src\controls\MUXControls.slnx]
+ D:\xaml\tests\controls\MUXControls.Test\MUXControls.Test.csproj : error NU1102:   - Found 0 version(s) in packagestore [D:\xaml\src\controls\MUXControls.slnx]
  Restored D:\xaml\tests\controls\testinfra\MUXTestInfra\MUXTestInfra.csproj (in 2.17 sec).
  Failed to restore D:\xaml\tests\controls\MUXControls.Test\MUXControls.Test.csproj (in 3.18 sec).
 ```

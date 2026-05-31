@@ -7,7 +7,7 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/AdHocCSharpApp/">
-    <Project Path="../adhoc/AdHocCSharpApp/AdHocCSharpApp/AdHocCSharpApp.csproj">
+    <Project Path="adhoc/AdHocCSharpApp/AdHocCSharpApp/AdHocCSharpApp.csproj">
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|Win32" Project="x86" />
       <Platform Solution="*|x64" Project="x64" />

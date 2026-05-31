@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="../XamlCompilerEtlViewer/XamlCompilerEtlReader/XamlCompilerEtlReader.csproj" />
-  <Project Path="../XamlCompilerEtlViewer/XamlCompilerEtlViewer/XamlCompilerEtlViewer.csproj" />
+  <Project Path="XamlCompilerEtlViewer/XamlCompilerEtlReader/XamlCompilerEtlReader.csproj" />
+  <Project Path="XamlCompilerEtlViewer/XamlCompilerEtlViewer/XamlCompilerEtlViewer.csproj" />
   <Properties Name="TeamFoundationVersionControl">
     <Property Name="SccAuxPath0" Value="http://vstfdevdiv.redmond.corp.microsoft.com:8080/devdiv2" />
     <Property Name="SccAuxPath1" Value="http://vstfdevdiv.redmond.corp.microsoft.com:8080/devdiv2" />

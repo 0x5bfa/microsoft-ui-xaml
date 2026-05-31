@@ -21,7 +21,7 @@ Use these ownership buckets for new moves:
 | `tools` | Human- and CI-invoked repo tools that are not part of product source. |
 | `src/*/generated` | Checked-in generated source that belongs to a product source area. |
 | `tests/visualbaselines` | Checked-in visual baseline assets. |
-| `*/solutions` | Area-owned Visual Studio solution entry points, with the product-wide solution at the repo root. |
+| `src/*`, `tests/*`, `tools/*` | Area-owned Visual Studio solution entry points live beside the area they build or test; the product-wide solution stays at the repo root. |
 | `docs/specs` | Feature and API design specs with their local images and supporting files. |
 
 ## First completed move
@@ -34,7 +34,7 @@ proves the path-update pattern before touching `dxaml` or `controls`.
 
 Compiler-specific build entry points should live with the compiler source.
 `XamlCompilerPrerequisites.slnx`, `XamlCompiler.slnx`, and `BuildTools.slnx` now
-live under `src/compiler/solutions`, while the compiler project folders remain
+live under `src/compiler`, while the compiler project folders remain
 direct children of `src/compiler`.
 
 The OSS fallback project that downloads a public compiler package now lives at
@@ -52,7 +52,7 @@ collection scripts, and compiler coverage instrumentation helper live there so
 
 Compiler-specific test entry points and support helpers now live under
 `tests/compiler`. `XamlCompilerTests.slnx` now lives under
-`tests/compiler/solutions`, while `runtests.cmd` and `copynewmasters.cmd` now
+`tests/compiler`, while `runtests.cmd` and `copynewmasters.cmd` now
 live under `tests/compiler/tools/scripts`. The
 `FixMasters` helper used by `copynewmasters.cmd` and the VcMeta hash validation
 helper remain under `tests/compiler/tools` instead of the compiler source tools
@@ -582,9 +582,9 @@ with the controls isolated test tree without changing project participation.
 The WinUI controls implementation now lives under `src/controls`, including
 the controls IDL inputs under `src/controls/idl`. The top-level `controls`
 root has been removed. Controls solution entry points live under
-`src/controls/solutions`, controls-specific build support lives under
-`eng/controls`, tests live under `tests/controls`, and authoring tools live
-under `tools/controls`. Shared MSBuild entry points use
+`src/controls`, controls-specific build support lives under `eng/controls`,
+tests live under `tests/controls`, and authoring tools live under
+`tools/controls`. Shared MSBuild entry points use
 `$(MUXControlsSourceRoot)` and `$(MUXControlsIdlRoot)` so those support
 projects can reference controls source without reintroducing the old
 `controls/dev` or `controls/idl` path segments.
@@ -734,7 +734,7 @@ environment setup inputs stay with the setup scripts that consume them.
 Controls shared build support files live under `eng/controls/build`, while the
 controls build command implementation now lives under
 `tools/controls/Build/scripts`.
-Controls solution entry points now live under `src/controls/solutions`. The
+Controls solution entry points now live under `src/controls`. The
 root-level `controls/Build.cmd` wrapper was removed and solution items now
 point at `tools/controls/Build/scripts/Build.cmd`. The old top-level controls
 MSBuild wrappers have been retired; projects import the build support files
@@ -969,28 +969,29 @@ when they need the runtime source root.
 
 ## Runtime test solutions
 
-Runtime test solution files live under `tests/runtime/solutions`. Runtime test
-source, infrastructure, and tool projects stay in their purpose folders under
-`tests/runtime`, while Visual Studio entry points are grouped in one place.
+Runtime test solution files now live directly under `tests/runtime`. Runtime
+test source, infrastructure, and tool projects stay in their purpose folders
+under `tests/runtime`, while Visual Studio entry points sit at the test-area
+root instead of a separate solution-only folder.
 
 ## Controls test solutions
 
-Controls test solution files live under `tests/controls/solutions`. Controls
+Controls test solution files now live directly under `tests/controls`. Controls
 test app source stays under `tests/controls/apps`, keeping app implementation
-folders separate from Visual Studio entry points.
+folders separate from Visual Studio entry points without a solution-only folder.
 
 ## Tool solutions
 
-Tool solution files live under the relevant tool ownership root's `solutions`
-folder, such as `tools/compiler/solutions`, `tools/controls/solutions`, and
-`tools/runtime/solutions`. Tool implementation projects remain in their
-feature folders so build and IDE entry points are not mixed with source.
+Tool solution files now live directly under the relevant tool ownership root,
+such as `tools/compiler`, `tools/controls`, and `tools/runtime`. Tool
+implementation projects remain in their feature folders so build and IDE entry
+points are easy to find without introducing a solution-only folder.
 
 ## Compiler solutions
 
-Compiler solution files live under `src/compiler/solutions`. The parsing
-shared-project solution moved there as well, so `src/compiler` keeps compiler
-source folders separate from IDE/build entry points.
+Compiler solution files now live directly under `src/compiler`. The parsing
+shared-project solution sits there as well, so compiler IDE/build entry points
+stay with the source area without introducing a solution-only folder.
 
 ## Migration rules
 

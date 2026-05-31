@@ -1,0 +1,21 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="ARM64EC" />
+    <Platform Name="Win32" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../../eng/graph/augmentation/XamlCompilerPrerequisites/GraphAugmentation.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="*|Win32" Project="Win32" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../../eng/xamlcompiler/BuildGenXbfForMSBuild/BuildGenXbfForMSBuild.csproj" />
+  <Project Path="Exe/Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj" />
+  <Project Path="Exe/Microsoft.UI.Xaml.Markup.Compiler.IO/Microsoft.UI.Xaml.Markup.Compiler.IO.csproj" />
+  <Project Path="Exe/Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop/Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop.csproj" />
+  <Project Path="Microsoft.UI.Xaml.Markup.Compiler.csproj" />
+</Solution>

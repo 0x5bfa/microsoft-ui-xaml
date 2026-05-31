@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="../tools/XmlValidation/UnitTests/UnitTests.csproj" />
-  <Project Path="../tools/XmlValidation/XmlValidation/XmlValidation.csproj" />
-</Solution>
