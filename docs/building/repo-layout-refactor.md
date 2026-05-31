@@ -755,7 +755,9 @@ TreeView SelectionChanged, WindowsXamlManager shutdown improvements, WebView2
 custom environment, symbol enum, and TabTearOut API now live directly under
 `docs/specs`. The SelectorBar spec set moved as a feature folder under
 `docs/specs/SelectorBar` with its local images. The MapControl spec and its
-scenario image moved under `docs/specs/MapControl`.
+scenario image moved under `docs/specs/MapControl`. The CustomTitleBar spec
+and its spec-specific image moved under `docs/specs/CustomTitleBar`, while the
+conceptual design note remains under `docs/design-notes`.
 
 ## Runtime path preparation
 
