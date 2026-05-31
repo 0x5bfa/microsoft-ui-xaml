@@ -99,6 +99,13 @@ provides the shared test root, while XamlDiagnostics TAP binaries remain under
 `tools/runtime/xamldiagnostics/tap` and continue flowing through
 `$(XamlDiagTapPath)`.
 
+## Runtime ETW test support
+
+The external tools ETW integration tests now live under
+`tests/runtime/etw/integration`. `$(RuntimeEtwTestPath)` provides the shared
+test root for input-event and layout-causality ETW coverage consumed by the
+external tools test DLL.
+
 ## Runtime ad hoc test apps
 
 Runtime ad hoc test applications now live under `tests/runtime/adhoc`. These

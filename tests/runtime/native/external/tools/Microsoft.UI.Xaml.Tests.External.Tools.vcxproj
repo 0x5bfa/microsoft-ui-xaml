@@ -24,8 +24,8 @@
         $(AppAnalysisTestPath)\integration;
         $(MSBuildThisFileDirectory)\bindingHelpers;
         $(XamlDiagnosticsTestPath)\integration;
-        $(MSBuildThisFileDirectory)\ETW\InputEvents;
-        $(MSBuildThisFileDirectory)\ETW\LayoutCausality;
+        $(RuntimeEtwTestPath)\integration\InputEvents;
+        $(RuntimeEtwTestPath)\integration\LayoutCausality;
         $(CompilerTestPath)\native\compiledBindings;
         $(MSBuildThisFileDirectory)\customTypes;
         $(BaseIntermediateOutputPath)\customTypes\generated;
@@ -83,14 +83,14 @@
     <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\XamlDiagnosticsTestBase.h" />
     <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\XamlDiagnosticsTestHelpers.h" />
     <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\XamlDiagnosticsTests.h" />
-    <ClInclude Include="ETW\InputEvents\AppBarTests.h" />
-    <ClInclude Include="ETW\InputEvents\DragInputTests.h" />
-    <ClInclude Include="ETW\InputEvents\KeyboardInputTests.h" />
-    <ClInclude Include="ETW\InputEvents\ManipulationInputTests.h" />
-    <ClInclude Include="ETW\InputEvents\PointerInputTests.h" />
-    <ClInclude Include="ETW\InputEvents\TouchInputTests.h" />
-    <ClInclude Include="ETW\LayoutCausality\BindingEvents.h" />
-    <ClInclude Include="ETW\LayoutCausality\PropertyChangedEvents.h" />
+    <ClInclude Include="$(RuntimeEtwTestPath)\integration\InputEvents\AppBarTests.h" />
+    <ClInclude Include="$(RuntimeEtwTestPath)\integration\InputEvents\DragInputTests.h" />
+    <ClInclude Include="$(RuntimeEtwTestPath)\integration\InputEvents\KeyboardInputTests.h" />
+    <ClInclude Include="$(RuntimeEtwTestPath)\integration\InputEvents\ManipulationInputTests.h" />
+    <ClInclude Include="$(RuntimeEtwTestPath)\integration\InputEvents\PointerInputTests.h" />
+    <ClInclude Include="$(RuntimeEtwTestPath)\integration\InputEvents\TouchInputTests.h" />
+    <ClInclude Include="$(RuntimeEtwTestPath)\integration\LayoutCausality\BindingEvents.h" />
+    <ClInclude Include="$(RuntimeEtwTestPath)\integration\LayoutCausality\PropertyChangedEvents.h" />
     <ClInclude Include="$(CompilerTestPath)\native\compiledBindings\CompileBindingTests.h" />
   </ItemGroup>
   <ItemGroup>
@@ -117,14 +117,14 @@
     <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\MemoryInfoTests.cpp" />
     <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\Win32InteropTests.cpp" />
     <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\StyleTests.cpp" />
-    <ClCompile Include="ETW\InputEvents\PointerInputTests.cpp" />
-    <ClCompile Include="ETW\InputEvents\TouchInputTests.cpp" />
-    <ClCompile Include="ETW\InputEvents\DragInputTests.cpp" />
-    <ClCompile Include="ETW\InputEvents\ManipulationInputTests.cpp" />
-    <ClCompile Include="ETW\InputEvents\KeyboardInputTests.cpp" />
-    <ClCompile Include="ETW\InputEvents\AppBarTests.cpp" />
-    <ClCompile Include="ETW\LayoutCausality\PropertyChangedEvents.cpp" />
-    <ClCompile Include="ETW\LayoutCausality\BindingEvents.cpp" />
+    <ClCompile Include="$(RuntimeEtwTestPath)\integration\InputEvents\PointerInputTests.cpp" />
+    <ClCompile Include="$(RuntimeEtwTestPath)\integration\InputEvents\TouchInputTests.cpp" />
+    <ClCompile Include="$(RuntimeEtwTestPath)\integration\InputEvents\DragInputTests.cpp" />
+    <ClCompile Include="$(RuntimeEtwTestPath)\integration\InputEvents\ManipulationInputTests.cpp" />
+    <ClCompile Include="$(RuntimeEtwTestPath)\integration\InputEvents\KeyboardInputTests.cpp" />
+    <ClCompile Include="$(RuntimeEtwTestPath)\integration\InputEvents\AppBarTests.cpp" />
+    <ClCompile Include="$(RuntimeEtwTestPath)\integration\LayoutCausality\PropertyChangedEvents.cpp" />
+    <ClCompile Include="$(RuntimeEtwTestPath)\integration\LayoutCausality\BindingEvents.cpp" />
     <ClCompile Include="$(CompilerTestPath)\native\compiledBindings\CompileBindingTests.cpp" />
     <ClCompile Include="customTypes.App.g.cpp" />
     <ClCompile Include="customTypes.UserControl.cpp" />
