@@ -11,6 +11,7 @@ In WinUI3, **XamlIsland** will replace **DesktopWindowXamlSource**.
 Click on a topic to dig in further:
 
 * Why Xaml Islands?
+* [xaml-islands-how-to](xaml-islands-how-to.md) - How to host XAML islands in Win32, WinForms, and WPF apps.
 * [xaml-islands](xaml-islands.md) - A working document that describes a bunch of the XamlIslands-related work
 over time and some thoughts about the future.
 * [desktopwindowxamlsource](desktopwindowxamlsource.md) - API spec for the `DesktopWindowXamlSource` type.
