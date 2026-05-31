@@ -18,6 +18,9 @@ This is a collection of documentations which provide a high level design oriente
 * [Read-Only Text Controls Architecture](./text/text-controls.md) - This document describes the architecture of XAML’s read-only text controls, and supporting functionality in the XAML platform to make them fully functional in a XAML application.
 * [Custom titlebar](./styling/customtitlebar.md) - Explains the inner working of custom titlebar feature in Desktop WinUI 3 apps, including glass window concept
 * [Unconstrained Popups](./popups/unconstrained-popup.md) - A spec about a new(er) option for ContentDialogPlacement: UnconstrainedPopup
+* [ItemsRepeater overview](./collection-controls/ItemsRepeater-overview.md)
+* [ItemsView/ItemContainer overviews](./collection-controls/ItemsView-ItemContainer-overview.md)
+* [ListView/GridView overview](./collection-controls/ListView-GridView-overview.md)
 
 ### Coding resources
 

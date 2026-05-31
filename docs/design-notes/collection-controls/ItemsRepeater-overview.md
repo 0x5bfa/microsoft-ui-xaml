@@ -135,8 +135,8 @@ stored in StackLayoutState / UniformGridLayoutState classes.
 
 # Related docs
 
-- [LinedFlowLayout](../specs/LinedFlowLayout/LinedFlowLayout_spec.md)
-- [Layout updates for LinedFlowLayout](layout/layout-updates-for-lfl.md)
-- [ItemsView](../specs/ItemsView/ItemsView_spec.md)
+- [LinedFlowLayout](../../specs/LinedFlowLayout/LinedFlowLayout_spec.md)
+- [Layout updates for LinedFlowLayout](../layout/layout-updates-for-lfl.md)
+- [ItemsView](../../specs/ItemsView/ItemsView_spec.md)
 
 - Very useful help topics: https://learn.microsoft.com/en-us/windows/apps/design/controls/items-repeater 

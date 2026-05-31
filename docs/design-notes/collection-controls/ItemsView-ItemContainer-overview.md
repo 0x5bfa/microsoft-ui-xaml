@@ -5,7 +5,7 @@ ItemsView/ItemContainer overviews
 
 The ItemsView is a new control dedicated to representing item collections. Each item is hosted in the new light-weight ItemContainer control.
 This is a new modern offering replacing the aging ListView/GridView collection controls. It is built on top of new building blocks: ItemsRepeater,
-SelectionModel and [ScrollView](scrolling/ScrollView-overview.md).
+SelectionModel and [ScrollView](../scrolling/ScrollView-overview.md).
 
 The ItemsView and ListView/GridView feature sets overlap but each has missing capabilities compared to the other.
 
@@ -21,9 +21,9 @@ Examples:
     * attached properties for its inner ScrollView part.
 
 - The ListView & GridView do not support:
-    * flow layouts (like the new [LinedFlowLayout](../specs/LinedFlowLayout/LinedFlowLayout_spec.md)),
+    * flow layouts (like the new [LinedFlowLayout](../../specs/LinedFlowLayout/LinedFlowLayout_spec.md)),
     * pluggable layouts,
-    * pluggable scrolling controllers (like the new [AnnotatedScrollBar](../specs/AnnotatedScrollBar/annotatedscrollbar_spec.md)),
+    * pluggable scrolling controllers (like the new [AnnotatedScrollBar](../../specs/AnnotatedScrollBar/annotatedscrollbar_spec.md)),
     * custom recycling pools,
     * programmatic control of scrolling/zooming curves,
     * custom collection change animations.
@@ -151,14 +151,14 @@ Style resources, including the control template, are located under \src\controls
 - ItemContainer
 
 Examples:  
-![Top level test page](images\ItemContainerTestPage1.png)  
-![APIs test page](images\ItemContainerTestPage2.png)
+![Top level test page](../images/ItemContainerTestPage1.png)
+![APIs test page](../images/ItemContainerTestPage2.png)
 
 - ItemsView
 
 Examples:  
-![Top level test page](images\ItemsViewTestPage1.png)  
-![APIs test page](images\ItemsViewTestPage2.png)
+![Top level test page](../images/ItemsViewTestPage1.png)
+![APIs test page](../images/ItemsViewTestPage2.png)
 
 
 # Key methods when debugging
@@ -184,7 +184,7 @@ You may want to keep track of these important fields:
 - ItemContainer.Child is hosted in a Grid named PART_ContainerRoot. It is inserted as the first child of that Grid.
 - It was designed to be a building block for other high level controls.
 - Its IDL defines internal APIs that were meant for more baking time and then shipped.
-- In future releases, it should implement [IHostItemContainer / IHostItemContainer2](../specs/ItemContainer/itemcontainer-functional-spec.md) interfaces for much improved reusability.
+- In future releases, it should implement [IHostItemContainer / IHostItemContainer2](../../specs/ItemContainer/itemcontainer-functional-spec.md) interfaces for much improved reusability.
   ItemContainer does not implement the IHostItemContainer / IHostItemContainer2 interfaces as spec'ed.
 - A couple of control template elements use DeferLoadStrategy in ItemContainer.xaml for improved performance.
 - Consider adding another control template element to represent currency (which is something File Explorer would use for example).
@@ -215,6 +215,6 @@ Recent File Explorer Photos Gallery UI.
 
 # Related docs
 
-The [ItemsView](../specs/ItemsView/ItemsView_spec.md), [ItemContainer](../specs/ItemContainer/itemcontainer-functional-spec.md), [ItemCollectionTransitionProvider](../specs/ItemCollectionTransitionProvider/ItemCollectionTransitionProvider-spec.md),
-[LinedFlowLayout](../specs/LinedFlowLayout/LinedFlowLayout_spec.md), [Layout updates for LinedFlowLayout](layout/layout-updates-for-lfl.md) documents provide lots of information about the expected
+The [ItemsView](../../specs/ItemsView/ItemsView_spec.md), [ItemContainer](../../specs/ItemContainer/itemcontainer-functional-spec.md), [ItemCollectionTransitionProvider](../../specs/ItemCollectionTransitionProvider/ItemCollectionTransitionProvider-spec.md),
+[LinedFlowLayout](../../specs/LinedFlowLayout/LinedFlowLayout_spec.md), [Layout updates for LinedFlowLayout](../layout/layout-updates-for-lfl.md) documents provide lots of information about the expected
 behaviors.
