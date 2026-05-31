@@ -39,7 +39,7 @@ if (-not $Command -or $Command.Count -eq 0) {
 # Run init with /envcheck to set up environment variables and PATH
 # This skips NuGet restore — a full init must have been run previously.
 try {
-    & (Join-Path $repoRoot "init.ps1") $Flavor /envcheck /notitle
+    & (Join-Path $PSScriptRoot "init.ps1") $Flavor /envcheck /notitle
 } catch {
     Write-Host "ERROR: init.ps1 $Flavor /envcheck failed: $_" -ForegroundColor Red
     Write-Host "Run a full init first: .\init.ps1 $Flavor" -ForegroundColor Red
