@@ -39,7 +39,7 @@ if "%EnvironmentInitialized%" == "" (
 
 if "%_targetMUXControls%" == "1" (
     call :buildMockPackage
-    call :buildSolution %reporoot%\solutions\controls\MUXControls.sln /m
+    call :buildSolution %reporoot%\src\controls\solutions\MUXControls.slnx /m
 ) else if "%_targetTestRunner%" == "1" (
     call :buildMockPackage
     call :buildSolution %reporoot%\tests\controls\MUXControls.Test\MUXControls.Test.csproj /m
@@ -77,7 +77,7 @@ echo Usage:
 echo     build.cmd [targets]
 echo.
 echo    Available targets:
-echo        controls            Builds all of MUXControls.sln (includes the MUXC DLL and all controls test runners and applications)
+echo        controls            Builds all of MUXControls.slnx (includes the MUXC DLL and all controls test runners and applications)
 echo        testrunner          Builds the TAEF test runner
 echo        product             Builds only MUXC and none of the tests
 echo        /project [project]  Builds the project at the given relative path

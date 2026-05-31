@@ -38,7 +38,7 @@
     controlled by the ProjectReference the projection projects have.
 
     To reference private metadata, add a ProjectReference to your project:
-    <ProjectReference Include="$(ProjectRoot)\src\projection\private\Microsoft.WinUI.csproj"/>
+    <ProjectReference Include="$(ProjectRoot)\src\projection\private\Microsoft.WinUI.Private.csproj"/>
   -->
   <PropertyGroup>
    <WinUI_CSWinRTIncludes>

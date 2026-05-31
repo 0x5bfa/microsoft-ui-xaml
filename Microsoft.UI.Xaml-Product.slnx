@@ -1,0 +1,64 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Debug_test" />
+    <BuildType Name="Release" />
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="ARM64EC" />
+    <Platform Name="Win32" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/infra/">
+    <Project Path="tests/runtime/infra/BinplaceTestDependencies.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/packaging/">
+    <Project Path="eng/packaging/winui/Microsoft.WinUI.Packaging.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/projection/">
+    <Project Path="src/projection/Microsoft.WinUI.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Project Path="src/metadata/MergedWinMD/MergedWinMD.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="src/runtime/xcp/dxaml/dllsrv/exts/phone/Microsoft.UI.Xaml.Phone.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="src/runtime/xcp/dxaml/dllsrv/winrt/native/Microsoft.ui.xaml.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="src/runtime/xcp/dxaml/dllsrv/winrt/res/19h1/Microsoft.ui.xaml.resources.19h1.vcxproj">
+    <BuildDependency Project="tools/runtime/GenXbfDLL/GenXbf.vcxproj" />
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="src/runtime/xcp/dxaml/dllsrv/winrt/res/common/Microsoft.ui.xaml.resources.common.vcxproj">
+    <BuildDependency Project="tools/runtime/GenXbfDLL/GenXbf.vcxproj" />
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="src/runtime/xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="tools/runtime/GenXbfDLL/GenXbf.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+    <Platform Solution="*|ARM64EC" Project="x64" />
+  </Project>
+</Solution>

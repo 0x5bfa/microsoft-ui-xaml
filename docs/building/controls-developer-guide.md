@@ -4,7 +4,7 @@ This guide provides instructions on how to build, run and debug the controls pro
 
 Once you have your environment and build setup per the [developer-guide](./developer-guide.md), you can follow these steps to work in the controls code base.
 
-1. From the same command prompt where you ran tools\setup\init\scripts\init.cmd and tools\build\scripts\Build.cmd, navigate to solutions\controls folder and launch MUXControls.sln. This will open the controls solution which includes the WinUI controls project and tests in visual studio with the appropriate environment variables setup.
+1. From the same command prompt where you ran tools\setup\init\scripts\init.cmd and tools\build\scripts\Build.cmd, navigate to src\controls\solutions folder and launch MUXControls.slnx. This will open the controls solution which includes the WinUI controls project and tests in visual studio with the appropriate environment variables setup.
 
 2. Switch the build configuration in visual studio to match how you ran tools\setup\init\scripts\init.cmd. By default, tools\setup\init\scripts\init.cmd uses x86 chk, so choose x86 and debug configuration in visual studio.
 
@@ -19,14 +19,14 @@ Once you have your environment and build setup per the [developer-guide](./devel
 
 ## Known issues.
 
-1.You see this build error when building MUXControls.sln
+1.You see this build error when building MUXControls.slnx
 
 ### Error
 Microsoft.NET.TargetFrameworkInference.targets(92,5): error NETSDK1013: The TargetFramework value '-windows10.0.18362.0' was not recognized. It may be misspelled. If not, then the TargetFrameworkIdentifier and/or TargetFrameworkVersion properties must be specified explicitly.
 8>Done building project "MUXControlsTestApp.csproj" -- FAILED.
 
 ### Try these fixes
-a. Ensure that you launched solutions\controls\MUXControls.sln after running tools\setup\init\scripts\init.cmd which sets up the appropriate environment variables.
+a. Ensure that you launched src\controls\solutions\MUXControls.slnx after running tools\setup\init\scripts\init.cmd which sets up the appropriate environment variables.
 
 b. Ensure that you have visual studio setup correctly using the .vsconfig file. See [developer-guide](./developer-guide.md) for instructions
 

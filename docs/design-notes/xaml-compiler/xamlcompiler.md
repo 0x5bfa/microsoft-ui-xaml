@@ -163,9 +163,9 @@ With the bulk of the compiler code under:
 There are several files and folders of interest here, but the most important
 ones are:
 
-* *src\compiler\solutions\XamlCompiler.sln*: the Xaml Compiler sollution that
+* *src\compiler\solutions\XamlCompiler.slnx*: the Xaml Compiler sollution that
 contains all the dev code.
-* *tests\compiler\solutions\XamlCompilerTests.sln*: contains the 59 and counting projects
+* *tests\compiler\solutions\XamlCompilerTests.slnx*: contains the 59 and counting projects
 that make all regression and unit tests that we subject the compiler to in our
 daily work.
 
@@ -179,7 +179,7 @@ The Xaml Compiler builds both from the command line and from VS.
 
 ### Building
 
-To build the Xaml Compiler, load src\compiler\solutions\XamlCompiler.sln in VS
+To build the Xaml Compiler, load src\compiler\solutions\XamlCompiler.slnx in VS
 and build.
 Alternatively, build from the command line like you would WinUI product code.
 Incremental builds work fine.  Note that the MSBuild processes used to build
@@ -210,7 +210,7 @@ breakpoint should get hit at the point of failure.
 
 ### Regression and Unit Tests
 
-The tests\compiler\solutions\XamlCompilerTests.sln contains 50 some projects that test
+The tests\compiler\solutions\XamlCompilerTests.slnx contains 50 some projects that test
 various features of the Xaml Compiler in 3 distinct ways:
 
 * *Unit Tests*: we have some 300 unit tests that ensure a limited number of
@@ -234,16 +234,16 @@ We require all Xaml Compiler fixes to be accompanied by a regression test.
 However, our regression tests do not consume from a NuGet package, instead importing
 the `eng\xamlcompiler\usexamlcompiler.props` file to consume the Xaml compiler and WinUI binaries directly
 from the build for quick inner loop development.  Before checking in a change, you should also validate
-the real-world NuGet scenario works by building perf/scenarios/MeasureMUX-set.sln.  To do this:
+the real-world NuGet scenario works by building perf/scenarios/MeasureMUX-set.slnx.  To do this:
 
 1. Build the mock Microsoft.WindowsAppSdk NuGet package by running **pack.cmd**.
-2. Clear the WindowsAppSdk and WinUI packages used by NuGet cache used by perf/scenarios/MeasureMUX-set.sln,
+2. Clear the WindowsAppSdk and WinUI packages used by NuGet cache used by perf/scenarios/MeasureMUX-set.slnx,
 located under perf\scenarios\packages.  
     "Microsoft.WindowsAppSDK.999.0.0-mock-3.0.0-dev.nupkg"
     "Microsoft.WinAppSDK.WinUI.3.0.0-dev.nupkg"
 If in doubt, you can delete the entire perf\scenarios\packages folder.
-3. Run **nuget restore** on MeasureMUX-set.sln to restore the newly built WinUI packages.
-4. Build MeasureMUX-set.sln.  If you get errors about "Debug|Win32" being invalid,
+3. Run **nuget restore** on MeasureMUX-set.slnx to restore the newly built WinUI packages.
+4. Build MeasureMUX-set.slnx.  If you get errors about "Debug|Win32" being invalid,
 **set Platform=x86** from your command line.
 
 ## Components

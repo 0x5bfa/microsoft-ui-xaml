@@ -5,6 +5,7 @@
   <PropertyGroup>
     <TargetFramework>$(WindowsAppSdkTargetFrameworkMoniker)</TargetFramework>
     <TargetPlatformMinVersion>$(WindowsTargetPlatformMinVersion)</TargetPlatformMinVersion>
+    <AssemblyName>Microsoft.WinUI</AssemblyName>
     <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
     <IsTrimmable>true</IsTrimmable>
   </PropertyGroup>
@@ -28,7 +29,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.Private.vcxproj" />
   </ItemGroup>
 
   <ItemGroup>

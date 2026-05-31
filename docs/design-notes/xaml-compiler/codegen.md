@@ -86,7 +86,7 @@ Improvements in new `XamlGen.exe`
 ### How does it work?
 
 **Code-gen location:** [tools/runtime/XCPTypesAutoGen/](../../../tools/runtime/XCPTypesAutoGen)
-**VS solution:** [tools/runtime/solutions/XCPTypesAutoGen.sln](../../../tools/runtime/solutions/XCPTypesAutoGen.sln)
+**VS solution:** [tools/runtime/solutions/XCPTypesAutoGen.slnx](../../../tools/runtime/solutions/XCPTypesAutoGen.slnx)
 
 Code-gen is now a build task, located at [tools/runtime/XCPTypesAutoGen/RunCodeGen/](../../../tools/runtime/XCPTypesAutoGen/RunCodeGen)
 When you execute [`runcodegen.cmd`](../../../tools/runtime/XCPTypesAutoGen/scripts/runcodegen.cmd), it simply builds this directory.
@@ -127,7 +127,7 @@ What does the code generator consist of?
 
 ### How can I debug code-gen?
 
-The easiest way is to open the `XcpTypesAutoGen.sln` solution file in VS, and just hit F5. If you were used to the old
+The easiest way is to open the `XcpTypesAutoGen.slnx` solution file in VS, and just hit F5. If you were used to the old
 solution, you will now notice a cleaner structure (now that SilverlightXASD and XamlTypesAutoGen-Old is gone).
 
 It's all C# that executes. If you run code-gen through VS, it will output the files in `tools/runtime/XCPTypesAutoGen`,
@@ -136,7 +136,7 @@ want to get the files placed into the product.
 
 These are the steps to debug `XamlGen`.
 
-1. Open `XCPTypesAutoGen.sln` project from `tools/runtime/solutions/XCPTypesAutoGen.sln`
+1. Open `XCPTypesAutoGen.slnx` project from `tools/runtime/solutions/XCPTypesAutoGen.slnx`
 2. Set project "**XamlGen**" as the default startup project
 3. Open the project properties then select the "**Debug**" tab
 4. Build the entire solution to have the dlls generated in the current dir

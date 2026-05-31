@@ -55,7 +55,7 @@
     <ProjectReference Include="$(ProjectRoot)src\projection\Microsoft.WinUI.csproj">
       <Targets>GetTargetFrameworks;GetTargetPathWithTargetPlatformMoniker;GetNativeManifest;GetCopyToOutputDirectoryItems;GetTargetFrameworksWithPlatformForSingleTargetFramework</Targets>
     </ProjectReference>
-    <ProjectReference Include="$(ProjectRoot)src\projection\private\Microsoft.WinUI.csproj">
+    <ProjectReference Include="$(ProjectRoot)src\projection\private\Microsoft.WinUI.Private.csproj">
       <Targets>GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
   </ItemGroup>

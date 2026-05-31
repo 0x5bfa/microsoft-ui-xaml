@@ -63,7 +63,7 @@ The WinUI Community Call is your opportunity to learn about WinUI and to engage 
 
 The WinUI team welcomes your feedback! To understand how we handle incoming feature requests and bugs, please see our [contribution handling](docs/external/contribution_handling.md) guidelines.
 
-For information on how to contribute, please see [Contributing to WinUI](CONTRIBUTING.md).
+For information on how to contribute, please see [Contributing to WinUI](docs/CONTRIBUTING.md).
 
 > [!WARNING]
 > We're not yet ready to accept code contributions, but we are working towards that goal. It is now

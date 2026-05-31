@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. See LICENSE in the project root for license information. -->
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
@@ -112,7 +112,7 @@
     <ProjectReference Include="$(XcpPath)\dxaml\dllsrv\exts\phone\Microsoft.UI.Xaml.Phone.vcxproj" Project="{be2d8fe3-d933-404e-bfe4-88435d96d8e4}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
     <ProjectReference Include="$(AppAnalysisPath)\dll\Microsoft.Diagnostics.AppAnalysis.vcxproj" Project="{2443059a-fad7-4812-b0e6-243e33f11a01}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
     <ProjectReference Include="$(RuntimeInfraTestPath)\client\dll\Private.Infrastructure.Client.vcxproj" Project="{7e2bc80e-cf9b-4567-8e3e-d0f81b4782fd}" LinkLibraryDependencies="false" ReferenceOutputAssembly="false" />
-    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.Private.vcxproj" Project="{52b2ed64-1cfc-401b-8c5b-6d1e1deadf98}" />
     <ProjectReference Include="$(ProjectRoot)\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj" />
   </ItemGroup>
   <ItemGroup>

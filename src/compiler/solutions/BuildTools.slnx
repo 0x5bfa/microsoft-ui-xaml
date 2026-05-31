@@ -1,0 +1,33 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/GenXBF/">
+    <Project Path="../../../tools/runtime/GenXbfDLL/GenXbf.vcxproj">
+      <BuildType Solution="*|ARM64" Project="?" />
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="?" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+  </Folder>
+  <Folder Name="/MarkupCompiler/">
+    <Project Path="../BuildTasks/Antlr4.Runtime/Antlr4.Runtime.shproj" />
+    <Project Path="../BuildTasks/BindingPath/BindingPath.shproj" />
+    <Project Path="../BuildTasks/ConditionalNamespace/ConditionalNamespace.shproj" />
+    <Project Path="../BuildTasks/Core.shproj" />
+    <Project Path="../BuildTasks/System.Xaml/System.Xaml.shproj" />
+    <Project Path="../Microsoft.UI.Xaml.Markup.Compiler.Core/Microsoft.UI.Xaml.Markup.Compiler.Core.shproj" />
+    <Project Path="../Microsoft.UI.Xaml.Markup.Compiler.csproj">
+      <BuildType Solution="*|ARM64" Project="?" />
+      <Platform Solution="*|ARM64" Project="?" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+    <Project Path="../Microsoft.UI.Xaml.Markup.Compiler.Parsing/Microsoft.UI.Xaml.Markup.Compiler.Parsing.shproj" />
+  </Folder>
+</Solution>

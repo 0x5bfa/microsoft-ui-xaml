@@ -1,0 +1,20 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="Win32" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/AdHocCSharpApp/">
+    <Project Path="../adhoc/AdHocCSharpApp/AdHocCSharpApp/AdHocCSharpApp.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+  </Folder>
+</Solution>

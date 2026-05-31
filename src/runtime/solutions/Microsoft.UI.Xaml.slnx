@@ -1,0 +1,1782 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Debug_test" />
+    <BuildType Name="Release" />
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="ARM64EC" />
+    <Platform Name="Win32" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/controls/">
+    <Project Path="../../../tools/controls/BuildTasks/CleanupMSBuildProcesses.csproj">
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="Win32" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="Win32" />
+    </Project>
+  </Folder>
+  <Folder Name="/controls/dev/" />
+  <Folder Name="/controls/dev/dll/">
+    <Project Path="../../controls/dll/Microsoft.UI.Xaml.Controls.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/controls/idl/">
+    <Project Path="../../controls/idl/Microsoft.UI.Xaml.Controls.idl.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/" />
+  <Folder Name="/dxaml/phone/" />
+  <Folder Name="/dxaml/phone/idl/">
+    <Project Path="../phone/idl/phone.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/phone/lib/">
+    <Project Path="../phone/lib/PhoneSignatureControls.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/">
+    <Project Path="../../../tests/runtime/infra/BinplaceTestDependencies.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/appanalysis/" />
+  <Folder Name="/dxaml/test/appanalysis/lib/">
+    <Project Path="../../../tests/runtime/appanalysis/lib/AppAnalysis.RuleTester.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/appanalysis/ruleSet/">
+    <Project Path="../../../tests/runtime/appanalysis/ruleSet/AppAnalysis.Test.TestRuleSet.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/dcomp/" />
+  <Folder Name="/dxaml/test/dcomp/dll/" />
+  <Folder Name="/dxaml/test/dcomp/idl/" />
+  <Folder Name="/dxaml/test/dcomp/lib/" />
+  <Folder Name="/dxaml/test/dcomp/pch/" />
+  <Folder Name="/dxaml/test/infra/">
+    <Project Path="../../../tests/runtime/infra/taefhostapp/taefhostapp.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="../../../tests/runtime/infra/taefhostappmanaged/TaefHostAppManaged.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Platform Solution="Debug_test|Win32" Project="Win32" />
+      <Platform Solution="Debug|Win32" Project="x86" />
+      <Platform Solution="Release|Win32" Project="x86" />
+      <Build Solution="Debug|ARM64" Project="false" />
+      <Build Solution="Release|ARM64" Project="false" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug_test|Any CPU" />
+      <Deploy Solution="Debug_test|ARM64EC" />
+      <Deploy Solution="Debug|Any CPU" />
+      <Deploy Solution="Debug|ARM64EC" />
+    </Project>
+    <Project Path="../../../tests/runtime/infra/taefhostappnetcore/taefhostappnetcore.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/client/">
+    <Project Path="../../../tests/runtime/infra/client/cswinrt/Private.Infrastructure.CsWinRT.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/client/dll/">
+    <Project Path="../../../tests/runtime/infra/client/dll/Private.Infrastructure.Client.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/client/idl/">
+    <Project Path="../../../tests/runtime/infra/client/idl/Private.Infrastructure.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/client/lib/">
+    <Project Path="../../../tests/runtime/infra/client/lib/Private.Infrastructure.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/client/pch/">
+    <Project Path="../../../tests/runtime/infra/client/pch/Private.Infrastructure.Client.Precomp.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/contract/">
+    <Project Path="../../../tests/runtime/infra/contract/contract.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/invoker/">
+    <Project Path="../../../tests/runtime/infra/invoker/Invoker.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/logging/">
+    <Project Path="../../../tests/runtime/infra/logging/Private.Infrastructure.Logging.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/server/">
+    <Project Path="../../../tests/runtime/infra/server/Private.Infrastructure.Server.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/Win32Hosting/" />
+  <Folder Name="/dxaml/test/infra/Win32Hosting/idl/">
+    <Project Path="../../../tests/runtime/infra/Win32Hosting/idl/Private.Infrastructure.Hosting.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/Win32Hosting/src/">
+    <Project Path="../../../tests/runtime/infra/Win32Hosting/src/Microsoft.Toolkit.Win32.UI.XamlHost.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/Win32Hosting/WPF/" />
+  <Folder Name="/dxaml/test/infra/Win32Hosting/WPF/HostingHelpers/">
+    <Project Path="../../../tests/runtime/infra/Win32Hosting/WPF/HostingHelpers/Private.Infrastructure.Hosting.HostingHelpers.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/infra/Win32Hosting/WPF/netcore/">
+    <Project Path="../../../tests/runtime/infra/Win32Hosting/WPF/netcore/Private.Infrastructure.Hosting.WPF.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/" />
+  <Folder Name="/dxaml/test/managed/AccessKeys/">
+    <Project Path="../../../tests/runtime/managed/AccessKeys/Microsoft.UI.Xaml.Tests.Managed.AccessKeys.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/animation/">
+    <Project Path="../../../tests/runtime/managed/animation/Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/common/">
+    <Project Path="../../../tests/runtime/managed/common/Microsoft.UI.Xaml.Tests.Managed.Common.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/controls/">
+    <Project Path="../../../tests/runtime/managed/controls/Microsoft.UI.Xaml.Tests.Managed.Controls.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/enterprise/">
+    <Project Path="../../../tests/runtime/managed/enterprise/Microsoft.UI.Xaml.Tests.Managed.Enterprise.Moco.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/foundation/">
+    <Project Path="../../../tests/runtime/managed/foundation/Microsoft.UI.Xaml.Tests.Managed.Foundation.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/framework/">
+    <Project Path="../../../tests/runtime/managed/framework/Microsoft.UI.Xaml.Tests.Managed.Framework.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/media/">
+    <Project Path="../../../tests/runtime/managed/media/Microsoft.UI.Xaml.Tests.Managed.Media.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="Win32" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="Debug_test|x86" Project="x86" />
+      <Platform Solution="Debug|x86" Project="Win32" />
+      <Platform Solution="Release|x86" Project="Win32" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/Win32/" />
+  <Folder Name="/dxaml/test/managed/Win32/Common/">
+    <Project Path="../../../tests/runtime/managed/Win32/Common/Microsoft.UI.Xaml.Tests.Managed.Win32.Common.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/managed/Win32/WPF/">
+    <Project Path="../../../tests/runtime/managed/Win32/WPF/Microsoft.UI.Xaml.Tests.Managed.Win32.Hosting.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/" />
+  <Folder Name="/dxaml/test/native/external/" />
+  <Folder Name="/dxaml/test/native/external/activation/">
+    <Project Path="../../../tests/runtime/native/external/activation/Microsoft.UI.Xaml.Tests.External.Activation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/adaptability/">
+    <Project Path="../../../tests/runtime/native/external/adaptability/Microsoft.UI.Xaml.Tests.External.Adaptability.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/adaptability/customTypes/">
+    <Project Path="../../../tests/runtime/native/external/adaptability/customtypes/CustomTypes.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/Automation/">
+    <Project Path="../../../tests/runtime/native/external/Automation/Microsoft.UI.Xaml.Tests.External.Automation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/controls/">
+    <Project Path="../../../tests/runtime/native/external/controls/Microsoft.UI.Xaml.Tests.External.Controls.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/controls/customTypes/">
+    <Project Path="../../../tests/runtime/native/external/controls/customtypes/CustomTypes.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/convergence/">
+    <Project Path="../../../tests/runtime/native/external/convergence/Microsoft.UI.Xaml.Tests.External.Convergence.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/enterprise/">
+    <Project Path="../../../tests/runtime/native/external/enterprise/Microsoft.UI.Xaml.Tests.External.Enterprise.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/foundation/">
+    <Project Path="../../../tests/runtime/native/external/foundation/Microsoft.UI.Xaml.Tests.External.Foundation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Build Solution="*|ARM64EC" Project="false" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/foundation/customTypes/">
+    <Project Path="../../../tests/runtime/native/external/foundation/customTypes/CustomTypes.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/framework/">
+    <Project Path="../../../tests/runtime/native/external/framework/Microsoft.UI.Xaml.Tests.External.Framework.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/infra/">
+    <Project Path="../../../tests/runtime/native/external/infra/Private.Native.External.Infrastructure.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/pch/">
+    <Project Path="../../../tests/runtime/native/external/pch/Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/quality/">
+    <Project Path="../../../tests/runtime/native/external/quality/Microsoft.UI.Xaml.Tests.External.Quality.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/test/">
+    <Project Path="../../../tests/runtime/native/external/test/Microsoft.UI.Xaml.Tests.External.Test.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/tools/">
+    <Project Path="../../../tests/runtime/tools/external/Microsoft.UI.Xaml.Tests.External.Tools.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/tools/customTypes/">
+    <Project Path="../../../tests/runtime/tools/customTypes/customTypes.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/external/Win32/">
+    <Project Path="../../../tests/runtime/native/external/Win32/Microsoft.UI.Xaml.Tests.External.Win32.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/isolated/" />
+  <Folder Name="/dxaml/test/native/isolated/shared/">
+    <Project Path="../../../tests/runtime/native/isolated/shared/Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/native/isolated/tools/" />
+  <Folder Name="/dxaml/test/native/isolated/tools/XbfGenerator/">
+    <Project Path="../../../tests/runtime/tools/XbfGenerator/Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/packages/" />
+  <Folder Name="/dxaml/test/packages/appx/">
+    <Project Path="../../../tests/runtime/packages/appx/packages.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="Win32" />
+      <Platform Solution="*|x64" Project="X64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/resources/" />
+  <Folder Name="/dxaml/test/resources/masters/">
+    <Project Path="../../../tests/runtime/resources/masters/Private.Infrastructure.Resources.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/resources/res/">
+    <Project Path="../../../tests/runtime/resources/res/resources.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/themes/">
+    <Project Path="../../../tests/runtime/themes/themes.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/tools/" />
+  <Folder Name="/dxaml/test/tools/codegen/">
+    <Project Path="../../../tests/runtime/tools/codegen/Codegen.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="Debug_test|ARM64" Project="ARM64" />
+      <Platform Solution="Debug_test|Win32" Project="Win32" />
+      <Platform Solution="Debug_test|x64" Project="x64" />
+      <Platform Solution="Debug_test|x86" Project="Win32" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/tools/MockDCompInjector/">
+    <Project Path="../../../tests/runtime/tools/MockDCompInjector/MockDCompInjector.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/tools/XmlValidation/" />
+  <Folder Name="/dxaml/test/tools/XmlValidation/UnitTests/">
+    <Project Path="../../../tests/runtime/tools/XmlValidation/UnitTests/UnitTests.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="Win32" />
+      <Platform Solution="*|x86" Project="Win32" />
+      <Platform Solution="Debug_test|ARM64" Project="ARM64" />
+      <Platform Solution="Debug_test|x64" Project="x64" />
+      <Platform Solution="Debug|ARM64" Project="ARM64" />
+      <Platform Solution="Debug|x64" Project="x64" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/test/tools/XmlValidation/XmlValidation/">
+    <Project Path="../../../tests/runtime/tools/XmlValidation/XmlValidation/XmlValidation.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="Win32" />
+      <Platform Solution="*|x86" Project="Win32" />
+      <Platform Solution="Debug_test|ARM64" Project="ARM64" />
+      <Platform Solution="Debug_test|x64" Project="x64" />
+      <Platform Solution="Debug|ARM64" Project="ARM64" />
+      <Platform Solution="Debug|x64" Project="x64" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/">
+    <Project Path="../xcp/hostpalplatmisc.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/common/">
+    <Project Path="../xcp/common/common.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/AccessKey/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/AccessKey/lib/">
+    <Project Path="../xcp/components/AccessKeys/AccessKey/lib/AccessKeys.AKAccessKey.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/AccessKey/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/accessKey/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/Export/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/Export/lib/">
+    <Project Path="../xcp/components/AccessKeys/Export/lib/AccessKeys.AKExport.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/InputInterceptor/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/InputInterceptor/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/inputInterceptor/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/KeyTips/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/KeyTips/lib/">
+    <Project Path="../xcp/components/AccessKeys/KeyTips/lib/AccessKeys.KeyTips.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/KeyTips/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/keyTips/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/ModeContainer/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/ModeContainer/lib/">
+    <Project Path="../xcp/components/AccessKeys/ModeContainer/lib/AccessKeys.AKModeContainer.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/ModeContainer/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/modeContainer/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/Owner/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/Owner/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/owner/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/Parser/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/Parser/lib/">
+    <Project Path="../xcp/components/AccessKeys/Parser/lib/AccessKeys.AKParser.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/Parser/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/parser/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/Scope/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/Scope/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/scope/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKScope.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/ScopeBuilder/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/ScopeBuilder/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/scopeBuilder/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeBuilder.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/ScopeTree/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/ScopeTree/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/scopeTree/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeTree.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/AccessKeys/TreeAnalyzer/" />
+  <Folder Name="/dxaml/xcp/components/AccessKeys/TreeAnalyzer/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/treeAnalyzer/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/allocation/" />
+  <Folder Name="/dxaml/xcp/components/allocation/lib/">
+    <Project Path="../xcp/components/allocation/lib/Microsoft.UI.Xaml.Allocation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/allocation/stubs/">
+    <Project Path="../../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Allocation.Stubs.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/animation/" />
+  <Folder Name="/dxaml/xcp/components/animation/lib/">
+    <Project Path="../xcp/components/animation/lib/Microsoft.UI.Xaml.Animation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/animation/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/animation/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/associative/" />
+  <Folder Name="/dxaml/xcp/components/associative/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/associative/Microsoft.UI.Xaml.Tests.Isolated.Associative.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/base/" />
+  <Folder Name="/dxaml/xcp/components/base/lib/">
+    <Project Path="../xcp/components/base/lib/Microsoft.UI.Xaml.Base.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/base/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/base/Microsoft.UI.Xaml.Tests.Isolated.Base.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/brushes/" />
+  <Folder Name="/dxaml/xcp/components/brushes/lib/">
+    <Project Path="../xcp/components/brushes/lib/Microsoft.UI.Xaml.Brushes.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/brushes/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/brushes/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/Collection/" />
+  <Folder Name="/dxaml/xcp/components/Collection/Lib/">
+    <Project Path="../xcp/components/Collection/Lib/Microsoft.UI.Xaml.Collection.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/Collection/Unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/collection/Microsoft.UI.Xaml.Tests.Isolated.Collection.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/colors/" />
+  <Folder Name="/dxaml/xcp/components/colors/lib/">
+    <Project Path="../xcp/components/colors/lib/Microsoft.UI.Xaml.Colors.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/colors/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/colors/Microsoft.UI.Xaml.Tests.Isolated.Colors.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/com/" />
+  <Folder Name="/dxaml/xcp/components/com/lib/">
+    <Project Path="../xcp/components/com/lib/Microsoft.UI.Xaml.Com.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/com/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/com/Microsoft.UI.Xaml.Tests.Isolated.Com.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/comptree/" />
+  <Folder Name="/dxaml/xcp/components/comptree/lib/">
+    <Project Path="../xcp/components/comptree/lib/Microsoft.UI.Xaml.CompTree.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/comptree/unittests/" />
+  <Folder Name="/dxaml/xcp/components/ContentRoot/" />
+  <Folder Name="/dxaml/xcp/components/ContentRoot/lib/">
+    <Project Path="../xcp/components/ContentRoot/lib/Microsoft.UI.Xaml.ContentRoot.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/controls/" />
+  <Folder Name="/dxaml/xcp/components/controls/InputValidation/" />
+  <Folder Name="/dxaml/xcp/components/controls/InputValidation/lib/">
+    <Project Path="../xcp/components/controls/InputValidation/lib/Microsoft.UI.Xaml.Controls.InputValidation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/controls/KeyDownUp/" />
+  <Folder Name="/dxaml/xcp/components/controls/KeyDownUp/lib/">
+    <Project Path="../xcp/components/controls/KeyDownUp/lib/Microsoft.UI.Xaml.Controls.KeyDownUp.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/criticalsection/" />
+  <Folder Name="/dxaml/xcp/components/criticalsection/lib/">
+    <Project Path="../xcp/components/criticalsection/lib/Microsoft.UI.Xaml.CriticalSection.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/criticalsection/unittests/" />
+  <Folder Name="/dxaml/xcp/components/CValue/" />
+  <Folder Name="/dxaml/xcp/components/CValue/lib/">
+    <Project Path="../xcp/components/CValue/lib/Microsoft.UI.Xaml.CValue.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/CValue/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/framework/CValue/Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/deferral/" />
+  <Folder Name="/dxaml/xcp/components/deferral/lib/">
+    <Project Path="../xcp/components/deferral/lib/Microsoft.UI.Xaml.Deferral.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/deferral/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/framework/deferral/Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/dependencyLocator/" />
+  <Folder Name="/dxaml/xcp/components/dependencyLocator/lib/">
+    <Project Path="../xcp/components/dependencyLocator/lib/Microsoft.UI.Xaml.DependencyLocator.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/dependencyLocator/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/framework/dependencyLocator/Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/DependencyObject/" />
+  <Folder Name="/dxaml/xcp/components/DependencyObject/lib/">
+    <Project Path="../xcp/components/DependencyObject/lib/Microsoft.UI.Xaml.DependencyObject.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/DependencyObject/minlib/">
+    <Project Path="../xcp/components/DependencyObject/minlib/Microsoft.UI.Xaml.DependencyObjectMin.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/DependencyObject/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/framework/dependencyObject/Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/DesktopUtility/" />
+  <Folder Name="/dxaml/xcp/components/DesktopUtility/lib/">
+    <Project Path="../xcp/components/DesktopUtility/lib/Microsoft.UI.Xaml.DesktopUtility.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/diagnosticsInterop/" />
+  <Folder Name="/dxaml/xcp/components/diagnosticsInterop/lib/">
+    <Project Path="../xcp/components/diagnosticsInterop/lib/Microsoft.UI.Xaml.DiagnosticsInterop.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/downlevel/" />
+  <Folder Name="/dxaml/xcp/components/downlevel/lib/" />
+  <Folder Name="/dxaml/xcp/components/elements/" />
+  <Folder Name="/dxaml/xcp/components/elements/lib/">
+    <Project Path="../xcp/components/elements/lib/Microsoft.UI.Xaml.Elements.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/elements/sharedstubs/">
+    <Project Path="../../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/elements/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/elements/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Elements.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/eventArgs/" />
+  <Folder Name="/dxaml/xcp/components/eventArgs/lib/">
+    <Project Path="../xcp/components/eventArgs/lib/Microsoft.UI.Xaml.EventArgs.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/experimental/">
+    <Project Path="../xcp/components/experimental/Microsoft.UI.Xaml.Experimental.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/ExtMetadataProvider/" />
+  <Folder Name="/dxaml/xcp/components/ExtMetadataProvider/lib/">
+    <Project Path="../xcp/components/ExtMetadataProvider/lib/Microsoft.UI.Xaml.ExtMetadataProvider.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/ExtMetadataProvider/unittests/" />
+  <Folder Name="/dxaml/xcp/components/flyweight/" />
+  <Folder Name="/dxaml/xcp/components/flyweight/lib/">
+    <Project Path="../xcp/components/flyweight/lib/Microsoft.UI.Xaml.Flyweight.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/flyweight/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/flyweight/Microsoft.UI.Xaml.Tests.Isolated.Flyweight.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/focus/" />
+  <Folder Name="/dxaml/xcp/components/focus/export/" />
+  <Folder Name="/dxaml/xcp/components/focus/export/lib/">
+    <Project Path="../xcp/components/focus/export/lib/Microsoft.UI.Xaml.Focus.Export.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/focus/FocusObserver/">
+    <Project Path="../xcp/components/focus/FocusObserver/Microsoft.UI.Xaml.Focus.FocusObserver.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/focus/FocusProperties/" />
+  <Folder Name="/dxaml/xcp/components/focus/FocusProperties/lib/">
+    <Project Path="../xcp/components/focus/FocusProperties/lib/Microsoft.UI.Xaml.Focus.FocusProperties.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/focus/FocusSelection/" />
+  <Folder Name="/dxaml/xcp/components/focus/FocusSelection/lib/">
+    <Project Path="../xcp/components/focus/FocusSelection/lib/Microsoft.UI.Xaml.Focus.FocusSelection.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/focus/FocusSelection/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/focus/focusSelection/Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/focus/Movement/" />
+  <Folder Name="/dxaml/xcp/components/focus/Movement/lib/">
+    <Project Path="../xcp/components/focus/Movement/lib/Microsoft.UI.Xaml.Focus.FocusMovement.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/focus/XYFocus/" />
+  <Folder Name="/dxaml/xcp/components/focus/XYFocus/lib/">
+    <Project Path="../xcp/components/focus/XYFocus/lib/Microsoft.UI.Xaml.Focus.XYFocus.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/focus/XYFocus/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/focus/xyFocus/Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/FocusRect/" />
+  <Folder Name="/dxaml/xcp/components/FocusRect/lib/">
+    <Project Path="../xcp/components/FocusRect/lib/Microsoft.UI.Xaml.FocusRect.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/gestures/" />
+  <Folder Name="/dxaml/xcp/components/gestures/export/">
+    <Project Path="../xcp/components/gestures/export/Microsoft.UI.Xaml.Gestures.Export.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/gestures/lib/">
+    <Project Path="../xcp/components/gestures/lib/Microsoft.UI.Xaml.Gestures.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/gestures/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/core/gestures/Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/graphics/" />
+  <Folder Name="/dxaml/xcp/components/graphics/lib/">
+    <Project Path="../xcp/components/graphics/lib/Microsoft.UI.Xaml.GraphicsUtility.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/graphics/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/graphics/Microsoft.UI.Xaml.Tests.Isolated.Graphics.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/imaging/" />
+  <Folder Name="/dxaml/xcp/components/imaging/lib/">
+    <Project Path="../xcp/components/imaging/lib/Microsoft.UI.Xaml.Media.Imaging.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/imaging/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/imaging/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/input/" />
+  <Folder Name="/dxaml/xcp/components/input/lib/">
+    <Project Path="../xcp/components/input/lib/Microsoft.UI.Xaml.Input.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/input/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/core/input/Microsoft.UI.Xaml.Tests.Isolated.Core.Input.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/inputpane/" />
+  <Folder Name="/dxaml/xcp/components/inputpane/lib/">
+    <Project Path="../xcp/components/inputpane/lib/Microsoft.UI.Xaml.InputPane.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/ItemIndexRangeHelper/" />
+  <Folder Name="/dxaml/xcp/components/ItemIndexRangeHelper/lib/">
+    <Project Path="../xcp/components/ItemIndexRangeHelper/lib/Microsoft.UI.Xaml.ItemIndexRangeHelper.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/ItemIndexRangeHelper/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/enterprise/itemIndexRangeHelper/Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/KeyboardAccelerator/" />
+  <Folder Name="/dxaml/xcp/components/KeyboardAccelerator/lib/">
+    <Project Path="../xcp/components/KeyboardAccelerator/lib/Microsoft.UI.Xaml.KeyboardAcceleratorUtility.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/legacy/" />
+  <Folder Name="/dxaml/xcp/components/legacy/lib/">
+    <Project Path="../xcp/components/legacy/lib/Microsoft.UI.Xaml.Legacy.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/legacy/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/legacy/Microsoft.UI.Xaml.Tests.Isolated.Legacy.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/lifetime/" />
+  <Folder Name="/dxaml/xcp/components/lifetime/lib/">
+    <Project Path="../xcp/components/lifetime/lib/Microsoft.UI.Xaml.Lifetime.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/lifetime/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/lifetime/Microsoft.UI.Xaml.Tests.Isolated.Lifetime.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/livereorderhelper/" />
+  <Folder Name="/dxaml/xcp/components/livereorderhelper/lib/">
+    <Project Path="../xcp/components/livereorderhelper/lib/Microsoft.UI.Xaml.LiveReorderHelper.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/livereorderhelper/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/controls/liveReorderHelper/Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/math/" />
+  <Folder Name="/dxaml/xcp/components/math/lib/">
+    <Project Path="../xcp/components/math/lib/Microsoft.UI.Xaml.Math.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/math/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/math/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Math.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/metadata/" />
+  <Folder Name="/dxaml/xcp/components/metadata/DynamicMetadataStorage/">
+    <Project Path="../xcp/components/metadata/DynamicMetadataStorage/Microsoft.UI.Xaml.DynamicMetadataStorage.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/metadata/lib/">
+    <Project Path="../xcp/components/metadata/lib/Microsoft.UI.Xaml.Metadata.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/metadata/mocks/">
+    <Project Path="../../../tests/runtime/native/isolated/shared/mocks/metadata/Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/metadata/unittests/" />
+  <Folder Name="/dxaml/xcp/components/moco/" />
+  <Folder Name="/dxaml/xcp/components/moco/lib/">
+    <Project Path="../xcp/components/moco/lib/Microsoft.UI.Xaml.Components.Moco.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/moco/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/controls/moco/Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/mrt/" />
+  <Folder Name="/dxaml/xcp/components/mrt/lib/">
+    <Project Path="../xcp/components/mrt/lib/Microsoft.UI.Xaml.Mrt.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/mrt/mocks/" />
+  <Folder Name="/dxaml/xcp/components/mrt/unittests/" />
+  <Folder Name="/dxaml/xcp/components/namescope/" />
+  <Folder Name="/dxaml/xcp/components/namescope/lib/">
+    <Project Path="../xcp/components/namescope/lib/Microsoft.UI.Xaml.NameScope.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/offerableheap/" />
+  <Folder Name="/dxaml/xcp/components/offerableheap/lib/">
+    <Project Path="../xcp/components/offerableheap/lib/Microsoft.UI.Xaml.OfferableHeap.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/offerableheap/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/offerableheap/Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/OneCoreTransforms/" />
+  <Folder Name="/dxaml/xcp/components/OneCoreTransforms/lib/">
+    <Project Path="../xcp/components/OneCoreTransforms/lib/Microsoft.UI.Xaml.OneCoreTransforms.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/parser/" />
+  <Folder Name="/dxaml/xcp/components/parser/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/framework/parser/Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/pch/" />
+  <Folder Name="/dxaml/xcp/components/pch/prod/">
+    <Project Path="../xcp/components/pch/prod/Microsoft.UI.Xaml.Precomp.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/pch/prodexcept/">
+    <Project Path="../xcp/components/pch/prodexcept/Microsoft.UI.Xaml.Precomp.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/pch/ut/">
+    <Project Path="../xcp/components/pch/ut/Microsoft.UI.Xaml.Precomp.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/perf_guard/">
+    <Project Path="../xcp/components/perf_guard/Microsoft.UI.Xaml.PerfGuard.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/pivot/" />
+  <Folder Name="/dxaml/xcp/components/pivot/lib/">
+    <Project Path="../xcp/components/pivot/lib/Microsoft.UI.Xaml.Pivot.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/pivot/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/controls/pivot/Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/primitiveDependencyObjects/" />
+  <Folder Name="/dxaml/xcp/components/primitiveDependencyObjects/lib/">
+    <Project Path="../xcp/components/primitiveDependencyObjects/lib/Microsoft.UI.Xaml.PrimitiveDependencyObjects.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/qualifiers/" />
+  <Folder Name="/dxaml/xcp/components/qualifiers/lib/">
+    <Project Path="../xcp/components/qualifiers/lib/Microsoft.UI.Xaml.Qualifiers.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/qualifiers/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/adaptability/qualifiers/Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/relativepanel/" />
+  <Folder Name="/dxaml/xcp/components/relativepanel/lib/">
+    <Project Path="../xcp/components/relativepanel/lib/Microsoft.UI.Xaml.RelativePanel.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/relativepanel/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/controls/relativePanel/Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/resources/" />
+  <Folder Name="/dxaml/xcp/components/resources/lib/">
+    <Project Path="../xcp/components/resources/lib/Microsoft.UI.Xaml.XamlResources.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/runtimeEnabledFeatures/" />
+  <Folder Name="/dxaml/xcp/components/runtimeEnabledFeatures/lib/">
+    <Project Path="../xcp/components/runtimeEnabledFeatures/lib/Microsoft.UI.Xaml.RuntimeEnabledFeatures.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/runtimeEnabledFeatures/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/framework/runtimeEnabledFeatures/Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/SatelliteBase/" />
+  <Folder Name="/dxaml/xcp/components/SatelliteBase/lib/">
+    <Project Path="../xcp/components/SatelliteBase/lib/Microsoft.UI.Xaml.SatelliteBase.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/scaling/">
+    <Project Path="../xcp/components/scaling/Microsoft.UI.Xaml.Scaling.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/simple/" />
+  <Folder Name="/dxaml/xcp/components/simple/lib/">
+    <Project Path="../xcp/components/simple/lib/Microsoft.UI.Xaml.Framework.SimpleProperties.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/simple/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/framework/simple/Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/staticpal/" />
+  <Folder Name="/dxaml/xcp/components/staticpal/lib/">
+    <Project Path="../xcp/components/staticpal/lib/Microsoft.UI.Xaml.StaticPal.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/staticpal/mocks/" />
+  <Folder Name="/dxaml/xcp/components/style/" />
+  <Folder Name="/dxaml/xcp/components/style/lib/">
+    <Project Path="../xcp/components/style/lib/Microsoft.UI.Xaml.Style.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/Switcher/" />
+  <Folder Name="/dxaml/xcp/components/Switcher/lib/" />
+  <Folder Name="/dxaml/xcp/components/Telemetry/">
+    <Project Path="../xcp/components/Telemetry/Microsoft.UI.Xaml.Instrumentation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/terminateProcessOnOOM/" />
+  <Folder Name="/dxaml/xcp/components/terminateProcessOnOOM/lib/">
+    <Project Path="../xcp/components/terminateProcessOnOOM/lib/Microsoft.UI.Xaml.TerminateProcessOnOOM.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/text/" />
+  <Folder Name="/dxaml/xcp/components/text/lib/">
+    <Project Path="../xcp/components/text/lib/Microsoft.UI.Xaml.Text.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/text/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/text/Microsoft.UI.Xaml.Tests.Isolated.Text.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/themeanimationshelper/" />
+  <Folder Name="/dxaml/xcp/components/themeanimationshelper/lib/">
+    <Project Path="../xcp/components/themeanimationshelper/lib/Microsoft.UI.Xaml.ThemeAnimationsHelper.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/themeanimationshelper/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/themeanimationshelper/Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/theming/" />
+  <Folder Name="/dxaml/xcp/components/theming/lib/">
+    <Project Path="../xcp/components/theming/lib/Microsoft.UI.Xaml.Theming.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/theming/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/controls/theming/Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/theminginterop/" />
+  <Folder Name="/dxaml/xcp/components/theminginterop/lib/">
+    <Project Path="../xcp/components/theminginterop/lib/Microsoft.UI.Xaml.ThemingInterop.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/theminginterop/mocks/" />
+  <Folder Name="/dxaml/xcp/components/theminginterop/unittests/" />
+  <Folder Name="/dxaml/xcp/components/threading/" />
+  <Folder Name="/dxaml/xcp/components/threading/lib/">
+    <Project Path="../xcp/components/threading/lib/Microsoft.UI.Xaml.Threading.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/threading/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/threading/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/transforms/" />
+  <Folder Name="/dxaml/xcp/components/transforms/lib/">
+    <Project Path="../xcp/components/transforms/lib/Microsoft.UI.Xaml.Transforms.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/transforms/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/transforms/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/UIBridgeFocus/">
+    <Project Path="../xcp/components/UIBridgeFocus/Microsoft.UI.Xaml.UIBridgeFocus.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/unittests/" />
+  <Folder Name="/dxaml/xcp/components/unittests/mocks/">
+    <Project Path="../../../tests/runtime/native/isolated/shared/mocks/ExternalTestMocks.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/unittests/stubs/">
+    <Project Path="../../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Stubs.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/valueboxer/" />
+  <Folder Name="/dxaml/xcp/components/valueboxer/lib/">
+    <Project Path="../xcp/components/valueboxer/lib/Microsoft.UI.Xaml.ValueBoxer.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/valueboxer/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/framework/valueboxer/Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/visualstateshelper/" />
+  <Folder Name="/dxaml/xcp/components/visualstateshelper/lib/">
+    <Project Path="../xcp/components/visualstateshelper/lib/Microsoft.UI.Xaml.VisualStatesHelper.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/visualstateshelper/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/enterprise/visualStatesHelper/Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/vsm/" />
+  <Folder Name="/dxaml/xcp/components/vsm/lib/">
+    <Project Path="../xcp/components/vsm/lib/Microsoft.UI.Xaml.VisualStateMachine.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/WindowChrome/">
+    <Project Path="../xcp/components/WindowChrome/Microsoft.UI.Xaml.WindowChrome.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/winuri/" />
+  <Folder Name="/dxaml/xcp/components/winuri/lib/">
+    <Project Path="../xcp/components/winuri/lib/winuri.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/winuri/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/framework/winuri/Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/xamlDiagnostics/" />
+  <Folder Name="/dxaml/xcp/components/xamlDiagnostics/idl/">
+    <Project Path="../xcp/components/xamlDiagnostics/idl/xamlom.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/xamlDiagnostics/lib/">
+    <Project Path="../xcp/components/xamlDiagnostics/lib/Microsoft.UI.Xaml.XamlDiagnostics.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/xamlDiagnostics/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/diagnostics/Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/XboxUtility/" />
+  <Folder Name="/dxaml/xcp/components/XboxUtility/lib/">
+    <Project Path="../xcp/components/XboxUtility/lib/Microsoft.UI.Xaml.XboxUtility.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/xstring/" />
+  <Folder Name="/dxaml/xcp/components/xstring/lib/">
+    <Project Path="../xcp/components/xstring/lib/Microsoft.UI.Xaml.XString.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/components/xstring/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/foundation/xstring/Microsoft.UI.Xaml.Tests.Isolated.Strings.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/control/" />
+  <Folder Name="/dxaml/xcp/control/common/" />
+  <Folder Name="/dxaml/xcp/control/common/shared/" />
+  <Folder Name="/dxaml/xcp/control/common/shared/sl/">
+    <Project Path="../xcp/control/common/shared/sl/controlBase.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/control/download/">
+    <Project Path="../xcp/control/download/download.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/">
+    <Project Path="../xcp/core/xcpcore.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/controls/" />
+  <Folder Name="/dxaml/xcp/core/controls/generated/">
+    <Project Path="../xcp/core/controls/generated/CoreControlsGenerated.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/core/" />
+  <Folder Name="/dxaml/xcp/core/core/elements/" />
+  <Folder Name="/dxaml/xcp/core/core/elements/lib/">
+    <Project Path="../xcp/core/core/elements/lib/elements.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/core/elements/lib2/">
+    <Project Path="../xcp/core/core/elements/lib2/elements2.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/core/elements/libexcept/">
+    <Project Path="../xcp/core/core/elements/libexcept/elements.except.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/core/elements/pch/">
+    <Project Path="../xcp/core/core/elements/pch/elements.pch.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/core/elements/pchexcept/">
+    <Project Path="../xcp/core/core/elements/pchexcept/elements.except.pch.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/hw/">
+    <Project Path="../xcp/core/hw/hw.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/input/">
+    <Project Path="../xcp/core/input/Input.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/metadata/" />
+  <Folder Name="/dxaml/xcp/core/metadata/dynamic/">
+    <Project Path="../xcp/core/metadata/dynamic/dynamicmetadata.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/native/" />
+  <Folder Name="/dxaml/xcp/core/native/media/">
+    <Project Path="../xcp/core/native/media/mediaengine.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/native/text/" />
+  <Folder Name="/dxaml/xcp/core/native/text/Common/">
+    <Project Path="../xcp/core/native/text/Common/Native.Text.Common.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/native/text/Controls/">
+    <Project Path="../xcp/core/native/text/Controls/Native.Text.Controls.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/Parser/" />
+  <Folder Name="/dxaml/xcp/core/Parser/core/">
+    <Project Path="../xcp/core/parser/core/Parser.Core.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/Parser/pch/">
+    <Project Path="../xcp/core/parser/pch/Parser.pch.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/Parser/runtime/">
+    <Project Path="../xcp/core/parser/runtime/Parser.Runtime.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/Parser/staticcore/">
+    <Project Path="../xcp/core/parser/staticcore/Parser.Core.Static.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/Parser/staticpch/">
+    <Project Path="../xcp/core/parser/staticpch/Parser.pch.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/core/text/">
+    <Project Path="../xcp/core/text/coretext.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/" />
+  <Folder Name="/dxaml/xcp/dxaml/dllsrv/" />
+  <Folder Name="/dxaml/xcp/dxaml/dllsrv/exts/" />
+  <Folder Name="/dxaml/xcp/dxaml/dllsrv/exts/phone/">
+    <Project Path="../xcp/dxaml/dllsrv/exts/phone/Microsoft.UI.Xaml.Phone.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/dllsrv/winrt/" />
+  <Folder Name="/dxaml/xcp/dxaml/dllsrv/winrt/native/">
+    <Project Path="../xcp/dxaml/dllsrv/winrt/native/Microsoft.ui.xaml.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/dllsrv/winrt/res/" />
+  <Folder Name="/dxaml/xcp/dxaml/dllsrv/winrt/res/19h1/">
+    <Project Path="../xcp/dxaml/dllsrv/winrt/res/19h1/Microsoft.ui.xaml.resources.19h1.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/dllsrv/winrt/res/common/">
+    <Project Path="../xcp/dxaml/dllsrv/winrt/res/common/Microsoft.ui.xaml.resources.common.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/idl/" />
+  <Folder Name="/dxaml/xcp/dxaml/idl/com/">
+    <Project Path="../xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/idl/winrt/" />
+  <Folder Name="/dxaml/xcp/dxaml/idl/winrt/controls/">
+    <Project Path="../xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/idl/winrt/core/">
+    <Project Path="../xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/idl/winrt/main/">
+    <Project Path="../xcp/dxaml/idl/winrt/main/Microsoft.ui.xaml-main.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/idl/winrt/merged/">
+    <Project Path="../xcp/dxaml/idl/winrt/merged/Microsoft.UI.Xaml.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/idl/winrt/merged/private/">
+    <Project Path="../xcp/dxaml/idl/winrt/merged/private/Microsoft.UI.Xaml.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/" />
+  <Folder Name="/dxaml/xcp/dxaml/lib/unittests/">
+    <Project Path="../../../tests/runtime/native/isolated/xaml/dxamlCore/Microsoft.UI.Xaml.Tests.Isolated.winrtfoundation.DXamlCore.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtautomation/">
+    <Project Path="../xcp/dxaml/lib/winrtautomation/wrtdxamlautomation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtcontrols/">
+    <Project Path="../xcp/dxaml/lib/winrtcontrols/wrtdxamlcontrols.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtcontrols2/">
+    <Project Path="../xcp/dxaml/lib/winrtcontrols2/wrtdxamlcontrols2.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtcontrols3/">
+    <Project Path="../xcp/dxaml/lib/winrtcontrols3/wrtdxamlcontrols3.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtexcept/">
+    <Project Path="../xcp/dxaml/lib/winrtexcept/wrtdxamlexceptions.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtfactories/">
+    <Project Path="../xcp/dxaml/lib/winrtfactories/wrtdxamlfactories.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtfoundation/">
+    <Project Path="../xcp/dxaml/lib/winrtfoundation/wrtdxamlfoundation.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtfoundation2/">
+    <Project Path="../xcp/dxaml/lib/winrtfoundation2/wrtdxamlfoundation2.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtgeneratedclasses/">
+    <Project Path="../xcp/dxaml/lib/winrtgeneratedclasses/wrtdxamlgeneratedclasses.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtpch/">
+    <Project Path="../xcp/dxaml/lib/winrtpch/wrtdxamlpch.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/lib/winrtpchexcept/">
+    <Project Path="../xcp/dxaml/lib/winrtpchexcept/wrtdxamlpch.excep.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/manifest/">
+    <Project Path="../xcp/dxaml/manifest/manifest.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/sounds/">
+    <Project Path="../xcp/dxaml/sounds/sounds.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/themes/" />
+  <Folder Name="/dxaml/xcp/dxaml/themes/autogen/">
+    <Project Path="../xcp/dxaml/themes/autogen/GenAllXbf.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="Win32" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="Win32" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/" />
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/" />
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/dll/">
+    <Project Path="../../../tools/runtime/AppAnalysis/dll/Microsoft.Diagnostics.AppAnalysis.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/idl/">
+    <Project Path="../../../tools/runtime/AppAnalysis/idl/Microsoft.Diagnostics.AppAnalysis.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/module/">
+    <Project Path="../../../tools/runtime/AppAnalysis/module/AppAnalysisModule.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/runtime/" />
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/runtime/common/">
+    <Project Path="../../../tools/runtime/AppAnalysis/runtime/common/AppAnalysisRuntimeCommon.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/runtime/framework/">
+    <Project Path="../../../tools/runtime/AppAnalysis/runtime/framework/AppAnalysisRuntimeFramework.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/runtime/rules/">
+    <Project Path="../../../tools/runtime/AppAnalysis/runtime/rules/AppAnalysisRuntimeRules.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/sdkidl/">
+    <Project Path="../../../tools/runtime/AppAnalysis/sdkidl/AppAnalysis.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/tool/">
+    <Project Path="../../../tools/runtime/AppAnalysis/tool/AppAnalysisTool.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/unittests/" />
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/unittests/engineTests/">
+    <Project Path="../../../tests/runtime/appanalysis/unittests/engineTests/Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/unittests/pch/">
+    <Project Path="../../../tests/runtime/appanalysis/unittests/pch/AppAnalysis.Unittests.pch.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/AppAnalysis/unittests/ruleTests/">
+    <Project Path="../../../tests/runtime/appanalysis/unittests/ruleTests/Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/dxaml/tools/spy/" />
+  <Folder Name="/dxaml/xcp/dxaml/tools/spylauncher/" />
+  <Folder Name="/dxaml/xcp/dxaml/tools/xamldiagnostics/" />
+  <Folder Name="/dxaml/xcp/dxaml/tools/xamldiagnostics/tap/">
+    <Project Path="../../../tools/runtime/xamldiagnostics/tap/XamlDiagnosticsTap.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/pal/" />
+  <Folder Name="/dxaml/xcp/pal/debug/">
+    <Project Path="../xcp/pal/debug/PALDebug.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/plat/" />
+  <Folder Name="/dxaml/xcp/plat/win/" />
+  <Folder Name="/dxaml/xcp/plat/win/browserdesktop/">
+    <Project Path="../xcp/plat/win/browserdesktop/platwinbrowserdesktop.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/plat/win/desktop/">
+    <Project Path="../xcp/plat/win/desktop/platwindesktop.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+    <Project Path="../xcp/plat/win/etw/XamlETW.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/tools/" />
+  <Folder Name="/dxaml/xcp/tools/DumpXbf/">
+    <Project Path="../../../tools/runtime/DumpXbf/DumpXbf.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="Debug_test|ARM64" Project="ARM64" />
+      <Platform Solution="Debug_test|Win32" Project="Win32" />
+      <Platform Solution="Debug_test|x64" Project="x64" />
+      <Platform Solution="Debug_test|x86" Project="Win32" />
+      <Platform Solution="Debug|Win32" Project="Win32" />
+      <Platform Solution="Debug|x64" Project="x64" />
+      <Platform Solution="Debug|x86" Project="Win32" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/tools/GenXbfDLL/">
+    <Project Path="../../../tools/runtime/GenXbfDLL/GenXbf.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/tools/XbfParser/" />
+  <Folder Name="/dxaml/xcp/tools/XbfParser/SampleXbfViewer/">
+    <Project Path="../../../tools/runtime/XbfParser/SampleXbfViewer/SampleXbfViewer.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="Debug_test|ARM64" Project="ARM64" />
+      <Platform Solution="Debug_test|Win32" Project="Win32" />
+      <Platform Solution="Debug_test|x64" Project="x64" />
+      <Platform Solution="Debug_test|x86" Project="Win32" />
+      <Platform Solution="Debug|Win32" Project="Win32" />
+      <Platform Solution="Debug|x64" Project="x64" />
+      <Platform Solution="Debug|x86" Project="Win32" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/tools/XbfParser/WidgetSpinner/">
+    <Project Path="../../../tools/runtime/XbfParser/WidgetSpinner/WidgetSpinner.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/win/" />
+  <Folder Name="/dxaml/xcp/win/shared/" />
+  <Folder Name="/dxaml/xcp/win/shared/sl/">
+    <Project Path="../xcp/win/shared/sl/shared.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/dxaml/xcp/win/UIUtils/" />
+  <Folder Name="/dxaml/xcp/win/UIUtils/winrt/">
+    <Project Path="../xcp/win/UIUtils/winrt/uiutils.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/eng/">
+    <Project Path="../../../eng/graph/augmentation/Microsoft.UI.Xaml/GraphAugmentation.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="Win32" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../../../eng/midl/gencompheadersandidl.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+    <Project Path="../../../eng/midl/genmrtheadersandidl.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/MergedWinMD/">
+    <Project Path="../../metadata/MergedWinMD/MergedWinMD.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/MergedWinMD/private/">
+    <Project Path="../../metadata/MergedWinMD/private/MergedWinMD.Private.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/packaging/">
+    <Project Path="../../../eng/packaging/winui/Microsoft.WinUI.Packaging.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Platform Solution="*|Any CPU" Project="x64" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/projection/">
+    <Project Path="../../projection/Microsoft.WinUI.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/src/projection/private/">
+    <Project Path="../../projection/private/Microsoft.WinUI.Private.csproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/ut-nohybrid/">
+    <Project Path="../xcp/components/pch/ut-nohybrid/Microsoft.UI.Xaml.Precomp.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Project Path="../../../tests/runtime/infra/MockDComp/MockDComp.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+</Solution>

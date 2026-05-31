@@ -75,10 +75,10 @@ $projectPackages = @(
     (Join-Path $repoRoot 'eng\xamlcompiler\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj'),
     (Join-Path $repoRoot 'eng\restore\Microsoft.MaestroRestore.csproj'),
     (Join-Path $repoRoot 'src\controls\dll\packages.config'),
-    (Join-Path $repoRoot 'src\compiler\solutions\XamlCompilerPrerequisites.sln'),
-    (Join-Path $repoRoot 'src\runtime\solutions\Microsoft.UI.Xaml.sln'),
-    (Join-Path $repoRoot 'tools\runtime\solutions\XbfParser.sln'),
-    (Join-Path $repoRoot 'src\compiler\solutions\XamlCompiler.sln')
+    (Join-Path $repoRoot 'src\compiler\solutions\XamlCompilerPrerequisites.slnx'),
+    (Join-Path $repoRoot 'src\runtime\solutions\Microsoft.UI.Xaml.slnx'),
+    (Join-Path $repoRoot 'tools\runtime\solutions\XbfParser.slnx'),
+    (Join-Path $repoRoot 'src\compiler\solutions\XamlCompiler.slnx')
 )
 
 # Check if this is an OSS build, where not all files are available

@@ -34,7 +34,7 @@ goto :EOF
 
 :buildProj
 @echo Building %1
-for /F %%i in ('dir "%PROJROOT%\%1\*.sln" /b') DO set SLNFILE=%%i
+for /F %%i in ('dir "%PROJROOT%\%1\*.slnx" /b') DO set SLNFILE=%%i
 "%MSBUILDDIR%\msbuild" /t:rebuild /v:diag "%PROJROOT%\%1\%SLNFILE%" > "%PROJROOT%\%1\build.log"
 
 REM @echo Finding timing information
@@ -54,7 +54,7 @@ goto :EOF
 REM [path to project]
 :rebuildProj
 @echo Building %1
-for /F %%i in ('dir "%PROJROOT%\%1\*.sln" /b') DO set SLNFILE=%%i
+for /F %%i in ('dir "%PROJROOT%\%1\*.slnx" /b') DO set SLNFILE=%%i
 for /F %%i in ('dir /s "%PROJROOT%\%1\app.xaml" /b') DO set APPXAML==%%i
 echo. >> %%i
 

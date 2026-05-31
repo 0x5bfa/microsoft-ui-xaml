@@ -1,0 +1,595 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="Win32" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Regression Tests/" />
+  <Folder Name="/Regression Tests/Basic/">
+    <Project Path="../RegressionProjects/Basic/CppWinRT/PrecompiledHeader/PrecompiledHeader.vcxproj">
+      <Deploy />
+    </Project>
+    <Project Path="../RegressionProjects/Basic/CppWinRT/Simple/SimpleCppWinRT.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Basic/CSharp/Simple/SimpleCS.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Basic/VC/EventHandling_968976/EventHandling_968976.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Basic/VC/Simple/Simple.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/BindTestbed Backcompat/" />
+  <Folder Name="/Regression Tests/BindTestbed Backcompat/RS1/">
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedBackcompat/RS1/BindTestbedCppWinRT/BindTestbedCppWinRT_RS1.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Build Solution="Release|Win32" Project="false" />
+      <Build Solution="Release|x86" Project="false" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="Debug|Win32" />
+      <Deploy Solution="Debug|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedBackcompat/RS1/BindTestbedCS/BindTestbedCS_RS1.csproj">
+      <BuildDependency Project="../RegressionProjects/Features/CompiledBinding/BindTestbedBackcompat/RS1/BindTestbedCXModel/BindTestbedCXModel_RS1.vcxproj" />
+      <BuildDependency Project="../RegressionProjects/Features/CompiledBinding/BindTestbedBackcompat/RS1/BindTestbedModel/BindTestbedModel_RS1.csproj" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedBackcompat/RS1/BindTestbedCX/BindTestbedCX_RS1.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedBackcompat/RS1/BindTestbedCXModel/BindTestbedCXModel_RS1.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedBackcompat/RS1/BindTestbedModel/BindTestbedModel_RS1.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/BindTestbed/">
+    <Project Path="../ReflectionProviderTestCS/ReflectionProviderTestCS.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Build Solution="*|Win32" Project="false" />
+      <Build Solution="*|x86" Project="false" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/BindPhasingTestBedCpp/BindPhasingTestBedCpp/BindPhasingTestBedCpp.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCppWinRT/BindTestbedCppWinRT.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Build Solution="Release|Win32" Project="false" />
+      <Build Solution="Release|x86" Project="false" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="Debug|Win32" />
+      <Deploy Solution="Debug|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCppWinRT/BindTestbedCppWinRTDesktop(Package).wapproj" Type="c7167f0d-bc9f-4e6e-afe1-012c56b48db5">
+      <Platform Solution="*|Any CPU" Project="x86" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCppWinRT/BindTestbedCppWinRTDesktop.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCppWinRT/BindTestbedCppWinRTIncremental.vcxproj">
+      <BuildDependency Project="../RegressionProjects/Features/CompiledBinding/BindTestbedCppWinRT/BindTestbedCppWinRT.vcxproj" />
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Build Solution="Release|Win32" Project="false" />
+      <Build Solution="Release|x86" Project="false" />
+      <Deploy Solution="*|x64" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCS/BindTestbedCS.csproj">
+      <BuildDependency Project="../RegressionProjects/Features/CompiledBinding/BindTestbedCXModel/BindTestbedCXModel.vcxproj" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCS/BindTestbedCSDesktop(package).wapproj" Type="c7167f0d-bc9f-4e6e-afe1-012c56b48db5">
+      <Platform Solution="*|Any CPU" Project="x86" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCS/BindTestbedCSDesktop.csproj">
+      <Platform Solution="*|Any CPU" Project="x86" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Build Solution="*|Any CPU" Project="false" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCX/BindTestbedCX.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCX/BindTestbedCXIncremental.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedCXModel/BindTestbedCXModel.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedModel/BindTestbedModel.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/CompiledBinding/BindTestbedModel/BindTestbedModelDesktop.csproj">
+      <Platform Solution="Debug|Win32" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/Conditionals/">
+    <Project Path="../RegressionProjects/Features/Conditionals/ConditionalControls/ConditionalControls.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/Conditionals/ConditionalsCppWinRT/ConditionalsCppWinRT.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/Conditionals/ConditionalsCS/ConditionalsCS.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/Conditionals/ConditionalsCX/ConditionalsCX.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/Conditionals/ConditionalsModel/ConditionalsModel.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/Conditionals/Platform Conditionals/">
+    <Project Path="../RegressionProjects/Features/Conditionals/Platform Conditionals/PlatformConditionalsCS/PlatformConditionalsCS.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/Conditionals/Platform Conditionals/PlatformConditionalsModel/PlatformConditionalsModel.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/CustomAppXaml/">
+    <Project Path="../RegressionProjects/Features/CustomAppXaml/CustomAppXaml/CustomAppXaml.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/DeferLoadStrategy/">
+    <Project Path="../RegressionProjects/Features/DeferLoadStrategy/CSharp/CSharp.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/DeferLoadStrategy/VC/VC.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/LinkedMD/">
+    <Project Path="../RegressionProjects/Features/LinkedMD/AppCX/AppCX.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/LinkedMD/ControlsCX/ControlsCX.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/LinkedMD/LinkedMDAppCppWinRT/LinkedMDAppCppWinRT.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/LinkedMD/LinkedMdAppCS/LinkedMdAppCS.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/LinkedMD/LinkedMDControlsCppWinRT/LinkedMDControlsCppWinRT.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/LinkedMD/LinkedMDSubControlsCppWinRT/LinkedMDSubControlsCppWinRT.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/LinkedMD/LinkedMdSubControlsCS/LinkedMdSubControlsCS.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/LinkedMD/SubControlsCX/SubControlsCX.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/Markup Extensions/">
+    <Project Path="../RegressionProjects/Features/MarkupExtensions/MarkupExtensionsComponents/MarkupExtensionsComponents.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/MarkupExtensions/MarkupExtensionsCppWinRT/MarkupExtensionsCppWinRT.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/MarkupExtensions/MarkupExtensionsCS/MarkupExtensionsCS.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/MarkupExtensions/MarkupExtensionsCX/MarkupExtensionsCX.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/Metadata/">
+    <Project Path="../RegressionProjects/Features/Metadata/MetadataTestbedCS/MetadataTestbedCS.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/Metadata/MetadataTestbedCX/MetadataTestbedCX.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/MultipleViewsTestbed/">
+    <Project Path="../RegressionProjects/Features/MultiXamlFiles/MultipleViewsTestbed/MultipleViewsTestbedCS.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/MultiXamlFiles/MultipleViewsTestbedCPP/MultipleViewsTestbedCPP.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/MultiXamlFiles/MultipleViewsTestbedCppWinRT/MultipleViewsTestbedCppWinRT.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/NoLocalAppTypes/">
+    <Project Path="../NoLocalAppTypes/BlankConsumerAppCS/BlankConsumerAppCS.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Build Solution="*|Win32" Project="false" />
+      <Build Solution="*|x86" Project="false" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../NoLocalAppTypes/ProviderCS/BlankProviderCS.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/NonStandard/">
+    <Project Path="../RegressionProjects/NonStandard/NonStandardCX/NonStandardCX/NonStandardCX.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/ReduceProviderLoading/">
+    <Project Path="../RegressionProjects/Features/ReduceProviderLoading/ConsumerProvider/ConsumerCpp/ConsumerCpp.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/ReduceProviderLoading/ConsumerProvider/ConsumerCs/ConsumerCs.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/ReduceProviderLoading/ConsumerProvider/ProviderCpp/ProviderCpp.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/ReduceProviderLoading/ConsumerProvider/ProviderCs/ProviderCs.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/References/">
+    <Project Path="../RegressionProjects/Basic/OldPlatformsReferences/VC_Old_Behaviors_SDK/VC_Exe/VC_Exe.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Build Solution="*|Win32" Project="false" />
+      <Build Solution="*|x86" Project="false" />
+      <Deploy Solution="*|x64" />
+    </Project>
+    <Project Path="../RegressionProjects/Basic/References/CSharpExe/CSharpExe.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+      <Deploy Solution="*|ARM64" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+      <Deploy Solution="Debug|Any CPU" />
+    </Project>
+    <Project Path="../RegressionProjects/Basic/References/CSharpLib/CSharpLib.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Basic/References/CSharpWinrtComponent/CSharpWinrtComponent.csproj">
+      <Platform Solution="*|Win32" Project="x86" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Basic/References/VCExe/VCExe.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Basic/References/VCWinrtComponent/VCWinrtComponent.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+  </Folder>
+  <Folder Name="/Regression Tests/StaticLibs/">
+    <Project Path="../RegressionProjects/Features/StaticLibs/RuntimeComponentWithStaticLibInApp/RuntimeComponentWithStaticLibInApp.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/StaticLibs/StaticControlsLib/StaticControlsLib.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/StaticLibs/StaticLibInApp/StaticLibInApp.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Deploy Solution="*|Win32" />
+      <Deploy Solution="*|x64" />
+      <Deploy Solution="*|x86" />
+    </Project>
+    <Project Path="../RegressionProjects/Features/StaticLibs/StaticLibInRuntimeComponent/StaticLibInRuntimeComponent.vcxproj">
+      <Platform Solution="*|Any CPU" Project="Win32" />
+      <Platform Solution="*|ARM64" Project="Win32" />
+      <Build Solution="*|Any CPU" Project="false" />
+      <Build Solution="*|ARM64" Project="false" />
+    </Project>
+  </Folder>
+  <Project Path="../RegressionProjects/Features/LinkedMD/LinkedMdControlsCS/LinkedMdControlsCS.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|Win32" Project="Win32" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+</Solution>

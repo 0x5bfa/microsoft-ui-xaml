@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. See LICENSE in the project root for license information. -->
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
@@ -200,7 +200,7 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <Name>Private.Infrastructure.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj">
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.Private.vcxproj">
       <Project>{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}</Project>
       <Name>MergedWinMD</Name>
     </ProjectReference>
