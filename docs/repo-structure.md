@@ -103,7 +103,7 @@ WinUIDetails package import rules live under `/eng/winuidetails`.
 ## Checked-In Dependencies And Generated Assets
 Header-only third-party dependencies live under `/src/thirdparty/include`.
 Generated controls dependency-property sources live under `/src/controls/generated/dependencyproperties`.
-Runtime generated controls headers live under `/src/runtime/generated/core/controls`.
+Runtime generated controls headers live under `/src/runtime/xcp/generated/core/controls`.
 Generated package IntelliSense XML lives under `/eng/packaging/intellisense/generated`.
 Visual test baselines live under `/tests/visualbaselines`.
 

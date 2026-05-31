@@ -153,9 +153,9 @@ The resource payload project keeps the same binplace layout while no longer
 living under the legacy runtime resource tree.
 
 Runtime generated controls headers now live under
-`src/runtime/generated/core/controls`. Runtime projects consume them through
-`$(RuntimeGeneratedControlsPath)` instead of reaching into the handwritten XCP
-source tree.
+`src/runtime/xcp/generated/core/controls`. Runtime projects consume them through
+`$(RuntimeGeneratedControlsPath)` instead of spelling out the generated source
+location.
 
 Runtime test infrastructure now lives under `tests/runtime/infra`; new and moved
 consumers should use `$(RuntimeInfraTestPath)` and
@@ -884,7 +884,7 @@ classification data generator script now lives under
 `tools/runtime/TextClassification/scripts`, its binary input remains under
 `tools/runtime/TextClassification/data`, while the
 checked-in generated `UcdData.cpp` lives under
-`src/runtime/generated/text/Classification` and is consumed through
+`src/runtime/xcp/generated/text/Classification` and is consumed through
 `$(RuntimeTextClassificationGeneratedPath)`.
 Legacy `dxaml/tools/xamldiagnostics` references have been retired. Product
 XamlDiagnostics source is addressed through `$(XamlDiagnosticsComponentPath)`,
