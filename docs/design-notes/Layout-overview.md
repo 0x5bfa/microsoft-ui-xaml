@@ -371,7 +371,7 @@ See
   - bool CLayoutManager::m_isLayoutCycleLoggingSuspended{ false };
 which are used for debugging purposes.
 
-For information on debugging layout cycles, see [DebugSettings for Layout Cycle Debugging](../specs/debug-settings-layoutCycle-spec.md).
+For information on debugging layout cycles, see [DebugSettings for Layout Cycle Debugging](../specs/DebugSettings/debug-settings-layoutCycle-spec.md).
 
 
 # Key source code locations
