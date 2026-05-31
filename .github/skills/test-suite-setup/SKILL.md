@@ -594,7 +594,7 @@ A PR that updates the OSS-pinned versions:
 When you need to know **what CI runs and how it runs it**, these two files are the source of truth:
 
 - **`build/AzurePipelinesTemplates/WinUI-CreateTestPayload-Job.yml`** — defines each test work item: `testFilePathPattern` (which DLL or AppX) + `hostingMode`.
-- **`Helix/scripts/GenerateHelixWorkItems.ps1`** — look for the line that generates the TAEF command:
+- **`Helix/common/pipeline/scripts/GenerateWinUIHelixWorkItems.ps1`** — look for the line that generates the TAEF command:
 
   ```powershell
   $taefExtraParameters = "/p:HostingMode=$HostingMode"
