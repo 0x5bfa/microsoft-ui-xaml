@@ -84,7 +84,7 @@ Repository-wide path definitions live under `/eng/paths`.
 Common build configuration and repo-wide build defaults live under `/eng/configuration`.
 Build-output consumption helpers live under `/eng/consumebinaries`.
 CRT/STL linkage rules live under `/eng/crtstl`.
-External binary packaging rules live under `/eng/externalbinaries`.
+External binary packaging rules live under `/eng/consumebinaries`.
 Final-release build defines live under `/eng/finalrelease`.
 Graph build support rules and augmentation helpers live under `/eng/graph`.
 Light-up metadata targeting rules live under `/eng/lightup`.

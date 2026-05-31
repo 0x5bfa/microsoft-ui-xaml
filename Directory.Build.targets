@@ -13,7 +13,7 @@
     <Import Project="eng\crtstl\crtstl.targets" Condition="('$(UseLocalSDK)' != 'true' and '$(ResourceOnlyDll)' != 'true') and '$(MSBuildProjectExtension)' == '.vcxproj'" />
     <Import Project="eng\winuidetails\winuidetails.targets" />
     <Import Project="eng\binplace\binplace.targets"/>
-    <Import Project="eng\externalbinaries\externalbinaries.targets"/>
+    <Import Project="eng\consumebinaries\externalbinaries.targets"/>
     <Import Project="eng\midl\midl.targets" Condition="'$(IsWinmdProject)' == 'true'" />
     <Import Project="eng\winrtclassregistration\winrtclassregistration.targets" Condition="'$(GenerateWinRTClassRegistration)' == 'true'" />
     <Import Project="eng\packaging\packaging.targets" />
