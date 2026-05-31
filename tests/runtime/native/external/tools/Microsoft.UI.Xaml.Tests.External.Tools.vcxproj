@@ -22,7 +22,7 @@
       <AdditionalIncludeDirectories>
         %(AdditionalIncludeDirectories);
         $(AppAnalysisTestPath)\integration;
-        $(MSBuildThisFileDirectory)\bindingHelpers;
+        $(XamlBindingTestPath)\integration;
         $(XamlDiagnosticsTestPath)\integration;
         $(RuntimeEtwTestPath)\integration\InputEvents;
         $(RuntimeEtwTestPath)\integration\LayoutCausality;
@@ -67,7 +67,7 @@
     <ClInclude Include="$(AppAnalysisTestPath)\integration\ResourceUsingXNameRuleIntegrationTests.h" />
     <ClInclude Include="$(AppAnalysisTestPath)\integration\RuleTesterHelper.h" />
     <ClInclude Include="$(AppAnalysisTestPath)\integration\TestHelpers.h" />
-    <ClInclude Include="bindingHelpers\XamlBindingHelperTests.h" />
+    <ClInclude Include="$(XamlBindingTestPath)\integration\XamlBindingHelperTests.h" />
     <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\AddRemoveDictionaryItems.h" />
     <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\AnimatedValueTests.h" />
     <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\CollectionTests.h" />
@@ -102,7 +102,7 @@
     <ClCompile Include="$(AppAnalysisTestPath)\integration\DuplicateAutomationNameRuleIntegrationTests.cpp" />
     <ClCompile Include="$(AppAnalysisTestPath)\integration\ResourceUsingXNameRuleIntegrationTests.cpp" />
     <ClCompile Include="$(AppAnalysisTestPath)\integration\NonVirtualizingPanelRuleIntegrationTests.cpp" />
-    <ClCompile Include="bindingHelpers\XamlBindingHelperTests.cpp" />
+    <ClCompile Include="$(XamlBindingTestPath)\integration\XamlBindingHelperTests.cpp" />
     <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\XamlDiagnosticsTests.cpp" />
     <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\SourceInfoTests.cpp" />
     <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\ReplaceResourceTests.cpp" />

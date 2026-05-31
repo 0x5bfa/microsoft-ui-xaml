@@ -35,6 +35,7 @@
     <CompilerTestPath>$(ProjectRoot)tests\compiler</CompilerTestPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
     <RuntimeEtwTestPath>$(RuntimeTestPath)\etw</RuntimeEtwTestPath>
+    <XamlBindingTestPath>$(RuntimeTestPath)\xamlbinding</XamlBindingTestPath>
     <XamlDiagnosticsTestPath>$(RuntimeTestPath)\xamldiagnostics</XamlDiagnosticsTestPath>
     <NativeIsolatedTestPath>$(RuntimeTestPath)\native\isolated</NativeIsolatedTestPath>
     <NativeIncPath>$(RuntimeTestPath)\native\inc</NativeIncPath>
