@@ -300,7 +300,9 @@ through `$(IntellisenseFolder)`, while the docs-team drop input stays under
 Checked-in visual test baseline assets now live under
 `generated/tests/visualbaselines`. The resource project that packages them now
 lives under `tests/runtime/resources/masters` while continuing to expose
-`resources\masters` at runtime.
+`resources\masters` at runtime. The legacy command helper that can regenerate a
+masters RC file now lives under `tests/runtime/resources/tools` so generated
+resource payload and handwritten maintenance tooling are separated.
 
 Native isolated-test support now lives under `tests/runtime/native/isolated`.
 Projects should use `$(NativeIsolatedTestPath)` instead of spelling out the
