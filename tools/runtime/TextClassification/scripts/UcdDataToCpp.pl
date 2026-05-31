@@ -14,7 +14,7 @@ use Cwd 'abs_path';
 my $repoRoot = abs_path(File::Spec->catdir($FindBin::Bin, "..", "..", "..", ".."))
     or die "Unable to resolve repository root.\n";
 my $inputDir = File::Spec->catdir($FindBin::Bin, "..", "data");
-my $outputDir = File::Spec->catdir($repoRoot, "generated", "runtime", "text", "Classification");
+my $outputDir = File::Spec->catdir($repoRoot, "src", "runtime", "xcp", "generated", "text", "Classification");
 
 my $inputBin = File::Spec->catfile($inputDir, "UcdData.bin");
 my $outputCpp = File::Spec->catfile($outputDir, "UcdData.cpp");
