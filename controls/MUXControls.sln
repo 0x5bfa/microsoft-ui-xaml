@@ -128,21 +128,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TreeView", "TreeView", "{0A
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeView", "..\src\controls\TreeView\TreeView.vcxitems", "{EEB38379-3A5C-439F-BB5E-535D75F2B6C1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Localization", "Localization", "{5FC770CF-73C1-407A-A195-FDFCEDB2930B}"
-	ProjectSection(SolutionItems) = preProject
-		build\Localization\LocalizationAutomation.proj = build\Localization\LocalizationAutomation.proj
-		build\Localization\NuGet.Config = build\Localization\NuGet.Config
-		build\Localization\readme.md = build\Localization\readme.md
-		build\Localization\RunLocWorkflow.cmd = build\Localization\RunLocWorkflow.cmd
-		build\Localization\RunLocWorkflow.ps1 = build\Localization\RunLocWorkflow.ps1
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{9944D1EA-3D24-4ECC-A0C1-D678E51CF90A}"
-	ProjectSection(SolutionItems) = preProject
-		build\Localization\Settings\LocConfig.xml = build\Localization\Settings\LocConfig.xml
-		build\Localization\Settings\packages.config = build\Localization\Settings\packages.config
-	EndProjectSection
-EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TreeView_APITests", "..\src\controls\TreeView\APITests\TreeView_APITests.shproj", "{DE885C66-929C-464E-BAC4-3E076EC46483}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TreeView_InteractionTests", "..\src\controls\TreeView\InteractionTests\TreeView_InteractionTests.shproj", "{AE638A24-2BC6-4D4F-A51E-715D198F01FD}"
