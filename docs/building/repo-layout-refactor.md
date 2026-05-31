@@ -348,7 +348,7 @@ repo entry points.
 ## Generated controls sources
 
 Checked-in generated dependency-property sources for controls now live under
-`src/controls/generated/dependencyproperties`. Build inputs and authoring tools
+`src/controls/dll/generated/dependencyproperties`. Build inputs and authoring tools
 refer to this location through `$(MUXControlsGeneratedSourceDir)` so generated
 output is separated from handwritten controls source.
 
