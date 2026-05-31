@@ -55,7 +55,7 @@
 
 ## Property indices
 
-![](images/property-system-fig1-property-indices)
+![](../../images/property-system-fig1-property-indices)
 * Internally, XAML uses `KnownPropertyIndex` enum to identify properties. These indices are generated from XAML Object Model. The ordering of values in this enum matters and they are assigned in the following manner:
 
 ## Layered property system and effective values
@@ -71,7 +71,7 @@
 
 ## Source of effective value and fast presence check
 
-![](images/property-system-fig2-sparse-bit.png)
+![](../../images/property-system-fig2-sparse-bit.png)
 * To be able to distinguish between where the value is coming from, a concept of value source exists.
 * Animated values are implemented as `CModifiedValue` object and presence of it indicates value is animated.
 * Non-animated sources are called base values and the system distinguishes three sources: local, style and default.
