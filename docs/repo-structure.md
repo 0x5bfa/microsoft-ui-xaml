@@ -24,6 +24,8 @@ The mock Windows App SDK package update helper lives under
 `/tools/packaging/UpdateMockWinAppSDKPackage`.
 The WinUI component package command implementation lives under
 `/tools/packaging/scripts`.
+Package IntelliSense generation helpers and docs-team XML drop inputs live under
+`/tools/packaging/intellisense`.
 Compiler developer tools, performance collection scripts, and coverage helpers
 live under `/tools/compiler`.
 Runtime developer tools and source-generation helpers live under `/tools/runtime`.
