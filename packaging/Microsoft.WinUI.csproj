@@ -8,7 +8,7 @@
     <ComponentNuGetLicensePath>..\WindowsAppSDKConfig\NuGetLicense\preview\license.txt</ComponentNuGetLicensePath>
     <ComponentNuGetLicensePath Condition="'$(ProductPrereleaseTag)'=='stable'">..\WindowsAppSDKConfig\NuGetLicense\release\license.txt</ComponentNuGetLicensePath>
     <!-- Fallback for local builds which don't have WindowsAppSDKConfig. -->
-    <ComponentNuGetLicensePath Condition="!Exists('$(ComponentNuGetLicensePath)')">license.txt</ComponentNuGetLicensePath>
+    <ComponentNuGetLicensePath Condition="!Exists('$(ComponentNuGetLicensePath)')">licenses\license.txt</ComponentNuGetLicensePath>
     <IntellisenseFolder>$(ProjectRoot)generated\packaging\intellisense</IntellisenseFolder>
   </PropertyGroup>
 
@@ -16,7 +16,7 @@
     This project just copies static packaging content to the output location
   -->
   <ItemGroup>
-    <PackageContent Include="license.txt" PackageLocation="$(PackageOutputLocation)" />
+    <PackageContent Include="licenses\license.txt" PackageLocation="$(PackageOutputLocation)" />
     <PackageContent Include="$(ComponentNuGetLicensePath)" PackageLocation="$(PackageOutputLocation)\ComponentNuGet\" />
     <PackageContent Include="nuspecs\NOTICE.txt" PackageLocation="$(PackageOutputLocation)\ComponentNuGet\" />
     <PackageContent Include="$(OutDir)AppxManifest.xml" PackageLocation="$(PackageOutputLocation)"/>

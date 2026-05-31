@@ -187,6 +187,8 @@ Package build targets now live under `packaging/build`, including the target
 that keeps the project-capability version in sync with `WinUIVersion`.
 Static package manifest inputs live under `packaging/manifests`, keeping
 package metadata separate from the project file and package build targets.
+Package license inputs live under `packaging/licenses`, while the packaging
+project still emits the same `license.txt` package payload name.
 
 ## Build transforms
 
