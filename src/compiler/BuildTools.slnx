@@ -5,7 +5,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Folder Name="/GenXBF/">
+  <Folder Name="/tools/runtime/GenXbfDLL/">
     <Project Path="../../tools/runtime/GenXbfDLL/GenXbf.vcxproj">
       <BuildType Solution="*|ARM64" Project="?" />
       <Platform Solution="*|Any CPU" Project="Win32" />
@@ -14,7 +14,7 @@
       <Build Solution="*|ARM64" Project="false" />
     </Project>
   </Folder>
-  <Folder Name="/MarkupCompiler/">
+  <Folder Name="/src/compiler/">
     <Project Path="BuildTasks/Antlr4.Runtime/Antlr4.Runtime.shproj" />
     <Project Path="BuildTasks/BindingPath/BindingPath.shproj" />
     <Project Path="BuildTasks/ConditionalNamespace/ConditionalNamespace.shproj" />
