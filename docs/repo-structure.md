@@ -143,6 +143,8 @@ and refer to the source tree through `$(MUXControlsSourceRoot)`.
 The Microsoft.UI.Xaml.dll runtime implementation now lives under
 `/src/runtime/xcp`, with runtime solution entry points and phone-specific source
 also under `/src/runtime`.
+Runtime test package inputs live under `/tests/runtime/packages`, including
+AppX manifest inputs and the temporary WebView2 Runtime installer staging path.
 
 Metadata composition projects now live under `/src/metadata`. The MergedWinMD
 projects are referenced through `$(MergedWinMDProjectRoot)`.

@@ -96,9 +96,9 @@ example, if an API was previously experimental before but is currently final, ol
      * `\packaging\nuspecs\Microsoft.UI.DCPP.Dependencies.Edge.nuspec`
        * This points to the `mini_installer`s you will drop into the repo, to be packaged into a nuget package
    * Create directories where you will need to copy installers from the Edge Official Builds website
-     * E.g.  
-       `<repo_root>\dxaml\test\edge\144.0.3719.82\x64\mini_installer.exe`  
-       `<repo_root>\dxaml\test\edge\144.0.3719.82\x86\mini_installer.exe`
+     * E.g.
+       * `<repo_root>\tests\runtime\packages\edge\144.0.3719.82\x64\mini_installer.exe`
+       * `<repo_root>\tests\runtime\packages\edge\144.0.3719.82\x86\mini_installer.exe`
    * Give you detailed instructions about the following steps.
 
 2. Drop the Edge installers into the directories created in the previous step
