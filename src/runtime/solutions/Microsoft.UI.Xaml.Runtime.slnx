@@ -956,7 +956,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/livereorderhelper/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/controls/liveReorderHelper/">
     <Project Path="../../../tests/runtime/native/isolated/controls/liveReorderHelper/Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -995,7 +995,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/moco/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/controls/moco/">
     <Project Path="../../../tests/runtime/native/isolated/controls/moco/Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1064,7 +1064,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/pivot/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/controls/pivot/">
     <Project Path="../../../tests/runtime/native/isolated/controls/pivot/Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1092,7 +1092,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/relativepanel/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/controls/relativePanel/">
     <Project Path="../../../tests/runtime/native/isolated/controls/relativePanel/Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1190,7 +1190,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/theming/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/controls/theming/">
     <Project Path="../../../tests/runtime/native/isolated/controls/theming/Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
