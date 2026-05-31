@@ -170,7 +170,9 @@ lives there too, while `scripts/PostInit.ps1` remains available as a custom
 hook. Command prompt and PowerShell alias definitions are co-located there as
 initialization shell helpers. They are part of repository initialization rather
 than package construction, leaving the `build` folder focused on packaging
-inputs and build-time transforms.
+inputs and build-time transforms. The initialized-command runner implementation
+also lives under `scripts/init`, while the root-level `initrun.ps1` remains the
+stable entry point used by docs, skills, and automation.
 
 ## Packaging inputs
 
