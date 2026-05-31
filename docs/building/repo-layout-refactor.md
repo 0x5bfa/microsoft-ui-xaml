@@ -550,6 +550,9 @@ downlevel contract metadata policy away from root-level build imports.
 Product metadata item definitions now live under `eng/productmetadata`, keeping
 the product WinMD and binary item lists in a named build-data bucket.
 
+Build temp-folder setup now lives under `eng/tempfolder`, keeping the TEMP/TMP
+environment hook with other named build rule buckets.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
