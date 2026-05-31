@@ -49,8 +49,8 @@ if (Test-Path $customPostInitScript) {
     . $customPostInitScript -RepoRoot $repoRoot -Verbosity $Verbosity
 }
 
-if (Test-Path "$env:reporoot\docs\init-known-issues.md") {
-    type "$env:reporoot\docs\init-known-issues.md"
+if (Test-Path "$env:reporoot\docs\building\init-known-issues.md") {
+    type "$env:reporoot\docs\building\init-known-issues.md"
 }
 
 $duration = (([datetime]::Now - $startTime).TotalSeconds).ToString("N2")

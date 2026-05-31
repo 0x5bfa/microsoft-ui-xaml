@@ -24,6 +24,7 @@ For the ongoing path cleanup direction, see the [repository layout refactor](./b
 ### Developer Guide
 The [developer guide](./building/developer-guide.md) contains information on how to do the day-to-day tasks in this repo, as well as the tools and setup required to get going.
 For control authoring guidance, see [How to Author a Xaml Control](./building/how-to-author-a-xaml-control.md) and [Localization Process](./building/localization-process.md).
+For setup-specific caveats printed by repo initialization, see [init known issues](./building/init-known-issues.md).
 
 ### WinUI Test System
 See [Testing In WinUI FAQ](./testing/testing-FAQ.md), [WinUI CI Test System Overview](./testing/test-system-overview.md), [How to Repro a Xaml Test Failure](./testing/how-to-repro-a-xaml-test-failure.md), and [.NET Validation for WinUI Applications](./testing/netvalidationforwinui.md) for information on validation and test automation.
