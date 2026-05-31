@@ -4,7 +4,7 @@
     <ProjectReference Include="$(ProjectRoot)src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj">
       <Targets>GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
-    <ProjectReference Include="$(ProjectRoot)controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj">
+    <ProjectReference Include="$(MuxControlsIdlPath)Microsoft.UI.Xaml.Controls.idl.vcxproj">
       <Targets>BuildGenerateSources;GetPackagingOutputs;GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
     <ProjectReference Include="$(XcpPhonePath)\idl\phone.vcxproj">

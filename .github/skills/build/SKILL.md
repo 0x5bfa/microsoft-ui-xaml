@@ -86,7 +86,7 @@ If you get build errors that seem to indicate missing dependencies, try running 
 | Files changed in | Build command |
 |---|---|
 | `src/runtime/xcp/**` (source only) | **bt:** `bt build` · MSBuild: `.\scripts\init\initrun.ps1 msb /q "src\runtime\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj"` |
-| `src/controls/**` or `controls/idl/**` (source only) | **bt:** `bt build` · MSBuild: `.\scripts\init\initrun.ps1 msb /q "src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj"` |
+| `src/controls/**` (source only) | **bt:** `bt build` · MSBuild: `.\scripts\init\initrun.ps1 msb /q "src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj"` |
 | `tests/runtime/native/external/<area>/**` (source only) | **bt:** `bt build` · MSBuild: `.\scripts\init\initrun.ps1 msb /q "tests\runtime\native\external\<area>\Microsoft.UI.Xaml.Tests.External.<Area>.vcxproj"` |
 | `.vcxproj`, `.vcxitems`, `.props`, `.targets`, NuGet deps | `.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q` (MSBuild only — do NOT use bt) |
 | Multiple areas or unsure | `.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q` |
