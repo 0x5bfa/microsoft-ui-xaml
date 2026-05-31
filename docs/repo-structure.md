@@ -79,6 +79,7 @@ Common build configuration lives under `/eng/configuration`.
 Build-output consumption helpers live under `/eng/consumebinaries`.
 CRT/STL linkage rules live under `/eng/crtstl`.
 External binary packaging rules live under `/eng/externalbinaries`.
+Graph build support rules live under `/eng/graph`.
 Light-up metadata targeting rules live under `/eng/lightup`.
 Shared MIDL build rules live under `/eng/midl`.
 MSBuild cache configuration lives under `/eng/projectcaching`.

@@ -20,7 +20,7 @@
     <Import Project="eng\xamlcompiler\usexamlcompiler.targets" Condition="'$(UseXamlCompiler)'=='true'" />
     <Import Project="eng\testprojects\testprojects.targets" Condition="'$(TestCode)'=='true'" />
     <Import Project="eng\adhoc\adhocapp.targets" Condition="'$(AdHocApp)'=='true'"/>
-    <Import Project="eng\graph.targets" Condition="'$(IsGraphBuild)' == 'true'" />
+    <Import Project="eng\graph\graph.targets" Condition="'$(IsGraphBuild)' == 'true'" />
     <Import Project="eng\projectcaching\projectcaching.targets" />
     <Import Project="eng\lightup\lightup.targets" />
 	<Import Project="$(ProjectRoot)\eng\webview2\WebView2ProjectionWorkaround.targets" />

@@ -556,6 +556,9 @@ environment hook with other named build rule buckets.
 WinUIDetails package import targets now live under `eng/winuidetails`, keeping
 that external package wrapper separate from root-level build imports.
 
+Graph build support targets now live under `eng/graph`, separate from the
+GraphAugmentation helper projects that appear in solution files.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
