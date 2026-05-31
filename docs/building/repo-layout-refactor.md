@@ -17,7 +17,7 @@ Use these ownership buckets for new moves:
 | `src/metadata` | Metadata composition projects that produce repo-local WinMD inputs. |
 | `tests` | Runtime, controls, compiler, sample, and Helix test assets. |
 | `eng` | Shared build, packaging, versioning, signing, and pipeline infrastructure. |
-| `src/runtime/thirdparty/include` | Checked-in third-party header dependencies. |
+| `src/thirdparty/include` | Checked-in third-party header dependencies shared by source areas. |
 | `tools` | Human- and CI-invoked repo tools that are not part of product source. |
 | `src/*/generated` | Checked-in generated source that belongs to a product source area. |
 | `tests/visualbaselines` | Checked-in visual baseline assets. |
@@ -583,9 +583,11 @@ and repo-local agent skills moved there from `src/.github` so `src` stays
 focused on source components and GitHub can discover the metadata from its
 standard location.
 
-Checked-in third-party headers now live under `src/runtime/thirdparty/include`, replacing the
-abbreviated `external/inc` path while keeping runtime include path consumers
-centralized in shared MSBuild props.
+Checked-in third-party headers now live under `src/thirdparty/include`,
+replacing the abbreviated `external/inc` path while keeping source-area include
+path consumers centralized in shared MSBuild props. The duplicate controls GSL
+copy under `src/controls/inc` was retired so runtime and controls consume the
+same checked-in header dependency.
 
 WebView2-specific build workaround targets now live under `eng/webview2`, so
 general `eng` props and targets are less mixed with package-specific temporary

@@ -57,6 +57,7 @@
         %(AdditionalIncludeDirectories);
         $(WindowsSDK_IncludePath)\winrt;
         $(MUXControlsSourceRoot)inc;
+        $(MUXControlsThirdPartyIncludeRoot);
         $(MUXControlsGeneratedSourceDir);
         $(OutDir);
       </AdditionalIncludeDirectories>
