@@ -757,7 +757,9 @@ custom environment, symbol enum, and TabTearOut API now live directly under
 `docs/specs/SelectorBar` with its local images. The MapControl spec and its
 scenario image moved under `docs/specs/MapControl`. The CustomTitleBar spec
 and its spec-specific image moved under `docs/specs/CustomTitleBar`, while the
-conceptual design note remains under `docs/design-notes`.
+conceptual design note remains under `docs/design-notes`. The
+ItemCollectionTransitionProvider and TabTearOut specs now live under matching
+feature folders in `docs/specs`, with their local images.
 
 ## Runtime path preparation
 
