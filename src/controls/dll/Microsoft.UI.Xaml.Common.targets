@@ -286,7 +286,7 @@
     <Import Project="$(NuGetPackageRoot)\Microsoft.Windows.SDK.cpp.$(MicrosoftWindowsSDKCppNugetPackageVersion)\build\native\Microsoft.Windows.SDK.cpp.targets" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Windows.SDK.cpp.$(MicrosoftWindowsSDKCppNugetPackageVersion)\build\native\Microsoft.Windows.SDK.cpp.targets')" />
     <Import Project="$(NuGetPackageRoot)\Microsoft.Windows.CppWinRT.$(CppWinRTVersion)\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Windows.CppWinRT.$(CppWinRTVersion)\build\native\Microsoft.Windows.CppWinRT.targets')" />
     <Import Project="$(NuGetPackageRoot)\Microsoft.Web.WebView2.$(WebView2Version)\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Web.WebView2.$(WebView2Version)\build\native\Microsoft.Web.WebView2.targets')" />
-    <Import Project="$(ProjectRoot)\eng\WebView2Arm64EcWorkaround.targets" />
+    <Import Project="$(ProjectRoot)\eng\webview2\WebView2Arm64EcWorkaround.targets" />
     <Import Project="$(PkgMicrosoft_PGO_Helpers_Cpp)\build\Microsoft.PGO-Helpers.Cpp.targets" />
     <Import Project="$(NuGetPackageRoot)\Microsoft.Windows.ImplementationLibrary.1.0.250325.1\build\native\Microsoft.Windows.ImplementationLibrary.targets" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Windows.ImplementationLibrary.1.0.250325.1\build\native\Microsoft.Windows.ImplementationLibrary.targets')" />
   </ImportGroup>

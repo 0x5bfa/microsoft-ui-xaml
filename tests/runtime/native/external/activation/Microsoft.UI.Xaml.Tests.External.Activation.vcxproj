@@ -14,7 +14,7 @@
     <WebView2UseWinRT>true</WebView2UseWinRT>
   </PropertyGroup>
   <Import Project="$(NugetPackageDirectory)\Microsoft.Web.WebView2.$(WebView2PackageVersion)\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('$(NugetPackageDirectory)\Microsoft.Web.WebView2.$(WebView2PackageVersion)\build\native\Microsoft.Web.WebView2.targets')" />
-  <Import Project="$(ProjectRoot)\eng\WebView2Arm64EcWorkaround.targets" />
+  <Import Project="$(ProjectRoot)\eng\webview2\WebView2Arm64EcWorkaround.targets" />
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>

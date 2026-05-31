@@ -23,7 +23,7 @@
     <Import Project="eng\graph.targets" Condition="'$(IsGraphBuild)' == 'true'" />
     <Import Project="eng\projectcaching.targets" />
     <Import Project="eng\lightup.targets" />
-	<Import Project="$(ProjectRoot)\eng\WebView2ProjectionWorkaround.targets" />
+	<Import Project="$(ProjectRoot)\eng\webview2\WebView2ProjectionWorkaround.targets" />
 
     <!--
       Workaround for CS0016 build failures when CodeQL is active in the pipeline.

@@ -494,6 +494,10 @@ Checked-in third-party headers now live under `external/include`, replacing the
 abbreviated `external/inc` path while keeping runtime include path consumers
 centralized in shared MSBuild props.
 
+WebView2-specific build workaround targets now live under `eng/webview2`, so
+general `eng` props and targets are less mixed with package-specific temporary
+compatibility shims.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
