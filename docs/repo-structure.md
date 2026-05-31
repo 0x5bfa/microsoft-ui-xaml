@@ -99,7 +99,7 @@ WinUIDetails package import rules live under `/eng/winuidetails`.
 
 ## /external
 This folder contains checked-in third-party dependencies. Header-only
-dependencies live under `/external/include`.
+dependencies live under `/src/runtime/thirdparty/include`.
 
 ## /generated
 This folder contains checked-in generated output and generated baselines.

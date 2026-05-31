@@ -17,7 +17,7 @@ Use these ownership buckets for new moves:
 | `src/metadata` | Metadata composition projects that produce repo-local WinMD inputs. |
 | `tests` | Runtime, controls, compiler, sample, and Helix test assets. |
 | `eng` | Shared build, packaging, versioning, signing, and pipeline infrastructure. |
-| `external/include` | Checked-in third-party header dependencies. |
+| `src/runtime/thirdparty/include` | Checked-in third-party header dependencies. |
 | `tools` | Human- and CI-invoked repo tools that are not part of product source. |
 | `generated` | Checked-in generated output, visual baselines, and large derived assets. |
 | `solutions` | Repository-wide Visual Studio solution entry points. |
@@ -567,7 +567,7 @@ and repo-local agent skills moved there from `src/.github` so `src` stays
 focused on source components and GitHub can discover the metadata from its
 standard location.
 
-Checked-in third-party headers now live under `external/include`, replacing the
+Checked-in third-party headers now live under `src/runtime/thirdparty/include`, replacing the
 abbreviated `external/inc` path while keeping runtime include path consumers
 centralized in shared MSBuild props.
 
