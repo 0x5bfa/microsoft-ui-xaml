@@ -86,7 +86,7 @@ If the build fails with missing nuget depdendencies, do `nuget restore WinUIGall
 to restore all the missing nuget files.
 
 For a crash with stowed exceptions (top of call stack contains `Microsoft_UI_Xaml!FailFastWithStowedExceptions`), try setting a 
-breakpoint in CaptureErrorContext in src\runtime\xcp\components\base\errorcontext.cpp; that will get you what the actual failure is.
+breakpoint in CaptureErrorContext in `%XcpRoot%\components\base\errorcontext.cpp`; that will get you what the actual failure is.
 
 ## "Modified" T4 (.tt) files which don't contain changes
 
