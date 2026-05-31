@@ -64,7 +64,7 @@
       <ClCompile Include="blocklayout\PageHostedObjectRun.cpp"/>
 
       <ClCompile Include="Classification\ucdlookup.cpp"/>
-      <ClCompile Include="Classification\build\ucddata.cpp"/>
+      <ClCompile Include="$(RuntimeTextClassificationGeneratedPath)\UcdData.cpp"/>
 
       <ClCompile Include="textlayout\inlineuicontainer.cpp"/>
 
