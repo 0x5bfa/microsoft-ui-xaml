@@ -11,7 +11,7 @@
 
     <Copyright>Copyright (c) Microsoft Corporation. All rights reserved.</Copyright>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>$(ProjectRoot)eng\key.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>$(ProjectRoot)eng\signing\key.snk</AssemblyOriginatorKeyFile>
     <AssemblyTitle>Microsoft.WinUI v$(Version)</AssemblyTitle>
     <AssemblyTitle Condition="'$(ProductPrereleaseTag)'!=''">$(AssemblyTitle)-$(ProductPrereleaseTag)</AssemblyTitle>
 

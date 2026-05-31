@@ -10,7 +10,7 @@
     <XamlCompilerTargetsPath>$(ObjectPathRoot)\src\compiler\BuildTasks\Microsoft.UI.Xaml.Markup.Compiler\Targets</XamlCompilerTargetsPath>
     <DebugSymbols>true</DebugSymbols>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>$(ProjectRoot)eng\key.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>$(ProjectRoot)eng\signing\key.snk</AssemblyOriginatorKeyFile>
     <!-- Common AssemblyInfo properties -->
     <Product>Windows App SDK</Product>
     <Version>$(ProductMajorVersion).$(ProductMinorVersion).$(ProductPatchVersion).0</Version>
