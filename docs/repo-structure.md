@@ -76,6 +76,7 @@ Project-based restore helpers live under `/eng/restore`.
 Shared MIDL build rules live under `/eng/midl`.
 MSBuild cache configuration lives under `/eng/projectcaching`.
 Shared test-project build settings live under `/eng/testprojects`.
+Windows SDK override configuration lives under `/eng/sdkconfig`.
 
 ## /external
 This folder contains checked-in third-party dependencies. Header-only

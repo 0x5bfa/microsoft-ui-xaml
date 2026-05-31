@@ -110,7 +110,7 @@ The Windows SDK version can be overridden though by FrameworkReference items:
 In the lifted repo, the FrameworkReference override mechanism is used as follows:
 
 * In the root of the lifted repo is a `Directory.Build.Targets` that gets included by all projects in the repo, 
-* this imports `eng\sdkconfig.targets`, 
+* this imports `eng\sdkconfig\sdkconfig.targets`,
 * and this sets the `<FrameworkReference>` overrides to 10.0.`TargetPlatformVersion`.`MicrosoftWindowsSDKNetRefPackVersionSuffixOverride`. 
 * That value is defined in [eng\versions.props](../../eng/versions.props), for example
 
