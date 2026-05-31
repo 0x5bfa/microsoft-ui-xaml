@@ -12,7 +12,7 @@
 
   <files>
     <file target="scripts\pipeline" src="pipeline\*" />
-    <file target="scripts\test" src="test\*" />
+    <file target="scripts\test" src="..\payload\test\*" />
   </files>
 
 </package>
