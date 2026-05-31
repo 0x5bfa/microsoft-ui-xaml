@@ -65,7 +65,7 @@ Write-Progress "Restoring packages for build platform $buildPlatform..." -Comple
 . $repoRoot\scripts\init\DownloadDotNetRuntimeInstaller.ps1
 
 Write-Host "Restoring Maestro and ensuring authentication..."
-msbuild -nologo -t:Restore $repoRoot\eng\Microsoft.MaestroRestore.csproj -v:$Verbosity -p:Configuration=Release -p:NugetInteractive=true -p:PublishReadyToRun=true
+msbuild -nologo -t:Restore $repoRoot\eng\restore\Microsoft.MaestroRestore.csproj -v:$Verbosity -p:Configuration=Release -p:NugetInteractive=true -p:PublishReadyToRun=true
 
 Write-Host "Restoring additional packages..."
 $isOssBuild = -not (Test-Path $repoRoot\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs)
@@ -73,7 +73,7 @@ $pgoPackagesConfig = if ($isOssBuild) { 'eng\pgo\packages.OSS.config' } else { '
 $projectPackages = @(
     (Join-Path $repoRoot $pgoPackagesConfig),
     (Join-Path $repoRoot 'eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj'),
-    (Join-Path $repoRoot 'eng\Microsoft.MaestroRestore.csproj'),
+    (Join-Path $repoRoot 'eng\restore\Microsoft.MaestroRestore.csproj'),
     (Join-Path $repoRoot 'src\controls\dll\packages.config'),
     (Join-Path $repoRoot 'src\compiler\XamlCompilerPrerequisites.sln'),
     (Join-Path $repoRoot 'src\runtime\Microsoft.UI.Xaml.sln'),

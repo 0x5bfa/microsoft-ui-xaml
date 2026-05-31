@@ -228,6 +228,8 @@ They feed initialization and shared version extraction, so grouping them under
 `eng` keeps dependency restore inputs with the rest of the build infrastructure.
 `Packages.props` remains at the repository root because CentralPackageVersions
 projects discover it by walking parent directories.
+The Maestro restore helper project lives under `eng/restore`, keeping
+project-based restore orchestration with other initialization restore inputs.
 
 ## PGO build inputs
 

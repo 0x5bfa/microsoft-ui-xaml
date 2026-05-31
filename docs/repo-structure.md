@@ -70,6 +70,7 @@ For more information on the build system, see the [build system design](build-sy
 WebView2-specific build workaround targets live under `/eng/webview2`.
 Shared signing inputs live under `/eng/signing`.
 Standalone build transform assets live under `/eng/transforms`.
+Project-based restore helpers live under `/eng/restore`.
 
 ## /external
 This folder contains checked-in third-party dependencies. Header-only
