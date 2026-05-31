@@ -89,7 +89,7 @@ like this:
 </PropertyGroup>
 ```
 
-The implementation of the binplace target is in [eng\binplace.targets](../../eng/binplace.targets).
+The implementation of the binplace target is in [eng\binplace\binplace.targets](../../eng/binplace/binplace.targets).
 
 ### Packaging
 

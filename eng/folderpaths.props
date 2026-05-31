@@ -65,7 +65,7 @@
       differ in that the IntermediateOutputPath appends the configuration to the BaseIntermediateOutputPath. Both default to the "obj" folder
       that is relative to the project/solution.  The default for OutputPath and OutDir are the "bin" folder, and this is where binaries and
       generated WinMD headers/files are placed.  Since neither of this is really what we want, we point them all to the same location and then
-      binplace what we want to the "bin" directory. See binplace.targets in this directory for how that is done.
+      binplace what we want to the "bin" directory. See eng\binplace\binplace.targets for how that is done.
 
       BaseIntermediateOutputPath needs to be relative to each project due to the way Nuget writes files to this location.
       See https://github.com/microsoft/msbuild/issues/1603 for more discussion about this.
