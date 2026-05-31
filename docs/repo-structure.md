@@ -27,6 +27,8 @@ In particular: /build/NuSpecs enables .nupkg generation
 
 The mock Windows App SDK package update helper lives under
 `/tools/packaging/UpdateMockWinAppSDKPackage`.
+The WinUI component package command implementation lives under
+`/tools/packaging`.
 Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
 Build wrapper commands live under `/tools/build`.
 Shared command wrappers live under `/tools/common`.
