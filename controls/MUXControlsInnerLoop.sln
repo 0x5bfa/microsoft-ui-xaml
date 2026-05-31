@@ -287,7 +287,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CommandBarFlyout_Interactio
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CommandBarFlyout_TestUI", "..\tests\controls\testui\CommandBarFlyout\CommandBarFlyout_TestUI.shproj", "{E63F1C1D-F06D-46A0-B5C2-184184E44F29}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CommonStyles_TestUI", "..\src\controls\CommonStyles\TestUI\CommonStyles_TestUI.shproj", "{A7F6D6C4-A5A9-43EB-930C-B766417A5E5C}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CommonStyles_TestUI", "..\tests\controls\testui\CommonStyles\CommonStyles_TestUI.shproj", "{A7F6D6C4-A5A9-43EB-930C-B766417A5E5C}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CommonStyles_InteractionTests", "..\src\controls\CommonStyles\InteractionTests\CommonStyles_InteractionTests.shproj", "{A25AE312-7C11-4E30-AE35-2E31C744A250}"
 EndProject
@@ -986,7 +986,7 @@ Global
 		..\src\controls\Repeater\Repeater.vcxitems*{a0aa8919-2140-42db-beb1-b2c3ace594f4}*SharedItemsImports = 9
 		..\src\controls\CommonStyles\InteractionTests\CommonStyles_InteractionTests.projitems*{a25ae312-7c11-4e30-ae35-2e31c744a250}*SharedItemsImports = 13
 		..\src\controls\ColorPicker\InteractionTests\ColorPicker_InteractionTests.projitems*{a4d2fae8-e7fc-4100-91ff-2202fac91c70}*SharedItemsImports = 13
-		..\src\controls\CommonStyles\TestUI\CommonStyles_TestUI.projitems*{a7f6d6c4-a5a9-43eb-930c-b766417a5e5c}*SharedItemsImports = 13
+		..\tests\controls\testui\CommonStyles\CommonStyles_TestUI.projitems*{a7f6d6c4-a5a9-43eb-930c-b766417a5e5c}*SharedItemsImports = 13
 		..\tests\controls\testui\Materials\Acrylic\AcrylicBrush_TestUI.projitems*{a800e818-7212-4fd7-ae3a-1dcab539db87}*SharedItemsImports = 13
 		..\src\controls\PagerControl\PagerControl.vcxitems*{ab3261a7-9a8d-4a27-aea2-3aac0419c889}*SharedItemsImports = 9
 		..\src\controls\AnimatedIcon\AnimatedIcon.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4

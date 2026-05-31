@@ -1,4 +1,4 @@
-﻿ScrollViewer overview
+ScrollViewer overview
 ===
 
 # Background
@@ -133,8 +133,8 @@ Test code:
 - tests/runtime/native/external/foundation/input/DManip
 - tests/runtime/native/external/enterprise/CalendarView  GridView  ListView  SemanticZoom  StickyHeaders
 
-- src/controls/CommonStyles/TestUI/ScrollViewerPage.xaml
-- src/controls/CommonStyles/TestUI/ScrollViewerPage.xaml.cs
+- tests/controls/testui/CommonStyles/ScrollViewerPage.xaml
+- tests/controls/testui/CommonStyles/ScrollViewerPage.xaml.cs
 
 
 # ScrollViewer XAML markup resources
