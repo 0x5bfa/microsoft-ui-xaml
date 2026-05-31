@@ -18,7 +18,7 @@
             <Output TaskParameter="TargetOutputs" PropertyName="ApplicationManifest" />
         </MSBuild>
 
-        <XslTransformation XslInputPath="$(ProjectRoot)\eng\TransformFusionManifest.xslt"
+        <XslTransformation XslInputPath="$(ProjectRoot)\eng\transforms\TransformFusionManifest.xslt"
             XmlInputPaths="$(ApplicationManifest)"
             OutputPaths="$(FinalAppxManifestName).fragment" />
 

@@ -183,8 +183,9 @@ dependency nuspec used by WebView2 test package updates also lives there.
 ## Build transforms
 
 The fusion-manifest transform used by ad hoc app registration now lives under
-`eng`, next to the target that invokes it. This removes the last checked-in
-helper from the historical `build` folder.
+`eng/transforms`. This removes the last checked-in helper from the historical
+`build` folder and keeps standalone transform assets separate from MSBuild
+targets.
 
 ## XAML build settings
 
