@@ -23,7 +23,7 @@
     <Import Project="eng\graph.targets" Condition="'$(IsGraphBuild)' == 'true'" />
     <Import Project="eng\projectcaching.targets" />
     <Import Project="eng\lightup.targets" />
-	<Import Project="$(ProjectRoot)\eng\WebView2ProjectionWorkaround.targets" />
+	<Import Project="$(ProjectRoot)\eng\webview2\WebView2ProjectionWorkaround.targets" />
 
     <!--
       Since in Directory.Build.props we prevented C++/WinRT from automatically injecting /await, we

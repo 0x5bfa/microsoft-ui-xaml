@@ -67,6 +67,7 @@ for Microsoft.UI.Xaml.dll and Microsoft.UI.Xaml.Phone.dll.
 ## /eng
 All build system and other engineering related files go in this directory.
 For more information on the build system, see the [build system design](build-system-design.md)
+WebView2-specific build workaround targets live under `/eng/webview2`.
 
 ## /external
 This folder contains checked-in third-party dependencies. Header-only
