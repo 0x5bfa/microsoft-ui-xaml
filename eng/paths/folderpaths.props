@@ -34,6 +34,7 @@
     <XamlDiagTapPath>$(RuntimeToolsPath)\xamldiagnostics\tap</XamlDiagTapPath>
     <CompilerTestPath>$(ProjectRoot)tests\compiler</CompilerTestPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
+    <XamlDiagnosticsTestPath>$(RuntimeTestPath)\xamldiagnostics</XamlDiagnosticsTestPath>
     <NativeIsolatedTestPath>$(RuntimeTestPath)\native\isolated</NativeIsolatedTestPath>
     <NativeIncPath>$(RuntimeTestPath)\native\inc</NativeIncPath>
     <RuntimeInfraTestPath>$(RuntimeTestPath)\infra</RuntimeInfraTestPath>
