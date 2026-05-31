@@ -32,7 +32,7 @@
     <PackageContent Include="$(IntellisenseFolder)\Microsoft.UI.Xaml.xml" PackageLocation="$(PackageOutputLocation)\Intellisense\"/>
   </ItemGroup>
   
-  <Import Project="$(MSBuildThisFileDirectory)\update-project-capability-version.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)\build\update-project-capability-version.targets" />
 
   <!-- Building in Visual Studio causes it to call targets on dependent projects that may not exist.
        Adding dummy targets to those projects makes Visual Studio happy. -->

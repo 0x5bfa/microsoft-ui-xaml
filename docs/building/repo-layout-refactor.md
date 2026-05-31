@@ -183,6 +183,8 @@ NuGet package specs and package NOTICE content now live under
 top-level package command still invokes the same helper script, but its source
 location now reflects that it packs WinUI packaging output. The Edge runtime
 dependency nuspec used by WebView2 test package updates also lives there.
+Package build targets now live under `packaging/build`, including the target
+that keeps the project-capability version in sync with `WinUIVersion`.
 
 ## Build transforms
 
