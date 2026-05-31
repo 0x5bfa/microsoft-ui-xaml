@@ -754,7 +754,8 @@ spec-owned locations. Asset-free standalone specs such as DispatcherShutdownMode
 TreeView SelectionChanged, WindowsXamlManager shutdown improvements, WebView2
 custom environment, symbol enum, and TabTearOut API now live directly under
 `docs/specs`. The SelectorBar spec set moved as a feature folder under
-`docs/specs/SelectorBar` with its local images.
+`docs/specs/SelectorBar` with its local images. The MapControl spec and its
+scenario image moved under `docs/specs/MapControl`.
 
 ## Runtime path preparation
 
