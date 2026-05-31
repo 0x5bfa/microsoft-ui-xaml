@@ -44,7 +44,7 @@ Controls release helper scripts live under `/tools/controls/Release/scripts`.
 Controls resource generation helpers live under `/tools/controls/ResourceGeneration/scripts`.
 Controls developer shell helpers and command implementation live under
 `/tools/controls/Shell/scripts`.
-Controls shared command wrappers live under `/tools/controls/Common/scripts`.
+Controls tooling scripts use the shared command wrappers under `/tools/common/scripts`.
 Controls packaging helpers live under `/tools/controls/Packaging/scripts`.
 Controls source maintenance helpers live under `/tools/controls/SourceMaintenance/scripts`.
 Controls test app deployment, installation, and dependency helpers live under `/tools/controls/TestAppDeployment/scripts`.
