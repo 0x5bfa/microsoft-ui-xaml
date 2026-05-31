@@ -73,11 +73,11 @@ All build system and other engineering related files go in this directory.
 For more information on the build system, see the [build system design](building/build-system-design.md)
 Ad hoc app build support lives under `/eng/adhoc`.
 Binplace build rules live under `/eng/binplace`.
-Compiler-related build infrastructure lives under `/eng/compiler`.
+Compiler-related build infrastructure lives under `/eng/xamlcompiler`.
 WebView2-specific build workaround targets live under `/eng/webview2`.
 Shared signing inputs live under `/eng/signing`.
 Standalone build transform assets live under `/eng/transforms`.
-Build temp-folder setup lives under `/eng/tempfolder`.
+Build temp-folder setup lives under `/eng/paths`.
 Project-based restore helpers live under `/eng/restore`.
 Versioning props and dependency details live under `/eng/versioning`.
 Repository-wide path definitions live under `/eng/paths`.
