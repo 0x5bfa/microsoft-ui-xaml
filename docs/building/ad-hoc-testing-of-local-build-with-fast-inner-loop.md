@@ -5,19 +5,19 @@ iterate quickly. This doc describes a workflow for how to enable that.
 
 You will create an app in Visual Studio, target the local WinUI component package from your local build and iterate on that.
 
-For information on building and running the sample apps in this repo see [Building Sample Apps](.\building\building-sample-apps.md). 
+For information on building and running the sample apps in this repo see [Building Sample Apps](./building-sample-apps.md).
 This document is about creating your own local ad-hoc test app, not about using the test apps in this repo.
 
 # Prerequisites
 You should be able to use Visual Studio to build and launch Windows App SDK WinUI Apps. 
 Install the latest Visual Studio and include the Windows Application Development workload.
 
-You should also be able to build this repo. See [developer guide](./building/developer-guide.md).
+You should also be able to build this repo. See [developer guide](./developer-guide.md).
 
 # Steps
 
 ## Initial Build of Lifted Xaml
-Build the repo as normal. See the [developer guide](./building/developer-guide.md) for more information.
+Build the repo as normal. See the [developer guide](./developer-guide.md) for more information.
 In short, run `init.cmd` and then run `build.cmd`. If you want you can skip building the test code by running `build.cmd product`.
 The test code is not necessary for this scenario.
 
