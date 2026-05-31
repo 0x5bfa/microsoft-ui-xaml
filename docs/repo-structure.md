@@ -139,6 +139,6 @@ trees. Compiler test entry points and support tools live under
 `/tests/controls`; shared test payload and Helix infrastructure lives under
 `/tests/infra`; runtime test tools live under `/tests/runtime/tools`; runtime
 test resources live under `/tests/runtime/resources`, with resource maintenance
-helpers under `/tests/runtime/resources/scripts`; runtime test package
+helpers under `/tests/runtime/resources/tools/scripts`; runtime test package
 maintenance helpers live under
 `/tests/runtime/packages/*/scripts`.

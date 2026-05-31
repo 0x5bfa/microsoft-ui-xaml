@@ -1,7 +1,7 @@
 @echo off
 REM Copyright (c) Microsoft Corporation.  All rights reserved.
 
-for %%I in ("%~dp0..\") do set "RESOURCES=%%~fI\masters"
+for %%I in ("%~dp0..\..\") do set "RESOURCES=%%~fI\masters"
 pushd "%RESOURCES%"
 set "OUTFILE=%~1"
 if "%OUTFILE%"=="" set OUTFILE=Masters.rc
