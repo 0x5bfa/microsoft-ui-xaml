@@ -94,7 +94,8 @@ Shared test-project build settings live under `/eng/testprojects`.
 Windows SDK override configuration lives under `/eng/sdkconfig`.
 Package layout build rules live under `/eng/packaging`.
 Product metadata item definitions live under `/eng/productmetadata`.
-In-repo XAML compiler consumption hooks live under `/eng/xamlcompiler`.
+In-repo XAML compiler consumption hooks and helper build projects live under
+`/eng/xamlcompiler`.
 WinRT class registration build rules live under `/eng/winrtclassregistration`.
 WinUIDetails package import rules live under `/eng/winuidetails`.
 

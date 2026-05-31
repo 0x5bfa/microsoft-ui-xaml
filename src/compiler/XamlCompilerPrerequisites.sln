@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop", "Exe\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop.csproj", "{A1175D44-D47D-4D3E-A319-CEFC7170D29C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildGenXbfForMSBuild", "..\..\eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj", "{3CB5C51E-1F39-4EDC-8949-28812FC1C40E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildGenXbfForMSBuild", "..\..\eng\xamlcompiler\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj", "{3CB5C51E-1F39-4EDC-8949-28812FC1C40E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAugmentation", "..\..\eng\GraphAugmentation\XamlCompilerPrerequisites\GraphAugmentation.csproj", "{7B882373-BB18-4823-A503-F228AD742E68}"
 EndProject
