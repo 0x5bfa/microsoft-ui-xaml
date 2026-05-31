@@ -772,6 +772,11 @@ ItemsView TestUI, including its picture-library test images, now lives under
 `tests/controls/testui/ItemsView`. This completes the move of controls TestUI
 shared projects out of `src/controls`.
 
+Controls API test shared projects are moving under `tests/controls/apitests`.
+The first batch moved AnnotatedScrollBar, AutoSuggestBox, Breadcrumb,
+ColorPicker, ComboBox, ImageIcon, InfoBadge, ItemContainer, MapControl, and
+NumberBox API tests there so `src/controls` can stay focused on control source.
+
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
 as the first small runtime tool move. The XBF parser/viewer tools moved under

@@ -47,7 +47,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NavigationView", "..\src\co
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Collections", "..\src\controls\Collections\Collections.vcxitems", "{395A71A1-4327-477B-85D4-AF0851732CCB}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ColorPicker_APITests", "..\src\controls\ColorPicker\APITests\ColorPicker_APITests.shproj", "{E9AC4938-EC2A-46D3-85BF-27316DB8CC4D}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ColorPicker_APITests", "..\tests\controls\apitests\ColorPicker\ColorPicker_APITests.shproj", "{E9AC4938-EC2A-46D3-85BF-27316DB8CC4D}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ColorPicker_InteractionTests", "..\src\controls\ColorPicker\InteractionTests\ColorPicker_InteractionTests.shproj", "{A4D2FAE8-E7FC-4100-91FF-2202FAC91C70}"
 EndProject
@@ -375,7 +375,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NumberBox", "NumberBox", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumberBox", "..\src\controls\NumberBox\NumberBox.vcxitems", "{9D23C997-1F46-444A-8C07-4A4BFF7E4E63}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NumberBox_APITests", "..\src\controls\NumberBox\APITests\NumberBox_APITests.shproj", "{80AF98CA-BC1D-4011-8460-5671799EC419}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NumberBox_APITests", "..\tests\controls\apitests\NumberBox\NumberBox_APITests.shproj", "{80AF98CA-BC1D-4011-8460-5671799EC419}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NumberBox_TestUI", "..\tests\controls\testui\NumberBox\NumberBox_TestUI.shproj", "{13DA8235-D04F-46D4-B5B4-F5AE774EEEDE}"
 EndProject
@@ -447,7 +447,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Breadcrumb", "Breadcrumb", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BreadcrumbBar", "..\src\controls\Breadcrumb\Breadcrumb.vcxitems", "{563FE343-C6B0-447B-831A-B0CE3AA7A688}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BreadcrumbBar_APITests", "..\src\controls\Breadcrumb\APITests\BreadcrumbBar_APITests.shproj", "{48DF0143-C6A7-4184-BCC4-E59EAC5D49F1}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BreadcrumbBar_APITests", "..\tests\controls\apitests\Breadcrumb\BreadcrumbBar_APITests.shproj", "{48DF0143-C6A7-4184-BCC4-E59EAC5D49F1}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BreadcrumbBar_TestUI", "..\tests\controls\testui\Breadcrumb\BreadcrumbBar_TestUI.shproj", "{657121B7-3E4F-4C76-ABE2-0221A7997929}"
 EndProject
@@ -467,7 +467,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageIcon", "ImageIcon", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageIcon", "..\src\controls\ImageIcon\ImageIcon.vcxitems", "{9FB38577-696E-47BA-8AE2-F48A3C84A7CA}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ImageIcon_APITests", "..\src\controls\ImageIcon\APITests\ImageIcon_APITests.shproj", "{27AAE2E5-9687-4120-822F-CDB68B9A65B7}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ImageIcon_APITests", "..\tests\controls\apitests\ImageIcon\ImageIcon_APITests.shproj", "{27AAE2E5-9687-4120-822F-CDB68B9A65B7}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ImageIcon_TestUI", "..\tests\controls\testui\ImageIcon\ImageIcon_TestUI.shproj", "{DDE1C022-6F9A-4067-89C2-81F2EEAF249F}"
 EndProject
@@ -489,7 +489,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfoBadge", "InfoBadge", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoBadge", "..\src\controls\InfoBadge\InfoBadge.vcxitems", "{E7DEA84C-CCCE-4458-8499-5182F67BC7BA}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "InfoBadge_APITests", "..\src\controls\InfoBadge\APITests\InfoBadge_APITests.shproj", "{D83F60A3-EB44-46F2-8EE7-B28C90004E5F}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "InfoBadge_APITests", "..\tests\controls\apitests\InfoBadge\InfoBadge_APITests.shproj", "{D83F60A3-EB44-46F2-8EE7-B28C90004E5F}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "InfoBadge_TestUI", "..\tests\controls\testui\InfoBadge\InfoBadge_TestUI.shproj", "{1F30CAC6-7EFB-4CE9-B119-64821C117CB9}"
 EndProject
@@ -501,7 +501,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MapControl", "MapControl", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapControl", "..\src\controls\MapControl\MapControl.vcxitems", "{7C60C2AE-6ABC-4762-A0EF-1F50CDD0BA1E}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MapControl_APITests", "..\src\controls\MapControl\APITests\MapControl_APITests.shproj", "{F350D71A-A980-4D63-A38A-8A2035DC4EF2}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MapControl_APITests", "..\tests\controls\apitests\MapControl\MapControl_APITests.shproj", "{F350D71A-A980-4D63-A38A-8A2035DC4EF2}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MapControl_TestUI", "..\tests\controls\testui\MapControl\MapControl_TestUI.shproj", "{8C2F2FA6-5639-4C01-84D0-06E037824689}"
 EndProject
@@ -899,7 +899,7 @@ Global
 		..\src\controls\Interactions\ButtonInteraction\ButtonInteraction.vcxitems*{2459bc06-2ae5-4c65-ba73-ab28090b6fab}*SharedItemsImports = 9
 		..\src\controls\ColorPicker\ColorPicker.vcxitems*{248cc96d-67a2-4359-a4e3-ab0dad110a1e}*SharedItemsImports = 9
 		..\src\controls\RatingControl\APITests\RatingControl_APITests.projitems*{274b93f7-cd18-4ed9-b569-0640529d187b}*SharedItemsImports = 13
-		..\src\controls\ImageIcon\APITests\ImageIcon_APITests.projitems*{27aae2e5-9687-4120-822f-cdb68b9a65b7}*SharedItemsImports = 13
+		..\tests\controls\apitests\ImageIcon\ImageIcon_APITests.projitems*{27aae2e5-9687-4120-822f-cdb68b9a65b7}*SharedItemsImports = 13
 		..\tests\controls\testui\SplitButton\SplitButton_TestUI.projitems*{280c91f4-96b5-4bde-9e02-e573e1def583}*SharedItemsImports = 13
 		..\src\controls\ItemsView\APITests\ItemsView_APITests.projitems*{283c02a7-ce19-5fd9-c66b-2640029d9876}*SharedItemsImports = 13
 		..\tests\controls\testui\Repeater\Repeater_TestUI.projitems*{2ed883f5-20db-4445-8c96-517a21e5e657}*SharedItemsImports = 13
@@ -924,7 +924,7 @@ Global
 		..\src\controls\ScrollPresenter\APITests\ScrollPresenter_APITests.projitems*{474b92f7-cd58-fed9-8569-9640529d1871}*SharedItemsImports = 13
 		..\src\controls\NavigationView\NavigationView_InteractionTests\NavigationView_InteractionTests.projitems*{475c3a33-637a-44dc-b789-6c2d78a75283}*SharedItemsImports = 13
 		..\tests\controls\testui\AutoSuggestBox\AutoSuggestBox_TestUI.projitems*{48bf2dab-82b5-4705-a880-f5310fb697f9}*SharedItemsImports = 13
-		..\src\controls\Breadcrumb\APITests\Breadcrumb_APITests.projitems*{48df0143-c6a7-4184-bcc4-e59eac5d49f1}*SharedItemsImports = 13
+		..\tests\controls\apitests\Breadcrumb\Breadcrumb_APITests.projitems*{48df0143-c6a7-4184-bcc4-e59eac5d49f1}*SharedItemsImports = 13
 		..\src\controls\Interactions\SliderInteraction\APITests\SliderInteraction_APITests.projitems*{48f7b68b-8050-4523-8374-963aa3b2834f}*SharedItemsImports = 13
 		..\src\controls\Materials\Reveal\RevealBrush.vcxitems*{4993a99d-57ae-4ee7-a3c1-0840ed127608}*SharedItemsImports = 9
 		..\src\controls\TeachingTip\TeachingTip.vcxitems*{499b8bf7-bca1-4c23-baa7-59e2c551be4b}*SharedItemsImports = 9
@@ -954,7 +954,7 @@ Global
 		..\src\controls\MapControl\MapControl.vcxitems*{7c60c2ae-6abc-4762-a0ef-1f50cdd0ba1e}*SharedItemsImports = 9
 		..\tests\controls\testui\NavigationView\NavigationView_TestUI.projitems*{7ee5e585-090a-44bf-a950-80636e242327}*SharedItemsImports = 13
 		..\src\controls\Common\Common.vcxitems*{80ad7f51-8997-47b9-bb41-078b81cff9b0}*SharedItemsImports = 9
-		..\src\controls\NumberBox\APITests\NumberBox_APITests.projitems*{80af98ca-bc1d-4011-8460-5671799ec419}*SharedItemsImports = 13
+		..\tests\controls\apitests\NumberBox\NumberBox_APITests.projitems*{80af98ca-bc1d-4011-8460-5671799ec419}*SharedItemsImports = 13
 		..\tests\controls\testui\Interactions\SliderInteraction\SliderInteraction_TestUI.projitems*{80f1f883-d49b-407d-9e77-c9b0e62b61a9}*SharedItemsImports = 13
 		..\tests\controls\testui\RadioButtons\RadioButtons_TestUI.projitems*{833a6892-a079-469a-81c7-54d4cd88029b}*SharedItemsImports = 13
 		..\tests\controls\testui\AnimatedIcon\AnimatedIcon_TestUI.projitems*{83fd36c0-189f-4e95-8002-9b73905ca301}*SharedItemsImports = 13
@@ -1038,7 +1038,7 @@ Global
 		..\src\controls\PipsPager\PipsPager.vcxitems*{d1eb61d8-c689-4ad1-bd61-fdaa50362563}*SharedItemsImports = 9
 		..\src\controls\Expander\InteractionTests\Expander_InteractionTests.projitems*{d6df4ab9-facc-4e51-8c57-6b1f96919365}*SharedItemsImports = 13
 		..\src\controls\IconSource\APITests\IconSource_APITests.projitems*{d73627e9-564c-4a72-a12d-f6c82f17ad0d}*SharedItemsImports = 13
-		..\src\controls\InfoBadge\APITests\InfoBadge_APITests.projitems*{d83f60a3-eb44-46f2-8ee7-b28c90004e5f}*SharedItemsImports = 13
+		..\tests\controls\apitests\InfoBadge\InfoBadge_APITests.projitems*{d83f60a3-eb44-46f2-8ee7-b28c90004e5f}*SharedItemsImports = 13
 		..\src\controls\DropDownButton\InteractionTests\DropDownButton_InteractionTests.projitems*{d9ac3716-5608-40d0-999f-26f4b544be33}*SharedItemsImports = 13
 		..\tests\controls\testui\AnimatedVisualPlayer\AnimatedVisualPlayer_TestUI.projitems*{dbec0be4-ba3f-41c9-a303-af98201be6dc}*SharedItemsImports = 13
 		..\tests\controls\testui\PullToRefresh\RefreshContainer\RefreshContainer_TestUI.projitems*{ddb468e4-7b64-4301-8fcb-1bebbb1e689f}*SharedItemsImports = 13
@@ -1050,7 +1050,7 @@ Global
 		..\src\controls\RadioButtons\RadioButtons.vcxitems*{e770a6d3-7252-4e8a-bd10-fa8524df8c83}*SharedItemsImports = 9
 		..\src\controls\InfoBadge\InfoBadge.vcxitems*{e7dea84c-ccce-4458-8499-5182f67bc7ba}*SharedItemsImports = 9
 		..\src\controls\NavigationView\NavigationView_ApiTests\NavigationView_ApiTests.projitems*{e98f3da3-3c00-4f2e-bf3b-2d2ad9d176bc}*SharedItemsImports = 13
-		..\src\controls\ColorPicker\APITests\ColorPicker_APITests.projitems*{e9ac4938-ec2a-46d3-85bf-27316db8cc4d}*SharedItemsImports = 13
+		..\tests\controls\apitests\ColorPicker\ColorPicker_APITests.projitems*{e9ac4938-ec2a-46d3-85bf-27316db8cc4d}*SharedItemsImports = 13
 		..\src\controls\Expander\Expander.vcxitems*{ec3b6f65-32c6-4bc8-8902-ee0b397e2787}*SharedItemsImports = 9
 		..\src\controls\PullToRefresh\RefreshVisualizer\RefreshVisualizer.vcxitems*{ed7dba65-8f09-44f3-8d25-7bb5a7a89609}*SharedItemsImports = 9
 		..\src\controls\WrapPanel\WrapPanel.vcxitems*{edaeaad5-a295-49c0-8f51-c183b7cae26b}*SharedItemsImports = 9
@@ -1058,7 +1058,7 @@ Global
 		..\src\controls\ImageIcon\InteractionTests\ImageIcon_InteractionTests.projitems*{f14fb632-e705-44bc-9415-75b539f483e1}*SharedItemsImports = 13
 		..\src\controls\AnimatedIcon\AnimatedIcon.vcxitems*{f1c8a5a1-b1b0-4095-8849-e550fcf2ebf6}*SharedItemsImports = 9
 		..\src\controls\PullToRefresh\RefreshContainer\InteractionTests\RefreshContainer_InteractionTests.projitems*{f30fe0d3-2e44-405e-8519-ec3ab098c41f}*SharedItemsImports = 13
-		..\src\controls\MapControl\APITests\MapControl_APITests.projitems*{f350d71a-a980-4d63-a38a-8a2035dc4ef2}*SharedItemsImports = 13
+		..\tests\controls\apitests\MapControl\MapControl_APITests.projitems*{f350d71a-a980-4d63-a38a-8a2035dc4ef2}*SharedItemsImports = 13
 		..\src\controls\InfoBar\InteractionTests\InfoBar_InteractionTests.projitems*{f470a64e-780e-45aa-abb7-73a8734e51d7}*SharedItemsImports = 13
 		..\src\controls\InfoBadge\InteractionTests\InfoBadge_InteractionTests.projitems*{f55ab8bf-f828-4a2e-bcdf-68f22aed35c3}*SharedItemsImports = 13
 		..\src\controls\Materials\Acrylic\InteractionTests\AcrylicBrush_InteractionTests.projitems*{f601284a-00c1-49f9-99b3-70d45585f784}*SharedItemsImports = 13
