@@ -24,7 +24,7 @@ Use Visual Studio Installer:
 1. Open NuGet Manager Right-click project → **Manage NuGet Packages**.
 2. Click **Gear** (Package Sources) icon. Click **+**.
 3. **Name:** `LocalWinAppSDK`
-4. **Source:** Full path to `PackageStore` built from the WinUI repo
+4. **Source:** Full path to `packaging\package-store` built from the WinUI repo
 5. Click **OK**.
 
 

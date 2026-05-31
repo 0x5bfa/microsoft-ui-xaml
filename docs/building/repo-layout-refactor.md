@@ -571,6 +571,10 @@ The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
 
+The local NuGet package test feed now lives under `packaging/package-store`.
+Package construction scripts, NuGet.config, and cleanup helpers point there
+instead of keeping a single-purpose `PackageStore` folder at the repo root.
+
 The standalone debugger extension script now lives under
 `tools/debugging/dbgext`, grouped with other manually invoked repo tools.
 

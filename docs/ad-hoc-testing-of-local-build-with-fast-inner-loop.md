@@ -55,13 +55,13 @@ Add the following text to that file:
     <add key="repositoryPath" value="$\..\packages" />
   </config>
   <packageSources>
-    <add key="packagestore" value="<repo-root>\PackageStore" />
+    <add key="packagestore" value="<repo-root>\packaging\package-store" />
   </packageSources>
 </configuration>
 ```
-Update the path to PackageStore so that it points to the PackageStore directory in your local WinUI repo.
+Update the path so that it points to the `packaging\package-store` directory in your local WinUI repo.
 
-Adding this config does two things. First, it adds the location of the 'PackageStore' directory from your local lifted 
+Adding this config does two things. First, it adds the location of the `packaging\package-store` directory from your local lifted
 xaml git repo to the list of locations that nuget.exe will search for packages. This will allow the Visual Studio project
 to target this local build. 
 
