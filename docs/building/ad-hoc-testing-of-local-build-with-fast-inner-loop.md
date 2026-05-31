@@ -121,7 +121,7 @@ Make whatever code changes you need in the lifted xaml repo. Before building mak
 
 Build your changes. If you are making changes to Microsoft.UI.Xaml.dll the quickest way to rebuild that dll is
 
-`msb src\runtime\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj`
+`msb %XcpRoot%\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj`
 
 If you are making changes to Microsoft.UI.Xaml.Controls.dll, use:
 
