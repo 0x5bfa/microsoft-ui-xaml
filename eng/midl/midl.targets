@@ -39,7 +39,7 @@
     </PropertyGroup>
 
   <ItemGroup>
-    <!-- Store CoreWebView2WinMD for use in winrtclassregistration.targets -->
+    <!-- Store CoreWebView2WinMD for use in winrtclassregistration\winrtclassregistration.targets -->
     <CoreWebView2WinMD Include="%(ReferencePath.Identity)" Condition="'%(ReferencePath.Filename)'=='Microsoft.Web.WebView2.Core'">
         <ImplementationDll>Microsoft.Web.WebView2.Core.dll</ImplementationDll>
         <Merge>false</Merge>

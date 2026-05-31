@@ -81,6 +81,7 @@ Shared test-project build settings live under `/eng/testprojects`.
 Windows SDK override configuration lives under `/eng/sdkconfig`.
 Package layout build rules live under `/eng/packaging`.
 In-repo XAML compiler consumption hooks live under `/eng/xamlcompiler`.
+WinRT class registration build rules live under `/eng/winrtclassregistration`.
 
 ## /external
 This folder contains checked-in third-party dependencies. Header-only
