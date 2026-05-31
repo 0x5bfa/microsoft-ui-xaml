@@ -308,7 +308,7 @@
   <Import Project="$(MUXControlsSourceRoot)WebView2\TestUI\WebView2_TestUI.projitems" Label="Shared" Condition="$(FeatureWebView2Enabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)ProgressRing\APITests\ProgressRing_APITests.projitems" Label="Shared" Condition="$(FeatureProgressRingEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)ProgressBar\APITests\ProgressBar_APITests.projitems" Label="Shared" Condition="$(FeatureProgressBarEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)ItemContainer\TestUI\ItemContainer_TestUI.projitems" Label="Shared" Condition="$(FeatureItemContainerEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)testui\ItemContainer\ItemContainer_TestUI.projitems" Label="Shared" Condition="$(FeatureItemContainerEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)ItemContainer\APITests\ItemContainer_APITests.projitems" Label="Shared" Condition="$(FeatureItemContainerEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)AnnotatedScrollBar\TestUI\AnnotatedScrollBar_TestUI.projitems" Label="Shared" Condition="$(FeatureAnnotatedScrollBarEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)AnnotatedScrollBar\APITests\AnnotatedScrollBar_APITests.projitems" Label="Shared" Condition="$(FeatureAnnotatedScrollBarEnabled) == 'true'" />
