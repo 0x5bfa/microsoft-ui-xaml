@@ -513,6 +513,9 @@ composition rules together.
 MSBuild cache props and targets now live under `eng/projectcaching`, grouping
 the optional cache package configuration and target import in one place.
 
+Shared test-project props and targets now live under `eng/testprojects`,
+keeping opt-in test project build behavior out of the `eng` root.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
