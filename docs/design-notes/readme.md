@@ -27,6 +27,7 @@ This is a collection of documentations which provide a high level design oriente
 * [ItemsView/ItemContainer overviews](./collection-controls/ItemsView-ItemContainer-overview.md)
 * [ListView/GridView overview](./collection-controls/ListView-GridView-overview.md)
 * [Hit Testing](./input/hit-testing.md)
+* [Xaml Islands overview](./xaml-islands/README.md)
 
 ### Coding resources
 
