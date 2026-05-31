@@ -46,7 +46,7 @@
             $(XcpPath)\components\ExtMetadataProvider\inc;
             $(XcpPath)\pal\inc;
             $(XcpPath)\core\inc;
-            $(XcpPath)\core\controls\generated;
+            $(RuntimeGeneratedControlsPath);
             $(XcpPath)\core\sw;
             $(XcpPath)\components\allocation\inc;
             $(XcpPath)\components\base\inc;

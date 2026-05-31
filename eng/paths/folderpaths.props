@@ -31,6 +31,7 @@
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(ProjectRoot)src\runtime\phone</XcpPhonePath>
     <RuntimeToolsPath>$(ProjectRoot)tools\runtime</RuntimeToolsPath>
+    <RuntimeGeneratedControlsPath>$(ProjectRoot)src\runtime\generated\core\controls</RuntimeGeneratedControlsPath>
     <RuntimeTextClassificationGeneratedPath>$(ProjectRoot)src\runtime\generated\text\Classification</RuntimeTextClassificationGeneratedPath>
     <XamlDiagnosticsComponentPath>$(XcpPath)\components\xamldiagnostics</XamlDiagnosticsComponentPath>
     <XamlDiagTapPath>$(RuntimeToolsPath)\xamldiagnostics\tap</XamlDiagTapPath>

@@ -9,7 +9,7 @@
             $(LiftedIXPIncludePaths);
             $(ProjectIncludeDirectories);
             $(XcpPath)\core\inc;
-            $(XcpPath)\core\controls\generated;
+            $(RuntimeGeneratedControlsPath);
             $(XcpPath)\core\parser;
             $(XcpPath)\components\criticalsection\inc;
             $(XcpPath)\components\scaling\inc;

@@ -26,7 +26,7 @@
             $(XcpPath);
             $(XcpPath)\pal\inc;
             $(XcpPath)\core\inc;
-            $(XcpPath)\core\controls\generated;
+            $(RuntimeGeneratedControlsPath);
             $(XcpPath)\core\native\text\Controls;
             $(XcpPath)\core\native\inc;
             $(XcpPath)\core\Parser;
@@ -169,7 +169,7 @@
         <ProjectReference Include="$(XcpPath)\dxaml\lib\winrtautomation\wrtdxamlautomation.vcxproj" Project="{418cb7c6-a4f4-452a-9087-439ab8a61a66}"/>
         <ProjectReference Include="$(XcpPath)\dxaml\lib\winrtexcept\wrtdxamlexceptions.vcxproj" Project="{8835fd69-17ab-452e-ba7d-74a82d3e8f42}"/>
         <ProjectReference Include="$(XcpPath)\core\metadata\dynamic\dynamicmetadata.vcxproj" Project="{3c27adda-177e-4da8-bb12-546633922531}"/>
-        <ProjectReference Include="$(XcpPath)\core\controls\generated\CoreControlsGenerated.vcxproj" Project="{D4D488D4-440D-4D95-A10F-226D34E9B790}"/>
+        <ProjectReference Include="$(RuntimeGeneratedControlsPath)\CoreControlsGenerated.vcxproj" Project="{D4D488D4-440D-4D95-A10F-226D34E9B790}"/>
         <ProjectReference Include="$(XcpPath)\dxaml\lib\winrtfoundation\wrtdxamlfoundation.vcxproj" Project="{10313621-37bf-4039-9dfe-e8b49d131758}"/>
         <ProjectReference Include="$(XcpPath)\dxaml\lib\winrtfoundation2\wrtdxamlfoundation2.vcxproj" Project="{febe7793-7794-4f61-a5d5-1c56fd4b09b1}"/>
         <ProjectReference Include="$(XcpPath)\dxaml\lib\winrtcontrols\wrtdxamlcontrols.vcxproj" Project="{1ff2008d-a3ae-4601-8f01-f4fd23c4fb88}"/>

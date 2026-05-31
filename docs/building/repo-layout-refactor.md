@@ -152,6 +152,11 @@ Runtime test resource payload inputs now live under `tests/runtime/resources`.
 The resource payload project keeps the same binplace layout while no longer
 living under the legacy runtime resource tree.
 
+Runtime generated controls headers now live under
+`src/runtime/generated/core/controls`. Runtime projects consume them through
+`$(RuntimeGeneratedControlsPath)` instead of reaching into the handwritten XCP
+source tree.
+
 Runtime test infrastructure now lives under `tests/runtime/infra`; new and moved
 consumers should use `$(RuntimeInfraTestPath)` and
 `$(RuntimeInfraTestObjPath)`. The legacy infra wrapper has been removed now that

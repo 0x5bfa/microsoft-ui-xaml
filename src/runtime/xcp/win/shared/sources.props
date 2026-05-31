@@ -39,7 +39,7 @@
             $(XcpPath)\core\inc;
             $(XcpObjPath)\win\shared\inc;
             $(XcpPath)\win\shared\inc;
-            $(XcpPath)\core\controls\generated;
+            $(RuntimeGeneratedControlsPath);
             $(XcpPath)\components\desktoputility\inc;
         </ProjectIncludeDirectories>
     </PropertyGroup>
