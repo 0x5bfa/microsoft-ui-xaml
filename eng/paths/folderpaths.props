@@ -32,6 +32,7 @@
     <XcpPhonePath>$(ProjectRoot)src\runtime\phone</XcpPhonePath>
     <RuntimeToolsPath>$(ProjectRoot)tools\runtime</RuntimeToolsPath>
     <XamlDiagTapPath>$(RuntimeToolsPath)\xamldiagnostics\tap</XamlDiagTapPath>
+    <CompilerTestPath>$(ProjectRoot)tests\compiler</CompilerTestPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
     <NativeIsolatedTestPath>$(RuntimeTestPath)\native\isolated</NativeIsolatedTestPath>
     <NativeIncPath>$(RuntimeTestPath)\native\inc</NativeIncPath>
