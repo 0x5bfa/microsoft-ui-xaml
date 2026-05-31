@@ -1,7 +1,7 @@
 [CmdLetBinding()]
 Param(
     [string]$PackageRoot =  $(Resolve-Path "$PSScriptRoot\..\..\..\BuildOutput\packaging\Release"),
-    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\packaging\package-store"),
+    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\eng\packaging\winui\package-store"),
     [string]$VersionOverride,
     [switch]$NoPackageAnalysis,
     [switch]$UseDependencyOverrides,
@@ -14,7 +14,7 @@ Param(
 #
 
 $repoRoot = (Resolve-Path "$PSScriptRoot\..\..\..").Path
-$scriptDirectory = Join-Path $repoRoot "packaging\nuspecs"
+$scriptDirectory = Join-Path $repoRoot "eng\packaging\winui\nuspecs"
 
 pushd $scriptDirectory
 

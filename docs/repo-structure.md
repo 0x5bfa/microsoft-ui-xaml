@@ -9,7 +9,6 @@
 - [/eng](#eng)
 - [/external](#external)
 - [/generated](#generated)
-- [/packaging](#packaging)
 - [/src](#src)
 - [/tests](#tests)
 
@@ -105,7 +104,8 @@ Shared MIDL build rules and helper projects live under `/eng/midl`.
 MSBuild cache configuration lives under `/eng/projectcaching`.
 Shared test-project build settings live under `/eng/testprojects`.
 Windows SDK override configuration lives under `/eng/sdkconfig`.
-Package layout build rules live under `/eng/packaging`.
+Package layout build rules live under `/eng/packaging`, and WinUI package
+construction inputs live under `/eng/packaging/winui`.
 Product metadata item definitions live under `/eng/productmetadata`.
 In-repo XAML compiler consumption hooks and helper build projects live under
 `/eng/xamlcompiler`.
@@ -121,15 +121,6 @@ This folder contains checked-in generated output and generated baselines.
 Generated controls dependency-property sources live under `/generated/controls/dependencyproperties`.
 Generated package IntelliSense XML lives under `/generated/packaging/intellisense`.
 Visual test baselines live under `/generated/tests/visualbaselines`.
-
-## /packaging
-This folder contains package construction inputs. NuGet package specs live under
-`/packaging/nuspecs`, package build assets under `/packaging/build`, and
-package manifests under `/packaging/manifests`. Package license inputs live
-under `/packaging/licenses`. IntelliSense drop processing lives under
-`/packaging/intellisense`. Package build targets that update generated package
-props also live under `/packaging/build`. The local package test feed lives
-under `/packaging/package-store`.
 
 ## /src
 This is where source code for repo-local tools and source components outside the

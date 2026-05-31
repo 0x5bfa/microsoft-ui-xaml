@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
@@ -1417,7 +1417,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "resources", "..\..\..\tests
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sounds", "..\xcp\dxaml\sounds\sounds.csproj", "{5075E59E-390C-4C0C-92D6-B865DA7FC7FA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\..\..\packaging\Microsoft.WinUI.csproj", "{3EF6EAE7-3BFC-4B43-BF1B-DE3134E75E5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\..\..\eng\packaging\winui\Microsoft.WinUI.csproj", "{3EF6EAE7-3BFC-4B43-BF1B-DE3134E75E5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DB18C28D-3251-4E68-99F6-498BE2C7BFDD}"
 EndProject

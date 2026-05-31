@@ -231,15 +231,15 @@ so repo-local callers use the implementation paths directly.
 ## Packaging inputs
 
 NuGet package specs and package NOTICE content now live under
-`packaging/nuspecs`, alongside the rest of the package build inputs. The
+`eng/packaging/winui/nuspecs`, alongside the rest of the package build inputs. The
 top-level package command still invokes the same helper script, but its source
 location now reflects that it packs WinUI packaging output. The Edge runtime
 dependency nuspec used by WebView2 test package updates also lives there.
-Package build targets now live under `packaging/build`, including the target
+Package build targets now live under `eng/packaging/winui/build`, including the target
 that keeps the project-capability version in sync with `WinUIVersion`.
-Static package manifest inputs live under `packaging/manifests`, keeping
+Static package manifest inputs live under `eng/packaging/winui/manifests`, keeping
 package metadata separate from the project file and package build targets.
-Package license inputs live under `packaging/licenses`, while the packaging
+Package license inputs live under `eng/packaging/winui/licenses`, while the packaging
 project still emits the same `license.txt` package payload name.
 
 ## Build transforms
@@ -314,7 +314,7 @@ output is separated from handwritten controls source.
 Checked-in package IntelliSense XML now lives under
 `generated/packaging/intellisense`. The package project consumes that directory
 through `$(IntellisenseFolder)`, while the docs-team drop input stays under
-`packaging/intellisense/drop`.
+`eng/packaging/winui/intellisense/drop`.
 
 ## Visual test baselines
 
@@ -599,8 +599,9 @@ defaults together.
 Build-output consumption props and targets now live under `eng/consumebinaries`,
 keeping the ad hoc/test app hooks for consuming built WinUI binaries together.
 
-Package layout props and targets now live under `eng/packaging`, leaving the
-top-level `packaging` tree focused on package construction inputs.
+Package layout props and targets now live under `eng/packaging`. WinUI package
+construction inputs live under `eng/packaging/winui`, so the old top-level
+`packaging` tree no longer remains as a separate root bucket.
 
 In-repo XAML compiler consumption props, targets, and helper restore/build
 projects now live under `eng/xamlcompiler`, separate from the broader runtime
@@ -645,7 +646,7 @@ The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
 
-The local NuGet package test feed now lives under `packaging/package-store`.
+The local NuGet package test feed now lives under `eng/packaging/winui/package-store`.
 Package construction scripts, NuGet.config, and cleanup helpers point there
 instead of keeping a single-purpose `PackageStore` folder at the repo root.
 The WinUI component package command implementation now lives under
