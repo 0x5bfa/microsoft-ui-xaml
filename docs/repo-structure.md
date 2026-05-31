@@ -23,8 +23,9 @@ The mock Windows App SDK package update helper lives under
 `/tools/packaging/UpdateMockWinAppSDKPackage`.
 The WinUI component package command implementation lives under
 `/tools/packaging/scripts`.
-Package IntelliSense generation helpers and docs-team XML drop inputs live under
-`/tools/packaging/intellisense`.
+Package IntelliSense generation helpers live under
+`/tools/packaging/intellisense`, while docs-team XML drop inputs live under
+`/eng/packaging/intellisense`.
 Compiler developer tools, performance collection scripts, and coverage helpers
 live under `/tools/compiler`.
 Runtime developer tools and source-generation helpers live under `/tools/runtime`.
@@ -103,7 +104,7 @@ WinUIDetails package import rules live under `/eng/winuidetails`.
 Header-only third-party dependencies live under `/src/thirdparty/include`.
 Generated controls dependency-property sources live under `/src/controls/generated/dependencyproperties`.
 Runtime generated controls headers live under `/src/runtime/generated/core/controls`.
-Generated package IntelliSense XML lives under `/tools/packaging/intellisense/generated`.
+Generated package IntelliSense XML lives under `/eng/packaging/intellisense/generated`.
 Visual test baselines live under `/tests/visualbaselines`.
 
 ## /src

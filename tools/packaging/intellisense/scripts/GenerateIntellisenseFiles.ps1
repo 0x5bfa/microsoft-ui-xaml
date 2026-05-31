@@ -1,15 +1,15 @@
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = "Stop"
 
-# Processes the Intellisense .xml files in tools/packaging/intellisense/drop and generates new Intellisense
-# .xml files in tools/packaging/intellisense/generated.
+# Processes the Intellisense .xml files in eng/packaging/intellisense/drop and generates new Intellisense
+# .xml files in eng/packaging/intellisense/generated.
 # See Intellisense.md for more information.
 
 $StartTime = Get-Date
 Write-Host "Generating Intellisense XML files." -ForegroundColor Cyan
 
 $RepoRoot = Join-Path $PSScriptRoot "..\..\..\.." -Resolve
-$IntellisenseRoot = Join-Path $RepoRoot "tools\packaging\intellisense"
+$IntellisenseRoot = Join-Path $RepoRoot "eng\packaging\intellisense"
 
 $IntellisenseDir = "$IntellisenseRoot\drop"
 if ($env:Configuration -eq '')
@@ -19,7 +19,7 @@ if ($env:Configuration -eq '')
 }
 
 $NugetLibDir = "$RepoRoot\BuildOutput\packaging\$($env:Configuration)\lib"
-$OutputDir = Join-Path $RepoRoot "tools\packaging\intellisense\generated"
+$OutputDir = Join-Path $RepoRoot "eng\packaging\intellisense\generated"
 $WorkingDir = "$RepoRoot\BuildOutput\Intellisense"
 
 if (Test-Path $WorkingDir)

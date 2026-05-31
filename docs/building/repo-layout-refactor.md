@@ -355,9 +355,11 @@ output is separated from handwritten controls source.
 ## Generated package IntelliSense
 
 Checked-in package IntelliSense XML now lives under
-`tools/packaging/intellisense/generated`. The package project consumes that directory
-through `$(IntellisenseFolder)`, while the docs-team drop input lives with the
-generation workflow under `tools/packaging/intellisense/drop`.
+`eng/packaging/intellisense/generated`. The package project consumes that
+directory through `$(IntellisenseFolder)`, while the docs-team drop input lives
+with the packaging inputs under `eng/packaging/intellisense/drop`. The update
+script remains under `tools/packaging/intellisense/scripts` because it is
+manual packaging tooling, not package content.
 
 ## Visual test baselines
 
@@ -699,9 +701,10 @@ Package construction scripts, NuGet.config, and cleanup helpers point there
 instead of keeping a single-purpose `PackageStore` folder at the repo root.
 The WinUI component package command implementation now lives under
 `tools/packaging/scripts` with the package construction PowerShell helper. The
-package IntelliSense generation workflow also lives under
-`tools/packaging/intellisense`, including the docs-team XML drop input. The repo
-root compatibility wrapper was removed; repo-local callers should use
+package IntelliSense generation script also lives under
+`tools/packaging/intellisense/scripts`, while the docs-team XML drop input and
+checked-in generated XML live under `eng/packaging/intellisense`. The repo root
+compatibility wrapper was removed; repo-local callers should use
 `tools/packaging/scripts/pack.component.cmd` directly.
 
 The standalone debugger extension script now lives under
