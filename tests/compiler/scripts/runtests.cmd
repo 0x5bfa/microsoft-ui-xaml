@@ -3,6 +3,6 @@
 REM Copyright (c) Microsoft Corporation.
 REM Licensed under the MIT License. See LICENSE in the project root for license information.
 
-pushd UnitTests\UnitTestingBin
+pushd "%~dp0..\UnitTests\UnitTestingBin"
 mstest /testcontainer:UnitTests.dll %~1
 popd

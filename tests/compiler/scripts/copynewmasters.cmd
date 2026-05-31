@@ -4,7 +4,9 @@ REM Copyright (c) Microsoft Corporation.
 REM Licensed under the MIT License. See LICENSE in the project root for license information.
 
 SETLOCAL
-call csc "%~dp0tools\FixMasters\FixMasters.cs" /out:"%temp%\fixmasters.exe"
+pushd "%~dp0.."
+
+call csc "%~dp0..\tools\FixMasters\FixMasters.cs" /out:"%temp%\fixmasters.exe"
 if NOT %ERRORLEVEL%==0 goto failedCopy
 
 del /q /s TestMasters
@@ -103,13 +105,15 @@ if NOT %ERRORLEVEL%==0 goto failedCopy
 
 echo.
 echo Done.
-goto :EOF
+set result=0
+goto finished
 
 :failedCopy
 echo.
 @echo ERROR: Failed to copy! You may be in a half-state if some items copied and some other didn't.
 ()
-goto :EOF
+set result=1
+goto finished
 
 :copyProject
 echo ## Updating %~2 to %~1
@@ -118,3 +122,7 @@ echo.
 robocopy "%BuildOutputRoot%\%_BuildArch%%_BuildType%\tests\compiler\%~2" "TestMasters\%~1" *.g.* /XF *.g.obj /XF *.nuget.g.* /XF *.backup /s /r:0 /z /ndl
 if %ERRORLEVEL% GTR 1 goto :failedCopy
 EXIT /B 0
+
+:finished
+popd
+exit /b %result%
