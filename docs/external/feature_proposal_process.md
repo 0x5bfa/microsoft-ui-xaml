@@ -18,7 +18,7 @@ This document outlines the process for how you can propose or contribute new fea
 
 ## Process summary
 
-![Image of process summary](feature_proposal_process_summary.png)
+![Image of process summary](images/feature_proposal_process_summary.png)
 
 ## Process details
 
