@@ -46,7 +46,7 @@ There are scripts in the scripts directory to update the reference to IXP and to
 * UpdateCSWinRT (updates eng/packages/packages.config and eng\versioning\Versions.props)
 
 There is also a script in the scripts directory to update the reference to the WebView2 SDK and Edge version:
-* [UpdateWebView2](../../src/controls/WebView2/WebView2-update.md)
+* [UpdateWebView2](webview2-update.md)
     * Updates SDK reference in [src\controls\dll\packages.config](../../src/controls/dll/packages.config) and
     [eng\versioning\Versions.props](../../eng/versioning/Versions.props)
     * Updates Edge version in [packages.config](../../eng/packages/packages.config),
