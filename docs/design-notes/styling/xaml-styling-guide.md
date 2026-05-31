@@ -374,7 +374,7 @@ See [Data Binding in Depth](https://learn.microsoft.com/en-us/windows/uwp/data-b
 Microsoft.UI.Xaml.Controls.DataTemplateSelector MenuItemTemplateSelector { get; set; };
 ```
 
-[NavigationViewPageDataContext.xaml](..\..\src\controls\NavigationView\TestUI\Common\NavigationViewPageDataContext.xaml)
+[NavigationViewPageDataContext.xaml](..\..\..\tests\controls\testui\NavigationView\Common\NavigationViewPageDataContext.xaml)
 
 ```xml
 <muxcontrols:NavigationView

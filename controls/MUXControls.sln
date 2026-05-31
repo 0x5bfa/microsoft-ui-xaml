@@ -131,7 +131,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TreeView_InteractionTests",
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TreeView_TestUI", "..\tests\controls\testui\TreeView\TreeView_TestUI.shproj", "{B2C714DD-9C6B-400C-9CEF-13A2D48378BD}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NavigationView_TestUI", "..\src\controls\NavigationView\TestUI\NavigationView_TestUI.shproj", "{7EE5E585-090A-44BF-A950-80636E242327}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NavigationView_TestUI", "..\tests\controls\testui\NavigationView\NavigationView_TestUI.shproj", "{7EE5E585-090A-44BF-A950-80636E242327}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NavigationView_ApiTests", "..\src\controls\NavigationView\NavigationView_ApiTests\NavigationView_ApiTests.shproj", "{E98F3DA3-3C00-4F2E-BF3B-2D2AD9D176BC}"
 EndProject
@@ -1734,7 +1734,7 @@ Global
 		..\tests\controls\testui\MenuBar\MenuBar_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\MonochromaticOverlayPresenter\MonochromaticOverlayPresenter_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\NavigationView\NavigationView_ApiTests\NavigationView_ApiTests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\NavigationView\TestUI\NavigationView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\NavigationView\NavigationView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\NumberBox\APITests\NumberBox_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\NumberBox\NumberBox_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\PagerControl\APITests\PagerControl_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
@@ -1812,7 +1812,7 @@ Global
 		..\src\controls\ItemsView\ItemsView.vcxitems*{7b5f5ca3-084c-58a0-97da-b8c488cc3e30}*SharedItemsImports = 9
 		..\src\controls\MapControl\MapControl.vcxitems*{7c60c2ae-6abc-4762-a0ef-1f50cdd0ba1e}*SharedItemsImports = 9
 		..\tests\controls\testui\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\ScrollViewerAdapter_TestUI.projitems*{7dc019ed-239f-4a84-b623-3e377db02a70}*SharedItemsImports = 13
-		..\src\controls\NavigationView\TestUI\NavigationView_TestUI.projitems*{7ee5e585-090a-44bf-a950-80636e242327}*SharedItemsImports = 13
+		..\tests\controls\testui\NavigationView\NavigationView_TestUI.projitems*{7ee5e585-090a-44bf-a950-80636e242327}*SharedItemsImports = 13
 		..\src\controls\Common\Common.vcxitems*{80ad7f51-8997-47b9-bb41-078b81cff9b0}*SharedItemsImports = 9
 		..\src\controls\NumberBox\APITests\NumberBox_APITests.projitems*{80af98ca-bc1d-4011-8460-5671799ec419}*SharedItemsImports = 13
 		..\tests\controls\testui\Interactions\SliderInteraction\SliderInteraction_TestUI.projitems*{80f1f883-d49b-407d-9e77-c9b0e62b61a9}*SharedItemsImports = 13

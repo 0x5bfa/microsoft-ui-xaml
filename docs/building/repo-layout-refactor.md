@@ -760,6 +760,9 @@ so Acrylic and Reveal test UI stays grouped by its feature family outside
 controls source.
 ScrollPresenter TestUI now lives under `tests/controls/testui/ScrollPresenter`,
 continuing the move of control-specific test pages out of product source.
+NavigationView TestUI followed under `tests/controls/testui/NavigationView`,
+including its Common, CustomResources, Footer, Hierarchical, Regression, and
+TopMode test page groups.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
