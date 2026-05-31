@@ -61,7 +61,7 @@ type is made up of a `UIElement` in the Dxaml layer (which is exposed to public)
 (internal to Xaml). Internally, all Xaml types are children of the 
 [DependencyObject (DO)](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.dependencyobject?view=winui-3.0) 
 class at the Dxaml layer and `CDependencyObject` (CDO) at the Core layer. (More information on this can be found in 
-[Journey of a control](../control-overview.md).) These two objects are called *peers* of each other. A Dxaml object’s
+[Journey of a control](../architecture/control-overview.md).) These two objects are called *peers* of each other. A Dxaml object’s
 peer is its Core object and vice versa. The two objects cannot talk directly. The flow of instruction is always Dxaml 
 layer &rarr; Core layer. A Core layer object cannot directly talk to Dxaml layer peer.
 
