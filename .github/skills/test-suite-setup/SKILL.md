@@ -79,7 +79,7 @@ When this skill is invoked:
    | `src/compiler/**` | `Isolated.Tools.XbfGenerator` | None |
    | `src/runtime/xcp/dxaml/themes/**` | `External.Controls`, `External.Framework` | WPF |
    | `Samples/**` or sample app project drops | ScenarioTestSuite (sample app tests, separate payload) | N/A |
-   | `build/**`, `eng/**`, `packaging/**` | No functional tests needed (build/infra only) | N/A |
+   | `build/**`, `eng/**` | No functional tests needed (build/infra only) | N/A |
    | Only `.md`, `.txt`, config files | No tests needed | N/A |
 
    ### Step 3b: Dynamic discovery (for new/unknown test areas)

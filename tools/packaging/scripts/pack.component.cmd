@@ -37,7 +37,7 @@ if ERRORLEVEL 1 (
 exit /b 0
 
 :usage
-echo Builds the Microsoft.WindowsAppSDK.WinUI component nuget package into the packaging\package-store directory.
+echo Builds the Microsoft.WindowsAppSDK.WinUI component nuget package into the eng\packaging\winui\package-store directory.
 echo This only packs whatever architectures have been built and are in the packaging directory.
 echo.
 echo Requires Configuration environment variable to be set, e.g. via tools\setup\init\scripts\init.cmd

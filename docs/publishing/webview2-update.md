@@ -93,7 +93,7 @@ example, if an API was previously experimental before but is currently final, ol
      * `\tests\runtime\infra\taefhostappmanaged\TaefHostAppManaged.csproj`
        * This is the binplace logic
        * Note in this path, any terminating .0 gets dropped (ie. Use 80.0.333 rather than 8.0.333.0)
-     * `\packaging\nuspecs\Microsoft.UI.DCPP.Dependencies.Edge.nuspec`
+     * `\eng\packaging\winui\nuspecs\Microsoft.UI.DCPP.Dependencies.Edge.nuspec`
        * This points to the `mini_installer`s you will drop into the repo, to be packaged into a nuget package
    * Create directories where you will need to copy installers from the Edge Official Builds website
      * E.g.
@@ -115,7 +115,7 @@ example, if an API was previously experimental before but is currently final, ol
      * `nuget pack <.nuspec path> -OutputDirectory <repo_root>\packages`
      * Example command and output:
       ```
-      >nuget pack <repo_root>\packaging\nuspecs\Microsoft.UI.DCPP.Dependencies.Edge.nuspec -OutputDirectory <repo_root>\packages\Microsoft.UI.DCPP.Dependencies.Edge
+      >nuget pack <repo_root>\eng\packaging\winui\nuspecs\Microsoft.UI.DCPP.Dependencies.Edge.nuspec -OutputDirectory <repo_root>\packages\Microsoft.UI.DCPP.Dependencies.Edge
       
       Attempting to build package from 'Microsoft.UI.DCPP.Dependencies.Edge.nuspec'.
       Successfully created package 'C:\winui3\packages\Microsoft.UI.DCPP.Dependencies.Edge\Microsoft.UI.DCPP.Dependencies.Edge.80.0.333.nupkg'.

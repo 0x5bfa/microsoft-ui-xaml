@@ -139,14 +139,14 @@ this `nuget.config` file to the root of your app project (next to your `.csproj`
     <add key="repositoryPath" value="$\..\packages" />
   </config>
   <packageSources>
-    <add key="packagestore" value="C:\winui3\packaging\package-store" />
+    <add key="packagestore" value="C:\winui3\eng\packaging\winui\package-store" />
   </packageSources>
 </configuration>
 ```
 
-Update the path in the `packagestore` value to point to the `packaging\package-store` folder in your WinUI repo.
+Update the path in the `packagestore` value to point to the `eng\packaging\winui\package-store` folder in your WinUI repo.
 
-Adding this config does two things. First, it adds the location of the `packaging\package-store` directory from
+Adding this config does two things. First, it adds the location of the `eng\packaging\winui\package-store` directory from
 your local WinUI repo to the list of locations that nuget.exe will search for packages. This will
 allow the Visual Studio project to target this local build.
 

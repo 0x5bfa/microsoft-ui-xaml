@@ -50,7 +50,7 @@ There is also a script in the scripts directory to update the reference to the W
     * Updates SDK reference in [src\controls\dll\packages.config](../../src/controls/dll/packages.config) and
     [eng\versioning\Versions.props](../../eng/versioning/Versions.props)
     * Updates Edge version in [packages.config](../../eng/packages/packages.config),
-    [Microsoft.UI.DCPP.Dependencies.Edge.nuspec](../../packaging/nuspecs/Microsoft.UI.DCPP.Dependencies.Edge.nuspec), and
+    [Microsoft.UI.DCPP.Dependencies.Edge.nuspec](../../eng/packaging/winui/nuspecs/Microsoft.UI.DCPP.Dependencies.Edge.nuspec), and
     [TaefHostAppManaged.csproj](../../tests/runtime/infra/taefhostappmanaged/TaefHostAppManaged.csproj)
 
 ## Package sources

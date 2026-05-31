@@ -549,7 +549,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TitleBar_TestUI", "..\..\te
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TitleBar_InteractionTests", "..\..\tests\controls\interactiontests\TitleBar\TitleBar_InteractionTests.shproj", "{AEC0BAEE-7A86-4539-9E07-A5363F7B9A8C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\..\packaging\Microsoft.WinUI.csproj", "{1D6EDD7D-D380-444D-B233-3C718ABB382D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\..\eng\packaging\winui\Microsoft.WinUI.csproj", "{1D6EDD7D-D380-444D-B233-3C718ABB382D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControls.Test", "..\..\tests\controls\MUXControls.Test\MUXControls.Test.csproj", "{4D8C5D1B-F982-44A1-B744-DD0E51651BF2}"
 EndProject

@@ -26,7 +26,7 @@
             - build
               - native 
 
-  The WinUI.nuspec file in packaging\nuspecs points to this location and includes all the files in these path using a glob pattern so
+  The WinUI.nuspec file in eng\packaging\winui\nuspecs points to this location and includes all the files in these path using a glob pattern so
   that as files are added, they will automatically be picked up.
   -->
   <Target Name="_CreateWinUIPackageLayout" AfterTargets="Binplace" Condition="@(PackageContent) != ''">

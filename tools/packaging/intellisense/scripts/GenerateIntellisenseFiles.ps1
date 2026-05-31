@@ -1,7 +1,7 @@
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = "Stop"
 
-# Processes the Intellisense .xml files in packaging/intellisense/drop and generates new Intellisense
+# Processes the Intellisense .xml files in eng/packaging/winui/intellisense/drop and generates new Intellisense
 # .xml files in generated/packaging/intellisense.
 # See Intellisense.md for more information.
 
@@ -9,7 +9,7 @@ $StartTime = Get-Date
 Write-Host "Generating Intellisense XML files." -ForegroundColor Cyan
 
 $RepoRoot = Join-Path $PSScriptRoot "..\..\..\.." -Resolve
-$IntellisenseRoot = Join-Path $RepoRoot "packaging\intellisense"
+$IntellisenseRoot = Join-Path $RepoRoot "eng\packaging\winui\intellisense"
 
 $IntellisenseDir = "$IntellisenseRoot\drop"
 if ($env:Configuration -eq '')

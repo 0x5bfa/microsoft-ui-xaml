@@ -161,8 +161,8 @@ publish/
 #!**/packages/repositories.config
 # Local NuGet test feed declared in NuGet.config
 PackageStore/
-packaging/package-store/*
-!packaging/package-store/readme.md
+eng/packaging/winui/package-store/*
+!eng/packaging/winui/package-store/README.md
 !tests/runtime/packages/
 !tests/runtime/packages/edge/
 tests/runtime/packages/edge/**

@@ -1,7 +1,7 @@
 [CmdLetBinding()]
 Param(
     [string]$BuildBinDir =  $(Resolve-Path "$PSScriptRoot\..\..\..\..\..\..\BuildOutput\bin"),
-    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..\..\..\packaging\package-store"),
+    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..\..\..\eng\packaging\winui\package-store"),
     [string]$VersionOverride
 )
 
