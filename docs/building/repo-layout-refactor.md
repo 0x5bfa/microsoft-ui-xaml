@@ -776,6 +776,9 @@ Controls API test shared projects are moving under `tests/controls/apitests`.
 The first batch moved AnnotatedScrollBar, AutoSuggestBox, Breadcrumb,
 ColorPicker, ComboBox, ImageIcon, InfoBadge, ItemContainer, MapControl, and
 NumberBox API tests there so `src/controls` can stay focused on control source.
+CommandBarFlyout, IconSource, ItemsView, LayoutPanel, PagerControl,
+ParallaxView, PersonPicture, PipsPager, ProgressBar, and ProgressRing API tests
+followed in the next batch.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
