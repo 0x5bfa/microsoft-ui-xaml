@@ -116,8 +116,8 @@ compiler-specific tools and solutions.
 
 The WinUI controls implementation now lives under `/src/controls`. Controls
 IDL inputs live under `/src/controls/idl`. Controls solution and build-support
-entry points live under `/src/controls/solutions` and `/eng/controls`, and refer to
-the source tree through `$(MUXControlsSourceRoot)`.
+entry points live under `/src/controls` and `/eng/controls`, and refer to the
+source tree through `$(MUXControlsSourceRoot)`.
 
 The Microsoft.UI.Xaml.dll runtime implementation now lives under
 `/src/runtime/xcp`, with runtime solution entry points and phone-specific source

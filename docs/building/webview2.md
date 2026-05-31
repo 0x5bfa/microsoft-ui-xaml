@@ -8,11 +8,11 @@
     * Only needed the first time you clone or sync to a new commit
     * Run `build` at repo root
 4. Build Controls (if not building entire WinUI repo)
-     * `msbuild <repo>\src\controls\solutions\MUXControls.slnx`
+     * `msbuild <repo>\src\controls\MUXControls.slnx`
 
 Other build options:
 * Rebuild MUXC without using incremental build:
-    * `msbuild <repo>\src\controls\solutions\MUXControls.slnx /t:Rebuild`
+    * `msbuild <repo>\src\controls\MUXControls.slnx /t:Rebuild`
 * For additional scoped builds, see the options in [tools\controls\Build\scripts\Build.cmd](../../tools/controls/Build/scripts/Build.cmd).
 
 Additional notes:

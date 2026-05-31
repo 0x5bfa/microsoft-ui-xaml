@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../../src/compiler/BuildTasks/Antlr4.Runtime/Antlr4.Runtime.shproj" />
+  <Project Path="../../src/compiler/BuildTasks/BindingPath/BindingPath.shproj" />
+  <Project Path="PathVisualizer/PathVisualizer/PathVisualizer.csproj" />
+</Solution>

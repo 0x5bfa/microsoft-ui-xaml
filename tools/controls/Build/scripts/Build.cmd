@@ -39,7 +39,7 @@ if "%EnvironmentInitialized%" == "" (
 
 if "%_targetMUXControls%" == "1" (
     call :buildMockPackage
-    call :buildSolution %reporoot%\src\controls\solutions\MUXControls.slnx /m
+    call :buildSolution %reporoot%\src\controls\MUXControls.slnx /m
 ) else if "%_targetTestRunner%" == "1" (
     call :buildMockPackage
     call :buildSolution %reporoot%\tests\controls\MUXControls.Test\MUXControls.Test.csproj /m

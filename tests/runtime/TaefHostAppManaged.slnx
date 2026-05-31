@@ -1,14 +1,13 @@
 <Solution>
   <Configurations>
-    <BuildType Name="Debug" />
-    <BuildType Name="Debug_test" />
-    <BuildType Name="Release" />
     <Platform Name="ARM64" />
+    <Platform Name="Win32" />
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="../ResourceGeneration/MUXBaselineResourcesGenerator/MUXBaselineResourcesGenerator/MUXBaselineResourcesGenerator.csproj">
+  <Project Path="infra/taefhostappmanaged/TaefHostAppManaged.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|Win32" Project="x86" />
     <Platform Solution="*|x64" Project="x64" />
     <Platform Solution="*|x86" Project="x86" />
     <Deploy />

@@ -39,7 +39,7 @@ The complete list of all package dependency lists (restore files):
 * [packages.config](../../eng/packages/packages.config)
 * packages.[arch].config ([x86](../../eng/packages/packages.x86.config), [x64](../../eng/packages/packages.x64.config), [arm64](../../eng/packages/packages.arm64.config), [arm64ec](../../eng/packages/packages.arm64ec.config))
 * [src\controls\dll\packages.config](../../src/controls/dll/packages.config) (contains reference to Microsoft.Web.WebView2)
-* [src\compiler\solutions\BuildTools.slnx](../../src/compiler/solutions/BuildTools.slnx)
+* [src\compiler\BuildTools.slnx](../../src/compiler/BuildTools.slnx)
 
 There are scripts in the scripts directory to update the reference to IXP and to CSWinRT:
 * UpdateIxp (updates eng/packages/packages*.config)
