@@ -72,7 +72,7 @@ on this technique, but generally, the WinUI repo should be built with the latest
 While the latest Windows SDK toolset is preferred, all WinUI binaries must target the downlevel limit of the
 Windows App SDK: Windows 10 1809 "Redstone 5", corresponding to NTDDI_WIN10_RS5 (0x0A000006), UAP contract v7.0,
 and Windows SDK 10.0.17763.0.  By default, all C++ Win32, C++ ABI, C++/WinRT, C#/WinRT, and IDL sources in the
-build must target these versions.  Xaml.Cpp.Targets and lightup.targets enforce this, pulling metadata only from
+build must target these versions.  Xaml.Cpp.Targets and `eng\lightup\lightup.targets` enforce this, pulling metadata only from
 %RepoRoot%\packages\Microsoft.Windows.SDK.Contracts.10.0.17763.1000\ref\netstandard2.0.
 
 ### Light-up Code
