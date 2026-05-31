@@ -331,7 +331,8 @@ that consume its shared helper headers now reference them through
 The Automation external test DLL moved there too; shared automation client
 headers are now exposed from the runtime native external test root.
 The tools external test DLL moved there next, while its custom types support
-project now lives with the runtime test tools.
+project now lives with the runtime test tools and no longer needs a tools-local
+`Directory.Build.props` shim.
 The framework external test DLL moved there next, with layout design-note test
 references updated to point at the new runtime native external test location.
 The controls external test DLL and its custom types support project moved there
