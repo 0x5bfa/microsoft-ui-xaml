@@ -74,6 +74,7 @@ Shared signing inputs live under `/eng/signing`.
 Standalone build transform assets live under `/eng/transforms`.
 Project-based restore helpers live under `/eng/restore`.
 Shared MIDL build rules live under `/eng/midl`.
+MSBuild cache configuration lives under `/eng/projectcaching`.
 
 ## /external
 This folder contains checked-in third-party dependencies. Header-only
