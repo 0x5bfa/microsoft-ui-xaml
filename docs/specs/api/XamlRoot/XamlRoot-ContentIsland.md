@@ -1,5 +1,5 @@
 <!--
-    This md file used template: api-review-process.md
+    This md file used template: ../api-review-process.md
 -->
 
 XamlRoot.ContentIsland
