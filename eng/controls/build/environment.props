@@ -5,6 +5,7 @@
     <MUXCProjectRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..'))\</MUXCProjectRoot>
     <MUXProjectRoot>$([System.IO.Path]::GetFullPath('$(MUXCProjectRoot)..\..'))\</MUXProjectRoot>
     <ProjectRoot>$(MUXProjectRoot)</ProjectRoot>
+    <TestCertificatePath Condition="'$(TestCertificatePath)' == ''">$(MUXProjectRoot)BuildOutput\certificates\WinUITest.pfx</TestCertificatePath>
     <MUXControlsSourceRoot>$(ProjectRoot)src\controls\</MUXControlsSourceRoot>
     <MUXControlsIdlRoot>$(MUXControlsSourceRoot)idl\</MUXControlsIdlRoot>
     <MUXControlsTestRoot>$(ProjectRoot)tests\controls\</MUXControlsTestRoot>

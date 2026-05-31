@@ -25,7 +25,7 @@
     <Reference Include="@(WinUIEditWinMD)" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MUXProjectRoot)build\WinUITest.pfx" />
+    <None Include="$(TestCertificatePath)" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Utilities\APITestBase.cs" />

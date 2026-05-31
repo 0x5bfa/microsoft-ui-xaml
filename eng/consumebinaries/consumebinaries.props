@@ -7,7 +7,7 @@
         <WindowsTargetPlatformVersion>$(TargetPlatformVersion)</WindowsTargetPlatformVersion>
         <WindowsTargetPlatformMinVersion>$(TargetPlatformMinVersion)</WindowsTargetPlatformMinVersion>
         <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
-        <TestCertificatePath Condition="'$(TestCertificatePath)' == ''">$(ProjectRoot)build\WinUITest.pfx</TestCertificatePath>
+        <TestCertificatePath Condition="'$(TestCertificatePath)' == ''">$(ProjectRoot)BuildOutput\certificates\WinUITest.pfx</TestCertificatePath>
         <PackageCertificateKeyFile>$(TestCertificatePath)</PackageCertificateKeyFile>
     </PropertyGroup>
 

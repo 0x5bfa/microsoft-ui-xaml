@@ -271,7 +271,7 @@ set PATH=%DOTNET_ROOT%;%DOTNET_ROOT_x86%;%PATH%
 
 call %RepoRoot%\tools\setup\init\scripts\SetupDotNetFiles.cmd %RepoRoot%
 
-powershell -ExecutionPolicy Bypass -NoProfile %RepoRoot%\tools\setup\init\scripts\GenerateTestPfx.ps1 %RepoRoot%\build\WinUITest.pfx
+powershell -ExecutionPolicy Bypass -NoProfile -File "%RepoRoot%\tools\setup\init\scripts\GenerateTestPfx.ps1" "%BuildArtifactsDir%\certificates\WinUITest.pfx"
 
 if "%EnvOnly%"=="" (
     rem For pipeline builds, submodules are checked out with authentication elsewhere

@@ -72,7 +72,7 @@ Now create a new version of the Windows App Runtime msix that includes your chan
 
 From a Developer Command Prompt:
 
-Create a self-signing certificate, using "password" in the wizard (or use the one already generated: `.\build\WinUITest.pfx`):
+Create a self-signing certificate, using "password" in the wizard (or use the one already generated: `.\BuildOutput\certificates\WinUITest.pfx`):
 
 ```shell
 MakeCert /n "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" /r /h 0 /eku "1.3.6.1.5.5.7.3.3,1.3.6.1.4.1.311.10.3.13" /sv MyTest.pvk MyTest.cer
@@ -99,7 +99,7 @@ MakeAppx pack /p Microsoft.WindowsAppRuntime.9.9.msix /d C:\stuff\winappruntime 
 Now you need to sign this package before it can be installed:
 
 ```shell
-SignTool sign /fd SHA256 /a /f <repo-root>\build\WinUITest.pfx Microsoft.WindowsAppRuntime.9.9.msix
+SignTool sign /fd SHA256 /a /f <repo-root>\BuildOutput\certificates\WinUITest.pfx Microsoft.WindowsAppRuntime.9.9.msix
 ```
 
 Before you can install this package, you will need to uninstall the currently installed copy of the WindowsAppRuntime

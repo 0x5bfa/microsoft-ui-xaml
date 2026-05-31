@@ -3,7 +3,8 @@ Param(
     [string]$PfxPath
 )
 
-$cerPath = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($PfxPath), "$([System.IO.Path]::GetFileNameWithoutExtension($PfxPath)).cer")
+$pfxDirectory = [System.IO.Path]::GetDirectoryName($PfxPath)
+$cerPath = [System.IO.Path]::Combine($pfxDirectory, "$([System.IO.Path]::GetFileNameWithoutExtension($PfxPath)).cer")
 
 $shouldGenerate = $false
 if (!(Test-Path $PfxPath) -or !(Test-Path $cerPath))
@@ -27,6 +28,10 @@ Write-Host "tools\setup\init\scripts\GenerateTestPfx.ps1: shouldGenerate=$($shou
 if($shouldGenerate)
 {
     Write-Host "Generating $PfxPath..."
+    if (![System.String]::IsNullOrEmpty($pfxDirectory))
+    {
+        [System.IO.Directory]::CreateDirectory($pfxDirectory) | Out-Null
+    }
 
     # Ensure we use the Windows PowerShell 5.1 modules, not PowerShell 7 modules.
     # The PS7 version of Microsoft.PowerShell.Security lacks the Certificate PSProvider

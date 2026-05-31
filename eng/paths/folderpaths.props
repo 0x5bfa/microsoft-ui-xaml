@@ -62,6 +62,7 @@
   <PropertyGroup>
     <ArtifactsRoot Condition="'$(ArtifactsRoot)' == ''">$(ProjectRoot)BuildOutput\</ArtifactsRoot>
     <ArtifactsBinRoot>$(ArtifactsRoot)bin\</ArtifactsBinRoot>
+    <TestCertificatePath Condition="'$(TestCertificatePath)' == ''">$(ArtifactsRoot)certificates\WinUITest.pfx</TestCertificatePath>
 
     <CurrentEnvironmentSubDir>$(MUXOutputPlatform)$(MUXOutputConfiguration)</CurrentEnvironmentSubDir>
     <ArtifactsBinDir>$(ArtifactsBinRoot)$(CurrentEnvironmentSubDir)\</ArtifactsBinDir>

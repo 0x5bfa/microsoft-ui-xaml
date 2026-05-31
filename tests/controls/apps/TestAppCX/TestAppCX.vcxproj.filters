@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="$(MUXProjectRoot)build\WinUITest.pfx" />
+    <None Include="$(TestCertificatePath)" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainPage.xaml" />
