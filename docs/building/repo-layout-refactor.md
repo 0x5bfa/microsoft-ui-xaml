@@ -750,7 +750,10 @@ from `docs/api-specs` to `docs/specs/api` so all checked-in specs share one docs
 root while preserving each spec's local image and support-file layout. Stale
 TitleBar and InfoBadge spec duplicates under `docs/design-notes` have been
 retired now that `docs/specs/TitleBar` and `docs/specs/InfoBadge` are the
-spec-owned locations.
+spec-owned locations. Asset-free standalone specs such as DispatcherShutdownMode,
+TreeView SelectionChanged, WindowsXamlManager shutdown improvements, WebView2
+custom environment, symbol enum, and TabTearOut API now live directly under
+`docs/specs`.
 
 ## Runtime path preparation
 
