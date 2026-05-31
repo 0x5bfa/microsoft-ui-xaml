@@ -113,7 +113,7 @@ respond to the various UIA queries inside the Xaml island.
 
 UIA Endpoints are a feature for stitching multiple UIA trees together across processes. Xaml uses it for WebView2, for
 example, to connect the tree of HTML controls inside the WebView2 process with the tree of Xaml controls in the Xaml
-process. See the [WebView2](#webview2) section below or the [WebView2 accessibility doc](../../src/controls/WebView2/WebView2-Accessibility.md) for more details.
+process. See the [WebView2](#webview2) section below or the [WebView2 accessibility doc](webview2-accessibility.md) for more details.
 
 When Content enables cross-process islands, UIA Endpoints will be involved in WM_GETOBJECT handling. The hwnd that receives the message is the host (i.e. the bridge and the ContentSite), while the island connected to the bridge/site will live in a different process. UIA Endpoints will be used to connect the two.
 
