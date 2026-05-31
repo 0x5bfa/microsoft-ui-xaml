@@ -26,8 +26,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5EF3865D-EFAC-4676-B1E6-FB09DD7C67FD}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		.gitattributes = .gitattributes
-		.gitignore = .gitignore
 		tools\Shell\addaliases.cmd = tools\Shell\addaliases.cmd
 		Build.cmd = Build.cmd
 		DevCmd.cmd = DevCmd.cmd
@@ -37,7 +35,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5EF3865D
 		tools\ResourceGeneration\GenerateSystemDllStringResources.ps1 = tools\ResourceGeneration\GenerateSystemDllStringResources.ps1
 		tools\ResourceGeneration\GenerateVisualVerificationUpdates.ps1 = tools\ResourceGeneration\GenerateVisualVerificationUpdates.ps1
 		tools\Packaging\MakeAppxHelper.cmd = tools\Packaging\MakeAppxHelper.cmd
-		nuget.config = nuget.config
 		tools\Common\NugetWrapper.cmd = tools\Common\NugetWrapper.cmd
 		tools\Common\PowershellWrapper.cmd = tools\Common\PowershellWrapper.cmd
 		tools\Shell\ps.bat = tools\Shell\ps.bat
@@ -197,18 +194,6 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollViewerAdapter_InteractionTests", "..\src\controls\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\InteractionTests\ScrollViewerAdapter_InteractionTests.shproj", "{79863454-1DBF-45BB-B3D3-420B8F5E8705}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IconSource", "IconSource", "{E220EFAB-BA88-458D-A271-279B6630E864}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowsPorting", "WindowsPorting", "{EE9F64DF-7F2B-45F0-82AA-F0DFF577AB82}"
-	ProjectSection(SolutionItems) = preProject
-		tools\WindowsPorting\Cleanup.cmd = tools\WindowsPorting\Cleanup.cmd
-		tools\WindowsPorting\PerformMUXControlsPort.cmd = tools\WindowsPorting\PerformMUXControlsPort.cmd
-		tools\WindowsPorting\PkgGenOS.cmd = tools\WindowsPorting\PkgGenOS.cmd
-		tools\WindowsPorting\PublishSources.cmd = tools\WindowsPorting\PublishSources.cmd
-		tools\WindowsPorting\PublishSourcesWrapper.cmd = tools\WindowsPorting\PublishSourcesWrapper.cmd
-		tools\WindowsPorting\SetParentVariables.cmd = tools\WindowsPorting\SetParentVariables.cmd
-		tools\WindowsPorting\SetSyncToWindowsVariables.cmd = tools\WindowsPorting\SetSyncToWindowsVariables.cmd
-		tools\WindowsPorting\SetSyncToWindowsVariablesWrapper.cmd = tools\WindowsPorting\SetSyncToWindowsVariablesWrapper.cmd
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TwoPaneView", "TwoPaneView", "{8211954E-FE33-469C-87C7-9C863ACE1759}"
 EndProject
@@ -590,9 +575,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IXMPTestApp", "test\apps\IX
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemContainer", "ItemContainer", "{D09DF5FE-A24C-4B42-91CE-DBFF3F70A032}"
-	ProjectSection(SolutionItems) = preProject
-		ItemContainerAutomationPeer.h = ItemContainerAutomationPeer.h
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemsView", "ItemsView", "{7AC13192-2E7C-4240-A02E-7D7C28DB5886}"
 EndProject
