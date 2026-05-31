@@ -928,7 +928,7 @@ Developer-facing markdown now lives under purpose-named folders below `docs`.
 Build/setup workflows live under `docs/building`, test and validation workflows
 under `docs/testing`, debugging and telemetry notes under `docs/debugging`,
 release and Windows App SDK integration notes under `docs/publishing`, and
-contributor-facing guidance under `docs/external`. Design-oriented architecture
+contributor-facing guidance under `docs/community`. Design-oriented architecture
 notes live under `docs/design-notes`, grouped by feature or runtime area.
 Control-specific design notes that used to sit beside control source now live
 under `docs/design-notes/controls`, keeping implementation folders focused on
