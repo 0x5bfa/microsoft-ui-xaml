@@ -17,6 +17,8 @@ if(!$Platform)
 
 Write-Host "TestPass-OneTimeMachineSetup.ps1"
 
+$payloadRoot = if ($env:HELIX_CORRELATION_PAYLOAD) { $env:HELIX_CORRELATION_PAYLOAD } else { (Get-Location).Path }
+
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WinUI\XAML /v UsePrivateHeap /t REG_DWORD /d 1 /f /reg:32
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WinUI\XAML /v UsePrivateHeap /t REG_DWORD /d 1 /f /reg:64
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WinUI\XAML /v ErrorLogDirectory /t REG_SZ /d C:\ProductErrorLogs /f /reg:32
@@ -29,7 +31,7 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WinUI\XAML /v EnableUWPWindow /t R
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WinUI\XAML /v EnableUWPWindow /t REG_DWORD /d 1 /f /reg:64
 
 # We'll extract the signing certificates from each test app we need to install and add them as trusted certificates.
-foreach ($testAppInstaller in (Get-ChildItem $PSScriptRoot\* -Recurse -Include "*.appx", "*.appxbundle", "*.msix", "*.msixbundle"))
+foreach ($testAppInstaller in (Get-ChildItem $payloadRoot\* -Recurse -Include "*.appx", "*.appxbundle", "*.msix", "*.msixbundle"))
 {
     [System.IO.FileSystemInfo]$testAppInstaller = $testAppInstaller
 
@@ -42,9 +44,6 @@ foreach ($testAppInstaller in (Get-ChildItem $PSScriptRoot\* -Recurse -Include "
 
     Remove-Item $certificatePath
 }
-
-$scriptDirectory = $script:MyInvocation.MyCommand.Path | Split-Path -Parent
-
 
 Write-Host "Install dotnet runtime"
 .\dotnet-windowsdesktop-runtime-installer.exe /quiet /install /norestart /log dotnetinstalllog.txt |Out-Null

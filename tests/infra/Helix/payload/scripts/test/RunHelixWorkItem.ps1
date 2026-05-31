@@ -97,7 +97,7 @@ function Run-Taef
 {
     param ([string] $taefAdditionalParams)
 
-    .\TestPass-EnsureMachineStateCore.ps1
+    & (Join-Path $PSScriptRoot "TestPass-EnsureMachineStateCore.ps1")
     Wiggle-Mouse
 
     $teCommand = "te.exe $testBinaries /enablewttlogging /enableEtwLogging /unicodeOutput:false /testtimeout:0:05 /p:DisableErrorHandling /screenCaptureOnError $taefParameters $taefAdditionalParams"
@@ -128,13 +128,13 @@ function Copy-Screenshots
 Write-Host "WorkItemSetupStartTime: $(Get-Date)"
 
 Write-Host "Run Setup If Needed"
-.\RunSetupIfNeeded.ps1
+& (Join-Path $PSScriptRoot "RunSetupIfNeeded.ps1")
 
 # Dump a list of installed AppxPackages to a text file. This can be useful for debugging purposes.
 Write-Host "(Skipping Get-AppxPackge dump to save time)"
 #Get-AppxPackage | Out-File -FilePath (Join-Path $env:HELIX_WORKITEM_UPLOAD_ROOT "appxpackages.txt" )
 
-.\TestPass-PreRunCore.ps1
+& (Join-Path $PSScriptRoot "TestPass-PreRunCore.ps1")
 
 Write-Host "WorkItemTestStartTime: $(Get-Date)"
 
@@ -149,7 +149,7 @@ Copy-Screenshots
 Copy-IfExists .\*.pgc $env:HELIX_WORKITEM_UPLOAD_ROOT
 Copy-MasterFiles
 
-Add-Type -Language CSharp -ReferencedAssemblies System.Xml,System.Xml.Linq,System.Runtime.Serialization,System.Runtime.Serialization.Json (Get-Content .\HelixTestHelpers.cs -Raw)
+Add-Type -Language CSharp -ReferencedAssemblies System.Xml,System.Xml.Linq,System.Runtime.Serialization,System.Runtime.Serialization.Json (Get-Content (Join-Path $PSScriptRoot "HelixTestHelpers.cs") -Raw)
 
 $failedTestQuery = [HelixTestHelpers.FailedTestDetector]::GetFailedTestQuery((Join-Path (Get-Location) "te_original.wtl"))
 Write-Host "failedTestQuery = $failedTestQuery"
@@ -191,11 +191,11 @@ if ($failedTestQuery -and $rerunFailed)
     Write-Host "WorkItemTestLoopEndTime: $(Get-Date)"
 }
 
-.\ConvertWttLogToXUnit.ps1 te_original.wtl te_rerun.wtl te_rerun_multiple.wtl te_rerun_more.wtl testResults.xml $testnameprefix
+& (Join-Path $PSScriptRoot "ConvertWttLogToXUnit.ps1") te_original.wtl te_rerun.wtl te_rerun_multiple.wtl te_rerun_more.wtl testResults.xml $testnameprefix
 
 Copy-Item .\*_subresults.json $env:HELIX_WORKITEM_UPLOAD_ROOT -Force
 
-.\TestPass-PostRunCore.ps1
+& (Join-Path $PSScriptRoot "TestPass-PostRunCore.ps1")
 
 # Display testResults.xml
 Get-Content .\testResults.xml

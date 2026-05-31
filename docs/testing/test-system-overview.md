@@ -60,7 +60,7 @@ When the Pipeline runs, the following takes place.
 4. We discover the tests from the build and generate the HelixWorkItems. This is done by [**GenerateWinUIHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/GenerateWinUIHelixWorkItems.ps1).
 5. The TestPayload and the work items xml is published to the Pipeline as an artifact.
 6. We execute batches of the test work items in parallel on agent VMs that are running the version of Windows that we want to target. We execute [**RunTestPassSliceOnBuildAgent.ps1**](../../tests/infra/Helix/common/pipeline/scripts/RunTestPassSliceOnBuildAgent.ps1) on these test machines.
-7. Test machine setup ([**testmachine-prerun.cmd**](../../tests/infra/payload/scripts/runtime/testmachine-prerun.cmd))
+7. Test machine setup ([**scripts\runtime\testmachine-prerun.cmd**](../../tests/infra/payload/scripts/runtime/testmachine-prerun.cmd))
 8. Failing tests are re-tried as needed
 9. Test results are published to the Pipeline.
 10. In the case of failing or unreliable tests, we upload supporting files to the HelixTestOutput artifact.
@@ -79,9 +79,9 @@ Here's how the pipelines and scripts are organized to do this work:
     * Runs 20 agents in parallel.  On each agent, we:
       * Download artifacts
       * Call **RunTestPassSliceOnBuildAgent.ps1**
-        * Executes **testmachine-prerun.cmd**
+        * Executes **scripts\runtime\testmachine-prerun.cmd**
         * Read proj file that describes test command to run for this agent (created earlier by **pipeline/scripts/GenerateHelixWorkItems.ps1**)
-        * Each test command calls **RunHelixWorkItem.ps1**
+        * Each test command calls **scripts\helix\test\RunHelixWorkItem.cmd**
           * Run the test command (a TAEF query that runs multiple tests)
           * For each failed test, re-run once.  If the re-run failed, run the test 9x in a loop.          
       * PublishTestResults
@@ -130,11 +130,12 @@ The values for this property can be any string. All test methods with the same v
 for example, you could split a test class into suites "A", "B" and "C".
 
 You can see the generated Helix Work Items by examining the build artifact 'HelixWorkItems'. 
-Each work item executes [`RunHelixWorkItem.cmd`](../../tests/infra/Helix/payload/scripts/test/RunHelixWorkItem.cmd) with a set of arguments.
+Each work item executes `scripts\helix\test\RunHelixWorkItem.cmd` with a set of arguments. The source lives at
+[`RunHelixWorkItem.cmd`](../../tests/infra/Helix/payload/scripts/test/RunHelixWorkItem.cmd).
 
 ### Machine setup: testmachine-prerun.cmd
 
-[**testmachine-prerun.cmd**](../../tests/infra/payload/scripts/runtime/testmachine-prerun.cmd) is a one-time script that needs to be run on the
+[**scripts\runtime\testmachine-prerun.cmd**](../../tests/infra/payload/scripts/runtime/testmachine-prerun.cmd) is a one-time script that needs to be run on the
 test machines. It configures the machines as needed and installs any required components. Most of the logic is contained 
 in these scripts:  
 * [TestPass-OneTimeMachineSetupCore.ps1](../../tests/infra/Helix/payload/scripts/test/TestPass-OneTimeMachineSetupCore.ps1)

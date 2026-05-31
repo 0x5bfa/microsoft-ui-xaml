@@ -1,1 +1,1 @@
-@powershell -NonInteractive -NoProfile -ExecutionPolicy Bypass %~d0%~p0\runtests.ps1 %*
+@powershell -NonInteractive -NoProfile -ExecutionPolicy Bypass -File "%~dp0runtests.ps1" %*

@@ -9,10 +9,10 @@ Here's how you can repro the test failures, given a link to a pipeline:
 2. Extract the zip on your test machine.You can often use your dev machine for this, but for some tests it's most reliable to
 use a VM with resolution 1024x768.
 
-3. In an admin cmd prompt on your test machine, navigate to testpayload\x86chk, and run "testmachine-prerun.cmd".  (Note
+3. In an admin cmd prompt on your test machine, navigate to testpayload\x86chk, and run "scripts\runtime\testmachine-prerun.cmd".  (Note
    you may see some failures here due to packages being in use or already installed, those are generally ignorable)
 
-4. Run your test by running "runtests <testname>".  If the failing test starts with "WPF-", use the "-wpfMode" switch.
+4. Run your test by running "scripts\runtime\runtests <testname>".  If the failing test starts with "WPF-", use the "-wpfMode" switch.
    Wildcards like * are honored for "testname", it's just a wrapper for TAEF's te.exe.
 
 If the test app crashes, the dmp will be in c:\dumps.

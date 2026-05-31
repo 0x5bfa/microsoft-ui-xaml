@@ -134,7 +134,7 @@ When this skill is invoked:
    - `MUXControls.Test.dll`, `UnitTests.dll` → None
    - Unknown → ask user or try without hosting mode
 
-5. **Run the selected tests** using te.exe directly for specific DLLs (more precise than runtests.cmd):
+5. **Run the selected tests** using te.exe directly for specific DLLs (more precise than scripts\runtime\runtests.cmd):
 
    ```powershell
    cd <repo-root>\TestPayload\x64chk
@@ -151,14 +151,14 @@ When this skill is invoked:
    # For multiple DLLs at once:
    .\te.exe Test\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging.dll Test\Microsoft.UI.Xaml.Tests.External.Foundation.dll /p:SkipConsoleWindowMinimize
 
-   # Using runtests.cmd with wildcard (runs across all DLLs):
-   .\runtests.cmd *AnimatedImage* -HostingMode:WPF
+   # Using scripts\runtime\runtests.cmd with wildcard (runs across all DLLs):
+   .\scripts\runtime\runtests.cmd *AnimatedImage* -HostingMode:WPF
 
    # For ALL tests — run each hosting mode separately:
-   .\runtests.cmd * -HostingMode:UAP
-   .\runtests.cmd * -HostingMode:WPF
-   .\runtests.cmd * -HostingMode:Win32Explicit
-   .\runtests.cmd * -HostingMode:None
+   .\scripts\runtime\runtests.cmd * -HostingMode:UAP
+   .\scripts\runtime\runtests.cmd * -HostingMode:WPF
+   .\scripts\runtime\runtests.cmd * -HostingMode:Win32Explicit
+   .\scripts\runtime\runtests.cmd * -HostingMode:None
    ```
 
 6. **After tests complete**, provide a detailed results summary. Parse the TAEF output and present:
@@ -252,7 +252,7 @@ and kills processes known to interfere with tests.
 ```powershell
 # Open an ADMIN PowerShell prompt, then:
 cd <repo-root>\TestPayload\x64chk
-.\testmachine-prerun.cmd
+.\scripts\runtime\testmachine-prerun.cmd
 ```
 
 **What it does:**
@@ -283,7 +283,7 @@ cd <repo-root>\TestPayload\x64chk
 
 ## Step 7: Run All Tests
 
-From the TestPayload directory, use `runtests.cmd` to run tests. Tests use the TAEF (te.exe) framework.
+From the TestPayload directory, use `scripts\runtime\runtests.cmd` to run tests. Tests use the TAEF (te.exe) framework.
 
 ### Run ALL tests (all hosting modes):
 
@@ -293,54 +293,54 @@ WinUI tests run in different hosting modes (UAP, WPF, Win32Explicit). You need t
 cd <repo-root>\TestPayload\x64chk
 
 # Run all UAP-hosted tests (native C++ tests):
-.\runtests.cmd * -HostingMode:UAP
+.\scripts\runtime\runtests.cmd * -HostingMode:UAP
 
 # Run all WPF-hosted tests (native + managed C# tests):
-.\runtests.cmd * -HostingMode:WPF
+.\scripts\runtime\runtests.cmd * -HostingMode:WPF
 
 # Run all Win32Explicit-hosted tests:
-.\runtests.cmd * -HostingMode:Win32Explicit
+.\scripts\runtime\runtests.cmd * -HostingMode:Win32Explicit
 
 # Run tests with no hosting mode (unit tests, app tests):
-.\runtests.cmd * -HostingMode:None
+.\scripts\runtime\runtests.cmd * -HostingMode:None
 ```
 
 ### Run a specific test or subset:
 
 ```powershell
 # Run tests matching a name pattern:
-.\runtests.cmd *CommandBar*
+.\scripts\runtime\runtests.cmd *CommandBar*
 
 # Run a specific test class:
-.\runtests.cmd *CommandBarAutomationIntegrationTests*
+.\scripts\runtime\runtests.cmd *CommandBarAutomationIntegrationTests*
 
 # Run with WPF hosting:
-.\runtests.cmd *MenuFlyout* -HostingMode:WPF
+.\scripts\runtime\runtests.cmd *MenuFlyout* -HostingMode:WPF
 ```
 
 ### Useful flags:
 
 ```powershell
 # See test statistics without running:
-.\runtests.cmd * -Stat
+.\scripts\runtime\runtests.cmd * -Stat
 
 # List tests without running them:
-.\runtests.cmd *CommandBar* /list
+.\scripts\runtime\runtests.cmd *CommandBar* /list
 
 # Wait for debugger attachment:
-.\runtests.cmd *MyTest* -WaitForDebugger
+.\scripts\runtime\runtests.cmd *MyTest* -WaitForDebugger
 
 # Run including disabled/ignored tests:
-.\runtests.cmd *MyTest* -RunIgnoredTests
+.\scripts\runtime\runtests.cmd *MyTest* -RunIgnoredTests
 
 # Run tests in a loop (for reliability testing):
-.\runtests.cmd *MyTest* -RunTestsInALoop
+.\scripts\runtime\runtests.cmd *MyTest* -RunTestsInALoop
 
 # Stop on first failure:
-.\runtests.cmd *MyTest* -TerminateOnFirstFailure
+.\scripts\runtime\runtests.cmd *MyTest* -TerminateOnFirstFailure
 
 # Slow down test execution to watch it:
-.\runtests.cmd *MyTest* /p:GoSlow
+.\scripts\runtime\runtests.cmd *MyTest* /p:GoSlow
 ```
 
 ### Using te.exe directly (advanced):
@@ -393,7 +393,7 @@ Write-Host "=== Step 3: Creating test payload ===" -ForegroundColor Cyan
 # --- Step 4: Machine Setup ---
 Write-Host "=== Step 4: One-time machine setup ===" -ForegroundColor Cyan
 Push-Location "$repoRoot\TestPayload\$flavor"
-.\testmachine-prerun.cmd
+.\scripts\runtime\testmachine-prerun.cmd
 
 # --- Step 5: Install runtimes if present ---
 Write-Host "=== Step 5: Installing runtimes ===" -ForegroundColor Cyan
@@ -409,19 +409,19 @@ Write-Host "=== Step 6: Running all tests ===" -ForegroundColor Cyan
 
 # Run UAP tests
 Write-Host "--- Running UAP tests ---" -ForegroundColor Yellow
-.\runtests.cmd * -HostingMode:UAP
+.\scripts\runtime\runtests.cmd * -HostingMode:UAP
 
 # Run WPF tests
 Write-Host "--- Running WPF tests ---" -ForegroundColor Yellow
-.\runtests.cmd * -HostingMode:WPF
+.\scripts\runtime\runtests.cmd * -HostingMode:WPF
 
 # Run Win32Explicit tests
 Write-Host "--- Running Win32Explicit tests ---" -ForegroundColor Yellow
-.\runtests.cmd * -HostingMode:Win32Explicit
+.\scripts\runtime\runtests.cmd * -HostingMode:Win32Explicit
 
 # Run no-hosting-mode tests (unit tests, app tests)
 Write-Host "--- Running unit/app tests ---" -ForegroundColor Yellow
-.\runtests.cmd * -HostingMode:None
+.\scripts\runtime\runtests.cmd * -HostingMode:None
 
 Pop-Location
 Write-Host "=== All tests complete ===" -ForegroundColor Green
@@ -606,10 +606,10 @@ When you need to know **what CI runs and how it runs it**, these two files are t
 
 | CI work item | Test pattern | Hosting mode | Local equivalent |
 |---|---|---|---|
-| MUXControlsInteractionTests | `MUXControls.Test.dll` | Default | `runtests.cmd MUXControls.Test.dll` |
+| MUXControlsInteractionTests | `MUXControls.Test.dll` | Default | `scripts\runtime\runtests.cmd MUXControls.Test.dll` |
 | MUXControlsApiTests | `UnpackagedApps\MUXControlsTestApp\MUXControlsTestApp.dll` | Default | run from `UnpackagedApps\MUXControlsTestApp\` |
 | IXMPTests | `IXMPTestApp.appx` | Default | run from registered loose layout |
-| MUXCoreTests | `Microsoft.UI.Xaml.Tests.External.*.dll` | UAP | `runtests.cmd ... -HostingMode:UAP` |
+| MUXCoreTests | `Microsoft.UI.Xaml.Tests.External.*.dll` | UAP | `scripts\runtime\runtests.cmd ... -HostingMode:UAP` |
 | MUXCoreTests-WPF | same | WPF | `-HostingMode:WPF` |
 | **MUXCoreManagedTests-WPF** | `Microsoft.UI.Xaml.Tests.Managed.*.dll` | **WPF** | **`te.exe ... /p:HostingMode=WPF`** |
 | MUXCoreTests-Win32Explicit | `Microsoft.UI.Xaml.Tests.External.*.dll` | Win32Explicit | `-HostingMode:Win32Explicit` |
@@ -705,7 +705,7 @@ Then recreate the payload:
 
 ### Machine Setup Errors
 
-#### `testmachine-prerun.cmd` fails with access denied
+#### `scripts\runtime\testmachine-prerun.cmd` fails with access denied
 **Symptom:** Registry operations or AppX installs fail with permission errors.
 
 **Fix:** Must run from an **elevated (admin)** PowerShell or cmd prompt.
@@ -737,7 +737,7 @@ Then recreate the payload:
 
 **Fix:** Run managed tests with WPF hosting:
 ```powershell
-.\runtests.cmd *ManagedTestName* -HostingMode:WPF
+.\scripts\runtime\runtests.cmd *ManagedTestName* -HostingMode:WPF
 ```
 
 #### `COM_END WindowHelper::VerifyTestCleanup: Error: Caught Platform::Exception^: Unspecified error`
@@ -750,25 +750,25 @@ Then recreate the payload:
 #### Tests fail to find test DLLs
 **Symptom:** `te.exe` reports it cannot find test binaries.
 
-**Root Cause:** Running runtests.cmd from the wrong directory.
+**Root Cause:** Running scripts\runtime\runtests.cmd from the wrong directory.
 
 **Fix:** You must `cd` into the TestPayload directory first:
 ```powershell
 cd <repo-root>\TestPayload\x64chk
-.\runtests.cmd *MyTest*
+.\scripts\runtime\runtests.cmd *MyTest*
 ```
 
 #### Query matched tests requiring conflicting HostingModes
-**Symptom:** runtests.cmd auto-detection fails because the query matches tests in multiple hosting modes.
+**Symptom:** scripts\runtime\runtests.cmd auto-detection fails because the query matches tests in multiple hosting modes.
 
 **Root Cause:** A broad wildcard (e.g., `*`) matches tests that require different hosting modes, and the script can only run one mode at a time.
 
 **Fix:** Explicitly specify the hosting mode:
 ```powershell
-.\runtests.cmd * -HostingMode:UAP
-.\runtests.cmd * -HostingMode:WPF
-.\runtests.cmd * -HostingMode:Win32Explicit
-.\runtests.cmd * -HostingMode:None
+.\scripts\runtime\runtests.cmd * -HostingMode:UAP
+.\scripts\runtime\runtests.cmd * -HostingMode:WPF
+.\scripts\runtime\runtests.cmd * -HostingMode:Win32Explicit
+.\scripts\runtime\runtests.cmd * -HostingMode:None
 ```
 
 ### Init / Build Errors

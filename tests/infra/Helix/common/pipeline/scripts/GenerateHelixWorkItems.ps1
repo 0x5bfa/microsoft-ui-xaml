@@ -329,7 +329,7 @@ function Add-HelixWorkItemToOutputImpl
 
     <HelixWorkItem Include="$($workItemName)" >
         <Timeout>$TestTimeout</Timeout>
-        <Command>call %HELIX_CORRELATION_PAYLOAD%\RunHelixWorkItem.cmd $commandArgs</Command>
+        <Command>call "%HELIX_CORRELATION_PAYLOAD%\scripts\helix\test\RunHelixWorkItem.cmd" $commandArgs</Command>
         <PreCommands>set testnameprefix=$($TestNamePrefix)</PreCommands>
     </HelixWorkItem>
 "@

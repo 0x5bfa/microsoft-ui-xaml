@@ -85,7 +85,7 @@ function get-tests {
     Write-Output -NoEnumerate $testlist
 }
 
-$TestDir = $PSScriptRoot
+$TestDir = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 
 Push-Location $TestDir
 Set-Location $TestDir

@@ -6,7 +6,7 @@ $helixCorrelationPath = $env:HELIX_CORRELATION_PAYLOAD
 $markerfile = Join-Path $helixCorrelationPath "setupcomplete.txt"
 if(!(Test-Path($markerfile)))
 {
-    .\TestPass-OneTimeMachineSetupCore.ps1
+    & (Join-Path $PSScriptRoot "TestPass-OneTimeMachineSetupCore.ps1")
     Set-Content $markerfile "done" 
 }
 else

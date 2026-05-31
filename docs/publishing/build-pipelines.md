@@ -106,7 +106,7 @@ Runs runtime tests: unit tests, API tests, and interaction tests. Can also be us
 if ScenarioTestSuite is passed in as the test suite.
 
 To run tests from this stage locally locally, you can use tests\infra\payload\scripts\CreateTestPayload.cmd to generate a test payload directory, and then either
-locally or on a VM, run testmachine-prerun.cmd once and then use runtests.cmd thereafter to specify what tests to run.
+locally or on a VM, run scripts\runtime\testmachine-prerun.cmd once and then use scripts\runtime\runtests.cmd thereafter to specify what tests to run.
 Microsoft.UI.Xaml.Controls.dll tests can also be run by opening controls\MUXControls.sln in Visual Studio, building within Visual Studio,
 and then selecting the tests to run via Test Explorer.
 

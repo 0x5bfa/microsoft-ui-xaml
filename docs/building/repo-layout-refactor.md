@@ -69,10 +69,11 @@ wrapper now lives beside the shared generator under
 under `tests/infra/Helix/common/pipeline/scripts`. Copied payload runtime commands
 live under `tests/infra/payload/scripts/runtime` and
 `tests/infra/Helix/payload/scripts/commands`. The Helix test-runner payload assets are
-grouped under `tests/infra/Helix/payload/scripts/test` and are still copied to
-the payload root when constructing `TestPayload`. GitHub agent skill metadata
-now references these paths directly instead of the removed root wrappers and
-legacy `dxaml/test` layout.
+grouped under `tests/infra/Helix/payload/scripts/test`. When constructing
+`TestPayload`, these files stay under `scripts\runtime`,
+`scripts\helix\commands`, and `scripts\helix\test` instead of being flattened
+to the payload root. GitHub agent skill metadata now references these paths
+directly instead of the removed root wrappers and legacy `dxaml/test` layout.
 
 ## Runtime test tools
 
@@ -206,8 +207,9 @@ and the WinUI Gallery test-data generator lives under
 ## Sample test automation
 
 Sample test orchestration tools now live under `tests/samples/scripts`. The
-test payload still publishes them to the payload root, but their source location
-now matches their role as test assets rather than sample applications.
+test payload publishes them under `scripts\samples`, so their source and
+generated-payload locations both match their role as test assets rather than
+sample applications.
 
 ## Initialization scripts
 

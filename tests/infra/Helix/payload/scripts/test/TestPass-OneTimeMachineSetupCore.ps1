@@ -21,7 +21,7 @@ Write-Host "Platform = $Platform"
 # Displaying progress is unnecessary and is just distracting.
 $ProgressPreference = "SilentlyContinue"
 
-$scriptDirectory = $script:MyInvocation.MyCommand.Path | Split-Path -Parent
+$payloadRoot = if ($env:HELIX_CORRELATION_PAYLOAD) { $env:HELIX_CORRELATION_PAYLOAD } else { (Get-Location).Path }
 
 
 reg add HKLM\Software\Policies\Microsoft\Windows\Appx /v AllowDevelopmentWithoutDevLicense /t REG_DWORD /d 1 /f
@@ -42,7 +42,7 @@ else
 }
 
 # Add this test directory as an exclusion for Windows Defender
-Add-MpPreference -ExclusionPath $scriptDirectory
+Add-MpPreference -ExclusionPath $payloadRoot
 Get-MpPreference
 Get-MpComputerStatus
 
@@ -158,7 +158,9 @@ function Enable-CrashDumpsForProcesses {
 Enable-CrashDumpsForProcesses @("te.exe", "te.processhost.exe")
 
 
-if(Test-Path TestPass-OneTimeMachineSetup.ps1)
+$oneTimeMachineSetupScript = Join-Path $payloadRoot "scripts\helix\commands\TestPass-OneTimeMachineSetup.ps1"
+
+if(Test-Path $oneTimeMachineSetupScript)
 {
-    & ./TestPass-OneTimeMachineSetup.ps1
+    & $oneTimeMachineSetupScript
 }
