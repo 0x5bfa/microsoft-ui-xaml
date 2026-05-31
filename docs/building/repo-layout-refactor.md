@@ -535,6 +535,9 @@ In-repo XAML compiler consumption props and targets now live under
 WinRT class registration targets now live under `eng/winrtclassregistration`,
 keeping metadata-driven package registration generation in its own build bucket.
 
+External binary selection targets now live under `eng/externalbinaries`, keeping
+package payload selection rules separate from root-level build entry points.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
