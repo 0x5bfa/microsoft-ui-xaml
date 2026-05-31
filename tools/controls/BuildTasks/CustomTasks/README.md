@@ -7,7 +7,7 @@ _Assuming your repo is in D:\microsoft-ui-xaml-lift_
 Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. Edit these :
 
       1. src/controls/dll/packages.config
-      2. tools/controls/BuildTasks/CustomTasks/NuSpecs/MUXCustomBuildTasks.nuspec
+      2. tools/controls/BuildTasks/packaging/MUXCustomBuildTasks/MUXCustomBuildTasks.nuspec
       3. tools/controls/BuildTasks/CustomTasks/Properties/AssemblyInfo.cs (2 places)
       4. eng/packages/packages.config
       and increment their build version from "1.0.80" to "1.0.81" for instance.
@@ -16,7 +16,7 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
   - Under `tools\controls`, run `MSBuild.exe solutions\CustomTasks.sln /restore /p:Configuration=Release /p:Platform="Any CPU"`
   -  If you get build errors, open the CustomTasks.sln solution in Visual Studio and make sure the latest dependent nugets are installed.
 
-- Under `tools\controls\BuildTasks\CustomTasks\NuSpecs`, run `BuildNupkg.cmd` which does this:
+- Under `tools\controls\BuildTasks\packaging\MUXCustomBuildTasks`, run `scripts\BuildNupkg.cmd` which does this:
       nuget pack MUXCustomBuildTasks.nuspec -OutputDirectory .
 
 - >In most cases, you will want to test changes to MUXCustomBuildTasks locally before pushing.
@@ -24,11 +24,11 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
    This means you only need to actually publish the package when you are satisfied that everything is correct
    For actual publishing, follow this :
 
-   Under `tools\controls\BuildTasks\CustomTasks\NuSpecs`, run `PublishNupkg.cmd`
+   Under `tools\controls\BuildTasks\packaging\MUXCustomBuildTasks`, run `scripts\PublishNupkg.cmd`
       You should get this kind of result:
 
-      Candidate nuget package: D:\microsoft-ui-xaml-lift\tools\controls\BuildTasks\CustomTasks\NuSpecs\MUXCustomBuildTasks.1.0.81-winui3.nupkg
-      nuget push D:\microsoft-ui-xaml-lift\tools\controls\BuildTasks\CustomTasks\NuSpecs\MUXCustomBuildTasks.1.0.81-winui3.nupkg -Source WinUI.Dependencies -apikey AzureDevOps
+      Candidate nuget package: D:\microsoft-ui-xaml-lift\tools\controls\BuildTasks\packaging\MUXCustomBuildTasks\MUXCustomBuildTasks.1.0.81-winui3.nupkg
+      nuget push D:\microsoft-ui-xaml-lift\tools\controls\BuildTasks\packaging\MUXCustomBuildTasks\MUXCustomBuildTasks.1.0.81-winui3.nupkg -Source WinUI.Dependencies -apikey AzureDevOps
       Pushing MUXCustomBuildTasks.1.0.81-winui3.nupkg to 'https://microsoft.pkgs.visualstudio.com/_packaging/1103ce32-f206-4cab-b967-dcc556dacd13/nuget/v2/'...
             PUT https://microsoft.pkgs.visualstudio.com/_packaging/1103ce32-f206-4cab-b967-dcc556dacd13/nuget/v2/
       MSBuild auto-detection: using msbuild version '16.4.0.56107' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin'.
@@ -38,12 +38,12 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
       (DevOps Activity ID: CD1C8317-38A9-4A55-AC3B-1C3A4EE0F86B))., start from the first step and increment the version one more time, because there is no way
       to forcefully overwrite an existing published version.
 
-- Under `tools\controls\BuildTasks\CustomTasks\NuSpecs`, run `UpdateReferences.cmd`
+- Under `tools\controls\BuildTasks\packaging\MUXCustomBuildTasks`, run `scripts\UpdateReferences.cmd`
       If you get an error :
         ```
         Exception calling "ReadAllText" with "1" argument(s): "Could not find file
         'D:\microsoft-ui-xaml-lift\src\metadata\MergedWinMD\MergedWinMD.targets'."
-        At D:\microsoft-ui-xaml-lift\tools\controls\BuildTasks\CustomTasks\NuSpecs\scripts\UpdateReferences.ps1:61 char:5
+        At D:\microsoft-ui-xaml-lift\tools\controls\BuildTasks\packaging\MUXCustomBuildTasks\scripts\UpdateReferences.ps1:61 char:5
         +     $fileContents = [System.IO.File]::ReadAllText($filePath)
         +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException

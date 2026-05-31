@@ -37,7 +37,8 @@ entry points under `/tools/setup/init/scripts`, one-time bootstrap under
 `/tools/setup/bootstrap/scripts`, and the Visual Studio developer shell under
 `/tools/setup/shell/scripts`.
 Controls build machine maintenance helpers live under `/tools/controls/BuildMachine/scripts`.
-Controls custom MSBuild task sources, targets, and solution live under `/tools/controls/BuildTasks`.
+Controls custom MSBuild task sources, package inputs, targets, and solution live
+under `/tools/controls/BuildTasks`.
 Controls scaffolding helpers live under `/tools/controls/ControlGeneration/scripts`.
 Controls release helper scripts live under `/tools/controls/Release/scripts`.
 Controls resource generation helpers live under `/tools/controls/ResourceGeneration/scripts`.
