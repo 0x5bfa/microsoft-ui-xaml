@@ -909,8 +909,9 @@ The WebView2 UIA and accessibility note now lives under
 it.
 
 The `docs` root is intentionally limited to the developer documentation index
-and repository structure overview. New docs should pick an existing category
-folder before adding another root-level markdown file.
+repository structure overview, and repository-wide policy or notice files. New
+docs should pick an existing category folder before adding another root-level
+markdown file.
 
 ## Runtime path preparation
 

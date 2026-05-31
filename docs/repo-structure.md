@@ -53,6 +53,8 @@ Controls XAML processing and WinUI 2 migration helpers live under `/tools/contro
 
 ## /docs
 This is where the repo documentation lives, including this document.
+Repository policy and notice files such as security, contribution, code of
+conduct, and privacy documentation live directly under `/docs`.
 Feature and API design specs live under `/docs/specs`, with API review specs
 under `/docs/specs/api`.
 Developer workflows are grouped by purpose under folders such as
