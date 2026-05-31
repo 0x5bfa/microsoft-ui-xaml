@@ -77,7 +77,7 @@ public void AddIcon()
     map1.ZoomLevel = 14;
 }
 ```
-![Scenario 2: Showing a pin on the map](images\mapcontrol-scenario2.png)
+![Scenario 2: Showing a pin on the map](images/mapcontrol-scenario2.png)
 
 # API Pages
 The [BasicGeoposition](https://learn.microsoft.com/en-us/uwp/api/windows.devices.geolocation.basicgeoposition?view=winrt-22621) 
