@@ -397,6 +397,27 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
+  <Folder Name="/tests/runtime/native/isolated/shared/mocks/">
+    <Project Path="../../tests/runtime/native/isolated/shared/mocks/ExternalTestMocks.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/tests/runtime/native/isolated/shared/mocks/metadata/">
+    <Project Path="../../tests/runtime/native/isolated/shared/mocks/metadata/Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/tests/runtime/native/isolated/shared/stubs/">
+    <Project Path="../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Allocation.Stubs.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+    <Project Path="../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+    <Project Path="../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Stubs.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
   <Folder Name="/tests/runtime/tools/XbfGenerator/">
     <Project Path="../../tests/runtime/tools/XbfGenerator/Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
@@ -586,11 +607,6 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/allocation/stubs/">
-    <Project Path="../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Allocation.Stubs.vcxproj">
-      <BuildType Solution="Debug_test|*" Project="Debug" />
-    </Project>
-  </Folder>
   <Folder Name="/src/runtime/xcp/components/animation/" />
   <Folder Name="/src/runtime/xcp/components/animation/lib/">
     <Project Path="xcp/components/animation/lib/Microsoft.UI.Xaml.Animation.vcxproj">
@@ -762,11 +778,6 @@
   <Folder Name="/src/runtime/xcp/components/elements/" />
   <Folder Name="/src/runtime/xcp/components/elements/lib/">
     <Project Path="xcp/components/elements/lib/Microsoft.UI.Xaml.Elements.vcxproj">
-      <BuildType Solution="Debug_test|*" Project="Debug" />
-    </Project>
-  </Folder>
-  <Folder Name="/src/runtime/xcp/components/elements/sharedstubs/">
-    <Project Path="../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
@@ -983,12 +994,6 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/metadata/mocks/">
-    <Project Path="../../tests/runtime/native/isolated/shared/mocks/metadata/Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj">
-      <BuildType Solution="Debug_test|*" Project="Debug" />
-    </Project>
-  </Folder>
-  <Folder Name="/src/runtime/xcp/components/metadata/unittests/" />
   <Folder Name="/src/runtime/xcp/components/moco/" />
   <Folder Name="/src/runtime/xcp/components/moco/lib/">
     <Project Path="xcp/components/moco/lib/Microsoft.UI.Xaml.Components.Moco.vcxproj">
@@ -1227,17 +1232,6 @@
   </Folder>
   <Folder Name="/src/runtime/xcp/components/UIBridgeFocus/">
     <Project Path="xcp/components/UIBridgeFocus/Microsoft.UI.Xaml.UIBridgeFocus.vcxproj">
-      <BuildType Solution="Debug_test|*" Project="Debug" />
-    </Project>
-  </Folder>
-  <Folder Name="/src/runtime/xcp/components/unittests/" />
-  <Folder Name="/src/runtime/xcp/components/unittests/mocks/">
-    <Project Path="../../tests/runtime/native/isolated/shared/mocks/ExternalTestMocks.vcxproj">
-      <BuildType Solution="Debug_test|*" Project="Debug" />
-    </Project>
-  </Folder>
-  <Folder Name="/src/runtime/xcp/components/unittests/stubs/">
-    <Project Path="../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Stubs.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
