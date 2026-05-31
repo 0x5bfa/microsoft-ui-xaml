@@ -20,6 +20,7 @@ Use these ownership buckets for new moves:
 | `external/include` | Checked-in third-party header dependencies. |
 | `tools` | Human- and CI-invoked repo tools that are not part of product source. |
 | `generated` | Checked-in generated output, visual baselines, and large derived assets. |
+| `solutions` | Repository-wide Visual Studio solution entry points. |
 | `docs/specs` | Feature and API design specs with their local images and supporting files. |
 
 ## First completed move
@@ -276,6 +277,10 @@ The main runtime solution now lives at `src/runtime/Microsoft.UI.Xaml.sln`.
 This keeps the runtime build entry point with the runtime-owned source slices
 that have already moved under `src/runtime`, with project references now
 pointing at the relocated `src/runtime/xcp` tree.
+
+The product-wide solution now lives under `solutions`, keeping the repository
+root focused on configuration files and top-level docs while preserving the
+product solution as a repo-wide entry point.
 
 ## Package restore inputs
 

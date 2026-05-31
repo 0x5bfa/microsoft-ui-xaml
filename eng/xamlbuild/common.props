@@ -4,7 +4,7 @@
 
     <PropertyGroup>
         <!-- Exclude everything coming from NuGet in a package as "external" for Code Analysis purposes -->
-        <CAExcludePath>$(SolutionDir)\packages\;$(CAExcludePath)</CAExcludePath>
+        <CAExcludePath>$(ProjectRoot)packages\;$(CAExcludePath)</CAExcludePath>
     </PropertyGroup>
 
     <Import Project="experimental-clang.props" Condition="'$(ExperimentalClang)' == 'true'" />
