@@ -84,7 +84,7 @@ API lets the app provide a Composition animation that will play automatically wh
 is kicked off from Xaml's render walk, so it can take into account the full ancestor chain and properties set on that
 chain. Similarly, there's a `SetImplicitHideAnimation` API for when a UIElement is hidden. Note that for hide animations
 we need to keep the element visible and in the tree as long as the animation is in progress. This is done via
-`SetTrackKeepVisible` (see `dxaml/xcp/components/comptree/DCompTreeHost.cpp`).
+`SetTrackKeepVisible` (see `src/runtime/xcp/components/comptree/DCompTreeHost.cpp`).
 
 Wishlist:
 * SetTrackKeepVisible details
@@ -104,5 +104,5 @@ IXP's `CompositionObject` also has an
 collection. Apps can put animations in this collection to be automatically kicked off when properties change.
 
 Xaml has some interaction with the ImplicitAnimations collection - we turn off implicit
-animations (see `dxaml/xcp/components/comptree/HWCompNodeWinRT.cpp`)
+animations (see `src/runtime/xcp/components/comptree/HWCompNodeWinRT.cpp`)
 during rendering when we first update the primary visual.

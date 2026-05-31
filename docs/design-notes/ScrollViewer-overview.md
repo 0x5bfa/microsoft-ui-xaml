@@ -84,47 +84,47 @@ Rare usage with headers:
 # Key source code locations
 
 PAL means Platform Abstraction Layer. This originated during the Silverlight years when we were targetting both Windows and Apple devices.
-- dxaml/xcp/plat/win/browserdesktop/DirectManipulation*
-- dxaml/xcp/pal/inc/PalDirectManipulation*.h
+- src/runtime/xcp/plat/win/browserdesktop/DirectManipulation*
+- src/runtime/xcp/pal/inc/PalDirectManipulation*.h
 
 Define the layer that directly interacts with the DirectManipulation (DM / DManip) APIs, and were originally designed to be an abstract wrapper for those DM APIs.
-The key file is dxaml/xcp/plat/win/browserdesktop/DirectManipulationService.cpp.
+The key file is src/runtime/xcp/plat/win/browserdesktop/DirectManipulationService.cpp.
 
 Input Manager code:
-- dxaml/xcp/core/input/InputManagerNotifyUpdate.h
-- dxaml/xcp/core/input/InputManagerDMViewportEventHandler.cpp
-- dxaml/xcp/core/input/DMContent.cpp
-- dxaml/xcp/core/input/DMDeferredRelease.cpp
-- dxaml/xcp/core/input/DMViewport.cpp
-- dxaml/xcp/core/input/InputServices.cpp
-- dxaml/xcp/core/inc/InputServices.h
-- dxaml/xcp/core/inc/DirectManipulationContainer.h / DirectManipulationContainerHandler.h / DirectManipulationControllers.h / DirectManipulationServiceSharedState.h
-- dxaml/xcp/core/inc/DMContent.h / DMDeferredRelease.h / DMViewport.h
-- dxaml/xcp/core/inc/UIDMContainer.h / UIDMContainerHandler.h
-- dxaml/xcp/core/optional/elements/touch/UIDMContainer.cpp
-- dxaml/xcp/core/optional/elements/touch/UIDMContainerHandler.cpp
+- src/runtime/xcp/core/input/InputManagerNotifyUpdate.h
+- src/runtime/xcp/core/input/InputManagerDMViewportEventHandler.cpp
+- src/runtime/xcp/core/input/DMContent.cpp
+- src/runtime/xcp/core/input/DMDeferredRelease.cpp
+- src/runtime/xcp/core/input/DMViewport.cpp
+- src/runtime/xcp/core/input/InputServices.cpp
+- src/runtime/xcp/core/inc/InputServices.h
+- src/runtime/xcp/core/inc/DirectManipulationContainer.h / DirectManipulationContainerHandler.h / DirectManipulationControllers.h / DirectManipulationServiceSharedState.h
+- src/runtime/xcp/core/inc/DMContent.h / DMDeferredRelease.h / DMViewport.h
+- src/runtime/xcp/core/inc/UIDMContainer.h / UIDMContainerHandler.h
+- src/runtime/xcp/core/optional/elements/touch/UIDMContainer.cpp
+- src/runtime/xcp/core/optional/elements/touch/UIDMContainerHandler.cpp
 
 Core control code:
-- dxaml/xcp/core/inc/ScrollViewer.h
-- dxaml/xcp/core/core/elements/ScrollViewer.cpp
-- dxaml/xcp/core/core/elements/ScrollContentControl.cpp
+- src/runtime/xcp/core/inc/ScrollViewer.h
+- src/runtime/xcp/core/core/elements/ScrollViewer.cpp
+- src/runtime/xcp/core/core/elements/ScrollContentControl.cpp
 
 Compositor code:
-- dxaml/xcp/core/input/DirectManipulationServiceSharedState.cpp 
-- dxaml/xcp/components/comptree/HWCompNodeWinRT.cpp
-- dxaml/xcp/components/graphics/ExpressionHelper.cpp
-- dxaml/xcp/core/hw/DManipData.cpp
-- dxaml/xcp/core/hw/hwcompnode.cpp
-- dxaml/xcp/core/hw/ManipulationTransform.cpp
+- src/runtime/xcp/core/input/DirectManipulationServiceSharedState.cpp
+- src/runtime/xcp/components/comptree/HWCompNodeWinRT.cpp
+- src/runtime/xcp/components/graphics/ExpressionHelper.cpp
+- src/runtime/xcp/core/hw/DManipData.cpp
+- src/runtime/xcp/core/hw/hwcompnode.cpp
+- src/runtime/xcp/core/hw/ManipulationTransform.cpp
 
 DirectUI code:
-- dxaml/xcp/dxaml/lib/ScrollContentPresenter_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/ScrollViewer_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/ScrollViewerAutomationPeer_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/ScrollData.h / .cpp
-- dxaml/xcp/dxaml/lib/SecondaryContentRelationship_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/UIElement_Partial.cpp
-- dxaml/xcp/dxaml/lib/InputSiteAdapter.cpp
+- src/runtime/xcp/dxaml/lib/ScrollContentPresenter_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/ScrollViewer_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/ScrollViewerAutomationPeer_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/ScrollData.h / .cpp
+- src/runtime/xcp/dxaml/lib/SecondaryContentRelationship_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/UIElement_Partial.cpp
+- src/runtime/xcp/dxaml/lib/InputSiteAdapter.cpp
 
 Test code:
 - tests/runtime/managed/enterprise/ScrollViewer
@@ -237,11 +237,11 @@ The PropertySet includes these properties:
 ## Bring-into-view operations
 
 Source code involved (in MUX):
-- dxaml/xcp/core/input/InputPaneHandler.cpp
-- dxaml/xcp/core/input/BringIntoViewHandler.cpp
-- dxaml/xcp/core/inc/BringIntoViewRequestedEventArgs.h
-- dxaml/xcp/core/core/elements/BringIntoViewRequestedEventArgs.cpp
-- dxaml/xcp/core/core/elements/uielement.cpp's CUIElement::BringIntoView
+- src/runtime/xcp/core/input/InputPaneHandler.cpp
+- src/runtime/xcp/core/input/BringIntoViewHandler.cpp
+- src/runtime/xcp/core/inc/BringIntoViewRequestedEventArgs.h
+- src/runtime/xcp/core/core/elements/BringIntoViewRequestedEventArgs.cpp
+- src/runtime/xcp/core/core/elements/uielement.cpp's CUIElement::BringIntoView
 
 
 ## Edge-scrolling in ListView/GridView controls
@@ -255,8 +255,8 @@ Code involved:
 ## Sticky headers in ListView control
 
 ListView supports sticky headers for grouped items. That is supported in particular by:
-- dxaml\xcpdxaml/lib/StickyHeaderWrapper.h / .cpp
-- dxaml\xcpdxaml/lib/SecondaryContentRelationship_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/StickyHeaderWrapper.h / .cpp
+- src/runtime/xcp/dxaml/lib/SecondaryContentRelationship_Partial.h / .cpp
 
 
 ## Parallaxing with the ParallaxView control

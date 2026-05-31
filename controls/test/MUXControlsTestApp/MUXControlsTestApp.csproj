@@ -45,10 +45,10 @@
       Because of transitive project dependencies, two different files named "microsoft.ui.xaml.winmd"
       try to end up in the package payload:
       * [objdir]\dxaml\xcp\dxaml\idl\winrt\main\microsoft.ui.xaml.winmd
-        An intermediate .winmd produced by \dxaml\xcp\dxaml\idl\winrt\main\Microsoft.ui.xaml-main.vcxproj.
+        An intermediate .winmd produced by \src\runtime\xcp\dxaml\idl\winrt\main\Microsoft.ui.xaml-main.vcxproj.
       * [objdir]\dxaml\xcp\dxaml\idl\winrt\merged\private\Merged\Microsoft.UI.Xaml.winmd
         Another intermediate .winmd, produced by 
-        \dxaml\xcp\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj. The result of merging various
+        \src\runtime\xcp\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj. The result of merging various
         external .winmds along with our own intermediates (e.g. the previously listed .winmd).
       
       There are two options for resolving this:

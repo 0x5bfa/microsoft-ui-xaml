@@ -346,11 +346,11 @@ first to take focus manually.
 Xaml has two
 places
 that call into TrySetFocus - one from `CFocusManager::UpdateFocus`, and another from
-`ContentRootInput::PointerInputProcessor::ProcessPointerInput`. See `dxaml/xcp/components/ContentRoot/PointerInputProcessor.cpp`.
+`ContentRootInput::PointerInputProcessor::ProcessPointerInput`. See `src/runtime/xcp/components/ContentRoot/PointerInputProcessor.cpp`.
 
 Note that there are also times when we don't want to put
 focus on the hwnd if explicit requested or for things like light dismiss - see
-`CFocusManager::ShouldSetWindowFocus` (in `dxaml/xcp/core/dll/focusmgr.cpp`).
+`CFocusManager::ShouldSetWindowFocus` (in `src/runtime/xcp/core/dll/focusmgr.cpp`).
 
 
 ### Example of Win32 focus and Xaml focus
@@ -496,7 +496,7 @@ See the WebView2 documentation for details on WebView2 input handling.
 >   What problems did this cause (implications for IME)? How was it solved?
 
 TextBoxBase handles key events at the Xaml level via
-`CTextBoxBase::OnKeyDown` (in `dxaml/xcp/core/native/text/Controls/TextBoxBase.cpp`),
+`CTextBoxBase::OnKeyDown` (in `src/runtime/xcp/core/native/text/Controls/TextBoxBase.cpp`),
 and responds by forwarding it to RichEdit via
 [`ITextServices::TxSendMessage`](https://learn.microsoft.com/en-us/windows/win32/api/textserv/nf-textserv-itextservices-txsendmessage).
 
@@ -519,7 +519,7 @@ through the windowed popup's subtree rather than the entire island's UIElement t
 Currently Xaml's light dismiss windowed popups rely on the
 `IInputKeyboardSource2::LostFocus`
 event to dismiss when a click lands outside Xaml. The calls stack ends up in
-`Popup::OnXamlLostFocus` (in `dxaml/xcp/dxaml/lib/Popup_Partial.cpp`)
+`Popup::OnXamlLostFocus` (in `src/runtime/xcp/dxaml/lib/Popup_Partial.cpp`)
 where we dismiss either the `FlyoutBase` or the `Popup` based on its light dismiss setting and its dismissal triggers.
 
 This creates a dependency with Win32 focus. In order for light dismiss to work correctly, the main island must have

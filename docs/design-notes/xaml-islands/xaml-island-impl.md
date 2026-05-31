@@ -221,4 +221,4 @@ on:
     }
 ```
 
-Let's look at the function this calls, `CDependencyObject::SetVisualTree` ([link](../../../dxaml/xcp/core/core/elements/depends.cpp)).
+Let's look at the function this calls, `CDependencyObject::SetVisualTree` ([link](../../../src/runtime/xcp/core/core/elements/depends.cpp)).

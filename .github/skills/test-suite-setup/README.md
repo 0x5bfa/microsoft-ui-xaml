@@ -105,7 +105,7 @@ The skill uses a **hybrid approach** to map your code changes to the right tests
 ### 1. Known mappings (instant)
 
 A curated table in `SKILL.md` maps common source paths to their test DLLs. For example:
-- `dxaml/xcp/components/imaging/**` → `Isolated.Foundation.Imaging`
+- `src/runtime/xcp/components/imaging/**` → `Isolated.Foundation.Imaging`
 - `controls/dev/**` → `MUXControls.Test.dll`
 - `dxaml/test/native/external/controls/**` → `External.Controls`
 
@@ -143,7 +143,7 @@ The skill automatically picks the right hosting mode based on test DLL type:
 You: run the test-suite-setup skill
 
 Copilot: Based on your branch `user/you/my-feature`, I found changes in:
-  - dxaml/xcp/components/imaging/** (3 files)
+  - src/runtime/xcp/components/imaging/** (3 files)
   - dxaml/test/resources/** (12 files)
 
 Recommended tests:

@@ -925,7 +925,7 @@ _Spec note:_
 _Similar to ListViewBase.IsItemClickEnabled: https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.listviewbase.isitemclickenabled?view=winrt-22621_
 
 _ListView.IsItemClickEnabled is used to know when to say invoke pattern is supported via UIA_
-(see `dxaml/xcp/dxaml/lib/ListViewBaseItemAutomationPeer_Partial.cpp`)
+(see `src/runtime/xcp/dxaml/lib/ListViewBaseItemAutomationPeer_Partial.cpp`)
 
 _Similarly, ItemsView.IsItemInvokedEnabled's purpose is to tell UIA which items are invocable from 
 the host's perspective (i.e. the ItemsView)._

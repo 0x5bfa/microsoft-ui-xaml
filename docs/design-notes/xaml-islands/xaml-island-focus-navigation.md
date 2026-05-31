@@ -292,7 +292,7 @@ focus rectangle because the app is processing a tab navigation.
 // To learn more about focus rects:
 CFocusManager::UpdateFocusRect
 CFocusRectManager::UpdateFocusRect
-/dxaml/xcp/components/FocusRect
+/src/runtime/xcp/components/FocusRect
 ```
 
 ### CFocusManager::UpdateFocus

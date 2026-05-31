@@ -285,7 +285,7 @@ for consumption.
 #### Non-merged IDL projects
 
 A select few projects produce winmds that are not intended for consumption, and will be merged into a larger WinMD.
-Anything under the `dxaml\xcp\dxaml\idl\winrt` directory (except for the aptly named `merged` directory) falls into
+Anything under the `src\runtime\xcp\dxaml\idl\winrt` directory (except for the aptly named `merged` directory) falls into
 this category, as well as the `maps` and `inkcontrols` folders. You can opt out of having your winmd merged by
 specifying this property:
 

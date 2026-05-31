@@ -232,7 +232,7 @@ This gets translated into
         KnownTypeIndex::DatePicker, // Target type
         static_cast<MetaDataPropertyInfoFlags>(static_cast<UINT>(MetaDataPropertyInfoFlags::IsSparse) | static_cast<UINT>(MetaDataPropertyInfoFlags::AffectMeasure) | static_cast<UINT>(MetaDataPropertyInfoFlags::IsPublic)), // Property flags
     }
-in `dxaml/xcp/components/metadata/StaticMetadata.g.cpp`.
+in `src/runtime/xcp/components/metadata/StaticMetadata.g.cpp`.
 
 So whenever that property changes, it triggers a measure pass for the owning element.
 
@@ -285,7 +285,7 @@ This gets translated into
         KnownTypeIndex::Control, // Target type
         static_cast<MetaDataPropertyInfoFlags>(static_cast<UINT>(MetaDataPropertyInfoFlags::AffectArrange) | static_cast<UINT>(MetaDataPropertyInfoFlags::IsPublic)), // Property flags
     }
-in `dxaml/xcp/components/metadata/StaticMetadata.g.cpp`.
+in `src/runtime/xcp/components/metadata/StaticMetadata.g.cpp`.
 
 So whenever those properties change, it triggers an arrange pass for the owning element.
 
@@ -377,21 +377,21 @@ For information on debugging layout cycles, see [DebugSettings for Layout Cycle 
 # Key source code locations
 
 Core code:
-- dxaml/xcp/core/layout/LayoutManager.cpp
-- dxaml/xcp/core/core/elements/framework.cpp
-- dxaml/xcp/core/core/elements/uielement.cpp
-- dxaml/xcp/core/core/elements/RootVisual.cpp
-- dxaml/xcp/core/dll/VisualTree.cpp
-- dxaml/xcp/core/inc/framework.h
-- dxaml/xcp/core/inc/uielement.h
-- dxaml/xcp/core/inc/RootVisual.h
-- dxaml/xcp/core/inc/VisualTree.h
-- dxaml/xcp/core/inc/EffectiveViewportChangedEventArgs.h
-- dxaml/xcp/components/elements/FrameworkElement.cpp
-- dxaml/xcp/components/elements/UIElementLayout.cpp
+- src/runtime/xcp/core/layout/LayoutManager.cpp
+- src/runtime/xcp/core/core/elements/framework.cpp
+- src/runtime/xcp/core/core/elements/uielement.cpp
+- src/runtime/xcp/core/core/elements/RootVisual.cpp
+- src/runtime/xcp/core/dll/VisualTree.cpp
+- src/runtime/xcp/core/inc/framework.h
+- src/runtime/xcp/core/inc/uielement.h
+- src/runtime/xcp/core/inc/RootVisual.h
+- src/runtime/xcp/core/inc/VisualTree.h
+- src/runtime/xcp/core/inc/EffectiveViewportChangedEventArgs.h
+- src/runtime/xcp/components/elements/FrameworkElement.cpp
+- src/runtime/xcp/components/elements/UIElementLayout.cpp
 
 DirectUI code:
-- dxaml/xcp/dxaml/lib/FrameworkElement_partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/FrameworkElement_partial.h / .cpp
 
 Test code:
 - EffectiveViewport: 
@@ -406,14 +406,14 @@ Test code:
 # Additional key methods when debugging
 
 You may want to set breakpoints in these methods:
-- SetLayoutFlags calls in `dxaml/xcp/core/inc/uielement.h`.
+- SetLayoutFlags calls in `src/runtime/xcp/core/inc/uielement.h`.
 - CLayoutManager::UpdateLayout(XUINT32 controlWidth, XUINT32 controlHeight)
 
 
 # Layout storage & key fields when debugging
 
 You may want to keep track of these fields:
-- LayoutFlags enum values defined in `dxaml/xcp/core/inc/uielement.h`:
+- LayoutFlags enum values defined in `src/runtime/xcp/core/inc/uielement.h`:
 LF_MEASURE_DIRTY, LF_ON_MEASURE_DIRTY_PATH, LF_ARRANGE_DIRTY, LF_ON_ARRANGE_DIRTY_PATH, 
 LF_VIEWPORT_DIRTY, LF_ON_VIEWPORT_DIRTY_PATH, LF_WANTS_VIEWPORT, LF_CONTRIBUTES_TO_VIEWPORT, etc 
 accessed and set with GetLayoutFlagsAnd / SetLayoutFlags calls, the storage being in CUIElement::m_layoutFlags.

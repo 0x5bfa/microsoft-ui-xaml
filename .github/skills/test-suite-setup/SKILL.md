@@ -58,11 +58,11 @@ When this skill is invoked:
 
    | Changed files match | Recommended test DLLs | Hosting Mode |
    |---|---|---|
-   | `dxaml/xcp/core/**`, `dxaml/xcp/dxaml/**` | `External.Foundation`, `External.Framework`, `External.Controls` | WPF |
-   | `dxaml/xcp/components/imaging/**` | `Isolated.Foundation.Imaging` | None |
-   | `dxaml/xcp/components/text/**` | `External.Foundation` (text tests), `Isolated.Text` | WPF / None |
-   | `dxaml/xcp/components/focus/**` | `Isolated.Xaml.Focus.*` | None |
-   | `dxaml/xcp/components/accesskeys/**` | `Isolated.AccessKeys.*` | None |
+   | `src/runtime/xcp/core/**`, `src/runtime/xcp/dxaml/**` | `External.Foundation`, `External.Framework`, `External.Controls` | WPF |
+   | `src/runtime/xcp/components/imaging/**` | `Isolated.Foundation.Imaging` | None |
+   | `src/runtime/xcp/components/text/**` | `External.Foundation` (text tests), `Isolated.Text` | WPF / None |
+   | `src/runtime/xcp/components/focus/**` | `Isolated.Xaml.Focus.*` | None |
+   | `src/runtime/xcp/components/accesskeys/**` | `Isolated.AccessKeys.*` | None |
    | `tests/runtime/native/external/foundation/**` | `External.Foundation` | WPF |
    | `tests/runtime/native/external/framework/**` | `External.Framework` | WPF |
    | `tests/runtime/native/external/controls/**` | `External.Controls` | WPF |
@@ -77,7 +77,7 @@ When this skill is invoked:
    | `controls/test/**` | `MUXControls.Test.dll` | None |
    | `controls/idl/**` | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
    | `src/compiler/**` | `Isolated.Tools.XbfGenerator` | None |
-   | `dxaml/xcp/dxaml/themes/**` | `External.Controls`, `External.Framework` | WPF |
+   | `src/runtime/xcp/dxaml/themes/**` | `External.Controls`, `External.Framework` | WPF |
    | `Samples/**` | ScenarioTestSuite (sample app tests, separate payload) | N/A |
    | `build/**`, `eng/**`, `packaging/**` | No functional tests needed (build/infra only) | N/A |
    | Only `.md`, `.txt`, config files | No tests needed | N/A |
@@ -92,7 +92,7 @@ When this skill is invoked:
       ```
 
    2. **Match by naming convention** — extract keywords from the changed file path and look for test DLLs with matching names:
-      - Changed `dxaml/xcp/components/<area>/**` → look for `*Isolated.<Area>*` or `*External.<Area>*`
+      - Changed `src/runtime/xcp/components/<area>/**` → look for `*Isolated.<Area>*` or `*External.<Area>*`
       - Changed `tests/runtime/native/external/<area>/**` → match `*External.<Area>*`
       - Changed `dxaml/test/native/isolated/<area>/**` → match `*Isolated.<Area>*`
       - Changed `controls/dev/<ControlName>/**` → match `*MUXControls*` and `*<ControlName>*`
@@ -503,9 +503,9 @@ All test DLLs are in `TestPayload\<platform><config>\Test\`. Here is the complet
 
 | Source files changed in | Test DLL to run |
 |---|---|
-| `dxaml/xcp/**` (core runtime) | `External.Foundation`, `External.Framework`, `External.Controls` |
+| `src/runtime/xcp/**` (core runtime) | `External.Foundation`, `External.Framework`, `External.Controls` |
 | `controls/dev/**` (WinUI controls) | `MUXControls.Test.dll`, `External.Controls` |
-| `dxaml/xcp/components/imaging/**` | `Isolated.Foundation.Imaging` |
+| `src/runtime/xcp/components/imaging/**` | `Isolated.Foundation.Imaging` |
 | `tests/runtime/native/external/<area>/**` | `External.<Area>` |
 | `dxaml/test/resources/` (GIF/image assets) | `Isolated.Foundation.Imaging`, `External.Foundation` |
 | `controls/test/**` | `MUXControls.Test.dll` |

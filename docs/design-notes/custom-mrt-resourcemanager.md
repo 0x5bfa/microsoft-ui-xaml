@@ -22,7 +22,7 @@ MRT Core `ResourceManager`.
 
 To enable this, this document proposes that a new event, `ResourceManagerRequested`, be added
 to the `Application` class. This event will be raised immediately prior to a XAML core 
-[lazily constructing](/dxaml/xcp/components/mrt/ModernResourceProvider.cpp) a `ResourceManager` 
+[lazily constructing](/src/runtime/xcp/components/mrt/ModernResourceProvider.cpp) a `ResourceManager`
 instance in order to resolve resource URIs, and will allow WinUI to ask for, and utilize, a custom 
 `IResourceManager` implementation from the app that should be used instead of the standard MRT Core
 `ResourceManager`. While File Explorer is the initial and primary user of this feature, it is

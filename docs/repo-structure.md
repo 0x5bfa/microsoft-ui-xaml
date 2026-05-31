@@ -61,8 +61,7 @@ under `/docs/specs/api`.
 Note that developer usage documentation can be found separately on docs.microsoft.com.
 
 ## /dxaml
-This is where the majority of WinUI source code is. This contains all the test and source code
-for Microsoft.UI.Xaml.dll and Microsoft.UI.Xaml.Phone.dll.
+This legacy folder is no longer the primary home for WinUI runtime source.
 
 ## /eng
 All build system and other engineering related files go in this directory.
@@ -120,6 +119,10 @@ compiler-specific tools and solutions.
 The WinUI controls implementation now lives under `/src/controls`. Controls
 solution, IDL, test, and tooling entry points continue to live under `/controls`
 and refer to the source tree through `$(MUXControlsSourceRoot)`.
+
+The Microsoft.UI.Xaml.dll runtime implementation now lives under
+`/src/runtime/xcp`, with runtime solution entry points and phone-specific source
+also under `/src/runtime`.
 
 Metadata composition projects now live under `/src/metadata`. The MergedWinMD
 projects are referenced through `$(MergedWinMDProjectRoot)`.

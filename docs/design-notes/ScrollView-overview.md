@@ -198,11 +198,11 @@ IScrollAnchorProvider implementation.
 ## Bring-into-view operations
 
 Source code involved (in MUX):
-- dxaml/xcp/core/input/InputPaneHandler.cpp
-- dxaml/xcp/core/input/BringIntoViewHandler.cpp
-- dxaml/xcp/core/inc/BringIntoViewRequestedEventArgs.h
-- dxaml/xcp/core/core/elements/BringIntoViewRequestedEventArgs.cpp
-- dxaml/xcp/core/core/elements/uielement.cpp's CUIElement::BringIntoView
+- src/runtime/xcp/core/input/InputPaneHandler.cpp
+- src/runtime/xcp/core/input/BringIntoViewHandler.cpp
+- src/runtime/xcp/core/inc/BringIntoViewRequestedEventArgs.h
+- src/runtime/xcp/core/core/elements/BringIntoViewRequestedEventArgs.cpp
+- src/runtime/xcp/core/core/elements/uielement.cpp's CUIElement::BringIntoView
 
 
 ## Parallaxing with the ParallaxView control

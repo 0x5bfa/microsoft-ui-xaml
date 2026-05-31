@@ -3,7 +3,7 @@ _This content is mostly AI generated.  AI makes mistakes._
 
 How `{Binding Path=Foo.Bar}` works at runtime: the types involved and how they relate.
 
-All classes live in `DirectUI` namespace under `dxaml/xcp/dxaml/lib/`.
+All classes live in `DirectUI` namespace under `src/runtime/xcp/dxaml/lib/`.
 
 ---
 

@@ -40,7 +40,7 @@ exit /b 4
 set RepoRoot=%~dp0
 rem Remove the trailing backslash
 set RepoRoot=%RepoRoot:~0,-1%
-set XcpRoot=%RepoRoot%\dxaml\xcp
+set XcpRoot=%RepoRoot%\src\runtime\xcp
 
 set EnvOnly=
 set EnvCheck=

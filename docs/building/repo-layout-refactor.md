@@ -11,7 +11,7 @@ Use these ownership buckets for new moves:
 | Area | Purpose |
 | --- | --- |
 | `.github` | GitHub workflows, templates, policies, Copilot instructions, and agent skills. |
-| `src/runtime` | Runtime implementation currently rooted in `dxaml/xcp`. |
+| `src/runtime` | Runtime implementation, including the XCP tree under `src/runtime/xcp`. |
 | `src/controls` | WinUI controls implementation. |
 | `src/compiler` | XAML compiler source, build tasks, compiler targets, and compiler-local tools. |
 | `src/metadata` | Metadata composition projects that produce repo-local WinMD inputs. |
@@ -110,7 +110,7 @@ Runtime-specific infrastructure hosts live under `tests/runtime/infra`. The
 .NET Core TAEF host moved first because it
 only needs the runtime test build defaults and solution reference update. The
 Invoker helper lives there too, with explicit imports back to the legacy runtime
-build props and targets while `dxaml/xcp` remains in place. The MockDComp copy
+build props and targets while `src/runtime/xcp` remains in place. The MockDComp copy
 shim also lives there because it only binplaces the WinUIDetails MockDComp DLL
 for runtime tests. The RPC contract now lives there as the first shared native
 runtime infra dependency, with source and generated-output paths exposed through
@@ -200,26 +200,24 @@ Shared XAML MSBuild entry points now live under `eng/xamlbuild`. These files
 define common runtime build behavior rather than product source, and consumers
 that import after common folder props can resolve them through
 `$(XamlBuildRulesPath)`. Projects that import these rules before common props
-use `$(MSBuildThisFileDirectory)` relative paths instead, so
-`$(XamlSourcePath)` can stay focused on the legacy runtime source root until
-`dxaml/xcp` moves.
+use `$(MSBuildThisFileDirectory)` relative paths instead, while
+`$(XamlSourcePath)` now points at the runtime source root under `src/runtime`.
 
 ## Runtime phone source
 
-Phone-specific runtime source now lives under `src/runtime/phone`. It is a
+Phone-specific runtime source now lives under `src/runtime/phone`. It was a
 small runtime source slice that already had a centralized `$(XcpPhonePath)`,
 making it a safe first runtime-source move before relocating the much larger
-`dxaml/xcp` tree. The phone projects keep their legacy `dxaml\phone` object
-layout so downstream WinMD and include consumers continue to use the existing
-build-output paths.
+XCP tree. The phone projects keep their legacy `dxaml\phone` object layout so
+downstream WinMD and include consumers continue to use the existing build-output
+paths.
 
 ## Runtime solution entry point
 
 The main runtime solution now lives at `src/runtime/Microsoft.UI.Xaml.sln`.
 This keeps the runtime build entry point with the runtime-owned source slices
-that have already moved under `src/runtime`, while its project references
-continue to point back to legacy `dxaml/xcp` paths until those projects move in
-smaller groups.
+that have already moved under `src/runtime`, with project references now
+pointing at the relocated `src/runtime/xcp` tree.
 
 ## Package restore inputs
 
@@ -327,7 +325,7 @@ The DependencyLocator isolated test moved next under
 runtime-test-owned layout.
 The CValue isolated test also moved under
 `tests/runtime/native/isolated/framework/CValue`, continuing the framework
-isolated test migration out of `dxaml/xcp`.
+isolated test migration out of `src/runtime/xcp`.
 The RuntimeEnabledFeatureDetector isolated test moved under
 `tests/runtime/native/isolated/framework/runtimeEnabledFeatures` with the same
 runtime test structure.
@@ -646,14 +644,14 @@ Controls test-app build helpers now live under `controls/test/build`, keeping
 the controls test root focused on test entry points and automatically discovered
 MSBuild defaults.
 
-Runtime developer tools should move out of `dxaml/xcp/tools` when they are not
+Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
 as the first small runtime tool move. The XBF parser/viewer tools moved under
 `tools/runtime/XbfParser`, with initialization restore and generated
 WidgetSpinner metadata paths updated to the new tool-owned location. The
 standalone `SplitGenericXaml` project also moved under
 `tools/runtime/SplitGenericXaml`; runtime theme generation still builds its
-local copy from `dxaml/xcp/dxaml/themes/autogen`. `GenXbfDLL` moved under
+local copy from `src/runtime/xcp/dxaml/themes/autogen`. `GenXbfDLL` moved under
 `tools/runtime/GenXbfDLL` as a build-integrated runtime tool, with MSBuild
 project references using `$(RuntimeToolsPath)`. The runtime code generation
 toolchain moved under `tools/runtime/XCPTypesAutoGen`, including the
@@ -672,13 +670,12 @@ root while preserving each spec's local image and support-file layout.
 
 ## Runtime path preparation
 
-Runtime source remains under `dxaml/xcp` for now. Shared MSBuild entry points
-should refer to it through `$(XcpPath)` instead of spelling
-`$(XamlSourcePath)\xcp` directly, reducing the number of edits required when the
-runtime tree is eventually moved under `src/runtime`. Runtime-local MSBuild
-projects and props files follow the same rule for references back into the XCP
-tree. Test, phone, and controls MSBuild projects that consume runtime source
-should also prefer `$(XcpPath)` over repo-root-relative `dxaml\xcp` paths.
+Runtime source now lives under `src/runtime/xcp`. Shared MSBuild entry points
+should refer to it through `$(XcpPath)` instead of spelling the runtime source
+root directly. Runtime-local MSBuild projects and props files follow the same
+rule for references back into the XCP tree. Test, phone, and controls MSBuild
+projects that consume runtime source should also prefer `$(XcpPath)` over
+repo-root-relative `src\runtime\xcp` paths.
 Runtime build-output references should prefer `$(XcpObjPath)` over spelling
 `dxaml\xcp` under `$(ArtifactsObjDir)` or `$(XamlBuildOutputRoot)` directly.
 Phone project references and include paths should use `$(XcpPhonePath)` instead
@@ -689,8 +686,8 @@ their lightweight project graph files can avoid hard-coded runtime-relative
 paths without importing the full root build props. Developer initialization
 scripts expose the runtime source root as `XcpRoot` so command aliases, restore
 scripts, and scripted runtime build entry points can also avoid spelling
-`dxaml\xcp` repeatedly. Runtime tool wrappers should consume `XcpRoot` when
-they need the runtime source root.
+`src\runtime\xcp` repeatedly. Runtime tool wrappers should consume `XcpRoot`
+when they need the runtime source root.
 
 ## Migration rules
 
@@ -708,5 +705,5 @@ they need the runtime source root.
 
 1. Move compiler test project assets into `tests/compiler` once they are
    present in the checkout and their generation/update workflows are verified.
-2. Move `dxaml/xcp` to `src/runtime` last, because it has the broadest MSBuild
-   and native project surface.
+2. Continue retiring legacy `src/runtime/xcp` references from documentation and
+   comments as nearby files are touched.

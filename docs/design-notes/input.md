@@ -45,7 +45,7 @@ See the public doc on [handling pointer input](https://learn.microsoft.com/en-us
 The entrypoint of spatial hit testing is on the XamlIsland. Composition's
 [InputPointerSource](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.input.inputpointersource?view=windows-app-sdk-1.6)
 raises WinRT events for input events like PointerMoved or PointerPressed. Xaml subscribes to these
-events (see `dxaml/xcp/core/core/elements/XamlIslandRoot.cpp`)
+events (see `src/runtime/xcp/core/core/elements/XamlIslandRoot.cpp`)
 and they start our spatial input handling.
 
 Note that Xaml synthesizes window messages like `WM_POINTERUPDATE` when calling into our input handling. Before
@@ -58,7 +58,7 @@ didn't have any WM_* messages to work with, so it defined its own enums of messa
 longer a thing, we never went back and removed this abstraction layer.
 
 As the point is passed down the stack,
-`ContentRootInput::PointerInputProcessor::ProcessPointerInput` (in `dxaml/xcp/components/ContentRoot/PointerInputProcessor.cpp`)
+`ContentRootInput::PointerInputProcessor::ProcessPointerInput` (in `src/runtime/xcp/components/ContentRoot/PointerInputProcessor.cpp`)
 is the place that calls out to the hit testing walk.
 
 ### Sample breakpoint
@@ -86,10 +86,10 @@ is the place that calls out to the hit testing walk.
 Hit testing takes some incoming input (either a point or a rect) and returns the UIElement(s) located at that position
 in the island. Hit testing is a large part of spatial input processing.
 
-`CUIElement::HitTestEntry` (in `dxaml/xcp/core/dll/xcpcore.cpp`)
+`CUIElement::HitTestEntry` (in `src/runtime/xcp/core/dll/xcpcore.cpp`)
     is the entrypoint to the hit testing walk. It has two overloads, one that takes a point and one that takes a rect. •
     The point overload is called from
-    `CCoreServices::HitTest` (also in `dxaml/xcp/core/dll/xcpcore.cpp`),
+    `CCoreServices::HitTest` (also in `src/runtime/xcp/core/dll/xcpcore.cpp`),
     used during spatial input processing. • The rect overload is called from
     [VisualTreeHelper.FindElementsInHostCoordinates](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.visualtreehelper.findelementsinhostcoordinates?view=windows-app-sdk-1.6),
     an API that apps can call to return a list of UIElements in some logical rect.
@@ -98,7 +98,7 @@ Hit testing is a guided walk down the tree of UIElements. At each element the hi
 element's properties like the layout position, scale, clip, and transforms. As we walk down the tree, we intersect the
 hit test point/rect against the render bounds cached on each element to help guide the walk and avoid walking the entire
 tree. The cached bounds themselves are updated based on dirty flags which get
-marked (via `InvalidateElementBounds` in `dxaml/xcp/components/elements/UIElementLayout.cpp`)
+marked (via `InvalidateElementBounds` in `src/runtime/xcp/components/elements/UIElementLayout.cpp`)
 and propagated up the tree as UIElement properties change.
 
 > Terminology note:
@@ -108,7 +108,7 @@ and propagated up the tree as UIElement properties change.
   will be 200x200. The outer bounds include both the element itself and all its children.
 
 As the hit testing walks down the tree, it passes an object with a
-`OnElementHit` (in `dxaml/xcp/core/core/elements/uielement.cpp`)
+`OnElementHit` (in `src/runtime/xcp/core/core/elements/uielement.cpp`)
 function on it. OnElementHit gets called when an element's content directly intersects the hit test point/rect. We then
 check the hit test point against the
 content (via `CBoundedHitTestVisitor::OnElementHitImpl`)
@@ -153,7 +153,7 @@ list of m_pHitElements. FindElementsInHostCoordinates allows multiple elements t
 ## Events
 
 After PointerInputProcessor::ProcessPointerInput calls out to the hit testing walk, it raises input-related events. See
-`UIElement.PointerMoved` (in `dxaml/xcp/components/ContentRoot/PointerInputProcessor.cpp`)
+`UIElement.PointerMoved` (in `src/runtime/xcp/components/ContentRoot/PointerInputProcessor.cpp`)
 as an example. Note that these input events are marked with `fRaiseSync=true`, which means they will immediately call
 out to app event handlers rather than queue an event to be raised later on the UI thread.
 
@@ -268,7 +268,7 @@ property that is then used by the CoreWindow as the actual point of contact for 
 
 This code path does not
 exist
-in WinUI 3 (see `dxaml/xcp/dxaml/lib/InputSiteAdapter.cpp`). The event that triggers it is on CoreWindow, which we no longer have. InputPointerSource has no equivalent
+in WinUI 3 (see `src/runtime/xcp/dxaml/lib/InputSiteAdapter.cpp`). The event that triggers it is on CoreWindow, which we no longer have. InputPointerSource has no equivalent
 event.
 
 
@@ -293,7 +293,7 @@ object deals with the Win32 messages and raises WinRT events for Xaml.
 The entrypoint of keyboard input is also on the XamlIsland. Composition's
 [InputKeyboardSource](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.input.inputkeyboardsource?view=windows-app-sdk-1.6)
 raises WinRT events for input events like PointerMoved or PointerPressed. Xaml subscribes to these
-events (see `dxaml/xcp/core/core/elements/XamlIslandRoot.cpp`)
+events (see `src/runtime/xcp/core/core/elements/XamlIslandRoot.cpp`)
 and they start our keyboard input handling.
 
 Much like with spatial input, Xaml also synthesizes its own WM input messages after getting the WinRT event. We did this
@@ -332,11 +332,11 @@ there's a third layer of XCP_* messages carried over from the Silverlight days.
 
 Whereas spatial input needs to do a hit test walk to determine which UIElement receives the input, keyboard is much
 easier. Xaml knows the currently focused element, and that
-element (see `dxaml/xcp/components/ContentRoot/KeyboardInputProcessor.cpp`)
+element (see `src/runtime/xcp/components/ContentRoot/KeyboardInputProcessor.cpp`)
 is forwarded the keyboard input directly.
 
 Not all Xaml elements are focusable. See
-`CUIElement::IsFocusable` (in `dxaml/xcp/core/core/elements/uielement.cpp`)
+`CUIElement::IsFocusable` (in `src/runtime/xcp/core/core/elements/uielement.cpp`)
 - typically an element needs to be a tab stop, or needs to be a Control with the
 [IsFocusEngagementEnabled](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.isfocusengagementenabled?view=windows-app-sdk-1.6)
 property set to true while the user is using a gamepad.
@@ -345,7 +345,7 @@ property set to true while the user is using a gamepad.
 ## Events
 
 Keyboard input events are raised synchronously, like with spatial input. See
-`UIElement.KeyDown` (in `dxaml/xcp/components/ContentRoot/KeyboardInputProcessor.cpp`)
+`UIElement.KeyDown` (in `src/runtime/xcp/components/ContentRoot/KeyboardInputProcessor.cpp`)
 as an example.
 
 Note that before the key down event is sent, Xaml sends a
@@ -408,7 +408,7 @@ to the key event which is bubbling (raised on the descendant element first, then
 
 IME is special in that keyboard input does not come in from the InputKeyboardSource. Instead it comes from WinUIEdit,
 who gets called directly by the IME. WinUIEdit calls Xaml's
-`TextServicesHost::TxNotify` (in `dxaml/xcp/core/native/text/Controls/TextServicesHost.cpp`)
+`TextServicesHost::TxNotify` (in `src/runtime/xcp/core/native/text/Controls/TextServicesHost.cpp`)
 where it goes to the TextBox.
 
 This causes Xaml to raise its
@@ -472,11 +472,11 @@ documentation](https://learn.microsoft.com/en-us/windows/apps/design/input/acces
 
 In Xaml, access keys are powered by the same keyboard input code path in KeyboardInputProcessor. Access keys get the
 first
-chance (via `TryProcessInputForAccessKey` in `dxaml/xcp/components/ContentRoot/KeyboardInputProcessor.cpp`)
+chance (via `TryProcessInputForAccessKey` in `src/runtime/xcp/components/ContentRoot/KeyboardInputProcessor.cpp`)
 at handling key presses, before element events get a chance to handle it.
 
 At the top of the stack, opening the key tip is an async operation.
-`KeyTipManager::ShowAutoKeyTipForElement` (in `dxaml/xcp/core/input/KeyTipManager.cpp`)
+`KeyTipManager::ShowAutoKeyTipForElement` (in `src/runtime/xcp/core/input/KeyTipManager.cpp`)
 queues the async work via GoToState(..., WaitingToUpdateKeyTips), which starts a 1ms timer. When that timer fires,
 `KeyTipManager::OnStateTimerFired`
 does an ExecuteOnUIThread so that KeyTipManager::Execute is called back later.
@@ -586,7 +586,7 @@ for a description of it, and how islands participate in this convention.
 Xaml currently plugs into ContentPreTranslateMessage via an
 [IInputPreTranslateKeyboardSourceHandler](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/win32/microsoft.ui.input.inputpretranslatesource.interop/nn-microsoft-ui-input-inputpretranslatesource-interop-iinputpretranslatekeyboardsourcehandler).
 Xaml's PreTranslateHandler calls back to
-`CXamlIslandRoot::PreTranslateMessage` (in `dxaml/xcp/core/core/elements/XamlIslandRoot.cpp`)
+`CXamlIslandRoot::PreTranslateMessage` (in `src/runtime/xcp/core/core/elements/XamlIslandRoot.cpp`)
 for both OnDirectMessage (where the Xaml island is the one with Win32 focus, and an accelerator key came in) and for
 OnTreeMessage (where some other hwnd had Win32 focus, and an accelerator key came in). Xaml then calls into
 CJupiterWindow::PreTranslateMessage to handle the accelerator.
@@ -594,7 +594,7 @@ CJupiterWindow::PreTranslateMessage to handle the accelerator.
 Unlike InputKeyboardSource, PreTranslateMessage comes in as window messages and not WinRT events.
 
 The current design is for everything to happen on the
-OnDirectMessage (see the `!focusPass` check in `dxaml/xcp/dxaml/lib/JupiterWindow.cpp`)
+OnDirectMessage (see the `!focusPass` check in `src/runtime/xcp/dxaml/lib/JupiterWindow.cpp`)
 (also called the focus pass). There's a comment about how we want to eventually support accelerator events for Xaml
 islands that aren't focused.
 
@@ -671,9 +671,9 @@ PreTranslateMessage.
 ### Accelerators
 
 What's traditionally considered to be accelerators is called from the regular key down processing code via
-`KeyboardAcceleratorUtility::ProcessGlobalAccelerators` (in `dxaml/xcp/components/ContentRoot/KeyboardInputProcessor.cpp`).
+`KeyboardAcceleratorUtility::ProcessGlobalAccelerators` (in `src/runtime/xcp/components/ContentRoot/KeyboardInputProcessor.cpp`).
 Xaml keeps a list of all registered accelerators in
-`ContentRoot.m_allLiveKeyboardAccelerators` (in `dxaml/xcp/components/ContentRoot/inc/ContentRoot.h`),
+`ContentRoot.m_allLiveKeyboardAccelerators` (in `src/runtime/xcp/components/ContentRoot/inc/ContentRoot.h`),
 and we walk this list if key down processing didn't mark the key as handled.
 
 #### Sample breakpoint

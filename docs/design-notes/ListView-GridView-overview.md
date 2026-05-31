@@ -259,63 +259,63 @@ Inside the ListView / GridView control templates, we have four key nested elemen
 This list is not exhaustive.
 
 Core control code:
-- dxaml/xcp/core/inc/GridViewItemChrome.h
-- dxaml/xcp/core/inc/ItemsControl.h
-- dxaml/xcp/core/inc/ItemsPresenter.h
-- dxaml/xcp/core/inc/ItemsStackPanel.h
-- dxaml/xcp/core/inc/ListViewBaseItem.h
-- dxaml/xcp/core/inc/ListViewBaseItemChrome.h
-- dxaml/xcp/core/inc/ListViewBaseItemSecondaryChrome.h
-- dxaml/xcp/core/inc/ListViewItemChrome.h
-- dxaml/xcp/core/core/elements/ItemsControl.cpp
-- dxaml/xcp/core/core/elements/ItemsPresenter.cpp
-- dxaml/xcp/core/core/elements/ItemsStackPanel.cpp
-- dxaml/xcp/core/core/elements/ListViewBaseItem.cpp
-- dxaml/xcp/core/core/elements/ListViewBaseItemChrome.cpp
-- dxaml/xcp/core/core/elements/ListViewBaseItemSecondaryChrome.cpp
+- src/runtime/xcp/core/inc/GridViewItemChrome.h
+- src/runtime/xcp/core/inc/ItemsControl.h
+- src/runtime/xcp/core/inc/ItemsPresenter.h
+- src/runtime/xcp/core/inc/ItemsStackPanel.h
+- src/runtime/xcp/core/inc/ListViewBaseItem.h
+- src/runtime/xcp/core/inc/ListViewBaseItemChrome.h
+- src/runtime/xcp/core/inc/ListViewBaseItemSecondaryChrome.h
+- src/runtime/xcp/core/inc/ListViewItemChrome.h
+- src/runtime/xcp/core/core/elements/ItemsControl.cpp
+- src/runtime/xcp/core/core/elements/ItemsPresenter.cpp
+- src/runtime/xcp/core/core/elements/ItemsStackPanel.cpp
+- src/runtime/xcp/core/core/elements/ListViewBaseItem.cpp
+- src/runtime/xcp/core/core/elements/ListViewBaseItemChrome.cpp
+- src/runtime/xcp/core/core/elements/ListViewBaseItemSecondaryChrome.cpp
 
 DirectUI code:
-- dxaml/xcp/dxaml/lib/ListView*.h / .cpp
-- dxaml/xcp/dxaml/lib/GridView*.h / .cpp
-- dxaml/xcp/dxaml/lib/ItemsControl*.h / .cpp
-- dxaml/xcp/dxaml/lib/ItemsPresenter*.h / .cpp
-- dxaml/xcp/dxaml/lib/Selector*.h / .cpp
-- dxaml/xcp/dxaml/lib/*CollectionView*.h / .cpp
-- dxaml/xcp/dxaml/lib/ItemContainerGenerator_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/ItemCollection_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/ItemsStackPanel_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/ItemsWrapGrid_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/ModernCollectionBasePanel_*.h / .cpp
-- dxaml/xcp/dxaml/lib/*VirtualizingPanel*.h / .cpp
-- dxaml/xcp/dxaml/lib/StackingLayoutStrategy_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/WrappingLayoutStrategy_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/CurrentChangingEventArgs_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/ContainerContentChangingEventArgs_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/FaceplateContentPresenterAutomationPeer_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/Group*.h / *.cpp
-- dxaml/xcp/dxaml/lib/Item*.h / *.cpp
-- dxaml/xcp/dxaml/lib/StickyHeaderWrapper.h / .cpp
-- dxaml/xcp/dxaml/lib/WrapGrid_Partial.h / .cpp
-- dxaml/xcp/dxaml/lib/BudgetManager_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/ListView*.h / .cpp
+- src/runtime/xcp/dxaml/lib/GridView*.h / .cpp
+- src/runtime/xcp/dxaml/lib/ItemsControl*.h / .cpp
+- src/runtime/xcp/dxaml/lib/ItemsPresenter*.h / .cpp
+- src/runtime/xcp/dxaml/lib/Selector*.h / .cpp
+- src/runtime/xcp/dxaml/lib/*CollectionView*.h / .cpp
+- src/runtime/xcp/dxaml/lib/ItemContainerGenerator_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/ItemCollection_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/ItemsStackPanel_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/ItemsWrapGrid_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/ModernCollectionBasePanel_*.h / .cpp
+- src/runtime/xcp/dxaml/lib/*VirtualizingPanel*.h / .cpp
+- src/runtime/xcp/dxaml/lib/StackingLayoutStrategy_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/WrappingLayoutStrategy_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/CurrentChangingEventArgs_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/ContainerContentChangingEventArgs_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/FaceplateContentPresenterAutomationPeer_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/Group*.h / *.cpp
+- src/runtime/xcp/dxaml/lib/Item*.h / *.cpp
+- src/runtime/xcp/dxaml/lib/StickyHeaderWrapper.h / .cpp
+- src/runtime/xcp/dxaml/lib/WrapGrid_Partial.h / .cpp
+- src/runtime/xcp/dxaml/lib/BudgetManager_Partial.h / .cpp
 - UI Automation:
-  * dxaml/xcp/dxaml/lib/ItemAutomationPeer_partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/ItemsControlAutomationPeer_Partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/FaceplateContentPresenterAutomationPeer_partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/GridViewAutomationPeer_Partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/GridViewHeaderItemAutomationPeer_Partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/GridViewItemAutomationPeer_partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/GridViewItemDataAutomationPeer_partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/GroupItemAutomationPeer_Partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/ListViewAutomationPeer_Partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/ListViewBaseAutomationPeer_Partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/ListViewBaseHeaderItemAutomationPeer_Partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/ListViewBaseItemAutomationPeer_partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/ListViewBaseItemDataAutomationPeer_partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/ListViewHeaderItemAutomationPeer_Partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/ListViewItemAutomationPeer_partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/ListViewItemDataAutomationPeer_partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/SelectorAutomationPeer_Partial.h / .cpp
-  * dxaml/xcp/dxaml/lib/SelectorItemAutomationPeer_partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ItemAutomationPeer_partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ItemsControlAutomationPeer_Partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/FaceplateContentPresenterAutomationPeer_partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/GridViewAutomationPeer_Partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/GridViewHeaderItemAutomationPeer_Partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/GridViewItemAutomationPeer_partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/GridViewItemDataAutomationPeer_partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/GroupItemAutomationPeer_Partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ListViewAutomationPeer_Partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ListViewBaseAutomationPeer_Partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ListViewBaseHeaderItemAutomationPeer_Partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ListViewBaseItemAutomationPeer_partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ListViewBaseItemDataAutomationPeer_partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ListViewHeaderItemAutomationPeer_Partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ListViewItemAutomationPeer_partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/ListViewItemDataAutomationPeer_partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/SelectorAutomationPeer_Partial.h / .cpp
+  * src/runtime/xcp/dxaml/lib/SelectorItemAutomationPeer_partial.h / .cpp
 
 Test code:
 - tests/runtime/native/external/controls/itemscontrol
@@ -356,7 +356,7 @@ A few files in MUXC as well:
 
 # XAML markup resources
 
-Control templates are defined in `dxaml/xcp/dxaml/themes/generic.xaml`, while item styles are in `src/controls/CommonStyles` for WinUI 3.
+Control templates are defined in `src/runtime/xcp/dxaml/themes/generic.xaml`, while item styles are in `src/controls/CommonStyles` for WinUI 3.
 
 
 # Key methods when debugging
@@ -411,17 +411,17 @@ You may want to set breakpoints in these methods:
   * optional and mandatory scrolling snap points,
   * connected animations
 
-- The items use a 'hard-coded' visuals called chrome defined in `dxaml/xcp/core/inc/ListViewBaseItemChrome.h` &
-`dxaml/xcp/core/core/elements/ListViewBaseItemChrome.cpp`. 
+- The items use a 'hard-coded' visuals called chrome defined in `src/runtime/xcp/core/inc/ListViewBaseItemChrome.h` &
+`src/runtime/xcp/core/core/elements/ListViewBaseItemChrome.cpp`.
 This was done to minimize the visuals/weight of the GridView and ListView items, for better performance.
 A CListViewBaseItemChrome is a light-weight CContentPresenter sub-class with a pre-defined fixed number of children. This limits items' customizability
 but improves perf.
 
-- The controls use a BudgetManager, defined in `dxaml/xcp/dxaml/lib/BudgetManager_Partial.cpp`, which allow optimum item realizations in virtualized
+- The controls use a BudgetManager, defined in `src/runtime/xcp/dxaml/lib/BudgetManager_Partial.cpp`, which allow optimum item realizations in virtualized
 panels, based on the UI thread busyness. This allows the right amount of items to be realized in between two consecutive UI thread ticks, and not
 over/underwhelm the thread when scrolling the list for example.
 
-- You can turn on debug outputs by defining LVBIC_DBG and LVBIC_DEBUG in `dxaml/xcp/core/core/elements/ListViewBaseItemChrome.cpp`:
+- You can turn on debug outputs by defining LVBIC_DBG and LVBIC_DEBUG in `src/runtime/xcp/core/core/elements/ListViewBaseItemChrome.cpp`:
 
   // Define as 1 (i.e. XCP_TRACE_OUTPUT_MSG) to get ListViewBaseItemChrome debug outputs, and 0 otherwise
   #define LVBIC_DBG 1

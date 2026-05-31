@@ -206,7 +206,7 @@ You can view [common_themeresources_any.xaml](..\src\controls\CommonStyles\Commo
 All new controls are to use brushes from this file. See [Xaml Style Guide](.\design-notes\xaml-styling-guide.md) for more info.
 
 There are also resources with `System*` names that are built into the xaml platform. These are old resources from before the windows 11 rejuvenation.
-You can view them at [generic.xaml](..\dxaml\xcp\dxaml\themes\generic.xaml).
+You can view them at [generic.xaml](..\src\runtime\xcp\dxaml\themes\generic.xaml).
 
 ### Light-weight Styling
 To support light-weight styling in your control, you add an extra layer of indirection in the resource lookup. 

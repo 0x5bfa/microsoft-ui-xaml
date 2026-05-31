@@ -431,19 +431,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "idl", "idl", "{6C8385C7-289
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls.idl", "idl\Microsoft.UI.Xaml.Controls.idl.vcxproj", "{DE10DFE2-5EA3-452A-B055-FC60E330AFBB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "microsoft.ui.xaml-com", "..\dxaml\xcp\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj", "{A1EB01C3-AC8B-45A8-97C8-C459B77ED690}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "microsoft.ui.xaml-com", "..\src\runtime\xcp\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj", "{A1EB01C3-AC8B-45A8-97C8-C459B77ED690}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.controls.controls", "..\dxaml\xcp\dxaml\idl\winrt\controls\Microsoft.ui.xaml.controls.controls.vcxproj", "{F24B3ECB-BD87-4626-B17C-D8CC3E253F32}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.controls.controls", "..\src\runtime\xcp\dxaml\idl\winrt\controls\Microsoft.ui.xaml.controls.controls.vcxproj", "{F24B3ECB-BD87-4626-B17C-D8CC3E253F32}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.coretypes", "..\dxaml\xcp\dxaml\idl\winrt\core\Microsoft.ui.xaml.coretypes.vcxproj", "{F021A52A-6162-4E8D-B109-847EE5362DF9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.coretypes", "..\src\runtime\xcp\dxaml\idl\winrt\core\Microsoft.ui.xaml.coretypes.vcxproj", "{F021A52A-6162-4E8D-B109-847EE5362DF9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml-main", "..\dxaml\xcp\dxaml\idl\winrt\main\Microsoft.ui.xaml-main.vcxproj", "{5876E568-B204-4219-8C08-9E8124EDAB9C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml-main", "..\src\runtime\xcp\dxaml\idl\winrt\main\Microsoft.ui.xaml-main.vcxproj", "{5876E568-B204-4219-8C08-9E8124EDAB9C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Phone", "..\src\runtime\phone\idl\phone.vcxproj", "{84D22D7D-5FD0-4CCF-B8D2-C34506C6BA66}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "..\src\metadata\MergedWinMD\private\MergedWinMD.vcxproj", "{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml", "..\dxaml\xcp\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj", "{D638A8EF-3A48-45F2-913C-88B29FED03CB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml", "..\src\runtime\xcp\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj", "{D638A8EF-3A48-45F2-913C-88B29FED03CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.UI.Xaml.Design", "..\src\controls\Microsoft.UI.Xaml.Design\Microsoft.UI.Xaml.Design.csproj", "{1CEEC8E3-419A-4304-841C-08A334B9E4FF}"
 EndProject

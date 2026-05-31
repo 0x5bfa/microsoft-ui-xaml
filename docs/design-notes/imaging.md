@@ -143,9 +143,9 @@ involve downloading a file over the internet. Many apps package images in their 
 
 Download happens asynchronously on a background thread. The imaging code registers a callback with the download. When
 the download completes, it calls back into
-`ImageCache::GotDownloadResponse` (in `dxaml/xcp/components/imaging/ImageCache.cpp`)
+`ImageCache::GotDownloadResponse` (in `src/runtime/xcp/components/imaging/ImageCache.cpp`)
 via an
-`ImageCacheDownloadResponseTask` (in `dxaml/xcp/components/imaging/ImageCacheDownloadResponseTask.cpp`).
+`ImageCacheDownloadResponseTask` (in `src/runtime/xcp/components/imaging/ImageCacheDownloadResponseTask.cpp`).
 We then get the encoded bits out and kick off the decode.
 
 > todo
@@ -161,7 +161,7 @@ We then get the encoded bits out and kick off the decode.
 > Is
 > `ImageCache::Download`
 > the only place that kicks off downloads? via
-> `CCoreServices::UnsecureDownloadFromSite` (in `dxaml/xcp/core/dll/xcpcore.cpp`)?
+> `CCoreServices::UnsecureDownloadFromSite` (in `src/runtime/xcp/core/dll/xcpcore.cpp`)?
 > That can be async and is started in `ImageCache::TriggerProcessDecodeRequests`.
 >
 > What does the background thread do to download stuff?
@@ -179,7 +179,7 @@ information that Xaml needs to run layout. The actual pixels themselves don't ma
 
 There are a few entrypoints here:
 
-1. `ImageProvider::GetImage` (in `dxaml/xcp/core/imaging/ImagingProvider/ImageProvider.cpp`)
+1. `ImageProvider::GetImage` (in `src/runtime/xcp/core/imaging/ImagingProvider/ImageProvider.cpp`)
 
    This method kicks off background decoding, provided that the metadata was parsed successfully (alternatively, if
 we're doing a synchronous decode, it sets up the WIC decoder and copies pixels out right then and there). If the
@@ -193,7 +193,7 @@ stack.
    imaging code path. With decode-to-render-size enabled we'll try to look for cached image resources and kick off
    off-thread decoding directly via the `ImageCache`, skipping `ImageProvider`.
 
-2. `CImageSource` (in `dxaml/xcp/core/core/elements/imagesource.cpp`)
+2. `CImageSource` (in `src/runtime/xcp/core/core/elements/imagesource.cpp`)
 
    There are a couple places in `CImageSource` that looks at metadata.
    * `CImageSource::SetImageCache, which puts an ImageCache (could be a blank one from a cache miss or a hydrated one
@@ -219,9 +219,9 @@ Conceptually, the two important things are:
 
 Xaml calls on WIC in two places. These correspond to decoding into a software surface (and keeping it around for upload
 later) or a scratch buffer (and discarding it after immediately uploading):
-* `CopyToSoftwareBitmap` (in `dxaml/xcp/components/imaging/ImagingUtility.cpp`),
+* `CopyToSoftwareBitmap` (in `src/runtime/xcp/components/imaging/ImagingUtility.cpp`),
   which decodes to a software surface. This surface is kept around and we do the upload
-  later (see `dxaml/xcp/core/hw/hwtexturemgr.cpp`).
+  later (see `src/runtime/xcp/core/hw/hwtexturemgr.cpp`).
 * `CopyToHardwareTiles`,
   which decodes to a temporary buffer. We immediately
   upload
@@ -231,9 +231,9 @@ Both of these "CopyTo" methods are helper methods to
 `ImagingUtility::RealizeBitmapSource`,
 which is itself called in two places. These correspond to decoding on the UI thread vs decoding on the background
 thread:
-* `ImagingProvider::GetImage` (in `dxaml/xcp/core/imaging/ImagingProvider/ImageProvider.cpp`),
+* `ImagingProvider::GetImage` (in `src/runtime/xcp/core/imaging/ImagingProvider/ImageProvider.cpp`),
   which is called on the UI thread.
-* `AsyncImageDecoder::PresentAndProceedToNextFrame` (in `dxaml/xcp/components/imaging/AsyncImageDecoder.cpp`),
+* `AsyncImageDecoder::PresentAndProceedToNextFrame` (in `src/runtime/xcp/components/imaging/AsyncImageDecoder.cpp`),
   which is called on a background thread.
 
 So, in summary,
@@ -285,14 +285,14 @@ Function | Thread | Source | Details
 The mechanics of the upload process involves a lot of buffering. The `ICompositionSurface` has a BeginDraw/EndDraw API,
 but Xaml keeps the updates in our `DCompSurface` and `HWRgbTexture` wrappers until the end of the frame when we actually
 call BeginDraw/EndDraw. For the purposes of imaging, we can consider the upload to be committed after
-`HWRgbTexture::Unlock(true)` (in `dxaml/xcp/core/hw/hwtexturemgr.cpp`)
+`HWRgbTexture::Unlock(true)` (in `src/runtime/xcp/core/hw/hwtexturemgr.cpp`)
 is called. For more details about surface management, see
 [surfaces-overview.md](surfaces-overview.md).
 
 > Future aside:
 >
 > WinUI 3 currently uses a legacy `IDCompositionSurface` and wrap it in an `ICompositionSurface` wrapper using
-> `CreateCompositionSurfaceForDCompositionSurface` (in `dxaml/xcp/plat/win/desktop/DCompSurface.cpp`).
+> `CreateCompositionSurfaceForDCompositionSurface` (in `src/runtime/xcp/plat/win/desktop/DCompSurface.cpp`).
 > We should should complete the switch to WinRT composition and use a real `ICompositionSurface`. At that point we can
 > switch to
 > [`ICompositionDrawingSurfaceInterop::BeginDraw`](https://docs.microsoft.com/en-us/windows/win32/api/windows.ui.composition.interop/nf-windows-ui-composition-interop-icompositiondrawingsurfaceinterop-begindraw)
@@ -322,9 +322,9 @@ sequence of events is this:
 
 UI Thread:
 
-1. `AsyncImageFactory::CopyAsync` (in `dxaml/xcp/components/imaging/AsyncImageFactory.cpp`)
+1. `AsyncImageFactory::CopyAsync` (in `src/runtime/xcp/components/imaging/AsyncImageFactory.cpp`)
    is the method called on the UI thread that schedules this background work.
-2. `AsyncCopyToSurfaceTask` (in `dxaml/xcp/components/imaging/inc/AsyncCopyToSurfaceTask.h`)
+2. `AsyncCopyToSurfaceTask` (in `src/runtime/xcp/components/imaging/inc/AsyncCopyToSurfaceTask.h`)
    is the class that handles the background thread work. When it's created it takes a
    callback
    with an instance of the `CSoftwareBitmapSource` and its `CSoftwareBitmapSource::OnSoftwareBitmapImageAvailable`
@@ -332,27 +332,27 @@ UI Thread:
 3. The background thread work is queued through
    `CWinWorkItemFactory::CreateWorkItem`
    and `CWinWorkItem::Submit`, which calls
-   `::SubmitThreadpoolWork` (in `dxaml/xcp/plat/win/browserdesktop/WinThreadPool.cpp`).
+   `::SubmitThreadpoolWork` (in `src/runtime/xcp/plat/win/browserdesktop/WinThreadPool.cpp`).
 
 Background thread:
 
 4. `CWinWorkItem::WorkCallback` is the background thread callback for the work. It calls through to
    `AsyncCopyToSurfaceTask::Execute` and
-   `AsyncCopyToSurfaceTask::CopyOperation` (in `dxaml/xcp/components/imaging/AsyncCopyToSurfaceTask.cpp`),
+   `AsyncCopyToSurfaceTask::CopyOperation` (in `src/runtime/xcp/components/imaging/AsyncCopyToSurfaceTask.cpp`),
    which decides between copying to software or hardware.
 5. Once complete (successful or otherwise), `AsyncCopyToSurfaceTask::Execute` creates an instance of the
    `AsyncDecodeResponse`
    class to communicate back to the UI thread using the callback provided when it was created.
-6. `ImageProviderDecodeHandlerTask::OnDecode` (in `dxaml/xcp/core/imaging/ImagingProvider/ImageProviderDecodeHandlerTask.cpp`)
+6. `ImageProviderDecodeHandlerTask::OnDecode` (in `src/runtime/xcp/core/imaging/ImagingProvider/ImageProviderDecodeHandlerTask.cpp`)
    is called on the background thread to queue work back on the UI thread via `ImageTaskDispatcher::QueueTask` and
    `CCoreServices::ExecuteOnUIThread`.
 
 UI thread:
 
 7. `ImageProviderDecodeHandlerTask::Execute` runs on the UI thread later via
-   `ImageTaskDispatcher::Execute` (in `dxaml/xcp/components/imaging/ImageTaskDispatcher.cpp`),
+   `ImageTaskDispatcher::Execute` (in `src/runtime/xcp/components/imaging/ImageTaskDispatcher.cpp`),
    and calls through to
-   `CSoftwareBitmapSource::OnSoftwareBitmapImageAvailable` (in `dxaml/xcp/components/imaging/SoftwareBitmapSource.cpp`)
+   `CSoftwareBitmapSource::OnSoftwareBitmapImageAvailable` (in `src/runtime/xcp/components/imaging/SoftwareBitmapSource.cpp`)
    to report completion. The background thread decode is finally complete.
 
 > Future aside
@@ -470,7 +470,7 @@ Once the asynchronous task is submitted and executes, it goes through this stack
 The other important part of
 `CSoftwareBitmapSource::ReloadSource`
 is the call to
-`CSoftwareBitmapSource::PrepareCopyParams` (in `dxaml/xcp/components/imaging/SoftwareBitmapSource.cpp`)
+`CSoftwareBitmapSource::PrepareCopyParams` (in `src/runtime/xcp/components/imaging/SoftwareBitmapSource.cpp`)
 before the call to `CopyImage`. `PrepareCopyParams` is the place that determines whether we'll be uploading to a
 hardware surface or a software surface. It will prefer a hardware
 surface,
@@ -487,9 +487,9 @@ In this case, we can detect the device lost error in the
 `CSoftwareBitmapSource::OnSoftwareBitmapImageAvailable`
 callback and issue another background copy, this time to a software surface. If this `SoftwareBitmapSource` is connected
 to an `ImageBrush` in the tree and used, the next UI thread frame will walk to the
-`ImageBrush` (see `dxaml/xcp/core/hw/BaseContentRenderer.cpp`),
+`ImageBrush` (see `src/runtime/xcp/core/hw/BaseContentRenderer.cpp`),
 then the
-`SoftwareBitmapSource` (see `dxaml/xcp/core/core/elements/imagesource.cpp`),
+`SoftwareBitmapSource` (see `src/runtime/xcp/core/core/elements/imagesource.cpp`),
 and begin an upload to an `ICompositionSurface` on the UI thread. This UI thread upload is one that we don't have to
 worry about. If it encounters another device lost error, we'll recover as part of the UI thread's device lost recovery
 code path and try to upload again from the same software surface that we still have.

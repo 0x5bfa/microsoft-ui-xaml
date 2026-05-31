@@ -38,7 +38,7 @@ The way UiaCore gets the root of an application's provider interfaces is to send
 app/framework returns the provider interface by calling
 [UiaReturnRawElementProvider](https://docs.microsoft.com/en-us/windows/win32/api/uiautomationcoreapi/nf-uiautomationcoreapi-uiareturnrawelementprovider)
 from its `wndproc`. In System Xaml this is handled in
-`CJupiterWindow::WindowProc` (see `dxaml/xcp/dxaml/lib/JupiterWindow.cpp`).
+`CJupiterWindow::WindowProc` (see `src/runtime/xcp/dxaml/lib/JupiterWindow.cpp`).
 
 ## WM_GETOBJECT in WinUI 3
 
@@ -67,7 +67,7 @@ where the island raises an event that someone is asking for a UIA provider.
 This design abstracts away the details of hwnds and `WM_GETOBJECT` messages. A consumer of the Content layer just needs
 to subscribe to the `ContentIsland`'s `AutomationProviderRequested` event and return a provider via the
 `AutomationProvider` property of the event args, and that's exactly what Xaml
-does (see `dxaml/xcp/core/core/elements/XamlIslandRoot.cpp`).
+does (see `src/runtime/xcp/core/core/elements/XamlIslandRoot.cpp`).
 
 The full callstack (as of WASDK 1.3) can be seen here:
 
