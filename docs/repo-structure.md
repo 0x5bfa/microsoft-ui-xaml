@@ -117,7 +117,7 @@ package test feed lives under `/packaging/package-store`.
 ## /scripts
 This folder contains repository initialization and shared utility scripts.
 Initialization helpers live under `/scripts/init`; root entry points such as
-`initrun.ps1` are kept for compatibility where needed.
+`init.ps1` and `initrun.ps1` are kept for compatibility where needed.
 
 ## /src
 This is where source code for repo-local tools and source components outside the
