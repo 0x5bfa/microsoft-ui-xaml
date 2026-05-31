@@ -21,7 +21,7 @@
     <ClCompile>
       <AdditionalIncludeDirectories>
         %(AdditionalIncludeDirectories);
-        $(MSBuildThisFileDirectory)\appAnalysis;
+        $(AppAnalysisTestPath)\integration;
         $(MSBuildThisFileDirectory)\bindingHelpers;
         $(MSBuildThisFileDirectory)\diag;
         $(MSBuildThisFileDirectory)\ETW\InputEvents;
@@ -57,16 +57,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="appAnalysis\CollapsedElementsRuleIntegrationTests.h" />
-    <ClInclude Include="appAnalysis\DuplicateAutomationNameRuleIntegrationTests.h" />
-    <ClInclude Include="appAnalysis\DynamicBindingRuleIntegrationTests.h" />
-    <ClInclude Include="appAnalysis\ImageDecodingRuleIntegrationTests.h" />
-    <ClInclude Include="appAnalysis\LVDevirtualizedRuleIntegrationTests.h" />
-    <ClInclude Include="appAnalysis\NoAutomationNameRuleIntegrationTests.h" />
-    <ClInclude Include="appAnalysis\NonVirtualizingPanelRuleIntegrationTests.h" />
-    <ClInclude Include="appAnalysis\ResourceUsingXNameRuleIntegrationTests.h" />
-    <ClInclude Include="appAnalysis\RuleTesterHelper.h" />
-    <ClInclude Include="appAnalysis\TestHelpers.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\CollapsedElementsRuleIntegrationTests.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\DuplicateAutomationNameRuleIntegrationTests.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\DynamicBindingRuleIntegrationTests.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\ImageDecodingRuleIntegrationTests.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\LVDevirtualizedRuleIntegrationTests.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\NoAutomationNameRuleIntegrationTests.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\NonVirtualizingPanelRuleIntegrationTests.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\ResourceUsingXNameRuleIntegrationTests.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\RuleTesterHelper.h" />
+    <ClInclude Include="$(AppAnalysisTestPath)\integration\TestHelpers.h" />
     <ClInclude Include="bindingHelpers\XamlBindingHelperTests.h" />
     <ClInclude Include="diag\AddRemoveDictionaryItems.h" />
     <ClInclude Include="diag\AnimatedValueTests.h" />
@@ -94,14 +94,14 @@
     <ClInclude Include="$(CompilerTestPath)\native\compiledBindings\CompileBindingTests.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="appAnalysis\ImageDecodingRuleIntegrationTests.cpp" />
-    <ClCompile Include="appAnalysis\CollapsedElementsRuleIntegrationTests.cpp" />
-    <ClCompile Include="appAnalysis\LVDevirtualizedRuleIntegrationTests.cpp" />
-    <ClCompile Include="appAnalysis\DynamicBindingRuleIntegrationTests.cpp" />
-    <ClCompile Include="appAnalysis\NoAutomationNameRuleIntegrationTests.cpp" />
-    <ClCompile Include="appAnalysis\DuplicateAutomationNameRuleIntegrationTests.cpp" />
-    <ClCompile Include="appAnalysis\ResourceUsingXNameRuleIntegrationTests.cpp" />
-    <ClCompile Include="appAnalysis\NonVirtualizingPanelRuleIntegrationTests.cpp" />
+    <ClCompile Include="$(AppAnalysisTestPath)\integration\ImageDecodingRuleIntegrationTests.cpp" />
+    <ClCompile Include="$(AppAnalysisTestPath)\integration\CollapsedElementsRuleIntegrationTests.cpp" />
+    <ClCompile Include="$(AppAnalysisTestPath)\integration\LVDevirtualizedRuleIntegrationTests.cpp" />
+    <ClCompile Include="$(AppAnalysisTestPath)\integration\DynamicBindingRuleIntegrationTests.cpp" />
+    <ClCompile Include="$(AppAnalysisTestPath)\integration\NoAutomationNameRuleIntegrationTests.cpp" />
+    <ClCompile Include="$(AppAnalysisTestPath)\integration\DuplicateAutomationNameRuleIntegrationTests.cpp" />
+    <ClCompile Include="$(AppAnalysisTestPath)\integration\ResourceUsingXNameRuleIntegrationTests.cpp" />
+    <ClCompile Include="$(AppAnalysisTestPath)\integration\NonVirtualizingPanelRuleIntegrationTests.cpp" />
     <ClCompile Include="bindingHelpers\XamlBindingHelperTests.cpp" />
     <ClCompile Include="diag\XamlDiagnosticsTests.cpp" />
     <ClCompile Include="diag\SourceInfoTests.cpp" />
