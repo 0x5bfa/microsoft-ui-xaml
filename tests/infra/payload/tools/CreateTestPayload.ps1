@@ -39,7 +39,7 @@ if($Platform -eq "x64")
     $Arch = "amd64"
 }
 
-$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..\..")).Path
+$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..\..\..")).Path
 
 if(!$BinSourceRoot)
 {
@@ -167,7 +167,7 @@ if ($Mode -eq "DevTestSuite" -or $Mode -eq "ScenarioTestSuite")
     # Publish items from repo:
     Publish-Item "$repoRoot\tests\infra\payload\scripts\*" "$outpath"
     Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\*" "$outpath"
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\test\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath"
     Publish-Item "$repoRoot\controls\tools\TestAppDeployment\EnableMUXControlsTestAppManagedDebugging.*" "$outpath"
 
     Publish-Item "$binpath\TestDependencies\dotnet-windowsdesktop-runtime-installer.exe" "$outpath"
@@ -273,7 +273,7 @@ if ($Mode -eq "PGO")
 
     # Publish items from repo:
     Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\*" "$outpath"
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\test\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath"
 }
 
 if ($ShowPayload)

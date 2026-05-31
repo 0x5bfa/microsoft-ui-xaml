@@ -23,7 +23,7 @@ debugging.
 
 ## Run WebView2 sample (MUXControlsTestApp)
 1. Using the instructions in the [Testing FAQ](../testing/testing-FAQ.md), run
-   [`testmachine-prerun.cmd`](../../tests/infra/scripts/testmachine-prerun.cmd) if it has not
+   [`testmachine-prerun.cmd`](../../tests/infra/payload/scripts/testmachine-prerun.cmd) if it has not
 already been run.
 2. Navigate to `<repo>\BuildOutput\bin\x86chk\Test` and run `MuxControlsTestApp.appx` to install.  
 Run using the option in the install dialog, or as you would any other installed application.

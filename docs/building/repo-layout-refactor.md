@@ -61,11 +61,13 @@ through `$(CompilerTestPath)`.
 
 ## Shared test infrastructure
 
-Test payload entry points and Helix orchestration now live under
-`tests/infra`. `CreateTestPayload.cmd`, `CreateTestPayload.ps1`, their
-companion scripts, and Helix payload scripts now live under
-`tests/infra/payload` and `tests/infra/Helix/payload` so payload construction
-and payload runtime files are grouped together.
+Test payload tooling and Helix orchestration now live under `tests/infra`.
+`CreateTestPayload.cmd` and `CreateTestPayload.ps1` now live under
+`tests/infra/payload/tools`, while copied payload runtime scripts live under
+`tests/infra/payload/scripts` and `tests/infra/Helix/payload/scripts`.
+The Helix test-runner payload scripts are grouped under
+`tests/infra/Helix/payload/scripts/test` and are still copied to the payload
+root when constructing `TestPayload`.
 
 ## Runtime test tools
 

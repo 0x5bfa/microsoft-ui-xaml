@@ -178,7 +178,7 @@ Add the following line before the test implementation.
 ### How do I run tests locally?
 Follow these steps:
 1. Build the product and tests as normal using **tools\build\Build.cmd**
-2. Run **tests\infra\payload\CreateTestPayload.ps1** This will produce a TestPayload directory at the repo root.
+2. Run **tests\infra\payload\tools\CreateTestPayload.ps1** This will produce a TestPayload directory at the repo root.
 3. Connect to a to the machine you wish to run tests on (recommendation: an amd64 VM running Windows 20H2). DO NOT
 connect via an Enhanced connection (use a basic connection instead). An Enhanced connection will cause some test
 failures. In VM connect you can change this setting from the View menu.
@@ -372,7 +372,7 @@ connection modes.
 ## Tests in CI/PR builds
 
 ### How do I locally run tests using a build from Azure Pipelines?
-The steps are the same as for local builds, except instead of running `tools\build\Build.cmd` and `tests\infra\payload\CreateTestPayload.ps1`, you can
+The steps are the same as for local builds, except instead of running `tools\build\Build.cmd` and `tests\infra\payload\tools\CreateTestPayload.ps1`, you can
 download the TestPayload from the build. Go to the build report page. Click 'published' and download the 'TestPayload'
 folder or the 'ScenarioTestSuitePayload' folder (for Tests or Scenario App Tests). Unzip this file and use it the same
 way as described above (`testmachine-setup.cmd` and the `runtests.cmd`).
@@ -640,7 +640,7 @@ these tests are compiled into MUXControls.Test.dll.
 ### How do I run the Sample App Tests?
 First you need to build the sample apps. They do not build by default. Run "tools\build\Build.cmd samples" from the root of the repo.
 
-The tests get run the same way as the functional tests. The only difference is when you call `tests\infra\payload\CreateTestPayload.ps1`,
+The tests get run the same way as the functional tests. The only difference is when you call `tests\infra\payload\tools\CreateTestPayload.ps1`,
 you pass `-Mode ScenarioTestSuite`. This will create a test payload to run the Sample App Tests. From there, the
 workflow is the same as running the functional tests.
 
