@@ -41,7 +41,7 @@
 
 ### Top-Most Point Selection Hit Test
 
-![](../../images/hit-testing-fig1-top-most-point-hit-test.png)
+![](images/hit-testing-fig1-top-most-point-hit-test.png)
 * The top-most point selection hit test is useful for selecting single objects that reside immediately underneath the mouse pointer. Please refer to Figure 1 that illustrates this scenario.
 * In this particular scenario, the top-most object that resides under the mouse pointer is given focus. As a visual cue for this action, the activated object is highlighted. The following C# code snippet can be used in conjunction with the UIElements that can yield the expected results. The `myCanvas` object in the code sample below is the canvas (`UIElement`) that contains the hit element.
 
@@ -67,7 +67,7 @@ public void OnMouseLeftButtonDown(Object sender, MouseWheelEventArgs event)
 
 ### Inclusive Point Selection Hit Test
 
-![](../../images/hit-testing-fig2-inclusive-point-selection-hit-test.png)
+![](images/hit-testing-fig2-inclusive-point-selection-hit-test.png)
 * The point selection hit test is useful for selecting all objects that reside underneath the mouse pointer regardless of the objects’ z-index positioning. Please refer to Figure 2 for an illustration of this scenario.
 * In this particular scenario, every single object that resides under the mouse pointer is returned in a collection and placed in a menu. As a visual cue for this action, the smallest bounding box to enclose the activated objects is highlighted. The end-user then has the ability to select a specific element from that list which is of concern. The following C# code snippet can be used in conjunction with the UIElements that can yield the results as shown in the figure above. The `myCanvas` object in the code sample below is the canvas (UIElement) that contains all elements shown above.
 
@@ -175,7 +175,7 @@ private bool ShouldBeHitTestable(UIElement element)
 
 ### Hit Test Enclosed within a Rectangular Geometry
 
-![](../../images/hit-testing-fig3-hit-test-enclosed-within-rectangular-geometry.png)
+![](images/hit-testing-fig3-hit-test-enclosed-within-rectangular-geometry.png)
   * In this situation, instead of the single point selection, the end-user can select a rectangular region for the execution of the hit test. All objects that are either partially or fully covered by the rectangular marquee are all activated together as a group. Any action performed on the activated set of objects manipulates the entire set as a whole. This scenario is illustrated in Figure 2 below.
 * The end-user is responsible for creating and manipulating the rectangular marquee accordingly. An example of a rectangle with a dashed stroke, such as the one above, can be created using the following XAML markup:
 
@@ -241,7 +241,7 @@ public void OnMouseLeftButtonUp(Object sender, EventArgs e)
 
 ### Drag-and-Drop
 
-![](../../images/hit-testing-fig4-drag-and-drop.png)
+![](images/hit-testing-fig4-drag-and-drop.png)
 * The drag-and-drop action is useful for enhancing the richness of the user-interaction in Silverlight web applications. Drag-and-drop is a complicated operation to develop and is highly error-prone.  As a result it has recently become a benchmark for rich web applications. This scenario is illustrated with the following example.
 * The semi-transparent breadcrumbs effect on the draggable object is for demonstration purposes only. One of the features in Silverlight is the ability to capture the mouse on a specified `UIElement` in order to enhance the mouse input experience. One of the problems this feature adds to the drag-and-drop operation is that no other `UIElement` can receive mouse events thereof.  As a result, the `UIElement` that should be receiving the drag object would have no knowledge of the hovering element. The hit test feature helps solve this problem. The single selection point hit test (discussed in section 3.2 of this document) can offer the ability to detect if a particular `UIElement` falls under the mouse pointer at the time that the drag object is dropped. The end-user has the ability to choose the drop location as a single point (mouse pointer) or as a geometry region (rectangular drag image) as illustrated in figure 4. The end-user might want to know about all the elements that fall under the mouse pointer, not just the top-most element. As a result, the flexibility this API offers can be useful in scenarios such as the one illustrated above. The hit test feature also allows the end-user to add placement markers as shown in figure 4.
 
@@ -254,7 +254,7 @@ public void OnMouseLeftButtonUp(Object sender, EventArgs e)
 
 ### Unfilled/Partially Filled Image Object
 
-![](../../images/hit-testing-fig5-image-null-brush.png)
+![](images/hit-testing-fig5-image-null-brush.png)
 * The image object has a stretch property that can transform the image to make it fit to the bounds of the image object. One of the stretch properties is the uniform stretch. The actual picture is stretched to fit the smaller of the width and height of the bounds of the image object. The image is uniformly stretched only enough to fill the height but not to distort the image. As a result the image object is left with regions with a null-brush background. WPF handles the hit test scenario on the null region in a different manner that Silverlight should.
 * We would not like hit testing on the null-brush regions to incorporate the image element in the result set. This behavior is consistent with that of WPF’s API.
 
@@ -315,10 +315,10 @@ This hit test function returns all elements that are fully or partially containe
 
 ## Order of results
 
-![](../../images/hit-testing-fig6-tree-structure-ordering.png)
+![](images/hit-testing-fig6-tree-structure-ordering.png)
 * The z-index property of elements only makes a difference on the visual appearance of elements only if they are siblings. The element with the highest z-index would visually sit on top of all other siblings.  The z-index value of each parent will have an effect on the visual depth of its children as well. For example, the sibling with the highest z-index is the top-most visual element amongst all the siblings. If that element has children, then the children of that element also sit on top of all other siblings of that parent. So the children of any parent always sit on top of the parent element. If the z-index of all items is set to equal values or they are all set to default, then the only way to determine their visual depth is by the tree structures.
 
-![](../../images/hit-testing-fig7-hit-test-collection-order.png)
+![](images/hit-testing-fig7-hit-test-collection-order.png)
 * Let’s consider the tree structure above with all the elements at each depth level having identical z-index values. Let’s also assume that all the elements in the tree above were hit with the exception of element B. The hit test would return a collection in the following order:
 * The figure above shows the order of the returned collection. A non-empty tree is traversed using the following rules:
   * Traverse the right-most node
