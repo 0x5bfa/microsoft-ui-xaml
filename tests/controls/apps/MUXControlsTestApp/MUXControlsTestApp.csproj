@@ -104,7 +104,7 @@
     <Reference Include="@(WinUIEditWinMD)" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MUXProjectRoot)build\WinUITest.pfx" />
+    <None Include="$(TestCertificatePath)" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="LeakTestPage.xaml.cs" Condition="$(SolutionName) == 'MUXControlsInnerLoop'" />

@@ -6,7 +6,7 @@
   <PropertyGroup>
     <PublicMUXDir>$(ArtifactsBinDir)Product\</PublicMUXDir>
     <GenerateProjectSpecificOutputFolder>True</GenerateProjectSpecificOutputFolder>
-    <TestCertificatePath>$(ProjectRoot)build\WinUITest.pfx</TestCertificatePath>
+    <TestCertificatePath Condition="'$(TestCertificatePath)' == ''">$(ProjectRoot)BuildOutput\certificates\WinUITest.pfx</TestCertificatePath>
     <XamlCompilerTargetsPath>$(ObjectPathRoot)\src\compiler\BuildTasks\Microsoft.UI.Xaml.Markup.Compiler\Targets</XamlCompilerTargetsPath>
     <DebugSymbols>true</DebugSymbols>
     <SignAssembly>true</SignAssembly>

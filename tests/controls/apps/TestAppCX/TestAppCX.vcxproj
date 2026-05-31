@@ -11,7 +11,7 @@
     <AppContainerApplication>true</AppContainerApplication>
     <ApplicationType>Windows Store</ApplicationType>
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
-    <PackageCertificateKeyFile>$(MUXProjectRoot)build\WinUITest.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>$(TestCertificatePath)</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
@@ -240,7 +240,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="packages.config" />
-    <None Include="$(MUXProjectRoot)build\WinUITest.pfx" />
+    <None Include="$(TestCertificatePath)" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png" />

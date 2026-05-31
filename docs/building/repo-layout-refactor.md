@@ -19,8 +19,9 @@ Use these ownership buckets for new moves:
 | `eng` | Shared build, packaging, versioning, signing, and pipeline infrastructure. |
 | `src/runtime/thirdparty/include` | Checked-in third-party header dependencies. |
 | `tools` | Human- and CI-invoked repo tools that are not part of product source. |
-| `generated` | Checked-in generated output, visual baselines, and large derived assets. |
-| `solutions` | Repository-wide Visual Studio solution entry points. |
+| `src/*/generated` | Checked-in generated source that belongs to a product source area. |
+| `tests/visualbaselines` | Checked-in visual baseline assets. |
+| `*/solutions` | Area-owned Visual Studio solution entry points, with the product-wide solution at the repo root. |
 | `docs/specs` | Feature and API design specs with their local images and supporting files. |
 
 ## First completed move
@@ -223,11 +224,20 @@ helpers now live under `tools/setup/init/scripts`. The checked-in post-init
 restore step lives there too, while optional local init hooks are resolved from
 `tools/setup/custom`. Command prompt and PowerShell alias definitions are
 co-located there as initialization shell helpers. They are part of repository
-initialization rather than package construction, leaving the `build` folder
-focused on packaging inputs and build-time transforms. The command prompt init,
+initialization rather than package construction, leaving packaging inputs and
+build-time transforms in their `eng` ownership buckets. The command prompt init,
 PowerShell init, and initialized-command runner entry points also live under
 `tools/setup/init/scripts`; the root-level compatibility wrappers were removed
 so repo-local callers use the implementation paths directly.
+
+## Generated test certificate
+
+The local WinUI test signing certificate is generated into
+`BuildOutput/certificates/WinUITest.pfx`. It is build output rather than a
+checked-in build input, so projects and scripts consume it through
+`$(TestCertificatePath)` instead of referencing the removed root `build`
+folder. The init flow creates the certificate folder before generating the PFX
+and CER files.
 
 ## Packaging inputs
 
@@ -282,9 +292,9 @@ This keeps the runtime build entry point with the runtime-owned source slices
 that have already moved under `src/runtime`, with project references now
 pointing at the relocated `src/runtime/xcp` tree.
 
-The product-wide solution now lives under `solutions`, keeping the repository
-root focused on configuration files and top-level docs while preserving the
-product solution as a repo-wide entry point.
+The product-wide solution now lives at the repo root as
+`Microsoft.UI.Xaml-Product.slnx`, preserving it as the repo-wide entry point
+without keeping a separate root `solutions` folder.
 
 ## Package restore inputs
 
