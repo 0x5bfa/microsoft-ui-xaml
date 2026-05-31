@@ -5,7 +5,7 @@ setlocal enabledelayedexpansion enableextensions
 if "%BuildPlatform%"=="" goto :usage
 if "%Configuration%"=="" goto :usage
 
-for %%I in ("%~dp0..\..") do set "_root=%%~fI"
+for %%I in ("%~dp0..\..\..") do set "_root=%%~fI"
 set _versionOption=-VersionOverride "3.0.0-dev"
 
 :parseArgs
@@ -25,9 +25,9 @@ goto :parseArgs
 
 :main
 if EXIST "%RepoRoot%\pack.cmd" (
-    call "%_root%\tools\common\PowershellWrapper.cmd" "%_root%\tools\packaging\build-nupkg.ps1" -Nuspec Microsoft.WindowsAppSDK.WinUI.nuspec %_versionOption% -PackageRoot "%_root%\BuildOutput\packaging\%Configuration%" -InstallPackage
+    call "%_root%\tools\common\PowershellWrapper.cmd" "%_root%\tools\packaging\commands\build-nupkg.ps1" -Nuspec Microsoft.WindowsAppSDK.WinUI.nuspec %_versionOption% -PackageRoot "%_root%\BuildOutput\packaging\%Configuration%" -InstallPackage
 ) else (
-    call "%_root%\tools\common\PowershellWrapper.cmd" "%_root%\tools\packaging\build-nupkg.ps1" -Nuspec Microsoft.WindowsAppSDK.WinUI.nuspec %_versionOption% -PackageRoot "%_root%\BuildOutput\packaging\%Configuration%" -InstallPackage -UseDependencyOverrides
+    call "%_root%\tools\common\PowershellWrapper.cmd" "%_root%\tools\packaging\commands\build-nupkg.ps1" -Nuspec Microsoft.WindowsAppSDK.WinUI.nuspec %_versionOption% -PackageRoot "%_root%\BuildOutput\packaging\%Configuration%" -InstallPackage -UseDependencyOverrides
 )
 if ERRORLEVEL 1 (
     echo ---
@@ -40,7 +40,7 @@ exit /b 0
 echo Builds the Microsoft.WindowsAppSDK.WinUI component nuget package into the packaging\package-store directory.
 echo This only packs whatever architectures have been built and are in the packaging directory.
 echo.
-echo Requires Configuration environment variable to be set, e.g. via tools\setup\init\init.cmd
+echo Requires Configuration environment variable to be set, e.g. via tools\setup\init\commands\init.cmd
 echo.
 echo Usage:
 echo     pack.component.cmd [options]

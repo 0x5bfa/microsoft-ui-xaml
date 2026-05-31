@@ -28,7 +28,7 @@ set _varValue=
 exit /b 0
 
 :begin
-for %%I in ("%~dp0..\..") do set "_root=%%~fI"
+for %%I in ("%~dp0..\..\..") do set "_root=%%~fI"
 if "%RepoRoot%"=="" set "RepoRoot=%_root%"
 pushd "%_root%"
 
@@ -58,7 +58,7 @@ goto ParseArgs
 
 :DoneParsing
 set vswhere="%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
-if not exist %vswhere% (echo VSWhere.exe not found. Install MSBuild first from tools\setup\OneTimeSetup.cmd && exit /b 1)
+if not exist %vswhere% (echo VSWhere.exe not found. Install MSBuild first from tools\setup\bootstrap\OneTimeSetup.cmd && exit /b 1)
 
 rem Try MSBuild first
 set MSBuildInstallpath=

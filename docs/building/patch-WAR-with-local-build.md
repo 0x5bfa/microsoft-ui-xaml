@@ -11,7 +11,7 @@
 - [Patch and Repack](#patch-and-repack)
 
 Normally when testing changes to WinUI, it is sufficient to test your changes using one of the Sample Apps in the repo
-or by running `tools\build\Build.cmd /pack` to create the mock Microsoft.WindowsAppSdk nuget package.
+or by running `tools\build\commands\Build.cmd /pack` to create the mock Microsoft.WindowsAppSdk nuget package.
 
 However, sometimes it is necessary to test the true end-user scenario which is to use the WindowsAppSDK (which contains
 WinUI). Getting a build of the Windows App Runtime that contains your changes (without merging your changes to main)
@@ -33,7 +33,7 @@ used for the WindowsAppSDK. For official releases of the WindowsAppSDK, this is 
 
 WinUI can be built with experimental features enabled or disabled. By default they are enabled, but for official
 non-preview releases they are turned off. So you want the dll that you build to match the version of the WindowsAppSDK
-that you are patching. To build WinUI with experimental features turned off, pass `/muxfinal` when you call `tools\build\Build.cmd`.
+that you are patching. To build WinUI with experimental features turned off, pass `/muxfinal` when you call `tools\build\commands\Build.cmd`.
 
 ### x86 or x64?
 

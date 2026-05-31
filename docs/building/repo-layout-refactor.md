@@ -216,9 +216,9 @@ lives there too, while optional local init hooks are resolved from
 initialization shell helpers. They are part of repository initialization rather
 than package construction, leaving the `build` folder focused on packaging
 inputs and build-time transforms. The command prompt init, PowerShell init, and
-initialized-command runner entry points also live under `tools/setup/init`; the
-root-level compatibility wrappers were removed so repo-local callers use the
-implementation paths directly.
+initialized-command runner entry points now live under
+`tools/setup/init/commands`; the root-level compatibility wrappers were removed
+so repo-local callers use the implementation paths directly.
 
 ## Packaging inputs
 
@@ -634,35 +634,39 @@ The local NuGet package test feed now lives under `packaging/package-store`.
 Package construction scripts, NuGet.config, and cleanup helpers point there
 instead of keeping a single-purpose `PackageStore` folder at the repo root.
 The WinUI component package command implementation now lives under
-`tools/packaging`. The repo root compatibility wrapper was removed; repo-local
-callers should use `tools/packaging/pack.component.cmd` directly.
+`tools/packaging/commands` with the package construction PowerShell helper. The
+repo root compatibility wrapper was removed; repo-local callers should use
+`tools/packaging/commands/pack.component.cmd` directly.
 
 The standalone debugger extension script now lives under
 `tools/debugging/dbgext`, grouped with other manually invoked repo tools.
 
 Clang-oriented developer helpers now live under `tools/clang`, with
-`tools/setup/init/init.cmd` adding that folder to PATH so the short command names
+`tools/setup/init/commands/init.cmd` adding that folder to PATH so the short command names
 remain available in initialized shells.
 
-Build wrapper commands now live under `tools/build`, with
-`tools/setup/init/init.cmd` adding that folder to PATH so commands such as `msb`,
+Build wrapper commands now live under `tools/build/commands`, with
+`tools/setup/init/commands/init.cmd` adding that folder to PATH so commands such as `msb`,
 `bz`, `bcz`, and `clean` remain available in initialized shells. The main repo build command implementation
 also lives there now. The root-level `Build.cmd` compatibility wrapper was
-removed; repo-local callers should use `tools/build/Build.cmd` directly.
+removed; repo-local callers should use `tools/build/commands/Build.cmd` directly.
 
 Shared command wrappers used by multiple repo tools now live under
 `tools/common`, keeping the `tools` root focused on tool categories.
 
 Developer environment setup helpers now live under `tools/setup`. The
-`OneTimeSetup.cmd` entry point moved there next to its PowerShell
-implementation.
-The Visual Studio developer command prompt setup implementation lives there too,
-and initialization scripts now call `tools/setup/DevCmd.cmd` directly.
+one-time bootstrap entry point and its PowerShell implementation live under
+`tools/setup/bootstrap`, while init command entry points live under
+`tools/setup/init/commands` and the Visual Studio developer command prompt
+setup implementation lives under `tools/setup/shell`. There are no shallow
+setup compatibility wrappers; repo-local callers and external jobs should call
+the command paths directly.
 
 Controls shared build support files live under `controls/build`, while the
-controls build command implementation now lives under `tools/controls/Build`.
+controls build command implementation now lives under
+`tools/controls/Build/commands`.
 The root-level `controls/Build.cmd` wrapper was removed and solution items now
-point at `tools/controls/Build/Build.cmd`. Root-level controls props files that
+point at `tools/controls/Build/commands/Build.cmd`. Root-level controls props files that
 are discovered by MSBuild remain as thin wrappers over their implementations in
 `controls/build`. The controls `Directory.Build.props` and
 `Directory.Build.targets` implementations also live in `controls/build`, while

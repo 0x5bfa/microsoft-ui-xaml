@@ -33,9 +33,9 @@ the nature of both flavors:
 ## How to build experimental and release
 
 When you build locally, by default you'll build experimental.  If you want to build a release build
-locally, `tools\build\Build.cmd` supports this"
+locally, `tools\build\commands\Build.cmd` supports this"
 
-`tools\build\Build.cmd /muxfinal`
+`tools\build\commands\Build.cmd /muxfinal`
 
 Or if you're not building the whole repo:
 

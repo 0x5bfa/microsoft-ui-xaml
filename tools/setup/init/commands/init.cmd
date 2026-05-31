@@ -37,7 +37,7 @@ echo Could not find path: %~1
 exit /b 4
 
 :begin
-for %%I in ("%~dp0..\..\..") do set "RepoRoot=%%~fI"
+for %%I in ("%~dp0..\..\..\..") do set "RepoRoot=%%~fI"
 set XcpRoot=%RepoRoot%\src\runtime\xcp
 
 set EnvOnly=
@@ -159,16 +159,16 @@ if "%EnvCheck%"=="true" (
         echo ERROR: Cannot use /envcheck because a full init has not been run yet.
         echo        Required tools and NuGet packages are missing.
         echo.
-        echo        Run a full init first:  tools\setup\init\init.cmd [flavor]
-        echo        Example:                tools\setup\init\init.cmd amd64chk
+        echo        Run a full init first:  tools\setup\init\commands\init.cmd [flavor]
+        echo        Example:                tools\setup\init\commands\init.cmd amd64chk
         exit /b 1
     )
     if not exist "%RepoRoot%\.tools" (
         echo ERROR: Cannot use /envcheck because a full init has not been run yet.
         echo        Required tools and NuGet packages are missing.
         echo.
-        echo        Run a full init first:  tools\setup\init\init.cmd [flavor]
-        echo        Example:                tools\setup\init\init.cmd amd64chk
+        echo        Run a full init first:  tools\setup\init\commands\init.cmd [flavor]
+        echo        Example:                tools\setup\init\commands\init.cmd amd64chk
         exit /b 1
     )
 )
@@ -229,20 +229,20 @@ where msbuild >nul 2>&1
 if errorlevel 1 goto :NeedDevCmd
 goto :SkipDevCmd
 :NeedDevCmd
-    echo DevEnvDir environment variable not set or msbuild unavailable. Running tools\setup\DevCmd.cmd to get a developer command prompt...
+    echo DevEnvDir environment variable not set or msbuild unavailable. Running tools\setup\shell\DevCmd.cmd to get a developer command prompt...
     if "%ARM64EC%"=="1" (
-        call %RepoRoot%\tools\setup\DevCmd.cmd /PreserveContext /prerelease -arch=amd64 -host_arch=amd64
+        call %RepoRoot%\tools\setup\shell\DevCmd.cmd /PreserveContext /prerelease -arch=amd64 -host_arch=amd64
     ) else if "%ARM64%"=="1" (
-        call %RepoRoot%\tools\setup\DevCmd.cmd /PreserveContext /prerelease -arch=arm64 -host_arch=amd64
+        call %RepoRoot%\tools\setup\shell\DevCmd.cmd /PreserveContext /prerelease -arch=arm64 -host_arch=amd64
     ) else (
-        call %RepoRoot%\tools\setup\DevCmd.cmd /PreserveContext /prerelease -arch=%_BuildArch% -host_arch=amd64
+        call %RepoRoot%\tools\setup\shell\DevCmd.cmd /PreserveContext /prerelease -arch=%_BuildArch% -host_arch=amd64
     )
     if errorlevel 1 (echo Could not set up a developer command prompt && exit /b %ERRORLEVEL%)
 :SkipDevCmd
 
 if "%VisualStudioVersion%" == "16.0" (echo Visual Studio 2019 is not supported. && exit /b /1)
 
-set PATH=%RepoRoot%\.buildtools\MSBuild\Current\Bin\amd64;%RepoRoot%\.tools;%RepoRoot%\.tools\VSS.NuGet.AuthHelper;%RepoRoot%\tools;%RepoRoot%\tools\build;%RepoRoot%\tools\clang;%PATH%
+set PATH=%RepoRoot%\.buildtools\MSBuild\Current\Bin\amd64;%RepoRoot%\.tools;%RepoRoot%\.tools\VSS.NuGet.AuthHelper;%RepoRoot%\tools;%RepoRoot%\tools\build\commands;%RepoRoot%\tools\clang;%PATH%
 
 rem If we have init'd from a VS developer command prompt, we should use its tooling instead of the VS build tools installed with the repo
 call :AddPathIfExists "%VSINSTALLDIR%\MSBuild\Current\Bin\amd64"

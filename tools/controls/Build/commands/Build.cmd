@@ -1,6 +1,6 @@
 @echo off
 if not "%winui_echo%" == "" @echo on
-for %%I in ("%~dp0..\..\..") do set "_repoRoot=%%~fI"
+for %%I in ("%~dp0..\..\..\..") do set "_repoRoot=%%~fI"
 for %%I in ("%_repoRoot%\controls") do set "_controlsRoot=%%~fI"
 pushd "%_controlsRoot%"
 setlocal enabledelayedexpansion enableextensions
@@ -33,7 +33,7 @@ if "%1"=="/project" (
 
 :main
 if "%EnvironmentInitialized%" == "" (
-    echo Please run %RepoRoot%\tools\setup\init\init.cmd to ensure environment is properly initialized
+    echo Please run %RepoRoot%\tools\setup\init\commands\init.cmd to ensure environment is properly initialized
     exit /b 1
 )
 

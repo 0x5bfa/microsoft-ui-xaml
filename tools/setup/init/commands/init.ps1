@@ -15,15 +15,15 @@ function is-admin
     return $currentPrincipal.IsInRole( [Security.Principal.WindowsBuiltInRole]::Administrator )
 }
 
-$rootDir = (Resolve-Path (Join-Path $PSScriptRoot "..\..\..")).Path
-$initScriptsDir = $PSScriptRoot
+$rootDir = (Resolve-Path (Join-Path $PSScriptRoot "..\..\..\..")).Path
+$initScriptsDir = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 
 ## Command line options that are specific to PowerShell init (init.ps1)
 $arguments = New-Object Collections.ArrayList (,$args)
 
 ## Invoke-CmdScript will grab the env. vars. that init.cmd sets, and apply them to
 ## the PS environment.
-. (join-path $initScriptsDir Invoke-CmdScript) (join-path $initScriptsDir "init.cmd") $arguments.ToArray()
+. (join-path $initScriptsDir Invoke-CmdScript) (join-path $PSScriptRoot "init.cmd") $arguments.ToArray()
 
 if ($LASTEXITCODE -ne 0)
 {

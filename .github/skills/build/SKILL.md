@@ -8,14 +8,14 @@ description: Build the WinUI repository. Use when asked to build, compile, or re
 ## AI Agent Quick Start
 
 ```powershell
-# Always wrap commands with .\tools\setup\init\initrun.ps1 — it sets up the build environment automatically.
+# Always wrap commands with .\tools\setup\init\commands\initrun.ps1 — it sets up the build environment automatically.
 # Default flavor is amd64chk. Override with -Flavor.
 
-.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q                  # full repo build (product + tests) — USE THIS BY DEFAULT
-.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q product          # product code only (no tests)
-.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q mux              # MUX only (Microsoft.UI.Xaml.dll)
-.\tools\setup\init\initrun.ps1 msb /q "path\to\project.vcxproj"            # build a single project
-.\tools\setup\init\initrun.ps1 -Flavor arm64fre .\tools\build\Build.cmd /q # build for a different flavor
+.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q                  # full repo build (product + tests) — USE THIS BY DEFAULT
+.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q product          # product code only (no tests)
+.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q mux              # MUX only (Microsoft.UI.Xaml.dll)
+.\tools\setup\init\commands\initrun.ps1 msb /q "path\to\project.vcxproj"            # build a single project
+.\tools\setup\init\commands\initrun.ps1 -Flavor arm64fre .\tools\build\commands\Build.cmd /q # build for a different flavor
 ```
 
 ## Prefer bt for inner-loop builds
@@ -34,10 +34,10 @@ MSBuild entirely, replaying only the dirty compile/link steps in seconds.
 - You are unsure whether bt covers the change
 
 **Rules:**
-- Always prefix with `.\tools\setup\init\initrun.ps1`
+- Always prefix with `.\tools\setup\init\commands\initrun.ps1`
 - Always pass `/q` for quiet output (errors only)
 - Set `initial_wait` to at least **300 seconds** — builds take 1-10+ minutes
-- **When the user asks to "build the repo" or just "build" without specifying a target, use `.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q` (full build).**
+- **When the user asks to "build the repo" or just "build" without specifying a target, use `.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q` (full build).**
 Only use `mux` or a single project when the user asks for a specific component or when you know exactly which files changed.
 
 ## First-Time Setup
@@ -64,13 +64,13 @@ If you get build errors that seem to indicate missing dependencies, try running 
 
 | Command | What it builds | Time |
 |---------|---------------|------|
-| `.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q` | Everything (product + tests) | 10+ min |
-| `.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q mux` | `Microsoft.UI.Xaml.dll` only | 1-6 min |
-| `.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q product` | Product code (no tests) | 5-10 min |
-| `.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q /c` | Clean + full rebuild | 15+ min |
-| `.\tools\setup\init\initrun.ps1 msb /q "<project>"` | Single `.vcxproj` | 5s - 5 min |
+| `.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q` | Everything (product + tests) | 10+ min |
+| `.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q mux` | `Microsoft.UI.Xaml.dll` only | 1-6 min |
+| `.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q product` | Product code (no tests) | 5-10 min |
+| `.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q /c` | Clean + full rebuild | 15+ min |
+| `.\tools\setup\init\commands\initrun.ps1 msb /q "<project>"` | Single `.vcxproj` | 5s - 5 min |
 
-### Flags (for `.\tools\build\Build.cmd`)
+### Flags (for `.\tools\build\commands\Build.cmd`)
 
 | Flag | Effect |
 |------|--------|
@@ -85,11 +85,11 @@ If you get build errors that seem to indicate missing dependencies, try running 
 
 | Files changed in | Build command |
 |---|---|
-| `src/runtime/xcp/**` (source only) | **bt:** `bt build` · MSBuild: `.\tools\setup\init\initrun.ps1 msb /q "src\runtime\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj"` |
-| `src/controls/**` (source only) | **bt:** `bt build` · MSBuild: `.\tools\setup\init\initrun.ps1 msb /q "src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj"` |
-| `tests/runtime/native/external/<area>/**` (source only) | **bt:** `bt build` · MSBuild: `.\tools\setup\init\initrun.ps1 msb /q "tests\runtime\native\external\<area>\Microsoft.UI.Xaml.Tests.External.<Area>.vcxproj"` |
-| `.vcxproj`, `.vcxitems`, `.props`, `.targets`, NuGet deps | `.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q` (MSBuild only — do NOT use bt) |
-| Multiple areas or unsure | `.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q` |
+| `src/runtime/xcp/**` (source only) | **bt:** `bt build` · MSBuild: `.\tools\setup\init\commands\initrun.ps1 msb /q "src\runtime\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj"` |
+| `src/controls/**` (source only) | **bt:** `bt build` · MSBuild: `.\tools\setup\init\commands\initrun.ps1 msb /q "src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj"` |
+| `tests/runtime/native/external/<area>/**` (source only) | **bt:** `bt build` · MSBuild: `.\tools\setup\init\commands\initrun.ps1 msb /q "tests\runtime\native\external\<area>\Microsoft.UI.Xaml.Tests.External.<Area>.vcxproj"` |
+| `.vcxproj`, `.vcxitems`, `.props`, `.targets`, NuGet deps | `.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q` (MSBuild only — do NOT use bt) |
+| Multiple areas or unsure | `.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q` |
 
 Test areas: `controls`, `foundation`, `framework`, `automation`
 
@@ -108,12 +108,12 @@ This typically happens when building with the default `/m:4` parallelism on mach
 **Fix:**
 1. Use the `/b` flag in `build.cmd` which sets `/m:2` (2 parallel processes):
    ```powershell
-   .\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q /b
+   .\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q /b
    ```
 2. If `/b` still fails, close other memory-intensive applications (browsers, VS instances, etc.).
 3. If it keeps failing, stale PCH files from a previous build with a different compiler version may be the cause. Do a clean build:
    ```powershell
-   .\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q /c /b
+   .\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q /c /b
    ```
 
 ### `error C1853: precompiled header file is from a different version of the compiler`
@@ -123,7 +123,7 @@ This typically happens when building with the default `/m:4` parallelism on mach
 
 **Fix:** Do a clean build with `/c`:
 ```powershell
-.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q /c /b
+.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q /c /b
 ```
 
 ### Missing Spectre mitigation libs
