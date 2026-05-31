@@ -168,7 +168,7 @@ if EXIST "%reporoot%\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs" 
     call :buildSolution %reporoot%\eng\compiler\XamlCompilerPublic.csproj
     if ERRORLEVEL 1 goto:showDurationAndExit
     rem Ensure GenXbf.dll is available
-    call :buildSolution %reporoot%\eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj
+    call :buildSolution %reporoot%\eng\xamlcompiler\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj
     if ERRORLEVEL 1 goto:showDurationAndExit
 )
 

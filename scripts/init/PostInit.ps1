@@ -72,7 +72,7 @@ $isOssBuild = -not (Test-Path $repoRoot\src\compiler\BuildTasks\Microsoft\Lmr\Xa
 $pgoPackagesConfig = if ($isOssBuild) { 'eng\pgo\packages.OSS.config' } else { 'eng\pgo\packages.config' }
 $projectPackages = @(
     (Join-Path $repoRoot $pgoPackagesConfig),
-    (Join-Path $repoRoot 'eng\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj'),
+    (Join-Path $repoRoot 'eng\xamlcompiler\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj'),
     (Join-Path $repoRoot 'eng\restore\Microsoft.MaestroRestore.csproj'),
     (Join-Path $repoRoot 'src\controls\dll\packages.config'),
     (Join-Path $repoRoot 'src\compiler\XamlCompilerPrerequisites.sln'),
