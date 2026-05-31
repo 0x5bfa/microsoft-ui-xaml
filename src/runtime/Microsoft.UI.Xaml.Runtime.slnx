@@ -1578,69 +1578,67 @@
       <Platform Solution="*|x86" Project="Win32" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/" />
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/" />
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/dll/">
+  <Folder Name="/tools/runtime/" />
+  <Folder Name="/tools/runtime/AppAnalysis/" />
+  <Folder Name="/tools/runtime/AppAnalysis/dll/">
     <Project Path="../../tools/runtime/AppAnalysis/dll/Microsoft.Diagnostics.AppAnalysis.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/idl/">
+  <Folder Name="/tools/runtime/AppAnalysis/idl/">
     <Project Path="../../tools/runtime/AppAnalysis/idl/Microsoft.Diagnostics.AppAnalysis.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/module/">
+  <Folder Name="/tools/runtime/AppAnalysis/module/">
     <Project Path="../../tools/runtime/AppAnalysis/module/AppAnalysisModule.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/runtime/" />
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/runtime/common/">
+  <Folder Name="/tools/runtime/AppAnalysis/runtime/" />
+  <Folder Name="/tools/runtime/AppAnalysis/runtime/common/">
     <Project Path="../../tools/runtime/AppAnalysis/runtime/common/AppAnalysisRuntimeCommon.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/runtime/framework/">
+  <Folder Name="/tools/runtime/AppAnalysis/runtime/framework/">
     <Project Path="../../tools/runtime/AppAnalysis/runtime/framework/AppAnalysisRuntimeFramework.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/runtime/rules/">
+  <Folder Name="/tools/runtime/AppAnalysis/runtime/rules/">
     <Project Path="../../tools/runtime/AppAnalysis/runtime/rules/AppAnalysisRuntimeRules.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/sdkidl/">
+  <Folder Name="/tools/runtime/AppAnalysis/sdkidl/">
     <Project Path="../../tools/runtime/AppAnalysis/sdkidl/AppAnalysis.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/tool/">
+  <Folder Name="/tools/runtime/AppAnalysis/tool/">
     <Project Path="../../tools/runtime/AppAnalysis/tool/AppAnalysisTool.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/unittests/" />
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/unittests/engineTests/">
+  <Folder Name="/tests/runtime/appanalysis/unittests/" />
+  <Folder Name="/tests/runtime/appanalysis/unittests/engineTests/">
     <Project Path="../../tests/runtime/appanalysis/unittests/engineTests/Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/unittests/pch/">
+  <Folder Name="/tests/runtime/appanalysis/unittests/pch/">
     <Project Path="../../tests/runtime/appanalysis/unittests/pch/AppAnalysis.Unittests.pch.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/unittests/ruleTests/">
+  <Folder Name="/tests/runtime/appanalysis/unittests/ruleTests/">
     <Project Path="../../tests/runtime/appanalysis/unittests/ruleTests/Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/dxaml/tools/spy/" />
-  <Folder Name="/src/runtime/xcp/dxaml/tools/spylauncher/" />
-  <Folder Name="/src/runtime/xcp/dxaml/tools/xamldiagnostics/" />
-  <Folder Name="/src/runtime/xcp/dxaml/tools/xamldiagnostics/tap/">
+  <Folder Name="/tools/runtime/xamldiagnostics/" />
+  <Folder Name="/tools/runtime/xamldiagnostics/tap/">
     <Project Path="../../tools/runtime/xamldiagnostics/tap/XamlDiagnosticsTap.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1666,8 +1664,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/tools/" />
-  <Folder Name="/src/runtime/xcp/tools/DumpXbf/">
+  <Folder Name="/tools/runtime/DumpXbf/">
     <Project Path="../../tools/runtime/DumpXbf/DumpXbf.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
@@ -1680,13 +1677,13 @@
       <Platform Solution="Debug|x86" Project="Win32" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/tools/GenXbfDLL/">
+  <Folder Name="/tools/runtime/GenXbfDLL/">
     <Project Path="../../tools/runtime/GenXbfDLL/GenXbf.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/tools/XbfParser/" />
-  <Folder Name="/src/runtime/xcp/tools/XbfParser/SampleXbfViewer/">
+  <Folder Name="/tools/runtime/XbfParser/" />
+  <Folder Name="/tools/runtime/XbfParser/SampleXbfViewer/">
     <Project Path="../../tools/runtime/XbfParser/SampleXbfViewer/SampleXbfViewer.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
@@ -1699,7 +1696,7 @@
       <Platform Solution="Debug|x86" Project="Win32" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/tools/XbfParser/WidgetSpinner/">
+  <Folder Name="/tools/runtime/XbfParser/WidgetSpinner/">
     <Project Path="../../tools/runtime/XbfParser/WidgetSpinner/WidgetSpinner.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>

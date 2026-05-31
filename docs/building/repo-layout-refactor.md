@@ -891,7 +891,10 @@ checked-in generated `UcdData.cpp` lives under
 Legacy `dxaml/tools/xamldiagnostics` references have been retired. Product
 XamlDiagnostics source is addressed through `$(XamlDiagnosticsComponentPath)`,
 while the manually invoked/test TAP project remains under
-`tools/runtime/xamldiagnostics/tap`.
+`tools/runtime/xamldiagnostics/tap`. The runtime solution now presents these
+moved tool projects under `/tools/runtime` and AppAnalysis unit tests under
+`/tests/runtime/appanalysis`, so its virtual folders no longer suggest that
+moved tools still live under the XCP source tree.
 
 ## C#/WinRT projection source
 
