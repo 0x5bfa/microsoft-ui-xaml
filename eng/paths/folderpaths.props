@@ -51,7 +51,7 @@
     <RuntimeManagedTestPath>$(RuntimeTestPath)\managed</RuntimeManagedTestPath>
     <ManagedTestPath>$(RuntimeManagedTestPath)</ManagedTestPath>
 
-    <MuxControlsPath>$(ProjectRoot)controls</MuxControlsPath>
+    <MuxControlsPath>$(ProjectRoot)eng\controls</MuxControlsPath>
     <MuxControlsIdlPath>$(ProjectRoot)src\controls\idl\</MuxControlsIdlPath>
     <MuxControlsTestPath>$(ProjectRoot)tests\controls\</MuxControlsTestPath>
     <MuxControlsToolsPath>$(ProjectRoot)tools\controls\</MuxControlsToolsPath>

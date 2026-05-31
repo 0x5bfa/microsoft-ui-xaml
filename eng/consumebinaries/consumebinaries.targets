@@ -44,7 +44,7 @@
             <XamlProduct Include="$(XamlProductDir)Microsoft.UI.Xaml.winmd" />
             <XamlProduct Include="@(WinUIWinMDReferences)" />
             <XamlProduct Include="$(XamlProductDir)Microsoft.UI.Xaml.Controls.dll">
-                <AssociatedSolution>$(ProjectRoot)controls\solutions\MUXControls.sln</AssociatedSolution>
+                <AssociatedSolution>$(ProjectRoot)solutions\controls\MUXControls.sln</AssociatedSolution>
             </XamlProduct>
         </ItemGroup>
         <Error Condition="!Exists('%(XamlProduct.Identity)')" Text="%(XamlProduct.Identity) does not exist.  Please build %(XamlProduct.AssociatedSolution) before building." />
