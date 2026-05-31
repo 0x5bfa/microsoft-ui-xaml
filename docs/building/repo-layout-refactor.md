@@ -908,6 +908,12 @@ scripts, and scripted runtime build entry points can also avoid spelling
 `src\runtime\xcp` repeatedly. Runtime tool wrappers should consume `XcpRoot`
 when they need the runtime source root.
 
+## Compiler solutions
+
+Compiler solution files live under `src/compiler/solutions`. The parsing
+shared-project solution moved there as well, so `src/compiler` keeps compiler
+source folders separate from IDE/build entry points.
+
 ## Migration rules
 
 - Keep PRs mechanical. Do not mix folder moves with behavior changes.
