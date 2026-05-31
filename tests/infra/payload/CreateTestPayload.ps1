@@ -166,7 +166,7 @@ if ($Mode -eq "DevTestSuite" -or $Mode -eq "ScenarioTestSuite")
 
     # Publish items from repo:
     Publish-Item "$repoRoot\tests\infra\payload\scripts\*" "$outpath"
-    Publish-Item "$repoRoot\tests\infra\Helix\scripts\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\*" "$outpath"
     Publish-Item "$repoRoot\tests\infra\Helix\common\test\*" "$outpath"
     Publish-Item "$repoRoot\controls\tools\TestAppDeployment\EnableMUXControlsTestAppManagedDebugging.*" "$outpath"
 
@@ -259,7 +259,7 @@ if ($Mode -eq "PGO")
     Publish-Item "$binpath\TestDependencies\pgosweep.exe" "$outpath"
 
     # Publish items from repo:
-    Publish-Item "$repoRoot\tests\infra\Helix\scripts\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\*" "$outpath"
     Publish-Item "$repoRoot\tests\infra\Helix\common\test\*" "$outpath"
 }
 
