@@ -165,21 +165,21 @@
   </Folder>
   <Folder Name="/TitleBar/" />
   <Folder Name="/Tools/">
-    <File Path="../../../tools/controls/Build/scripts/Build.cmd" />
-    <File Path="../../../tools/controls/BuildTasks/packaging/MUXCustomBuildTasks/scripts/PublishNupkg.cmd" />
-    <File Path="../../../tools/controls/Common/scripts/NugetWrapper.cmd" />
-    <File Path="../../../tools/controls/Common/scripts/PowershellWrapper.cmd" />
-    <File Path="../../../tools/controls/ControlGeneration/scripts/GenerateNewProperty.ps1" />
-    <File Path="../../../tools/controls/Packaging/scripts/MakeAppxHelper.cmd" />
-    <File Path="../../../tools/controls/ResourceGeneration/scripts/GenerateSystemDllImageResources.ps1" />
-    <File Path="../../../tools/controls/ResourceGeneration/scripts/GenerateSystemDllStringResources.ps1" />
-    <File Path="../../../tools/controls/ResourceGeneration/scripts/GenerateVisualVerificationUpdates.ps1" />
-    <File Path="../../../tools/controls/Shell/scripts/addaliases.cmd" />
-    <File Path="../../../tools/controls/Shell/scripts/DevCmd.cmd" />
-    <File Path="../../../tools/controls/Shell/scripts/ps.bat" />
-    <File Path="../../../tools/controls/Shell/scripts/PSProfile.ps1" />
-    <File Path="../../../tools/controls/TestAppDeployment/scripts/ExtractPackageDependencies.ps1" />
-    <File Path="../../../tools/controls/XamlProcessing/scripts/Utils.psm1" />
+    <File Path="../../tools/controls/Build/scripts/Build.cmd" />
+    <File Path="../../tools/controls/BuildTasks/packaging/MUXCustomBuildTasks/scripts/PublishNupkg.cmd" />
+    <File Path="../../tools/controls/Common/scripts/NugetWrapper.cmd" />
+    <File Path="../../tools/controls/Common/scripts/PowershellWrapper.cmd" />
+    <File Path="../../tools/controls/ControlGeneration/scripts/GenerateNewProperty.ps1" />
+    <File Path="../../tools/controls/Packaging/scripts/MakeAppxHelper.cmd" />
+    <File Path="../../tools/controls/ResourceGeneration/scripts/GenerateSystemDllImageResources.ps1" />
+    <File Path="../../tools/controls/ResourceGeneration/scripts/GenerateSystemDllStringResources.ps1" />
+    <File Path="../../tools/controls/ResourceGeneration/scripts/GenerateVisualVerificationUpdates.ps1" />
+    <File Path="../../tools/controls/Shell/scripts/addaliases.cmd" />
+    <File Path="../../tools/controls/Shell/scripts/DevCmd.cmd" />
+    <File Path="../../tools/controls/Shell/scripts/ps.bat" />
+    <File Path="../../tools/controls/Shell/scripts/PSProfile.ps1" />
+    <File Path="../../tools/controls/TestAppDeployment/scripts/ExtractPackageDependencies.ps1" />
+    <File Path="../../tools/controls/XamlProcessing/scripts/Utils.psm1" />
   </Folder>
   <Folder Name="/TwoPaneView/" />
   <Folder Name="/WebView2/" />

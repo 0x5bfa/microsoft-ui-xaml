@@ -8,7 +8,7 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/Solution Items/">
-    <File Path="../../../eng/controls/build/InnerLoopAreas.props" />
+    <File Path="../../eng/controls/build/InnerLoopAreas.props" />
   </Folder>
   <Folder Name="/src-controls/">
     <Project Path="dll/Microsoft.UI.Xaml.Controls.vcxproj">
