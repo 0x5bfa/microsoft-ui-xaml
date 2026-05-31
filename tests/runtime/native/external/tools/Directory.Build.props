@@ -7,12 +7,13 @@
   </PropertyGroup>
   <Import Project="$(MSBuildThisFileDirectory)..\Directory.Build.props" />
   <PropertyGroup>
-    <SharedCustomTypesDir>$(MSBuildThisFileDirectory)customTypes</SharedCustomTypesDir>
-    <SharedCustomTypesGeneratedFilesDir>$(BaseIntermediateOutputPath)customTypes\generated</SharedCustomTypesGeneratedFilesDir>
+    <SharedCustomTypesDir>$(RuntimeToolsCustomTypesPath)</SharedCustomTypesDir>
+    <SharedCustomTypesGeneratedFilesDir>$(RuntimeToolsCustomTypesObjPath)\generated</SharedCustomTypesGeneratedFilesDir>
     <ProjectIncludeDirectories>$([System.String]::Copy('$(ProjectIncludeDirectories)').Replace('$(RuntimeNativeExternalTestPath)\$(SharedCustomTypes)\customtypes', '$(SharedCustomTypesDir)').Replace('$(RuntimeNativeExternalTestObjPath)\$(SharedCustomTypes)\customtypes\generated', '$(SharedCustomTypesGeneratedFilesDir)'))</ProjectIncludeDirectories>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Remove="$(RuntimeNativeExternalTestPath)\$(SharedCustomTypes)\customtypes\CustomTypes.vcxproj" />
+    <ProjectReference Remove="$(RuntimeToolsCustomTypesPath)\CustomTypes.vcxproj" />
   </ItemGroup>
 
 </Project>

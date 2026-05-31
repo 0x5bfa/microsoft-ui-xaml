@@ -18,6 +18,10 @@
     <DisableXbfLineInfo>false</DisableXbfLineInfo>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)'==''">15.0</VisualStudioVersion>
     <Mui>false</Mui>
+    <TestCode>true</TestCode>
+    <UseRidGraph>true</UseRidGraph>
+    <IgnorePrivateMUXMetadataDir>true</IgnorePrivateMUXMetadataDir>
+    <BinplaceOutputAssemblies>false</BinplaceOutputAssemblies>
     <PreprocessorDefinitions>_UNICODE;UNICODE;_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     <UseXamlCompiler>true</UseXamlCompiler>
     <CxLinkage>true</CxLinkage>
@@ -29,7 +33,7 @@
   <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
-  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.NTLegacy.Cpp.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Xaml.NTLegacy.Cpp.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <PropertyGroup>
     <GenerateManifest>false</GenerateManifest>
@@ -136,5 +140,5 @@
   <PropertyGroup>
     <TargetDestination>$(TestBinplaceResourcesDestinationPath)\native\tools</TargetDestination>
   </PropertyGroup>
-  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.NTLegacy.Cpp.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\eng\xamlbuild\Xaml.NTLegacy.Cpp.targets" />
 </Project>
