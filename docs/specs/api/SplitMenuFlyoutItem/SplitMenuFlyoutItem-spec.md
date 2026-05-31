@@ -7,7 +7,7 @@ The `SplitMenuFlyoutItem` control is a new addition to the WinUI library, design
 a split button experience within a menu flyout. This control derives from `MenuFlyoutItem` and 
 introduces a dual-button interface consisting of a primary button and a flyout button.
 
-![General look of SplitMenuFlyoutItem](./splitmenuflyoutitem-openwith.png)
+![General look of SplitMenuFlyoutItem](images/splitmenuflyoutitem-openwith.png)
 
 The primary button behaves like a standard `MenuFlyoutItem`, raising a click event and 
 executing a command when clicked. The flyout button operates similarly to `MenuFlyoutSubItem` 
@@ -17,7 +17,7 @@ This control addresses scenarios where you need to provide both a default action
 additional options in a submenu, offering a more efficient use of menu space while 
 maintaining discoverability of related actions.
 
-![Flyout open state](./splitmenuflyoutitem-flyout-open.png)
+![Flyout open state](images/splitmenuflyoutitem-flyout-open.png)
 
 # Conceptual pages (How To)
 
@@ -119,7 +119,7 @@ You can customize the appearance of the submenu using the styling properties:
 
 Here is one example of a customized submenu.
 
-![Customizable SubMenu Scarnario](./customizable-submenu-scenario.png)
+![Customizable SubMenu Scarnario](images/customizable-submenu-scenario.png)
 
 # API Pages
 
