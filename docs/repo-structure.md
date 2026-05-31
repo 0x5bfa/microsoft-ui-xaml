@@ -30,6 +30,7 @@ The mock Windows App SDK package update helper lives under
 Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
 Build wrapper commands live under `/tools/build`.
 Shared command wrappers live under `/tools/common`.
+Developer environment setup helpers live under `/tools/setup`.
 Controls build machine maintenance helpers live under `/controls/tools/BuildMachine`.
 Controls custom MSBuild task sources, targets, and solution live under `/controls/tools/BuildTasks`.
 Controls scaffolding helpers live under `/controls/tools/ControlGeneration`.
