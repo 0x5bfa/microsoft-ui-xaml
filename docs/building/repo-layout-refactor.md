@@ -301,6 +301,9 @@ the repo-root product-wide `Microsoft.UI.Xaml.slnx` entry point.
 The runtime solution's virtual folders now mirror the refactored source and
 test layout as well, using `/src/runtime`, `/src/controls`, `/tools/controls`,
 and `/tests/runtime` instead of the legacy `/dxaml` and `/dxaml/test` names.
+Runtime isolated AccessKeys test projects are also shown under their
+`/tests/runtime/native/isolated/xaml/accessKeys` folders instead of under
+source-side component `unittests` folders.
 
 The product-wide solution now lives at the repo root as
 `Microsoft.UI.Xaml.slnx`, preserving it as the repo-wide entry point without

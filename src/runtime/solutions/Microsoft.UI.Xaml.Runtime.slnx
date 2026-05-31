@@ -500,7 +500,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/AccessKey/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/accessKey/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/accessKey/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -512,7 +512,7 @@
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/InputInterceptor/" />
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/InputInterceptor/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/inputInterceptor/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/inputInterceptor/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -523,7 +523,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/KeyTips/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/keyTips/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/keyTips/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -534,13 +534,13 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/ModeContainer/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/modeContainer/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/modeContainer/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/Owner/" />
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/Owner/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/owner/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/owner/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -551,31 +551,31 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/Parser/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/parser/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/parser/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/Scope/" />
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/Scope/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/scope/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/scope/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKScope.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/ScopeBuilder/" />
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/ScopeBuilder/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/scopeBuilder/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/scopeBuilder/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeBuilder.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/ScopeTree/" />
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/ScopeTree/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/scopeTree/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/scopeTree/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeTree.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/TreeAnalyzer/" />
-  <Folder Name="/src/runtime/xcp/components/AccessKeys/TreeAnalyzer/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/treeAnalyzer/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/treeAnalyzer/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
