@@ -34,7 +34,7 @@ components within Visual Studio is very trivial but it cannot be used for this p
 saving them in Visual Studio introduces unwanted changes. A good workflow trick will be making a copy of solution file
 and then making changes to the copied solution file by opening it in Visual Studio. Afterwards, using a diff between
 original sln and copied sln, only necessary needed changes can be made to the original sln file. A final verification
-would be starting a full build by issuing `tools\build\Build.cmd`. If all the changes are correct, the build will proceed just fine.
+would be starting a full build by issuing `tools\build\commands\Build.cmd`. If all the changes are correct, the build will proceed just fine.
 
 ## WinUI components from other repos
 
@@ -67,7 +67,7 @@ error WMC0605: Failure Generating XAML Binary Format: Exception=External compone
 [<repo>\tests\runtime\tools\customTypes\customTypes.vcxproj]
 ```
 
-Running the build under the debugger was far more helpful.  `tools/build/msb.cmd` was modified as follows:
+Running the build under the debugger was far more helpful.  `tools/build/commands/msb.cmd` was modified as follows:
 
 ```shell
 :buildIt

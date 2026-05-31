@@ -26,7 +26,7 @@ Follow these steps:
    ([see notes](#other-notes)) installed, this command will ensure you have the required components:
    ```
    cd C:\winui3\src
-   .\tools\setup\OneTimeSetup.cmd -Install MSBuild
+   .\tools\setup\bootstrap\OneTimeSetup.cmd -Install MSBuild
    ```
 
    Click the various "Yes", "Continue", and "Modify"/"Install" buttons as needed to complete
@@ -43,16 +43,16 @@ Starting with a command prompt or PowerShell at the root of your WinUI repo:
 
 2. Initialize to build ([details](#initialize-cmd-or-powershell-with-support-for-vs-build-tools)):
    ```
-   tools\setup\init\init.cmd
+   tools\setup\init\commands\init.cmd
    ```
    Or, for PowerShell:
    ```
-   .\tools\setup\init\init.ps1
+   .\tools\setup\init\commands\init.ps1
    ```
 
 3. Build the project:
    ```
-   .\tools\build\Build.cmd
+   .\tools\build\commands\Build.cmd
    ```
 
 If the build was successful, the output should show this at the end:
@@ -66,7 +66,7 @@ See [below](#build-failures) for more information on investigating build failure
 
 To do a clean build, you can run add a `/c` parameter:
    ```
-   .\tools\build\Build.cmd /c
+   .\tools\build\commands\Build.cmd /c
    ```
 
 ## Build output
@@ -200,12 +200,12 @@ excluding `Microsoft.UI.Xaml.Internal.dll` (which will not be OSS).
 
 At the CMD prompt, in the `src\` folder off the root of the repo, run (for an x64chk build):
 ```
-tools\setup\init\init.cmd
+tools\setup\init\commands\init.cmd
 ```
 
 Or in PowerShell, run:
 ```
-.\tools\setup\init\init.ps1
+.\tools\setup\init\commands\init.ps1
 ```
 
 > Note:  If you get an error saying it can't find msbuild, this is likely due to a pending Visual Studio update. To see
@@ -215,20 +215,20 @@ If so, try that first, then retry the init command.
 This script restores NuGet packages and initializes your build environment with the proper environment variables for
 specifying which platform and configuration you are building.
 
-> Any time you do a `git pull` you also need to re-run tools\setup\init\init.cmd
+> Any time you do a `git pull` you also need to re-run tools\setup\init\commands\init.cmd
 
 The default environment is `x64` `Debug`. Below is a list of other possible Platform/Configuration combinations and the
 init command that sets them up.
 
 | Platform  | Configuration | Init command       |
 | :-------- | :----------   | :----------------- |
-| x86       | Debug         | tools\setup\init\init.cmd  x86chk   |
-| x86       | Release       | tools\setup\init\init.cmd  x86fre   |
-| x64       | Debug         | tools\setup\init\init.cmd           |
-| x64       | Debug         | tools\setup\init\init.cmd  x64chk   |
-| x64       | Release       | tools\setup\init\init.cmd  x64fre   |
-| arm64     | Debug         | tools\setup\init\init.cmd  arm64chk |
-| arm64     | Release       | tools\setup\init\init.cmd  arm64fre |
+| x86       | Debug         | tools\setup\init\commands\init.cmd  x86chk   |
+| x86       | Release       | tools\setup\init\commands\init.cmd  x86fre   |
+| x64       | Debug         | tools\setup\init\commands\init.cmd           |
+| x64       | Debug         | tools\setup\init\commands\init.cmd  x64chk   |
+| x64       | Release       | tools\setup\init\commands\init.cmd  x64fre   |
+| arm64     | Debug         | tools\setup\init\commands\init.cmd  arm64chk |
+| arm64     | Release       | tools\setup\init\commands\init.cmd  arm64fre |
 
 ### Build failures
 
@@ -243,7 +243,7 @@ error C1076: compiler limit: internal heap limit reached
 error C1060: compiler is out of heap space
 ```
 
-One option is to simply retry an incremental build by running `tools\build\Build.cmd` again. This simple
+One option is to simply retry an incremental build by running `tools\build\commands\Build.cmd` again. This simple
 approach often works, but it may take multiple attempts.
 
 Another option, which is more reliable, is to limit the number of parallel compiler processes
@@ -251,7 +251,7 @@ by setting the `CL` environment variable before building. For example, in CMD:
 ```
 set CL=/MP2
 ```
-And then run the build again with `tools\build\Build.cmd`.
+And then run the build again with `tools\build\commands\Build.cmd`.
 
 ### Install MSBuild Log Viewer
 
@@ -261,10 +261,10 @@ the `.binlog` produced by the build in a human readable way. The link above prov
 as well as some basics of how to use the tool. Or you can install the tool by running the following
 command at the root of the repo:
 ```
-.\tools\setup\OneTimeSetup.cmd -Install LogViewer
+.\tools\setup\bootstrap\OneTimeSetup.cmd -Install LogViewer
 ```
 
 ### Other notes
 
-* `tools\setup\OneTimeSetup.cmd` currently assumes Visual Studio 2022. However, this project can also be built
+* `tools\setup\bootstrap\OneTimeSetup.cmd` currently assumes Visual Studio 2022. However, this project can also be built
   with Visual Studio 2026 if all necessary components are installed.

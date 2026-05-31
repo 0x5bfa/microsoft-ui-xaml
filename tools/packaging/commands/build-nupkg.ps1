@@ -1,7 +1,7 @@
 [CmdLetBinding()]
 Param(
-    [string]$PackageRoot =  $(Resolve-Path "$PSScriptRoot\..\..\BuildOutput\packaging\Release"),
-    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\packaging\package-store"),
+    [string]$PackageRoot =  $(Resolve-Path "$PSScriptRoot\..\..\..\BuildOutput\packaging\Release"),
+    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\packaging\package-store"),
     [string]$VersionOverride,
     [switch]$NoPackageAnalysis,
     [switch]$UseDependencyOverrides,
@@ -13,7 +13,7 @@ Param(
 # Version is read from the VERSION file.
 #
 
-$repoRoot = (Resolve-Path "$PSScriptRoot\..\..").Path
+$repoRoot = (Resolve-Path "$PSScriptRoot\..\..\..").Path
 $scriptDirectory = Join-Path $repoRoot "packaging\nuspecs"
 
 pushd $scriptDirectory

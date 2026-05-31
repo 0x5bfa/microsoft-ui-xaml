@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5EF3865D
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		..\tools\controls\Shell\addaliases.cmd = ..\tools\controls\Shell\addaliases.cmd
-		..\tools\controls\Build\Build.cmd = ..\tools\controls\Build\Build.cmd
+		..\tools\controls\Build\commands\Build.cmd = ..\tools\controls\Build\commands\Build.cmd
 		..\tools\controls\Shell\DevCmd.cmd = ..\tools\controls\Shell\DevCmd.cmd
 		..\tools\controls\TestAppDeployment\ExtractPackageDependencies.ps1 = ..\tools\controls\TestAppDeployment\ExtractPackageDependencies.ps1
 		..\tools\controls\ControlGeneration\GenerateNewProperty.ps1 = ..\tools\controls\ControlGeneration\GenerateNewProperty.ps1

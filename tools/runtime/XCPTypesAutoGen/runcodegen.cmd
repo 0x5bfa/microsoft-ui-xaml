@@ -3,7 +3,7 @@
 REM Copyright (c) Microsoft Corporation.
 REM Licensed under the MIT License. See LICENSE in the project root for license information.
 
-if "%RepoRoot%" == "" call "%~dp0..\..\..\tools\setup\init\init.cmd"
+if "%RepoRoot%" == "" call "%~dp0..\..\..\tools\setup\init\commands\init.cmd"
 if "%XcpRoot%" == "" set "XcpRoot=%RepoRoot%\src\runtime\xcp"
 
 SETLOCAL

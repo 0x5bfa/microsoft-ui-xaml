@@ -29,8 +29,8 @@ coding related information to help get started with the repository.
 
 * Install the latest Visual Studio, then the .vsconfig file [(details)](#install-visual-studio)
 * Clone the repo [(details)](#clone-the-winui-repo)
-* In cmd, from the repo directory, run `tools\setup\init\init.cmd`. Or in PowerShell, run `tools\setup\init\init.ps1`. [(details)](#initialize-cmd-or-powershell-with-support-for-vs-build-tools)
-* Run `tools\build\Build.cmd` [(details)](#building-winui)
+* In cmd, from the repo directory, run `tools\setup\init\commands\init.cmd`. Or in PowerShell, run `tools\setup\init\commands\init.ps1`. [(details)](#initialize-cmd-or-powershell-with-support-for-vs-build-tools)
+* Run `tools\build\commands\Build.cmd` [(details)](#building-winui)
 
 ## Preparing the machine for building
 
@@ -116,12 +116,12 @@ Microsoft credentials.
 
 At the CMD prompt, in the root of the repo, run (for an x64chk build):
 ```
-tools\setup\init\init.cmd
+tools\setup\init\commands\init.cmd
 ```
 
 Or in PowerShell, run:
 ```
-tools\setup\init\init.ps1
+tools\setup\init\commands\init.ps1
 ```
 
 > Note:  If you get an error saying it can't find msbuild, this is likely due to a pending Visual Studio update. To see
@@ -131,32 +131,32 @@ If so, try that first, then retry the init command.
 This script restores NuGet packages and initializes your build environment with the proper environment variables for
 specifying which platform and configuration you are building.
 
-> Any time you do a `git pull` you also need to re-run tools\setup\init\init.cmd
+> Any time you do a `git pull` you also need to re-run tools\setup\init\commands\init.cmd
 
 The default environment is `x64` `Debug`. Below is a list of other possible Platform/Configuration combinations and the
 init command that sets them up.
 
 | Platform  | Configuration | Init command       |
 | :-------- | :----------   | :----------------- |
-| x86       | Debug         | tools\setup\init\init.cmd  x86chk   |
-| x86       | Release       | tools\setup\init\init.cmd  x86fre   |
-| x64       | Debug         | tools\setup\init\init.cmd           |
-| x64       | Debug         | tools\setup\init\init.cmd  x64chk   |
-| x64       | Release       | tools\setup\init\init.cmd  x64fre   |
-| arm64     | Debug         | tools\setup\init\init.cmd  arm64chk |
-| arm64     | Release       | tools\setup\init\init.cmd  arm64fre |
+| x86       | Debug         | tools\setup\init\commands\init.cmd  x86chk   |
+| x86       | Release       | tools\setup\init\commands\init.cmd  x86fre   |
+| x64       | Debug         | tools\setup\init\commands\init.cmd           |
+| x64       | Debug         | tools\setup\init\commands\init.cmd  x64chk   |
+| x64       | Release       | tools\setup\init\commands\init.cmd  x64fre   |
+| arm64     | Debug         | tools\setup\init\commands\init.cmd  arm64chk |
+| arm64     | Release       | tools\setup\init\commands\init.cmd  arm64fre |
 
 Note that the terms `chk` and `fre` are  currently used throughout the build to refer to `Debug` and `Release`
 configurations, respectively.
 
 #### Configuring the .NET version
-`tools\setup\init\init.cmd` is also responsible for controlling what .NET version the build targets. By default, it is .NET 6.
-However, it can be controlled by passing in either `net6` or `net7` as an argument (e.g. `tools\setup\init\init.cmd net6` will
-initialize the build to target .NET 6, `tools\setup\init\init.cmd x86fre net7` will initialize the build for x86fre targeting
+`tools\setup\init\commands\init.cmd` is also responsible for controlling what .NET version the build targets. By default, it is .NET 6.
+However, it can be controlled by passing in either `net6` or `net7` as an argument (e.g. `tools\setup\init\commands\init.cmd net6` will
+initialize the build to target .NET 6, `tools\setup\init\commands\init.cmd x86fre net7` will initialize the build for x86fre targeting
 .NET 7, etc.). In the pipeline, this behavior is controlled using the `dotNetFrameworkVersion` pipeline
 variable with the same argument (e.g. setting `dotNetFrameworkVersion` to `net6` will target .NET 6).
 
-To control the .NET version being targeted, `tools\setup\init\init.cmd` calls the
+To control the .NET version being targeted, `tools\setup\init\commands\init.cmd` calls the
 [SetupDotNetFiles.cmd](../../tools/setup/init/SetupDotNetFiles.cmd) script to deploy relevant files for targeting either .NET 6 or .NET 7.
 
 Additionally, even when targeting .NET 6, the `Microsoft.WinUI` projection dll
@@ -173,7 +173,7 @@ sharing props/targets files with it.  Any projects using C++/CX are and will rem
 From the root of the repo:
 
 ```
-tools\build\Build.cmd
+tools\build\commands\Build.cmd
 ```
 
 Notes:
@@ -182,7 +182,7 @@ Notes:
 + The `/m` allows the build to spawn up to as many as many processes as there are logical CPUs
 + Did your build fail due to memory errors?  Please see the "Swap Space" section above
 
-For more information on the various ways to build, run `tools\build\Build.cmd /?`. There are predefined "targets" that specify
+For more information on the various ways to build, run `tools\build\commands\Build.cmd /?`. There are predefined "targets" that specify
 which subsets of the code to build, such as product code, tests, or sample applications. There are also many
 "options", some unique to WinUI and some applicable to all msbuild commands. These include many useful switches such as
 `/c`, which will clear out anything in your repository created by a previous build.

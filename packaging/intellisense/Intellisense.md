@@ -16,6 +16,6 @@ in Visual Studio. We'll clean the strings before including them.
 3. Run `powershell ..\..\tools\packaging\intellisense\GenerateIntellisenseFiles.ps1`.  This will read the files in the **drop** subdir and update
 the files in the **generated\packaging\intellisense** dir.  The build will pick up these files and include them in the
 nuget package, alongside the dll/winmd it describes.
-    * Note: This step requires outputs from a build, so be sure to run `tools\setup\init\init.cmd` and `tools\build\Build.cmd` first.
+    * Note: This step requires outputs from a build, so be sure to run `tools\setup\init\commands\init.cmd` and `tools\build\commands\Build.cmd` first.
 4. Create a topic branch, add the files in **generated\packaging\intellisense**, and create a PR. Have a look at the
 changes in `Coverage.txt` to see how the Intellisense coverage of the API surface may have changed.
