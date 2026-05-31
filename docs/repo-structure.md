@@ -30,7 +30,8 @@ The mock Windows App SDK package update helper lives under
 The WinUI component package command implementation lives under
 `/tools/packaging`.
 Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
-Build wrapper commands live under `/tools/build`.
+Build wrapper command implementations live under `/tools/build`, with root
+entry points kept for compatibility where needed.
 Shared command wrappers live under `/tools/common`.
 Developer environment setup helpers live under `/tools/setup`.
 Controls build machine maintenance helpers live under `/controls/tools/BuildMachine`.
