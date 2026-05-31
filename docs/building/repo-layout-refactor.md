@@ -538,6 +538,9 @@ keeping metadata-driven package registration generation in its own build bucket.
 External binary selection targets now live under `eng/externalbinaries`, keeping
 package payload selection rules separate from root-level build entry points.
 
+Binplace targets now live under `eng/binplace`, grouping output-copy rules with
+the rest of the build rule buckets instead of the `eng` root.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
