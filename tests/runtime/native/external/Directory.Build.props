@@ -51,8 +51,8 @@
  </PropertyGroup>
 
   <PropertyGroup>
-    <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
-    <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
+    <XamlDiagPath>$(XamlDiagnosticsComponentPath)</XamlDiagPath>
+    <XamlDiagObjPath>$(XamlDiagnosticsComponentObjPath)</XamlDiagObjPath>
     <ProjectIncludeDirectories>
         $(ProjectIncludeDirectories);
         $(XamlDiagPath)\idl;

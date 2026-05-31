@@ -19,8 +19,8 @@
     <PropertyGroup>
         <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) WIN32_LEAN_AND_MEAN=1;WINRT_LEAN_AND_MEAN;_OLE32_;</ProjectPreprocessorDefinitions>
 
-        <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
-        <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
+        <XamlDiagPath>$(XamlDiagnosticsComponentPath)</XamlDiagPath>
+        <XamlDiagObjPath>$(XamlDiagnosticsComponentObjPath)</XamlDiagObjPath>
 
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);

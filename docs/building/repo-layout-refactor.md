@@ -754,6 +754,10 @@ with shared references flowing through `$(AppAnalysisPath)` and
 lives under `tools/runtime/TextClassification`; the checked-in generated
 `UcdData.cpp` remains with the runtime text classification source that compiles
 it.
+Legacy `dxaml/tools/xamldiagnostics` references have been retired. Product
+XamlDiagnostics source is addressed through `$(XamlDiagnosticsComponentPath)`,
+while the manually invoked/test TAP project remains under
+`tools/runtime/xamldiagnostics/tap`.
 
 ## C#/WinRT projection source
 

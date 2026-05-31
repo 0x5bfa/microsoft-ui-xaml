@@ -22,8 +22,8 @@
     <!-- including with <>. That's not really a great thing to do and I'd rather we -->
     <!-- catch it here than allow us to shadow over a header file silently.         -->
     <PropertyGroup>
-        <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
-        <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
+        <XamlDiagPath>$(XamlDiagnosticsComponentPath)</XamlDiagPath>
+        <XamlDiagObjPath>$(XamlDiagnosticsComponentObjPath)</XamlDiagObjPath>
         <ProjectIncludeDirectories>
             $(ProjectIncludeDirectories);
             $(LiftedIXPIncludePaths);

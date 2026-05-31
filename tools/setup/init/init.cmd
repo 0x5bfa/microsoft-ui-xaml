@@ -242,7 +242,7 @@ goto :SkipDevCmd
 
 if "%VisualStudioVersion%" == "16.0" (echo Visual Studio 2019 is not supported. && exit /b /1)
 
-set PATH=%RepoRoot%\.buildtools\MSBuild\Current\Bin\amd64;%RepoRoot%\.tools;%RepoRoot%\.tools\VSS.NuGet.AuthHelper;%RepoRoot%\tools;%RepoRoot%\tools\build;%RepoRoot%\tools\clang;%RepoRoot%\dxaml\scripts;%PATH%
+set PATH=%RepoRoot%\.buildtools\MSBuild\Current\Bin\amd64;%RepoRoot%\.tools;%RepoRoot%\.tools\VSS.NuGet.AuthHelper;%RepoRoot%\tools;%RepoRoot%\tools\build;%RepoRoot%\tools\clang;%PATH%
 
 rem If we have init'd from a VS developer command prompt, we should use its tooling instead of the VS build tools installed with the repo
 call :AddPathIfExists "%VSINSTALLDIR%\MSBuild\Current\Bin\amd64"
