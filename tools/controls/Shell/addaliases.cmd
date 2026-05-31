@@ -1,5 +1,6 @@
 @echo OFF
-pushd %~dp0\..\..
+for %%I in ("%~dp0..\..\..\controls") do set "_controlsRoot=%%~fI"
+pushd "%_controlsRoot%"
 
 doskey ..=pushd ..
 doskey ...=pushd ..\..

@@ -7,7 +7,7 @@ del MUXCustomBuildTasks*.nupkg
 
 call IncrementVersionNumber.cmd
 
-msbuild /m %RepoRoot%\controls\tools\BuildTasks\CustomTasks.sln /restore /p:Configuration=Release /p:Platform="Any CPU" /t:Rebuild
+msbuild /m %RepoRoot%\tools\controls\BuildTasks\CustomTasks.sln /restore /p:Configuration=Release /p:Platform="Any CPU" /t:Rebuild
 
 call BuildNupkg.cmd
 call PublishNupkg.cmd

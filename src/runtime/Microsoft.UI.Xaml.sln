@@ -1367,7 +1367,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "idl", "idl", "{DD23DEAE-E54
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls.idl", "..\controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj", "{DE10DFE2-5EA3-452A-B055-FC60E330AFBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanupMSBuildProcesses", "..\..\controls\tools\BuildTasks\CleanupMSBuildProcesses.csproj", "{D3CC3748-57C0-4AD5-AAF6-24377328DAE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanupMSBuildProcesses", "..\..\tools\controls\BuildTasks\CleanupMSBuildProcesses.csproj", "{D3CC3748-57C0-4AD5-AAF6-24377328DAE7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dxaml", "dxaml", "{3612E999-95F3-49A5-B2CC-0D5B3F4BED04}"
 EndProject

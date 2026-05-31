@@ -1,11 +1,12 @@
 @echo OFF
 
-for %%I in ("%~dp0..\..") do set "_controlsRoot=%%~fI"
+for %%I in ("%~dp0..\..\..") do set "_repoRoot=%%~fI"
+for %%I in ("%_repoRoot%\controls") do set "_controlsRoot=%%~fI"
 pushd "%_controlsRoot%"
 
-set PATH=%PATH%;%_controlsRoot%\tools
+set PATH=%PATH%;%_repoRoot%\tools\controls
 
-call "%_controlsRoot%\tools\Shell\addaliases.cmd"
+call "%_repoRoot%\tools\controls\Shell\addaliases.cmd"
 
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -Latest -requires Microsoft.Component.MSBuild -property InstallationPath > %TEMP%\vsinstalldir.txt
 

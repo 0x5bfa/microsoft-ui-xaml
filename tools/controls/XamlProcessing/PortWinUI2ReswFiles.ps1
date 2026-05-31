@@ -31,6 +31,9 @@ foreach ($projectFile in (Get-ChildItem "$repoRoot\src\controls" -Filter "*.vcxi
 # Next, we'll bring over the new resw files.
 Write-Host "Copying over new resw files..."
 
+$winUI2DevRoot = [System.IO.Path]::GetFullPath("$WinUI2RepoRoot\dev").TrimEnd('\')
+$targetRoot = "$repoRoot\src\controls"
+
 foreach ($projectFile in (Get-ChildItem "$WinUI2RepoRoot\dev" -Filter "*.vcxitems" -Recurse))
 {
     Write-Host "    Copying resw files from $($projectFile.FullName)..."
@@ -40,7 +43,8 @@ foreach ($projectFile in (Get-ChildItem "$WinUI2RepoRoot\dev" -Filter "*.vcxitem
 
     foreach ($reswFile in $reswFiles)
     {
-        $targetPath = $reswFile.FullName.ToLower().Replace($WinUI2RepoRoot.ToLower(), "$($repoRoot.ToLower())\controls")
+        $relativePath = $reswFile.FullName.Substring($winUI2DevRoot.Length).TrimStart('\')
+        $targetPath = Join-Path $targetRoot $relativePath
         $targetDirectory = [System.IO.Path]::GetDirectoryName($targetPath)
 
         if (-not [System.IO.Directory]::Exists($targetDirectory))

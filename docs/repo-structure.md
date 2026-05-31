@@ -34,26 +34,26 @@ Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
 Build wrapper command implementations live under `/tools/build`.
 Shared command wrappers live under `/tools/common`.
 Developer environment setup helpers live under `/tools/setup`.
-Controls build machine maintenance helpers live under `/controls/tools/BuildMachine`.
-Controls custom MSBuild task sources, targets, and solution live under `/controls/tools/BuildTasks`.
-Controls scaffolding helpers live under `/controls/tools/ControlGeneration`.
-Controls release helper scripts live under `/controls/tools/Release`.
-Controls resource generation helpers live under `/controls/tools/ResourceGeneration`.
+Controls build machine maintenance helpers live under `/tools/controls/BuildMachine`.
+Controls custom MSBuild task sources, targets, and solution live under `/tools/controls/BuildTasks`.
+Controls scaffolding helpers live under `/tools/controls/ControlGeneration`.
+Controls release helper scripts live under `/tools/controls/Release`.
+Controls resource generation helpers live under `/tools/controls/ResourceGeneration`.
 Controls developer shell helpers and command implementation live under
-`/controls/tools/Shell`.
-Controls shared command wrappers live under `/controls/tools/Common`.
-Controls packaging helpers live under `/controls/tools/Packaging`.
-Controls source maintenance helpers live under `/controls/tools/SourceMaintenance`.
-Controls test app deployment, installation, and dependency helpers live under `/controls/tools/TestAppDeployment`.
-Controls test reporting helpers live under `/controls/tools/TestReporting`.
-Controls XAML processing and WinUI 2 migration helpers live under `/controls/tools/XamlProcessing`.
+`/tools/controls/Shell`.
+Controls shared command wrappers live under `/tools/controls/Common`.
+Controls packaging helpers live under `/tools/controls/Packaging`.
+Controls source maintenance helpers live under `/tools/controls/SourceMaintenance`.
+Controls test app deployment, installation, and dependency helpers live under `/tools/controls/TestAppDeployment`.
+Controls test reporting helpers live under `/tools/controls/TestReporting`.
+Controls XAML processing and WinUI 2 migration helpers live under `/tools/controls/XamlProcessing`.
 
 ## /controls
 This folder contains controls solution and tooling entry points.
 The Microsoft.UI.Xaml.Controls.dll implementation source lives under `/src/controls`.
 Controls-specific build support lives under `/controls/build`, including
 feature-area selection, project import manifests, and shared props/targets.
-The controls build command implementation lives under `/controls/tools/Build`.
+The controls build command implementation lives under `/tools/controls/Build`.
 Root controls props files are thin wrappers where MSBuild discovery depends on
 their names. Controls-specific `Directory.Build.props` and
 `Directory.Build.targets` implementations also live under `/controls/build`.

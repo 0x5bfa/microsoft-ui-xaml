@@ -8,6 +8,7 @@
     <MUXControlsSourceRoot>$(ProjectRoot)src\controls\</MUXControlsSourceRoot>
     <MUXControlsIdlRoot>$(MUXControlsSourceRoot)idl\</MUXControlsIdlRoot>
     <MUXControlsTestRoot>$(ProjectRoot)tests\controls\</MUXControlsTestRoot>
+    <MUXControlsToolsRoot>$(ProjectRoot)tools\controls\</MUXControlsToolsRoot>
     <MUXControlsGeneratedSourceDir>$(ProjectRoot)generated\controls\dependencyproperties\</MUXControlsGeneratedSourceDir>
     <NuGetPackageRoot Condition="'$(NuGetPackageRoot)' == ''">$(MUXProjectRoot)packages</NuGetPackageRoot>
     <NugetPackageDirectory>$(NuGetPackageRoot)</NugetPackageDirectory>

@@ -3,7 +3,9 @@ SETLOCAL
 
 echo -- MakeAppxHelper.cmd %* --
 
-pushd %~dp0\..
+for %%I in ("%~dp0..\..\..") do set "_repoRoot=%%~fI"
+for %%I in ("%_repoRoot%\controls") do set "_controlsRoot=%%~fI"
+pushd "%_repoRoot%"
 
 set PATH=%TFS_SourcesDirectory%\tools;%PATH%;%WindowsSdkBinPath%x86
 set ExitCode=0
@@ -31,14 +33,14 @@ set BasePackageName=Microsoft.UI.Xaml
 
 echo BUILDOUTPUT_OVERRIDE = %BUILDOUTPUT_OVERRIDE%
 if "%BUILDOUTPUT_OVERRIDE%" == "" (
-    set InputDirectory=%CD%\..\BuildOutput\%TFS_BUILDCONFIGURATION%\%TFS_PLATFORM%\Microsoft.UI.Xaml
-    set OutputDirectory=%CD%\..\BuildOutput\%TFS_BUILDCONFIGURATION%\%TFS_PLATFORM%\FrameworkPackage
+    set InputDirectory=%_repoRoot%\BuildOutput\%TFS_BUILDCONFIGURATION%\%TFS_PLATFORM%\Microsoft.UI.Xaml
+    set OutputDirectory=%_repoRoot%\BuildOutput\%TFS_BUILDCONFIGURATION%\%TFS_PLATFORM%\FrameworkPackage
 ) else (
     set InputDirectory=%BUILDOUTPUT_OVERRIDE%\Microsoft.UI.Xaml
     set OutputDirectory=%BUILDOUTPUT_OVERRIDE%\FrameworkPackage
 )
 
-call ..\build\FrameworkPackage\MakeFrameworkPackage.cmd -InputDirectory '%InputDirectory%' ^
+call "%_controlsRoot%\build\FrameworkPackage\MakeFrameworkPackage.cmd" -InputDirectory '%InputDirectory%' ^
 -OutputDirectory '%OutputDirectory%' -BasePackageName '%BasePackageName%' ^
 -Platform %TFS_PLATFORM% -Configuration %TFS_BUILDCONFIGURATION% ^
  %3 %4 %5 %6 %7 %8 %9

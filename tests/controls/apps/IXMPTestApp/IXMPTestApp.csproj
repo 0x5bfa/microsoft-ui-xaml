@@ -197,7 +197,7 @@
   </PropertyGroup>
   <Import Project="$(CSharpTargetsFilePath)" />
   <Import Project="..\..\build\RetargetCopyLocalFiles.targets" />
-  <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
+  <Import Project="$(MUXControlsToolsRoot)BuildTasks\CustomInlineTasks.targets" />
   <Import Project="..\..\build\TestApp.targets" />
   <!-- The WinUI component package's BeforeCommon.targets disables WindowsAppSDKSelfContained for UWP apps
        via CustomBeforeMicrosoftCommonTargets. In this repo we build the framework from source, so we need
@@ -226,7 +226,7 @@
   <!-- Override WindowsAppSdkSelfContained target that removes WinMDs from appx manifest -->
   <Target Name="_RemoveWinMDFromAppxManifest" />
   <Target Name="CustomAfterGenerateAppPackages" AfterTargets="_GenerateAppxPackage">
-    <RunPowershellScript Path="$(MUXCProjectRoot)tools\TestAppDeployment\ExtractPackageDependencies.ps1" Parameters="-sourceFile $(OutDir)\$(MSBuildProjectName).build.appxrecipe -platform $(PlatformName) -outputFile $(AppxPackageTestDir)$(AppxPackageName).dependencies.txt" FilesWritten="$(AppxPackageTestDir)$(AppxPackageName).dependencies.txt">
+    <RunPowershellScript Path="$(MUXControlsToolsRoot)TestAppDeployment\ExtractPackageDependencies.ps1" Parameters="-sourceFile $(OutDir)\$(MSBuildProjectName).build.appxrecipe -platform $(PlatformName) -outputFile $(AppxPackageTestDir)$(AppxPackageName).dependencies.txt" FilesWritten="$(AppxPackageTestDir)$(AppxPackageName).dependencies.txt">
       <Output TaskParameter="MSBuildProcessId" ItemName="MSBuildProcessIdsToKill" />
     </RunPowershellScript>
   </Target>
