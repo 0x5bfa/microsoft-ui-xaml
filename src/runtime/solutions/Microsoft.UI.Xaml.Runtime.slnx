@@ -597,13 +597,13 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/animation/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/animation/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/animation/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/associative/" />
-  <Folder Name="/src/runtime/xcp/components/associative/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/associative/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/associative/Microsoft.UI.Xaml.Tests.Isolated.Associative.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -614,7 +614,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/base/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/base/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/base/Microsoft.UI.Xaml.Tests.Isolated.Base.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -625,7 +625,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/brushes/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/brushes/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/brushes/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -636,7 +636,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/Collection/Unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/collection/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/collection/Microsoft.UI.Xaml.Tests.Isolated.Collection.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -647,7 +647,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/colors/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/colors/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/colors/Microsoft.UI.Xaml.Tests.Isolated.Colors.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -658,7 +658,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/com/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/com/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/com/Microsoft.UI.Xaml.Tests.Isolated.Com.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -770,7 +770,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/elements/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/elements/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/elements/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Elements.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -799,7 +799,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/flyweight/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/flyweight/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/flyweight/Microsoft.UI.Xaml.Tests.Isolated.Flyweight.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -878,7 +878,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/graphics/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/graphics/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/graphics/Microsoft.UI.Xaml.Tests.Isolated.Graphics.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -889,7 +889,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/imaging/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/imaging/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/imaging/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -934,7 +934,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/legacy/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/legacy/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/legacy/Microsoft.UI.Xaml.Tests.Isolated.Legacy.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -945,7 +945,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/lifetime/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/lifetime/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/lifetime/Microsoft.UI.Xaml.Tests.Isolated.Lifetime.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -967,7 +967,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/math/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/math/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/math/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Math.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1020,7 +1020,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/offerableheap/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/offerableheap/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/offerableheap/Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1168,7 +1168,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/text/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/text/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/text/Microsoft.UI.Xaml.Tests.Isolated.Text.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1179,7 +1179,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/themeanimationshelper/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/themeanimationshelper/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/themeanimationshelper/Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1209,7 +1209,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/threading/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/threading/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/threading/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1220,7 +1220,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/transforms/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/transforms/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/transforms/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1313,7 +1313,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/xstring/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/foundation/xstring/">
     <Project Path="../../../tests/runtime/native/isolated/foundation/xstring/Microsoft.UI.Xaml.Tests.Isolated.Strings.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
