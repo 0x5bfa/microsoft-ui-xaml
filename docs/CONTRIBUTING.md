@@ -10,8 +10,8 @@ Note that all community interactions must abide by the [Code of Conduct](CODE_OF
 
 For reporting security issues please see the [Security Policy](SECURITY.md).
 
-Contributions from the community in the form of feature requests and bugs are handled according to our [contribution handling](docs/external/contribution_handling.md) guidelines.
-For guidance on making feedback and requests more actionable, see [Contributing ideas, feedback, and requests](docs/external/feedback-and-requests.md).
+Contributions from the community in the form of feature requests and bugs are handled according to our [contribution handling](external/contribution_handling.md) guidelines.
+For guidance on making feedback and requests more actionable, see [Contributing ideas, feedback, and requests](external/feedback-and-requests.md).
 
 ## New contributors
 
@@ -28,7 +28,7 @@ Another great way to help is by voting and commenting on feature proposals:
 
 ### Proposing new public APIs or UI
 
-Please follow the [New Feature or API Process](docs/external/feature_proposal_process.md) before adding, removing, or changing public APIs or UI.  
+Please follow the [New Feature or API Process](external/feature_proposal_process.md) before adding, removing, or changing public APIs or UI.
 All new public APIs, new UI, or breaking changes to existing features **must** go through that process before submitting code changes.  
 You don't need to follow that process for bug fixes or other small changes.
 
@@ -42,10 +42,10 @@ While we strive to accept all community contributions that meet the guidelines o
 
 For details see:
 
-* [Setup and build environment](docs/building/developer-guide.md)
-* [Source code structure](docs/repo-structure.md)
-* [Contribution workflow](docs/external/contribution_workflow.md)
-* [Documentation style guide](docs/external/docs-style-guide.md)
+* [Setup and build environment](building/developer-guide.md)
+* [Source code structure](repo-structure.md)
+* [Contribution workflow](external/contribution_workflow.md)
+* [Documentation style guide](external/docs-style-guide.md)
 
 ### Contributor License Agreement
 
