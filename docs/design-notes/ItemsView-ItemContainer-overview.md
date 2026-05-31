@@ -21,7 +21,7 @@ Examples:
     * attached properties for its inner ScrollView part.
 
 - The ListView & GridView do not support:
-    * flow layouts (like the new [LinedFlowLayout](LinedFlowLayout_spec.md)),
+    * flow layouts (like the new [LinedFlowLayout](../specs/LinedFlowLayout/LinedFlowLayout_spec.md)),
     * pluggable layouts,
     * pluggable scrolling controllers (like the new [AnnotatedScrollBar](../specs/AnnotatedScrollBar/annotatedscrollbar_spec.md)),
     * custom recycling pools,
@@ -215,6 +215,6 @@ Recent File Explorer Photos Gallery UI.
 
 # Related docs
 
-The [ItemsView](ItemsView_spec.md), [ItemContainer](../specs/ItemContainer/itemcontainer-functional-spec.md), [ItemCollectionTransitionProvider](../specs/ItemCollectionTransitionProvider/ItemCollectionTransitionProvider-spec.md),
-[LinedFlowLayout](LinedFlowLayout_spec.md), [Layout updates for LinedFlowLayout](layout-updates-for-lfl.md) documents provide lots of information about the expected
+The [ItemsView](../specs/ItemsView/ItemsView_spec.md), [ItemContainer](../specs/ItemContainer/itemcontainer-functional-spec.md), [ItemCollectionTransitionProvider](../specs/ItemCollectionTransitionProvider/ItemCollectionTransitionProvider-spec.md),
+[LinedFlowLayout](../specs/LinedFlowLayout/LinedFlowLayout_spec.md), [Layout updates for LinedFlowLayout](layout-updates-for-lfl.md) documents provide lots of information about the expected
 behaviors.
