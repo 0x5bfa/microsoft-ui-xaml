@@ -87,7 +87,9 @@ AppAnalysis test support projects now live under `tests/runtime/appanalysis`.
 runtime projects and AppAnalysis unit tests that consume those support projects.
 The AppAnalysis engine and rule unit-test projects now live under
 `tests/runtime/appanalysis/unittests`, alongside their AppAnalysis-specific
-test props and precompiled-header project.
+test props and precompiled-header project. The external tools AppAnalysis
+integration tests now live under `tests/runtime/appanalysis/integration`, with
+the external tools test DLL consuming them through `$(AppAnalysisTestPath)`.
 
 ## Runtime ad hoc test apps
 
