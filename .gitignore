@@ -163,6 +163,10 @@ publish/
 PackageStore/
 packaging/package-store/*
 !packaging/package-store/readme.md
+!tests/runtime/packages/
+!tests/runtime/packages/edge/
+tests/runtime/packages/edge/**
+!tests/runtime/packages/edge/README.md
 *.nuget.props
 *.nuget.targets
 

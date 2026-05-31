@@ -13,6 +13,6 @@
     </description>
   </metadata>
   <files>
-    <file src="..\..\dxaml\test\edge\144.0.3719.82\**" target="edge\mini_installer" />
+    <file src="..\..\tests\runtime\packages\edge\144.0.3719.82\**" target="edge\mini_installer" />
   </files>
 </package>
