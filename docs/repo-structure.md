@@ -29,6 +29,7 @@ The WinUI component package command implementation lives under
 `/tools/packaging`.
 Compiler developer tools, performance collection scripts, and coverage helpers
 live under `/tools/compiler`.
+Runtime developer tools and source-generation helpers live under `/tools/runtime`.
 Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
 Build wrapper command implementations live under `/tools/build`.
 Shared command wrappers live under `/tools/common`.
