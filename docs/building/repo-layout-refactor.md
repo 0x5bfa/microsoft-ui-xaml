@@ -709,8 +709,8 @@ controls build command implementation now lives under
 Controls solution entry points now live under `src/controls/solutions`. The
 root-level `controls/Build.cmd` wrapper was removed and solution items now
 point at `tools/controls/Build/scripts/Build.cmd`. The old top-level controls
-MSBuild wrappers moved under `eng/controls`, with their implementations under
-`eng/controls/build`.
+MSBuild wrappers have been retired; projects import the build support files
+under `eng/controls/build` directly.
 
 Controls build machine maintenance helpers now live under
 `tools/controls/BuildMachine/scripts`, keeping the queue/build-machine scripts

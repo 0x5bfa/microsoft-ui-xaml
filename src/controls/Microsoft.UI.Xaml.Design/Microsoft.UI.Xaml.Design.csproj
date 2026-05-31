@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. See LICENSE in the project root for license information. -->
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildProjectDirectory)\..\..\mux.controls.props" />
-  <Import Project="$(MSBuildProjectDirectory)\..\..\environment.props" />
+  <Import Project="$(MSBuildProjectDirectory)\..\..\..\eng\controls\build\mux.controls.props" />
+  <Import Project="$(MSBuildProjectDirectory)\..\environment.props" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <ProjectGuid>{1CEEC8E3-419A-4304-841C-08A334B9E4FF}</ProjectGuid>
