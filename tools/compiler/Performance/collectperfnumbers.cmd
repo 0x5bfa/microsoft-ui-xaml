@@ -6,10 +6,11 @@ REM Licensed under the MIT License. See LICENSE in the project root for license 
 if "%_NTROOT%" == "" goto collectPerf
 @echo Cannot collect perf from razzle window, copy this into a cmd window
 @echo cd /d "%CD%"
-@echo collectperfnumbers.cmd
+@echo "%~dp0collectperfnumbers.cmd"
 goto :EOF
 
 :collectPerf
+set "_scriptDir=%~dp0"
 
 for /F "tokens=1,2,3* delims=/ " %%i in ("%date%") do set nicedate=%%k/%%j/%%l
 for /F "tokens=1,2,3* delims=:. " %%i in ("%time%") do set nicetime=%%i:%%j:%%k
@@ -42,10 +43,10 @@ findstr /ip /c:" ms " "%PROJROOT%\%1\build.log" > "%PROJROOT%\%1\ms.log"
 REM @echo Finding XAML compiler interesting info
 
 del /q "%PROJROOT%\%1\ms.csv"
-for /F %%i in (info.txt) do @call :findLine "%PROJROOT%\%1" %%i
+for /F "usebackq" %%i in ("%_scriptDir%info.txt") do @call :findLine "%PROJROOT%\%1" %%i
 
 rem make one collective csv
-copy columns.csv + "%PROJROOT%\%1\*-ms.csv.tmp" "%PROJROOT%\%1\perf.csv"
+copy "%_scriptDir%columns.csv" + "%PROJROOT%\%1\*-ms.csv.tmp" "%PROJROOT%\%1\perf.csv"
 mkdir "%LOGDIR%\%USERNAME%"
 copy "%PROJROOT%\%1\perf.csv" "%LOGDIR%\%USERNAME%\%1-perf.csv"
 goto :EOF
@@ -65,10 +66,10 @@ findstr /ip /c:" ms " "%PROJROOT%\%1\build.log" > "%PROJROOT%\%1\ms-incr.log"
 REM @echo Finding XAML compiler interesting info
 
 del /q "%PROJROOT%\%1\ms-incr.csv"
-for /F %%i in (info.txt) do @call :findLineIncr "%PROJROOT%\%1" %%i
+for /F "usebackq" %%i in ("%_scriptDir%info.txt") do @call :findLineIncr "%PROJROOT%\%1" %%i
 
 rem make one collective csv
-copy columns.csv + "%PROJROOT%\%1\*ms-incr.csv.tmp" "%PROJROOT%\%1\perf-incr.csv"
+copy "%_scriptDir%columns.csv" + "%PROJROOT%\%1\*ms-incr.csv.tmp" "%PROJROOT%\%1\perf-incr.csv"
 mkdir "%LOGDIR%\%USERNAME%"
 copy "%PROJROOT%\%1\perf-incr.csv" "%LOGDIR%\%USERNAME%\%1-perf-incr.csv"
 goto :EOF

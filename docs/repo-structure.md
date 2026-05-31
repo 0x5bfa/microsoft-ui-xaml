@@ -27,9 +27,10 @@ The mock Windows App SDK package update helper lives under
 `/tools/packaging/UpdateMockWinAppSDKPackage`.
 The WinUI component package command implementation lives under
 `/tools/packaging`.
+Compiler developer tools, performance collection scripts, and coverage helpers
+live under `/tools/compiler`.
 Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
-Build wrapper command implementations live under `/tools/build`, with root
-entry points kept for compatibility where needed.
+Build wrapper command implementations live under `/tools/build`.
 Shared command wrappers live under `/tools/common`.
 Developer environment setup helpers live under `/tools/setup`.
 Controls build machine maintenance helpers live under `/controls/tools/BuildMachine`.
@@ -51,8 +52,7 @@ This folder contains controls solution, IDL, test, and tooling entry points.
 The Microsoft.UI.Xaml.Controls.dll implementation source lives under `/src/controls`.
 Controls-specific build support lives under `/controls/build`, including
 the controls build command implementation, feature-area selection, project
-import manifests, and shared props/targets. Root command entry points are kept
-for compatibility where needed, and root controls props files are thin wrappers
+import manifests, and shared props/targets. Root controls props files are thin wrappers
 where MSBuild discovery depends on their names. Controls-specific
 `Directory.Build.props` and `Directory.Build.targets` implementations also live
 under `/controls/build`.
