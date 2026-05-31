@@ -912,6 +912,8 @@ The `docs` root is intentionally limited to the developer documentation index
 repository structure overview, and repository-wide policy or notice files. New
 docs should pick an existing category folder before adding another root-level
 markdown file.
+The duplicate controls privacy notice under `eng/controls` was retired after
+the repository-wide privacy notice moved to `docs/privacy.md`.
 
 ## Runtime path preparation
 
