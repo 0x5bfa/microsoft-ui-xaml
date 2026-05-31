@@ -24,7 +24,7 @@ For the ongoing path cleanup direction, see the [repository layout refactor](./b
 The [developer guide](./building/developer-guide.md) contains information on how to do the day-to-day tasks in this repo, as well as the tools and setup required to get going.
 
 ### WinUI Test System
-See [Testing In WinUI FAQ](./testing/testing-FAQ.md), [WinUI CI Test System Overview](./testing/test-system-overview.md), and [How to Repro a Xaml Test Failure](./testing/how-to-repro-a-xaml-test-failure.md) for information on how to run our test automation.
+See [Testing In WinUI FAQ](./testing/testing-FAQ.md), [WinUI CI Test System Overview](./testing/test-system-overview.md), [How to Repro a Xaml Test Failure](./testing/how-to-repro-a-xaml-test-failure.md), and [.NET Validation for WinUI Applications](./testing/netvalidationforwinui.md) for information on validation and test automation.
 
 ### Build System How-To
 For more detailed information on how to accomplish common tasks with the build system, see the [build system how-to doc](./building/build-system-howto.md) to help you accomplish your tasks
