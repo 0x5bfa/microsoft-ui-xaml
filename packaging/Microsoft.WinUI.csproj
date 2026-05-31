@@ -39,7 +39,7 @@
   <Target Name="CreateManifestResourceNames" />
   <Target Name="GetMrtPackagingOutputs" />
   
-  <Target Name="FillExtensions" BeforeTargets="_CreateWinUIPackageLayout" Inputs="AppxManifest.xml;$(ArtifactsObjDir)MergedWinMD\LiftedWinRTClassRegistrations.xml" Outputs="$(OutDir)AppxManifest.xml">
+  <Target Name="FillExtensions" BeforeTargets="_CreateWinUIPackageLayout" Inputs="manifests\AppxManifest.xml;$(ArtifactsObjDir)MergedWinMD\LiftedWinRTClassRegistrations.xml" Outputs="$(OutDir)AppxManifest.xml">
     <PropertyGroup>
       <Namespaces>
         <Namespace Prefix="ns" Uri="http://schemas.microsoft.com/appx/manifest/foundation/windows10" />
@@ -62,7 +62,7 @@
     </PropertyGroup>
     
     <!-- Copy AppxManifest.xml to the output directory. -->
-    <Copy SourceFiles="AppxManifest.xml" DestinationFiles="$(OutDir)AppxManifest.xml" />
+    <Copy SourceFiles="manifests\AppxManifest.xml" DestinationFiles="$(OutDir)AppxManifest.xml" />
 
     <!-- Insert the extensions into the AppxManifest.xml copy. -->
     <XmlPoke XmlInputPath="$(OutDir)AppxManifest.xml"

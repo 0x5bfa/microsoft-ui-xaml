@@ -185,6 +185,8 @@ location now reflects that it packs WinUI packaging output. The Edge runtime
 dependency nuspec used by WebView2 test package updates also lives there.
 Package build targets now live under `packaging/build`, including the target
 that keeps the project-capability version in sync with `WinUIVersion`.
+Static package manifest inputs live under `packaging/manifests`, keeping
+package metadata separate from the project file and package build targets.
 
 ## Build transforms
 

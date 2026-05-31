@@ -33,7 +33,7 @@ where it is ingested by the WindowsAppSDK aggregation pipeline.
 The transport package:
 
 * excludes the MRM and ApplicationModel artifacts included in the Microsoft.WinUI nuget package  
-* includes an [AppxManifest.xml](../packaging/AppxManifest.xml)
+* includes an [AppxManifest.xml](../packaging/manifests/AppxManifest.xml)
   file to convey ActivatableClass entries  
 
 ### Windows App SDK Aggregation
