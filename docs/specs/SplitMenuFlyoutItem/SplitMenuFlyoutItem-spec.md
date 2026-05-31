@@ -7,7 +7,7 @@ The `SplitMenuFlyoutItem` control is a new addition to the WinUI library, design
 a split button experience within a menu flyout. This control derives from `MenuFlyoutItem` and 
 introduces a dual-button interface consisting of a primary button and a flyout button.
 
-![General look of SplitMenuFlyoutItem - Dark](./splitmenuflyoutitem-normal-dark.png)
+![General look of SplitMenuFlyoutItem - Dark](images/splitmenuflyoutitem-normal-dark.png)
 
 The primary button behaves like a standard `MenuFlyoutItem`, raising a click event and 
 executing a command when clicked. The flyout button operates similarly to `MenuFlyoutSubItem` 
@@ -17,9 +17,9 @@ This control addresses scenarios where you need to provide both a default action
 additional options in a submenu, offering a more efficient use of menu space while 
 maintaining discoverability of related actions.
 
-![Flyout open state - Dark Mode](./splitmenuflyoutitem-flyoutopen-dark.png)
+![Flyout open state - Dark Mode](images/splitmenuflyoutitem-flyoutopen-dark.png)
 
-![Flyout open state - Light Mode](./splitmenuflyoutitem-flyoutopen-normal.png)
+![Flyout open state - Light Mode](images/splitmenuflyoutitem-flyoutopen-normal.png)
 
 # Conceptual pages (How To)
 
@@ -52,7 +52,7 @@ additional choices:
 In this example, clicking the primary button executes the `SaveCommand`, while hovering over 
 the flyout button reveals additional save-related options.
 
-![Save Scenario](./save-scenario.png)
+![Save Scenario](images/save-scenario.png)
 
 ### Advanced Usage
 
@@ -111,7 +111,7 @@ You can customize the appearance of the submenu using the styling properties:
 
 Here is one example of a customized submenu (this is a reference from the SplitButton control).
 
-![Customizable Sub Menu Scenario](./customizable-submenu-sample.png)
+![Customizable Sub Menu Scenario](images/customizable-submenu-sample.png)
 
 #### Nesting of SplitMenuFlyoutItem
 
@@ -131,7 +131,7 @@ We can also support nesting of menu items in this control:
 </SplitMenuFlyoutItem>
 ```
 
-![Nested Submenu Scenario](./nested-submenu.png)
+![Nested Submenu Scenario](images/nested-submenu.png)
 
 ### Using SplitMenuFlyoutItem in XAML, C#, and C++
 
@@ -156,7 +156,7 @@ As any control can be instantiated using either XANL, C# or C++, here is a table
     &lt;/SplitMenuFlyoutItem&gt;
 &lt;/MenuFlyout&gt;</pre>
     </td>
-    <td><img src="./openwith-xaml-example.png" alt="Rendered control" width="250"/></td>
+    <td><img src="images/openwith-xaml-example.png" alt="Rendered control" width="250"/></td>
   </tr>
   <tr>
     <td><b>C#</b></td>
@@ -174,7 +174,7 @@ splitItem.Items.Add(
 var menuFlyout = new MenuFlyout();
 menuFlyout.Items.Add(splitItem);</pre>
     </td>
-    <td><img src="./openwith-csharp-example.png" alt="Rendered control" width="250"/></td>
+    <td><img src="images/openwith-csharp-example.png" alt="Rendered control" width="250"/></td>
   </tr>
   <tr>
     <td><b>C++/WinRT</b></td>
@@ -201,7 +201,7 @@ splitItem.Items().Append(vsItem);
 auto menuFlyout = MenuFlyout();
 menuFlyout.Items().Append(splitItem);</pre>
     </td>
-    <td><img src="./openwith-cpp-example.png" alt="Rendered control" width="250"/></td>
+    <td><img src="images/openwith-cpp-example.png" alt="Rendered control" width="250"/></td>
   </tr>
 </table>
 
@@ -379,10 +379,10 @@ Accessibility tools like screen readers (Narrator, NVDA) use the UI Automation F
 1. **Focus on primary button**: When the UI Automation clients focus moves to the primary button, the screen reader announces information similar other menu items in the menu flyout: ***<menu-item-name> menu item, 3 of 5, collapsed*** 
 2. **Focus on secondary button**: When the UI Automation clients focus moves to the secondary button, the screen reader announces the following information: ***More options for <menu-item-name> menu item, button*** 
 
-#### Differences in behaviour when compared to MenuFlyoutItem and MenuFlyoutSubItem 
+#### Differences in behaviour when compared to MenuFlyoutItem and MenuFlyoutSubItem
 1. In case of SplitMenuFlyoutItem, the focus of the automation clients will move to individual parts instead of the whole control.
 2. Depending on the focus, the bounding box for the control will be around the primary or secondary button and not over the whole control.
 
 ### Other Behaviour
 
-1. When `Items` property is an empty collection, the secondary button will be disabled. 
+1. When `Items` property is an empty collection, the secondary button will be disabled.
