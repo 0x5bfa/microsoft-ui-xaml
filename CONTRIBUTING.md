@@ -11,6 +11,7 @@ Note that all community interactions must abide by the [Code of Conduct](CODE_OF
 For reporting security issues please see the [Security Policy](SECURITY.md).
 
 Contributions from the community in the form of feature requests and bugs are handled according to our [contribution handling](docs/external/contribution_handling.md) guidelines.
+For guidance on making feedback and requests more actionable, see [Contributing ideas, feedback, and requests](docs/external/feedback-and-requests.md).
 
 ## New contributors
 
