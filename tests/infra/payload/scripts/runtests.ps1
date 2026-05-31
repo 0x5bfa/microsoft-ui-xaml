@@ -92,7 +92,7 @@ Set-Location $TestDir
 
 if (!$SkipPackageUninstall)
 {
-    # Note - Make sure that this list is kept in sync with controls\test\testinfra\MUXTestInfra\TestAppInstallHelper.cs
+    # Note - Make sure that this list is kept in sync with tests\controls\testinfra\MUXTestInfra\TestAppInstallHelper.cs
     Write-Host "Attempting to uninstall previous versions of sample apps";
     Get-AppxPackage "WinUICppDesktopSampleApp" | Remove-AppxPackage -ErrorAction SilentlyContinue;
     Get-AppxPackage "WinUICsDesktopSampleApp" | Remove-AppxPackage -ErrorAction SilentlyContinue;

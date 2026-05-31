@@ -305,7 +305,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonStyles", "CommonStyle
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommonStyles", "..\src\controls\CommonStyles\CommonStyles.vcxitems", "{3A07FA59-C5C1-4B46-8B31-043F9CA91226}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControlsTestApp", "test\apps\MUXControlsTestApp\MUXControlsTestApp.csproj", "{FBC396F5-26DD-4CA3-981E-C7BC9FEA4546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControlsTestApp", "..\tests\controls\apps\MUXControlsTestApp\MUXControlsTestApp.csproj", "{FBC396F5-26DD-4CA3-981E-C7BC9FEA4546}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MUXControls.Test", "MUXControls.Test", "{85F9040A-109D-42FF-9BE3-4CF4181DDEF1}"
 EndProject
@@ -319,7 +319,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadioMenuFlyoutItem_Interac
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadioMenuFlyoutItem_TestUI", "..\src\controls\RadioMenuFlyoutItem\TestUI\RadioMenuFlyoutItem_TestUI.shproj", "{50E838A2-A886-46C9-AB0B-A57F510CE643}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControls.Test", "test\MUXControls.Test\MUXControls.Test.csproj", "{4D8C5D1B-F982-44A1-B744-DD0E51651BF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControls.Test", "..\tests\controls\MUXControls.Test\MUXControls.Test.csproj", "{4D8C5D1B-F982-44A1-B744-DD0E51651BF2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TeachingTip", "TeachingTip", "{4873DE1A-27B5-47ED-9EDC-69727FD2095C}"
 EndProject
@@ -404,9 +404,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MUXTestInfra", "MUXTestInfra", "{633B8D7A-3207-4BD3-8159-B65710AEA6FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXTestInfra", "test\testinfra\MUXTestInfra\MUXTestInfra.csproj", "{D275F0BB-4A7E-4CC5-AB6E-A2BF463CC424}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXTestInfra", "..\tests\controls\testinfra\MUXTestInfra\MUXTestInfra.csproj", "{D275F0BB-4A7E-4CC5-AB6E-A2BF463CC424}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppTestAutomationHelpers", "test\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj", "{128E6F7A-578C-48DC-BD3F-750EC662C268}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppTestAutomationHelpers", "..\tests\controls\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj", "{128E6F7A-578C-48DC-BD3F-750EC662C268}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{6F7831A4-48F8-41E8-A573-C567A1223CB5}"
 	ProjectSection(SolutionItems) = preProject
@@ -1067,7 +1067,7 @@ Global
 		..\src\controls\CommonManaged\CommonManaged.projitems*{fbc396f5-26dd-4ca3-981e-c7bc9fea4546}*SharedItemsImports = 4
 		..\src\controls\SplitButton\APITests\SplitButton_APITests.projitems*{fbc396f5-26dd-4ca3-981e-c7bc9fea4546}*SharedItemsImports = 4
 		..\src\controls\SplitButton\TestUI\SplitButton_TestUI.projitems*{fbc396f5-26dd-4ca3-981e-c7bc9fea4546}*SharedItemsImports = 4
-		test\shared\TestAppUtils\TestAppUtils.projitems*{fbc396f5-26dd-4ca3-981e-c7bc9fea4546}*SharedItemsImports = 4
+		..\tests\controls\shared\TestAppUtils\TestAppUtils.projitems*{fbc396f5-26dd-4ca3-981e-c7bc9fea4546}*SharedItemsImports = 4
 		..\src\controls\LayoutPanel\LayoutPanel.vcxitems*{fd3c1a00-0d07-4849-a3b9-646f0ff21d7b}*SharedItemsImports = 9
 		..\src\controls\SwipeControl\SwipeControl.vcxitems*{fd63f767-bd98-45d9-8a63-3cd4a148d527}*SharedItemsImports = 9
 	EndGlobalSection

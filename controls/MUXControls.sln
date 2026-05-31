@@ -161,7 +161,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SwipeControl_InteractionTes
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SwipeControl_TestUI", "..\src\controls\SwipeControl\SwipeControl_TestUI\SwipeControl_TestUI.shproj", "{BC75C32B-F63A-4F2D-902C-8142DB31A2E7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestAppCX", "test\apps\TestAppCX\TestAppCX.vcxproj", "{92081F61-98BB-4105-A90F-B6D524B4F5C9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestAppCX", "..\tests\controls\apps\TestAppCX\TestAppCX.vcxproj", "{92081F61-98BB-4105-A90F-B6D524B4F5C9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98} = {52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}
 		{DE10DFE2-5EA3-452A-B055-FC60E330AFBB} = {DE10DFE2-5EA3-452A-B055-FC60E330AFBB}
@@ -417,7 +417,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml", "..\src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.UI.Xaml.Design", "..\src\controls\Microsoft.UI.Xaml.Design\Microsoft.UI.Xaml.Design.csproj", "{1CEEC8E3-419A-4304-841C-08A334B9E4FF}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TestAppUtils", "test\shared\TestAppUtils\TestAppUtils.shproj", "{FB0D3053-3135-403F-B542-977F3B781673}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TestAppUtils", "..\tests\controls\shared\TestAppUtils\TestAppUtils.shproj", "{FB0D3053-3135-403F-B542-977F3B781673}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Expander", "Expander", "{BF7236D8-F8AE-4278-9DDB-7CEA58BCDC2A}"
 EndProject
@@ -467,7 +467,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollView_TestUI", "..\src
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScrollView", "..\src\controls\ScrollView\ScrollView.vcxitems", "{755F5DA9-087C-55A0-98D2-B884881C3ED0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppTestAutomationHelpers", "test\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj", "{4A1CB0BC-5A0F-488D-AD8F-FA3642D18DB8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppTestAutomationHelpers", "..\tests\controls\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj", "{4A1CB0BC-5A0F-488D-AD8F-FA3642D18DB8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "private", "private", "{0556D6C1-B02F-415A-BC2F-27A8C398F6AF}"
 EndProject
@@ -551,9 +551,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TitleBar_InteractionTests",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\packaging\Microsoft.WinUI.csproj", "{1D6EDD7D-D380-444D-B233-3C718ABB382D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControls.Test", "test\MUXControls.Test\MUXControls.Test.csproj", "{4D8C5D1B-F982-44A1-B744-DD0E51651BF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControls.Test", "..\tests\controls\MUXControls.Test\MUXControls.Test.csproj", "{4D8C5D1B-F982-44A1-B744-DD0E51651BF2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControlsTestApp", "test\apps\MUXControlsTestApp\MUXControlsTestApp.csproj", "{4E6F8103-9E20-40DD-8FE0-1E73964BB800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControlsTestApp", "..\tests\controls\apps\MUXControlsTestApp\MUXControlsTestApp.csproj", "{4E6F8103-9E20-40DD-8FE0-1E73964BB800}"
 	ProjectSection(ProjectDependencies) = postProject
 		{10F93BC6-DE0F-4B8D-A4C0-7A807935FD96} = {10F93BC6-DE0F-4B8D-A4C0-7A807935FD96}
 		{2F1F8DCD-98F2-4C02-97BA-15105E933057} = {2F1F8DCD-98F2-4C02-97BA-15105E933057}
@@ -567,9 +567,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControlsTestApp", "test\
 		{F24B3ECB-BD87-4626-B17C-D8CC3E253F32} = {F24B3ECB-BD87-4626-B17C-D8CC3E253F32}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXTestInfra", "test\testinfra\MUXTestInfra\MUXTestInfra.csproj", "{52DDC946-7073-4130-8454-80E84AD3CF5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXTestInfra", "..\tests\controls\testinfra\MUXTestInfra\MUXTestInfra.csproj", "{52DDC946-7073-4130-8454-80E84AD3CF5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IXMPTestApp", "test\apps\IXMPTestApp\IXMPTestApp.csproj", "{FCC396F5-26DD-4CA3-981E-C7BC9FEA4546}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IXMPTestApp", "..\tests\controls\apps\IXMPTestApp\IXMPTestApp.csproj", "{FCC396F5-26DD-4CA3-981E-C7BC9FEA4546}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2F1F8DCD-98F2-4C02-97BA-15105E933057} = {2F1F8DCD-98F2-4C02-97BA-15105E933057}
 	EndProjectSection
@@ -656,7 +656,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SelectorBar_TestUI", "..\sr
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SelectorBar_APITests", "..\src\controls\SelectorBar\APITests\SelectorBar_APITests.shproj", "{F778ACAE-150F-4D7D-83C1-5BF2E1ACB399}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabViewTearOutApp", "test\apps\TabViewTearOutApp\TabViewTearOutApp.vcxproj", "{86317243-45A8-4770-A4B2-768F721E5F9B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabViewTearOutApp", "..\tests\controls\apps\TabViewTearOutApp\TabViewTearOutApp.vcxproj", "{86317243-45A8-4770-A4B2-768F721E5F9B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WrapPanel", "WrapPanel", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -1785,7 +1785,7 @@ Global
 		..\src\controls\TwoPaneView\TestUI\TwoPaneView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\WebView2\TestUI\WebView2_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\WrapPanel\APITests\WrapPanel_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		test\shared\TestAppUtils\TestAppUtils.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\shared\TestAppUtils\TestAppUtils.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\PagerControl\InteractionTests\PagerControl_InteractionTests.projitems*{4f64c819-664f-436a-bcdb-8ab3019b9dd5}*SharedItemsImports = 13
 		..\src\controls\Materials\Reveal\APITests\Reveal_APITests.projitems*{5049ea6c-88ce-4ed5-8692-947eec9e52bc}*SharedItemsImports = 13
 		..\src\controls\Expander\TestUI\Expander_TestUI.projitems*{50c1f1d3-20aa-49a8-9e4c-cf4e5811a1d8}*SharedItemsImports = 13
@@ -1920,7 +1920,7 @@ Global
 		..\src\controls\Materials\Acrylic\InteractionTests\AcrylicBrush_InteractionTests.projitems*{f601284a-00c1-49f9-99b3-70d45585f784}*SharedItemsImports = 13
 		..\src\controls\SelectorBar\APITests\SelectorBar_APITests.projitems*{f778acae-150f-4d7d-83c1-5bf2e1acb399}*SharedItemsImports = 13
 		..\src\controls\SplitButton\SplitButton.vcxitems*{faf114dd-af1f-4d9f-a511-354c19912aad}*SharedItemsImports = 9
-		test\shared\TestAppUtils\TestAppUtils.projitems*{fb0d3053-3135-403f-b542-977f3b781673}*SharedItemsImports = 13
+		..\tests\controls\shared\TestAppUtils\TestAppUtils.projitems*{fb0d3053-3135-403f-b542-977f3b781673}*SharedItemsImports = 13
 		..\src\controls\CommonManaged\CommonManaged.projitems*{fcc396f5-26dd-4ca3-981e-c7bc9fea4546}*SharedItemsImports = 4
 		..\src\controls\LayoutPanel\LayoutPanel.vcxitems*{fd3c1a00-0d07-4849-a3b9-646f0ff21d7b}*SharedItemsImports = 9
 		..\src\controls\SwipeControl\SwipeControl.vcxitems*{fd63f767-bd98-45d9-8a63-3cd4a148d527}*SharedItemsImports = 9

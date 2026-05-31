@@ -33,6 +33,7 @@ $toolsDir = Split-Path -Path $MyInvocation.MyCommand.Path;
 $muxControlsDir = Split-Path (Split-Path $toolsDir -Parent) -Parent
 $repoRoot = Split-Path $muxControlsDir -Parent
 $controlsSourceDir = Join-Path $repoRoot "src\controls"
+$controlsTestDir = Join-Path $repoRoot "tests\controls"
 $controlDir = Join-Path $controlsSourceDir $controlName
 
 $newDir = New-Item $controlDir -ItemType Directory
@@ -111,7 +112,7 @@ foreach ($group in $xml.Project.ImportGroup)
 $xml.Save($muxProject)
 
 # Add tests to MUXControls.Test.csproj
-$testProject = $muxControlsDir + "\test\MUXControls.Test\MUXControls.Test.csproj";
+$testProject = Join-Path $controlsTestDir "MUXControls.Test\MUXControls.Test.csproj";
 [xml]$xml = Get-Content $testProject
 $import = $xml.CreateElement("Import", $xml.Project.NamespaceURI);
 AddAttribute $xml $import "Project" "`$(MUXControlsSourceRoot)$controlName\InteractionTests\$($controlName)_InteractionTests.projitems"
@@ -121,7 +122,7 @@ $xml.Project.AppendChild($import);
 $xml.Save($testProject)
 
 # Add test page to MUXControlsTestApp.csproj
-$testAppProject = $muxControlsDir + "\test\apps\MUXControlsTestApp\MUXControlsTestApp.csproj";
+$testAppProject = Join-Path $controlsTestDir "apps\MUXControlsTestApp\MUXControlsTestApp.csproj";
 [xml]$xml = Get-Content $testAppProject
 $import = $xml.CreateElement("Import", $xml.Project.NamespaceURI);
 AddAttribute $xml $import "Project" "`$(MUXControlsSourceRoot)$controlName\TestUI\$($controlName)_TestUI.projitems"
@@ -131,7 +132,7 @@ $xml.Project.AppendChild($import);
 $xml.Save($testAppProject)
 
 # Add API test project
-$testAppProject = $muxControlsDir + "\test\apps\MUXControlsTestApp\MUXControlsTestApp.csproj";
+$testAppProject = Join-Path $controlsTestDir "apps\MUXControlsTestApp\MUXControlsTestApp.csproj";
 [xml]$xml = Get-Content $testAppProject
 $import = $xml.CreateElement("Import", $xml.Project.NamespaceURI);
 AddAttribute $xml $import "Project" "`$(MUXControlsSourceRoot)$controlName\APITests\$($controlName)_APITests.projitems"

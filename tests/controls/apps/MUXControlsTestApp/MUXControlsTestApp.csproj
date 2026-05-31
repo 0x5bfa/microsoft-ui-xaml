@@ -178,7 +178,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="$(XamlBuildOutputRoot)controls\test\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.dll" />
+    <Content Include="$(XamlBuildOutputRoot)tests\controls\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.dll" />
   </ItemGroup>
 
   <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
@@ -399,7 +399,7 @@
 
   <Target Name="BinplaceOutDir" BeforeTargets="Binplace" DependsOnTargets="CopyVCLibs;CopyDotNet;ApplyManifestToTeProcessHostExe;CopyPayloadFiles">
     <PropertyGroup>
-      <UnpackagedAppsDirectory>$(ArtifactsObjDir)controls\test\MUXControls.Test\UnpackagedApps\$(MSBuildProjectName)\</UnpackagedAppsDirectory>
+      <UnpackagedAppsDirectory>$(ArtifactsObjDir)tests\controls\MUXControls.Test\UnpackagedApps\$(MSBuildProjectName)\</UnpackagedAppsDirectory>
     </PropertyGroup>
     <ItemGroup>
       <BinplaceItem Include="$(OutDir)**\*" Exclude="$(GeneratedFilesDir)**\*;$(IntermediateOutputPath)**\*;$(OutDir)arm\**\*;$(OutDir)arm64\**\*;$(OutDir)x64\**\*;$(OutDir)x86\**\*">

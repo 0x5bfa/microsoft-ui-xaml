@@ -18,7 +18,7 @@
   - [C++ Tests are written in C++/CX](#c-tests-are-written-in-ccx)
   - [Limitations](#limitations)
   - [Debugging](#debugging)
-- [MUXC.dll tests - controls\test](#muxcdll-tests---controlstest)
+- [MUXC.dll tests - tests\controls](#muxcdll-tests---testscontrols)
   - [MUXControlsTestApp](#muxcontrolstestapp)
   - [Interaction Test vs API Test](#interaction-test-vs-api-test)
     - [API Tests](#api-tests)
@@ -239,9 +239,9 @@ To aid debugging, Private.Infrastructure supports a runtime flag that can be pas
 will cause the test host to wait until a debugger has been attached before executing.
 
 
-## MUXC.dll tests - controls\test
+## MUXC.dll tests - tests\controls
 
-There is a separate set of tests under the `controls\test` dir. These are tests that target
+There is a separate set of tests under the `tests\controls` dir. These are tests that target
 `Microsoft.UI.Xaml.Controls.dll`.
 
 These tests do not use Private.Infrastructure to run. Instead they have their own set of test helpers. The reason for
@@ -331,7 +331,7 @@ MUXTestInfra communicates with the test app via 'hidden' UIElements.
 E.g. there is a CheckBox named 'IdleStateEnteredCheckBox' that gets checked when the app goes idle. The test process can
 monitor the state of this checkbox to determine when to continue test execution after a call to WaitForIdle.
 
-The project lives under `controls\test\testinfra\AppTestAutomationHelpers`.
+The project lives under `tests\controls\testinfra\AppTestAutomationHelpers`.
 
 These are shared outside of the repo for partner teams:
 * The WindowsAppSDK aggregator repo (see below)
@@ -364,7 +364,7 @@ Test automation for:
 There are some other apps in this directory that do not have test automation associated with them.
 
 Test automation code for these apps lives under
-[controls\test\MUXControls.Test\ScenarioAppTests](../../controls/test/MUXControls.Test/ScenarioAppTests)
+[tests\controls\MUXControls.Test\ScenarioAppTests](../../tests/controls/MUXControls.Test/ScenarioAppTests)
 and compiles into `MUXControls.Test.dll`.
 (Not really the most appropriate location for these tests. But it is where they live for now).
 

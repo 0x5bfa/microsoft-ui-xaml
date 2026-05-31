@@ -13,7 +13,7 @@
     </ItemGroup>
     <Copy SourceFiles="@(DeploymentFiles)" DestinationFiles="$(OutDir)%(Filename)%(Extension)" SkipUnchangedFiles="True" />
     <PropertyGroup>
-      <LayoutDir>$(ArtifactsObjDir)controls\test\MUXControls.Test\AppxDirectories\$(MSBuildProjectName)</LayoutDir>
+      <LayoutDir>$(ArtifactsObjDir)tests\controls\MUXControls.Test\AppxDirectories\$(MSBuildProjectName)</LayoutDir>
     </PropertyGroup>
     <!-- CreateAppxDirectory.msbuildproj relies on the appxrecipe file, which is created at build time.
          As a result, we need to invoke it using the MSBuild task rather than simply importing its contents. -->
