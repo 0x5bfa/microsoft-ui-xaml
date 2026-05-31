@@ -32,9 +32,9 @@ proves the path-update pattern before touching `dxaml` or `controls`.
 ## Compiler entry points
 
 Compiler-specific build entry points should live with the compiler source.
-`XamlCompilerPrerequisites.sln` now lives under `src/compiler` alongside
-`XamlCompiler.sln`, `BuildTools.sln`, and the compiler projects it
-orchestrates.
+`XamlCompilerPrerequisites.sln`, `XamlCompiler.sln`, and `BuildTools.sln` now
+live under `src/compiler/solutions`, while the compiler project folders remain
+direct children of `src/compiler`.
 
 The OSS fallback project that downloads a public compiler package now lives at
 `eng/compiler/XamlCompilerPublic.csproj`. It is build infrastructure rather

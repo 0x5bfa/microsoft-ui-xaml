@@ -163,8 +163,8 @@ With the bulk of the compiler code under:
 There are several files and folders of interest here, but the most important
 ones are:
 
-* *XamlCompiler.sln*: the Xaml Compiler sollution that contains all the dev
-code.
+* *src\compiler\solutions\XamlCompiler.sln*: the Xaml Compiler sollution that
+contains all the dev code.
 * *tests\compiler\XamlCompilerTests.sln*: contains the 59 and counting projects
 that make all regression and unit tests that we subject the compiler to in our
 daily work.
@@ -179,7 +179,8 @@ The Xaml Compiler builds both from the command line and from VS.
 
 ### Building
 
-To build the Xaml Compiler, load the XamlCompiler.sln in VS and build.
+To build the Xaml Compiler, load src\compiler\solutions\XamlCompiler.sln in VS
+and build.
 Alternatively, build from the command line like you would WinUI product code.
 Incremental builds work fine.  Note that the MSBuild processes used to build
 WinUI will keep a handle on compiler dlls with MSBuild tasks.
