@@ -8,10 +8,13 @@ This is a collection of documentations which provide a high level design oriente
 
 * [Journey of a control](./architecture/control-overview.md) - a vertical slice of what makes up a WinUI control
 * [Consolidating the Microsoft.UI namespace to one package](./architecture/consolidate-microsoft-ui-namespace.md)
-* [Lightweight Bindings](./architecture/lightweight-bindings.md)
+* [Lightweight Bindings](./data-binding/lightweight-bindings.md)
+* [Property Path Binding Architecture](./data-binding/PropertyPathBindingArchitecture.md)
 * [Xaml compiler overview](./xaml-compiler/xamlcompiler.md)
 * [Codegen](./xaml-compiler/codegen.md)
 * [Xaml/C# Object Lifetime Design](./runtime-core/xaml-object-lifetime.md)
+* [Property System](./runtime-core/property-system.md)
+* [Runtime Enabled Features](./runtime-core/runtime-enabled-features.md)
 * [Surfaces in Xaml](./rendering/surfaces-overview.md) - Use of Composition and Direct3D surfaces in Xaml
 * [Dxaml vs Core layers / Peer objects](./runtime-core/dxamlvscore.md) - A writeup explaning difference between Dxaml and core layers, peer objects and how to transition between the two objects for a given type
 * [XAML Rendering Architecture](./rendering/rendering.md) -  This document gives a high-level overview of how the XAML rendering engine works, primarily covering integration with the system compositor
