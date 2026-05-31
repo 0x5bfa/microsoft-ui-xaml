@@ -19,7 +19,7 @@
     <Import Project="eng\packaging.targets" />
     <Import Project="eng\usexamlcompiler.targets" Condition="'$(UseXamlCompiler)'=='true'" />
     <Import Project="eng\testprojects.targets" Condition="'$(TestCode)'=='true'" />
-    <Import Project="eng\adhocapp.targets" Condition="'$(AdHocApp)'=='true'"/>
+    <Import Project="eng\adhoc\adhocapp.targets" Condition="'$(AdHocApp)'=='true'"/>
     <Import Project="eng\graph.targets" Condition="'$(IsGraphBuild)' == 'true'" />
     <Import Project="eng\projectcaching.targets" />
     <Import Project="eng\lightup.targets" />

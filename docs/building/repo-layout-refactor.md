@@ -501,6 +501,9 @@ WebView2-specific build workaround targets now live under `eng/webview2`, so
 general `eng` props and targets are less mixed with package-specific temporary
 compatibility shims.
 
+Ad hoc app build props, targets, and registration support now live under
+`eng/adhoc`, keeping those opt-in test/sample app hooks together.
+
 Shared signing inputs now live under `eng/signing`, starting with the strong
 name key used by compiler and projection assemblies.
 
