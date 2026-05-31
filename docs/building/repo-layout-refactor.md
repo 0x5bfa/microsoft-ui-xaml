@@ -217,7 +217,7 @@ and the WinUI Gallery test-data generator lives under
 
 ## Sample test automation
 
-Sample test orchestration tools now live under `tests/samples/scripts`. The
+Sample test orchestration tools now live under `tests/samples/tools/scripts`. The
 test payload publishes them under `scripts\samples`, so their source and
 generated-payload locations both match their role as test assets rather than
 sample applications.
@@ -367,7 +367,7 @@ Checked-in visual test baseline assets now live under
 `tests/visualbaselines`. The resource project that packages them now
 lives under `tests/runtime/resources/masters` while continuing to expose
 `resources\masters` at runtime. The legacy command helper that can regenerate a
-masters RC file now lives under `tests/runtime/resources/scripts` so
+masters RC file now lives under `tests/runtime/resources/tools/scripts` so
 generated resource payload and handwritten maintenance tooling are separated.
 
 Native isolated-test support now lives under `tests/runtime/native/isolated`.
