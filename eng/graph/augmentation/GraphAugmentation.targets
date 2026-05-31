@@ -4,7 +4,7 @@
     <ShouldUnsetParentConfigurationAndPlatform>false</ShouldUnsetParentConfigurationAndPlatform>
 
     <!-- Match Directory.Build.props -->
-    <ProjectRoot>$(MSBuildThisFileDirectory)..\..\</ProjectRoot>
+    <ProjectRoot>$(MSBuildThisFileDirectory)..\..\..\</ProjectRoot>
     <XamlSourcePath>$(ProjectRoot)src\runtime\</XamlSourcePath>
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(ProjectRoot)src\runtime\phone</XcpPhonePath>

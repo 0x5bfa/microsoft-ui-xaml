@@ -671,7 +671,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateMockWinAppSDKPackage"
 		{F24B3ECB-BD87-4626-B17C-D8CC3E253F32} = {F24B3ECB-BD87-4626-B17C-D8CC3E253F32}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAugmentation", "..\eng\GraphAugmentation\MUXControls\GraphAugmentation.csproj", "{70429938-E9C3-415D-9CA2-61FB08ED001F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAugmentation", "..\eng\graph\augmentation\MUXControls\GraphAugmentation.csproj", "{70429938-E9C3-415D-9CA2-61FB08ED001F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "projection", "projection", "{3411D086-E07C-4C83-AEA7-930C51CB2518}"
 EndProject

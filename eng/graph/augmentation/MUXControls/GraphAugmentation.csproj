@@ -1,7 +1,7 @@
 <Project ToolsVersion="Current">
   <Import Project="..\GraphAugmentation.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj">
+    <ProjectReference Include="$(ProjectRoot)controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj">
       <Targets>BuildGenerateSources</Targets>
     </ProjectReference>
     <ProjectReference Include="$(XcpPhonePath)\idl\phone.vcxproj">
@@ -18,7 +18,7 @@
       <!-- Map to the vcxproj platform string if needed -->
       <SetPlatform Condition="'$(Platform)' == 'x86'">Platform=Win32</SetPlatform>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\src\metadata\MergedWinMD\MergedWinMD.vcxproj">
+    <ProjectReference Include="$(ProjectRoot)src\metadata\MergedWinMD\MergedWinMD.vcxproj">
       <Targets>GetPackagingOutputs</Targets>
     </ProjectReference>
   </ItemGroup>
