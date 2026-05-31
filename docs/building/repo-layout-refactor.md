@@ -508,8 +508,8 @@ Ad hoc app build props, targets, and registration support now live under
 Shared signing inputs now live under `eng/signing`, starting with the strong
 name key used by compiler and projection assemblies.
 
-Shared MIDL props and targets now live under `eng/midl`, keeping WinMD build
-composition rules together.
+Shared MIDL props, targets, and generated-header/IDL helper projects now live
+under `eng/midl`, keeping WinMD build composition rules together.
 
 MSBuild cache props and targets now live under `eng/projectcaching`, grouping
 the optional cache package configuration and target import in one place.

@@ -88,7 +88,7 @@ External binary packaging rules live under `/eng/externalbinaries`.
 Final-release build defines live under `/eng/finalrelease`.
 Graph build support rules live under `/eng/graph`.
 Light-up metadata targeting rules live under `/eng/lightup`.
-Shared MIDL build rules live under `/eng/midl`.
+Shared MIDL build rules and helper projects live under `/eng/midl`.
 MSBuild cache configuration lives under `/eng/projectcaching`.
 Shared test-project build settings live under `/eng/testprojects`.
 Windows SDK override configuration lives under `/eng/sdkconfig`.
