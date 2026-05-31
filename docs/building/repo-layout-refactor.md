@@ -528,6 +528,10 @@ keeping the ad hoc/test app hooks for consuming built WinUI binaries together.
 Package layout props and targets now live under `eng/packaging`, leaving the
 top-level `packaging` tree focused on package construction inputs.
 
+In-repo XAML compiler consumption props and targets now live under
+`eng/xamlcompiler`, separate from the broader runtime XAML build rules in
+`eng/xamlbuild`.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
