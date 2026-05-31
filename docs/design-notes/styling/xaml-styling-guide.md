@@ -6,7 +6,7 @@ This guide provides best practices and guidelines for writing XAML code, with a 
 Following these guidelines will help ensure consistency, maintainability, and readability in your XAML code. 
 This will also ensure that the control can easily be customized or re-templated by developers.
 
-For a higher-level overview on authoring a control, refer to [How to Author a Xaml Control](../how-to-author-a-xaml-control.md).
+For a higher-level overview on authoring a control, refer to [How to Author a Xaml Control](../../building/how-to-author-a-xaml-control.md).
 
 ## Xaml Template
 

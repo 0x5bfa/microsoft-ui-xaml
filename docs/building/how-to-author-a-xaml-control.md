@@ -35,7 +35,7 @@ parity with the existing first party controls. This includes considerations such
 This document applies to both implementing a new 'first-party' Xaml Control in the platform itself and to a third-party 
 writing a custom Control. The high-level process is the same in both cases.
 
-For a deeper dive on Xaml styling, theming, and best practices, refer to [Xaml Style Guide](design-notes/styling/xaml-styling-guide.md) for more info.
+For a deeper dive on Xaml styling, theming, and best practices, refer to [Xaml Style Guide](../design-notes/styling/xaml-styling-guide.md) for more info.
 
 ## UserControl vs Control
 In Xaml there are two types of custom controls: UserControl and "Templated Control". The first decision you will need to make
@@ -95,8 +95,8 @@ these docs for more information:
 * [Custom dependency properties](https://learn.microsoft.com/windows/uwp/xaml-platform/custom-dependency-properties)
 
 Note: In the Microsoft.UI.Xaml.Controls project, we use some custom code generation to automatically generate the boiler-plate 
-code required for DependencyProperties. See [DependencyPropertyCodeGen.cs](../controls/tools/BuildTasks/CustomTasks/DependencyPropertyCodeGen.cs)
-for more information and see the files under [generated\controls\dependencyproperties](../generated/controls/dependencyproperties) for example output. This
+code required for DependencyProperties. See [DependencyPropertyCodeGen.cs](../../controls/tools/BuildTasks/CustomTasks/DependencyPropertyCodeGen.cs)
+for more information and see the files under [generated\controls\dependencyproperties](../../generated/controls/dependencyproperties) for example output. This
 only applies to control development in the Microsoft.UI.Xaml.Controls project in this repo. For authoring controls in other
 projects, this code will need to be hand-written.
 
@@ -202,11 +202,11 @@ ThemeResource to point to an appropriate Color or Brush value in a ThemeDictiona
 ControlFillColorDefaultBrush is a Brush resource that is built is defined in `common_themeresources_any.xaml` and resolves to a 
 SolidColorBrush of #0FFFFFFF in dark theme, #B3FFFFFF in light theme and SystemColorButtonFaceColor in High Contrast theme.
 
-You can view [common_themeresources_any.xaml](..\src\controls\CommonStyles\Common_themeresources_any.xaml) to see the resources available to you.
-All new controls are to use brushes from this file. See [Xaml Style Guide](design-notes/styling/xaml-styling-guide.md) for more info.
+You can view [common_themeresources_any.xaml](../../src/controls/CommonStyles/Common_themeresources_any.xaml) to see the resources available to you.
+All new controls are to use brushes from this file. See [Xaml Style Guide](../design-notes/styling/xaml-styling-guide.md) for more info.
 
 There are also resources with `System*` names that are built into the xaml platform. These are old resources from before the windows 11 rejuvenation.
-You can view them at [generic.xaml](..\src\runtime\xcp\dxaml\themes\generic.xaml).
+You can view them at [generic.xaml](../../src/runtime/xcp/dxaml/themes/generic.xaml).
 
 ### Light-weight Styling
 To support light-weight styling in your control, you add an extra layer of indirection in the resource lookup. 
@@ -410,4 +410,4 @@ for more information.
 
 Note: 'resources' in this context are completely distinct from Xaml ThemeResources/StaticResources.
 
-For more information on how we run the localization process itself in the WinUI repo, see [localization-process.md](localization-process.md).
+For more information on how we run the localization process itself in the WinUI repo, see [localization-process.md](./localization-process.md).
