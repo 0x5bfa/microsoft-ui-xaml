@@ -2,7 +2,7 @@
 
 This guide provides instructions on how to build the repo. If you encouter any errors in building WinUI or the WinUI Gallery, refer to [common errors FAQ](./common-errors-FAQ.md)
 Documentation related to concepts and code architecture of the repo can be found here:
-[Code architecture](../design-notes/readme.md). It contains high level concepts, important design decisions and
+[Code architecture](../design-notes/README.md). It contains high level concepts, important design decisions and
 coding related information to help get started with the repository.
 
 ## Table of Contents
