@@ -35,7 +35,7 @@ A successful build may have warnings but will have 0 errors.
 As rule of thumb against build errors, running the following commands are the best way to get you to "clean state":
 * `git clean -xdf`
 * `nuget locals all -clear`
-* `tools\build\commands\clean.cmd`
+* `tools\build\scripts\clean.cmd`
 
 If you get out-of-heap errors doing the build, the `/b` switch can be useful. It specifies a "background" build (only 
 runs two instances of msbuild.exe.
@@ -66,7 +66,7 @@ If you get warning related to version 8.0.x not found, 9.0.x was resolved instea
  Microsoft.NET.ILLink.Tasks 9.0.4 was resolved instead.
 ```
 It can result to a version mismatch. Run a clean build again after the internal feed is updated for the required version.
-`tools\build\commands\Build.cmd /c`
+`tools\build\scripts\Build.cmd /c`
 
 After a successful build and launch of MuxControlsTestApp, if you get errors related to WindowsAppSdkMockCheck, like the following:
 ```

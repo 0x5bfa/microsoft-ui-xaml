@@ -13,17 +13,17 @@
 Other build options:
 * Rebuild MUXC without using incremental build:
     * `msbuild <repo>\controls\MUXControls.sln /t:Rebuild`
-* For additional scoped builds, see the options in [tools\controls\Build\commands\Build.cmd](../../tools/controls/Build/commands/Build.cmd).
+* For additional scoped builds, see the options in [tools\controls\Build\scripts\Build.cmd](../../tools/controls/Build/scripts/Build.cmd).
 
 Additional notes:
 * Multi-proc builds (default for `msb.cmd`) are not yet supported for MUXC. 
-Therefore, use `msbuild.exe` (defaults to single-proc) as the build command (or `tools\controls\Build\commands\Build.cmd`).
+Therefore, use `msbuild.exe` (defaults to single-proc) as the build command (or `tools\controls\Build\scripts\Build.cmd`).
 * If running in VS and getting an error asking to attach another debugger, make sure you are running with "mixed" 
 debugging.
 
 ## Run WebView2 sample (MUXControlsTestApp)
 1. Using the instructions in the [Testing FAQ](../testing/testing-FAQ.md), run
-   [`testmachine-prerun.cmd`](../../tests/infra/payload/commands/testmachine-prerun.cmd) if it has not
+   [`testmachine-prerun.cmd`](../../tests/infra/payload/scripts/runtime/testmachine-prerun.cmd) if it has not
 already been run.
 2. Navigate to `<repo>\BuildOutput\bin\x86chk\Test` and run `MuxControlsTestApp.appx` to install.  
 Run using the option in the install dialog, or as you would any other installed application.

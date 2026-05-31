@@ -220,9 +220,9 @@ When this skill is invoked:
 Before creating the test payload, the repo must be initialized and built (product + tests).
 
 **Invoke the `build` skill** to handle this. When delegating, request:
-- A **full repo build** (product + tests): `.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q /b`
+- A **full repo build** (product + tests): `.\tools\setup\init\scripts\initrun.ps1 .\tools\build\scripts\Build.cmd /q /b`
 - The `/b` flag is recommended for test-suite prep to avoid PCH memory exhaustion on limited-memory machines.
-- For a clean first-time build, use `/c` as well: `.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q /c /b`
+- For a clean first-time build, use `/c` as well: `.\tools\setup\init\scripts\initrun.ps1 .\tools\build\scripts\Build.cmd /q /c /b`
 
 The build skill handles init, flavor selection, troubleshooting (PCH errors, stale PCH, missing Spectre libs, etc.).
 
@@ -233,7 +233,7 @@ The build skill handles init, flavor selection, troubleshooting (PCH errors, sta
 The test payload aggregates all built test binaries, TAEF infrastructure, and dependencies into a single directory.
 
 ```powershell
-.\tools\setup\init\commands\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform x64 -Configuration chk
+.\tools\setup\init\scripts\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\scripts\CreateTestPayload.ps1 -Platform x64 -Configuration chk
 ```
 
 **Parameters:**
@@ -384,11 +384,11 @@ Write-Host "=== Step 1: Initializing build environment ===" -ForegroundColor Cya
 
 # --- Step 2: Build (clean, reduced parallelism) ---
 Write-Host "=== Step 2: Building repository (product + tests) ===" -ForegroundColor Cyan
-.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q /c /b
+.\tools\setup\init\scripts\initrun.ps1 .\tools\build\scripts\Build.cmd /q /c /b
 
 # --- Step 3: Create Test Payload ---
 Write-Host "=== Step 3: Creating test payload ===" -ForegroundColor Cyan
-.\tools\setup\init\commands\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform $platform -Configuration $config -Clean
+.\tools\setup\init\scripts\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\scripts\CreateTestPayload.ps1 -Platform $platform -Configuration $config -Clean
 
 # --- Step 4: Machine Setup ---
 Write-Host "=== Step 4: One-time machine setup ===" -ForegroundColor Cyan
@@ -594,7 +594,7 @@ A PR that updates the OSS-pinned versions:
 When you need to know **what CI runs and how it runs it**, these two files are the source of truth:
 
 - **`build/AzurePipelinesTemplates/WinUI-CreateTestPayload-Job.yml`** — defines each test work item: `testFilePathPattern` (which DLL or AppX) + `hostingMode`.
-- **`Helix/common/pipeline/tools/GenerateWinUIHelixWorkItems.ps1`** — look for the line that generates the TAEF command:
+- **`Helix/common/pipeline/scripts/GenerateWinUIHelixWorkItems.ps1`** — look for the line that generates the TAEF command:
 
   ```powershell
   $taefExtraParameters = "/p:HostingMode=$HostingMode"
@@ -696,11 +696,11 @@ For build-related issues (PCH virtual memory exhaustion, stale precompiled heade
 
 **Fix:** Ensure you ran a full build (not just `product` or `mux`):
 ```powershell
-.\tools\setup\init\commands\initrun.ps1 .\tools\build\commands\Build.cmd /q /b   # builds product + tests
+.\tools\setup\init\scripts\initrun.ps1 .\tools\build\scripts\Build.cmd /q /b   # builds product + tests
 ```
 Then recreate the payload:
 ```powershell
-.\tools\setup\init\commands\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform x64 -Configuration chk -Clean
+.\tools\setup\init\scripts\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\scripts\CreateTestPayload.ps1 -Platform x64 -Configuration chk -Clean
 ```
 
 ### Machine Setup Errors

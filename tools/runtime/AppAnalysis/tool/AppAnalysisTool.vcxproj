@@ -48,7 +48,7 @@
 
     <ItemGroup>
         <BinplaceItem Include="AppAnalysisReportStylesheet.xslt" />
-        <BinplaceItem Include="deployAppAnalysis.cmd" />
+        <BinplaceItem Include="scripts\deployAppAnalysis.cmd" />
     </ItemGroup>
 
     <ItemGroup>

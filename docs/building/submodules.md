@@ -26,7 +26,7 @@ Submodules can also be updated/initialized explicitly (e.g., if an operation abo
 >git submodule update --init
 ```
 
-The **tools\setup\init\commands\init.cmd** script initializes and updates submodules in case the developer forgets to.
+The **tools\setup\init\scripts\init.cmd** script initializes and updates submodules in case the developer forgets to.
 
 ## Status
 
