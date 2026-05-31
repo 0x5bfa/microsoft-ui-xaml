@@ -119,7 +119,7 @@ namespace Microsoft.UI.Xaml.Tests.MUXControls.InteractionTests.Infra
                         // Skipping the uninstall/reinstall for each test method speeds up the test pass by 2-3x.
                         //
                         // Note - Make sure that this list stays in sync with tests\infra\payload\scripts\runtime\runtests.ps1 and
-                        //        tests\infra\Helix\payload\scripts\commands\TestPass-OneTimeMachineSetup.ps1
+                        //        tests\infra\Helix\payload\scripts\setup\TestPass-OneTimeMachineSetup.ps1
                         else if ((installedPackage.Id.Name == "WinUICppDesktopSampleApp") ||
                             (installedPackage.Id.Name == "WinUICsDesktopSampleApp") ||
 #if DEBUG

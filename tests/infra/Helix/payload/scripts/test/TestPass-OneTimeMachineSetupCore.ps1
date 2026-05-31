@@ -158,7 +158,7 @@ function Enable-CrashDumpsForProcesses {
 Enable-CrashDumpsForProcesses @("te.exe", "te.processhost.exe")
 
 
-$oneTimeMachineSetupScript = Join-Path $payloadRoot "scripts\helix\commands\TestPass-OneTimeMachineSetup.ps1"
+$oneTimeMachineSetupScript = Join-Path $payloadRoot "scripts\helix\setup\TestPass-OneTimeMachineSetup.ps1"
 
 if(Test-Path $oneTimeMachineSetupScript)
 {

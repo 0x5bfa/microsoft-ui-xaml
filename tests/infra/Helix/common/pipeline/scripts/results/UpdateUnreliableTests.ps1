@@ -27,7 +27,7 @@ if ((!$HelixAccessToken) -and ($env:HelixAccessToken))
     $HelixAccessToken = $env:HelixAccessToken
 }
 
-. "$PSScriptRoot/AzurePipelinesHelperScripts.ps1"
+. "$PSScriptRoot/../common/AzurePipelinesHelperScripts.ps1"
 
 
 $azureDevOpsRestApiHeaders = @{

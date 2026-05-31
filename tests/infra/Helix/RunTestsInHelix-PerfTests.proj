@@ -15,7 +15,7 @@
   <ItemGroup>
     <HelixWorkItem Include="PGOInstrument">
       <Timeout>00:30:00</Timeout>
-      <Command>call "%HELIX_CORRELATION_PAYLOAD%\scripts\helix\commands\RunPGOWorkItems.cmd"</Command>
+      <Command>call "%HELIX_CORRELATION_PAYLOAD%\scripts\helix\perf\RunPGOWorkItems.cmd"</Command>
     </HelixWorkItem>
   </ItemGroup>
 </Project>
