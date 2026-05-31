@@ -153,7 +153,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lights", "Lights", "{F13193
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lights", "..\src\controls\Lights\Lights.vcxitems", "{3479A3AE-2854-4BEC-80AB-EAB0772CB90A}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Reveal_TestUI", "..\src\controls\Materials\Reveal\TestUI\Reveal_TestUI.shproj", "{5BF80AE9-29DF-4BE9-858A-F095C8073473}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Reveal_TestUI", "..\tests\controls\testui\Materials\Reveal\Reveal_TestUI.shproj", "{5BF80AE9-29DF-4BE9-858A-F095C8073473}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RefreshInfoProviderAdapters", "RefreshInfoProviderAdapters", "{CD99B535-DFD9-4A17-A2BC-113E93DDE42A}"
 EndProject
@@ -177,7 +177,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Lights_ApiTests", "..\src\c
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CommonManaged", "..\src\controls\CommonManaged\CommonManaged.shproj", "{85A134E5-C83F-44A4-80DF-59F6EBF6C60D}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AcrylicBrush_TestUI", "..\src\controls\Materials\Acrylic\TestUI\AcrylicBrush_TestUI.shproj", "{A800E818-7212-4FD7-AE3A-1DCAB539DB87}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AcrylicBrush_TestUI", "..\tests\controls\testui\Materials\Acrylic\AcrylicBrush_TestUI.shproj", "{A800E818-7212-4FD7-AE3A-1DCAB539DB87}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AcrylicBrush_ApiTests", "..\src\controls\Materials\Acrylic\APITests\AcrylicBrush_ApiTests.shproj", "{593E15D8-F6F9-4ABA-BA65-C6927C178DBD}"
 EndProject
@@ -939,7 +939,7 @@ Global
 		..\tests\controls\testui\MenuBar\MenuBar_TestUI.projitems*{55cb08ca-19fe-4db9-8160-a4ec47984b95}*SharedItemsImports = 13
 		..\src\controls\Breadcrumb\Breadcrumb.vcxitems*{563fe343-c6b0-447b-831a-b0ce3aa7a688}*SharedItemsImports = 9
 		..\src\controls\Materials\Acrylic\APITests\AcrylicBrush_ApiTests.projitems*{593e15d8-f6f9-4aba-ba65-c6927c178dbd}*SharedItemsImports = 13
-		..\src\controls\Materials\Reveal\TestUI\Reveal_TestUI.projitems*{5bf80ae9-29df-4be9-858a-f095c8073473}*SharedItemsImports = 13
+		..\tests\controls\testui\Materials\Reveal\Reveal_TestUI.projitems*{5bf80ae9-29df-4be9-858a-f095c8073473}*SharedItemsImports = 13
 		..\src\controls\PersonPicture\PersonPicture.vcxitems*{5fdf2501-aa3d-4082-ad45-d1f2a94c1213}*SharedItemsImports = 9
 		..\src\controls\ProgressRing\ProgressRing.vcxitems*{64447efa-19b4-4bf2-9d63-618635c483ec}*SharedItemsImports = 9
 		..\src\controls\RatingControl\RatingControl.vcxitems*{655f5da8-f87b-45af-88d1-a884881c3edf}*SharedItemsImports = 9
@@ -987,7 +987,7 @@ Global
 		..\src\controls\CommonStyles\InteractionTests\CommonStyles_InteractionTests.projitems*{a25ae312-7c11-4e30-ae35-2e31c744a250}*SharedItemsImports = 13
 		..\src\controls\ColorPicker\InteractionTests\ColorPicker_InteractionTests.projitems*{a4d2fae8-e7fc-4100-91ff-2202fac91c70}*SharedItemsImports = 13
 		..\src\controls\CommonStyles\TestUI\CommonStyles_TestUI.projitems*{a7f6d6c4-a5a9-43eb-930c-b766417a5e5c}*SharedItemsImports = 13
-		..\src\controls\Materials\Acrylic\TestUI\AcrylicBrush_TestUI.projitems*{a800e818-7212-4fd7-ae3a-1dcab539db87}*SharedItemsImports = 13
+		..\tests\controls\testui\Materials\Acrylic\AcrylicBrush_TestUI.projitems*{a800e818-7212-4fd7-ae3a-1dcab539db87}*SharedItemsImports = 13
 		..\src\controls\PagerControl\PagerControl.vcxitems*{ab3261a7-9a8d-4a27-aea2-3aac0419c889}*SharedItemsImports = 9
 		..\src\controls\AnimatedIcon\AnimatedIcon.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
 		..\src\controls\AnimatedVisualPlayer\AnimatedVisualPlayer.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
