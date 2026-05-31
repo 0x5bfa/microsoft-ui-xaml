@@ -6,7 +6,7 @@
     paths. Instead, those paths should be moved into this file, as this file should be included by every project
     in this repository.
 
-    This file should be imported fairly early on in the build process, but after sdkconfig.props - since that
+    This file should be imported fairly early on in the build process, but after eng\sdkconfig\sdkconfig.props - since that
     redefines some MSBuild properties that we use in this file to generate well known paths.
   -->
 
