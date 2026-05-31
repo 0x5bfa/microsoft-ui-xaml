@@ -24,8 +24,8 @@ We have a number of Azure Pipelines that we use to run builds and test passes.
 [General documentation on Azure Pipelines is available here.](https://docs.microsoft.com/en-us/azure/devops/pipelines)
 
 We have multiple different Pipelines in use in our repo. They execute similar jobs. They differ mostly in the specific
-configurations and stages that they run. The Pipelines are defined by .yml files checked in under the 'build' directory.
-Most of the logic  is shared via common templates (under 'build\AzurePipelinesTemplates').
+configurations and stages that they run. The Pipelines are defined by the internal pipeline configuration.
+Repo-local Helix orchestration helpers live under `tests\infra\Helix\common\pipeline\scripts`.
 
 Having multiple Pipelines allows us to control which configurations and stages get run at what times.
 
@@ -124,5 +124,4 @@ codegen's `[Platform]` and `[Version]` tags do not need to match the version of 
 
 #### Running WinMD Compat tests locally (VerifyWinMDCompat.ps1)
 
-To run these tests yourself locally, you can run the script `build\PipelineScripts\VerifyWinMDCompat.ps1`. After fixing
-issues as above and rebuilding the IDL files, you should run this to ensure that compat issues have been fixed.
+After fixing issues as above and rebuilding the IDL files, run the WinMD compat verification from the internal pipeline tooling to ensure that compat issues have been fixed.

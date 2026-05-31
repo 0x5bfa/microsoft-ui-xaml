@@ -16,7 +16,7 @@ Types of files being localized:
 
 Nuget package where localized resources are being stored:
 + WinUILocalizationResources.Major.Minor.Patch-Tag.YYMMDD.R.nupkg
-    See $(VersionFinal) in build\AzurePipelinesTemplates\WinUI-BuildVariables.yml for how the format is implemented
+    See the localization pipeline configuration for how the format is implemented.
 
 ## Supported Languages
 
@@ -46,8 +46,8 @@ If you want to manually schedule a pipeline run, use the following steps:
 3. Currently available localized resource files get placed into a nuget package and uploaded to the internal dependency feed.
     1. The place holder files without localized data get immediately created with successful run. However, it takes couple of days 
        for Touchdown to localize new strings. Once files are generated, the next localization pipeline run will pick up the changes.
-4. The pipeline will automatically detect when there are changes to localization files and create a Pull Request titled 'Localization Update YYYYMMDD'. 
-   This is done by the script `build\PipelineScripts\ApplyLocalizationUpdates.ps1`.
+4. The pipeline will automatically detect when there are changes to localization files and create a Pull Request titled 'Localization Update YYYYMMDD'.
+   The local Touchdown scratch files are kept under `eng\localization\LocRepo`.
 
 ## More Info
 
