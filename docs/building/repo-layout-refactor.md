@@ -747,9 +747,10 @@ entry points and shared build configuration.
 
 Feature and API design specs now live under `docs/specs`. API review specs moved
 from `docs/api-specs` to `docs/specs/api` so all checked-in specs share one docs
-root while preserving each spec's local image and support-file layout. The
-stale TitleBar spec duplicate under `docs/design-notes` has been retired now
-that `docs/specs/TitleBar` is the spec-owned location.
+root while preserving each spec's local image and support-file layout. Stale
+TitleBar and InfoBadge spec duplicates under `docs/design-notes` have been
+retired now that `docs/specs/TitleBar` and `docs/specs/InfoBadge` are the
+spec-owned locations.
 
 ## Runtime path preparation
 
