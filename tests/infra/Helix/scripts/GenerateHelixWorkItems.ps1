@@ -78,7 +78,7 @@ if ($HostingMode) {
 
 $TestBinaryDirectoryPath = $TestBinaryPath
 
-& $PSScriptRoot\common\pipeline\GenerateHelixWorkItems.ps1 -TestFilePattern $TestFilePattern `
+& $PSScriptRoot\..\common\pipeline\scripts\GenerateHelixWorkItems.ps1 -TestFilePattern $TestFilePattern `
     -TestBinaryDirectoryPath $TestBinaryDirectoryPath `
     -OutputProjFile $OutputProjFile `
     -TestExecutionMultiplier $TestExecutionMultiplier `

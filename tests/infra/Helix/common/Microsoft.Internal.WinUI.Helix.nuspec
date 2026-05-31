@@ -11,8 +11,8 @@
   </metadata>
 
   <files>
-    <file target="scripts\pipeline" src="pipeline\*" />
-    <file target="scripts\test" src="..\payload\test\*" />
+    <file target="scripts\pipeline" src="pipeline\scripts\*" />
+    <file target="scripts\test" src="..\payload\scripts\test\*" />
   </files>
 
 </package>

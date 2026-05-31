@@ -64,11 +64,13 @@ through `$(CompilerTestPath)`.
 
 Test payload tooling and Helix orchestration now live under `tests/infra`.
 `CreateTestPayload.cmd` and `CreateTestPayload.ps1` now live under
-`tests/infra/payload/tools`, while copied payload runtime scripts live under
-`tests/infra/payload/scripts` and `tests/infra/Helix/payload/scripts`.
-The Helix test-runner payload scripts are grouped under
-`tests/infra/Helix/payload/scripts/test` and are still copied to the payload
-root when constructing `TestPayload`.
+`tests/infra/payload/tools`, while Helix work-item generation wrappers live
+under `tests/infra/Helix/scripts`. Shared Azure Pipelines helpers live under
+`tests/infra/Helix/common/pipeline/scripts`. Copied payload runtime scripts
+live under `tests/infra/payload/scripts` and
+`tests/infra/Helix/payload/scripts`. The Helix test-runner payload scripts are
+grouped under `tests/infra/Helix/payload/scripts/test` and are still copied to
+the payload root when constructing `TestPayload`.
 
 ## Runtime test tools
 
