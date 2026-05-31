@@ -184,7 +184,7 @@ You may want to keep track of these important fields:
 - ItemContainer.Child is hosted in a Grid named PART_ContainerRoot. It is inserted as the first child of that Grid.
 - It was designed to be a building block for other high level controls.
 - Its IDL defines internal APIs that were meant for more baking time and then shipped.
-- In future releases, it should implement [IHostItemContainer / IHostItemContainer2](itemcontainer-functional-spec.md) interfaces for much improved reusability.
+- In future releases, it should implement [IHostItemContainer / IHostItemContainer2](../specs/ItemContainer/itemcontainer-functional-spec.md) interfaces for much improved reusability.
   ItemContainer does not implement the IHostItemContainer / IHostItemContainer2 interfaces as spec'ed.
 - A couple of control template elements use DeferLoadStrategy in ItemContainer.xaml for improved performance.
 - Consider adding another control template element to represent currency (which is something File Explorer would use for example).
@@ -215,6 +215,6 @@ Recent File Explorer Photos Gallery UI.
 
 # Related docs
 
-The [ItemsView](ItemsView_spec.md), [ItemContainer](itemcontainer-functional-spec), [ItemCollectionTransitionProvider](ItemCollectionTransitionProvider-spec),
-[LinedFlowLayout](LinedFlowLayout_spec), [Layout updates for LinedFlowLayout](layout-updates-for-lfl) documents provide lots of information about the expected
+The [ItemsView](ItemsView_spec.md), [ItemContainer](../specs/ItemContainer/itemcontainer-functional-spec.md), [ItemCollectionTransitionProvider](../specs/ItemCollectionTransitionProvider/ItemCollectionTransitionProvider-spec.md),
+[LinedFlowLayout](LinedFlowLayout_spec.md), [Layout updates for LinedFlowLayout](layout-updates-for-lfl.md) documents provide lots of information about the expected
 behaviors.
