@@ -646,7 +646,8 @@ repo root compatibility wrapper was removed; repo-local callers should use
 `tools/packaging/scripts/pack.component.cmd` directly.
 
 The standalone debugger extension script now lives under
-`tools/debugging/dbgext`, grouped with other manually invoked repo tools.
+`tools/debugging/dbgext/publicXamlThread/scripts`, grouped with the debugger
+extension assets while keeping script files in a script leaf.
 
 Clang-oriented developer helpers now live under `tools/clang/scripts`, with
 `tools/setup/init/scripts/init.cmd` adding that folder to PATH so the short command names
@@ -815,8 +816,9 @@ with external tool tests consuming it through `$(XamlDiagTapPath)`. The
 AppAnalysis runtime diagnostics toolchain moved under `tools/runtime/AppAnalysis`,
 with command scripts under its local `scripts` leaves and shared references
 flowing through `$(AppAnalysisPath)` and `$(AppAnalysisObjPath)`. The Unicode
-classification data generator script and
-its binary input now live under `tools/runtime/TextClassification`, while the
+classification data generator script now lives under
+`tools/runtime/TextClassification/scripts`, its binary input remains under
+`tools/runtime/TextClassification/data`, while the
 checked-in generated `UcdData.cpp` lives under
 `generated/runtime/text/Classification` and is consumed through
 `$(RuntimeTextClassificationGeneratedPath)`.
