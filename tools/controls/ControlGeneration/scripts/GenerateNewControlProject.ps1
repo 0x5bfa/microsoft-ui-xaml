@@ -35,6 +35,9 @@ $muxControlsDir = Join-Path $repoRoot "controls"
 $controlsSourceDir = Join-Path $repoRoot "src\controls"
 $controlsTestDir = Join-Path $repoRoot "tests\controls"
 $controlDir = Join-Path $controlsSourceDir $controlName
+$controlTestUiDir = Join-Path $controlsTestDir "testui\$controlName"
+$controlApiTestsDir = Join-Path $controlsTestDir "apitests\$controlName"
+$controlInteractionTestsDir = Join-Path $controlsTestDir "interactiontests\$controlName"
 
 $newDir = New-Item $controlDir -ItemType Directory
 if (!$newDir)
@@ -58,6 +61,13 @@ foreach ($file in $files)
            -replace "NEWCONTROL", $controlName
     } | Set-Content $file.PSPath
 }
+
+New-Item -ItemType Directory -Force -Path (Split-Path -Parent $controlTestUiDir) | Out-Null
+New-Item -ItemType Directory -Force -Path (Split-Path -Parent $controlApiTestsDir) | Out-Null
+New-Item -ItemType Directory -Force -Path (Split-Path -Parent $controlInteractionTestsDir) | Out-Null
+Move-Item -LiteralPath (Join-Path $controlDir "TestUI") -Destination $controlTestUiDir
+Move-Item -LiteralPath (Join-Path $controlDir "APITests") -Destination $controlApiTestsDir
+Move-Item -LiteralPath (Join-Path $controlDir "InteractionTests") -Destination $controlInteractionTestsDir
 
 # Add project to FeatureAreas.props
 $featureAreasProps = Join-Path $muxControlsDir "build\FeatureAreas.props";
@@ -115,7 +125,7 @@ $xml.Save($muxProject)
 $testProject = Join-Path $controlsTestDir "MUXControls.Test\MUXControls.Test.csproj";
 [xml]$xml = Get-Content $testProject
 $import = $xml.CreateElement("Import", $xml.Project.NamespaceURI);
-AddAttribute $xml $import "Project" "`$(MUXControlsSourceRoot)$controlName\InteractionTests\$($controlName)_InteractionTests.projitems"
+AddAttribute $xml $import "Project" "`$(MUXControlsTestRoot)interactiontests\$controlName\$($controlName)_InteractionTests.projitems"
 AddAttribute $xml $import "Label" "Shared"
 AddAttribute $xml $import "Condition" "`$($($featureEnabledName)) == 'true'"
 $xml.Project.AppendChild($import);
@@ -125,7 +135,7 @@ $xml.Save($testProject)
 $testAppProject = Join-Path $controlsTestDir "apps\MUXControlsTestApp\MUXControlsTestApp.csproj";
 [xml]$xml = Get-Content $testAppProject
 $import = $xml.CreateElement("Import", $xml.Project.NamespaceURI);
-AddAttribute $xml $import "Project" "`$(MUXControlsSourceRoot)$controlName\TestUI\$($controlName)_TestUI.projitems"
+AddAttribute $xml $import "Project" "`$(MUXControlsTestRoot)testui\$controlName\$($controlName)_TestUI.projitems"
 AddAttribute $xml $import "Label" "Shared"
 AddAttribute $xml $import "Condition" "`$($($featureEnabledName)) == 'true'"
 $xml.Project.AppendChild($import);
@@ -135,7 +145,7 @@ $xml.Save($testAppProject)
 $testAppProject = Join-Path $controlsTestDir "apps\MUXControlsTestApp\MUXControlsTestApp.csproj";
 [xml]$xml = Get-Content $testAppProject
 $import = $xml.CreateElement("Import", $xml.Project.NamespaceURI);
-AddAttribute $xml $import "Project" "`$(MUXControlsSourceRoot)$controlName\APITests\$($controlName)_APITests.projitems"
+AddAttribute $xml $import "Project" "`$(MUXControlsTestRoot)apitests\$controlName\$($controlName)_APITests.projitems"
 AddAttribute $xml $import "Label" "Shared"
 AddAttribute $xml $import "Condition" "`$($($featureEnabledName)) == 'true'"
 $xml.Project.AppendChild($import);
@@ -152,6 +162,7 @@ $id = get-random
 # We need double backslash for C# strings below
 $cleanMuxControlsDir = $muxControlsDir.Replace("\","\\") + "\\"
 $cleanControlsSourceDir = $controlsSourceDir.Replace("\","\\") + "\\"
+$cleanControlsTestDir = $controlsTestDir.Replace("\","\\") + "\\"
 
 Write-Output "$cleanMuxControlsDir"
 
@@ -198,11 +209,11 @@ namespace SolutionHelper
                 Console.WriteLine(" -Adding source");
                 newControlFolder.AddFromFile("$($cleanControlsSourceDir)$($controlName)\\$($controlName).vcxitems");
                 Console.WriteLine(" -Adding API test");
-                newControlFolder.AddFromFile("$($cleanControlsSourceDir)$($controlName)\\APITests\\$($controlName)_APITests.shproj");
+                newControlFolder.AddFromFile("$($cleanControlsTestDir)apitests\\$($controlName)\\$($controlName)_APITests.shproj");
                 Console.WriteLine(" -Adding test UI");
-                newControlFolder.AddFromFile("$($cleanControlsSourceDir)$($controlName)\\TestUI\\$($controlName)_TestUI.shproj");
+                newControlFolder.AddFromFile("$($cleanControlsTestDir)testui\\$($controlName)\\$($controlName)_TestUI.shproj");
                 Console.WriteLine(" -Adding interactions test");
-                newControlFolder.AddFromFile("$($cleanControlsSourceDir)$($controlName)\\InteractionTests\\$($controlName)_InteractionTests.shproj");
+                newControlFolder.AddFromFile("$($cleanControlsTestDir)interactiontests\\$($controlName)\\$($controlName)_InteractionTests.shproj");
                 Console.WriteLine("Finished adding projects, saving solution");
 
                 solution.Close(true);

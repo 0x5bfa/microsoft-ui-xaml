@@ -121,13 +121,13 @@ These are paths for Microsoft.UI.Xaml.Controls.
 ## ItemContainer
 
 - Product: \src\controls\ItemContainer
-- Test: \src\controls\ItemContainer\APITest & InteractionTests
+- Test: \tests\controls\apitests\ItemContainer & \tests\controls\interactiontests\ItemContainer
 
 
 ## ItemsView
 
 - Product: \src\controls\ItemsView
-- Test: \src\controls\ItemsView\APITest & InteractionTests
+- Test: \tests\controls\apitests\ItemsView & \tests\controls\interactiontests\ItemsView
 
 
 # XAML markup resources

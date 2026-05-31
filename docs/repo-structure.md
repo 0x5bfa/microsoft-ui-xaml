@@ -60,7 +60,9 @@ Root controls props files are thin wrappers where MSBuild discovery depends on
 their names. Controls-specific `Directory.Build.props` and
 `Directory.Build.targets` implementations also live under `/controls/build`.
 Controls test apps, test infrastructure, and shared test helpers live under
-`/tests/controls`.
+`/tests/controls`. Control-specific test UI, API test, and interaction test
+shared projects live under `/tests/controls/testui`,
+`/tests/controls/apitests`, and `/tests/controls/interactiontests`.
 
 See the [layout refactor notes](building/repo-layout-refactor.md) for more
 information about the controls section of the repo.
