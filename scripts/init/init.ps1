@@ -23,7 +23,7 @@ $arguments = New-Object Collections.ArrayList (,$args)
 
 ## Invoke-CmdScript will grab the env. vars. that init.cmd sets, and apply them to
 ## the PS environment.
-. (join-path $initScriptsDir Invoke-CmdScript) (join-path $rootDir "init.cmd") $arguments.ToArray()
+. (join-path $initScriptsDir Invoke-CmdScript) (join-path $initScriptsDir "init.cmd") $arguments.ToArray()
 
 if ($LASTEXITCODE -ne 0)
 {
