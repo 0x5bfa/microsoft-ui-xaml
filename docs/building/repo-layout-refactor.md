@@ -753,6 +753,8 @@ TeachingTip now live there too. Interaction TestUI projects moved under
 `tests/controls/testui/Interactions`, PullToRefresh TestUI projects moved under
 `tests/controls/testui/PullToRefresh`, and the historical MenuBar and
 SwipeControl `_TestUI` folders were renamed into direct testui feature folders.
+ParallaxView, ScrollView, TabView, and TreeView TestUI shared projects now live
+under direct `tests/controls/testui` feature folders as well.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
