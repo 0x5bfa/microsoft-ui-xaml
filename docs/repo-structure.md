@@ -147,5 +147,6 @@ projects are referenced through `$(MergedWinMDProjectRoot)`.
 
 ## /tests
 This folder contains test assets that have been separated from product source
-trees. Compiler test entry points live under `/tests/compiler`; shared test
-payload and Helix infrastructure lives under `/tests/infra`.
+trees. Compiler test entry points and support tools live under
+`/tests/compiler`; shared test payload and Helix infrastructure lives under
+`/tests/infra`.
