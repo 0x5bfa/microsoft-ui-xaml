@@ -572,7 +572,9 @@ Shared isolated test stubs, external mocks, and support headers moved under
 test infrastructure through `$(NativeIsolatedTestPath)`. The remaining isolated
 test MSBuild props and the allocation/elements stub projects moved there too,
 so `src/runtime/xcp/components` no longer owns native isolated-test build
-support.
+support. The runtime solution also presents those shared stubs and mocks under
+`/tests/runtime/native/isolated/shared`, keeping the solution view aligned with
+the test-owned source layout.
 Shared framework metadata mocks moved under
 `tests/runtime/native/isolated/shared/mocks/metadata`, so parser, metadata,
 ValueBoxer, and focus isolated tests no longer reference metadata test mocks
