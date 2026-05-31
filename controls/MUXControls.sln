@@ -599,7 +599,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXControlsTestApp", "test\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MUXTestInfra", "test\testinfra\MUXTestInfra\MUXTestInfra.csproj", "{52DDC946-7073-4130-8454-80E84AD3CF5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IXMPTestApp", "test\IXMPTestApp\IXMPTestApp.csproj", "{FCC396F5-26DD-4CA3-981E-C7BC9FEA4546}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IXMPTestApp", "test\apps\IXMPTestApp\IXMPTestApp.csproj", "{FCC396F5-26DD-4CA3-981E-C7BC9FEA4546}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2F1F8DCD-98F2-4C02-97BA-15105E933057} = {2F1F8DCD-98F2-4C02-97BA-15105E933057}
 	EndProjectSection

@@ -65,6 +65,6 @@ Global
 		SolutionGuid = {90C644A5-2070-4A0A-A811-290A5C093D86}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\..\..\src\controls\CommonManaged\CommonManaged.projitems*{fcc396f5-26dd-4ca3-981e-c7bc9fea4546}*SharedItemsImports = 4
+		..\..\..\..\src\controls\CommonManaged\CommonManaged.projitems*{fcc396f5-26dd-4ca3-981e-c7bc9fea4546}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal

@@ -86,7 +86,7 @@ Anything under these directories is **test** scope:
 - `controls/test/MUXControlsTestApp/`
 - `controls/test/TabViewTearOutApp/`
 - `controls/test/TestAppCX/`
-- `controls/test/IXMPTestApp/`
+- `controls/test/apps/IXMPTestApp/`
 - `controls/test/testinfra/MUXTestInfra/`
 - `controls/test/testinfra/AppTestAutomationHelpers/`
 
