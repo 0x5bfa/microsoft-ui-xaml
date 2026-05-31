@@ -327,6 +327,17 @@ top-level buckets as the physical tree, including `/src`, `/tests`, `/tools`,
 and `/eng`, so the root entry point no longer presents moved projects under
 generic solution-only groups.
 
+## Controls solution entry points
+
+The controls solution entry points under `src/controls` now use coarse
+repo-layout virtual folders. `MUXControls.slnx` and
+`MUXControlsInnerLoop.slnx` group controls source under `/src/controls`,
+controls test categories under `/tests/controls`, controls tooling under
+`/tools/controls` and `/tools/packaging`, and shared build or packaging inputs
+under `/eng`. The solution project and file paths are unchanged; only the
+Visual Studio solution folder view was rebased away from legacy
+`/src-controls`, `/test`, `/Tools`, and feature-only root folders.
+
 ## Package restore inputs
 
 Repository-wide NuGet `packages.config` files now live under `eng/packages`.
