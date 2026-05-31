@@ -40,7 +40,7 @@
     single place where we can share common build infrastructure, without creating MSBuild duplicate import errors.
     The files that this props file imports should be self-contained and not import other project files.
     -->
-  <Import Project="eng\common.props" />
+  <Import Project="eng\configuration\common.props" />
   <Import Project="eng\configuration\configuration.props" />
   <Import Project="eng\versioning\Versions.props" />
   <Import Project="eng\sdkconfig\sdkconfig.props" Condition = "'$(UseLocalSDK)' != 'true'" />
