@@ -915,6 +915,13 @@ Runtime test solution files live under `tests/runtime/solutions`. Runtime test
 source, infrastructure, and tool projects stay in their purpose folders under
 `tests/runtime`, while Visual Studio entry points are grouped in one place.
 
+## Tool solutions
+
+Tool solution files live under the relevant tool ownership root's `solutions`
+folder, such as `tools/compiler/solutions`, `tools/controls/solutions`, and
+`tools/runtime/solutions`. Tool implementation projects remain in their
+feature folders so build and IDE entry points are not mixed with source.
+
 ## Compiler solutions
 
 Compiler solution files live under `src/compiler/solutions`. The parsing

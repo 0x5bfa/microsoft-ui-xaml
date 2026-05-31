@@ -86,7 +86,7 @@ Improvements in new `XamlGen.exe`
 ### How does it work?
 
 **Code-gen location:** [tools/runtime/XCPTypesAutoGen/](../../../tools/runtime/XCPTypesAutoGen)
-**VS solution:** [tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln](../../../tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln)
+**VS solution:** [tools/runtime/solutions/XCPTypesAutoGen.sln](../../../tools/runtime/solutions/XCPTypesAutoGen.sln)
 
 Code-gen is now a build task, located at [tools/runtime/XCPTypesAutoGen/RunCodeGen/](../../../tools/runtime/XCPTypesAutoGen/RunCodeGen)
 When you execute [`runcodegen.cmd`](../../../tools/runtime/XCPTypesAutoGen/scripts/runcodegen.cmd), it simply builds this directory.
@@ -136,7 +136,7 @@ want to get the files placed into the product.
 
 These are the steps to debug `XamlGen`.
 
-1. Open `XCPTypesAutoGen.sln` project from `tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln`
+1. Open `XCPTypesAutoGen.sln` project from `tools/runtime/solutions/XCPTypesAutoGen.sln`
 2. Set project "**XamlGen**" as the default startup project
 3. Open the project properties then select the "**Debug**" tab
 4. Build the entire solution to have the dlls generated in the current dir
