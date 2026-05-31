@@ -750,10 +750,11 @@ XamlDiagnostics TAP test DLL moved under `tools/runtime/xamldiagnostics/tap`,
 with external tool tests consuming it through `$(XamlDiagTapPath)`. The
 AppAnalysis runtime diagnostics toolchain moved under `tools/runtime/AppAnalysis`,
 with shared references flowing through `$(AppAnalysisPath)` and
-`$(AppAnalysisObjPath)`. The Unicode classification data generator script now
-lives under `tools/runtime/TextClassification`, while the checked-in generated
-`UcdData.cpp` lives under `generated/runtime/text/Classification` and is consumed
-through `$(RuntimeTextClassificationGeneratedPath)`.
+`$(AppAnalysisObjPath)`. The Unicode classification data generator script and
+its binary input now live under `tools/runtime/TextClassification`, while the
+checked-in generated `UcdData.cpp` lives under
+`generated/runtime/text/Classification` and is consumed through
+`$(RuntimeTextClassificationGeneratedPath)`.
 Legacy `dxaml/tools/xamldiagnostics` references have been retired. Product
 XamlDiagnostics source is addressed through `$(XamlDiagnosticsComponentPath)`,
 while the manually invoked/test TAP project remains under

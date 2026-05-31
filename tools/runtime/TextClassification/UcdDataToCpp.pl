@@ -13,10 +13,10 @@ use Cwd 'abs_path';
 
 my $repoRoot = abs_path(File::Spec->catdir($FindBin::Bin, "..", "..", ".."))
     or die "Unable to resolve repository root.\n";
-my $classificationDir = File::Spec->catdir($repoRoot, "src", "runtime", "xcp", "core", "text", "Classification");
+my $inputDir = File::Spec->catdir($FindBin::Bin, "data");
 my $outputDir = File::Spec->catdir($repoRoot, "generated", "runtime", "text", "Classification");
 
-my $inputBin = File::Spec->catfile($classificationDir, "UcdData.bin");
+my $inputBin = File::Spec->catfile($inputDir, "UcdData.bin");
 my $outputCpp = File::Spec->catfile($outputDir, "UcdData.cpp");
 
 sysopen(BIN, $inputBin, O_RDONLY|O_BINARY) or die "Unable to open '$inputBin'.\n";
