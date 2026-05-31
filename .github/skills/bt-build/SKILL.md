@@ -61,8 +61,8 @@ all write to `BuildOutput\` with names like:
 To pick:
 
 1. **Classify the change** by edited paths — test (table below) / mux
-   (`src/runtime/xcp/` only) / **product** (everything else under `controls/dev`,
-   `controls/idl`, `dxaml/`, `src/`).
+   (`src/runtime/xcp/` only) / **product** (everything else under
+   `src/controls`, `controls/idl`, `src/`, and shared build inputs).
 2. **Pick the freshest binlog whose scope covers that classification**,
    preferring broader scopes (product covers Controls, etc.).
 3. **Infer `<flavor>`** from the chosen filename.

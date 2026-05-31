@@ -70,7 +70,9 @@ under `tests/infra/Helix/scripts`. Shared Azure Pipelines helpers live under
 live under `tests/infra/payload/scripts` and
 `tests/infra/Helix/payload/scripts`. The Helix test-runner payload scripts are
 grouped under `tests/infra/Helix/payload/scripts/test` and are still copied to
-the payload root when constructing `TestPayload`.
+the payload root when constructing `TestPayload`. GitHub agent skill metadata
+now references these paths directly instead of the removed root wrappers and
+legacy `dxaml/test` layout.
 
 ## Runtime test tools
 

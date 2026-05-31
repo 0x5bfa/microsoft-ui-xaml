@@ -106,8 +106,8 @@ The skill uses a **hybrid approach** to map your code changes to the right tests
 
 A curated table in `SKILL.md` maps common source paths to their test DLLs. For example:
 - `src/runtime/xcp/components/imaging/**` → `Isolated.Foundation.Imaging`
-- `controls/dev/**` → `MUXControls.Test.dll`
-- `dxaml/test/native/external/controls/**` → `External.Controls`
+- `src/controls/**` → `MUXControls.Test.dll`
+- `tests/runtime/native/external/controls/**` → `External.Controls`
 
 This covers the most common areas and gives fast, accurate results.
 
@@ -144,7 +144,7 @@ You: run the test-suite-setup skill
 
 Copilot: Based on your branch `user/you/my-feature`, I found changes in:
   - src/runtime/xcp/components/imaging/** (3 files)
-  - dxaml/test/resources/** (12 files)
+  - tests/runtime/resources/** (12 files)
 
 Recommended tests:
   1. Isolated.Foundation.Imaging (39 tests, ~1 min)

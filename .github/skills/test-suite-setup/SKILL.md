@@ -71,14 +71,14 @@ When this skill is invoked:
    | `tests/runtime/native/external/Win32/**` | `External.Win32` | WPF |
    | `tests/runtime/native/external/activation/**` | `External.Activation` | WPF |
    | `tests/runtime/native/external/tools/**` | `External.Tools` | WPF |
-   | `dxaml/test/resources/**` (images, GIFs, masters) | `Isolated.Foundation.Imaging`, `External.Foundation` | None / WPF |
-   | `dxaml/test/managed/**` | `Managed.*` | WPF |
-   | `controls/dev/**` (WinUI controls source) | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
+   | `tests/runtime/resources/**` (images, GIFs, masters) | `Isolated.Foundation.Imaging`, `External.Foundation` | None / WPF |
+   | `tests/runtime/managed/**` | `Managed.*` | WPF |
+   | `src/controls/**` (WinUI controls source) | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
    | `controls/test/**` | `MUXControls.Test.dll` | None |
    | `controls/idl/**` | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
    | `src/compiler/**` | `Isolated.Tools.XbfGenerator` | None |
    | `src/runtime/xcp/dxaml/themes/**` | `External.Controls`, `External.Framework` | WPF |
-   | `Samples/**` | ScenarioTestSuite (sample app tests, separate payload) | N/A |
+   | `Samples/**` or sample app project drops | ScenarioTestSuite (sample app tests, separate payload) | N/A |
    | `build/**`, `eng/**`, `packaging/**` | No functional tests needed (build/infra only) | N/A |
    | Only `.md`, `.txt`, config files | No tests needed | N/A |
 
@@ -94,8 +94,8 @@ When this skill is invoked:
    2. **Match by naming convention** — extract keywords from the changed file path and look for test DLLs with matching names:
       - Changed `src/runtime/xcp/components/<area>/**` → look for `*Isolated.<Area>*` or `*External.<Area>*`
       - Changed `tests/runtime/native/external/<area>/**` → match `*External.<Area>*`
-      - Changed `dxaml/test/native/isolated/<area>/**` → match `*Isolated.<Area>*`
-      - Changed `controls/dev/<ControlName>/**` → match `*MUXControls*` and `*<ControlName>*`
+      - Changed `tests/runtime/native/isolated/<area>/**` → match `*Isolated.<Area>*`
+      - Changed `src/controls/<ControlName>/**` → match `*MUXControls*` and `*<ControlName>*`
 
    3. **Use TAEF metadata** for fine-grained matching when the DLL is found but you want to narrow to specific tests:
       ```powershell
@@ -220,9 +220,9 @@ When this skill is invoked:
 Before creating the test payload, the repo must be initialized and built (product + tests).
 
 **Invoke the `build` skill** to handle this. When delegating, request:
-- A **full repo build** (product + tests): `.\initrun.ps1 .\build.cmd /q /b`
+- A **full repo build** (product + tests): `.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q /b`
 - The `/b` flag is recommended for test-suite prep to avoid PCH memory exhaustion on limited-memory machines.
-- For a clean first-time build, use `/c` as well: `.\initrun.ps1 .\build.cmd /q /c /b`
+- For a clean first-time build, use `/c` as well: `.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q /c /b`
 
 The build skill handles init, flavor selection, troubleshooting (PCH errors, stale PCH, missing Spectre libs, etc.).
 
@@ -233,7 +233,7 @@ The build skill handles init, flavor selection, troubleshooting (PCH errors, sta
 The test payload aggregates all built test binaries, TAEF infrastructure, and dependencies into a single directory.
 
 ```powershell
-.\initrun.ps1 powershell -ExecutionPolicy Bypass -File test\CreateTestPayload.ps1 -Platform x64 -Configuration chk
+.\scripts\init\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform x64 -Configuration chk
 ```
 
 **Parameters:**
@@ -380,15 +380,15 @@ $flavor   = "${platform}${config}"   # e.g., x64chk, arm64chk
 
 # --- Step 1: Init ---
 Write-Host "=== Step 1: Initializing build environment ===" -ForegroundColor Cyan
-.\init.ps1
+.\scripts\init\init.ps1
 
 # --- Step 2: Build (clean, reduced parallelism) ---
 Write-Host "=== Step 2: Building repository (product + tests) ===" -ForegroundColor Cyan
-.\initrun.ps1 .\build.cmd /q /c /b
+.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q /c /b
 
 # --- Step 3: Create Test Payload ---
 Write-Host "=== Step 3: Creating test payload ===" -ForegroundColor Cyan
-.\initrun.ps1 powershell -ExecutionPolicy Bypass -File test\CreateTestPayload.ps1 -Platform $platform -Configuration $config -Clean
+.\scripts\init\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform $platform -Configuration $config -Clean
 
 # --- Step 4: Machine Setup ---
 Write-Host "=== Step 4: One-time machine setup ===" -ForegroundColor Cyan
@@ -504,10 +504,10 @@ All test DLLs are in `TestPayload\<platform><config>\Test\`. Here is the complet
 | Source files changed in | Test DLL to run |
 |---|---|
 | `src/runtime/xcp/**` (core runtime) | `External.Foundation`, `External.Framework`, `External.Controls` |
-| `controls/dev/**` (WinUI controls) | `MUXControls.Test.dll`, `External.Controls` |
+| `src/controls/**` (WinUI controls) | `MUXControls.Test.dll`, `External.Controls` |
 | `src/runtime/xcp/components/imaging/**` | `Isolated.Foundation.Imaging` |
 | `tests/runtime/native/external/<area>/**` | `External.<Area>` |
-| `dxaml/test/resources/` (GIF/image assets) | `Isolated.Foundation.Imaging`, `External.Foundation` |
+| `tests/runtime/resources/` (GIF/image assets) | `Isolated.Foundation.Imaging`, `External.Foundation` |
 | `controls/test/**` | `MUXControls.Test.dll` |
 
 ## OSS Package Coherence
@@ -696,11 +696,11 @@ For build-related issues (PCH virtual memory exhaustion, stale precompiled heade
 
 **Fix:** Ensure you ran a full build (not just `product` or `mux`):
 ```powershell
-.\initrun.ps1 .\build.cmd /q /b   # builds product + tests
+.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q /b   # builds product + tests
 ```
 Then recreate the payload:
 ```powershell
-.\initrun.ps1 powershell -ExecutionPolicy Bypass -File test\CreateTestPayload.ps1 -Platform x64 -Configuration chk -Clean
+.\scripts\init\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform x64 -Configuration chk -Clean
 ```
 
 ### Machine Setup Errors
