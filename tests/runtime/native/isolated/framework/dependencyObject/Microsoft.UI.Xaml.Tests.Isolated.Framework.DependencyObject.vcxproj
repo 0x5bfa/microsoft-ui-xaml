@@ -15,7 +15,7 @@
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
 
-    <Import Project="$(XcpPath)\components\unittest-uielement.props"/>
+    <Import Project="$(NativeIsolatedTestPath)\shared\build\unittest-uielement.props"/>
 
     <ItemGroup>
         <ClInclude Include="ConversionUnitTests.h"/>

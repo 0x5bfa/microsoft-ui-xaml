@@ -36,7 +36,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ClCompile Include="SharedStubs.cpp"/>
+        <ClCompile Include="ElementsSharedStubs.cpp"/>
     </ItemGroup>
 
     <ItemGroup>

@@ -28,7 +28,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ClCompile Include="Stubs.cpp"/>
+        <ClCompile Include="AllocationStubs.cpp"/>
     </ItemGroup>
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />

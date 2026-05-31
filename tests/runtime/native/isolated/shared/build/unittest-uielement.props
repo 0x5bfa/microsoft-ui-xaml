@@ -6,7 +6,7 @@
         <ConfigurationType>DynamicLibrary</ConfigurationType>
     </PropertyGroup>
 
-    <Import Project="$(XcpPath)\components\unittest-do.props"/>
+    <Import Project="$(NativeIsolatedTestPath)\shared\build\unittest-do.props"/>
 
     <ItemDefinitionGroup>
         <Link>
@@ -21,7 +21,7 @@
 
     <ItemGroup Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='Application'">
         <ProjectReference Condition="'$(ProjectGuid)'!='{425451f3-e2fe-49a1-a7f5-a3776e963b5e}'" Include="$(XcpPath)\components\elements\lib\Microsoft.UI.Xaml.Elements.vcxproj" Project="{425451f3-e2fe-49a1-a7f5-a3776e963b5e}"/>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{d704e322-e366-4c87-b394-28d2f4ccb481}'" Include="$(XcpPath)\components\elements\sharedstubs\Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj" Project="{d704e322-e366-4c87-b394-28d2f4ccb481}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{d704e322-e366-4c87-b394-28d2f4ccb481}'" Include="$(NativeIsolatedTestPath)\shared\stubs\Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj" Project="{d704e322-e366-4c87-b394-28d2f4ccb481}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{4a1f0ce8-0b6e-4d29-9799-a629c067543a}'" Include="$(XcpPath)\components\simple\lib\Microsoft.UI.Xaml.Framework.SimpleProperties.vcxproj" Project="{4a1f0ce8-0b6e-4d29-9799-a629c067543a}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{8b386f16-9cf2-44e0-82ec-5c5129593a3c}'" Include="$(XcpPath)\components\graphics\lib\Microsoft.UI.Xaml.GraphicsUtility.vcxproj" Project="{8b386f16-9cf2-44e0-82ec-5c5129593a3c}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{bb0522d9-7e95-40a1-9522-88b6f42b2db6}'" Include="$(XcpPath)\components\animation\lib\Microsoft.UI.Xaml.Animation.vcxproj" Project="{bb0522d9-7e95-40a1-9522-88b6f42b2db6}"/>

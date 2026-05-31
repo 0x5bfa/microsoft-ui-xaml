@@ -6,7 +6,7 @@
         <ConfigurationType>DynamicLibrary</ConfigurationType>
     </PropertyGroup>
 
-    <Import Project="$(XcpPath)\components\unittest-parser.props"/>
+    <Import Project="$(NativeIsolatedTestPath)\shared\build\unittest-parser.props"/>
 
     <PropertyGroup>
         <ProjectIncludeDirectories>

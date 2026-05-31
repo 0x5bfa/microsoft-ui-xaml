@@ -935,7 +935,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Allocation", "xcp\components\allocation\lib\Microsoft.UI.Xaml.Allocation.vcxproj", "{502B46A0-DF35-4692-8275-CE66E7FDD741}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Allocation.Stubs", "xcp\components\allocation\stubs\Microsoft.UI.Xaml.Allocation.Stubs.vcxproj", "{9E88D331-0324-428D-B7BC-70953F4B65D9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Allocation.Stubs", "..\..\tests\runtime\native\isolated\shared\stubs\Microsoft.UI.Xaml.Allocation.Stubs.vcxproj", "{9E88D331-0324-428D-B7BC-70953F4B65D9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Animation", "xcp\components\animation\lib\Microsoft.UI.Xaml.Animation.vcxproj", "{BB0522D9-7E95-40A1-9522-88B6F42B2DB6}"
 EndProject
@@ -997,7 +997,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Diagnosti
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Elements", "xcp\components\elements\lib\Microsoft.UI.Xaml.Elements.vcxproj", "{425451F3-E2FE-49A1-A7F5-A3776E963B5E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Elements.SharedStubs", "xcp\components\elements\sharedstubs\Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj", "{D704E322-E366-4C87-B394-28D2F4CCB481}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Elements.SharedStubs", "..\..\tests\runtime\native\isolated\shared\stubs\Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj", "{D704E322-E366-4C87-B394-28D2F4CCB481}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Elements", "..\..\tests\runtime\native\isolated\foundation\elements\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Elements.vcxproj", "{E7D0B682-1E73-407A-8028-91C16E49874A}"
 EndProject

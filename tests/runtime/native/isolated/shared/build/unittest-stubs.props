@@ -10,7 +10,7 @@
         <NoBaseCompstubs>1</NoBaseCompstubs>    <!-- We will link against the real base libs for these tests -->
     </PropertyGroup>
 
-    <Import Project="$(XcpPath)\components\unittest.props"/>
+    <Import Project="$(NativeIsolatedTestPath)\shared\build\unittest.props"/>
 
     <ItemDefinitionGroup>
         <!-- We link against stubs to allow creation and testing of CDependencyObjects in isolation. Once everything is -->
