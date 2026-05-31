@@ -76,6 +76,7 @@ Standalone build transform assets live under `/eng/transforms`.
 Project-based restore helpers live under `/eng/restore`.
 Common build configuration lives under `/eng/configuration`.
 Build-output consumption helpers live under `/eng/consumebinaries`.
+CRT/STL linkage rules live under `/eng/crtstl`.
 External binary packaging rules live under `/eng/externalbinaries`.
 Shared MIDL build rules live under `/eng/midl`.
 MSBuild cache configuration lives under `/eng/projectcaching`.
