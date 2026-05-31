@@ -21,7 +21,7 @@
     
     <ItemDefinitionGroup>
         <XamlProduct>
-            <AssociatedSolution>$(ProjectRoot)src\runtime\solutions\Microsoft.UI.Xaml.slnx</AssociatedSolution>
+            <AssociatedSolution>$(ProjectRoot)src\runtime\solutions\Microsoft.UI.Xaml.Runtime.slnx</AssociatedSolution>
         </XamlProduct>
     </ItemDefinitionGroup>
 
