@@ -40,7 +40,7 @@ approaches can be used to replace dlls/binaries used by corresponding app with o
 you provide to test your changes (and they can be debugged with corresponding PDBs)
 
 ### Testing against private bits within xaml repo
-If you are working in `lifted-xaml` repo, sample apps `(\<repo\>\samples\\)` always pick up dlls from `BuildOutput`. All you need is to build `lifted-xaml` repo the usual way and rebuild the any sample app. See [Testing In WinUI FAQ](testing-FAQ.md) for details.
+If you are working in `lifted-xaml` repo, sample apps `(\<repo\>\samples\\)` always pick up dlls from `BuildOutput`. All you need is to build `lifted-xaml` repo the usual way and rebuild the any sample app. See [Testing In WinUI FAQ](../testing/testing-FAQ.md) for details.
 
 ### Overwriting WinUI binaries in a VS app
 
