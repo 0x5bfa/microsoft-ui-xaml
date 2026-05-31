@@ -86,7 +86,7 @@ if ($isOssBuild)
 {
     # We don't have all necessary files to build the compiler, so also restore
     # the project which uses the public compiler
-    $projectPackages += Join-Path $repoRoot 'eng\compiler\XamlCompilerPublic.csproj'
+    $projectPackages += Join-Path $repoRoot 'eng\xamlcompiler\XamlCompilerPublic.csproj'
 }
 
 $installed = 0

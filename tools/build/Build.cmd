@@ -165,7 +165,7 @@ if EXIST "%reporoot%\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs" 
 ) else (
     rem Download a recent compatible public WinUI package and copy the necessary compiler
     rem files into the right location.
-    call :buildSolution %reporoot%\eng\compiler\XamlCompilerPublic.csproj
+    call :buildSolution %reporoot%\eng\xamlcompiler\XamlCompilerPublic.csproj
     if ERRORLEVEL 1 goto:showDurationAndExit
     rem Ensure GenXbf.dll is available
     call :buildSolution %reporoot%\eng\xamlcompiler\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj
