@@ -761,7 +761,8 @@ conceptual design note remains under `docs/design-notes`. The
 ItemCollectionTransitionProvider and TabTearOut specs now live under matching
 feature folders in `docs/specs`, with their local images. The LayoutCycle
 DebugSettings and AnnotatedScrollBar specs moved there too, with design-note
-overviews linking to their spec-owned locations.
+overviews linking to their spec-owned locations. The ItemContainer functional
+spec moved under `docs/specs/ItemContainer` with its local images.
 
 ## Runtime path preparation
 
