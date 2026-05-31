@@ -522,6 +522,9 @@ early SDK package import configuration together.
 Common build configuration props and ARM64EC target overrides now live under
 `eng/configuration`, grouping platform/configuration defaults together.
 
+Build-output consumption props and targets now live under `eng/consumebinaries`,
+keeping the ad hoc/test app hooks for consuming built WinUI binaries together.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
