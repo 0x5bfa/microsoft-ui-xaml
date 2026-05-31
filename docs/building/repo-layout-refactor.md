@@ -587,7 +587,9 @@ initialized shells.
 
 Build wrapper commands now live under `tools/build`, with `init.cmd` adding
 that folder to PATH so commands such as `msb`, `bz`, `bcz`, and `clean` remain
-available in initialized shells.
+available in initialized shells. The main repo build command implementation
+also lives there now, with the root-level `Build.cmd` preserved as the stable
+entry point used by docs, skills, and automation.
 
 Shared command wrappers used by multiple repo tools now live under
 `tools/common`, keeping the `tools` root focused on tool categories.
