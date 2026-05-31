@@ -64,8 +64,8 @@ Test payload tooling and Helix orchestration now live under `tests/infra`.
 `CreateTestPayload.cmd` and `CreateTestPayload.ps1` now live under
 `tests/infra/payload/tools`, while the WinUI-specific Helix work-item generation
 wrapper now lives beside the shared generator under
-`tests/infra/Helix/common/pipeline/scripts`. Shared Azure Pipelines helpers live
-under `tests/infra/Helix/common/pipeline/scripts`. Copied payload runtime commands
+`tests/infra/Helix/common/pipeline/tools`. Shared Azure Pipelines helpers live
+under `tests/infra/Helix/common/pipeline/tools`. Copied payload runtime commands
 live under `tests/infra/payload/commands` and
 `tests/infra/Helix/payload/commands`. The Helix test-runner payload assets are
 grouped under `tests/infra/Helix/payload/test` and are still copied to
