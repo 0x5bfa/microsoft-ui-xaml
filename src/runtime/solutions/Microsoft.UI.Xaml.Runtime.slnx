@@ -828,7 +828,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/focus/FocusSelection/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/focus/focusSelection/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/focus/focusSelection/Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -845,7 +845,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/focus/XYFocus/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/focus/xyFocus/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/focus/xyFocus/Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -867,7 +867,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/gestures/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/core/gestures/">
     <Project Path="../../../tests/runtime/native/isolated/core/gestures/Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -900,7 +900,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/input/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/core/input/">
     <Project Path="../../../tests/runtime/native/isolated/core/input/Microsoft.UI.Xaml.Tests.Isolated.Core.Input.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -917,7 +917,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/ItemIndexRangeHelper/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/enterprise/itemIndexRangeHelper/">
     <Project Path="../../../tests/runtime/native/isolated/enterprise/itemIndexRangeHelper/Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1081,7 +1081,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/qualifiers/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/adaptability/qualifiers/">
     <Project Path="../../../tests/runtime/native/isolated/adaptability/qualifiers/Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1258,7 +1258,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/visualstateshelper/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/enterprise/visualStatesHelper/">
     <Project Path="../../../tests/runtime/native/isolated/enterprise/visualStatesHelper/Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1296,7 +1296,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/xamlDiagnostics/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/diagnostics/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/diagnostics/Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1491,7 +1491,7 @@
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/" />
-  <Folder Name="/src/runtime/xcp/dxaml/lib/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/xaml/dxamlCore/">
     <Project Path="../../../tests/runtime/native/isolated/xaml/dxamlCore/Microsoft.UI.Xaml.Tests.Isolated.winrtfoundation.DXamlCore.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>

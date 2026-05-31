@@ -312,6 +312,10 @@ Runtime isolated framework test projects are shown under
 Runtime isolated controls test projects are shown under
 `/tests/runtime/native/isolated/controls`, keeping control-area tests with the
 rest of the runtime test tree in the solution view.
+The remaining core, enterprise, adaptability, and XAML isolated test projects
+now use their `tests/runtime/native/isolated` folders in the runtime solution
+view as well, so the solution no longer presents moved native isolated projects
+as source-side component `unittests` folders.
 
 The product-wide solution now lives at the repo root as
 `Microsoft.UI.Xaml.slnx`, preserving it as the repo-wide entry point without
