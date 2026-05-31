@@ -118,8 +118,9 @@ Visual test baselines live under `/generated/tests/visualbaselines`.
 ## /packaging
 This folder contains package construction inputs. NuGet package specs live under
 `/packaging/nuspecs`, package build assets under `/packaging/build`, and
-IntelliSense drop processing under `/packaging/intellisense`. The local
-package test feed lives under `/packaging/package-store`.
+IntelliSense drop processing under `/packaging/intellisense`. Package build
+targets that update generated package props also live under `/packaging/build`.
+The local package test feed lives under `/packaging/package-store`.
 
 ## /scripts
 This folder contains repository initialization and shared utility scripts.
