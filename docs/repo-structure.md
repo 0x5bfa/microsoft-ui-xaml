@@ -59,7 +59,7 @@ Feature and API design specs live under `/docs/specs`, with API review specs
 under `/docs/specs/api`.
 Developer workflows are grouped by purpose under folders such as
 `/docs/building`, `/docs/testing`, `/docs/debugging`, `/docs/publishing`,
-and `/docs/external`. Architecture and design notes are grouped under
+and `/docs/community`. Architecture and design notes are grouped under
 `/docs/design-notes`, including control-specific design notes under
 `/docs/design-notes/controls`. WebView2 build/run guidance lives under
 `/docs/building`, WebView2 UIA and accessibility notes live under
