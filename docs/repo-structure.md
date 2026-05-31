@@ -67,6 +67,7 @@ for Microsoft.UI.Xaml.dll and Microsoft.UI.Xaml.Phone.dll.
 ## /eng
 All build system and other engineering related files go in this directory.
 For more information on the build system, see the [build system design](build-system-design.md)
+Ad hoc app build support lives under `/eng/adhoc`.
 Compiler-related build infrastructure lives under `/eng/compiler`.
 WebView2-specific build workaround targets live under `/eng/webview2`.
 Shared signing inputs live under `/eng/signing`.
