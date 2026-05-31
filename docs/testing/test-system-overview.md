@@ -56,7 +56,7 @@ When the Pipeline runs, the following takes place.
 
 1. Runs the Build stage (this builds both product and test binaries)
 2. The Run Tests Stage starts. [**WinUI-RunTests-Stage.yml**](../../build/AzurePipelinesTemplates/WinUI-RunTests-Stage.yml)
-3. The output of the Build job is downloaded. [**CreateTestPayload.ps1**](../../tests/infra/payload/CreateTestPayload.ps1) is run to produce the TestPayload.
+3. The output of the Build job is downloaded. [**CreateTestPayload.ps1**](../../tests/infra/payload/tools/CreateTestPayload.ps1) is run to produce the TestPayload.
 4. We discover the tests from the build and generate the HelixWorkItems. This is done by [**GenerateHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/GenerateHelixWorkItems.ps1).
 5. The TestPayload and the work items xml is published to the Pipeline as an artifact.
 6. We execute batches of the test work items in parallel on agent VMs that are running the version of Windows that we want to target. We execute [**RunTestPassSliceOnBuildAgent.ps1**](../../tests/infra/Helix/common/pipeline/RunTestPassSliceOnBuildAgent.ps1) on these test machines.
@@ -129,17 +129,17 @@ The values for this property can be any string. All test methods with the same v
 for example, you could split a test class into suites "A", "B" and "C".
 
 You can see the generated Helix Work Items by examining the build artifact 'HelixWorkItems'. 
-Each work item executes [`RunHelixWorkItem.cmd`](../../tests/infra/Helix/common/test/RunHelixWorkItem.cmd) with a set of arguments.
+Each work item executes [`RunHelixWorkItem.cmd`](../../tests/infra/Helix/payload/scripts/test/RunHelixWorkItem.cmd) with a set of arguments.
 
 ### Machine setup: testmachine-prerun.cmd
 
-[**testmachine-prerun.cmd**](../../tests/infra/scripts/testmachine-prerun.cmd) is a one-time script that needs to be run on the
+[**testmachine-prerun.cmd**](../../tests/infra/payload/scripts/testmachine-prerun.cmd) is a one-time script that needs to be run on the
 test machines. It configures the machines as needed and installs any required components. Most of the logic is contained 
 in these scripts:  
-* [TestPass-OneTimeMachineSetupCore.ps1](../../tests/infra/Helix/common/test/TestPass-OneTimeMachineSetupCore.ps1)
-* [TestPass-EnsureMachineStateCore.ps1](../../tests/infra/Helix/common/test/TestPass-EnsureMachineStateCore.ps1)
-* [TestPass-OneTimeMachineSetup.ps1](../../tests/infra/Helix/scripts/TestPass-OneTimeMachineSetup.ps1)
-* [TestPass-EnsureMachineState.ps1](../../tests/infra/Helix/scripts/TestPass-EnsureMachineState.ps1)
+* [TestPass-OneTimeMachineSetupCore.ps1](../../tests/infra/Helix/payload/scripts/test/TestPass-OneTimeMachineSetupCore.ps1)
+* [TestPass-EnsureMachineStateCore.ps1](../../tests/infra/Helix/payload/scripts/test/TestPass-EnsureMachineStateCore.ps1)
+* [TestPass-OneTimeMachineSetup.ps1](../../tests/infra/Helix/payload/scripts/TestPass-OneTimeMachineSetup.ps1)
+* [TestPass-EnsureMachineState.ps1](../../tests/infra/Helix/payload/scripts/TestPass-EnsureMachineState.ps1)
 
 ### Test Re-try logic
 
@@ -153,8 +153,8 @@ These xml files are in xUnit format. We use the PublishTestResults Azure Pipelin
 the Pipeline. 
 
 Note, TAEF produces test results in its own format that Azure Pipelines does not understand. For this reason we convert
-the TAEF result into xUnit format. This is done by [ConvertWttLogToXUnit.ps1](../../tests/infra/Helix/common/test/ConvertWttLogToXUnit.ps1)
-which is primarily implemented in [HelixTestHelpers.cs](../../tests/infra/Helix/common/test/HelixTestHelpers.cs).
+the TAEF result into xUnit format. This is done by [ConvertWttLogToXUnit.ps1](../../tests/infra/Helix/payload/scripts/test/ConvertWttLogToXUnit.ps1)
+which is primarily implemented in [HelixTestHelpers.cs](../../tests/infra/Helix/payload/scripts/test/HelixTestHelpers.cs).
 
 ### Result analysis
 
