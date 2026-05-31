@@ -221,15 +221,15 @@
 
   <Import Project="$(MUXControlsTestRoot)testui\Interactions\ButtonInteraction\ButtonInteraction_TestUI.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true' And $(UseInternalSDK) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\Interactions\SliderInteraction\SliderInteraction_TestUI.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true' And $(UseInternalSDK) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)Interactions\ButtonInteraction\APITests\ButtonInteraction_APITests.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true' And $(UseInternalSDK) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)Interactions\SliderInteraction\APITests\SliderInteraction_APITests.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true' And $(UseInternalSDK) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\Interactions\ButtonInteraction\ButtonInteraction_APITests.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true' And $(UseInternalSDK) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\Interactions\SliderInteraction\SliderInteraction_APITests.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true' And $(UseInternalSDK) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)CommonManaged\CommonManaged.projitems" Label="Shared" />
   <Import Project="$(MSBuildThisFileDirectory)\..\..\shared\TestAppUtils\TestAppUtils.projitems" Label="Shared" />
   <Import Project="$(MUXControlsTestRoot)testui\ColorPicker\ColorPicker_TestUI.projitems" Label="Shared" Condition="$(FeatureColorPickerEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\CommandBarFlyout\CommandBarFlyout_TestUI.projitems" Label="Shared" Condition="$(FeatureCommandBarFlyoutEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\CommonStyles\CommonStyles_TestUI.projitems" Label="Shared" Condition="$(FeatureCommonStylesEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\DropDownButton\DropDownButton_TestUI.projitems" Label="Shared" Condition="$(FeatureDropDownButtonEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)Lights\ApiTests\Lights_ApiTests\Lights_ApiTests.projitems" Condition="$(FeatureLightsEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\Lights\Lights_ApiTests.projitems" Condition="$(FeatureLightsEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\Materials\Acrylic\AcrylicBrush_TestUI.projitems" Label="Shared" Condition="$(FeatureMaterialsEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\Materials\Reveal\Reveal_TestUI.projitems" Label="Shared" Condition="$(FeatureMaterialsEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\MenuBar\MenuBar_TestUI.projitems" Label="Shared" Condition="$(FeatureMenuBarEnabled) == 'true'" />
@@ -249,38 +249,38 @@
   <Import Project="$(MUXControlsTestRoot)testui\SplitButton\SplitButton_TestUI.projitems" Label="Shared" Condition="$(FeatureSplitButtonEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\SwipeControl\SwipeControl_TestUI.projitems" Label="Shared" Condition="$(FeatureSwipeControlEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\TeachingTip\TeachingTip_TestUI.projitems" Label="Shared" Condition="$(FeatureTeachingTipEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)TeachingTip\APITests\TeachingTip_APITests.projitems" Label="Shared" Condition="$(FeatureTeachingTipEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\TeachingTip\TeachingTip_APITests.projitems" Label="Shared" Condition="$(FeatureTeachingTipEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\TreeView\TreeView_TestUI.projitems" Label="Shared" Condition="$(FeatureTreeViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\TwoPaneView\TwoPaneView_TestUI.projitems" Label="Shared" Condition="$(FeatureTwoPaneViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\ColorPicker\ColorPicker_APITests.projitems" Label="Shared" Condition="$(FeatureColorPickerEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\CommandBarFlyout\CommandBarFlyout_APITests.projitems" Label="Shared" Condition="$(FeatureCommandBarFlyoutEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\IconSource\IconSource_APITests.projitems" Label="Shared" Condition="$(FeatureIconSourceEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\LayoutPanel\LayoutPanel_APITests.projitems" Label="Shared" Condition="$(FeatureLayoutPanelEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)WrapPanel\APITests\WrapPanel_APITests.projitems" Label="Shared" Condition="$(FeatureWrapPanelEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)Materials\Acrylic\APITests\AcrylicBrush_ApiTests.projitems" Label="Shared" Condition="$(FeatureMaterialsEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)Materials\Reveal\APITests\Reveal_APITests.projitems" Label="Shared" Condition="$(FeatureMaterialsEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)NavigationView\NavigationView_ApiTests\NavigationView_ApiTests.projitems" Label="Shared" Condition="$(FeatureNavigationViewEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\WrapPanel\WrapPanel_APITests.projitems" Label="Shared" Condition="$(FeatureWrapPanelEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\Materials\Acrylic\AcrylicBrush_ApiTests.projitems" Label="Shared" Condition="$(FeatureMaterialsEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\Materials\Reveal\Reveal_APITests.projitems" Label="Shared" Condition="$(FeatureMaterialsEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\NavigationView\NavigationView_ApiTests.projitems" Label="Shared" Condition="$(FeatureNavigationViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\ParallaxView\ParallaxView_APITests.projitems" Label="Shared" Condition="$(FeatureParallaxViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\PersonPicture\PersonPicture_APITests.projitems" Label="Shared" Condition="$(FeaturePersonPictureEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)PullToRefresh\RefreshVisualizer\APITests\RefreshVisualizer_APITests.projitems" Label="Shared" Condition="$(FeaturePullToRefreshEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\APITests\APITests.projitems" Label="Shared" Condition="$(FeaturePullToRefreshEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)RadioButtons\APITests\RadioButtons_APITests.projitems" Label="Shared" Condition="$(FeatureRadioButtonsEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\PullToRefresh\RefreshVisualizer\RefreshVisualizer_APITests.projitems" Label="Shared" Condition="$(FeaturePullToRefreshEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\APITests.projitems" Label="Shared" Condition="$(FeaturePullToRefreshEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\RadioButtons\RadioButtons_APITests.projitems" Label="Shared" Condition="$(FeatureRadioButtonsEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\RadioButtons\RadioButtons_TestUI.projitems" Label="Shared" Condition="$(FeatureRadioButtonsEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)RatingControl\APITests\RatingControl_APITests.projitems" Label="Shared" Condition="$(FeatureRatingControlEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)Repeater\APITests\Repeater_APITests.projitems" Label="Shared" Condition="$(FeatureRepeaterEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)ScrollPresenter\APITests\ScrollPresenter_APITests.projitems" Label="Shared" Condition="$(FeatureScrollPresenterEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)ScrollView\APITests\ScrollView_APITests.projitems" Label="Shared" Condition="$(FeatureScrollViewEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\RatingControl\RatingControl_APITests.projitems" Label="Shared" Condition="$(FeatureRatingControlEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\Repeater\Repeater_APITests.projitems" Label="Shared" Condition="$(FeatureRepeaterEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\ScrollPresenter\ScrollPresenter_APITests.projitems" Label="Shared" Condition="$(FeatureScrollPresenterEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\ScrollView\ScrollView_APITests.projitems" Label="Shared" Condition="$(FeatureScrollViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\ItemsView\ItemsView_APITests.projitems" Label="Shared" Condition="$(FeatureItemsViewEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)SplitButton\APITests\SplitButton_APITests.projitems" Label="Shared" Condition="$(FeatureSplitButtonEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)SwipeControl\SwipeControl_APITests\SwipeControl_APITests.projitems" Label="Shared" Condition="$(FeatureSwipeControlEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)TreeView\APITests\TreeView_APITests.projitems" Label="Shared" Condition="$(FeatureTreeViewEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)TwoPaneView\APITests\TwoPaneView_APITests.projitems" Label="Shared" Condition="$(FeatureTwoPaneViewEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\SplitButton\SplitButton_APITests.projitems" Label="Shared" Condition="$(FeatureSplitButtonEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\SwipeControl\SwipeControl_APITests.projitems" Label="Shared" Condition="$(FeatureSwipeControlEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\TreeView\TreeView_APITests.projitems" Label="Shared" Condition="$(FeatureTreeViewEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\TwoPaneView\TwoPaneView_APITests.projitems" Label="Shared" Condition="$(FeatureTwoPaneViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\AnimatedVisualPlayer\AnimatedVisualPlayer_TestUI.projitems" Label="Shared" Condition="$(FeatureAnimatedVisualPlayerEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)CommonStyles\APITests\CommonStyles_ApiTests.projitems" Label="Shared" Condition="$(FeatureCommonStylesEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\CommonStyles\CommonStyles_APITests.projitems" Label="Shared" Condition="$(FeatureCommonStylesEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\AutoSuggestBox\AutoSuggestBox_APITests.projitems" Label="Shared" Condition="$(FeatureAutoSuggestBoxEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\AutoSuggestBox\AutoSuggestBox_TestUI.projitems" Label="Shared" Condition="$(FeatureAutoSuggestBoxEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\TabView\TabView_TestUI.projitems" Label="Shared" Condition="$(FeatureTabViewEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)TabView\APITests\TabView_APITests.projitems" Label="Shared" Condition="$(FeatureTabViewEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\TabView\TabView_APITests.projitems" Label="Shared" Condition="$(FeatureTabViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\ComboBox\ComboBox_TestUI.projitems" Label="Shared" Condition="$(FeatureComboBoxEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\ComboBox\ComboBox_APITests.projitems" Label="Shared" Condition="$(FeatureComboBoxEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\NumberBox\NumberBox_APITests.projitems" Label="Shared" Condition="$(FeatureNumberBoxEnabled) == 'true'" />
@@ -291,7 +291,7 @@
   <Import Project="$(MUXControlsTestRoot)testui\RadialGradientBrush\RadialGradientBrush_TestUI.projitems" Label="Shared" Condition="$(FeatureRadialGradientBrushEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\InfoBar\InfoBar_TestUI.projitems" Label="Shared" Condition="$(FeatureInfoBarEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\Expander\Expander_TestUI.projitems" Label="Shared" Condition="$(FeatureExpanderEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)Expander\APITests\Expander_APITests.projitems" Label="Shared" Condition="$(FeatureExpanderEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\Expander\Expander_APITests.projitems" Label="Shared" Condition="$(FeatureExpanderEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\PagerControl\PagerControl_TestUI.projitems" Label="Shared" Condition="$(FeaturePagerControlEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\PagerControl\PagerControl_APITests.projitems" Label="Shared" Condition="$(FeaturePagerControlEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\Breadcrumb\Breadcrumb_TestUI.projitems" Label="Shared" Condition="$(FeatureBreadcrumbEnabled) == 'true'" />
@@ -301,7 +301,7 @@
   <Import Project="$(MUXControlsTestRoot)testui\ImageIcon\ImageIcon_TestUI.projitems" Label="Shared" Condition="$(FeatureImageIconEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\ImageIcon\ImageIcon_APITests.projitems" Label="Shared" Condition="$(FeatureImageIconEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\AnimatedIcon\AnimatedIcon_TestUI.projitems" Label="Shared" Condition="$(FeatureAnimatedIconEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)AnimatedIcon\APITests\AnimatedIcon_APITests.projitems" Label="Shared" Condition="$(FeatureAnimatedIconEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\AnimatedIcon\AnimatedIcon_APITests.projitems" Label="Shared" Condition="$(FeatureAnimatedIconEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\MonochromaticOverlayPresenter\MonochromaticOverlayPresenter_TestUI.projitems" Label="Shared" Condition="$(FeatureMonochromaticOverlayPresenterEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\InfoBadge\InfoBadge_TestUI.projitems" Label="Shared" Condition="$(FeatureInfoBadgeEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\InfoBadge\InfoBadge_APITests.projitems" Label="Shared" Condition="$(FeatureInfoBadgeEnabled) == 'true'" />
@@ -315,10 +315,10 @@
   <Import Project="$(MUXControlsTestRoot)testui\MapControl\MapControl_TestUI.projitems" Label="Shared" Condition="$(FeatureMapControlEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)apitests\MapControl\MapControl_APITests.projitems" Label="Shared" Condition="$(FeatureMapControlEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\SelectorBar\SelectorBar_TestUI.projitems" Label="Shared" Condition="$(FeatureSelectorBarEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)SelectorBar\APITests\SelectorBar_APITests.projitems" Label="Shared" Condition="$(FeatureSelectorBarEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\SelectorBar\SelectorBar_APITests.projitems" Label="Shared" Condition="$(FeatureSelectorBarEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\TitleBar\TitleBar_TestUI.projitems" Label="Shared" Condition="$(FeatureTitleBarEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\SystemBackdropElement\SystemBackdropElement_TestUI.projitems" Label="Shared" Condition="$(FeatureSystemBackdropElementEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)SystemBackdropElement\APITests\SystemBackdropElement_APITests.projitems" Label="Shared" Condition="$(FeatureSystemBackdropElementEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)apitests\SystemBackdropElement\SystemBackdropElement_APITests.projitems" Label="Shared" Condition="$(FeatureSystemBackdropElementEnabled) == 'true'" />
 
   <!-- For some reason, TAEF binplaces the wrong version of Wex.Logger.Interop.dll - we need to fix that.
        Removing the version from the binaries directory to allow us to use the version from the lib directory is sufficient here.-->

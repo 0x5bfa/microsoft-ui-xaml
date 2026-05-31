@@ -781,6 +781,10 @@ NumberBox API tests there so `src/controls` can stay focused on control source.
 CommandBarFlyout, IconSource, ItemsView, LayoutPanel, PagerControl,
 ParallaxView, PersonPicture, PipsPager, ProgressBar, and ProgressRing API tests
 followed in the next batch.
+The remaining controls API tests have also moved under the same tree, including
+the larger Repeater, ScrollPresenter, ScrollView, materials, PullToRefresh,
+NavigationView, and historical `*_ApiTests` shared-project folders. This
+completes the move of controls API test shared projects out of `src/controls`.
 
 Controls interaction test shared projects now live under
 `tests/controls/interactiontests`. Top-level feature interaction tests, nested
