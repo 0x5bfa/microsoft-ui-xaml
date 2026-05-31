@@ -38,7 +38,7 @@ live under `src/compiler`, while the compiler project folders remain
 direct children of `src/compiler`.
 
 The OSS fallback project that downloads a public compiler package now lives at
-`eng/compiler/XamlCompilerPublic.csproj`. It is build infrastructure rather
+`eng/xamlcompiler/XamlCompilerPublic.csproj`. It is build infrastructure rather
 than compiler source, and keeping it under `eng` avoids importing the
 compiler-local `Directory.Build.props`.
 
@@ -679,8 +679,8 @@ downlevel contract metadata policy away from root-level build imports.
 Product metadata item definitions now live under `eng/productmetadata`, keeping
 the product WinMD and binary item lists in a named build-data bucket.
 
-Build temp-folder setup now lives under `eng/tempfolder`, keeping the TEMP/TMP
-environment hook with other named build rule buckets.
+Build temp-folder setup now lives under `eng/paths`, keeping the TEMP/TMP
+environment hook with the repo-wide path definitions.
 
 WinUIDetails package import targets now live under `eng/winuidetails`, keeping
 that external package wrapper separate from root-level build imports.
