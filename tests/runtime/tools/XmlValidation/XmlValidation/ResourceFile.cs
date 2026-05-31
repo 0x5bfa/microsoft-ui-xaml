@@ -20,8 +20,8 @@ namespace XmlValidation
             var dirName = Path.GetDirectoryName(normalizedFileName);
             var isMaster =
                 dirName.EndsWith(@"\test\resources\masters", StringComparison.OrdinalIgnoreCase) ||
-                dirName.EndsWith(@"\generated\tests\visualbaselines", StringComparison.OrdinalIgnoreCase) ||
-                dirName.IndexOf(@"\generated\tests\visualbaselines\", StringComparison.OrdinalIgnoreCase) >= 0;
+                dirName.EndsWith(@"\tests\visualbaselines", StringComparison.OrdinalIgnoreCase) ||
+                dirName.IndexOf(@"\tests\visualbaselines\", StringComparison.OrdinalIgnoreCase) >= 0;
             if (isMaster)
             {
                 var resName = Path.GetFileName(normalizedFileName);

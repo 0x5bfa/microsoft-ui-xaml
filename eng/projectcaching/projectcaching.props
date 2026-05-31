@@ -51,10 +51,10 @@
     <MSBuildCacheIdenticalDuplicateOutputPatterns>$(MSBuildCacheIdenticalDuplicateOutputPatterns);$(NoiseAssetOutputLocationOld);$(NoiseAssetOutputLocation)</MSBuildCacheIdenticalDuplicateOutputPatterns>
 
     <!--
-      Ignore generated\controls\dependencyproperties\** even though these files are possibly changed during the build (see src\controls\dll\Microsoft.UI.Xaml.Common.targets::RunDependencyPropertyCodeGen).
+      Ignore src\controls\generated\dependencyproperties\** even though these files are possibly changed during the build (see src\controls\dll\Microsoft.UI.Xaml.Common.targets::RunDependencyPropertyCodeGen).
       These files are part of source control and any changes should be committed, so we don't want to consider them cached outputs.
     -->
-    <MSBuildCacheIgnoredOutputPatterns>$(MSBuildCacheIgnoredOutputPatterns);generated\controls\dependencyproperties\**</MSBuildCacheIgnoredOutputPatterns>
+    <MSBuildCacheIgnoredOutputPatterns>$(MSBuildCacheIgnoredOutputPatterns);src\controls\generated\dependencyproperties\**</MSBuildCacheIgnoredOutputPatterns>
 
     <!--
       MUXControls.sln does not get the MUXFinalRelease global property, so ignore it to enable cache hits.
