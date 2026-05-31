@@ -16,7 +16,7 @@
     <Import Project="eng\externalbinaries.targets"/>
     <Import Project="eng\midl\midl.targets" Condition="'$(IsWinmdProject)' == 'true'" />
     <Import Project="eng\winrtclassregistration.targets" Condition="'$(GenerateWinRTClassRegistration)' == 'true'" />
-    <Import Project="eng\packaging.targets" />
+    <Import Project="eng\packaging\packaging.targets" />
     <Import Project="eng\usexamlcompiler.targets" Condition="'$(UseXamlCompiler)'=='true'" />
     <Import Project="eng\testprojects\testprojects.targets" Condition="'$(TestCode)'=='true'" />
     <Import Project="eng\adhoc\adhocapp.targets" Condition="'$(AdHocApp)'=='true'"/>

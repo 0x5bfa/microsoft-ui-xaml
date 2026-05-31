@@ -103,7 +103,7 @@ To ensure that the proper content is included in the package, projects need to m
 be packaged. Anything added to the `PackageContent` MSBuild item will be picked up and copied to the appropriate
 location and included in the package.
 
-There are existing MSBuild properties defined in [eng\packaging.props](../../eng/packaging.props) that you can use to
+There are existing MSBuild properties defined in [eng\packaging\packaging.props](../../eng/packaging/packaging.props) that you can use to
 specify the location:
 
 ```xml
