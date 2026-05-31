@@ -20,7 +20,7 @@ Increment the version number in AssemblyInfo.cs and MUXCustomBuildTasks.nuspec. 
       nuget pack MUXCustomBuildTasks.nuspec -OutputDirectory .
 
 - >In most cases, you will want to test changes to MUXCustomBuildTasks locally before pushing.
-   You can do this by copying the nupkg to D:\microsoft-ui-xaml-lift\PackageStore, which can be used as a local 'feed' that nuget will search for a restore.
+   You can do this by copying the nupkg to D:\microsoft-ui-xaml-lift\packaging\package-store, which can be used as a local 'feed' that nuget will search for a restore.
    This means you only need to actually publish the package when you are satisfied that everything is correct
    For actual publishing, follow this :
 

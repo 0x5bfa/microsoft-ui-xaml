@@ -33,7 +33,7 @@
   <PropertyGroup>
     <!-- OutDir doesn't contain the project name since this is only a partial project.  We'll add it manually. -->
     <OutDir>$([System.IO.Path]::GetFullPath("$(OutDir)UpdateMockWinAppSDKPackage\"))</OutDir>
-    <MockPackagePath>$(ProjectRoot)PackageStore\Microsoft.WindowsAppSDK.999.0.0-mock-$(WinUIVersion)-$(Platform)-$(Configuration).nupkg</MockPackagePath>
+    <MockPackagePath>$(ProjectRoot)packaging\package-store\Microsoft.WindowsAppSDK.999.0.0-mock-$(WinUIVersion)-$(Platform)-$(Configuration).nupkg</MockPackagePath>
   </PropertyGroup>
   <Target Name="Rebuild" Condition="'$(BuildingInsideVisualStudio)' == 'true'">
     <CallTarget Targets="Clean" />

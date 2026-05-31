@@ -1,7 +1,7 @@
 [CmdLetBinding()]
 Param(
     [string]$BuildBinDir =  $(Resolve-Path "$PSScriptRoot\..\..\..\..\BuildOutput\bin"),
-    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..\PackageStore"),
+    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..\packaging\package-store"),
     [string]$VersionOverride
 )
 

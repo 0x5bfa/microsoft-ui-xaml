@@ -106,8 +106,8 @@ if "%deletePackages%"=="1" (
         rd /s /q %reporoot%\src\compiler\packages
     )
     
-    echo Deleting %reporoot%\PackageStore...
-    git clean -df %reporoot%\PackageStore
+    echo Deleting %reporoot%\packaging\package-store...
+    git clean -df %reporoot%\packaging\package-store
     echo Deleted NuGet packages - make sure to re-run init.cmd to restore packages.
 )
 endlocal
