@@ -759,7 +759,9 @@ scenario image moved under `docs/specs/MapControl`. The CustomTitleBar spec
 and its spec-specific image moved under `docs/specs/CustomTitleBar`, while the
 conceptual design note remains under `docs/design-notes`. The
 ItemCollectionTransitionProvider and TabTearOut specs now live under matching
-feature folders in `docs/specs`, with their local images.
+feature folders in `docs/specs`, with their local images. The LayoutCycle
+DebugSettings and AnnotatedScrollBar specs moved there too, with design-note
+overviews linking to their spec-owned locations.
 
 ## Runtime path preparation
 

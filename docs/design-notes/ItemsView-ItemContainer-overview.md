@@ -23,7 +23,7 @@ Examples:
 - The ListView & GridView do not support:
     * flow layouts (like the new [LinedFlowLayout](LinedFlowLayout_spec.md)),
     * pluggable layouts,
-    * pluggable scrolling controllers (like the new [AnnotatedScrollBar](annotatedscrollbar_spec.md)),
+    * pluggable scrolling controllers (like the new [AnnotatedScrollBar](../specs/AnnotatedScrollBar/annotatedscrollbar_spec.md)),
     * custom recycling pools,
     * programmatic control of scrolling/zooming curves,
     * custom collection change animations.
