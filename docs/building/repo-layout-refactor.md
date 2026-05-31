@@ -745,7 +745,11 @@ ColorPicker, ComboBox, DropDownButton, Expander, ImageIcon, InfoBadge, and
 PersonPicture TestUI projects into the same test-owned tree. RatingControl,
 SplitButton, SplitView, TwoPaneView, RadioMenuFlyoutItem,
 MonochromaticOverlayPresenter, MapControl, and SystemBackdropElement followed
-as the next small controls TestUI batch.
+as the next small controls TestUI batch. Additional top-level TestUI shared
+projects for AnimatedVisualPlayer, InfoBar, NumberBox, PagerControl, TitleBar,
+Breadcrumb, PipsPager, ProgressBar, RadioButtons, SelectorBar, WebView2,
+AnimatedIcon, AnnotatedScrollBar, CommandBarFlyout, ProgressRing, and
+TeachingTip now live there too.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
