@@ -590,7 +590,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ItemsView_APITests", "..\sr
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ItemsView_InteractionTests", "..\src\controls\ItemsView\InteractionTests\ItemsView_InteractionTests.shproj", "{8F4CD019-252A-542B-1F85-AE3716DBE04B}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ItemsView_TestUI", "..\src\controls\ItemsView\TestUI\ItemsView_TestUI.shproj", "{30C62FF5-72FE-52B6-A2A1-A95B9B8A0241}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ItemsView_TestUI", "..\tests\controls\testui\ItemsView\ItemsView_TestUI.shproj", "{30C62FF5-72FE-52B6-A2A1-A95B9B8A0241}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ItemsView", "..\src\controls\ItemsView\ItemsView.vcxitems", "{7B5F5CA3-084C-58A0-97DA-B8C488CC3E30}"
 EndProject
@@ -1620,7 +1620,7 @@ Global
 		..\tests\controls\testui\Repeater\Repeater_TestUI.projitems*{2ed883f5-20db-4445-8c96-517a21e5e657}*SharedItemsImports = 13
 		..\src\controls\TabView\APITests\TabView_APITests.projitems*{2f4e95e9-f729-481c-b9aa-c9bec91ae395}*SharedItemsImports = 13
 		..\src\controls\ParallaxView\ParallaxView.vcxitems*{3095445a-afcd-5154-ac36-9770e6ec1aa5}*SharedItemsImports = 9
-		..\src\controls\ItemsView\TestUI\ItemsView_TestUI.projitems*{30c62ff5-72fe-52b6-a2a1-a95b9b8a0241}*SharedItemsImports = 13
+		..\tests\controls\testui\ItemsView\ItemsView_TestUI.projitems*{30c62ff5-72fe-52b6-a2a1-a95b9b8a0241}*SharedItemsImports = 13
 		..\tests\controls\testui\InfoBar\InfoBar_TestUI.projitems*{32dfaf1e-c2ec-4c52-a4d8-b3a3946242b4}*SharedItemsImports = 13
 		..\src\controls\RadioMenuFlyoutItem\RadioMenuFlyoutItem.vcxitems*{3353a4a7-87b3-4e43-8f8d-43c7380d1d56}*SharedItemsImports = 9
 		..\src\controls\Lights\Lights.vcxitems*{3479a3ae-2854-4bec-80ab-eab0772cb90a}*SharedItemsImports = 9
@@ -1723,7 +1723,7 @@ Global
 		..\src\controls\ItemContainer\APITests\ItemContainer_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\ItemContainer\ItemContainer_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\ItemsView\APITests\ItemsView_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\ItemsView\TestUI\ItemsView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\ItemsView\ItemsView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\LayoutPanel\APITests\LayoutPanel_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\MapControl\APITests\MapControl_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\MapControl\MapControl_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
