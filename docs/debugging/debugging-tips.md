@@ -275,7 +275,7 @@ further down, we see that this is occurring on line 113 in TimePicker::OnLoaded.
 re-run the tests with new breakpoints and debug the cause of the leak.
 
 This particular issue related to the way that WeakReference allocates memory. More information (including a further 
-write up) can be found on the [WeakRefPtr documentation](../design-notes/pointers.md#ctlweakrefptr).
+write up) can be found on the [WeakRefPtr documentation](../design-notes/developer-guides/pointers.md#ctlweakrefptr).
 
 ### Event loop and conditional breakpoints
 

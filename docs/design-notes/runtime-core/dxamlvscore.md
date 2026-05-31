@@ -145,7 +145,7 @@ auto DxamlLayerObject = static_cast<barType*>(DO);
 ```
 
 `GetPeer()` takes a `CDependencyObject` and returns a `DependencyObject`, which then gets casted. One can use `ComPtr` 
-with it effortlessly ([WinUI Pointers](../pointers.md))
+with it effortlessly ([WinUI Pointers](../developer-guides/pointers.md))
 
 #### FxCallbacks
 

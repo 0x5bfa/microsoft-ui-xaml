@@ -39,7 +39,7 @@ codebase has shown that they work just fine. So, no action item is needed to shi
 
 These counters’ implementation is Comp-dependent.
 The current implementation in 
-[`src/runtime/xcp/components/comptree/DCompTreeHost.cpp`](../../src/runtime/xcp/components/comptree/DCompTreeHost.cpp)'s
+[`src/runtime/xcp/components/comptree/DCompTreeHost.cpp`](../../../src/runtime/xcp/components/comptree/DCompTreeHost.cpp)'s
 `DCompTreeHost::UpdateDebugSettings(…)` uses old school `IDCompositionDeviceDebug::EnableDebugCounters()` and 
 `IDCompositionDeviceDebug::DisableDebugCounters()` APIs that are considered private and cannot be used in WinUI 3.
 There is no modern WinComp alternative API now or for WinUI 3. A future implementation
