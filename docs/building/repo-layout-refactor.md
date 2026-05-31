@@ -193,7 +193,9 @@ legacy project that does not consume the shared managed test props directly.
 Controls test infrastructure should live with the controls test projects it
 supports. `AppTestAutomationHelpers` now lives under
 `controls/test/testinfra` next to `MUXTestInfra` instead of under `Samples`, so
-the sample-app tree stays focused on sample applications.
+the sample-app tree stays focused on sample applications. Testinfra package
+creation helpers live under each testinfra package's `tools` folder, and the
+WinUI Gallery test-data generator lives under `controls/test/tools`.
 
 ## Sample test automation
 
@@ -652,11 +654,12 @@ implementation.
 The Visual Studio developer command prompt setup implementation lives there too,
 and initialization scripts now call `tools/setup/DevCmd.cmd` directly.
 
-Controls build command implementation and shared build support files live under
-`controls/build`. The root-level `controls/Build.cmd` wrapper was removed and
-solution items now point at `controls/build/Build.cmd`. Root-level controls
-props files that are discovered by MSBuild remain as thin wrappers over their
-implementations in `controls/build`. The controls `Directory.Build.props` and
+Controls shared build support files live under `controls/build`, while the
+controls build command implementation now lives under `controls/tools/Build`.
+The root-level `controls/Build.cmd` wrapper was removed and solution items now
+point at `controls/tools/Build/Build.cmd`. Root-level controls props files that
+are discovered by MSBuild remain as thin wrappers over their implementations in
+`controls/build`. The controls `Directory.Build.props` and
 `Directory.Build.targets` implementations also live in `controls/build`, while
 the root files remain as MSBuild auto-discovery wrappers.
 

@@ -1,19 +1,19 @@
 [CmdLetBinding()]
 Param(
-    [string]$BuildBinDir =  $(Resolve-Path "$PSScriptRoot\..\..\..\..\BuildOutput\bin"),
-    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..\packaging\package-store"),
+    [string]$BuildBinDir =  $(Resolve-Path "$PSScriptRoot\..\..\..\..\..\BuildOutput\bin"),
+    [string]$OutputDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..\..\packaging\package-store"),
     [string]$VersionOverride
 )
 
-$RootDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..")
+$RootDir = $(Resolve-Path "$PSScriptRoot\..\..\..\..\..")
 
-$scriptDirectory = $script:MyInvocation.MyCommand.Path | Split-Path -Parent
+$packageDirectory = (Resolve-Path "$PSScriptRoot\..").Path
 
-pushd $scriptDirectory
+pushd $packageDirectory
 
 if (!$OutputDir)
 {
-    $OutputDir = $scriptDirectory
+    $OutputDir = $packageDirectory
 }
 
 if (!$env:NUGETCMD) {
@@ -51,7 +51,7 @@ $CommonNugetArgs = "-properties `"BuildBinDir=$BuildBinDir``;RootDir=$RootDir``;
 $NugetArgs = "$CommonNugetArgs -OutputDirectory $(Resolve-Path $OutputDir)"
 
 
-$nuspecs = Get-ChildItem $scriptDirectory -Filter *.nuspec
+$nuspecs = Get-ChildItem $packageDirectory -Filter *.nuspec
 
 foreach ($nuspec in $nuspecs)
 {
