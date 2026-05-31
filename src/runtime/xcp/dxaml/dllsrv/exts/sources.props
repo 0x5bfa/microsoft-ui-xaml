@@ -75,7 +75,7 @@
 
     <ItemGroup Condition="'$(ConfigurationType)'=='DynamicLibrary' or '$(ConfigurationType)'=='Application'">
         <ProjectReference Include="@(BaseComplibs)"/>
-        <ProjectReference Condition="'$(ProjectGuid)'!='{9e88d331-0324-428d-b7bc-70953f4b65d9}'" Include="$(XcpPath)\components\allocation\stubs\Microsoft.UI.Xaml.Allocation.Stubs.vcxproj" Project="{9e88d331-0324-428d-b7bc-70953f4b65d9}"/>
+        <ProjectReference Condition="'$(ProjectGuid)'!='{9e88d331-0324-428d-b7bc-70953f4b65d9}'" Include="$(NativeIsolatedTestPath)\shared\stubs\Microsoft.UI.Xaml.Allocation.Stubs.vcxproj" Project="{9e88d331-0324-428d-b7bc-70953f4b65d9}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{950d68b3-b34b-4453-96f9-5d1517f539ca}'" Include="$(XcpPath)\components\terminateProcessOnOOM\lib\Microsoft.UI.Xaml.TerminateProcessOnOOM.vcxproj" Project="{950d68b3-b34b-4453-96f9-5d1517f539ca}"/>
         <ProjectReference Condition="'$(ProjectGuid)'!='{a0c77691-0c3e-4497-9837-178ed492f063}'" Include="$(XcpPath)\components\satellitebase\lib\Microsoft.UI.Xaml.SatelliteBase.vcxproj" Project="{a0c77691-0c3e-4497-9837-178ed492f063}"/>
     </ItemGroup>

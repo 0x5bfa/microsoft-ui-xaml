@@ -10,7 +10,7 @@
 
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
-    <Import Project="$(XcpPath)\components\unittest-uielement.props"/>
+    <Import Project="$(NativeIsolatedTestPath)\shared\build\unittest-uielement.props"/>
 
     <PropertyGroup>
         <XamlDiagPath>$(XamlDiagnosticsComponentPath)</XamlDiagPath>
@@ -25,7 +25,6 @@
             $(FrameworkUdkIncPath);
             $(XcpPath)\components\collection\inc;
             $(XcpPath)\components\input\inc;
-            $(XcpPath)\components\unittest;
             $(XcpPath)\win\inc;
             $(XcpPath)\win\shared\inc;
             $(XcpPath)\dxaml\lib;

@@ -57,7 +57,7 @@
 
     <ItemGroup Condition="'$(NoBaseCompstubs)'==''">
         <BaseCompstubs Remove="@(BaseCompstubs)"/>
-        <BaseCompstubs Condition="'$(ProjectGuid)'!='{9e88d331-0324-428d-b7bc-70953f4b65d9}'" Include="$(XcpPath)\components\allocation\stubs\Microsoft.UI.Xaml.Allocation.Stubs.vcxproj" Project="{9e88d331-0324-428d-b7bc-70953f4b65d9}"/>
+        <BaseCompstubs Condition="'$(ProjectGuid)'!='{9e88d331-0324-428d-b7bc-70953f4b65d9}'" Include="$(NativeIsolatedTestPath)\shared\stubs\Microsoft.UI.Xaml.Allocation.Stubs.vcxproj" Project="{9e88d331-0324-428d-b7bc-70953f4b65d9}"/>
         <BaseCompstubs Condition="'$(ProjectGuid)'!='{950d68b3-b34b-4453-96f9-5d1517f539ca}'" Include="$(XcpPath)\components\terminateProcessOnOOM\lib\Microsoft.UI.Xaml.TerminateProcessOnOOM.vcxproj" Project="{950d68b3-b34b-4453-96f9-5d1517f539ca}"/>
 
         <BaseComplibs Include="@(BaseCompstubs)"/>

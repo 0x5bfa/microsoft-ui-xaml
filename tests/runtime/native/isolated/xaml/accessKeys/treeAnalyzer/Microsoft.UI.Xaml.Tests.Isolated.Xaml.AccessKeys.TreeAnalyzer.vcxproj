@@ -15,7 +15,7 @@
     <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\..\eng\xamlbuild\Xaml.Cpp.Props"/>
     <Import Project="$(XcpPath)\projectbase.props"/>
 
-    <Import Project="$(XcpPath)\components\unittest-do.props"/>
+    <Import Project="$(NativeIsolatedTestPath)\shared\build\unittest-do.props"/>
 
     <PropertyGroup>
         <ProjectIncludeDirectories>
