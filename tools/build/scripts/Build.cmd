@@ -208,16 +208,16 @@ if not "%_quiet%"=="1" (
     echo BUILD SUCCEEDED.
 )
 
-git diff --exit-code "src/controls/dll/XamlMetadataProviderGenerated.h" > nul
+git diff --exit-code "src/controls/dll/generated/metadata/XamlMetadataProviderGenerated.h" > nul
 if ERRORLEVEL 1 (
     set _muxcIXMPChanged=1
 )
 if "%_muxcIXMPChanged%"=="1" (
     echo ---
     echo:
-    echo Generated file 'src/controls/dll/XamlMetadataProviderGenerated.h' has changed.
+    echo Generated file 'src/controls/dll/generated/metadata/XamlMetadataProviderGenerated.h' has changed.
     echo If this is intended then use the following command to include it in your commit:
-    echo     git add src/controls/dll/XamlMetadataProviderGenerated.h
+    echo     git add src/controls/dll/generated/metadata/XamlMetadataProviderGenerated.h
     echo:
 )
 

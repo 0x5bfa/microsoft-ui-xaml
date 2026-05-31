@@ -4,7 +4,7 @@
 #include "pch.h"
 #include "common.h"
 #include "XamlMetadataProvider.h"
-#include "XamlMetadataProviderGenerated.h"
+#include "generated/metadata/XamlMetadataProviderGenerated.h"
 #include "XamlType.h"
 #include "MUXControlsFactory.h"
 

@@ -70,7 +70,7 @@
     <ClInclude Include="..\inc\StaticAssertFalse.h">
       <Filter>inc</Filter>
     </ClInclude>
-    <ClInclude Include="XamlMetadataProviderGenerated.h" />
+    <ClInclude Include="generated\metadata\XamlMetadataProviderGenerated.h" />
     <ClInclude Include="..\inc\TypeHelper.h">
       <Filter>inc</Filter>
     </ClInclude>
