@@ -719,11 +719,12 @@ Controls shared command wrappers now live under `tools/controls/Common/scripts`,
 including the NuGet and PowerShell wrappers used by controls tooling scripts.
 
 Controls custom MSBuild task sources and their test harness now live under
-`tools/controls/BuildTasks`, with the task NuGet packaging scripts kept under
-`CustomTasks/NuSpecs/scripts` and the dedicated build-task solution co-located
-with those tools. The cleanup project that invokes the custom `KillMSBuild` task
-also lives in this folder with its runtime config. The shared inline MSBuild
-task target file is grouped here too.
+`tools/controls/BuildTasks`, with the task NuGet package inputs and publish
+scripts under `tools/controls/BuildTasks/packaging/MUXCustomBuildTasks`. The
+dedicated build-task solution remains co-located with those tools. The cleanup
+project that invokes the custom `KillMSBuild` task also lives in this folder
+with its runtime config. The shared inline MSBuild task target file is grouped
+here too.
 
 Controls packaging helpers now live under `tools/controls/Packaging/scripts`,
 including the framework package AppX creation wrapper used after controls

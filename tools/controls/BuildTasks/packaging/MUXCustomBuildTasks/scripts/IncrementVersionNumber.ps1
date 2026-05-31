@@ -3,7 +3,7 @@ $nugetVersion = [version]$nugetVersionString
 $newNugetVersion = "$($nugetVersion.Major).$($nugetVersion.Minor).$($nugetVersion.Build + 1)"
 
 $versionReferences = @(
-    (Resolve-Path "$PSScriptRoot\..\..\Properties\AssemblyInfo.cs"),
+    (Resolve-Path "$PSScriptRoot\..\..\..\CustomTasks\Properties\AssemblyInfo.cs"),
     (Resolve-Path "$PSScriptRoot\..\MUXCustomBuildTasks.nuspec")
 )
 
