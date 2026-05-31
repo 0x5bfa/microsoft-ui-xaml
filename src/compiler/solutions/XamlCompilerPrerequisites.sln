@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler", "Microsoft.UI.Xaml.Markup.Compiler.csproj", "{CF0F4BDA-9030-4749-9102-7739049412F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler", "..\Microsoft.UI.Xaml.Markup.Compiler.csproj", "{CF0F4BDA-9030-4749-9102-7739049412F5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.Executable", "Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj", "{5A98F9F4-BB19-428C-96B7-87FBF8FB91FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.Executable", "..\Exe\Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj", "{5A98F9F4-BB19-428C-96B7-87FBF8FB91FE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.IO", "Exe\Microsoft.UI.Xaml.Markup.Compiler.IO\Microsoft.UI.Xaml.Markup.Compiler.IO.csproj", "{1FBDE93D-5C21-4761-87D6-2504F772BF28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.IO", "..\Exe\Microsoft.UI.Xaml.Markup.Compiler.IO\Microsoft.UI.Xaml.Markup.Compiler.IO.csproj", "{1FBDE93D-5C21-4761-87D6-2504F772BF28}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop", "Exe\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop.csproj", "{A1175D44-D47D-4D3E-A319-CEFC7170D29C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop", "..\Exe\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop\Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop.csproj", "{A1175D44-D47D-4D3E-A319-CEFC7170D29C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildGenXbfForMSBuild", "..\..\eng\xamlcompiler\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj", "{3CB5C51E-1F39-4EDC-8949-28812FC1C40E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildGenXbfForMSBuild", "..\..\..\eng\xamlcompiler\BuildGenXbfForMSBuild\BuildGenXbfForMSBuild.csproj", "{3CB5C51E-1F39-4EDC-8949-28812FC1C40E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAugmentation", "..\..\eng\graph\augmentation\XamlCompilerPrerequisites\GraphAugmentation.csproj", "{7B882373-BB18-4823-A503-F228AD742E68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAugmentation", "..\..\..\eng\graph\augmentation\XamlCompilerPrerequisites\GraphAugmentation.csproj", "{7B882373-BB18-4823-A503-F228AD742E68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,21 +157,21 @@ Global
 		SolutionGuid = {4E90F142-722E-4A8A-BB0B-89CB556EB0F5}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		src\compiler\BuildTasks\Antlr4.Runtime\Antlr4.Runtime.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
-		src\compiler\BuildTasks\BindingPath\BindingPath.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
-		src\compiler\BuildTasks\ConditionalNamespace\ConditionalNamespace.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
-		src\compiler\BuildTasks\Core.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
-		src\compiler\BuildTasks\SuccinctCollectionSyntax\SuccinctCollectionSyntax.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
-		src\compiler\BuildTasks\System.Xaml\System.Xaml.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
-		src\compiler\Microsoft.UI.Xaml.Markup.Compiler.Core\Microsoft.UI.Xaml.Markup.Compiler.Core.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
-		src\compiler\Microsoft.UI.Xaml.Markup.Compiler.Parsing\Microsoft.UI.Xaml.Markup.Compiler.Parsing.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
-		src\compiler\BuildTasks\Antlr4.Runtime\Antlr4.Runtime.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
-		src\compiler\BuildTasks\BindingPath\BindingPath.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
-		src\compiler\BuildTasks\ConditionalNamespace\ConditionalNamespace.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
-		src\compiler\BuildTasks\Core.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
-		src\compiler\BuildTasks\SuccinctCollectionSyntax\SuccinctCollectionSyntax.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
-		src\compiler\BuildTasks\System.Xaml\System.Xaml.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
-		src\compiler\Microsoft.UI.Xaml.Markup.Compiler.Core\Microsoft.UI.Xaml.Markup.Compiler.Core.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
-		src\compiler\Microsoft.UI.Xaml.Markup.Compiler.Parsing\Microsoft.UI.Xaml.Markup.Compiler.Parsing.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
+		..\BuildTasks\Antlr4.Runtime\Antlr4.Runtime.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
+		..\BuildTasks\BindingPath\BindingPath.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
+		..\BuildTasks\ConditionalNamespace\ConditionalNamespace.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
+		..\BuildTasks\Core.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
+		..\BuildTasks\SuccinctCollectionSyntax\SuccinctCollectionSyntax.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
+		..\BuildTasks\System.Xaml\System.Xaml.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
+		..\Microsoft.UI.Xaml.Markup.Compiler.Core\Microsoft.UI.Xaml.Markup.Compiler.Core.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
+		..\Microsoft.UI.Xaml.Markup.Compiler.Parsing\Microsoft.UI.Xaml.Markup.Compiler.Parsing.projitems*{5a98f9f4-bb19-428c-96b7-87fbf8fb91fe}*SharedItemsImports = 5
+		..\BuildTasks\Antlr4.Runtime\Antlr4.Runtime.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
+		..\BuildTasks\BindingPath\BindingPath.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
+		..\BuildTasks\ConditionalNamespace\ConditionalNamespace.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
+		..\BuildTasks\Core.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
+		..\BuildTasks\SuccinctCollectionSyntax\SuccinctCollectionSyntax.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
+		..\BuildTasks\System.Xaml\System.Xaml.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
+		..\Microsoft.UI.Xaml.Markup.Compiler.Core\Microsoft.UI.Xaml.Markup.Compiler.Core.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
+		..\Microsoft.UI.Xaml.Markup.Compiler.Parsing\Microsoft.UI.Xaml.Markup.Compiler.Parsing.projitems*{cf0f4bda-9030-4749-9102-7739049412f5}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
