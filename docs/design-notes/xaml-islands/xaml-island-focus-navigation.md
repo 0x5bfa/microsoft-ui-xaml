@@ -30,7 +30,7 @@ rem Clone the repo:
 git clone https://github.com/microsoft/WindowsAppSDK-Samples.git
 
 rem Open the sln (requires Visual Studio)
-start Samples\Islands\cpp-win32-unpackaged\SimpleIslandApp.sln
+start Samples\Islands\cpp-win32-unpackaged\SimpleIslandApp.slnx
 
 rem Now just build and run.  The first time you run it, it may prompt you to install the WindowsAppRuntime.
 rem Follow the link and install the version it asks for.

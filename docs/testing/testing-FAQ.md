@@ -618,7 +618,7 @@ For more details on these apps see [building-sample-apps.md](../building/buildin
 
 ### How do I build the Sample Apps?
 When calling tools\build\scripts\Build.cmd you can pass `samples` to also build the sample apps. You can also invoke msbuild directly
-against the .sln files under the 'Samples' dir.
+against the .slnx files under the 'Samples' dir.
 
 ### What scenarios are covered by these Sample Apps?
 WinUI Gallery is one of the Sample Apps. In addition we have a set of simple scenario apps that each covers one

@@ -32,7 +32,7 @@ proves the path-update pattern before touching `dxaml` or `controls`.
 ## Compiler entry points
 
 Compiler-specific build entry points should live with the compiler source.
-`XamlCompilerPrerequisites.sln`, `XamlCompiler.sln`, and `BuildTools.sln` now
+`XamlCompilerPrerequisites.slnx`, `XamlCompiler.slnx`, and `BuildTools.slnx` now
 live under `src/compiler/solutions`, while the compiler project folders remain
 direct children of `src/compiler`.
 
@@ -50,7 +50,7 @@ collection scripts, and compiler coverage instrumentation helper live there so
 ## Compiler test entry points
 
 Compiler-specific test entry points and support helpers now live under
-`tests/compiler`. `XamlCompilerTests.sln` now lives under
+`tests/compiler`. `XamlCompilerTests.slnx` now lives under
 `tests/compiler/solutions`, while `runtests.cmd` and `copynewmasters.cmd` now
 live under `tests/compiler/tools/scripts`. The
 `FixMasters` helper used by `copynewmasters.cmd` and the VcMeta hash validation
@@ -277,7 +277,7 @@ paths.
 
 ## Runtime solution entry point
 
-The main runtime solution now lives at `src/runtime/solutions/Microsoft.UI.Xaml.sln`.
+The main runtime solution now lives at `src/runtime/solutions/Microsoft.UI.Xaml.slnx`.
 This keeps the runtime build entry point with the runtime-owned source slices
 that have already moved under `src/runtime`, with project references now
 pointing at the relocated `src/runtime/xcp` tree.
@@ -540,7 +540,7 @@ with the controls isolated test tree without changing project participation.
 The WinUI controls implementation now lives under `src/controls`, including
 the controls IDL inputs under `src/controls/idl`. The top-level `controls`
 root has been removed. Controls solution entry points live under
-`solutions/controls`, controls-specific build support lives under
+`src/controls/solutions`, controls-specific build support lives under
 `eng/controls`, tests live under `tests/controls`, and authoring tools live
 under `tools/controls`. Shared MSBuild entry points use
 `$(MUXControlsSourceRoot)` and `$(MUXControlsIdlRoot)` so those support
@@ -688,7 +688,7 @@ the command paths directly.
 Controls shared build support files live under `eng/controls/build`, while the
 controls build command implementation now lives under
 `tools/controls/Build/scripts`.
-Controls solution entry points now live under `solutions/controls`. The
+Controls solution entry points now live under `src/controls/solutions`. The
 root-level `controls/Build.cmd` wrapper was removed and solution items now
 point at `tools/controls/Build/scripts/Build.cmd`. The old top-level controls
 MSBuild wrappers moved under `eng/controls`, with their implementations under

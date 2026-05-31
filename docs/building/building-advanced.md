@@ -6,7 +6,7 @@ For more information about the build system, see the [build system how-to guide]
 ## Table of Contents
 
 - [Advanced build options](#advanced-build-options)
-- [Updating solution (.sln) files](#updating-solution-sln-files)
+- [Updating solution (.slnx) files](#updating-solution-sln-files)
 - [WinUI components from other repos](#winui-components-from-other-repos)
 - [Building custom build tasks](#building-custom-build-tasks)
 - [Diagnosing GenXbf.dll build failures](#diagnosing-genxbfdll-build-failures)
@@ -27,9 +27,9 @@ These are available if you msbuild a solution or project.
 
 Note: all /p:k=v variables can be also passed as environment variables instead (set k=v before running msbuild)
 
-## Updating solution (.sln) files
+## Updating solution (.slnx) files
 
-Solution files like Microsoft.UI.Xaml.sln require hand editing for adding/removing components. Adding or deleting
+Solution files like Microsoft.UI.Xaml.slnx require hand editing for adding/removing components. Adding or deleting
 components within Visual Studio is very trivial but it cannot be used for this project. This is because opening and
 saving them in Visual Studio introduces unwanted changes. A good workflow trick will be making a copy of solution file
 and then making changes to the copied solution file by opening it in Visual Studio. Afterwards, using a diff between

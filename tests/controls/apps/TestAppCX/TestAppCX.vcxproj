@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. See LICENSE in the project root for license information. -->
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$([MSBuild]::GetPathOfFileAbove(environment.props))" />
@@ -288,7 +288,7 @@
     <ProjectReference Include="$(MUXControlsSourceRoot)dll\Microsoft.UI.Xaml.Controls.vcxproj">
       <Project>{ad0c90b0-4845-4d4b-88f1-86f653f8171b}</Project>
     </ProjectReference>
-    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.vcxproj" />
+    <ProjectReference Include="$(MergedWinMDProjectRoot)private\MergedWinMD.Private.vcxproj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="..\..\build\RetargetCopyLocalFiles.targets" />

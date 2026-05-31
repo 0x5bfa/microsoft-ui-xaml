@@ -134,7 +134,7 @@ they are configured properly.
 
 #### Static packaging content
 
-Consider placing any static content in the [eng\packaging\winui\Microsoft.WinUI.csproj](../../eng/packaging/winui/Microsoft.WinUI.csproj)
+Consider placing any static content in the [eng\packaging\winui\Microsoft.WinUI.Packaging.csproj](../../eng/packaging/winui/Microsoft.WinUI.Packaging.csproj)
 project, as this is where all static content currently resides (other than the markup compiler targets).
 
 ### References

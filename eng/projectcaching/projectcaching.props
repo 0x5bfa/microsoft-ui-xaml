@@ -57,8 +57,8 @@
     <MSBuildCacheIgnoredOutputPatterns>$(MSBuildCacheIgnoredOutputPatterns);src\controls\generated\dependencyproperties\**</MSBuildCacheIgnoredOutputPatterns>
 
     <!--
-      MUXControls.sln does not get the MUXFinalRelease global property, so ignore it to enable cache hits.
-      TODO: Consider providing it to MUXControls.sln instead as a more correct solution.
+      MUXControls.slnx does not get the MUXFinalRelease global property, so ignore it to enable cache hits.
+      TODO: Consider providing it to MUXControls.slnx instead as a more correct solution.
     -->
     <MSBuildCacheGlobalPropertiesToIgnore>$(MSBuildCacheGlobalPropertiesToIgnore);MUXFinalRelease</MSBuildCacheGlobalPropertiesToIgnore>
 

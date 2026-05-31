@@ -1,0 +1,19 @@
+<Solution>
+  <Project Path="../XamlCompilerEtlViewer/XamlCompilerEtlReader/XamlCompilerEtlReader.csproj" />
+  <Project Path="../XamlCompilerEtlViewer/XamlCompilerEtlViewer/XamlCompilerEtlViewer.csproj" />
+  <Properties Name="TeamFoundationVersionControl">
+    <Property Name="SccAuxPath0" Value="http://vstfdevdiv.redmond.corp.microsoft.com:8080/devdiv2" />
+    <Property Name="SccAuxPath1" Value="http://vstfdevdiv.redmond.corp.microsoft.com:8080/devdiv2" />
+    <Property Name="SccEnterpriseProvider" Value="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}" />
+    <Property Name="SccLocalPath0" Value="XamlCompilerEtlViewer" />
+    <Property Name="SccLocalPath1" Value="XamlCompilerEtlReader" />
+    <Property Name="SccNumberOfProjects" Value="2" />
+    <Property Name="SccProjectName0" Value="XamlCompilerEtlViewer" />
+    <Property Name="SccProjectName1" Value="XamlCompilerEtlReader" />
+    <Property Name="SccProjectUniqueName0" Value="..\\XamlCompilerEtlViewer\\XamlCompilerEtlViewer\\XamlCompilerEtlViewer.csproj" />
+    <Property Name="SccProjectUniqueName1" Value="..\\XamlCompilerEtlViewer\\XamlCompilerEtlReader\\XamlCompilerEtlReader.csproj" />
+    <Property Name="SccProvider0" Value="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}" />
+    <Property Name="SccProvider1" Value="{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}" />
+    <Property Name="SccTeamFoundationServer" Value="http://vstfdevdiv.redmond.corp.microsoft.com:8080/devdiv2" />
+  </Properties>
+</Solution>

@@ -192,7 +192,7 @@ namespace SolutionHelper
             Solution2 solution = (Solution2)dte.Solution;
             Console.WriteLine("Got solution class");
 
-            var solutionNames = new List<string>(){"MUXControls.sln","MUXControlsInnerLoop.sln"};
+            var solutionNames = new List<string>(){"MUXControls.slnx","MUXControlsInnerLoop.slnx"};
             foreach(var solutionName in solutionNames)
             {
                 Console.WriteLine("Opening solution: $($cleanMuxControlsSolutionsDir)" + solutionName);

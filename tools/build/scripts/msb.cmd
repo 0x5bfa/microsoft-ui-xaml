@@ -33,7 +33,7 @@ set _title=
 for %%a in (%args%) do (
     if not defined _title (
         set "_ext=%%~xa"
-        if /I "!_ext!"==".sln"     set "_title=%%~na"
+        if /I "!_ext!"==".slnx"     set "_title=%%~na"
         if /I "!_ext!"==".slnx"    set "_title=%%~na"
         if /I "!_ext!"==".vcxproj" set "_title=%%~na"
         if /I "!_ext!"==".csproj"  set "_title=%%~na"

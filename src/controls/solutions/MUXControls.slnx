@@ -1,0 +1,471 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Debug_test" />
+    <BuildType Name="Release" />
+    <Platform Name="ARM64" />
+    <Platform Name="ARM64EC" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/AnimatedIcon/" />
+  <Folder Name="/AnimatedVisualPlayer/" />
+  <Folder Name="/AnnotatedScrollBar/" />
+  <Folder Name="/AutoSuggestBox/" />
+  <Folder Name="/BreadcrumbBar/" />
+  <Folder Name="/ButtonInteraction/" />
+  <Folder Name="/ComboBox/" />
+  <Folder Name="/CommandBarFlyout/" />
+  <Folder Name="/CommonStyles/" />
+  <Folder Name="/DesktopAcrylicBackdrop/">
+    <Project Path="../Materials/DesktopAcrylicBackdrop/DesktopAcrylicBackdrop.vcxitems" />
+  </Folder>
+  <Folder Name="/DropDownButton/" />
+  <Folder Name="/Expander/" />
+  <Folder Name="/idl/" />
+  <Folder Name="/ImageIcon/" />
+  <Folder Name="/InfoBadge/" />
+  <Folder Name="/InfoBar/" />
+  <Folder Name="/Interactions/" />
+  <Folder Name="/ItemContainer/" />
+  <Folder Name="/ItemsView/" />
+  <Folder Name="/LayoutPanel/" />
+  <Folder Name="/MapControl/" />
+  <Folder Name="/MenuBar/" />
+  <Folder Name="/MergedWinMD.private/" />
+  <Folder Name="/MergedWinMD/" />
+  <Folder Name="/MicaBackdrop/">
+    <Project Path="../Materials/MicaBackdrop/MicaBackdrop.vcxitems" />
+  </Folder>
+  <Folder Name="/Microsoft.WinUI/" />
+  <Folder Name="/MonochromaticOverlayPresenter/" />
+  <Folder Name="/NumberBox/" />
+  <Folder Name="/PagerControl/" />
+  <Folder Name="/PipsPager/" />
+  <Folder Name="/ProgressBar/" />
+  <Folder Name="/ProgressRing/" />
+  <Folder Name="/projection.private/" />
+  <Folder Name="/projection/" />
+  <Folder Name="/PTRTracing/" />
+  <Folder Name="/RadialGradientBrush/" />
+  <Folder Name="/RadioButtons/" />
+  <Folder Name="/RadioMenuFlyoutItem/" />
+  <Folder Name="/ScrollPresenter/" />
+  <Folder Name="/ScrollView/" />
+  <Folder Name="/SelectorBar/" />
+  <Folder Name="/SliderInteraction/" />
+  <Folder Name="/SplitButton/" />
+  <Folder Name="/SplitView/" />
+  <Folder Name="/src-controls/">
+    <Project Path="../dll/Microsoft.UI.Xaml.Controls.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/src-controls/ColorPicker/">
+    <File Path="../ColorPicker/improvements.md" />
+    <File Path="../ColorPicker/README.md" />
+    <Project Path="../../../tests/controls/apitests/ColorPicker/ColorPicker_APITests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/ColorPicker/ColorPicker_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/ColorPicker/ColorPicker_TestUI.shproj" />
+    <Project Path="../ColorPicker/ColorPicker.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/Common/">
+    <Project Path="../Collections/Collections.vcxitems" />
+    <Project Path="../Common/Common.vcxitems" />
+    <Project Path="../CommonManaged/CommonManaged.shproj" />
+    <Project Path="../ResourceHelper/ResourceHelper.vcxitems" />
+    <Project Path="../Telemetry/Telemetry.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/Effects/">
+    <Project Path="../Effects/Microsoft.UI.Private.Composition.Effects.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/IconSource/" />
+  <Folder Name="/src-controls/Lights/">
+    <Project Path="../../../tests/controls/apitests/Lights/Lights_ApiTests.shproj" />
+    <Project Path="../Lights/Lights.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/Materials/" />
+  <Folder Name="/src-controls/Materials/Acrylic/">
+    <Project Path="../../../tests/controls/apitests/Materials/Acrylic/AcrylicBrush_ApiTests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/Materials/Acrylic/AcrylicBrush_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/Materials/Acrylic/AcrylicBrush_TestUI.shproj" />
+    <Project Path="../Materials/Acrylic/AcrylicBrush.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/Materials/Reveal/">
+    <Project Path="../../../tests/controls/apitests/Materials/Reveal/Reveal_APITests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/Materials/Reveal/Reveal_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/Materials/Reveal/Reveal_TestUI.shproj" />
+    <Project Path="../Materials/Reveal/RevealBrush.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/NavigationView/">
+    <Project Path="../../../tests/controls/apitests/NavigationView/NavigationView_ApiTests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/NavigationView/NavigationView_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/NavigationView/NavigationView_TestUI.shproj" />
+    <Project Path="../NavigationView/NavigationView.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/ParallaxView/">
+    <Project Path="../../../tests/controls/apitests/ParallaxView/ParallaxView_APITests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/ParallaxView/ParallaxView_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/ParallaxView/ParallaxView_TestUI.shproj" />
+    <Project Path="../ParallaxView/ParallaxView.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/PersonPicture/">
+    <Project Path="../../../tests/controls/apitests/PersonPicture/PersonPicture_APITests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/PersonPicture/PersonPicture_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/PersonPicture/PersonPicture_TestUI.shproj" />
+    <Project Path="../PersonPicture/PersonPicture.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/PullToRefresh/" />
+  <Folder Name="/src-controls/PullToRefresh/RefreshContainer/">
+    <Project Path="../../../tests/controls/interactiontests/PullToRefresh/RefreshContainer/RefreshContainer_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/PullToRefresh/RefreshContainer/RefreshContainer_TestUI.shproj" />
+    <Project Path="../PullToRefresh/RefreshContainer/RefreshContainer.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/PullToRefresh/RefreshInfoProviderAdapters/">
+    <Project Path="../../../tests/controls/apitests/PullToRefresh/ScrollViewerIRefreshInfoProviderAdapter/ScrollViewerAdapter_APITests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/PullToRefresh/ScrollViewerIRefreshInfoProviderAdapter/ScrollViewerAdapter_InteractionTests.shproj" />
+    <Project Path="../PullToRefresh/ScrollViewerIRefreshInfoProviderAdapter/ScrollViewerIRefreshInfoProviderAdapter.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/PullToRefresh/RefreshVisualizer/">
+    <Project Path="../../../tests/controls/apitests/PullToRefresh/RefreshVisualizer/RefreshVisualizer_APITests.shproj" />
+    <Project Path="../../../tests/controls/testui/PullToRefresh/RefreshVisualizer/RefreshVisualizer_TestUI.shproj" />
+    <Project Path="../PullToRefresh/RefreshVisualizer/RefreshVisualizer.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/RatingControl/">
+    <Project Path="../../../tests/controls/apitests/RatingControl/RatingControl_APITests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/RatingControl/RatingControl_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/RatingControl/RatingControl_TestUI.shproj" />
+    <Project Path="../RatingControl/RatingControl.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/Repeater/">
+    <Project Path="../../../tests/controls/apitests/Repeater/Repeater_APITests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/Repeater/Repeater_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/Repeater/Repeater_TestUI.shproj" />
+    <Project Path="../Repeater/Repeater.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/SwipeControl/">
+    <Project Path="../../../tests/controls/apitests/SwipeControl/SwipeControl_APITests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/SwipeControl/SwipeControl_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/SwipeControl/SwipeControl_TestUI.shproj" />
+    <Project Path="../SwipeControl/SwipeControl.vcxitems" />
+  </Folder>
+  <Folder Name="/src-controls/TreeView/">
+    <Project Path="../../../tests/controls/apitests/TreeView/TreeView_APITests.shproj" />
+    <Project Path="../../../tests/controls/interactiontests/TreeView/TreeView_InteractionTests.shproj" />
+    <Project Path="../../../tests/controls/testui/TreeView/TreeView_TestUI.shproj" />
+    <Project Path="../TreeView/TreeView.vcxitems" />
+  </Folder>
+  <Folder Name="/TabView/" />
+  <Folder Name="/TeachingTip/" />
+  <Folder Name="/test/">
+    <Project Path="../../../tests/controls/apps/TestAppCX/TestAppCX.vcxproj">
+      <BuildDependency Project="../../metadata/MergedWinMD/private/MergedWinMD.Private.vcxproj" />
+      <BuildDependency Project="../idl/Microsoft.UI.Xaml.Controls.idl.vcxproj" />
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/TitleBar/" />
+  <Folder Name="/Tools/">
+    <File Path="../../../tools/controls/Build/scripts/Build.cmd" />
+    <File Path="../../../tools/controls/BuildTasks/packaging/MUXCustomBuildTasks/scripts/PublishNupkg.cmd" />
+    <File Path="../../../tools/controls/Common/scripts/NugetWrapper.cmd" />
+    <File Path="../../../tools/controls/Common/scripts/PowershellWrapper.cmd" />
+    <File Path="../../../tools/controls/ControlGeneration/scripts/GenerateNewProperty.ps1" />
+    <File Path="../../../tools/controls/Packaging/scripts/MakeAppxHelper.cmd" />
+    <File Path="../../../tools/controls/ResourceGeneration/scripts/GenerateSystemDllImageResources.ps1" />
+    <File Path="../../../tools/controls/ResourceGeneration/scripts/GenerateSystemDllStringResources.ps1" />
+    <File Path="../../../tools/controls/ResourceGeneration/scripts/GenerateVisualVerificationUpdates.ps1" />
+    <File Path="../../../tools/controls/Shell/scripts/addaliases.cmd" />
+    <File Path="../../../tools/controls/Shell/scripts/DevCmd.cmd" />
+    <File Path="../../../tools/controls/Shell/scripts/ps.bat" />
+    <File Path="../../../tools/controls/Shell/scripts/PSProfile.ps1" />
+    <File Path="../../../tools/controls/TestAppDeployment/scripts/ExtractPackageDependencies.ps1" />
+    <File Path="../../../tools/controls/XamlProcessing/scripts/Utils.psm1" />
+  </Folder>
+  <Folder Name="/TwoPaneView/" />
+  <Folder Name="/WebView2/" />
+  <Folder Name="/WrapPanel/" />
+  <Project Path="../../../eng/graph/augmentation/MUXControls/GraphAugmentation.csproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../../../eng/packaging/winui/Microsoft.WinUI.Packaging.csproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../../../tests/controls/apitests/AnimatedIcon/AnimatedIcon_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/AnnotatedScrollBar/AnnotatedScrollBar_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/AutoSuggestBox/AutoSuggestBox_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/Breadcrumb/BreadcrumbBar_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/ComboBox/ComboBox_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/CommandBarFlyout/CommandBarFlyout_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/CommonStyles/CommonStyles_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/Expander/Expander_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/IconSource/IconSource_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/ImageIcon/ImageIcon_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/InfoBadge/InfoBadge_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/Interactions/ButtonInteraction/ButtonInteraction_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/Interactions/SliderInteraction/SliderInteraction_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/ItemContainer/ItemContainer_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/ItemsView/ItemsView_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/LayoutPanel/LayoutPanel_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/MapControl/MapControl_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/NumberBox/NumberBox_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/PagerControl/PagerControl_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/PipsPager/PipsPager_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/ProgressBar/ProgressBar_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/ProgressRing/ProgressRing_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/RadioButtons/RadioButtons_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/ScrollPresenter/ScrollPresenter_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/ScrollView/ScrollView_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/SelectorBar/SelectorBar_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/SplitButton/SplitButton_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/TabView/TabView_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/TeachingTip/TeachingTip_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/TwoPaneView/TwoPaneView_APITests.shproj" />
+  <Project Path="../../../tests/controls/apitests/WrapPanel/WrapPanel_APITests.shproj" />
+  <Project Path="../../../tests/controls/apps/IXMPTestApp/IXMPTestApp.csproj">
+    <BuildDependency Project="../../../tools/packaging/UpdateMockWinAppSDKPackage/UpdateMockWinAppSDKPackage.csproj" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Build Solution="*|ARM64" Project="false" />
+    <Deploy Solution="*|ARM64EC" />
+    <Deploy Solution="*|x64" />
+    <Deploy Solution="*|x86" />
+  </Project>
+  <Project Path="../../../tests/controls/apps/MUXControlsTestApp/MUXControlsTestApp.csproj">
+    <BuildDependency Project="../../../tools/packaging/UpdateMockWinAppSDKPackage/UpdateMockWinAppSDKPackage.csproj" />
+    <BuildDependency Project="../../projection/Microsoft.WinUI.csproj" />
+    <BuildDependency Project="../../runtime/phone/idl/phone.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/winrt/main/Microsoft.ui.xaml-main.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/winrt/merged/private/Microsoft.UI.Xaml.vcxproj" />
+    <BuildDependency Project="../dll/Microsoft.UI.Xaml.Controls.vcxproj" />
+    <BuildDependency Project="../idl/Microsoft.UI.Xaml.Controls.idl.vcxproj" />
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../../../tests/controls/apps/TabViewTearOutApp/TabViewTearOutApp.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../../tests/controls/interactiontests/AnimatedVisualPlayer/AnimatedVisualPlayer_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/AnnotatedScrollBar/AnnotatedScrollBar_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/AutoSuggestBox/AutoSuggestBox_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/Breadcrumb/BreadcrumbBar_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/CommandBarFlyout/CommandBarFlyout_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/CommonStyles/CommonStyles_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/DropDownButton/DropDownButton_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/Expander/Expander_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/ImageIcon/ImageIcon_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/InfoBadge/InfoBadge_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/InfoBar/InfoBar_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/Interactions/ButtonInteraction/ButtonInteraction_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/Interactions/SliderInteraction/SliderInteraction_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/ItemContainer/ItemContainer_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/ItemsView/ItemsView_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/MapControl/MapControl_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/MenuBar/MenuBar_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/NumberBox/NumberBox_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/PagerControl/PagerControl_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/PipsPager/PipsPager_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/ProgressBar/ProgressBar_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/ProgressRing/ProgressRing_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/RadialGradientBrush/RadialGradientBrush_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/RadioButtons/RadioButtons_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/RadioMenuFlyoutItem/RadioMenuFlyoutItem_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/ScrollPresenter/ScrollPresenter_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/ScrollView/ScrollView_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/SelectorBar/SelectorBar_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/SplitButton/SplitButton_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/TabView/TabView_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/TeachingTip/TeachingTip_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/TitleBar/TitleBar_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/TwoPaneView/TwoPaneView_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/interactiontests/WebView2/WebView2_InteractionTests.shproj" />
+  <Project Path="../../../tests/controls/MUXControls.Test/MUXControls.Test.csproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../../../tests/controls/shared/TestAppUtils/TestAppUtils.shproj" />
+  <Project Path="../../../tests/controls/testinfra/AppTestAutomationHelpers/AppTestAutomationHelpers.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../../tests/controls/testinfra/MUXTestInfra/MUXTestInfra.csproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="../../../tests/controls/testui/AnimatedIcon/AnimatedIcon_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/AnimatedVisualPlayer/AnimatedVisualPlayer_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/AnnotatedScrollBar/AnnotatedScrollBar_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/AutoSuggestBox/AutoSuggestBox_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/Breadcrumb/BreadcrumbBar_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/ComboBox/ComboBox_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/CommandBarFlyout/CommandBarFlyout_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/CommonStyles/CommonStyles_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/DropDownButton/DropDownButton_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/Expander/Expander_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/ImageIcon/ImageIcon_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/InfoBadge/InfoBadge_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/InfoBar/InfoBar_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/Interactions/ButtonInteraction/ButtonInteraction_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/Interactions/SliderInteraction/SliderInteraction_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/ItemContainer/ItemContainer_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/ItemsView/ItemsView_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/MapControl/MapControl_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/MenuBar/MenuBar_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/MonochromaticOverlayPresenter/MonochromaticOverlayPresenter_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/NumberBox/NumberBox_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/PagerControl/PagerControl_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/PipsPager/PipsPager_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/ProgressBar/ProgressBar_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/ProgressRing/ProgressRing_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/PullToRefresh/PTR_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/PullToRefresh/ScrollViewerIRefreshInfoProviderAdapter/ScrollViewerAdapter_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/RadialGradientBrush/RadialGradientBrush_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/RadioButtons/RadioButtons_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/RadioMenuFlyoutItem/RadioMenuFlyoutItem_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/ScrollPresenter/ScrollPresenter_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/ScrollView/ScrollView_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/SelectorBar/SelectorBar_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/SplitButton/SplitButton_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/SplitView/SplitView_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/TabView/TabView_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/TeachingTip/TeachingTip_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/TitleBar/TitleBar_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/TwoPaneView/TwoPaneView_TestUI.shproj" />
+  <Project Path="../../../tests/controls/testui/WebView2/WebView2_TestUI.shproj" />
+  <Project Path="../../../tools/packaging/UpdateMockWinAppSDKPackage/UpdateMockWinAppSDKPackage.csproj">
+    <BuildDependency Project="../../../eng/packaging/winui/Microsoft.WinUI.Packaging.csproj" />
+    <BuildDependency Project="../../metadata/MergedWinMD/MergedWinMD.vcxproj" />
+    <BuildDependency Project="../../metadata/MergedWinMD/private/MergedWinMD.Private.vcxproj" />
+    <BuildDependency Project="../../projection/Microsoft.WinUI.csproj" />
+    <BuildDependency Project="../../runtime/phone/idl/phone.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/winrt/main/Microsoft.ui.xaml-main.vcxproj" />
+    <BuildDependency Project="../../runtime/xcp/dxaml/idl/winrt/merged/private/Microsoft.UI.Xaml.vcxproj" />
+    <BuildDependency Project="../dll/Microsoft.UI.Xaml.Controls.vcxproj" />
+    <BuildDependency Project="../idl/Microsoft.UI.Xaml.Controls.idl.vcxproj" />
+    <BuildDependency Project="../Microsoft.UI.Xaml.Design/Microsoft.UI.Xaml.Design.csproj" />
+    <BuildDependency Project="../Microsoft.UI.Xaml.FrameworkPackagePRI/Microsoft.UI.Xaml.FrameworkPackagePRI.csproj" />
+    <BuildType Solution="Debug_test|ARM64" Project="Debug" />
+    <BuildType Solution="Debug_test|x64" Project="Debug" />
+    <BuildType Solution="Debug_test|x86" Project="Debug" />
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="Win32" />
+  </Project>
+  <Project Path="../../metadata/MergedWinMD/MergedWinMD.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../metadata/MergedWinMD/private/MergedWinMD.Private.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../projection/Microsoft.WinUI.csproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../projection/private/Microsoft.WinUI.Private.csproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../runtime/phone/idl/phone.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../runtime/xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../runtime/xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../runtime/xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../runtime/xcp/dxaml/idl/winrt/main/Microsoft.ui.xaml-main.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../../runtime/xcp/dxaml/idl/winrt/merged/private/Microsoft.UI.Xaml.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../AnimatedIcon/AnimatedIcon.vcxitems" />
+  <Project Path="../AnimatedVisualPlayer/AnimatedVisualPlayer.vcxitems" />
+  <Project Path="../AnnotatedScrollBar/AnnotatedScrollBar.vcxitems" />
+  <Project Path="../AutoSuggestBox/AutoSuggestBox.vcxitems" />
+  <Project Path="../Breadcrumb/Breadcrumb.vcxitems" />
+  <Project Path="../ComboBox/ComboBox.vcxitems" />
+  <Project Path="../CommandBarFlyout/CommandBarFlyout.vcxitems" />
+  <Project Path="../CommonStyles/CommonStyles.vcxitems" />
+  <Project Path="../DropDownButton/DropDownButton.vcxitems" />
+  <Project Path="../Expander/Expander.vcxitems" />
+  <Project Path="../IconSource/IconSource.vcxitems" />
+  <Project Path="../idl/Microsoft.UI.Xaml.Controls.idl.vcxproj">
+    <BuildType Solution="Debug_test|*" Project="Debug" />
+  </Project>
+  <Project Path="../ImageIcon/ImageIcon.vcxitems" />
+  <Project Path="../InfoBadge/InfoBadge.vcxitems" />
+  <Project Path="../InfoBar/InfoBar.vcxitems" />
+  <Project Path="../Interactions/ButtonInteraction/ButtonInteraction.vcxitems" />
+  <Project Path="../Interactions/SliderInteraction/SliderInteraction.vcxitems" />
+  <Project Path="../ItemContainer/ItemContainer.vcxitems" />
+  <Project Path="../ItemsView/ItemsView.vcxitems" />
+  <Project Path="../LayoutPanel/LayoutPanel.vcxitems" />
+  <Project Path="../MapControl/MapControl.vcxitems" />
+  <Project Path="../MenuBar/MenuBar.vcxitems" />
+  <Project Path="../Microsoft.UI.Xaml.Design/Microsoft.UI.Xaml.Design.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Platform Solution="Debug_test|ARM64EC" Project="x64" />
+    <Platform Solution="Debug|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="Release|ARM64EC" Project="ARM64EC" />
+    <Build Solution="*|ARM64EC" Project="false" />
+  </Project>
+  <Project Path="../Microsoft.UI.Xaml.FrameworkPackagePRI/Microsoft.UI.Xaml.FrameworkPackagePRI.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|ARM64EC" Project="ARM64EC" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="Win32" />
+  </Project>
+  <Project Path="../MonochromaticOverlayPresenter/MonochromaticOverlayPresenter.vcxitems" />
+  <Project Path="../NumberBox/NumberBox.vcxitems" />
+  <Project Path="../PagerControl/PagerControl.vcxitems" />
+  <Project Path="../PipsPager/PipsPager.vcxitems" />
+  <Project Path="../ProgressBar/ProgressBar.vcxitems" />
+  <Project Path="../ProgressRing/ProgressRing.vcxitems" />
+  <Project Path="../PullToRefresh/PTRTracing/PTRTracing.vcxitems" />
+  <Project Path="../RadialGradientBrush/RadialGradientBrush.vcxitems" />
+  <Project Path="../RadioButtons/RadioButtons.vcxitems" />
+  <Project Path="../RadioMenuFlyoutItem/RadioMenuFlyoutItem.vcxitems" />
+  <Project Path="../ScrollPresenter/ScrollPresenter.vcxitems" />
+  <Project Path="../ScrollView/ScrollView.vcxitems" />
+  <Project Path="../SelectorBar/SelectorBar.vcxitems" />
+  <Project Path="../SplitButton/SplitButton.vcxitems" />
+  <Project Path="../SplitView/SplitView.vcxitems" />
+  <Project Path="../TabView/TabView.vcxitems" />
+  <Project Path="../TeachingTip/TeachingTip.vcxitems" />
+  <Project Path="../TestHooks/TestHooks.vcxitems" />
+  <Project Path="../TitleBar/TitleBar.vcxitems" />
+  <Project Path="../TwoPaneView/TwoPaneView.vcxitems" />
+  <Project Path="../WebView2/WebView2.vcxitems" />
+  <Project Path="../WrapPanel/WrapPanel.vcxitems" />
+</Solution>

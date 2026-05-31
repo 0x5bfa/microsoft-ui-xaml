@@ -44,7 +44,7 @@ Next, we will update this project to target the local WinUI component package fr
 
 Close the app and Visual Studio. 
 
-In the root directory of this project (i.e. the location of the .sln file) create a new file `nuget.config`.
+In the root directory of this project (i.e. the location of the .slnx file) create a new file `nuget.config`.
 
 Add the following text to that file:
 ```xml
@@ -71,7 +71,7 @@ being cached globally since that can cause issues. It does mean that ALL the nug
 will get cached here, which is a little redundant, but it is a worthwhile trade-off.
 
 ### Update the Project Target Platform (e.g. to x64)
-Open the .sln in Visual Studio again. 
+Open the .slnx in Visual Studio again.
 
 Update the build Configuration to match the Platform for your local build. The target platform that you build your app for 
 must match the platform that you built winui for locally. By default `tools\setup\init\scripts\init.cmd` targets x64, so update your test app project to build

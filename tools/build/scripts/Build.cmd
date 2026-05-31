@@ -160,7 +160,7 @@ rem First, determine if we have necessary files to build the compiler or if we s
 rem and use the compiler from a public WinUI package.
 if EXIST "%reporoot%\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs" (
     rem Build the compiler
-    call :buildSolution %reporoot%\src\compiler\solutions\XamlCompilerPrerequisites.sln
+    call :buildSolution %reporoot%\src\compiler\solutions\XamlCompilerPrerequisites.slnx
     if ERRORLEVEL 1 goto:showDurationAndExit
 ) else (
     rem Download a recent compatible public WinUI package and copy the necessary compiler
@@ -175,18 +175,18 @@ if EXIST "%reporoot%\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs" 
 if "%_targetMux%" == "1" (
     call :buildSolution %XcpRoot%\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj
 ) else if "%_targetProduct%" == "1" (
-   call :buildSolution %reporoot%\solutions\Microsoft.UI.Xaml-Product.sln
+   call :buildSolution %reporoot%\Microsoft.UI.Xaml-Product.slnx
    if ERRORLEVEL 1 goto:showDurationAndExit
    call :buildSolution %reporoot%\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj
    if not "%_nomock%"=="1" call :buildMockPackage
 ) else if "%_targetProdTest%" == "1" (
-   call :buildSolution %reporoot%\src\runtime\solutions\Microsoft.UI.Xaml.sln
+   call :buildSolution %reporoot%\src\runtime\solutions\Microsoft.UI.Xaml.slnx
    if ERRORLEVEL 1 goto:showDurationAndExit
    if not "%_nomock%"=="1" call :buildMockPackage
-   call :buildSolution %reporoot%\solutions\controls\MUXControls.sln /restore
+   call :buildSolution %reporoot%\src\controls\solutions\MUXControls.slnx /restore
 ) else if "%_targetTest%" == "1" (
    if not "%_nomock%"=="1" call :buildMockPackage
-   call :buildSolution %reporoot%\solutions\controls\MUXControls.sln /restore
+   call :buildSolution %reporoot%\src\controls\solutions\MUXControls.slnx /restore
 )
 if ERRORLEVEL 1 goto:showDurationAndExit
 
