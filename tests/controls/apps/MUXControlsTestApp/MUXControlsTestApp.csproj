@@ -227,7 +227,7 @@
   <Import Project="$(MSBuildThisFileDirectory)\..\..\shared\TestAppUtils\TestAppUtils.projitems" Label="Shared" />
   <Import Project="$(MUXControlsTestRoot)testui\ColorPicker\ColorPicker_TestUI.projitems" Label="Shared" Condition="$(FeatureColorPickerEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\CommandBarFlyout\CommandBarFlyout_TestUI.projitems" Label="Shared" Condition="$(FeatureCommandBarFlyoutEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)CommonStyles\TestUI\CommonStyles_TestUI.projitems" Label="Shared" Condition="$(FeatureCommonStylesEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)testui\CommonStyles\CommonStyles_TestUI.projitems" Label="Shared" Condition="$(FeatureCommonStylesEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\DropDownButton\DropDownButton_TestUI.projitems" Label="Shared" Condition="$(FeatureDropDownButtonEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)Lights\ApiTests\Lights_ApiTests\Lights_ApiTests.projitems" Condition="$(FeatureLightsEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\Materials\Acrylic\AcrylicBrush_TestUI.projitems" Label="Shared" Condition="$(FeatureMaterialsEnabled) == 'true'" />

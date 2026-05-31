@@ -763,6 +763,9 @@ continuing the move of control-specific test pages out of product source.
 NavigationView TestUI followed under `tests/controls/testui/NavigationView`,
 including its Common, CustomResources, Footer, Hierarchical, Regression, and
 TopMode test page groups.
+CommonStyles TestUI now lives under `tests/controls/testui/CommonStyles`,
+keeping shared style and common control test pages with the rest of controls
+test UI.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`

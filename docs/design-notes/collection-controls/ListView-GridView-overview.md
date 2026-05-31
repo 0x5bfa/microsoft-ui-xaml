@@ -341,17 +341,17 @@ A few files in MUXC as well:
   * \src\controls\CommonStyles\ListViewItem_themeresources
 
 - MuxControlsTestApp test pages:
-  * \src\controls\CommonStyles\TestUI\GridViewPage.*
-  * \src\controls\CommonStyles\TestUI\GroupedItemsControlPage.*
-  * \src\controls\CommonStyles\TestUI\GroupedListViewBasePage.*
-  * \src\controls\CommonStyles\TestUI\ItemsControlPage.*
-  * \src\controls\CommonStyles\TestUI\ListViewAnchoringPage.*
-  * \src\controls\CommonStyles\TestUI\ListViewBasePage.*
-  * \src\controls\CommonStyles\TestUI\ListViewElementNameBindingPage.*
-  * \src\controls\CommonStyles\TestUI\ListViewPage.*
-  * \src\controls\CommonStyles\TestUI\NestedGridViewsPage.*
-  * \src\controls\CommonStyles\TestUI\NestedItemsControlsPage.*
-  * \src\controls\CommonStyles\TestUI\NestedListViewsPage.*
+  * \tests\controls\testui\CommonStyles\GridViewPage.*
+  * \tests\controls\testui\CommonStyles\GroupedItemsControlPage.*
+  * \tests\controls\testui\CommonStyles\GroupedListViewBasePage.*
+  * \tests\controls\testui\CommonStyles\ItemsControlPage.*
+  * \tests\controls\testui\CommonStyles\ListViewAnchoringPage.*
+  * \tests\controls\testui\CommonStyles\ListViewBasePage.*
+  * \tests\controls\testui\CommonStyles\ListViewElementNameBindingPage.*
+  * \tests\controls\testui\CommonStyles\ListViewPage.*
+  * \tests\controls\testui\CommonStyles\NestedGridViewsPage.*
+  * \tests\controls\testui\CommonStyles\NestedItemsControlsPage.*
+  * \tests\controls\testui\CommonStyles\NestedListViewsPage.*
 
 
 # XAML markup resources
