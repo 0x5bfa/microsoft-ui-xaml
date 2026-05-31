@@ -139,7 +139,7 @@ this `nuget.config` file to the root of your app project (next to your `.csproj`
     <add key="repositoryPath" value="$\..\packages" />
   </config>
   <packageSources>
-    <add key="packagestore" value="C:\winui3\src\packaging\package-store" />
+    <add key="packagestore" value="C:\winui3\packaging\package-store" />
   </packageSources>
 </configuration>
 ```
