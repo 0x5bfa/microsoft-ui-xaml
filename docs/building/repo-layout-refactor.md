@@ -606,6 +606,10 @@ The Visual Studio developer command prompt setup implementation lives there too,
 with the root-level `DevCmd.cmd` preserved as the stable entry point used by
 initialization scripts.
 
+Controls build command implementation and shared build support files live under
+`controls/build`, while the root-level `controls/Build.cmd` remains the stable
+entry point used by solution files and developer workflows.
+
 Controls build machine maintenance helpers now live under
 `controls/tools/BuildMachine`, keeping the queue/build-machine scripts grouped
 with their shared ADAL-backed helper module.
