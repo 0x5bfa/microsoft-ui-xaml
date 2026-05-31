@@ -26,7 +26,7 @@
         $(MSBuildThisFileDirectory)\diag;
         $(MSBuildThisFileDirectory)\ETW\InputEvents;
         $(MSBuildThisFileDirectory)\ETW\LayoutCausality;
-        $(MSBuildThisFileDirectory)\xamlCompiler\compiledBindings;
+        $(CompilerTestPath)\native\compiledBindings;
         $(MSBuildThisFileDirectory)\customTypes;
         $(BaseIntermediateOutputPath)\customTypes\generated;
         $(LiftedIXPIncludePaths);
@@ -91,7 +91,7 @@
     <ClInclude Include="ETW\InputEvents\TouchInputTests.h" />
     <ClInclude Include="ETW\LayoutCausality\BindingEvents.h" />
     <ClInclude Include="ETW\LayoutCausality\PropertyChangedEvents.h" />
-    <ClInclude Include="xamlCompiler\compiledBindings\CompileBindingTests.h" />
+    <ClInclude Include="$(CompilerTestPath)\native\compiledBindings\CompileBindingTests.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="appAnalysis\ImageDecodingRuleIntegrationTests.cpp" />
@@ -125,7 +125,7 @@
     <ClCompile Include="ETW\InputEvents\AppBarTests.cpp" />
     <ClCompile Include="ETW\LayoutCausality\PropertyChangedEvents.cpp" />
     <ClCompile Include="ETW\LayoutCausality\BindingEvents.cpp" />
-    <ClCompile Include="xamlCompiler\compiledBindings\CompileBindingTests.cpp" />
+    <ClCompile Include="$(CompilerTestPath)\native\compiledBindings\CompileBindingTests.cpp" />
     <ClCompile Include="customTypes.App.g.cpp" />
     <ClCompile Include="customTypes.UserControl.cpp" />
     <ClCompile Include="customTypes.ValueConverters.cpp" />
