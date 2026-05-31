@@ -12,7 +12,7 @@
   <Import Project="$(NuGetPackageRoot)\Microsoft.SourceLink.GitHub.1.1.1\build\Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.SourceLink.GitHub.1.1.1\build\Microsoft.SourceLink.GitHub.props')" />
   <Import Project="$(NuGetPackageRoot)\Microsoft.SourceLink.Common.1.1.1\build\Microsoft.SourceLink.Common.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.SourceLink.Common.1.1.1\build\Microsoft.SourceLink.Common.props')" />
   <Import Project="$(NuGetPackageRoot)\Microsoft.Build.Tasks.Git.1.1.1\build\Microsoft.Build.Tasks.Git.props" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Build.Tasks.Git.1.1.1\build\Microsoft.Build.Tasks.Git.props')" />
-  <Import Project="$(MUXCProjectRoot)mux.controls.props" />
+  <Import Project="$(MUXCProjectRoot)build\mux.controls.props" />
   <Import Project="$(MUXCProjectRoot)build\ProjectConfigurations.props" />
   <Import Project="$(MUXCProjectRoot)build\version.props" />
   <Import Project="$(MUXCProjectRoot)build\CppWinRT.props" />

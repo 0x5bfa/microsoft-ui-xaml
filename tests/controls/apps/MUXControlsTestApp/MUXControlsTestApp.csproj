@@ -2,7 +2,7 @@
   <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.1" />
 
   <Import Project="$([MSBuild]::GetPathOfFileAbove(environment.props))" />
-  <Import Project="$(MUXCProjectRoot)mux.controls.props" Condition="Exists('$(MUXCProjectRoot)mux.controls.props')" />
+  <Import Project="$(MUXCProjectRoot)build\mux.controls.props" Condition="Exists('$(MUXCProjectRoot)build\mux.controls.props')" />
   <Import Project="$(MUXCProjectRoot)build\FeatureAreas.props" />
 
   <PropertyGroup>
