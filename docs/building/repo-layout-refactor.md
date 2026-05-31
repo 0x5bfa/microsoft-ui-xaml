@@ -320,7 +320,10 @@ as source-side component `unittests` folders.
 
 The product-wide solution now lives at the repo root as
 `Microsoft.UI.Xaml.slnx`, preserving it as the repo-wide entry point without
-keeping a separate root `solutions` folder.
+keeping a separate root `solutions` folder. Its virtual folders use the same
+top-level buckets as the physical tree, including `/src`, `/tests`, `/tools`,
+and `/eng`, so the root entry point no longer presents moved projects under
+generic solution-only groups.
 
 ## Package restore inputs
 
