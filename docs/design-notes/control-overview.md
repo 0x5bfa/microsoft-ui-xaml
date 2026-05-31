@@ -28,14 +28,14 @@ XAML compiler -> WinMD activation -> `DllGetActivationFactory` (dllentry.cpp) ->
 Parsing XAML markup syntax happens as follows:
 1. The XAML Compiler identifies the type.
 2. The particular type is then identified in WinMD file and activation is performed to get a Flyout type. See the 
-   [Xaml Compiler](./xamlcompiler.md) writeup for more details.
+   [Xaml Compiler](./xaml-compiler/xamlcompiler.md) writeup for more details.
 
 ## DXaml
 
 This part is the interface to the implementation of the control `Flyout`. The contents reside in the `xcp/dxaml` 
 folder. The `Microsoft.UI.Xaml.Flyout` control is created by combining two files: `flyout.g.cpp` and `Flyout_partial.cpp`.
 `Flyout.g.cpp` contains the getters and setters for the properties. Since that part of code requires a lot of boilerplate 
-code, a [code generator](./codegen.md) is used to create this for all controls.
+code, a [code generator](./xaml-compiler/codegen.md) is used to create this for all controls.
 
 `Flyout_partial.cpp` handles the implementation part. It maintains internal states of the control and also handles 
 communication with its peer in the Core. If a control is implemented using an even more base control like Flyout is 

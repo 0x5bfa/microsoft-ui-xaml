@@ -85,11 +85,11 @@ Improvements in new `XamlGen.exe`
 
 ### How does it work?
 
-**Code-gen location:** [tools/runtime/XCPTypesAutoGen/](../../tools/runtime/XCPTypesAutoGen)
-**VS solution:** [tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln](../../tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln)
+**Code-gen location:** [tools/runtime/XCPTypesAutoGen/](../../../tools/runtime/XCPTypesAutoGen)
+**VS solution:** [tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln](../../../tools/runtime/XCPTypesAutoGen/XCPTypesAutoGen.sln)
 
-Code-gen is now a build task, located at [tools/runtime/XCPTypesAutoGen/RunCodeGen/](../../tools/runtime/XCPTypesAutoGen/RunCodeGen)
-When you execute [`runcodegen.cmd`](../../tools/runtime/XCPTypesAutoGen/runcodegen.cmd), it simply builds this directory.
+Code-gen is now a build task, located at [tools/runtime/XCPTypesAutoGen/RunCodeGen/](../../../tools/runtime/XCPTypesAutoGen/RunCodeGen)
+When you execute [`runcodegen.cmd`](../../../tools/runtime/XCPTypesAutoGen/runcodegen.cmd), it simply builds this directory.
 
 RunCodeGen (the build task) does the following:
 
@@ -142,7 +142,7 @@ These are the steps to debug `XamlGen`.
 4. Build the entire solution to have the dlls generated in the current dir
 5. Now you can debug with F5.
 6. If you have a problem, please break point `static int Main(String[] args)` in
-   [`XCPTypesAutoGen/XamlGen/program.cs`](../../tools/runtime/XCPTypesAutoGen/XamlGen/Program.cs).
+   [`XCPTypesAutoGen/XamlGen/program.cs`](../../../tools/runtime/XCPTypesAutoGen/XamlGen/Program.cs).
 7. The IDL output file will be in `XCPTypesAutoGen/temp/Core`
 
 ### How do I edit the T4 templates?
