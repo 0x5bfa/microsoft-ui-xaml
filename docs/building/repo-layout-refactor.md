@@ -273,7 +273,7 @@ paths.
 
 ## Runtime solution entry point
 
-The main runtime solution now lives at `src/runtime/Microsoft.UI.Xaml.sln`.
+The main runtime solution now lives at `src/runtime/solutions/Microsoft.UI.Xaml.sln`.
 This keeps the runtime build entry point with the runtime-owned source slices
 that have already moved under `src/runtime`, with project references now
 pointing at the relocated `src/runtime/xcp` tree.
