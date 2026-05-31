@@ -17,6 +17,6 @@ use a VM with resolution 1024x768.
 
 If the test app crashes, the dmp will be in c:\dumps.
 
-See [testing-FAQ.md](testing/testing-FAQ.md) for more information.
+See [testing-FAQ.md](./testing-FAQ.md) for more information.
 
 
