@@ -17,7 +17,7 @@
   </Folder>
   <Folder Name="/refs/">
     <Project Path="../../tools/runtime/GenXbfDLL/GenXbf.vcxproj">
-      <BuildDependency Project="../runtime/phone/idl/phone.vcxproj" />
+      <BuildDependency Project="../runtime/xcp/phone/idl/phone.vcxproj" />
       <BuildDependency Project="../runtime/xcp/components/pch/prod/Microsoft.UI.Xaml.Precomp.vcxproj" />
       <BuildDependency Project="../runtime/xcp/core/parser/staticpch/Parser.pch.vcxproj" />
       <BuildDependency Project="../runtime/xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj" />
@@ -35,7 +35,7 @@
     </Project>
     <Project Path="../metadata/MergedWinMD/MergedWinMD.vcxproj">
       <BuildDependency Project="../controls/idl/Microsoft.UI.Xaml.Controls.idl.vcxproj" />
-      <BuildDependency Project="../runtime/phone/idl/phone.vcxproj" />
+      <BuildDependency Project="../runtime/xcp/phone/idl/phone.vcxproj" />
       <BuildDependency Project="../runtime/xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj" />
       <BuildDependency Project="../runtime/xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj" />
       <BuildDependency Project="../runtime/xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj" />
@@ -43,7 +43,7 @@
       <Platform Solution="*|Any CPU" Project="Win32" />
       <Build Solution="*|ARM64" Project="false" />
     </Project>
-    <Project Path="../runtime/phone/idl/phone.vcxproj">
+    <Project Path="../runtime/xcp/phone/idl/phone.vcxproj">
       <Platform Solution="*|Any CPU" Project="Win32" />
       <Build Solution="*|ARM64" Project="false" />
     </Project>
