@@ -46,7 +46,7 @@ foreach($testProcessName in $testProcessNames)
 }
 
 $payloadRoot = if ($env:HELIX_CORRELATION_PAYLOAD) { $env:HELIX_CORRELATION_PAYLOAD } else { (Get-Location).Path }
-$ensureMachineStateScript = Join-Path $payloadRoot "scripts\helix\commands\TestPass-EnsureMachineState.ps1"
+$ensureMachineStateScript = Join-Path $payloadRoot "scripts\helix\setup\TestPass-EnsureMachineState.ps1"
 
 if(Test-Path $ensureMachineStateScript)
 {

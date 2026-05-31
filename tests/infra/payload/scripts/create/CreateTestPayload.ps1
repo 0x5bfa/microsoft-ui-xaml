@@ -39,7 +39,7 @@ if($Platform -eq "x64")
     $Arch = "amd64"
 }
 
-$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..\..\..")).Path
+$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..\..\..\..")).Path
 
 if(!$BinSourceRoot)
 {
@@ -166,7 +166,8 @@ if ($Mode -eq "DevTestSuite" -or $Mode -eq "ScenarioTestSuite")
 
     # Publish items from repo:
     Publish-Item "$repoRoot\tests\infra\payload\scripts\runtime\*" "$outpath\scripts\runtime"
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\commands\*" "$outpath\scripts\helix\commands"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\perf\*" "$outpath\scripts\helix\perf"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\setup\*" "$outpath\scripts\helix\setup"
     Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath\scripts\helix\test"
     Publish-Item "$repoRoot\tools\controls\TestAppDeployment\scripts\EnableMUXControlsTestAppManagedDebugging.*" "$outpath\scripts\controls\deployment"
 
@@ -259,7 +260,8 @@ if ($Mode -eq "PGO")
     Publish-Item "$binpath\TestDependencies\pgosweep.exe" "$outpath"
 
     # Publish items from repo:
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\commands\*" "$outpath\scripts\helix\commands"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\perf\*" "$outpath\scripts\helix\perf"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\setup\*" "$outpath\scripts\helix\setup"
     Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath\scripts\helix\test"
 }
 

@@ -65,16 +65,18 @@ through `$(CompilerTestPath)`.
 
 Test payload tooling and Helix orchestration now live under `tests/infra`.
 `CreateTestPayload.cmd` and `CreateTestPayload.ps1` now live under
-`tests/infra/payload/scripts`, while the WinUI-specific Helix work-item generation
-wrapper now lives beside the shared generator under
-`tests/infra/Helix/common/pipeline/scripts`. Shared Azure Pipelines helpers live
-under `tests/infra/Helix/common/pipeline/scripts`. Copied payload runtime commands
-live under `tests/infra/payload/scripts/runtime` and
-`tests/infra/Helix/payload/scripts/commands`. The Helix test-runner payload assets are
-grouped under `tests/infra/Helix/payload/scripts/test`. When constructing
-`TestPayload`, these files stay under `scripts\runtime`,
-`scripts\helix\commands`, and `scripts\helix\test` instead of being flattened
-to the payload root. GitHub agent skill metadata now references these paths
+`tests/infra/payload/scripts/create`, while Helix pipeline scripts are grouped by
+role under `tests/infra/Helix/common/pipeline/scripts`: work-item generation in
+`workitems`, direct build-agent execution in `execution`, result processing in
+`results`, and shared Azure Pipelines REST helpers in `common`. Copied payload
+runtime commands live under `tests/infra/payload/scripts/runtime` and
+Helix payload command sources are split into
+`tests/infra/Helix/payload/scripts/perf` and
+`tests/infra/Helix/payload/scripts/setup`. The Helix test-runner payload assets
+are grouped under `tests/infra/Helix/payload/scripts/test`. When constructing
+`TestPayload`, these files stay under `scripts\runtime`, `scripts\helix\perf`,
+`scripts\helix\setup`, and `scripts\helix\test` instead of being flattened to
+the payload root. GitHub agent skill metadata now references these paths
 directly instead of the removed root wrappers and legacy `dxaml/test` layout.
 
 ## Runtime test tools

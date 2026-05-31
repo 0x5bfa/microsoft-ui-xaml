@@ -23,7 +23,7 @@ Write-Host "TestRunTitle:                      $TestRunTitle"
 Write-Host "SubResultsDirPath:                 $SubResultsDirPath"
 Write-Host "ReadOnlyTestMode:                  $ReadOnlyTestMode"
 
-. "$PSScriptRoot/AzurePipelinesHelperScripts.ps1"
+. "$PSScriptRoot/../common/AzurePipelinesHelperScripts.ps1"
 
 
 $azureDevOpsRestApiHeaders = @{

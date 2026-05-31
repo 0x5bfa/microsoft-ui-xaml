@@ -56,10 +56,10 @@ When the Pipeline runs, the following takes place.
 
 1. Runs the Build stage (this builds both product and test binaries)
 2. The Run Tests Stage starts. [**WinUI-RunTests-Stage.yml**](../../build/AzurePipelinesTemplates/WinUI-RunTests-Stage.yml)
-3. The output of the Build job is downloaded. [**CreateTestPayload.ps1**](../../tests/infra/payload/scripts/CreateTestPayload.ps1) is run to produce the TestPayload.
-4. We discover the tests from the build and generate the HelixWorkItems. This is done by [**GenerateWinUIHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/GenerateWinUIHelixWorkItems.ps1).
+3. The output of the Build job is downloaded. [**CreateTestPayload.ps1**](../../tests/infra/payload/scripts/create/CreateTestPayload.ps1) is run to produce the TestPayload.
+4. We discover the tests from the build and generate the HelixWorkItems. This is done by [**GenerateWinUIHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/workitems/GenerateWinUIHelixWorkItems.ps1).
 5. The TestPayload and the work items xml is published to the Pipeline as an artifact.
-6. We execute batches of the test work items in parallel on agent VMs that are running the version of Windows that we want to target. We execute [**RunTestPassSliceOnBuildAgent.ps1**](../../tests/infra/Helix/common/pipeline/scripts/RunTestPassSliceOnBuildAgent.ps1) on these test machines.
+6. We execute batches of the test work items in parallel on agent VMs that are running the version of Windows that we want to target. We execute [**RunTestPassSliceOnBuildAgent.ps1**](../../tests/infra/Helix/common/pipeline/scripts/execution/RunTestPassSliceOnBuildAgent.ps1) on these test machines.
 7. Test machine setup ([**scripts\runtime\testmachine-prerun.cmd**](../../tests/infra/payload/scripts/runtime/testmachine-prerun.cmd))
 8. Failing tests are re-tried as needed
 9. Test results are published to the Pipeline.
@@ -73,14 +73,14 @@ Here's how the pipelines and scripts are organized to do this work:
     * Call **CreateTestPayload.ps1**
     * **WinUI-CreateHelixProjFile-Steps.yml**
        * Call **GenerateWinUIHelixWorkItems.ps1**
-         * Call **pipeline/scripts/GenerateHelixWorkItems.ps1**
+         * Call **pipeline/scripts/workitems/GenerateHelixWorkItems.ps1**
            * Writes out a .proj file for each test group (You can see these in the pipeline artifacts at /helixworkitems).
   * **WinUI-RunTestPassOnPipeline-Job.yml**
     * Runs 20 agents in parallel.  On each agent, we:
       * Download artifacts
       * Call **RunTestPassSliceOnBuildAgent.ps1**
         * Executes **scripts\runtime\testmachine-prerun.cmd**
-        * Read proj file that describes test command to run for this agent (created earlier by **pipeline/scripts/GenerateHelixWorkItems.ps1**)
+        * Read proj file that describes test command to run for this agent (created earlier by **pipeline/scripts/workitems/GenerateHelixWorkItems.ps1**)
         * Each test command calls **scripts\helix\test\RunHelixWorkItem.cmd**
           * Run the test command (a TAEF query that runs multiple tests)
           * For each failed test, re-run once.  If the re-run failed, run the test 9x in a loop.          
@@ -104,8 +104,8 @@ execute the tests in a reasonable amount of time.
 We could define a hard-coded set of work items, however this does not scale very well as the list of work items must 
 always be kept in sync with the test code as tests get added/removed/etc.  
 Instead, we generate the set of Work Items dynamically. WinUI-specific TAEF query construction is done by
-[**GenerateWinUIHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/GenerateWinUIHelixWorkItems.ps1),
-which calls the shared [**GenerateHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/GenerateHelixWorkItems.ps1).
+[**GenerateWinUIHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/workitems/GenerateWinUIHelixWorkItems.ps1),
+which calls the shared [**GenerateHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/workitems/GenerateHelixWorkItems.ps1).
 The shared script runs `te.exe /listproperties` against a set of test binaries and parses the output. It produces a set of
 work items from this.  
 There are two strategies the script uses to generate work items:
@@ -140,8 +140,8 @@ test machines. It configures the machines as needed and installs any required co
 in these scripts:  
 * [TestPass-OneTimeMachineSetupCore.ps1](../../tests/infra/Helix/payload/scripts/test/TestPass-OneTimeMachineSetupCore.ps1)
 * [TestPass-EnsureMachineStateCore.ps1](../../tests/infra/Helix/payload/scripts/test/TestPass-EnsureMachineStateCore.ps1)
-* [TestPass-OneTimeMachineSetup.ps1](../../tests/infra/Helix/payload/scripts/commands/TestPass-OneTimeMachineSetup.ps1)
-* [TestPass-EnsureMachineState.ps1](../../tests/infra/Helix/payload/scripts/commands/TestPass-EnsureMachineState.ps1)
+* [TestPass-OneTimeMachineSetup.ps1](../../tests/infra/Helix/payload/scripts/setup/TestPass-OneTimeMachineSetup.ps1)
+* [TestPass-EnsureMachineState.ps1](../../tests/infra/Helix/payload/scripts/setup/TestPass-EnsureMachineState.ps1)
 
 ### Test Re-try logic
 
@@ -169,7 +169,7 @@ the data about the multiple runs. For each test that is re-run, we create and up
 includes information about the results of re-running the test. In the Azure Pipeline, we download this json file and 
 use it to update the test results in the Pipeline with the extra information. Tests that failed initially. but have a 
 sufficiently high pass-rate are marked as "Warning" instead of "Failed".   
-Implementation: [**UpdateUnreliableTests-Pipeline.ps1**](../../tests/infra/Helix/common/pipeline/scripts/UpdateUnreliableTests-Pipeline.ps1)
+Implementation: [**UpdateUnreliableTests-Pipeline.ps1**](../../tests/infra/Helix/common/pipeline/scripts/results/UpdateUnreliableTests-Pipeline.ps1)
 The implementation of this script uses the Azure DevOps api. This is documented here:
 * Azure DevOps REST API: https://docs.microsoft.com/en-us/rest/api/azure/devops/
 

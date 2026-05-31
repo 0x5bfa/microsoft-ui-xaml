@@ -233,7 +233,7 @@ The build skill handles init, flavor selection, troubleshooting (PCH errors, sta
 The test payload aggregates all built test binaries, TAEF infrastructure, and dependencies into a single directory.
 
 ```powershell
-.\tools\setup\init\scripts\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\scripts\CreateTestPayload.ps1 -Platform x64 -Configuration chk
+.\tools\setup\init\scripts\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\scripts\create\CreateTestPayload.ps1 -Platform x64 -Configuration chk
 ```
 
 **Parameters:**
@@ -388,7 +388,7 @@ Write-Host "=== Step 2: Building repository (product + tests) ===" -ForegroundCo
 
 # --- Step 3: Create Test Payload ---
 Write-Host "=== Step 3: Creating test payload ===" -ForegroundColor Cyan
-.\tools\setup\init\scripts\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\scripts\CreateTestPayload.ps1 -Platform $platform -Configuration $config -Clean
+.\tools\setup\init\scripts\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\scripts\create\CreateTestPayload.ps1 -Platform $platform -Configuration $config -Clean
 
 # --- Step 4: Machine Setup ---
 Write-Host "=== Step 4: One-time machine setup ===" -ForegroundColor Cyan
@@ -594,7 +594,7 @@ A PR that updates the OSS-pinned versions:
 When you need to know **what CI runs and how it runs it**, these two files are the source of truth:
 
 - **`build/AzurePipelinesTemplates/WinUI-CreateTestPayload-Job.yml`** — defines each test work item: `testFilePathPattern` (which DLL or AppX) + `hostingMode`.
-- **`Helix/common/pipeline/scripts/GenerateWinUIHelixWorkItems.ps1`** — look for the line that generates the TAEF command:
+- **`Helix/common/pipeline/scripts/workitems/GenerateWinUIHelixWorkItems.ps1`** — look for the line that generates the TAEF command:
 
   ```powershell
   $taefExtraParameters = "/p:HostingMode=$HostingMode"
@@ -700,7 +700,7 @@ For build-related issues (PCH virtual memory exhaustion, stale precompiled heade
 ```
 Then recreate the payload:
 ```powershell
-.\tools\setup\init\scripts\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\scripts\CreateTestPayload.ps1 -Platform x64 -Configuration chk -Clean
+.\tools\setup\init\scripts\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\scripts\create\CreateTestPayload.ps1 -Platform x64 -Configuration chk -Clean
 ```
 
 ### Machine Setup Errors

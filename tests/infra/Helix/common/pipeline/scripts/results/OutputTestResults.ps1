@@ -32,7 +32,7 @@ $azureDevOpsRestApiHeaders = @{
     "Authorization"="Basic $([System.Convert]::ToBase64String([System.Text.ASCIIEncoding]::ASCII.GetBytes(":$AccessToken")))"
 }
 
-. "$PSScriptRoot/AzurePipelinesHelperScripts.ps1"
+. "$PSScriptRoot/../common/AzurePipelinesHelperScripts.ps1"
 
 Write-Host "Checking test results..."
 

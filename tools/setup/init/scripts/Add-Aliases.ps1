@@ -26,8 +26,8 @@ function global:codegen { pushd $env:reporoot\tools\runtime\XCPTypesAutoGen\Xaml
 function global:masters { pushd $env:reporoot\generated\tests\visualbaselines\$args }
 function global:cb { git branch | select-string "\*" -raw }
 
-function global:ctp { & "$env:reporoot\tests\infra\payload\scripts\CreateTestPayload.cmd" $args; pushd "$env:reporoot\TestPayload\$env:BUILDPLATFORM$env:_BuildType" }
-function global:ctps { & "$env:reporoot\tests\infra\payload\scripts\CreateTestPayload.cmd" -mode ScenarioTestSuit $args; pushd "$env:reporoot\TestPayload\$env:BUILDPLATFORM$env:_BuildType" }
+function global:ctp { & "$env:reporoot\tests\infra\payload\scripts\create\CreateTestPayload.cmd" $args; pushd "$env:reporoot\TestPayload\$env:BUILDPLATFORM$env:_BuildType" }
+function global:ctps { & "$env:reporoot\tests\infra\payload\scripts\create\CreateTestPayload.cmd" -mode ScenarioTestSuit $args; pushd "$env:reporoot\TestPayload\$env:BUILDPLATFORM$env:_BuildType" }
 function global:dbo { & taskkill /f /im msbuild.exe; & taskkill /f /im vbcscompiler.exe; & rd $env:reporoot\BuildOutput -Force -Recurse }
 function global:tp { pushd $env:reporoot\TestPayload }
 
