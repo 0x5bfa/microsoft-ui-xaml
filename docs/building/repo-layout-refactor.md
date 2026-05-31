@@ -585,6 +585,10 @@ available in initialized shells.
 Shared command wrappers used by multiple repo tools now live under
 `tools/common`, keeping the `tools` root focused on tool categories.
 
+Developer environment setup helpers now live under `tools/setup`. The
+root-level `OneTimeSetup.cmd` wrapper remains the stable entry point, while the
+PowerShell implementation is grouped with other manually invoked repo tools.
+
 Controls build machine maintenance helpers now live under
 `controls/tools/BuildMachine`, keeping the queue/build-machine scripts grouped
 with their shared ADAL-backed helper module.
