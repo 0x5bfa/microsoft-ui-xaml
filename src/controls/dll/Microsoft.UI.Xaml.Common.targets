@@ -146,7 +146,7 @@
     <ClInclude Include="XamlControlsResources.h" />
     <ClInclude Include="XamlMember.h" />
     <ClInclude Include="XamlMetadataProvider.h" />
-    <ClInclude Include="XamlMetadataProviderGenerated.h" />
+    <ClInclude Include="generated\metadata\XamlMetadataProviderGenerated.h" />
     <ClInclude Include="XamlType.h" />
   </ItemGroup>
   <ItemGroup>
@@ -224,7 +224,7 @@
   </PropertyGroup>
   <ItemGroup>
     <T4Template Include="XamlMetadataProviderGenerated.tt">
-      <OutputFile>XamlMetadataProviderGenerated.h</OutputFile>
+      <OutputFile>generated\metadata\XamlMetadataProviderGenerated.h</OutputFile>
     </T4Template>
     <None Include="XamlMetadataProviderWindowsCodeGen.tt" />
     <None Include="CommonHelpers.tt" />
@@ -562,13 +562,13 @@
     </PropertyGroup>
     <Exec Command="$(MdMergePath)mdmerge $(_MdMergeParameters)" />
   </Target>
-  <Target Name="XamlMetadataCodeGenMUX" AfterTargets="CppWinRTMakeComponentProjection" BeforeTargets="ClCompile" Inputs="$(StrippedMetadataWinmdPath);@(ReferenceWinMDs);XamlMetadataProviderGenerated.tt;CommonHelpers.tt;WinRtType.tt" Outputs="XamlMetadataProviderGenerated.h">
-    <!-- Run XamlMetadataProviderGenerated.tt t4 template to generate XamlMetadataProviderGenerated.h from the winmd file -->
+  <Target Name="XamlMetadataCodeGenMUX" AfterTargets="CppWinRTMakeComponentProjection" BeforeTargets="ClCompile" Inputs="$(StrippedMetadataWinmdPath);@(ReferenceWinMDs);XamlMetadataProviderGenerated.tt;CommonHelpers.tt;WinRtType.tt" Outputs="generated\metadata\XamlMetadataProviderGenerated.h">
+    <!-- Run XamlMetadataProviderGenerated.tt t4 template to generate the metadata provider header from the winmd file -->
     <TransformTemplate Template="%(T4Template.Identity)" ParameterValues="@(T4ParameterValues)" OutputFile="%(T4Template.OutputFile)">
       <Output TaskParameter="MSBuildProcessId" ItemName="MSBuildProcessIdsToKill" />
     </TransformTemplate>
     <ItemGroup>
-      <FileWrites Include="XamlMetadataProviderGenerated.h" />
+      <FileWrites Include="generated\metadata\XamlMetadataProviderGenerated.h" />
     </ItemGroup>
   </Target>
   <Target Name="GetExistingGeneratedFilesForDependencyPropertyCodeGen" BeforeTargets="RunDependencyPropertyCodeGen">
