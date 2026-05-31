@@ -766,6 +766,8 @@ TopMode test page groups.
 CommonStyles TestUI now lives under `tests/controls/testui/CommonStyles`,
 keeping shared style and common control test pages with the rest of controls
 test UI.
+Repeater TestUI, including its sample pages and sample images, now lives under
+`tests/controls/testui/Repeater`.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
