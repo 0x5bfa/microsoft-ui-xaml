@@ -519,6 +519,9 @@ keeping opt-in test project build behavior out of the `eng` root.
 Windows SDK override props and targets now live under `eng/sdkconfig`, keeping
 early SDK package import configuration together.
 
+Common build configuration props and ARM64EC target overrides now live under
+`eng/configuration`, grouping platform/configuration defaults together.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
