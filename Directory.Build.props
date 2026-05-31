@@ -11,8 +11,8 @@
          C++20 coroutine support even when compiling in C++17 mode. -->
     <CppWinRTEnableLegacyCoroutines>false</CppWinRTEnableLegacyCoroutines>
     <!-- Locations for props/targets that can be included to directly consume binaries from the build -->
-    <ConsumeBinariesProps>$(MSBuildThisFileDirectory)eng\consumebinaries.props</ConsumeBinariesProps>
-    <ConsumeBinariesTargets>$(MSBuildThisFileDirectory)eng\consumebinaries.targets</ConsumeBinariesTargets>
+    <ConsumeBinariesProps>$(MSBuildThisFileDirectory)eng\consumebinaries\consumebinaries.props</ConsumeBinariesProps>
+    <ConsumeBinariesTargets>$(MSBuildThisFileDirectory)eng\consumebinaries\consumebinaries.targets</ConsumeBinariesTargets>
     <ProjectRoot>$(MSBuildThisFileDirectory)</ProjectRoot>
     <NugetPackageDirectory>$(ProjectRoot)packages</NugetPackageDirectory>
     <!-- If testing local changes to WinUI details, then set this property to point to your local WinUI details repo -->
