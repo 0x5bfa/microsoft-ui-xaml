@@ -702,7 +702,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/CValue/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/framework/CValue/">
     <Project Path="../../../tests/runtime/native/isolated/framework/CValue/Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -713,7 +713,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/deferral/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/framework/deferral/">
     <Project Path="../../../tests/runtime/native/isolated/framework/deferral/Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -724,7 +724,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/dependencyLocator/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/framework/dependencyLocator/">
     <Project Path="../../../tests/runtime/native/isolated/framework/dependencyLocator/Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -740,7 +740,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/DependencyObject/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/framework/dependencyObject/">
     <Project Path="../../../tests/runtime/native/isolated/framework/dependencyObject/Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1032,7 +1032,7 @@
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/parser/" />
-  <Folder Name="/src/runtime/xcp/components/parser/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/framework/parser/">
     <Project Path="../../../tests/runtime/native/isolated/framework/parser/Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1109,7 +1109,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/runtimeEnabledFeatures/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/framework/runtimeEnabledFeatures/">
     <Project Path="../../../tests/runtime/native/isolated/framework/runtimeEnabledFeatures/Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1131,7 +1131,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/simple/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/framework/simple/">
     <Project Path="../../../tests/runtime/native/isolated/framework/simple/Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1247,7 +1247,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/valueboxer/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/framework/valueboxer/">
     <Project Path="../../../tests/runtime/native/isolated/framework/valueboxer/Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1280,7 +1280,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/xcp/components/winuri/unittests/">
+  <Folder Name="/tests/runtime/native/isolated/framework/winuri/">
     <Project Path="../../../tests/runtime/native/isolated/framework/winuri/Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
