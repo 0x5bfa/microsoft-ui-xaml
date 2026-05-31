@@ -5,7 +5,7 @@
 - [Presentation Recording](#presentation-recording)
 - [High-level Overview](#high-level-overview)
 - [TAEF](#taef)
-- [MUX.dll tests - dxaml\test](#muxdll-tests---dxamltest)
+- [MUX.dll tests - tests\runtime](#muxdll-tests---testsruntime)
   - [Packaged. Runs using TAEF's RunAs:UAP feature:](#packaged-runs-using-taefs-runasuap-feature)
   - [UWP or WPF host](#uwp-or-wpf-host)
   - [Host app](#host-app)
@@ -43,7 +43,7 @@ There was a presentation given that covers some of the content in this doc.
 ## High-level Overview
 
 There are three main 'buckets' of tests in the WinUI repo:
-1. MUX.dll tests (under `dxaml\test` dir)
+1. MUX.dll tests (under `tests\runtime`)
 2. MUXC.dll tests (under `controls` dir)
 3. Scenario Tests (Sample App tests under `Samples` dir)
 
@@ -56,7 +56,7 @@ More details on these sets of tests are below.
 
 All of these tests are executed via TAEF. More info on TAEF can be found at https://learn.microsoft.com/en-us/windows-hardware/drivers/taef.
 
-## MUX.dll tests - dxaml\test
+## MUX.dll tests - tests\runtime
 
 This test code originated from the OS repo (along with the bulk of the product code).
 
@@ -364,7 +364,7 @@ Test automation for:
 There are some other apps in this directory that do not have test automation associated with them.
 
 Test automation code for these apps lives under
-[controls\test\MUXControls.Test\ScenarioAppTests](../../controls/test/MuxControls.Test/ScenarioAppTests)
+[controls\test\MUXControls.Test\ScenarioAppTests](../../controls/test/MUXControls.Test/ScenarioAppTests)
 and compiles into `MUXControls.Test.dll`.
 (Not really the most appropriate location for these tests. But it is where they live for now).
 

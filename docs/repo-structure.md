@@ -3,10 +3,9 @@
 ## Table of Contents
 
 - [/.github](#github)
-- [/build, /tools](#build-tools)
+- [/tools](#tools)
 - [/controls](#controls)
 - [/docs](#docs)
-- [/dxaml](#dxaml)
 - [/eng](#eng)
 - [/external](#external)
 - [/generated](#generated)
@@ -20,11 +19,9 @@ This folder contains GitHub repository metadata, including workflows, issue and
 pull request templates, resource-management policy, Copilot instructions, and
 agent skills.
 
-## /build, /tools
-These folders contain scripts and other support machinery that you shouldn't 
-need to edit for most changes.
-
-In particular: /build/NuSpecs enables .nupkg generation
+## /tools
+This folder contains manually invoked repo tools and support machinery that you
+shouldn't need to edit for most changes.
 
 The mock Windows App SDK package update helper lives under
 `/tools/packaging/UpdateMockWinAppSDKPackage`.
@@ -71,9 +68,6 @@ Feature and API design specs live under `/docs/specs`, with API review specs
 under `/docs/specs/api`.
 
 Note that developer usage documentation can be found separately on docs.microsoft.com.
-
-## /dxaml
-This legacy folder is no longer the primary home for WinUI runtime source.
 
 ## /eng
 All build system and other engineering related files go in this directory.
