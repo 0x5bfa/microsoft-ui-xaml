@@ -165,9 +165,9 @@ if ($Mode -eq "DevTestSuite" -or $Mode -eq "ScenarioTestSuite")
     Publish-Item "$binpath\TestDependencies\crt\vc_redist.$redistPlatform.exe" "$outpath"
 
     # Publish items from repo:
-    Publish-Item "$repoRoot\tests\infra\payload\scripts\*" "$outpath"
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\*" "$outpath"
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\payload\commands\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\commands\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\test\*" "$outpath"
     Publish-Item "$repoRoot\tools\controls\TestAppDeployment\EnableMUXControlsTestAppManagedDebugging.*" "$outpath"
 
     Publish-Item "$binpath\TestDependencies\dotnet-windowsdesktop-runtime-installer.exe" "$outpath"
@@ -272,8 +272,8 @@ if ($Mode -eq "PGO")
     Publish-Item "$binpath\TestDependencies\pgosweep.exe" "$outpath"
 
     # Publish items from repo:
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\*" "$outpath"
-    Publish-Item "$repoRoot\tests\infra\Helix\payload\scripts\test\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\commands\*" "$outpath"
+    Publish-Item "$repoRoot\tests\infra\Helix\payload\test\*" "$outpath"
 }
 
 if ($ShowPayload)
