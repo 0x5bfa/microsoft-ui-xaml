@@ -34,7 +34,7 @@ components within Visual Studio is very trivial but it cannot be used for this p
 saving them in Visual Studio introduces unwanted changes. A good workflow trick will be making a copy of solution file
 and then making changes to the copied solution file by opening it in Visual Studio. Afterwards, using a diff between
 original sln and copied sln, only necessary needed changes can be made to the original sln file. A final verification
-would be starting a full build by issuing build.cmd. If all the changes are correct, the build will proceed just fine.
+would be starting a full build by issuing `tools\build\Build.cmd`. If all the changes are correct, the build will proceed just fine.
 
 ## WinUI components from other repos
 

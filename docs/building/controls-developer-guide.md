@@ -4,9 +4,9 @@ This guide provides instructions on how to build, run and debug the controls pro
 
 Once you have your environment and build setup per the [developer-guide](./developer-guide.md), you can follow these steps to work in the controls code base.
 
-1. From the same command prompt where you ran init.cmd and build.cmd, navigate to controls folder and launch muxcontrols.sln file. This will open the controls solution which includes the WinUI controls project and tests in visual studio with the appropriate environment variables setup.
+1. From the same command prompt where you ran scripts\init\init.cmd and tools\build\Build.cmd, navigate to controls folder and launch muxcontrols.sln file. This will open the controls solution which includes the WinUI controls project and tests in visual studio with the appropriate environment variables setup.
 
-2. Switch the build configuration in visual studio to match how you ran init.cmd. By default, init.cmd uses x86 chk, so choose x86 and debug configuration in visual studio.
+2. Switch the build configuration in visual studio to match how you ran scripts\init\init.cmd. By default, scripts\init\init.cmd uses x86 chk, so choose x86 and debug configuration in visual studio.
 
 3. Set MuxControlsTestApp project as the startup project.
 
@@ -26,7 +26,7 @@ Microsoft.NET.TargetFrameworkInference.targets(92,5): error NETSDK1013: The Targ
 8>Done building project "MUXControlsTestApp.csproj" -- FAILED.
 
 ### Try these fixes
-a. Ensure that you launched muxcontrols.sln file after running init.cmd which sets up the appropriate environment variables.
+a. Ensure that you launched muxcontrols.sln file after running scripts\init\init.cmd which sets up the appropriate environment variables.
 
 b. Ensure that you have visual studio setup correctly using the .vsconfig file. See [developer-guide](./developer-guide.md) for instructions
 

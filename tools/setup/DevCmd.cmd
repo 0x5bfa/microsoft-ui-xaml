@@ -58,7 +58,7 @@ goto ParseArgs
 
 :DoneParsing
 set vswhere="%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
-if not exist %vswhere% (echo VSWhere.exe not found. Install MSBuild first from OneTimeSetup.cmd && exit /b 1)
+if not exist %vswhere% (echo VSWhere.exe not found. Install MSBuild first from tools\setup\OneTimeSetup.cmd && exit /b 1)
 
 rem Try MSBuild first
 set MSBuildInstallpath=

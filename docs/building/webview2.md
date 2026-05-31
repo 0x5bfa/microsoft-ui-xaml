@@ -13,11 +13,11 @@
 Other build options:
 * Rebuild MUXC without using incremental build:
     * `msbuild <repo>\controls\MUXControls.sln /t:Rebuild`
-* For additional scoped builds, see the options in [controls\Build.cmd](../../controls/Build.cmd).
+* For additional scoped builds, see the options in [controls\build\Build.cmd](../../controls/build/Build.cmd).
 
 Additional notes:
 * Multi-proc builds (default for `msb.cmd`) are not yet supported for MUXC. 
-Therefore, use `msbuild.exe` (defaults to single-proc) as the build command (or `controls\build.cmd`). 
+Therefore, use `msbuild.exe` (defaults to single-proc) as the build command (or `controls\build\Build.cmd`).
 * If running in VS and getting an error asking to attach another debugger, make sure you are running with "mixed" 
 debugging.
 
