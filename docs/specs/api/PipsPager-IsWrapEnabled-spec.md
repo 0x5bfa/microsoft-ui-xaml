@@ -5,7 +5,7 @@ PipsPager.WrapMode
 # Background
 The WinUI [PipsPager](https://docs.microsoft.com/windows/windows-app-sdk/api/winrt/Microsoft.UI.Xaml.Controls.PipsPager) control is used to let the user move through items in a list.
 
-![alt text](PipsPager.png)
+![alt text](images/PipsPager.png)
 
 Today when a user navigates to the first or last index in a PipsPager, the navigation button in that direction disappears.
 Let us say the user is on the first pip and wants to get to the last pip. Under this implementation, they would have to navigate through
@@ -13,7 +13,7 @@ all the pips in order to get to their destination.
 
 This spec adds the WrapMode property which, when set to PipsPagerWrapMode::Wrap, allows the user to jump between the first and last index with one click of a button. When set to PipsPagerWrapMode::Wrap, the navigation buttons do not disappear and instead the PipsPager navigates in a wrap around manner to the next logical pip.
 
-![alt text](PipsPager-WrapAround.gif)
+![alt text](images/PipsPager-WrapAround.gif)
 
 # API Pages
 
