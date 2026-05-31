@@ -915,6 +915,12 @@ Runtime test solution files live under `tests/runtime/solutions`. Runtime test
 source, infrastructure, and tool projects stay in their purpose folders under
 `tests/runtime`, while Visual Studio entry points are grouped in one place.
 
+## Controls test solutions
+
+Controls test solution files live under `tests/controls/solutions`. Controls
+test app source stays under `tests/controls/apps`, keeping app implementation
+folders separate from Visual Studio entry points.
+
 ## Tool solutions
 
 Tool solution files live under the relevant tool ownership root's `solutions`
