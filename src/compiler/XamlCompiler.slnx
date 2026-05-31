@@ -5,7 +5,7 @@
     <Platform Name="Win32" />
     <Platform Name="x64" />
   </Configurations>
-  <Folder Name="/Executable Compiler/">
+  <Folder Name="/src/compiler/Exe/">
     <Project Path="Exe/Microsoft.UI.Xaml.Markup.Compiler.Executable.csproj">
       <Build Solution="*|Any CPU" Project="false" />
       <Build Solution="*|ARM64" Project="false" />
@@ -15,7 +15,7 @@
     <Project Path="Exe/Microsoft.UI.Xaml.Markup.Compiler.IO/Microsoft.UI.Xaml.Markup.Compiler.IO.csproj" />
     <Project Path="Exe/Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop/Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop.csproj" />
   </Folder>
-  <Folder Name="/refs/">
+  <Folder Name="/tools/runtime/GenXbfDLL/">
     <Project Path="../../tools/runtime/GenXbfDLL/GenXbf.vcxproj">
       <BuildDependency Project="../runtime/xcp/phone/idl/phone.vcxproj" />
       <BuildDependency Project="../runtime/xcp/components/pch/prod/Microsoft.UI.Xaml.Precomp.vcxproj" />
@@ -27,6 +27,8 @@
       <Platform Solution="*|Any CPU" Project="Win32" />
       <Build Solution="*|ARM64" Project="false" />
     </Project>
+  </Folder>
+  <Folder Name="/src/compiler/references/">
     <Project Path="../controls/idl/Microsoft.UI.Xaml.Controls.idl.vcxproj">
       <BuildDependency Project="../runtime/xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj" />
       <BuildDependency Project="../runtime/xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj" />
@@ -180,7 +182,7 @@
       <Build Solution="*|ARM64" Project="false" />
     </Project>
   </Folder>
-  <Folder Name="/UnitTests/">
+  <Folder Name="/tests/compiler/UnitTests/">
     <Project Path="../../tests/compiler/UnitTests/LibManagedDll/LibManagedDll.csproj">
       <BuildDependency Project="Microsoft.UI.Xaml.Markup.Compiler.csproj" />
       <Platform Solution="*|x64" Project="x64" />
@@ -212,6 +214,8 @@
       <Platform Solution="*|x64" Project="x64" />
       <Build Project="false" />
     </Project>
+  </Folder>
+  <Folder Name="/tests/compiler/XamlCompilerProxies/">
     <Project Path="../../tests/compiler/XamlCompilerProxies/XamlCompilerProxies.csproj">
       <BuildDependency Project="Microsoft.UI.Xaml.Markup.Compiler.csproj" />
       <BuildType Solution="Release|ARM64" Project="Debug" />
