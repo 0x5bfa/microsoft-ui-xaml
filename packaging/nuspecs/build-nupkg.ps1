@@ -51,7 +51,7 @@ else
 }
 
 # Record versions of dependent packages, for Project Reunion validation
-$VersionsPropsPath = Join-Path "$scriptDirectory\..\.." "eng\versions.props"
+$VersionsPropsPath = Join-Path "$scriptDirectory\..\.." "eng\versioning\Versions.props"
 [xml]$VersionsPropsContent = Get-Content $VersionsPropsPath
 $versionPropsFilePropertyGroup = $VersionsPropsContent.Project.PropertyGroup[0]
 $IXP_Version = ''
@@ -61,7 +61,7 @@ $IXP_COMPONENT_VERSION = ''
 $CsWinRT_Version = $VersionsPropsContent.SelectSingleNode('//MicrosoftCsWinRTPackageVersion').InnerText
 $WEBVIEW2_Version = $VersionsPropsContent.SelectSingleNode('//WebView2PackageVersion').InnerText
 
-$VersionsDetailsPath = Join-Path "$scriptDirectory\..\.." "eng\Version.Details.xml"
+$VersionsDetailsPath = Join-Path "$scriptDirectory\..\.." "eng\versioning\Version.Details.xml"
 [xml]$versionDetails = Get-Content -Path $VersionsDetailsPath
 
 # Set up Map from the dependencies to its versions to reference later

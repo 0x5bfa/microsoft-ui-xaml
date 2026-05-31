@@ -7,7 +7,7 @@ $packagesConfigReferences = @(
 )
 
 $propsReferences = @(
-    "$projectRoot\eng\versions.props"
+    "$projectRoot\eng\versioning\Versions.props"
 )
 
 foreach ($filePath in $packagesConfigReferences)

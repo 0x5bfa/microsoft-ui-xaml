@@ -46,7 +46,7 @@
 
     <Import Project="..\sources.props"/>
 
-    <Import Project="$(ProjectRoot)eng\winui-version.props" />
+    <Import Project="$(ProjectRoot)eng\versioning\winui-version.props" />
 
     <ItemGroup>
         <ResourceCompile Include="Microsoft.UI.Xaml.resources.rc"/>

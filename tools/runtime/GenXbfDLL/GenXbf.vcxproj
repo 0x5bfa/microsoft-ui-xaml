@@ -8,7 +8,7 @@
   <Import Project="$(MSBuildThisFileDirectory)..\..\..\eng\xamlbuild\Xaml.Cpp.Props" />
   <Import Project="$(XcpPath)\project-lift.props" />
   <Import Project="$(XcpPath)\common.props" />
-  <Import Project="$(ProjectRoot)eng\winui-version.props"/>
+  <Import Project="$(ProjectRoot)eng\versioning\winui-version.props"/>
 
   <PropertyGroup>
     <Dllentry>_DllMainCRTStartup</Dllentry>

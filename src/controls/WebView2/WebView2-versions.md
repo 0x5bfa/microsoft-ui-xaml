@@ -12,10 +12,10 @@
 
 
 ## Reunion 0.5 GA
-[Commit with change](https://microsoft.visualstudio.com/WinUI/_git/microsoft-ui-xaml-lift/commit/2cbf20073113c445c4a67abb91c826dcdf33d463?refName=refs/heads/master&_a=compare&path=/eng/versions.props)
+[Commit with change](https://microsoft.visualstudio.com/WinUI/_git/microsoft-ui-xaml-lift/commit/2cbf20073113c445c4a67abb91c826dcdf33d463?refName=refs/heads/master&_a=compare&path=/eng/versioning/Versions.props)
 | Package | Version | Link to file |
 | :------ | :------ | :----------- |
-| Microsoft.Web.WebView2              | 1.0.774.44-modforwinui | https://microsoft.visualstudio.com/WinUI/_git/microsoft-ui-xaml-lift?version=GBrelease/reunion-0.5-GA&path=/eng/versions.props |
+| Microsoft.Web.WebView2              | 1.0.774.44-modforwinui | https://microsoft.visualstudio.com/WinUI/_git/microsoft-ui-xaml-lift?version=GBrelease/reunion-0.5-GA&path=/eng/versioning/Versions.props |
 | Microsoft.UI.DCPP.Dependencies.Edge | 89.0.774.44            | https://microsoft.visualstudio.com/WinUI/_git/microsoft-ui-xaml-lift?version=GBrelease/reunion-0.5-GA&path=/packages.config    |
 
 

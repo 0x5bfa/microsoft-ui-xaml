@@ -31,7 +31,7 @@
     <None Include="app.config" />
   </ItemGroup>
   <Import Project="$([MSBuild]::GetPathOfFileAbove(environment.props))" />
-  <Import Project="..\..\..\eng\versions.props" />
+  <Import Project="..\..\..\eng\versioning\Versions.props" />
   <Import Project="$(NuGetPackageRoot)\MUXCustomBuildTasks.$(MuxCustomBuildTasksPackageVersion)\build\MUXCustomBuildTasks.targets" Condition="Exists('$(NuGetPackageRoot)\MUXCustomBuildTasks.$(MuxCustomBuildTasksPackageVersion)\build\MUXCustomBuildTasks.targets')" />
   <Target Name="KillLeftOverMSBuildProcesses">
     <ItemGroup>
