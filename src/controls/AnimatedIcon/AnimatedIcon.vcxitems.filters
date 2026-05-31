@@ -86,22 +86,8 @@
     </Midl>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Docs">
-      <UniqueIdentifier>{ab333f5f-ead0-4ff7-ac54-6fe103e3002b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="AnimatedVisuals">
       <UniqueIdentifier>{1843091a-2efc-483d-aebb-0166cf2e040f}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)AnimatedIconDevDesign.md">
-      <Filter>Docs</Filter>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)Docs\MultiStateSegmentLookupProposal.md">
-      <Filter>Docs</Filter>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)Docs\SingleStateSegmentLookup.md">
-      <Filter>Docs</Filter>
-    </None>
   </ItemGroup>
 </Project>

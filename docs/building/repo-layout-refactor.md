@@ -298,8 +298,8 @@ that have already moved under `src/runtime`, with project references now
 pointing at the relocated `src/runtime/xcp` tree.
 
 The product-wide solution now lives at the repo root as
-`Microsoft.UI.Xaml-Product.slnx`, preserving it as the repo-wide entry point
-without keeping a separate root `solutions` folder.
+`Microsoft.UI.Xaml.slnx`, preserving it as the repo-wide entry point without
+keeping a separate root `solutions` folder.
 
 ## Package restore inputs
 
@@ -906,6 +906,9 @@ under `docs/testing`, debugging and telemetry notes under `docs/debugging`,
 release and Windows App SDK integration notes under `docs/publishing`, and
 contributor-facing guidance under `docs/external`. Design-oriented architecture
 notes live under `docs/design-notes`, grouped by feature or runtime area.
+Control-specific design notes that used to sit beside control source now live
+under `docs/design-notes/controls`, keeping implementation folders focused on
+source and build inputs.
 WebView2 dependency update and version-history docs now live under
 `docs/publishing`, keeping dependency publishing workflows out of the controls
 implementation source tree.

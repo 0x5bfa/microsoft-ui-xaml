@@ -6,8 +6,7 @@
 - [/tools](#tools)
 - [/docs](#docs)
 - [/eng](#eng)
-- [/external](#external)
-- [/generated](#generated)
+- [Checked-In Dependencies And Generated Assets](#checked-in-dependencies-and-generated-assets)
 - [/src](#src)
 - [/tests](#tests)
 
@@ -60,7 +59,8 @@ under `/docs/specs/api`.
 Developer workflows are grouped by purpose under folders such as
 `/docs/building`, `/docs/testing`, `/docs/debugging`, `/docs/publishing`,
 and `/docs/external`. Architecture and design notes are grouped under
-`/docs/design-notes`. WebView2 build/run guidance lives under
+`/docs/design-notes`, including control-specific design notes under
+`/docs/design-notes/controls`. WebView2 build/run guidance lives under
 `/docs/building`, WebView2 UIA and accessibility notes live under
 `/docs/design-notes/input`, and WebView2 dependency update and version-history
 docs live under `/docs/publishing`.

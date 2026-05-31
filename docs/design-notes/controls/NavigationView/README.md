@@ -2,7 +2,7 @@
 
 NavigationView is a powerful control that makes it easy to integrate a rich navigation experience into apps.
 This document outlines overall structure and behaviors.
-Information related to the NavigationViewItem, or the rendering of the control see the documents in the /NavigationView/docs folder.
+Information related to the NavigationViewItem, or the rendering of the control see the documents in this folder.
 
 ## Architecture
 
@@ -16,7 +16,7 @@ and one for the overflow menu in top mode.
 In addition to this, in the case of hierarchical NavigationView, every NavigationViewItem with children has it's own ItemsRepeater
 which is used to render the child items of that NavigationViewItem.
 
-For more on this, see [the rendering document](./docs/rendering.md).
+For more on this, see [the rendering document](./rendering.md).
 
 The selection is being tracked through a SelectionModel, which uses IndexPath tracking for NavigationViewItems.
 
