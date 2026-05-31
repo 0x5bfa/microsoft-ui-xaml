@@ -304,6 +304,9 @@ and `/tests/runtime` instead of the legacy `/dxaml` and `/dxaml/test` names.
 Runtime isolated AccessKeys test projects are also shown under their
 `/tests/runtime/native/isolated/xaml/accessKeys` folders instead of under
 source-side component `unittests` folders.
+Runtime isolated foundation test projects are likewise shown under
+`/tests/runtime/native/isolated/foundation`, matching their project locations
+instead of the source component folders they exercise.
 
 The product-wide solution now lives at the repo root as
 `Microsoft.UI.Xaml.slnx`, preserving it as the repo-wide entry point without
