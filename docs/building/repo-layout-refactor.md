@@ -608,7 +608,9 @@ initialization scripts.
 
 Controls build command implementation and shared build support files live under
 `controls/build`, while the root-level `controls/Build.cmd` remains the stable
-entry point used by solution files and developer workflows.
+entry point used by solution files and developer workflows. Root-level controls
+props files that are discovered by MSBuild remain as thin wrappers over their
+implementations in `controls/build`.
 
 Controls build machine maintenance helpers now live under
 `controls/tools/BuildMachine`, keeping the queue/build-machine scripts grouped
