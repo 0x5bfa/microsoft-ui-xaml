@@ -525,6 +525,9 @@ Common build configuration props and ARM64EC target overrides now live under
 Build-output consumption props and targets now live under `eng/consumebinaries`,
 keeping the ad hoc/test app hooks for consuming built WinUI binaries together.
 
+Package layout props and targets now live under `eng/packaging`, leaving the
+top-level `packaging` tree focused on package construction inputs.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.
