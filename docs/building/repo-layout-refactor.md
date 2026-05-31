@@ -49,11 +49,12 @@ collection scripts, and compiler coverage instrumentation helper live there so
 ## Compiler test entry points
 
 Compiler-specific test entry points and support helpers now live under
-`tests/compiler`. `XamlCompilerTests.sln` moved there, while `runtests.cmd`,
-`copynewmasters.cmd`, the `FixMasters` helper used by `copynewmasters.cmd`, and
-the VcMeta hash validation helper now live under `tests/compiler/tools` instead
-of the compiler source tools folder. The compiler source solution references
-unit-test projects through `tests/compiler`.
+`tests/compiler`. `XamlCompilerTests.sln` moved there, while `runtests.cmd` and
+`copynewmasters.cmd` now live under `tests/compiler/tools/scripts`. The
+`FixMasters` helper used by `copynewmasters.cmd` and the VcMeta hash validation
+helper remain under `tests/compiler/tools` instead of the compiler source tools
+folder. The compiler source solution references unit-test projects through
+`tests/compiler`.
 Native compiled-binding coverage for the external tools test project now lives
 under `tests/compiler/native/compiledBindings`, with build projects consuming it
 through `$(CompilerTestPath)`.
@@ -62,13 +63,13 @@ through `$(CompilerTestPath)`.
 
 Test payload tooling and Helix orchestration now live under `tests/infra`.
 `CreateTestPayload.cmd` and `CreateTestPayload.ps1` now live under
-`tests/infra/payload/tools`, while the WinUI-specific Helix work-item generation
+`tests/infra/payload/scripts`, while the WinUI-specific Helix work-item generation
 wrapper now lives beside the shared generator under
-`tests/infra/Helix/common/pipeline/tools`. Shared Azure Pipelines helpers live
-under `tests/infra/Helix/common/pipeline/tools`. Copied payload runtime commands
-live under `tests/infra/payload/commands` and
-`tests/infra/Helix/payload/commands`. The Helix test-runner payload assets are
-grouped under `tests/infra/Helix/payload/test` and are still copied to
+`tests/infra/Helix/common/pipeline/scripts`. Shared Azure Pipelines helpers live
+under `tests/infra/Helix/common/pipeline/scripts`. Copied payload runtime commands
+live under `tests/infra/payload/scripts/runtime` and
+`tests/infra/Helix/payload/scripts/commands`. The Helix test-runner payload assets are
+grouped under `tests/infra/Helix/payload/scripts/test` and are still copied to
 the payload root when constructing `TestPayload`. GitHub agent skill metadata
 now references these paths directly instead of the removed root wrappers and
 legacy `dxaml/test` layout.
@@ -198,26 +199,27 @@ Controls test infrastructure should live with the controls test projects it
 supports. `AppTestAutomationHelpers` now lives under
 `tests/controls/testinfra` next to `MUXTestInfra` instead of under `Samples`, so
 the sample-app tree stays focused on sample applications. Testinfra package
-creation helpers live under each testinfra package's `tools` folder, and the
-WinUI Gallery test-data generator lives under `tests/controls/tools`.
+creation helpers live under each testinfra package's `tools/scripts` folder,
+and the WinUI Gallery test-data generator lives under
+`tests/controls/tools/ScenarioAppTests/scripts`.
 
 ## Sample test automation
 
-Sample test orchestration tools now live under `tests/samples/tools`. The
+Sample test orchestration tools now live under `tests/samples/scripts`. The
 test payload still publishes them to the payload root, but their source location
 now matches their role as test assets rather than sample applications.
 
 ## Initialization scripts
 
 .NET SDK, runtime download, MSBuild install, and test certificate generation
-helpers now live under `tools/setup/init`. The checked-in post-init restore step
-lives there too, while optional local init hooks are resolved from
-`tools/setup/custom`. Command prompt and PowerShell alias definitions are co-located there as
-initialization shell helpers. They are part of repository initialization rather
-than package construction, leaving the `build` folder focused on packaging
-inputs and build-time transforms. The command prompt init, PowerShell init, and
-initialized-command runner entry points now live under
-`tools/setup/init/commands`; the root-level compatibility wrappers were removed
+helpers now live under `tools/setup/init/scripts`. The checked-in post-init
+restore step lives there too, while optional local init hooks are resolved from
+`tools/setup/custom`. Command prompt and PowerShell alias definitions are
+co-located there as initialization shell helpers. They are part of repository
+initialization rather than package construction, leaving the `build` folder
+focused on packaging inputs and build-time transforms. The command prompt init,
+PowerShell init, and initialized-command runner entry points also live under
+`tools/setup/init/scripts`; the root-level compatibility wrappers were removed
 so repo-local callers use the implementation paths directly.
 
 ## Packaging inputs
@@ -310,8 +312,8 @@ Checked-in visual test baseline assets now live under
 `generated/tests/visualbaselines`. The resource project that packages them now
 lives under `tests/runtime/resources/masters` while continuing to expose
 `resources\masters` at runtime. The legacy command helper that can regenerate a
-masters RC file now lives under `tests/runtime/resources/tools` so generated
-resource payload and handwritten maintenance tooling are separated.
+masters RC file now lives under `tests/runtime/resources/tools/scripts` so
+generated resource payload and handwritten maintenance tooling are separated.
 
 Native isolated-test support now lives under `tests/runtime/native/isolated`.
 Projects should use `$(NativeIsolatedTestPath)` instead of spelling out the
@@ -634,101 +636,101 @@ The local NuGet package test feed now lives under `packaging/package-store`.
 Package construction scripts, NuGet.config, and cleanup helpers point there
 instead of keeping a single-purpose `PackageStore` folder at the repo root.
 The WinUI component package command implementation now lives under
-`tools/packaging/commands` with the package construction PowerShell helper. The
+`tools/packaging/scripts` with the package construction PowerShell helper. The
 repo root compatibility wrapper was removed; repo-local callers should use
-`tools/packaging/commands/pack.component.cmd` directly.
+`tools/packaging/scripts/pack.component.cmd` directly.
 
 The standalone debugger extension script now lives under
 `tools/debugging/dbgext`, grouped with other manually invoked repo tools.
 
-Clang-oriented developer helpers now live under `tools/clang`, with
-`tools/setup/init/commands/init.cmd` adding that folder to PATH so the short command names
+Clang-oriented developer helpers now live under `tools/clang/scripts`, with
+`tools/setup/init/scripts/init.cmd` adding that folder to PATH so the short command names
 remain available in initialized shells.
 
-Build wrapper commands now live under `tools/build/commands`, with
-`tools/setup/init/commands/init.cmd` adding that folder to PATH so commands such as `msb`,
+Build wrapper commands now live under `tools/build/scripts`, with
+`tools/setup/init/scripts/init.cmd` adding that folder to PATH so commands such as `msb`,
 `bz`, `bcz`, and `clean` remain available in initialized shells. The main repo build command implementation
 also lives there now. The root-level `Build.cmd` compatibility wrapper was
-removed; repo-local callers should use `tools/build/commands/Build.cmd` directly.
+removed; repo-local callers should use `tools/build/scripts/Build.cmd` directly.
 
 Shared command wrappers used by multiple repo tools now live under
-`tools/common`, keeping the `tools` root focused on tool categories.
+`tools/common/scripts`, keeping the `tools` root focused on tool categories.
 
 Developer environment setup helpers now live under `tools/setup`. The
 one-time bootstrap entry point and its PowerShell implementation live under
-`tools/setup/bootstrap`, while init command entry points live under
-`tools/setup/init/commands` and the Visual Studio developer command prompt
-setup implementation lives under `tools/setup/shell`. There are no shallow
+`tools/setup/bootstrap/scripts`, while init command entry points live under
+`tools/setup/init/scripts` and the Visual Studio developer command prompt
+setup implementation lives under `tools/setup/shell/scripts`. There are no shallow
 setup compatibility wrappers; repo-local callers and external jobs should call
 the command paths directly.
 
 Controls shared build support files live under `controls/build`, while the
 controls build command implementation now lives under
-`tools/controls/Build/commands`.
+`tools/controls/Build/scripts`.
 The root-level `controls/Build.cmd` wrapper was removed and solution items now
-point at `tools/controls/Build/commands/Build.cmd`. Root-level controls props files that
+point at `tools/controls/Build/scripts/Build.cmd`. Root-level controls props files that
 are discovered by MSBuild remain as thin wrappers over their implementations in
 `controls/build`. The controls `Directory.Build.props` and
 `Directory.Build.targets` implementations also live in `controls/build`, while
 the root files remain as MSBuild auto-discovery wrappers.
 
 Controls build machine maintenance helpers now live under
-`tools/controls/BuildMachine`, keeping the queue/build-machine scripts grouped
-with their shared ADAL-backed helper module.
+`tools/controls/BuildMachine/scripts`, keeping the queue/build-machine scripts
+grouped with their shared ADAL-backed helper module.
 
 Controls new-control scaffolding helpers now live under
-`tools/controls/ControlGeneration`, with reusable `NEWCONTROL` templates under
-that folder's `Templates` directory.
+`tools/controls/ControlGeneration/scripts`, with reusable `NEWCONTROL` templates
+under `tools/controls/ControlGeneration/Templates`.
 
-Controls release helper scripts now live under `tools/controls/Release`,
+Controls release helper scripts now live under `tools/controls/Release/scripts`,
 keeping the interactive release workflow next to its ADAL authentication helper.
 
 Controls resource generation helpers now live under
-`tools/controls/ResourceGeneration`, including system DLL resource generation,
-visual verification update, final-release theme resource trimming scripts, and
-the baseline resources generator app.
+`tools/controls/ResourceGeneration/scripts`, including system DLL resource
+generation, visual verification update, final-release theme resource trimming
+scripts, and the baseline resources generator app.
 
-Controls developer shell helpers now live under `tools/controls/Shell`,
+Controls developer shell helpers now live under `tools/controls/Shell/scripts`,
 including the developer command prompt implementation, command aliases, and the
 PowerShell profile loaded by `ps.bat`. The root-level `controls/DevCmd.cmd`
 wrapper was removed; controls developers should use
-`tools/controls/Shell/DevCmd.cmd` directly.
+`tools/controls/Shell/scripts/DevCmd.cmd` directly.
 
-Controls shared command wrappers now live under `tools/controls/Common`,
+Controls shared command wrappers now live under `tools/controls/Common/scripts`,
 including the NuGet and PowerShell wrappers used by controls tooling scripts.
 
 Controls custom MSBuild task sources and their test harness now live under
 `tools/controls/BuildTasks`, with the task NuGet packaging scripts kept under
-the moved `CustomTasks/NuSpecs` tree and the dedicated build-task solution
-co-located with those tools. The cleanup project that invokes the custom
-`KillMSBuild` task also lives in this folder with its runtime config. The
-shared inline MSBuild task target file is grouped here too.
+`CustomTasks/NuSpecs/scripts` and the dedicated build-task solution co-located
+with those tools. The cleanup project that invokes the custom `KillMSBuild` task
+also lives in this folder with its runtime config. The shared inline MSBuild
+task target file is grouped here too.
 
-Controls packaging helpers now live under `tools/controls/Packaging`,
+Controls packaging helpers now live under `tools/controls/Packaging/scripts`,
 including the framework package AppX creation wrapper used after controls
 builds, package-generation restore config, local signing stub, and build-drop
 publishing helper.
 
 Controls source maintenance helpers now live under
-`tools/controls/SourceMaintenance`, including namespace update, vcxitems page
-reference cleanup, and text template processing scripts.
+`tools/controls/SourceMaintenance/scripts`, including namespace update,
+vcxitems page reference cleanup, and text template processing scripts.
 
 Controls packaged test app deployment helpers now live under
-`tools/controls/TestAppDeployment`. Build integration still copies
+`tools/controls/TestAppDeployment/scripts`. Build integration still copies
 `CreateAppxDirectory.msbuildproj` and `InstallAppFromLayout.ps1` into the test
 app output directory with their original filenames, preserving runtime install
 script discovery. Test app dependency extraction and AppX dependency XML
 generation scripts also live in this folder. The desktop test-app install
 wrapper lives there too, with its package payload references resolving through
-the `tools/controls/TestAppDeployment` payload helpers.
+the `tools/controls/TestAppDeployment/scripts` payload helpers.
 
-Controls test reporting helpers now live under `tools/controls/TestReporting`,
+Controls test reporting helpers now live under `tools/controls/TestReporting/scripts`,
 grouping the unreliable-test report creation and console output scripts away
 from the `tools/controls` root.
 
 Controls XAML processing and WinUI 2 migration helpers now live under
-`tools/controls/XamlProcessing`, including the generic XAML merge script used
-by the controls build.
+`tools/controls/XamlProcessing/scripts`, including the generic XAML merge script
+used by the controls build.
 
 Controls test-app build helpers now live under `tests/controls/build`, keeping
 the controls test root focused on test entry points and automatically discovered
@@ -791,12 +793,13 @@ local copy from `src/runtime/xcp/dxaml/themes/autogen`. `GenXbfDLL` moved under
 `tools/runtime/GenXbfDLL` as a build-integrated runtime tool, with MSBuild
 project references using `$(RuntimeToolsPath)`. The runtime code generation
 toolchain moved under `tools/runtime/XCPTypesAutoGen`, including the
-checked-in stable XBF index inputs and the `runcodegen.cmd` wrapper. The
+checked-in stable XBF index inputs and the `scripts/runcodegen.cmd` wrapper. The
 XamlDiagnostics TAP test DLL moved under `tools/runtime/xamldiagnostics/tap`,
 with external tool tests consuming it through `$(XamlDiagTapPath)`. The
 AppAnalysis runtime diagnostics toolchain moved under `tools/runtime/AppAnalysis`,
-with shared references flowing through `$(AppAnalysisPath)` and
-`$(AppAnalysisObjPath)`. The Unicode classification data generator script and
+with command scripts under its local `scripts` leaves and shared references
+flowing through `$(AppAnalysisPath)` and `$(AppAnalysisObjPath)`. The Unicode
+classification data generator script and
 its binary input now live under `tools/runtime/TextClassification`, while the
 checked-in generated `UcdData.cpp` lives under
 `generated/runtime/text/Classification` and is consumed through

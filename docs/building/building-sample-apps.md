@@ -26,7 +26,7 @@ the Sample App Tests section of [testing-FAQ.md](../testing/testing-FAQ.md) for 
 
 ## Building
 
-The easiest way to build these apps is to run buildsamples.cmd after doing a full local build (tools\build\commands\Build.cmd)
+The easiest way to build these apps is to run buildsamples.cmd after doing a full local build (tools\build\scripts\Build.cmd)
 
 These apps are configured to be able to build in multiple different ways:
 
@@ -48,14 +48,14 @@ In any case, the procedure is the same, supplying the package version to the bui
 **WinUI component package from a local build:**
 
 ```shell
-tools\setup\init\commands\init.cmd
+tools\setup\init\scripts\init.cmd
 scripts\buildSample WinUIGallery 999.0.0-mock-3.0.0-dev
 ```
 
 **WinUI component package from a pipeline run:**
 
 ```shell
-tools\setup\init\commands\init.cmd
+tools\setup\init\scripts\init.cmd
 scripts\buildSample WinUIGallery 999.0.0-mock-3.0.0-zmain.230101.1-CI
 ```
 
@@ -67,7 +67,7 @@ The WinUI-CI and WinUI-Nightly pipelines use this approach to build the Sample A
 **Published WindowsAppSDK:**
 
 ```shell
-tools\setup\init\commands\init.cmd
+tools\setup\init\scripts\init.cmd
 scripts\buildSample WinUIGallery 1.2-stable
 ```
 

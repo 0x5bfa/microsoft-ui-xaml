@@ -177,8 +177,8 @@ Add the following line before the test implementation.
 
 ### How do I run tests locally?
 Follow these steps:
-1. Build the product and tests as normal using **tools\build\commands\Build.cmd**
-2. Run **tests\infra\payload\tools\CreateTestPayload.ps1** This will produce a TestPayload directory at the repo root.
+1. Build the product and tests as normal using **tools\build\scripts\Build.cmd**
+2. Run **tests\infra\payload\scripts\CreateTestPayload.ps1** This will produce a TestPayload directory at the repo root.
 3. Connect to a to the machine you wish to run tests on (recommendation: an amd64 VM running Windows 20H2). DO NOT
 connect via an Enhanced connection (use a basic connection instead). An Enhanced connection will cause some test
 failures. In VM connect you can change this setting from the View menu.
@@ -372,7 +372,7 @@ connection modes.
 ## Tests in CI/PR builds
 
 ### How do I locally run tests using a build from Azure Pipelines?
-The steps are the same as for local builds, except instead of running `tools\build\commands\Build.cmd` and `tests\infra\payload\tools\CreateTestPayload.ps1`, you can
+The steps are the same as for local builds, except instead of running `tools\build\scripts\Build.cmd` and `tests\infra\payload\scripts\CreateTestPayload.ps1`, you can
 download the TestPayload from the build. Go to the build report page. Click 'published' and download the 'TestPayload'
 folder or the 'ScenarioTestSuitePayload' folder (for Tests or Scenario App Tests). Unzip this file and use it the same
 way as described above (`testmachine-setup.cmd` and the `runtests.cmd`).
@@ -617,7 +617,7 @@ is important that we include this kind of coverage.
 For more details on these apps see [building-sample-apps.md](../building/building-sample-apps.md).
 
 ### How do I build the Sample Apps?
-When calling tools\build\commands\Build.cmd you can pass `samples` to also build the sample apps. You can also invoke msbuild directly
+When calling tools\build\scripts\Build.cmd you can pass `samples` to also build the sample apps. You can also invoke msbuild directly
 against the .sln files under the 'Samples' dir.
 
 ### What scenarios are covered by these Sample Apps?
@@ -638,9 +638,9 @@ libraries as the MUXControls tests. The source code is under `tests\controls\MUX
 these tests are compiled into MUXControls.Test.dll.
 
 ### How do I run the Sample App Tests?
-First you need to build the sample apps. They do not build by default. Run "tools\build\commands\Build.cmd samples" from the root of the repo.
+First you need to build the sample apps. They do not build by default. Run "tools\build\scripts\Build.cmd samples" from the root of the repo.
 
-The tests get run the same way as the functional tests. The only difference is when you call `tests\infra\payload\tools\CreateTestPayload.ps1`,
+The tests get run the same way as the functional tests. The only difference is when you call `tests\infra\payload\scripts\CreateTestPayload.ps1`,
 you pass `-Mode ScenarioTestSuite`. This will create a test payload to run the Sample App Tests. From there, the
 workflow is the same as running the functional tests.
 
@@ -668,7 +668,7 @@ experimental workflow to run tests against your locally built binaries. You will
 from Azure DevOps (navigate to User Settings > Personal Access Tokens).
 
 The steps are:
-1. Build the product and test binaries as normal (tools\build\commands\Build.cmd without args is generally sufficient)
+1. Build the product and test binaries as normal (tools\build\scripts\Build.cmd without args is generally sufficient)
 2. Create and push your test payload as a nuget package using this script:
 `test\experimental\CreateAndPushTestPayloadPackages.cmd -AzureDevOpsToken YOUR-ACCESS-TOKEN`
 

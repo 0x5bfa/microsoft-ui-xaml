@@ -25,37 +25,37 @@ shouldn't need to edit for most changes.
 The mock Windows App SDK package update helper lives under
 `/tools/packaging/UpdateMockWinAppSDKPackage`.
 The WinUI component package command implementation lives under
-`/tools/packaging/commands`.
+`/tools/packaging/scripts`.
 Compiler developer tools, performance collection scripts, and coverage helpers
 live under `/tools/compiler`.
 Runtime developer tools and source-generation helpers live under `/tools/runtime`.
 Standalone debugger extension scripts live under `/tools/debugging/dbgext`.
-Build wrapper command implementations live under `/tools/build/commands`.
-Shared command wrappers live under `/tools/common`.
+Build wrapper command implementations live under `/tools/build/scripts`.
+Shared command wrappers live under `/tools/common/scripts`.
 Developer environment setup helpers live under `/tools/setup`, with command
-entry points under `/tools/setup/init/commands`, one-time bootstrap under
-`/tools/setup/bootstrap`, and the Visual Studio developer shell under
-`/tools/setup/shell`.
-Controls build machine maintenance helpers live under `/tools/controls/BuildMachine`.
+entry points under `/tools/setup/init/scripts`, one-time bootstrap under
+`/tools/setup/bootstrap/scripts`, and the Visual Studio developer shell under
+`/tools/setup/shell/scripts`.
+Controls build machine maintenance helpers live under `/tools/controls/BuildMachine/scripts`.
 Controls custom MSBuild task sources, targets, and solution live under `/tools/controls/BuildTasks`.
-Controls scaffolding helpers live under `/tools/controls/ControlGeneration`.
-Controls release helper scripts live under `/tools/controls/Release`.
-Controls resource generation helpers live under `/tools/controls/ResourceGeneration`.
+Controls scaffolding helpers live under `/tools/controls/ControlGeneration/scripts`.
+Controls release helper scripts live under `/tools/controls/Release/scripts`.
+Controls resource generation helpers live under `/tools/controls/ResourceGeneration/scripts`.
 Controls developer shell helpers and command implementation live under
-`/tools/controls/Shell`.
-Controls shared command wrappers live under `/tools/controls/Common`.
-Controls packaging helpers live under `/tools/controls/Packaging`.
-Controls source maintenance helpers live under `/tools/controls/SourceMaintenance`.
-Controls test app deployment, installation, and dependency helpers live under `/tools/controls/TestAppDeployment`.
-Controls test reporting helpers live under `/tools/controls/TestReporting`.
-Controls XAML processing and WinUI 2 migration helpers live under `/tools/controls/XamlProcessing`.
+`/tools/controls/Shell/scripts`.
+Controls shared command wrappers live under `/tools/controls/Common/scripts`.
+Controls packaging helpers live under `/tools/controls/Packaging/scripts`.
+Controls source maintenance helpers live under `/tools/controls/SourceMaintenance/scripts`.
+Controls test app deployment, installation, and dependency helpers live under `/tools/controls/TestAppDeployment/scripts`.
+Controls test reporting helpers live under `/tools/controls/TestReporting/scripts`.
+Controls XAML processing and WinUI 2 migration helpers live under `/tools/controls/XamlProcessing/scripts`.
 
 ## /controls
 This folder contains controls solution and tooling entry points.
 The Microsoft.UI.Xaml.Controls.dll implementation source lives under `/src/controls`.
 Controls-specific build support lives under `/controls/build`, including
 feature-area selection, project import manifests, and shared props/targets.
-The controls build command implementation lives under `/tools/controls/Build/commands`.
+The controls build command implementation lives under `/tools/controls/Build/scripts`.
 Root controls props files are thin wrappers where MSBuild discovery depends on
 their names. Controls-specific `Directory.Build.props` and
 `Directory.Build.targets` implementations also live under `/controls/build`.
@@ -160,5 +160,6 @@ trees. Compiler test entry points and support tools live under
 `/tests/compiler`; controls test apps and infrastructure live under
 `/tests/controls`; shared test payload and Helix infrastructure lives under
 `/tests/infra`; runtime test resources live under `/tests/runtime/resources`,
-with resource maintenance helpers under `/tests/runtime/resources/tools`; runtime
-test package maintenance helpers live under `/tests/runtime/packages/*/tools`.
+with resource maintenance helpers under `/tests/runtime/resources/tools/scripts`;
+runtime test package maintenance helpers live under
+`/tests/runtime/packages/*/tools/scripts`.

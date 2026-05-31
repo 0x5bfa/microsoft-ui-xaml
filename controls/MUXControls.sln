@@ -26,21 +26,21 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5EF3865D-EFAC-4676-B1E6-FB09DD7C67FD}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		..\tools\controls\Shell\addaliases.cmd = ..\tools\controls\Shell\addaliases.cmd
-		..\tools\controls\Build\commands\Build.cmd = ..\tools\controls\Build\commands\Build.cmd
-		..\tools\controls\Shell\DevCmd.cmd = ..\tools\controls\Shell\DevCmd.cmd
-		..\tools\controls\TestAppDeployment\ExtractPackageDependencies.ps1 = ..\tools\controls\TestAppDeployment\ExtractPackageDependencies.ps1
-		..\tools\controls\ControlGeneration\GenerateNewProperty.ps1 = ..\tools\controls\ControlGeneration\GenerateNewProperty.ps1
-		..\tools\controls\ResourceGeneration\GenerateSystemDllImageResources.ps1 = ..\tools\controls\ResourceGeneration\GenerateSystemDllImageResources.ps1
-		..\tools\controls\ResourceGeneration\GenerateSystemDllStringResources.ps1 = ..\tools\controls\ResourceGeneration\GenerateSystemDllStringResources.ps1
-		..\tools\controls\ResourceGeneration\GenerateVisualVerificationUpdates.ps1 = ..\tools\controls\ResourceGeneration\GenerateVisualVerificationUpdates.ps1
-		..\tools\controls\Packaging\MakeAppxHelper.cmd = ..\tools\controls\Packaging\MakeAppxHelper.cmd
-		..\tools\controls\Common\NugetWrapper.cmd = ..\tools\controls\Common\NugetWrapper.cmd
-		..\tools\controls\Common\PowershellWrapper.cmd = ..\tools\controls\Common\PowershellWrapper.cmd
-		..\tools\controls\Shell\ps.bat = ..\tools\controls\Shell\ps.bat
-		..\tools\controls\Shell\PSProfile.ps1 = ..\tools\controls\Shell\PSProfile.ps1
-		..\tools\controls\BuildTasks\CustomTasks\NuSpecs\PublishNupkg.cmd = ..\tools\controls\BuildTasks\CustomTasks\NuSpecs\PublishNupkg.cmd
-		..\tools\controls\XamlProcessing\Utils.psm1 = ..\tools\controls\XamlProcessing\Utils.psm1
+		..\tools\controls\Shell\scripts\addaliases.cmd = ..\tools\controls\Shell\scripts\addaliases.cmd
+		..\tools\controls\Build\scripts\Build.cmd = ..\tools\controls\Build\scripts\Build.cmd
+		..\tools\controls\Shell\scripts\DevCmd.cmd = ..\tools\controls\Shell\scripts\DevCmd.cmd
+		..\tools\controls\TestAppDeployment\scripts\ExtractPackageDependencies.ps1 = ..\tools\controls\TestAppDeployment\scripts\ExtractPackageDependencies.ps1
+		..\tools\controls\ControlGeneration\scripts\GenerateNewProperty.ps1 = ..\tools\controls\ControlGeneration\scripts\GenerateNewProperty.ps1
+		..\tools\controls\ResourceGeneration\scripts\GenerateSystemDllImageResources.ps1 = ..\tools\controls\ResourceGeneration\scripts\GenerateSystemDllImageResources.ps1
+		..\tools\controls\ResourceGeneration\scripts\GenerateSystemDllStringResources.ps1 = ..\tools\controls\ResourceGeneration\scripts\GenerateSystemDllStringResources.ps1
+		..\tools\controls\ResourceGeneration\scripts\GenerateVisualVerificationUpdates.ps1 = ..\tools\controls\ResourceGeneration\scripts\GenerateVisualVerificationUpdates.ps1
+		..\tools\controls\Packaging\scripts\MakeAppxHelper.cmd = ..\tools\controls\Packaging\scripts\MakeAppxHelper.cmd
+		..\tools\controls\Common\scripts\NugetWrapper.cmd = ..\tools\controls\Common\scripts\NugetWrapper.cmd
+		..\tools\controls\Common\scripts\PowershellWrapper.cmd = ..\tools\controls\Common\scripts\PowershellWrapper.cmd
+		..\tools\controls\Shell\scripts\ps.bat = ..\tools\controls\Shell\scripts\ps.bat
+		..\tools\controls\Shell\scripts\PSProfile.ps1 = ..\tools\controls\Shell\scripts\PSProfile.ps1
+		..\tools\controls\BuildTasks\CustomTasks\NuSpecs\scripts\PublishNupkg.cmd = ..\tools\controls\BuildTasks\CustomTasks\NuSpecs\scripts\PublishNupkg.cmd
+		..\tools\controls\XamlProcessing\scripts\Utils.psm1 = ..\tools\controls\XamlProcessing\scripts\Utils.psm1
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls", "..\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj", "{AD0C90B0-4845-4D4B-88F1-86F653F8171B}"

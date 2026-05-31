@@ -18,7 +18,7 @@ You should also be able to build this repo. See [developer guide](./developer-gu
 
 ## Initial Build of Lifted Xaml
 Build the repo as normal. See the [developer guide](./developer-guide.md) for more information.
-In short, run `tools\setup\init\commands\init.cmd` and then run `tools\build\commands\Build.cmd`. If you want you can skip building the test code by running `tools\build\commands\Build.cmd product`.
+In short, run `tools\setup\init\scripts\init.cmd` and then run `tools\build\scripts\Build.cmd`. If you want you can skip building the test code by running `tools\build\scripts\Build.cmd product`.
 The test code is not necessary for this scenario.
 
 Assuming the build completes sucessfully it will create a local WinUI component package.
@@ -74,7 +74,7 @@ will get cached here, which is a little redundant, but it is a worthwhile trade-
 Open the .sln in Visual Studio again. 
 
 Update the build Configuration to match the Platform for your local build. The target platform that you build your app for 
-must match the platform that you built winui for locally. By default `tools\setup\init\commands\init.cmd` targets x64, so update your test app project to build
+must match the platform that you built winui for locally. By default `tools\setup\init\scripts\init.cmd` targets x64, so update your test app project to build
 for x64 by changing the drop down from x86 to x64.
 
 This is important because the local WinUI component package only supports a single target platform unlike the real WinAppSDK package which supports
@@ -131,7 +131,7 @@ These commands will only rebuild these respective dlls. Since it is only increme
 it will normally be very quick (a couple of seconds). If you change a common header it might trigger a broader rebuild.
 
 This works well if you are just making pure code changes. If you making other changes (such as updating API surface) you 
-will need to do a more extensive build (such as rerunning tools\build\commands\Build.cmd at the root of the repo). See below for such scenarios.
+will need to do a more extensive build (such as rerunning tools\build\scripts\Build.cmd at the root of the repo). See below for such scenarios.
 
 Take note of the path to the newly built dll. It should be something like:
 
@@ -160,13 +160,13 @@ You should be able to continue making changes to your app and making changes to 
 
 The above steps work well when you are just making code changes to one of the product dlls. This should cover the 90% case. 
 If you are making broader changes it might not be sufficient to just replace the dll. In that case you should fallback to
-running tools\build\commands\Build.cmd to build. This will build everything and re-create the local WinUI component package.
+running tools\build\scripts\Build.cmd to build. This will build everything and re-create the local WinUI component package.
 
-If you want to manually build the required pieces but still update the local WinUI component package you can use `tools\packaging\commands\pack.component.cmd` to recreate it.
+If you want to manually build the required pieces but still update the local WinUI component package you can use `tools\packaging\scripts\pack.component.cmd` to recreate it.
 
 ### Updating the Local WinUI Component Package
 
-If you create a new local WinUI component package by running tools\build\commands\Build.cmd you might expect to be able to hit F5 in Visual Studio and have
+If you create a new local WinUI component package by running tools\build\scripts\Build.cmd you might expect to be able to hit F5 in Visual Studio and have
 your app pick up the changes. However this will NOT work. This is because nuget assumes that a given version of a nuget 
 package is immutable. The package version does not update with each build (it is fixed). Nuget will cache the contents
 of the package locally in the package cache and it is those files that are used in the build.

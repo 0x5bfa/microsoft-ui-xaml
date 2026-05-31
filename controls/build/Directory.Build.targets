@@ -9,7 +9,7 @@
   <Target Name="CreateAppxDirectory" BeforeTargets="Binplace" Condition="'$(IsPackagedTestApp)' == 'true'">
     <ItemGroup>
       <DeploymentFiles Include="$(MUXControlsToolsRoot)TestAppDeployment\CreateAppxDirectory.msbuildproj" />
-      <DeploymentFiles Include="$(MUXControlsToolsRoot)TestAppDeployment\InstallAppFromLayout.ps1" />
+      <DeploymentFiles Include="$(MUXControlsToolsRoot)TestAppDeployment\scripts\InstallAppFromLayout.ps1" />
     </ItemGroup>
     <Copy SourceFiles="@(DeploymentFiles)" DestinationFiles="$(OutDir)%(Filename)%(Extension)" SkipUnchangedFiles="True" />
     <PropertyGroup>
