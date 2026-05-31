@@ -27,8 +27,8 @@
         $(RuntimeEtwTestPath)\integration\InputEvents;
         $(RuntimeEtwTestPath)\integration\LayoutCausality;
         $(CompilerTestPath)\native\compiledBindings;
-        $(MSBuildThisFileDirectory)\customTypes;
-        $(BaseIntermediateOutputPath)\customTypes\generated;
+        $(RuntimeToolsCustomTypesPath);
+        $(RuntimeToolsCustomTypesObjPath)\generated;
         $(LiftedIXPIncludePaths);
         $(RuntimeNativeExternalTestPath)\enterprise\inc;
         $(XamlBinaryPath)\xcp\components\xamldiagnostics\idl;
@@ -126,19 +126,19 @@
     <ClCompile Include="$(RuntimeEtwTestPath)\integration\LayoutCausality\PropertyChangedEvents.cpp" />
     <ClCompile Include="$(RuntimeEtwTestPath)\integration\LayoutCausality\BindingEvents.cpp" />
     <ClCompile Include="$(CompilerTestPath)\native\compiledBindings\CompileBindingTests.cpp" />
-    <ClCompile Include="customTypes.App.g.cpp" />
-    <ClCompile Include="customTypes.UserControl.cpp" />
-    <ClCompile Include="customTypes.ValueConverters.cpp" />
-    <ClCompile Include="customTypes.AllCustomPages.cpp" />
-    <ClCompile Include="customTypes.XamlCompilerPage.g.cpp" />
-    <ClCompile Include="customTypes.XamlTypeInfo.g.cpp" />
-    <ClCompile Include="customTypes.XamlTypeInfo.Impl.g.cpp" />
+    <ClCompile Include="$(RuntimeToolsCustomTypesPath)\customtypes.App.g.cpp" />
+    <ClCompile Include="$(RuntimeToolsCustomTypesPath)\customTypes.UserControl.cpp" />
+    <ClCompile Include="$(RuntimeToolsCustomTypesPath)\customTypes.ValueConverters.cpp" />
+    <ClCompile Include="$(RuntimeToolsCustomTypesPath)\customTypes.AllCustomPages.cpp" />
+    <ClCompile Include="$(RuntimeToolsCustomTypesPath)\customtypes.XamlCompilerPage.g.cpp" />
+    <ClCompile Include="$(RuntimeToolsCustomTypesPath)\customTypes.XamlTypeInfo.g.cpp" />
+    <ClCompile Include="$(RuntimeToolsCustomTypesPath)\customTypes.XamlTypeInfo.Impl.g.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(RuntimeNativeExternalTestPath)\pch\Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj" />
     <ProjectReference Include="$(XamlDiagPath)\idl\xamlom.vcxproj" />
     <ProjectReference Include="$(AppAnalysisPath)\idl\Microsoft.Diagnostics.AppAnalysis.vcxproj" />
-    <ProjectReference Include="$(RuntimeNativeExternalTestPath)\tools\customTypes\customTypes.vcxproj" />
+    <ProjectReference Include="$(RuntimeToolsCustomTypesPath)\customTypes.vcxproj" />
   </ItemGroup>
   <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\eng\xamlbuild\Microsoft.UI.Xaml.Build.targets" />
   <Import Project="$(RuntimeNativeExternalTestPath)\CustomTypesCompile.targets" />

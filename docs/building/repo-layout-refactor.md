@@ -72,7 +72,10 @@ references are isolated. `XmlValidation`, `MockDCompInjector`, `detours`, and
 the test `codegen` helper now live under `tests/runtime/tools`. The `codegen`
 command wrapper is co-located with that helper. The runtime solution keeps
 project references to the project-based tools, and `DetoursPath` centralizes
-the remaining detours import consumers.
+the remaining detours import consumers. The external tools custom types support
+project now lives under `tests/runtime/tools/customTypes`; projects consume it
+through `$(RuntimeToolsCustomTypesPath)` and generated includes through
+`$(RuntimeToolsCustomTypesObjPath)`.
 
 ## Runtime test packages
 
@@ -327,9 +330,8 @@ that consume its shared helper headers now reference them through
 `$(RuntimeNativeExternalTestPath)`.
 The Automation external test DLL moved there too; shared automation client
 headers are now exposed from the runtime native external test root.
-The tools external test DLL and its custom types support project moved there
-next, with compiler-debugging docs updated to point at the new custom types
-project path.
+The tools external test DLL moved there next, while its custom types support
+project now lives with the runtime test tools.
 The framework external test DLL moved there next, with layout design-note test
 references updated to point at the new runtime native external test location.
 The controls external test DLL and its custom types support project moved there

@@ -34,6 +34,7 @@
     <XamlDiagTapPath>$(RuntimeToolsPath)\xamldiagnostics\tap</XamlDiagTapPath>
     <CompilerTestPath>$(ProjectRoot)tests\compiler</CompilerTestPath>
     <RuntimeTestPath>$(ProjectRoot)tests\runtime</RuntimeTestPath>
+    <RuntimeToolsCustomTypesPath>$(RuntimeTestPath)\tools\customTypes</RuntimeToolsCustomTypesPath>
     <RuntimeEtwTestPath>$(RuntimeTestPath)\etw</RuntimeEtwTestPath>
     <XamlBindingTestPath>$(RuntimeTestPath)\xamlbinding</XamlBindingTestPath>
     <XamlDiagnosticsTestPath>$(RuntimeTestPath)\xamldiagnostics</XamlDiagnosticsTestPath>
@@ -122,6 +123,7 @@
 
     <RuntimeInfraTestObjPath>$(XamlBuildOutputRoot)tests\runtime\infra</RuntimeInfraTestObjPath>
     <RuntimeNativeExternalTestObjPath>$(XamlBuildOutputRoot)tests\runtime\native\external</RuntimeNativeExternalTestObjPath>
+    <RuntimeToolsCustomTypesObjPath>$(XamlBuildOutputRoot)tests\runtime\tools\customTypes</RuntimeToolsCustomTypesObjPath>
 
     <PrivateInfrastructureWin32HostingObjPath>$(RuntimeInfraTestObjPath)\Win32Hosting</PrivateInfrastructureWin32HostingObjPath>
   </PropertyGroup>
