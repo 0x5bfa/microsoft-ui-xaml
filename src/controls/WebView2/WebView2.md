@@ -35,7 +35,7 @@ Run using the option in the install dialog, or as you would any other installed 
 ### Run WebView2 sample in Visual Studio
 Not working at this time  
 ~~1. In Visual Studio, set *Startup Project* dropdown menu to *'MUXControlsTestApp~~  
-~~(test\MUXControlsTestApp\MUXControlsTestApp) (Universal Windows)'*~~  
+~~(test\apps\MUXControlsTestApp\MUXControlsTestApp) (Universal Windows)'*~~
 ~~2. Run on *Local Machine* with F5 or Control+F5~~  
     ~~F5 sometimes doesn't work due to missing environment variables. To work around this, temporarily change the~~  
     ~~incorrect paths in the error you see to hard-coded real paths.~~  

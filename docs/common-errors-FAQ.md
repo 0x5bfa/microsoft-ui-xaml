@@ -62,7 +62,7 @@ In the above case, file an issue so the internal feed can be updated for the req
 
 If you get warning related to version 8.0.x not found, 9.0.x was resolved instead along with the above error, similar to below:
 ```
- D:\xaml\controls\test\MUXControlsTestApp\MUXControlsTestApp.csproj : warning NU1603: MUXControlsTestApp depends on Microsoft.NET.ILLink.Tasks (>= 8.0.21) but Microsoft.NET.ILLink.Tasks 8.0.21 was not found.
+ D:\xaml\controls\test\apps\MUXControlsTestApp\MUXControlsTestApp.csproj : warning NU1603: MUXControlsTestApp depends on Microsoft.NET.ILLink.Tasks (>= 8.0.21) but Microsoft.NET.ILLink.Tasks 8.0.21 was not found.
  Microsoft.NET.ILLink.Tasks 9.0.4 was resolved instead.
 ```
 It can result to a version mismatch. Run a clean build again after the internal feed is updated for the required version.

@@ -121,7 +121,7 @@ $xml.Project.AppendChild($import);
 $xml.Save($testProject)
 
 # Add test page to MUXControlsTestApp.csproj
-$testAppProject = $muxControlsDir + "\test\MUXControlsTestApp\MUXControlsTestApp.csproj";
+$testAppProject = $muxControlsDir + "\test\apps\MUXControlsTestApp\MUXControlsTestApp.csproj";
 [xml]$xml = Get-Content $testAppProject
 $import = $xml.CreateElement("Import", $xml.Project.NamespaceURI);
 AddAttribute $xml $import "Project" "`$(MUXControlsSourceRoot)$controlName\TestUI\$($controlName)_TestUI.projitems"
@@ -131,7 +131,7 @@ $xml.Project.AppendChild($import);
 $xml.Save($testAppProject)
 
 # Add API test project
-$testAppProject = $muxControlsDir + "\test\MUXControlsTestApp\MUXControlsTestApp.csproj";
+$testAppProject = $muxControlsDir + "\test\apps\MUXControlsTestApp\MUXControlsTestApp.csproj";
 [xml]$xml = Get-Content $testAppProject
 $import = $xml.CreateElement("Import", $xml.Project.NamespaceURI);
 AddAttribute $xml $import "Project" "`$(MUXControlsSourceRoot)$controlName\APITests\$($controlName)_APITests.projitems"

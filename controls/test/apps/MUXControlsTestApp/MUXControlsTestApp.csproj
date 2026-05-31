@@ -182,8 +182,8 @@
   </ItemGroup>
 
   <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
-  <Import Project="..\build\RetargetCopyLocalFiles.targets" />
-  <Import Project="..\build\TestApp.targets" />
+  <Import Project="..\..\build\RetargetCopyLocalFiles.targets" />
+  <Import Project="..\..\build\TestApp.targets" />
 
   <!-- Filter old style pages before duplicate check -->
   <Target Name="FilterLegacyStylePages" BeforeTargets="CheckForDuplicateItems">
@@ -224,7 +224,7 @@
   <Import Project="$(MUXControlsSourceRoot)Interactions\ButtonInteraction\APITests\ButtonInteraction_APITests.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true' And $(UseInternalSDK) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)Interactions\SliderInteraction\APITests\SliderInteraction_APITests.projitems" Label="Shared" Condition="$(FeatureInteractionsEnabled) == 'true' And $(UseInternalSDK) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)CommonManaged\CommonManaged.projitems" Label="Shared" />
-  <Import Project="$(MSBuildThisFileDirectory)\..\TestAppUtils\TestAppUtils.projitems" Label="Shared" />
+  <Import Project="$(MSBuildThisFileDirectory)\..\..\TestAppUtils\TestAppUtils.projitems" Label="Shared" />
   <Import Project="$(MUXControlsSourceRoot)ColorPicker\TestUI\ColorPicker_TestUI.projitems" Label="Shared" Condition="$(FeatureColorPickerEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)CommandBarFlyout\TestUI\CommandBarFlyout_TestUI.projitems" Label="Shared" Condition="$(FeatureCommandBarFlyoutEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)CommonStyles\TestUI\CommonStyles_TestUI.projitems" Label="Shared" Condition="$(FeatureCommonStylesEnabled) == 'true'" />
