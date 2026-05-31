@@ -9,7 +9,7 @@
 
 ## Overview
 
-![Vertical slice of architecture of Flyout](../../images/control-flyout.png)
+![Vertical slice of architecture of Flyout](images/control-flyout.png)
 
 From a classical architectural point of view, every control is made up of three sections:
 1. syntax and type identification
