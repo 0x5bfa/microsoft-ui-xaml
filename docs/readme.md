@@ -12,6 +12,7 @@ Note that developer usage documentation can be found separately on docs.microsof
   - [WinUI Test System](#winui-test-system)
   - [Build System How-To](#build-system-how-to)
   - [Windows App SDK](#windows-app-sdk)
+  - [Documentation Contributions](#documentation-contributions)
 - [Design docs](#design-docs)
 
 ## Getting Started
@@ -32,6 +33,9 @@ For more detailed information on how to accomplish common tasks with the build s
 
 ### Windows App SDK
 See [Windows App SDK Overview](./publishing/winappsdk-overview.md) for an overview of WinUI 3 integration into the Windows App SDK.
+
+### Documentation Contributions
+See the [documentation style guide](./external/docs-style-guide.md) for Markdown conventions used in this repo.
 
 ## Design docs
 * [Build system](./building/build-system-design.md)

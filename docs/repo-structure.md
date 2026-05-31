@@ -71,7 +71,7 @@ Note that developer usage documentation can be found separately on docs.microsof
 
 ## /eng
 All build system and other engineering related files go in this directory.
-For more information on the build system, see the [build system design](build-system-design.md)
+For more information on the build system, see the [build system design](building/build-system-design.md)
 Ad hoc app build support lives under `/eng/adhoc`.
 Binplace build rules live under `/eng/binplace`.
 Compiler-related build infrastructure lives under `/eng/compiler`.
