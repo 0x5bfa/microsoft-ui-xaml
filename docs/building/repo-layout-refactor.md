@@ -40,10 +40,11 @@ The OSS fallback project that downloads a public compiler package now lives at
 than compiler source, and keeping it under `eng` avoids importing the
 compiler-local `Directory.Build.props`.
 
-Compiler-local developer tools should live under `src/compiler/Tools` instead
-of being nested inside product source or parser implementation folders. The
-BindingPath `PathVisualizer` tool now lives there alongside the other
-compiler-local tools.
+Compiler-local developer tools should live under `tools/compiler` instead of
+being nested inside product source or parser implementation folders. The
+BindingPath `PathVisualizer`, XAML compiler ETL viewer, compiler performance
+collection scripts, and compiler coverage instrumentation helper live there so
+`src/compiler` stays focused on compiler source, build tasks, and targets.
 
 ## Compiler test entry points
 
