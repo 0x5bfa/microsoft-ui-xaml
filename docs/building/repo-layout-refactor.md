@@ -51,8 +51,9 @@ Compiler-specific test entry points and support helpers now live under `tests/co
 `XamlCompilerTests.sln`, `runtests.cmd`, and `copynewmasters.cmd` moved there
 so the source tree can keep compiler implementation separate from compiler test
 orchestration. The `FixMasters` helper used by `copynewmasters.cmd` now lives
-under `tests/compiler/tools`. The compiler source solution references unit-test
-projects through `tests/compiler`.
+under `tests/compiler/tools`. The VcMeta hash validation helper also lives
+under `tests/compiler/tools` instead of the compiler source tools folder. The
+compiler source solution references unit-test projects through `tests/compiler`.
 
 ## Shared test infrastructure
 
@@ -734,7 +735,8 @@ when they need the runtime source root.
 
 ## Future candidates
 
-1. Move compiler test project assets into `tests/compiler` once they are
-   present in the checkout and their generation/update workflows are verified.
+1. Continue moving compiler regression project assets into `tests/compiler` as
+   they become present in the checkout and their generation/update workflows are
+   verified.
 2. Continue retiring legacy `src/runtime/xcp` references from documentation and
    comments as nearby files are touched.
