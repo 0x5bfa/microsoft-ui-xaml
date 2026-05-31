@@ -4,7 +4,7 @@
 // _ONECORETRANSFORMS_REMOVED_
 // In the past we had a special mode called "OneCoreTransforms" to help us support
 // Windows 10x.  We expect it to come back in some form when we support 10x gain.
-// Please see /design-notes/OneCoreTransforms.md for more information.
+// Please see /design-notes/runtime-core/OneCoreTransforms.md for more information.
 
 #include "precomp.h"
 

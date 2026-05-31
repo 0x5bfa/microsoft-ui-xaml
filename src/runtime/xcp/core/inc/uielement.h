@@ -522,7 +522,7 @@ public:
         _Outptr_ ITransformer** ppTransformer
         );
 
-    // See: /design-notes/OneCoreTransforms.md for more information about this function's coordinate space
+    // See: /design-notes/runtime-core/OneCoreTransforms.md for more information about this function's coordinate space
     _Check_return_ HRESULT TransformToRoot(
         _Outptr_ ITransformer** ppTransformer
         );
@@ -2454,7 +2454,7 @@ public:
         _Out_ XRECTF_RB* pBounds
         );
 
-    // See: /design-notes/OneCoreTransforms.md for more information about this function's coordinate space
+    // See: /design-notes/runtime-core/OneCoreTransforms.md for more information about this function's coordinate space
     _Check_return_ HRESULT GetGlobalBounds(_Out_ XRECTF_RB* pBounds);
 
     _Check_return_ HRESULT GetGlobalBounds(_Out_ XRECTF_RB* pBounds, const bool ignoreClipping);
@@ -2540,7 +2540,7 @@ public:
         _Out_ XRECTF_RB* pOuterRect
         );
 
-    // See: /design-notes/OneCoreTransforms.md for more information about this function's coordinate space
+    // See: /design-notes/runtime-core/OneCoreTransforms.md for more information about this function's coordinate space
     _Check_return_ HRESULT TransformToWorldSpace(
         _In_ const XRECTF_RB* localSpaceRect,
         _Out_ XRECTF_RB* worldSpaceRect,

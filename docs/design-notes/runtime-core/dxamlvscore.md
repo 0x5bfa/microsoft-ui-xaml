@@ -50,8 +50,8 @@ the two layers.
 ## Xaml Core
 
 The *Xaml core* - not to be confused with the Core *layer* in the Xaml code - is made up of 2 objects, each 
-corresponding to one of the layers: a [`DxamlCore`](../../src/runtime/xcp/dxaml/lib/DxamlCore.h) object at the Dxaml layer
-and a [`CCoreServices`](../../src/runtime/xcp/core/inc/corep.h) object at the Core layer. Together they make up a **Xaml
+corresponding to one of the layers: a [`DxamlCore`](../../../src/runtime/xcp/dxaml/lib/DxamlCore.h) object at the Dxaml layer
+and a [`CCoreServices`](../../../src/runtime/xcp/core/inc/corep.h) object at the Core layer. Together they make up a **Xaml
 instance**, which is one per-thread because WinUI is a single-threaded framework.
 
 ## Peer objects
@@ -61,7 +61,7 @@ type is made up of a `UIElement` in the Dxaml layer (which is exposed to public)
 (internal to Xaml). Internally, all Xaml types are children of the 
 [DependencyObject (DO)](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.dependencyobject?view=winui-3.0) 
 class at the Dxaml layer and `CDependencyObject` (CDO) at the Core layer. (More information on this can be found in 
-[Journey of a control](./control-overview.md).) These two objects are called *peers* of each other. A Dxaml object’s 
+[Journey of a control](../control-overview.md).) These two objects are called *peers* of each other. A Dxaml object’s
 peer is its Core object and vice versa. The two objects cannot talk directly. The flow of instruction is always Dxaml 
 layer &rarr; Core layer. A Core layer object cannot directly talk to Dxaml layer peer.
 
@@ -145,7 +145,7 @@ auto DxamlLayerObject = static_cast<barType*>(DO);
 ```
 
 `GetPeer()` takes a `CDependencyObject` and returns a `DependencyObject`, which then gets casted. One can use `ComPtr` 
-with it effortlessly ([WinUI Pointers](./pointers.md))
+with it effortlessly ([WinUI Pointers](../pointers.md))
 
 #### FxCallbacks
 
