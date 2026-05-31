@@ -11,7 +11,7 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/tools/controls/BuildTasks/">
-    <Project Path="../../../tools/controls/BuildTasks/CleanupMSBuildProcesses.csproj">
+    <Project Path="../../tools/controls/BuildTasks/CleanupMSBuildProcesses.csproj">
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
@@ -21,29 +21,29 @@
     </Project>
   </Folder>
   <Folder Name="/src/controls/dll/">
-    <Project Path="../../controls/dll/Microsoft.UI.Xaml.Controls.vcxproj">
+    <Project Path="../controls/dll/Microsoft.UI.Xaml.Controls.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/controls/idl/">
-    <Project Path="../../controls/idl/Microsoft.UI.Xaml.Controls.idl.vcxproj">
+    <Project Path="../controls/idl/Microsoft.UI.Xaml.Controls.idl.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/" />
   <Folder Name="/src/runtime/phone/" />
   <Folder Name="/src/runtime/phone/idl/">
-    <Project Path="../phone/idl/phone.vcxproj">
+    <Project Path="phone/idl/phone.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/phone/lib/">
-    <Project Path="../phone/lib/PhoneSignatureControls.vcxproj">
+    <Project Path="phone/lib/PhoneSignatureControls.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/">
-    <Project Path="../../../tests/runtime/infra/BinplaceTestDependencies.csproj">
+    <Project Path="../../tests/runtime/infra/BinplaceTestDependencies.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -55,21 +55,21 @@
   </Folder>
   <Folder Name="/tests/runtime/appanalysis/" />
   <Folder Name="/tests/runtime/appanalysis/lib/">
-    <Project Path="../../../tests/runtime/appanalysis/lib/AppAnalysis.RuleTester.vcxproj">
+    <Project Path="../../tests/runtime/appanalysis/lib/AppAnalysis.RuleTester.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/appanalysis/ruleSet/">
-    <Project Path="../../../tests/runtime/appanalysis/ruleSet/AppAnalysis.Test.TestRuleSet.vcxproj">
+    <Project Path="../../tests/runtime/appanalysis/ruleSet/AppAnalysis.Test.TestRuleSet.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/">
-    <Project Path="../../../tests/runtime/infra/taefhostapp/taefhostapp.vcxproj">
+    <Project Path="../../tests/runtime/infra/taefhostapp/taefhostapp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Deploy />
     </Project>
-    <Project Path="../../../tests/runtime/infra/taefhostappmanaged/TaefHostAppManaged.csproj">
+    <Project Path="../../tests/runtime/infra/taefhostappmanaged/TaefHostAppManaged.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
@@ -89,7 +89,7 @@
       <Deploy Solution="Debug|Any CPU" />
       <Deploy Solution="Debug|ARM64EC" />
     </Project>
-    <Project Path="../../../tests/runtime/infra/taefhostappnetcore/taefhostappnetcore.csproj">
+    <Project Path="../../tests/runtime/infra/taefhostappnetcore/taefhostappnetcore.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -100,7 +100,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/client/">
-    <Project Path="../../../tests/runtime/infra/client/cswinrt/Private.Infrastructure.CsWinRT.csproj">
+    <Project Path="../../tests/runtime/infra/client/cswinrt/Private.Infrastructure.CsWinRT.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -111,59 +111,59 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/client/dll/">
-    <Project Path="../../../tests/runtime/infra/client/dll/Private.Infrastructure.Client.vcxproj">
+    <Project Path="../../tests/runtime/infra/client/dll/Private.Infrastructure.Client.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/client/idl/">
-    <Project Path="../../../tests/runtime/infra/client/idl/Private.Infrastructure.vcxproj">
+    <Project Path="../../tests/runtime/infra/client/idl/Private.Infrastructure.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/client/lib/">
-    <Project Path="../../../tests/runtime/infra/client/lib/Private.Infrastructure.vcxproj">
+    <Project Path="../../tests/runtime/infra/client/lib/Private.Infrastructure.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/client/pch/">
-    <Project Path="../../../tests/runtime/infra/client/pch/Private.Infrastructure.Client.Precomp.vcxproj">
+    <Project Path="../../tests/runtime/infra/client/pch/Private.Infrastructure.Client.Precomp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/contract/">
-    <Project Path="../../../tests/runtime/infra/contract/contract.vcxproj">
+    <Project Path="../../tests/runtime/infra/contract/contract.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/invoker/">
-    <Project Path="../../../tests/runtime/infra/invoker/Invoker.vcxproj">
+    <Project Path="../../tests/runtime/infra/invoker/Invoker.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/logging/">
-    <Project Path="../../../tests/runtime/infra/logging/Private.Infrastructure.Logging.vcxproj">
+    <Project Path="../../tests/runtime/infra/logging/Private.Infrastructure.Logging.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/server/">
-    <Project Path="../../../tests/runtime/infra/server/Private.Infrastructure.Server.vcxproj">
+    <Project Path="../../tests/runtime/infra/server/Private.Infrastructure.Server.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/Win32Hosting/" />
   <Folder Name="/tests/runtime/infra/Win32Hosting/idl/">
-    <Project Path="../../../tests/runtime/infra/Win32Hosting/idl/Private.Infrastructure.Hosting.vcxproj">
+    <Project Path="../../tests/runtime/infra/Win32Hosting/idl/Private.Infrastructure.Hosting.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/Win32Hosting/src/">
-    <Project Path="../../../tests/runtime/infra/Win32Hosting/src/Microsoft.Toolkit.Win32.UI.XamlHost.csproj">
+    <Project Path="../../tests/runtime/infra/Win32Hosting/src/Microsoft.Toolkit.Win32.UI.XamlHost.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/Win32Hosting/WPF/" />
   <Folder Name="/tests/runtime/infra/Win32Hosting/WPF/HostingHelpers/">
-    <Project Path="../../../tests/runtime/infra/Win32Hosting/WPF/HostingHelpers/Private.Infrastructure.Hosting.HostingHelpers.csproj">
+    <Project Path="../../tests/runtime/infra/Win32Hosting/WPF/HostingHelpers/Private.Infrastructure.Hosting.HostingHelpers.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -174,7 +174,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/Win32Hosting/WPF/netcore/">
-    <Project Path="../../../tests/runtime/infra/Win32Hosting/WPF/netcore/Private.Infrastructure.Hosting.WPF.csproj">
+    <Project Path="../../tests/runtime/infra/Win32Hosting/WPF/netcore/Private.Infrastructure.Hosting.WPF.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -186,7 +186,7 @@
   </Folder>
   <Folder Name="/tests/runtime/managed/" />
   <Folder Name="/tests/runtime/managed/AccessKeys/">
-    <Project Path="../../../tests/runtime/managed/AccessKeys/Microsoft.UI.Xaml.Tests.Managed.AccessKeys.csproj">
+    <Project Path="../../tests/runtime/managed/AccessKeys/Microsoft.UI.Xaml.Tests.Managed.AccessKeys.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -197,7 +197,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/managed/animation/">
-    <Project Path="../../../tests/runtime/managed/animation/Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests.csproj">
+    <Project Path="../../tests/runtime/managed/animation/Microsoft.UI.Xaml.Tests.Managed.Animation.EasingFunctionBaseTests.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -208,7 +208,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/managed/common/">
-    <Project Path="../../../tests/runtime/managed/common/Microsoft.UI.Xaml.Tests.Managed.Common.csproj">
+    <Project Path="../../tests/runtime/managed/common/Microsoft.UI.Xaml.Tests.Managed.Common.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -219,7 +219,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/managed/controls/">
-    <Project Path="../../../tests/runtime/managed/controls/Microsoft.UI.Xaml.Tests.Managed.Controls.csproj">
+    <Project Path="../../tests/runtime/managed/controls/Microsoft.UI.Xaml.Tests.Managed.Controls.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -230,7 +230,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/managed/enterprise/">
-    <Project Path="../../../tests/runtime/managed/enterprise/Microsoft.UI.Xaml.Tests.Managed.Enterprise.Moco.csproj">
+    <Project Path="../../tests/runtime/managed/enterprise/Microsoft.UI.Xaml.Tests.Managed.Enterprise.Moco.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -241,7 +241,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/managed/foundation/">
-    <Project Path="../../../tests/runtime/managed/foundation/Microsoft.UI.Xaml.Tests.Managed.Foundation.csproj">
+    <Project Path="../../tests/runtime/managed/foundation/Microsoft.UI.Xaml.Tests.Managed.Foundation.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -252,7 +252,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/managed/framework/">
-    <Project Path="../../../tests/runtime/managed/framework/Microsoft.UI.Xaml.Tests.Managed.Framework.csproj">
+    <Project Path="../../tests/runtime/managed/framework/Microsoft.UI.Xaml.Tests.Managed.Framework.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -263,7 +263,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/managed/media/">
-    <Project Path="../../../tests/runtime/managed/media/Microsoft.UI.Xaml.Tests.Managed.Media.csproj">
+    <Project Path="../../tests/runtime/managed/media/Microsoft.UI.Xaml.Tests.Managed.Media.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -277,7 +277,7 @@
   </Folder>
   <Folder Name="/tests/runtime/managed/Win32/" />
   <Folder Name="/tests/runtime/managed/Win32/Common/">
-    <Project Path="../../../tests/runtime/managed/Win32/Common/Microsoft.UI.Xaml.Tests.Managed.Win32.Common.csproj">
+    <Project Path="../../tests/runtime/managed/Win32/Common/Microsoft.UI.Xaml.Tests.Managed.Win32.Common.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -288,7 +288,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/managed/Win32/WPF/">
-    <Project Path="../../../tests/runtime/managed/Win32/WPF/Microsoft.UI.Xaml.Tests.Managed.Win32.Hosting.csproj">
+    <Project Path="../../tests/runtime/managed/Win32/WPF/Microsoft.UI.Xaml.Tests.Managed.Win32.Hosting.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -301,110 +301,110 @@
   <Folder Name="/tests/runtime/native/" />
   <Folder Name="/tests/runtime/native/external/" />
   <Folder Name="/tests/runtime/native/external/activation/">
-    <Project Path="../../../tests/runtime/native/external/activation/Microsoft.UI.Xaml.Tests.External.Activation.vcxproj">
+    <Project Path="../../tests/runtime/native/external/activation/Microsoft.UI.Xaml.Tests.External.Activation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/adaptability/">
-    <Project Path="../../../tests/runtime/native/external/adaptability/Microsoft.UI.Xaml.Tests.External.Adaptability.vcxproj">
+    <Project Path="../../tests/runtime/native/external/adaptability/Microsoft.UI.Xaml.Tests.External.Adaptability.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/adaptability/customTypes/">
-    <Project Path="../../../tests/runtime/native/external/adaptability/customtypes/CustomTypes.vcxproj">
+    <Project Path="../../tests/runtime/native/external/adaptability/customtypes/CustomTypes.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/Automation/">
-    <Project Path="../../../tests/runtime/native/external/Automation/Microsoft.UI.Xaml.Tests.External.Automation.vcxproj">
+    <Project Path="../../tests/runtime/native/external/Automation/Microsoft.UI.Xaml.Tests.External.Automation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/controls/">
-    <Project Path="../../../tests/runtime/native/external/controls/Microsoft.UI.Xaml.Tests.External.Controls.vcxproj">
+    <Project Path="../../tests/runtime/native/external/controls/Microsoft.UI.Xaml.Tests.External.Controls.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/controls/customTypes/">
-    <Project Path="../../../tests/runtime/native/external/controls/customtypes/CustomTypes.vcxproj">
+    <Project Path="../../tests/runtime/native/external/controls/customtypes/CustomTypes.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/convergence/">
-    <Project Path="../../../tests/runtime/native/external/convergence/Microsoft.UI.Xaml.Tests.External.Convergence.vcxproj">
+    <Project Path="../../tests/runtime/native/external/convergence/Microsoft.UI.Xaml.Tests.External.Convergence.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/enterprise/">
-    <Project Path="../../../tests/runtime/native/external/enterprise/Microsoft.UI.Xaml.Tests.External.Enterprise.vcxproj">
+    <Project Path="../../tests/runtime/native/external/enterprise/Microsoft.UI.Xaml.Tests.External.Enterprise.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/foundation/">
-    <Project Path="../../../tests/runtime/native/external/foundation/Microsoft.UI.Xaml.Tests.External.Foundation.vcxproj">
+    <Project Path="../../tests/runtime/native/external/foundation/Microsoft.UI.Xaml.Tests.External.Foundation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Build Solution="*|ARM64EC" Project="false" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/foundation/customTypes/">
-    <Project Path="../../../tests/runtime/native/external/foundation/customTypes/CustomTypes.vcxproj">
+    <Project Path="../../tests/runtime/native/external/foundation/customTypes/CustomTypes.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/framework/">
-    <Project Path="../../../tests/runtime/native/external/framework/Microsoft.UI.Xaml.Tests.External.Framework.vcxproj">
+    <Project Path="../../tests/runtime/native/external/framework/Microsoft.UI.Xaml.Tests.External.Framework.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/infra/">
-    <Project Path="../../../tests/runtime/native/external/infra/Private.Native.External.Infrastructure.vcxproj">
+    <Project Path="../../tests/runtime/native/external/infra/Private.Native.External.Infrastructure.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/pch/">
-    <Project Path="../../../tests/runtime/native/external/pch/Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj">
+    <Project Path="../../tests/runtime/native/external/pch/Microsoft.UI.Xaml.Tests.External.Precomp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/quality/">
-    <Project Path="../../../tests/runtime/native/external/quality/Microsoft.UI.Xaml.Tests.External.Quality.vcxproj">
+    <Project Path="../../tests/runtime/native/external/quality/Microsoft.UI.Xaml.Tests.External.Quality.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/test/">
-    <Project Path="../../../tests/runtime/native/external/test/Microsoft.UI.Xaml.Tests.External.Test.vcxproj">
+    <Project Path="../../tests/runtime/native/external/test/Microsoft.UI.Xaml.Tests.External.Test.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/tools/external/">
-    <Project Path="../../../tests/runtime/tools/external/Microsoft.UI.Xaml.Tests.External.Tools.vcxproj">
+    <Project Path="../../tests/runtime/tools/external/Microsoft.UI.Xaml.Tests.External.Tools.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/tools/customTypes/">
-    <Project Path="../../../tests/runtime/tools/customTypes/customTypes.vcxproj">
+    <Project Path="../../tests/runtime/tools/customTypes/customTypes.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/external/Win32/">
-    <Project Path="../../../tests/runtime/native/external/Win32/Microsoft.UI.Xaml.Tests.External.Win32.vcxproj">
+    <Project Path="../../tests/runtime/native/external/Win32/Microsoft.UI.Xaml.Tests.External.Win32.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/" />
   <Folder Name="/tests/runtime/native/isolated/shared/">
-    <Project Path="../../../tests/runtime/native/isolated/shared/Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/shared/Microsoft.UI.Xaml.Tests.Isolated.Shared.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/tools/XbfGenerator/">
-    <Project Path="../../../tests/runtime/tools/XbfGenerator/Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator.vcxproj">
+    <Project Path="../../tests/runtime/tools/XbfGenerator/Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/packages/" />
   <Folder Name="/tests/runtime/packages/appx/">
-    <Project Path="../../../tests/runtime/packages/appx/packages.csproj">
+    <Project Path="../../tests/runtime/packages/appx/packages.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
@@ -415,12 +415,12 @@
   </Folder>
   <Folder Name="/tests/runtime/resources/" />
   <Folder Name="/tests/runtime/resources/masters/">
-    <Project Path="../../../tests/runtime/resources/masters/Private.Infrastructure.Resources.vcxproj">
+    <Project Path="../../tests/runtime/resources/masters/Private.Infrastructure.Resources.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/resources/res/">
-    <Project Path="../../../tests/runtime/resources/res/resources.csproj">
+    <Project Path="../../tests/runtime/resources/res/resources.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -431,7 +431,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/themes/">
-    <Project Path="../../../tests/runtime/themes/themes.csproj">
+    <Project Path="../../tests/runtime/themes/themes.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -443,7 +443,7 @@
   </Folder>
   <Folder Name="/tests/runtime/tools/" />
   <Folder Name="/tests/runtime/tools/codegen/">
-    <Project Path="../../../tests/runtime/tools/codegen/Codegen.csproj">
+    <Project Path="../../tests/runtime/tools/codegen/Codegen.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
       <Platform Solution="Debug_test|ARM64" Project="ARM64" />
@@ -453,13 +453,13 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/tools/MockDCompInjector/">
-    <Project Path="../../../tests/runtime/tools/MockDCompInjector/MockDCompInjector.vcxproj">
+    <Project Path="../../tests/runtime/tools/MockDCompInjector/MockDCompInjector.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/tools/XmlValidation/" />
   <Folder Name="/tests/runtime/tools/XmlValidation/UnitTests/">
-    <Project Path="../../../tests/runtime/tools/XmlValidation/UnitTests/UnitTests.csproj">
+    <Project Path="../../tests/runtime/tools/XmlValidation/UnitTests/UnitTests.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
       <Platform Solution="*|Win32" Project="Win32" />
@@ -471,7 +471,7 @@
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/tools/XmlValidation/XmlValidation/">
-    <Project Path="../../../tests/runtime/tools/XmlValidation/XmlValidation/XmlValidation.csproj">
+    <Project Path="../../tests/runtime/tools/XmlValidation/XmlValidation/XmlValidation.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
       <Platform Solution="*|Win32" Project="Win32" />
@@ -483,12 +483,12 @@
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/">
-    <Project Path="../xcp/hostpalplatmisc.vcxproj">
+    <Project Path="xcp/hostpalplatmisc.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/common/">
-    <Project Path="../xcp/common/common.vcxproj">
+    <Project Path="xcp/common/common.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
@@ -496,264 +496,264 @@
   <Folder Name="/src/runtime/xcp/components/AccessKeys/" />
   <Folder Name="/src/runtime/xcp/components/AccessKeys/AccessKey/" />
   <Folder Name="/src/runtime/xcp/components/AccessKeys/AccessKey/lib/">
-    <Project Path="../xcp/components/AccessKeys/AccessKey/lib/AccessKeys.AKAccessKey.vcxproj">
+    <Project Path="xcp/components/AccessKeys/AccessKey/lib/AccessKeys.AKAccessKey.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/accessKey/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/accessKey/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/accessKey/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/Export/" />
   <Folder Name="/src/runtime/xcp/components/AccessKeys/Export/lib/">
-    <Project Path="../xcp/components/AccessKeys/Export/lib/AccessKeys.AKExport.vcxproj">
+    <Project Path="xcp/components/AccessKeys/Export/lib/AccessKeys.AKExport.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/InputInterceptor/" />
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/inputInterceptor/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/inputInterceptor/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/inputInterceptor/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/KeyTips/" />
   <Folder Name="/src/runtime/xcp/components/AccessKeys/KeyTips/lib/">
-    <Project Path="../xcp/components/AccessKeys/KeyTips/lib/AccessKeys.KeyTips.vcxproj">
+    <Project Path="xcp/components/AccessKeys/KeyTips/lib/AccessKeys.KeyTips.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/keyTips/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/keyTips/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/keyTips/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/ModeContainer/" />
   <Folder Name="/src/runtime/xcp/components/AccessKeys/ModeContainer/lib/">
-    <Project Path="../xcp/components/AccessKeys/ModeContainer/lib/AccessKeys.AKModeContainer.vcxproj">
+    <Project Path="xcp/components/AccessKeys/ModeContainer/lib/AccessKeys.AKModeContainer.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/modeContainer/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/modeContainer/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/modeContainer/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/Owner/" />
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/owner/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/owner/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/owner/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/Parser/" />
   <Folder Name="/src/runtime/xcp/components/AccessKeys/Parser/lib/">
-    <Project Path="../xcp/components/AccessKeys/Parser/lib/AccessKeys.AKParser.vcxproj">
+    <Project Path="xcp/components/AccessKeys/Parser/lib/AccessKeys.AKParser.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/parser/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/parser/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/parser/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/Scope/" />
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/scope/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/scope/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKScope.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/scope/Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKScope.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/ScopeBuilder/" />
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/scopeBuilder/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/scopeBuilder/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeBuilder.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/scopeBuilder/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeBuilder.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/ScopeTree/" />
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/scopeTree/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/scopeTree/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeTree.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/scopeTree/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.ScopeTree.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/AccessKeys/TreeAnalyzer/" />
   <Folder Name="/tests/runtime/native/isolated/xaml/accessKeys/treeAnalyzer/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/accessKeys/treeAnalyzer/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/accessKeys/treeAnalyzer/Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/allocation/" />
   <Folder Name="/src/runtime/xcp/components/allocation/lib/">
-    <Project Path="../xcp/components/allocation/lib/Microsoft.UI.Xaml.Allocation.vcxproj">
+    <Project Path="xcp/components/allocation/lib/Microsoft.UI.Xaml.Allocation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/allocation/stubs/">
-    <Project Path="../../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Allocation.Stubs.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Allocation.Stubs.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/animation/" />
   <Folder Name="/src/runtime/xcp/components/animation/lib/">
-    <Project Path="../xcp/components/animation/lib/Microsoft.UI.Xaml.Animation.vcxproj">
+    <Project Path="xcp/components/animation/lib/Microsoft.UI.Xaml.Animation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/animation/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/animation/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/animation/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/associative/" />
   <Folder Name="/tests/runtime/native/isolated/foundation/associative/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/associative/Microsoft.UI.Xaml.Tests.Isolated.Associative.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/associative/Microsoft.UI.Xaml.Tests.Isolated.Associative.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/base/" />
   <Folder Name="/src/runtime/xcp/components/base/lib/">
-    <Project Path="../xcp/components/base/lib/Microsoft.UI.Xaml.Base.vcxproj">
+    <Project Path="xcp/components/base/lib/Microsoft.UI.Xaml.Base.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/base/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/base/Microsoft.UI.Xaml.Tests.Isolated.Base.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/base/Microsoft.UI.Xaml.Tests.Isolated.Base.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/brushes/" />
   <Folder Name="/src/runtime/xcp/components/brushes/lib/">
-    <Project Path="../xcp/components/brushes/lib/Microsoft.UI.Xaml.Brushes.vcxproj">
+    <Project Path="xcp/components/brushes/lib/Microsoft.UI.Xaml.Brushes.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/brushes/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/brushes/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/brushes/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/Collection/" />
   <Folder Name="/src/runtime/xcp/components/Collection/Lib/">
-    <Project Path="../xcp/components/Collection/Lib/Microsoft.UI.Xaml.Collection.vcxproj">
+    <Project Path="xcp/components/Collection/Lib/Microsoft.UI.Xaml.Collection.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/collection/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/collection/Microsoft.UI.Xaml.Tests.Isolated.Collection.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/collection/Microsoft.UI.Xaml.Tests.Isolated.Collection.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/colors/" />
   <Folder Name="/src/runtime/xcp/components/colors/lib/">
-    <Project Path="../xcp/components/colors/lib/Microsoft.UI.Xaml.Colors.vcxproj">
+    <Project Path="xcp/components/colors/lib/Microsoft.UI.Xaml.Colors.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/colors/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/colors/Microsoft.UI.Xaml.Tests.Isolated.Colors.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/colors/Microsoft.UI.Xaml.Tests.Isolated.Colors.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/com/" />
   <Folder Name="/src/runtime/xcp/components/com/lib/">
-    <Project Path="../xcp/components/com/lib/Microsoft.UI.Xaml.Com.vcxproj">
+    <Project Path="xcp/components/com/lib/Microsoft.UI.Xaml.Com.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/com/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/com/Microsoft.UI.Xaml.Tests.Isolated.Com.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/com/Microsoft.UI.Xaml.Tests.Isolated.Com.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/comptree/" />
   <Folder Name="/src/runtime/xcp/components/comptree/lib/">
-    <Project Path="../xcp/components/comptree/lib/Microsoft.UI.Xaml.CompTree.vcxproj">
+    <Project Path="xcp/components/comptree/lib/Microsoft.UI.Xaml.CompTree.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/comptree/unittests/" />
   <Folder Name="/src/runtime/xcp/components/ContentRoot/" />
   <Folder Name="/src/runtime/xcp/components/ContentRoot/lib/">
-    <Project Path="../xcp/components/ContentRoot/lib/Microsoft.UI.Xaml.ContentRoot.vcxproj">
+    <Project Path="xcp/components/ContentRoot/lib/Microsoft.UI.Xaml.ContentRoot.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/controls/" />
   <Folder Name="/src/runtime/xcp/components/controls/InputValidation/" />
   <Folder Name="/src/runtime/xcp/components/controls/InputValidation/lib/">
-    <Project Path="../xcp/components/controls/InputValidation/lib/Microsoft.UI.Xaml.Controls.InputValidation.vcxproj">
+    <Project Path="xcp/components/controls/InputValidation/lib/Microsoft.UI.Xaml.Controls.InputValidation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/controls/KeyDownUp/" />
   <Folder Name="/src/runtime/xcp/components/controls/KeyDownUp/lib/">
-    <Project Path="../xcp/components/controls/KeyDownUp/lib/Microsoft.UI.Xaml.Controls.KeyDownUp.vcxproj">
+    <Project Path="xcp/components/controls/KeyDownUp/lib/Microsoft.UI.Xaml.Controls.KeyDownUp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/criticalsection/" />
   <Folder Name="/src/runtime/xcp/components/criticalsection/lib/">
-    <Project Path="../xcp/components/criticalsection/lib/Microsoft.UI.Xaml.CriticalSection.vcxproj">
+    <Project Path="xcp/components/criticalsection/lib/Microsoft.UI.Xaml.CriticalSection.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/criticalsection/unittests/" />
   <Folder Name="/src/runtime/xcp/components/CValue/" />
   <Folder Name="/src/runtime/xcp/components/CValue/lib/">
-    <Project Path="../xcp/components/CValue/lib/Microsoft.UI.Xaml.CValue.vcxproj">
+    <Project Path="xcp/components/CValue/lib/Microsoft.UI.Xaml.CValue.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/framework/CValue/">
-    <Project Path="../../../tests/runtime/native/isolated/framework/CValue/Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/framework/CValue/Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/deferral/" />
   <Folder Name="/src/runtime/xcp/components/deferral/lib/">
-    <Project Path="../xcp/components/deferral/lib/Microsoft.UI.Xaml.Deferral.vcxproj">
+    <Project Path="xcp/components/deferral/lib/Microsoft.UI.Xaml.Deferral.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/framework/deferral/">
-    <Project Path="../../../tests/runtime/native/isolated/framework/deferral/Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/framework/deferral/Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/dependencyLocator/" />
   <Folder Name="/src/runtime/xcp/components/dependencyLocator/lib/">
-    <Project Path="../xcp/components/dependencyLocator/lib/Microsoft.UI.Xaml.DependencyLocator.vcxproj">
+    <Project Path="xcp/components/dependencyLocator/lib/Microsoft.UI.Xaml.DependencyLocator.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/framework/dependencyLocator/">
-    <Project Path="../../../tests/runtime/native/isolated/framework/dependencyLocator/Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/framework/dependencyLocator/Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/DependencyObject/" />
   <Folder Name="/src/runtime/xcp/components/DependencyObject/lib/">
-    <Project Path="../xcp/components/DependencyObject/lib/Microsoft.UI.Xaml.DependencyObject.vcxproj">
+    <Project Path="xcp/components/DependencyObject/lib/Microsoft.UI.Xaml.DependencyObject.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/DependencyObject/minlib/">
-    <Project Path="../xcp/components/DependencyObject/minlib/Microsoft.UI.Xaml.DependencyObjectMin.vcxproj">
+    <Project Path="xcp/components/DependencyObject/minlib/Microsoft.UI.Xaml.DependencyObjectMin.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/framework/dependencyObject/">
-    <Project Path="../../../tests/runtime/native/isolated/framework/dependencyObject/Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/framework/dependencyObject/Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/DesktopUtility/" />
   <Folder Name="/src/runtime/xcp/components/DesktopUtility/lib/">
-    <Project Path="../xcp/components/DesktopUtility/lib/Microsoft.UI.Xaml.DesktopUtility.vcxproj">
+    <Project Path="xcp/components/DesktopUtility/lib/Microsoft.UI.Xaml.DesktopUtility.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/diagnosticsInterop/" />
   <Folder Name="/src/runtime/xcp/components/diagnosticsInterop/lib/">
-    <Project Path="../xcp/components/diagnosticsInterop/lib/Microsoft.UI.Xaml.DiagnosticsInterop.vcxproj">
+    <Project Path="xcp/components/diagnosticsInterop/lib/Microsoft.UI.Xaml.DiagnosticsInterop.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
@@ -761,248 +761,248 @@
   <Folder Name="/src/runtime/xcp/components/downlevel/lib/" />
   <Folder Name="/src/runtime/xcp/components/elements/" />
   <Folder Name="/src/runtime/xcp/components/elements/lib/">
-    <Project Path="../xcp/components/elements/lib/Microsoft.UI.Xaml.Elements.vcxproj">
+    <Project Path="xcp/components/elements/lib/Microsoft.UI.Xaml.Elements.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/elements/sharedstubs/">
-    <Project Path="../../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/elements/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/elements/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Elements.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/elements/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Elements.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/eventArgs/" />
   <Folder Name="/src/runtime/xcp/components/eventArgs/lib/">
-    <Project Path="../xcp/components/eventArgs/lib/Microsoft.UI.Xaml.EventArgs.vcxproj">
+    <Project Path="xcp/components/eventArgs/lib/Microsoft.UI.Xaml.EventArgs.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/experimental/">
-    <Project Path="../xcp/components/experimental/Microsoft.UI.Xaml.Experimental.vcxproj">
+    <Project Path="xcp/components/experimental/Microsoft.UI.Xaml.Experimental.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/ExtMetadataProvider/" />
   <Folder Name="/src/runtime/xcp/components/ExtMetadataProvider/lib/">
-    <Project Path="../xcp/components/ExtMetadataProvider/lib/Microsoft.UI.Xaml.ExtMetadataProvider.vcxproj">
+    <Project Path="xcp/components/ExtMetadataProvider/lib/Microsoft.UI.Xaml.ExtMetadataProvider.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/ExtMetadataProvider/unittests/" />
   <Folder Name="/src/runtime/xcp/components/flyweight/" />
   <Folder Name="/src/runtime/xcp/components/flyweight/lib/">
-    <Project Path="../xcp/components/flyweight/lib/Microsoft.UI.Xaml.Flyweight.vcxproj">
+    <Project Path="xcp/components/flyweight/lib/Microsoft.UI.Xaml.Flyweight.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/flyweight/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/flyweight/Microsoft.UI.Xaml.Tests.Isolated.Flyweight.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/flyweight/Microsoft.UI.Xaml.Tests.Isolated.Flyweight.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/focus/" />
   <Folder Name="/src/runtime/xcp/components/focus/export/" />
   <Folder Name="/src/runtime/xcp/components/focus/export/lib/">
-    <Project Path="../xcp/components/focus/export/lib/Microsoft.UI.Xaml.Focus.Export.vcxproj">
+    <Project Path="xcp/components/focus/export/lib/Microsoft.UI.Xaml.Focus.Export.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/focus/FocusObserver/">
-    <Project Path="../xcp/components/focus/FocusObserver/Microsoft.UI.Xaml.Focus.FocusObserver.vcxproj">
+    <Project Path="xcp/components/focus/FocusObserver/Microsoft.UI.Xaml.Focus.FocusObserver.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/focus/FocusProperties/" />
   <Folder Name="/src/runtime/xcp/components/focus/FocusProperties/lib/">
-    <Project Path="../xcp/components/focus/FocusProperties/lib/Microsoft.UI.Xaml.Focus.FocusProperties.vcxproj">
+    <Project Path="xcp/components/focus/FocusProperties/lib/Microsoft.UI.Xaml.Focus.FocusProperties.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/focus/FocusSelection/" />
   <Folder Name="/src/runtime/xcp/components/focus/FocusSelection/lib/">
-    <Project Path="../xcp/components/focus/FocusSelection/lib/Microsoft.UI.Xaml.Focus.FocusSelection.vcxproj">
+    <Project Path="xcp/components/focus/FocusSelection/lib/Microsoft.UI.Xaml.Focus.FocusSelection.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/xaml/focus/focusSelection/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/focus/focusSelection/Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/focus/focusSelection/Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/focus/Movement/" />
   <Folder Name="/src/runtime/xcp/components/focus/Movement/lib/">
-    <Project Path="../xcp/components/focus/Movement/lib/Microsoft.UI.Xaml.Focus.FocusMovement.vcxproj">
+    <Project Path="xcp/components/focus/Movement/lib/Microsoft.UI.Xaml.Focus.FocusMovement.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/focus/XYFocus/" />
   <Folder Name="/src/runtime/xcp/components/focus/XYFocus/lib/">
-    <Project Path="../xcp/components/focus/XYFocus/lib/Microsoft.UI.Xaml.Focus.XYFocus.vcxproj">
+    <Project Path="xcp/components/focus/XYFocus/lib/Microsoft.UI.Xaml.Focus.XYFocus.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/xaml/focus/xyFocus/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/focus/xyFocus/Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/focus/xyFocus/Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/FocusRect/" />
   <Folder Name="/src/runtime/xcp/components/FocusRect/lib/">
-    <Project Path="../xcp/components/FocusRect/lib/Microsoft.UI.Xaml.FocusRect.vcxproj">
+    <Project Path="xcp/components/FocusRect/lib/Microsoft.UI.Xaml.FocusRect.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/gestures/" />
   <Folder Name="/src/runtime/xcp/components/gestures/export/">
-    <Project Path="../xcp/components/gestures/export/Microsoft.UI.Xaml.Gestures.Export.vcxproj">
+    <Project Path="xcp/components/gestures/export/Microsoft.UI.Xaml.Gestures.Export.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/gestures/lib/">
-    <Project Path="../xcp/components/gestures/lib/Microsoft.UI.Xaml.Gestures.vcxproj">
+    <Project Path="xcp/components/gestures/lib/Microsoft.UI.Xaml.Gestures.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/core/gestures/">
-    <Project Path="../../../tests/runtime/native/isolated/core/gestures/Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/core/gestures/Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/graphics/" />
   <Folder Name="/src/runtime/xcp/components/graphics/lib/">
-    <Project Path="../xcp/components/graphics/lib/Microsoft.UI.Xaml.GraphicsUtility.vcxproj">
+    <Project Path="xcp/components/graphics/lib/Microsoft.UI.Xaml.GraphicsUtility.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/graphics/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/graphics/Microsoft.UI.Xaml.Tests.Isolated.Graphics.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/graphics/Microsoft.UI.Xaml.Tests.Isolated.Graphics.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/imaging/" />
   <Folder Name="/src/runtime/xcp/components/imaging/lib/">
-    <Project Path="../xcp/components/imaging/lib/Microsoft.UI.Xaml.Media.Imaging.vcxproj">
+    <Project Path="xcp/components/imaging/lib/Microsoft.UI.Xaml.Media.Imaging.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/imaging/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/imaging/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/imaging/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/input/" />
   <Folder Name="/src/runtime/xcp/components/input/lib/">
-    <Project Path="../xcp/components/input/lib/Microsoft.UI.Xaml.Input.vcxproj">
+    <Project Path="xcp/components/input/lib/Microsoft.UI.Xaml.Input.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/core/input/">
-    <Project Path="../../../tests/runtime/native/isolated/core/input/Microsoft.UI.Xaml.Tests.Isolated.Core.Input.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/core/input/Microsoft.UI.Xaml.Tests.Isolated.Core.Input.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/inputpane/" />
   <Folder Name="/src/runtime/xcp/components/inputpane/lib/">
-    <Project Path="../xcp/components/inputpane/lib/Microsoft.UI.Xaml.InputPane.vcxproj">
+    <Project Path="xcp/components/inputpane/lib/Microsoft.UI.Xaml.InputPane.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/ItemIndexRangeHelper/" />
   <Folder Name="/src/runtime/xcp/components/ItemIndexRangeHelper/lib/">
-    <Project Path="../xcp/components/ItemIndexRangeHelper/lib/Microsoft.UI.Xaml.ItemIndexRangeHelper.vcxproj">
+    <Project Path="xcp/components/ItemIndexRangeHelper/lib/Microsoft.UI.Xaml.ItemIndexRangeHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/enterprise/itemIndexRangeHelper/">
-    <Project Path="../../../tests/runtime/native/isolated/enterprise/itemIndexRangeHelper/Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/enterprise/itemIndexRangeHelper/Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/KeyboardAccelerator/" />
   <Folder Name="/src/runtime/xcp/components/KeyboardAccelerator/lib/">
-    <Project Path="../xcp/components/KeyboardAccelerator/lib/Microsoft.UI.Xaml.KeyboardAcceleratorUtility.vcxproj">
+    <Project Path="xcp/components/KeyboardAccelerator/lib/Microsoft.UI.Xaml.KeyboardAcceleratorUtility.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/legacy/" />
   <Folder Name="/src/runtime/xcp/components/legacy/lib/">
-    <Project Path="../xcp/components/legacy/lib/Microsoft.UI.Xaml.Legacy.vcxproj">
+    <Project Path="xcp/components/legacy/lib/Microsoft.UI.Xaml.Legacy.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/legacy/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/legacy/Microsoft.UI.Xaml.Tests.Isolated.Legacy.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/legacy/Microsoft.UI.Xaml.Tests.Isolated.Legacy.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/lifetime/" />
   <Folder Name="/src/runtime/xcp/components/lifetime/lib/">
-    <Project Path="../xcp/components/lifetime/lib/Microsoft.UI.Xaml.Lifetime.vcxproj">
+    <Project Path="xcp/components/lifetime/lib/Microsoft.UI.Xaml.Lifetime.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/lifetime/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/lifetime/Microsoft.UI.Xaml.Tests.Isolated.Lifetime.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/lifetime/Microsoft.UI.Xaml.Tests.Isolated.Lifetime.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/livereorderhelper/" />
   <Folder Name="/src/runtime/xcp/components/livereorderhelper/lib/">
-    <Project Path="../xcp/components/livereorderhelper/lib/Microsoft.UI.Xaml.LiveReorderHelper.vcxproj">
+    <Project Path="xcp/components/livereorderhelper/lib/Microsoft.UI.Xaml.LiveReorderHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/controls/liveReorderHelper/">
-    <Project Path="../../../tests/runtime/native/isolated/controls/liveReorderHelper/Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/controls/liveReorderHelper/Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/math/" />
   <Folder Name="/src/runtime/xcp/components/math/lib/">
-    <Project Path="../xcp/components/math/lib/Microsoft.UI.Xaml.Math.vcxproj">
+    <Project Path="xcp/components/math/lib/Microsoft.UI.Xaml.Math.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/math/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/math/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Math.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/math/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Math.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/metadata/" />
   <Folder Name="/src/runtime/xcp/components/metadata/DynamicMetadataStorage/">
-    <Project Path="../xcp/components/metadata/DynamicMetadataStorage/Microsoft.UI.Xaml.DynamicMetadataStorage.vcxproj">
+    <Project Path="xcp/components/metadata/DynamicMetadataStorage/Microsoft.UI.Xaml.DynamicMetadataStorage.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/metadata/lib/">
-    <Project Path="../xcp/components/metadata/lib/Microsoft.UI.Xaml.Metadata.vcxproj">
+    <Project Path="xcp/components/metadata/lib/Microsoft.UI.Xaml.Metadata.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/metadata/mocks/">
-    <Project Path="../../../tests/runtime/native/isolated/shared/mocks/metadata/Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/shared/mocks/metadata/Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/metadata/unittests/" />
   <Folder Name="/src/runtime/xcp/components/moco/" />
   <Folder Name="/src/runtime/xcp/components/moco/lib/">
-    <Project Path="../xcp/components/moco/lib/Microsoft.UI.Xaml.Components.Moco.vcxproj">
+    <Project Path="xcp/components/moco/lib/Microsoft.UI.Xaml.Components.Moco.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/controls/moco/">
-    <Project Path="../../../tests/runtime/native/isolated/controls/moco/Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/controls/moco/Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/mrt/" />
   <Folder Name="/src/runtime/xcp/components/mrt/lib/">
-    <Project Path="../xcp/components/mrt/lib/Microsoft.UI.Xaml.Mrt.vcxproj">
+    <Project Path="xcp/components/mrt/lib/Microsoft.UI.Xaml.Mrt.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
@@ -1010,194 +1010,194 @@
   <Folder Name="/src/runtime/xcp/components/mrt/unittests/" />
   <Folder Name="/src/runtime/xcp/components/namescope/" />
   <Folder Name="/src/runtime/xcp/components/namescope/lib/">
-    <Project Path="../xcp/components/namescope/lib/Microsoft.UI.Xaml.NameScope.vcxproj">
+    <Project Path="xcp/components/namescope/lib/Microsoft.UI.Xaml.NameScope.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/offerableheap/" />
   <Folder Name="/src/runtime/xcp/components/offerableheap/lib/">
-    <Project Path="../xcp/components/offerableheap/lib/Microsoft.UI.Xaml.OfferableHeap.vcxproj">
+    <Project Path="xcp/components/offerableheap/lib/Microsoft.UI.Xaml.OfferableHeap.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/offerableheap/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/offerableheap/Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/offerableheap/Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/OneCoreTransforms/" />
   <Folder Name="/src/runtime/xcp/components/OneCoreTransforms/lib/">
-    <Project Path="../xcp/components/OneCoreTransforms/lib/Microsoft.UI.Xaml.OneCoreTransforms.vcxproj">
+    <Project Path="xcp/components/OneCoreTransforms/lib/Microsoft.UI.Xaml.OneCoreTransforms.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/parser/" />
   <Folder Name="/tests/runtime/native/isolated/framework/parser/">
-    <Project Path="../../../tests/runtime/native/isolated/framework/parser/Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/framework/parser/Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/pch/" />
   <Folder Name="/src/runtime/xcp/components/pch/prod/">
-    <Project Path="../xcp/components/pch/prod/Microsoft.UI.Xaml.Precomp.vcxproj">
+    <Project Path="xcp/components/pch/prod/Microsoft.UI.Xaml.Precomp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/pch/prodexcept/">
-    <Project Path="../xcp/components/pch/prodexcept/Microsoft.UI.Xaml.Precomp.vcxproj">
+    <Project Path="xcp/components/pch/prodexcept/Microsoft.UI.Xaml.Precomp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/pch/ut/">
-    <Project Path="../xcp/components/pch/ut/Microsoft.UI.Xaml.Precomp.vcxproj">
+    <Project Path="xcp/components/pch/ut/Microsoft.UI.Xaml.Precomp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/perf_guard/">
-    <Project Path="../xcp/components/perf_guard/Microsoft.UI.Xaml.PerfGuard.vcxproj">
+    <Project Path="xcp/components/perf_guard/Microsoft.UI.Xaml.PerfGuard.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/pivot/" />
   <Folder Name="/src/runtime/xcp/components/pivot/lib/">
-    <Project Path="../xcp/components/pivot/lib/Microsoft.UI.Xaml.Pivot.vcxproj">
+    <Project Path="xcp/components/pivot/lib/Microsoft.UI.Xaml.Pivot.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/controls/pivot/">
-    <Project Path="../../../tests/runtime/native/isolated/controls/pivot/Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/controls/pivot/Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/primitiveDependencyObjects/" />
   <Folder Name="/src/runtime/xcp/components/primitiveDependencyObjects/lib/">
-    <Project Path="../xcp/components/primitiveDependencyObjects/lib/Microsoft.UI.Xaml.PrimitiveDependencyObjects.vcxproj">
+    <Project Path="xcp/components/primitiveDependencyObjects/lib/Microsoft.UI.Xaml.PrimitiveDependencyObjects.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/qualifiers/" />
   <Folder Name="/src/runtime/xcp/components/qualifiers/lib/">
-    <Project Path="../xcp/components/qualifiers/lib/Microsoft.UI.Xaml.Qualifiers.vcxproj">
+    <Project Path="xcp/components/qualifiers/lib/Microsoft.UI.Xaml.Qualifiers.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/adaptability/qualifiers/">
-    <Project Path="../../../tests/runtime/native/isolated/adaptability/qualifiers/Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/adaptability/qualifiers/Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/relativepanel/" />
   <Folder Name="/src/runtime/xcp/components/relativepanel/lib/">
-    <Project Path="../xcp/components/relativepanel/lib/Microsoft.UI.Xaml.RelativePanel.vcxproj">
+    <Project Path="xcp/components/relativepanel/lib/Microsoft.UI.Xaml.RelativePanel.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/controls/relativePanel/">
-    <Project Path="../../../tests/runtime/native/isolated/controls/relativePanel/Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/controls/relativePanel/Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/resources/" />
   <Folder Name="/src/runtime/xcp/components/resources/lib/">
-    <Project Path="../xcp/components/resources/lib/Microsoft.UI.Xaml.XamlResources.vcxproj">
+    <Project Path="xcp/components/resources/lib/Microsoft.UI.Xaml.XamlResources.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/runtimeEnabledFeatures/" />
   <Folder Name="/src/runtime/xcp/components/runtimeEnabledFeatures/lib/">
-    <Project Path="../xcp/components/runtimeEnabledFeatures/lib/Microsoft.UI.Xaml.RuntimeEnabledFeatures.vcxproj">
+    <Project Path="xcp/components/runtimeEnabledFeatures/lib/Microsoft.UI.Xaml.RuntimeEnabledFeatures.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/framework/runtimeEnabledFeatures/">
-    <Project Path="../../../tests/runtime/native/isolated/framework/runtimeEnabledFeatures/Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/framework/runtimeEnabledFeatures/Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/SatelliteBase/" />
   <Folder Name="/src/runtime/xcp/components/SatelliteBase/lib/">
-    <Project Path="../xcp/components/SatelliteBase/lib/Microsoft.UI.Xaml.SatelliteBase.vcxproj">
+    <Project Path="xcp/components/SatelliteBase/lib/Microsoft.UI.Xaml.SatelliteBase.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/scaling/">
-    <Project Path="../xcp/components/scaling/Microsoft.UI.Xaml.Scaling.vcxproj">
+    <Project Path="xcp/components/scaling/Microsoft.UI.Xaml.Scaling.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/simple/" />
   <Folder Name="/src/runtime/xcp/components/simple/lib/">
-    <Project Path="../xcp/components/simple/lib/Microsoft.UI.Xaml.Framework.SimpleProperties.vcxproj">
+    <Project Path="xcp/components/simple/lib/Microsoft.UI.Xaml.Framework.SimpleProperties.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/framework/simple/">
-    <Project Path="../../../tests/runtime/native/isolated/framework/simple/Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/framework/simple/Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/staticpal/" />
   <Folder Name="/src/runtime/xcp/components/staticpal/lib/">
-    <Project Path="../xcp/components/staticpal/lib/Microsoft.UI.Xaml.StaticPal.vcxproj">
+    <Project Path="xcp/components/staticpal/lib/Microsoft.UI.Xaml.StaticPal.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/staticpal/mocks/" />
   <Folder Name="/src/runtime/xcp/components/style/" />
   <Folder Name="/src/runtime/xcp/components/style/lib/">
-    <Project Path="../xcp/components/style/lib/Microsoft.UI.Xaml.Style.vcxproj">
+    <Project Path="xcp/components/style/lib/Microsoft.UI.Xaml.Style.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/Switcher/" />
   <Folder Name="/src/runtime/xcp/components/Switcher/lib/" />
   <Folder Name="/src/runtime/xcp/components/Telemetry/">
-    <Project Path="../xcp/components/Telemetry/Microsoft.UI.Xaml.Instrumentation.vcxproj">
+    <Project Path="xcp/components/Telemetry/Microsoft.UI.Xaml.Instrumentation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/terminateProcessOnOOM/" />
   <Folder Name="/src/runtime/xcp/components/terminateProcessOnOOM/lib/">
-    <Project Path="../xcp/components/terminateProcessOnOOM/lib/Microsoft.UI.Xaml.TerminateProcessOnOOM.vcxproj">
+    <Project Path="xcp/components/terminateProcessOnOOM/lib/Microsoft.UI.Xaml.TerminateProcessOnOOM.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/text/" />
   <Folder Name="/src/runtime/xcp/components/text/lib/">
-    <Project Path="../xcp/components/text/lib/Microsoft.UI.Xaml.Text.vcxproj">
+    <Project Path="xcp/components/text/lib/Microsoft.UI.Xaml.Text.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/text/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/text/Microsoft.UI.Xaml.Tests.Isolated.Text.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/text/Microsoft.UI.Xaml.Tests.Isolated.Text.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/themeanimationshelper/" />
   <Folder Name="/src/runtime/xcp/components/themeanimationshelper/lib/">
-    <Project Path="../xcp/components/themeanimationshelper/lib/Microsoft.UI.Xaml.ThemeAnimationsHelper.vcxproj">
+    <Project Path="xcp/components/themeanimationshelper/lib/Microsoft.UI.Xaml.ThemeAnimationsHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/themeanimationshelper/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/themeanimationshelper/Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/themeanimationshelper/Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/theming/" />
   <Folder Name="/src/runtime/xcp/components/theming/lib/">
-    <Project Path="../xcp/components/theming/lib/Microsoft.UI.Xaml.Theming.vcxproj">
+    <Project Path="xcp/components/theming/lib/Microsoft.UI.Xaml.Theming.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/controls/theming/">
-    <Project Path="../../../tests/runtime/native/isolated/controls/theming/Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/controls/theming/Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/theminginterop/" />
   <Folder Name="/src/runtime/xcp/components/theminginterop/lib/">
-    <Project Path="../xcp/components/theminginterop/lib/Microsoft.UI.Xaml.ThemingInterop.vcxproj">
+    <Project Path="xcp/components/theminginterop/lib/Microsoft.UI.Xaml.ThemingInterop.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
@@ -1205,116 +1205,116 @@
   <Folder Name="/src/runtime/xcp/components/theminginterop/unittests/" />
   <Folder Name="/src/runtime/xcp/components/threading/" />
   <Folder Name="/src/runtime/xcp/components/threading/lib/">
-    <Project Path="../xcp/components/threading/lib/Microsoft.UI.Xaml.Threading.vcxproj">
+    <Project Path="xcp/components/threading/lib/Microsoft.UI.Xaml.Threading.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/threading/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/threading/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/threading/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/transforms/" />
   <Folder Name="/src/runtime/xcp/components/transforms/lib/">
-    <Project Path="../xcp/components/transforms/lib/Microsoft.UI.Xaml.Transforms.vcxproj">
+    <Project Path="xcp/components/transforms/lib/Microsoft.UI.Xaml.Transforms.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/transforms/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/transforms/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/transforms/Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/UIBridgeFocus/">
-    <Project Path="../xcp/components/UIBridgeFocus/Microsoft.UI.Xaml.UIBridgeFocus.vcxproj">
+    <Project Path="xcp/components/UIBridgeFocus/Microsoft.UI.Xaml.UIBridgeFocus.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/unittests/" />
   <Folder Name="/src/runtime/xcp/components/unittests/mocks/">
-    <Project Path="../../../tests/runtime/native/isolated/shared/mocks/ExternalTestMocks.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/shared/mocks/ExternalTestMocks.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/unittests/stubs/">
-    <Project Path="../../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Stubs.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/shared/stubs/Microsoft.UI.Xaml.Stubs.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/valueboxer/" />
   <Folder Name="/src/runtime/xcp/components/valueboxer/lib/">
-    <Project Path="../xcp/components/valueboxer/lib/Microsoft.UI.Xaml.ValueBoxer.vcxproj">
+    <Project Path="xcp/components/valueboxer/lib/Microsoft.UI.Xaml.ValueBoxer.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/framework/valueboxer/">
-    <Project Path="../../../tests/runtime/native/isolated/framework/valueboxer/Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/framework/valueboxer/Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/visualstateshelper/" />
   <Folder Name="/src/runtime/xcp/components/visualstateshelper/lib/">
-    <Project Path="../xcp/components/visualstateshelper/lib/Microsoft.UI.Xaml.VisualStatesHelper.vcxproj">
+    <Project Path="xcp/components/visualstateshelper/lib/Microsoft.UI.Xaml.VisualStatesHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/enterprise/visualStatesHelper/">
-    <Project Path="../../../tests/runtime/native/isolated/enterprise/visualStatesHelper/Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/enterprise/visualStatesHelper/Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/vsm/" />
   <Folder Name="/src/runtime/xcp/components/vsm/lib/">
-    <Project Path="../xcp/components/vsm/lib/Microsoft.UI.Xaml.VisualStateMachine.vcxproj">
+    <Project Path="xcp/components/vsm/lib/Microsoft.UI.Xaml.VisualStateMachine.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/WindowChrome/">
-    <Project Path="../xcp/components/WindowChrome/Microsoft.UI.Xaml.WindowChrome.vcxproj">
+    <Project Path="xcp/components/WindowChrome/Microsoft.UI.Xaml.WindowChrome.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/winuri/" />
   <Folder Name="/src/runtime/xcp/components/winuri/lib/">
-    <Project Path="../xcp/components/winuri/lib/winuri.vcxproj">
+    <Project Path="xcp/components/winuri/lib/winuri.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/framework/winuri/">
-    <Project Path="../../../tests/runtime/native/isolated/framework/winuri/Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/framework/winuri/Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/xamlDiagnostics/" />
   <Folder Name="/src/runtime/xcp/components/xamlDiagnostics/idl/">
-    <Project Path="../xcp/components/xamlDiagnostics/idl/xamlom.vcxproj">
+    <Project Path="xcp/components/xamlDiagnostics/idl/xamlom.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/xamlDiagnostics/lib/">
-    <Project Path="../xcp/components/xamlDiagnostics/lib/Microsoft.UI.Xaml.XamlDiagnostics.vcxproj">
+    <Project Path="xcp/components/xamlDiagnostics/lib/Microsoft.UI.Xaml.XamlDiagnostics.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/xaml/diagnostics/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/diagnostics/Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/diagnostics/Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/XboxUtility/" />
   <Folder Name="/src/runtime/xcp/components/XboxUtility/lib/">
-    <Project Path="../xcp/components/XboxUtility/lib/Microsoft.UI.Xaml.XboxUtility.vcxproj">
+    <Project Path="xcp/components/XboxUtility/lib/Microsoft.UI.Xaml.XboxUtility.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/components/xstring/" />
   <Folder Name="/src/runtime/xcp/components/xstring/lib/">
-    <Project Path="../xcp/components/xstring/lib/Microsoft.UI.Xaml.XString.vcxproj">
+    <Project Path="xcp/components/xstring/lib/Microsoft.UI.Xaml.XString.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/native/isolated/foundation/xstring/">
-    <Project Path="../../../tests/runtime/native/isolated/foundation/xstring/Microsoft.UI.Xaml.Tests.Isolated.Strings.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/foundation/xstring/Microsoft.UI.Xaml.Tests.Isolated.Strings.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
@@ -1322,114 +1322,114 @@
   <Folder Name="/src/runtime/xcp/control/common/" />
   <Folder Name="/src/runtime/xcp/control/common/shared/" />
   <Folder Name="/src/runtime/xcp/control/common/shared/sl/">
-    <Project Path="../xcp/control/common/shared/sl/controlBase.vcxproj">
+    <Project Path="xcp/control/common/shared/sl/controlBase.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/control/download/">
-    <Project Path="../xcp/control/download/download.vcxproj">
+    <Project Path="xcp/control/download/download.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/">
-    <Project Path="../xcp/core/xcpcore.vcxproj">
+    <Project Path="xcp/core/xcpcore.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/controls/" />
   <Folder Name="/src/runtime/generated/core/controls/">
-    <Project Path="../generated/core/controls/CoreControlsGenerated.vcxproj">
+    <Project Path="generated/core/controls/CoreControlsGenerated.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/core/" />
   <Folder Name="/src/runtime/xcp/core/core/elements/" />
   <Folder Name="/src/runtime/xcp/core/core/elements/lib/">
-    <Project Path="../xcp/core/core/elements/lib/elements.vcxproj">
+    <Project Path="xcp/core/core/elements/lib/elements.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/core/elements/lib2/">
-    <Project Path="../xcp/core/core/elements/lib2/elements2.vcxproj">
+    <Project Path="xcp/core/core/elements/lib2/elements2.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/core/elements/libexcept/">
-    <Project Path="../xcp/core/core/elements/libexcept/elements.except.vcxproj">
+    <Project Path="xcp/core/core/elements/libexcept/elements.except.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/core/elements/pch/">
-    <Project Path="../xcp/core/core/elements/pch/elements.pch.vcxproj">
+    <Project Path="xcp/core/core/elements/pch/elements.pch.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/core/elements/pchexcept/">
-    <Project Path="../xcp/core/core/elements/pchexcept/elements.except.pch.vcxproj">
+    <Project Path="xcp/core/core/elements/pchexcept/elements.except.pch.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/hw/">
-    <Project Path="../xcp/core/hw/hw.vcxproj">
+    <Project Path="xcp/core/hw/hw.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/input/">
-    <Project Path="../xcp/core/input/Input.vcxproj">
+    <Project Path="xcp/core/input/Input.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/metadata/" />
   <Folder Name="/src/runtime/xcp/core/metadata/dynamic/">
-    <Project Path="../xcp/core/metadata/dynamic/dynamicmetadata.vcxproj">
+    <Project Path="xcp/core/metadata/dynamic/dynamicmetadata.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/native/" />
   <Folder Name="/src/runtime/xcp/core/native/media/">
-    <Project Path="../xcp/core/native/media/mediaengine.vcxproj">
+    <Project Path="xcp/core/native/media/mediaengine.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/native/text/" />
   <Folder Name="/src/runtime/xcp/core/native/text/Common/">
-    <Project Path="../xcp/core/native/text/Common/Native.Text.Common.vcxproj">
+    <Project Path="xcp/core/native/text/Common/Native.Text.Common.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/native/text/Controls/">
-    <Project Path="../xcp/core/native/text/Controls/Native.Text.Controls.vcxproj">
+    <Project Path="xcp/core/native/text/Controls/Native.Text.Controls.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/Parser/" />
   <Folder Name="/src/runtime/xcp/core/Parser/core/">
-    <Project Path="../xcp/core/parser/core/Parser.Core.vcxproj">
+    <Project Path="xcp/core/parser/core/Parser.Core.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/Parser/pch/">
-    <Project Path="../xcp/core/parser/pch/Parser.pch.vcxproj">
+    <Project Path="xcp/core/parser/pch/Parser.pch.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/Parser/runtime/">
-    <Project Path="../xcp/core/parser/runtime/Parser.Runtime.vcxproj">
+    <Project Path="xcp/core/parser/runtime/Parser.Runtime.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/Parser/staticcore/">
-    <Project Path="../xcp/core/parser/staticcore/Parser.Core.Static.vcxproj">
+    <Project Path="xcp/core/parser/staticcore/Parser.Core.Static.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/Parser/staticpch/">
-    <Project Path="../xcp/core/parser/staticpch/Parser.pch.vcxproj">
+    <Project Path="xcp/core/parser/staticpch/Parser.pch.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/core/text/">
-    <Project Path="../xcp/core/text/coretext.vcxproj">
+    <Project Path="xcp/core/text/coretext.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
@@ -1437,127 +1437,127 @@
   <Folder Name="/src/runtime/xcp/dxaml/dllsrv/" />
   <Folder Name="/src/runtime/xcp/dxaml/dllsrv/exts/" />
   <Folder Name="/src/runtime/xcp/dxaml/dllsrv/exts/phone/">
-    <Project Path="../xcp/dxaml/dllsrv/exts/phone/Microsoft.UI.Xaml.Phone.vcxproj">
+    <Project Path="xcp/dxaml/dllsrv/exts/phone/Microsoft.UI.Xaml.Phone.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/dllsrv/winrt/" />
   <Folder Name="/src/runtime/xcp/dxaml/dllsrv/winrt/native/">
-    <Project Path="../xcp/dxaml/dllsrv/winrt/native/Microsoft.ui.xaml.vcxproj">
+    <Project Path="xcp/dxaml/dllsrv/winrt/native/Microsoft.ui.xaml.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/dllsrv/winrt/res/" />
   <Folder Name="/src/runtime/xcp/dxaml/dllsrv/winrt/res/19h1/">
-    <Project Path="../xcp/dxaml/dllsrv/winrt/res/19h1/Microsoft.ui.xaml.resources.19h1.vcxproj">
+    <Project Path="xcp/dxaml/dllsrv/winrt/res/19h1/Microsoft.ui.xaml.resources.19h1.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/dllsrv/winrt/res/common/">
-    <Project Path="../xcp/dxaml/dllsrv/winrt/res/common/Microsoft.ui.xaml.resources.common.vcxproj">
+    <Project Path="xcp/dxaml/dllsrv/winrt/res/common/Microsoft.ui.xaml.resources.common.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/idl/" />
   <Folder Name="/src/runtime/xcp/dxaml/idl/com/">
-    <Project Path="../xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj">
+    <Project Path="xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/idl/winrt/" />
   <Folder Name="/src/runtime/xcp/dxaml/idl/winrt/controls/">
-    <Project Path="../xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj">
+    <Project Path="xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/idl/winrt/core/">
-    <Project Path="../xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj">
+    <Project Path="xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/idl/winrt/main/">
-    <Project Path="../xcp/dxaml/idl/winrt/main/Microsoft.ui.xaml-main.vcxproj">
+    <Project Path="xcp/dxaml/idl/winrt/main/Microsoft.ui.xaml-main.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/idl/winrt/merged/">
-    <Project Path="../xcp/dxaml/idl/winrt/merged/Microsoft.UI.Xaml.vcxproj">
+    <Project Path="xcp/dxaml/idl/winrt/merged/Microsoft.UI.Xaml.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/idl/winrt/merged/private/">
-    <Project Path="../xcp/dxaml/idl/winrt/merged/private/Microsoft.UI.Xaml.vcxproj">
+    <Project Path="xcp/dxaml/idl/winrt/merged/private/Microsoft.UI.Xaml.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/" />
   <Folder Name="/tests/runtime/native/isolated/xaml/dxamlCore/">
-    <Project Path="../../../tests/runtime/native/isolated/xaml/dxamlCore/Microsoft.UI.Xaml.Tests.Isolated.winrtfoundation.DXamlCore.vcxproj">
+    <Project Path="../../tests/runtime/native/isolated/xaml/dxamlCore/Microsoft.UI.Xaml.Tests.Isolated.winrtfoundation.DXamlCore.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtautomation/">
-    <Project Path="../xcp/dxaml/lib/winrtautomation/wrtdxamlautomation.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtautomation/wrtdxamlautomation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtcontrols/">
-    <Project Path="../xcp/dxaml/lib/winrtcontrols/wrtdxamlcontrols.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtcontrols/wrtdxamlcontrols.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtcontrols2/">
-    <Project Path="../xcp/dxaml/lib/winrtcontrols2/wrtdxamlcontrols2.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtcontrols2/wrtdxamlcontrols2.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtcontrols3/">
-    <Project Path="../xcp/dxaml/lib/winrtcontrols3/wrtdxamlcontrols3.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtcontrols3/wrtdxamlcontrols3.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtexcept/">
-    <Project Path="../xcp/dxaml/lib/winrtexcept/wrtdxamlexceptions.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtexcept/wrtdxamlexceptions.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtfactories/">
-    <Project Path="../xcp/dxaml/lib/winrtfactories/wrtdxamlfactories.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtfactories/wrtdxamlfactories.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtfoundation/">
-    <Project Path="../xcp/dxaml/lib/winrtfoundation/wrtdxamlfoundation.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtfoundation/wrtdxamlfoundation.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtfoundation2/">
-    <Project Path="../xcp/dxaml/lib/winrtfoundation2/wrtdxamlfoundation2.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtfoundation2/wrtdxamlfoundation2.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtgeneratedclasses/">
-    <Project Path="../xcp/dxaml/lib/winrtgeneratedclasses/wrtdxamlgeneratedclasses.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtgeneratedclasses/wrtdxamlgeneratedclasses.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtpch/">
-    <Project Path="../xcp/dxaml/lib/winrtpch/wrtdxamlpch.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtpch/wrtdxamlpch.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/lib/winrtpchexcept/">
-    <Project Path="../xcp/dxaml/lib/winrtpchexcept/wrtdxamlpch.excep.vcxproj">
+    <Project Path="xcp/dxaml/lib/winrtpchexcept/wrtdxamlpch.excep.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/manifest/">
-    <Project Path="../xcp/dxaml/manifest/manifest.vcxproj">
+    <Project Path="xcp/dxaml/manifest/manifest.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/sounds/">
-    <Project Path="../xcp/dxaml/sounds/sounds.csproj">
+    <Project Path="xcp/dxaml/sounds/sounds.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -1569,7 +1569,7 @@
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/themes/" />
   <Folder Name="/src/runtime/xcp/dxaml/themes/autogen/">
-    <Project Path="../xcp/dxaml/themes/autogen/GenAllXbf.csproj">
+    <Project Path="xcp/dxaml/themes/autogen/GenAllXbf.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
@@ -1581,59 +1581,59 @@
   <Folder Name="/src/runtime/xcp/dxaml/tools/" />
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/" />
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/dll/">
-    <Project Path="../../../tools/runtime/AppAnalysis/dll/Microsoft.Diagnostics.AppAnalysis.vcxproj">
+    <Project Path="../../tools/runtime/AppAnalysis/dll/Microsoft.Diagnostics.AppAnalysis.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/idl/">
-    <Project Path="../../../tools/runtime/AppAnalysis/idl/Microsoft.Diagnostics.AppAnalysis.vcxproj">
+    <Project Path="../../tools/runtime/AppAnalysis/idl/Microsoft.Diagnostics.AppAnalysis.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/module/">
-    <Project Path="../../../tools/runtime/AppAnalysis/module/AppAnalysisModule.vcxproj">
+    <Project Path="../../tools/runtime/AppAnalysis/module/AppAnalysisModule.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/runtime/" />
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/runtime/common/">
-    <Project Path="../../../tools/runtime/AppAnalysis/runtime/common/AppAnalysisRuntimeCommon.vcxproj">
+    <Project Path="../../tools/runtime/AppAnalysis/runtime/common/AppAnalysisRuntimeCommon.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/runtime/framework/">
-    <Project Path="../../../tools/runtime/AppAnalysis/runtime/framework/AppAnalysisRuntimeFramework.vcxproj">
+    <Project Path="../../tools/runtime/AppAnalysis/runtime/framework/AppAnalysisRuntimeFramework.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/runtime/rules/">
-    <Project Path="../../../tools/runtime/AppAnalysis/runtime/rules/AppAnalysisRuntimeRules.vcxproj">
+    <Project Path="../../tools/runtime/AppAnalysis/runtime/rules/AppAnalysisRuntimeRules.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/sdkidl/">
-    <Project Path="../../../tools/runtime/AppAnalysis/sdkidl/AppAnalysis.vcxproj">
+    <Project Path="../../tools/runtime/AppAnalysis/sdkidl/AppAnalysis.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/tool/">
-    <Project Path="../../../tools/runtime/AppAnalysis/tool/AppAnalysisTool.vcxproj">
+    <Project Path="../../tools/runtime/AppAnalysis/tool/AppAnalysisTool.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/unittests/" />
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/unittests/engineTests/">
-    <Project Path="../../../tests/runtime/appanalysis/unittests/engineTests/Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests.vcxproj">
+    <Project Path="../../tests/runtime/appanalysis/unittests/engineTests/Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.EngineTests.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/unittests/pch/">
-    <Project Path="../../../tests/runtime/appanalysis/unittests/pch/AppAnalysis.Unittests.pch.vcxproj">
+    <Project Path="../../tests/runtime/appanalysis/unittests/pch/AppAnalysis.Unittests.pch.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/dxaml/tools/AppAnalysis/unittests/ruleTests/">
-    <Project Path="../../../tests/runtime/appanalysis/unittests/ruleTests/Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests.vcxproj">
+    <Project Path="../../tests/runtime/appanalysis/unittests/ruleTests/Microsoft.UI.Xaml.Tests.Isolated.Tools.AppAnalysis.RuleTests.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
@@ -1641,34 +1641,34 @@
   <Folder Name="/src/runtime/xcp/dxaml/tools/spylauncher/" />
   <Folder Name="/src/runtime/xcp/dxaml/tools/xamldiagnostics/" />
   <Folder Name="/src/runtime/xcp/dxaml/tools/xamldiagnostics/tap/">
-    <Project Path="../../../tools/runtime/xamldiagnostics/tap/XamlDiagnosticsTap.vcxproj">
+    <Project Path="../../tools/runtime/xamldiagnostics/tap/XamlDiagnosticsTap.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/pal/" />
   <Folder Name="/src/runtime/xcp/pal/debug/">
-    <Project Path="../xcp/pal/debug/PALDebug.vcxproj">
+    <Project Path="xcp/pal/debug/PALDebug.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/plat/" />
   <Folder Name="/src/runtime/xcp/plat/win/" />
   <Folder Name="/src/runtime/xcp/plat/win/browserdesktop/">
-    <Project Path="../xcp/plat/win/browserdesktop/platwinbrowserdesktop.vcxproj">
+    <Project Path="xcp/plat/win/browserdesktop/platwinbrowserdesktop.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/plat/win/desktop/">
-    <Project Path="../xcp/plat/win/desktop/platwindesktop.vcxproj">
+    <Project Path="xcp/plat/win/desktop/platwindesktop.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
-    <Project Path="../xcp/plat/win/etw/XamlETW.vcxproj">
+    <Project Path="xcp/plat/win/etw/XamlETW.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/tools/" />
   <Folder Name="/src/runtime/xcp/tools/DumpXbf/">
-    <Project Path="../../../tools/runtime/DumpXbf/DumpXbf.csproj">
+    <Project Path="../../tools/runtime/DumpXbf/DumpXbf.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
       <Platform Solution="Debug_test|ARM64" Project="ARM64" />
@@ -1681,13 +1681,13 @@
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/tools/GenXbfDLL/">
-    <Project Path="../../../tools/runtime/GenXbfDLL/GenXbf.vcxproj">
+    <Project Path="../../tools/runtime/GenXbfDLL/GenXbf.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/tools/XbfParser/" />
   <Folder Name="/src/runtime/xcp/tools/XbfParser/SampleXbfViewer/">
-    <Project Path="../../../tools/runtime/XbfParser/SampleXbfViewer/SampleXbfViewer.csproj">
+    <Project Path="../../tools/runtime/XbfParser/SampleXbfViewer/SampleXbfViewer.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
       <Platform Solution="Debug_test|ARM64" Project="ARM64" />
@@ -1700,50 +1700,50 @@
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/tools/XbfParser/WidgetSpinner/">
-    <Project Path="../../../tools/runtime/XbfParser/WidgetSpinner/WidgetSpinner.csproj">
+    <Project Path="../../tools/runtime/XbfParser/WidgetSpinner/WidgetSpinner.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/win/" />
   <Folder Name="/src/runtime/xcp/win/shared/" />
   <Folder Name="/src/runtime/xcp/win/shared/sl/">
-    <Project Path="../xcp/win/shared/sl/shared.vcxproj">
+    <Project Path="xcp/win/shared/sl/shared.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/runtime/xcp/win/UIUtils/" />
   <Folder Name="/src/runtime/xcp/win/UIUtils/winrt/">
-    <Project Path="../xcp/win/UIUtils/winrt/uiutils.vcxproj">
+    <Project Path="xcp/win/UIUtils/winrt/uiutils.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/eng/">
-    <Project Path="../../../eng/graph/augmentation/Microsoft.UI.Xaml/GraphAugmentation.csproj">
+    <Project Path="../../eng/graph/augmentation/Microsoft.UI.Xaml/GraphAugmentation.csproj">
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|ARM64EC" Project="ARM64EC" />
       <Platform Solution="*|Win32" Project="Win32" />
       <Platform Solution="*|x64" Project="x64" />
       <Platform Solution="*|x86" Project="x86" />
     </Project>
-    <Project Path="../../../eng/midl/gencompheadersandidl.vcxproj">
+    <Project Path="../../eng/midl/gencompheadersandidl.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
-    <Project Path="../../../eng/midl/genmrtheadersandidl.vcxproj">
+    <Project Path="../../eng/midl/genmrtheadersandidl.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/MergedWinMD/">
-    <Project Path="../../metadata/MergedWinMD/MergedWinMD.vcxproj">
+    <Project Path="../metadata/MergedWinMD/MergedWinMD.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/MergedWinMD/private/">
-    <Project Path="../../metadata/MergedWinMD/private/MergedWinMD.Private.vcxproj">
+    <Project Path="../metadata/MergedWinMD/private/MergedWinMD.Private.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/packaging/">
-    <Project Path="../../../eng/packaging/winui/Microsoft.WinUI.Packaging.csproj">
+    <Project Path="../../eng/packaging/winui/Microsoft.WinUI.Packaging.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
       <Platform Solution="*|Any CPU" Project="x64" />
       <Platform Solution="*|ARM64" Project="ARM64" />
@@ -1755,22 +1755,22 @@
   </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/projection/">
-    <Project Path="../../projection/Microsoft.WinUI.csproj">
+    <Project Path="../projection/Microsoft.WinUI.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/src/projection/private/">
-    <Project Path="../../projection/private/Microsoft.WinUI.Private.csproj">
+    <Project Path="../projection/private/Microsoft.WinUI.Private.csproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/ut-nohybrid/">
-    <Project Path="../xcp/components/pch/ut-nohybrid/Microsoft.UI.Xaml.Precomp.vcxproj">
+    <Project Path="xcp/components/pch/ut-nohybrid/Microsoft.UI.Xaml.Precomp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
   <Folder Name="/tests/runtime/infra/MockDComp/">
-    <Project Path="../../../tests/runtime/infra/MockDComp/MockDComp.vcxproj">
+    <Project Path="../../tests/runtime/infra/MockDComp/MockDComp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>

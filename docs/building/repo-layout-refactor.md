@@ -293,11 +293,12 @@ paths.
 ## Runtime solution entry point
 
 The main runtime solution now lives at
-`src/runtime/solutions/Microsoft.UI.Xaml.Runtime.slnx`. This keeps the runtime
-build entry point with the runtime-owned source slices that have already moved
+`src/runtime/Microsoft.UI.Xaml.Runtime.slnx`. This keeps the runtime build entry
+point directly with the runtime-owned source slices that have already moved
 under `src/runtime`, with project references now pointing at the relocated
 `src/runtime/xcp` tree. The explicit `Runtime` suffix keeps it distinct from
-the repo-root product-wide `Microsoft.UI.Xaml.slnx` entry point.
+the repo-root product-wide `Microsoft.UI.Xaml.slnx` entry point, while avoiding
+a separate solution-only folder.
 The runtime solution's virtual folders now mirror the refactored source and
 test layout as well, using `/src/runtime`, `/src/controls`, `/tools/controls`,
 and `/tests/runtime` instead of the legacy `/dxaml` and `/dxaml/test` names.
