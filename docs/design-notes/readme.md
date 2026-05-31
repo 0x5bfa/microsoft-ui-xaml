@@ -26,6 +26,7 @@ This is a collection of documentations which provide a high level design oriente
 * [ItemsRepeater overview](./collection-controls/ItemsRepeater-overview.md)
 * [ItemsView/ItemContainer overviews](./collection-controls/ItemsView-ItemContainer-overview.md)
 * [ListView/GridView overview](./collection-controls/ListView-GridView-overview.md)
+* [Hit Testing](./input/hit-testing.md)
 
 ### Coding resources
 
