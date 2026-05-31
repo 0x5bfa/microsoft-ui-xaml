@@ -5,7 +5,7 @@
 # version can be as precise as we need it to be (i.e. 16.8.0.45203), but we should
 # be as flexible as we can
 [version]$MSBuildVer = "16.9"
-$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
+$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..\..')).Path
 $vsconfigPath = "$repoRoot\.vsconfig_buildtools"
 
 # This URI corresponds to MSBuild 16.8. If this ever changes, change the MSBuildVer

@@ -220,9 +220,9 @@ When this skill is invoked:
 Before creating the test payload, the repo must be initialized and built (product + tests).
 
 **Invoke the `build` skill** to handle this. When delegating, request:
-- A **full repo build** (product + tests): `.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q /b`
+- A **full repo build** (product + tests): `.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q /b`
 - The `/b` flag is recommended for test-suite prep to avoid PCH memory exhaustion on limited-memory machines.
-- For a clean first-time build, use `/c` as well: `.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q /c /b`
+- For a clean first-time build, use `/c` as well: `.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q /c /b`
 
 The build skill handles init, flavor selection, troubleshooting (PCH errors, stale PCH, missing Spectre libs, etc.).
 
@@ -233,7 +233,7 @@ The build skill handles init, flavor selection, troubleshooting (PCH errors, sta
 The test payload aggregates all built test binaries, TAEF infrastructure, and dependencies into a single directory.
 
 ```powershell
-.\scripts\init\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform x64 -Configuration chk
+.\tools\setup\init\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform x64 -Configuration chk
 ```
 
 **Parameters:**
@@ -380,15 +380,15 @@ $flavor   = "${platform}${config}"   # e.g., x64chk, arm64chk
 
 # --- Step 1: Init ---
 Write-Host "=== Step 1: Initializing build environment ===" -ForegroundColor Cyan
-.\scripts\init\init.ps1
+.\tools\setup\init\init.ps1
 
 # --- Step 2: Build (clean, reduced parallelism) ---
 Write-Host "=== Step 2: Building repository (product + tests) ===" -ForegroundColor Cyan
-.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q /c /b
+.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q /c /b
 
 # --- Step 3: Create Test Payload ---
 Write-Host "=== Step 3: Creating test payload ===" -ForegroundColor Cyan
-.\scripts\init\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform $platform -Configuration $config -Clean
+.\tools\setup\init\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform $platform -Configuration $config -Clean
 
 # --- Step 4: Machine Setup ---
 Write-Host "=== Step 4: One-time machine setup ===" -ForegroundColor Cyan
@@ -696,11 +696,11 @@ For build-related issues (PCH virtual memory exhaustion, stale precompiled heade
 
 **Fix:** Ensure you ran a full build (not just `product` or `mux`):
 ```powershell
-.\scripts\init\initrun.ps1 .\tools\build\Build.cmd /q /b   # builds product + tests
+.\tools\setup\init\initrun.ps1 .\tools\build\Build.cmd /q /b   # builds product + tests
 ```
 Then recreate the payload:
 ```powershell
-.\scripts\init\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform x64 -Configuration chk -Clean
+.\tools\setup\init\initrun.ps1 powershell -ExecutionPolicy Bypass -File tests\infra\payload\tools\CreateTestPayload.ps1 -Platform x64 -Configuration chk -Clean
 ```
 
 ### Machine Setup Errors

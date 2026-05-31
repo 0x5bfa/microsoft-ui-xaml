@@ -7,8 +7,8 @@
 
 $dotnetInstallScript = "$env:TEMP\dotnet-install.ps1"
 
-$repoInstallDir  = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..\.dotnet")
-$versionPropsFileProject = ([xml](Get-Content -Raw "$PSScriptRoot\..\..\eng\versioning\Versions.props")).Project
+$repoInstallDir  = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..\..\.dotnet")
+$versionPropsFileProject = ([xml](Get-Content -Raw "$PSScriptRoot\..\..\..\eng\versioning\Versions.props")).Project
 #dotNetSdkChannel and dotNetSdkVNextChannel refer to the current Long Term Support and Standard Term Support versions of .NET, respectively. 
 $dotNetSdkChannel = $versionPropsFileProject.SelectSingleNode('//dotNetSdkChannel').InnerText
 $dotNetSdkVNextChannel  = $versionPropsFileProject.SelectSingleNode('//dotNetSdkVNextChannel').InnerText

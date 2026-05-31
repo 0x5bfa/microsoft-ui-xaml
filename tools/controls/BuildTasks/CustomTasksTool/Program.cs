@@ -326,7 +326,7 @@ namespace CustomTasksTool
         private static void TestRunPowershellScript()
         {
             RunPowershellScript test = new RunPowershellScript {
-                Path = $@"{projectRoot}\scripts\buildMockWinAppSdkPackage.ps1",
+                Path = $@"{projectRoot}\tools\packaging\UpdateMockWinAppSDKPackage\buildMockWinAppSdkPackage.ps1",
                 Parameters = $@"{projectRoot} x64 Debug 3.0.0-dev 999.0.0-mock {projectRoot}\BuildOutput\obj\{platform}{configuration}\packages\ -Fake"
             };
 

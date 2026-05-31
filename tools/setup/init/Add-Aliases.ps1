@@ -18,7 +18,7 @@ function global:tfgr { pushd $env:reporoot\tests\runtime\native\external\foundat
 function global:dxaml { pushd $env:reporoot\dxaml\$args }
 function global:xcp { pushd $env:XcpRoot\$args }
 function global:text { pushd $env:XcpRoot\core\native\text\Controls\$args }
-function global:scripts { pushd $env:reporoot\scripts\$args }
+function global:scripts { pushd $env:reporoot\tools\setup\init\$args }
 function global:idl { pushd $env:XcpRoot\dxaml\idl\winrt\$args }
 function global:elements { pushd $env:XcpRoot\core\core\elements\$args }
 function global:core { pushd $env:XcpRoot\core\$args }

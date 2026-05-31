@@ -7,7 +7,7 @@ if "%1"=="/?" goto :usage
 rem  This command file expects to be run from the same directory that contains it
 for %%I in ("%~dp0..\..") do set "_repoRoot=%%~fI"
 pushd "%_repoRoot%"
-set _initCmd=%_repoRoot%\scripts\init\init.cmd
+set _initCmd=%_repoRoot%\tools\setup\init\init.cmd
 set _packComponentCmd=%_repoRoot%\tools\packaging\pack.component.cmd
 
 set _targetProduct=
@@ -72,7 +72,7 @@ if "%1"=="/c" (
     set _quiet=1
     set _verbosity=/verbosity:quiet
 ) else if "%1" == "/i" (
-    rem Inline init: run scripts\init\init.cmd <flavor> /envcheck before building.
+    rem Inline init: run tools\setup\init\init.cmd <flavor> /envcheck before building.
     rem Allows building without a persistent shell session (e.g. from AI agents).
     set _initFlavor=%2
     shift
@@ -136,11 +136,11 @@ if not "%_initFlavor%" == "" (
         call "%_initCmd%" %_initFlavor% /envcheck /notitle
     )
     if ERRORLEVEL 1 (
-        echo ERROR: scripts\init\init.cmd %_initFlavor% /envcheck failed
+        echo ERROR: tools\setup\init\init.cmd %_initFlavor% /envcheck failed
         exit /b 1
     )
 ) else if "%EnvironmentInitialized%" == "" (
-    echo Please run scripts\init\init.cmd or use /i ^<flavor^> to initialize the build environment
+    echo Please run tools\setup\init\init.cmd or use /i ^<flavor^> to initialize the build environment
     exit /b 1
 )
 
@@ -388,7 +388,7 @@ echo.
 echo    Options:
 echo        /q              Quiet mode. Minimal output, only errors are shown. Useful for AI/automation.
 echo        /i [flavor]     Initialize build environment inline (e.g. /i amd64chk, /i arm64fre).
-echo                        Runs scripts\init\init.cmd with /envcheck so no restore is performed. Use when
+echo                        Runs tools\setup\init\init.cmd with /envcheck so no restore is performed. Use when
 echo                        the build environment has not been initialized in the current session.
 echo        /c              Deletes bin, obj, temp, and packaging directories before building.
 echo                        Kills all existing instances of msbuild.exe, so should not be run alongside another build

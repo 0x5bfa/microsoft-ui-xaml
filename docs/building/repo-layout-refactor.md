@@ -212,13 +212,13 @@ now matches their role as test assets rather than sample applications.
 ## Initialization scripts
 
 .NET SDK, runtime download, MSBuild install, and test certificate generation
-helpers now live under `scripts/init`. The checked-in post-init restore step
-lives there too, while `scripts/PostInit.ps1` remains available as a custom
-hook. Command prompt and PowerShell alias definitions are co-located there as
+helpers now live under `tools/setup/init`. The checked-in post-init restore step
+lives there too, while optional local init hooks are resolved from
+`tools/setup/custom`. Command prompt and PowerShell alias definitions are co-located there as
 initialization shell helpers. They are part of repository initialization rather
 than package construction, leaving the `build` folder focused on packaging
 inputs and build-time transforms. The command prompt init, PowerShell init, and
-initialized-command runner entry points also live under `scripts/init`; the
+initialized-command runner entry points also live under `tools/setup/init`; the
 root-level compatibility wrappers were removed so repo-local callers use the
 implementation paths directly.
 
@@ -643,11 +643,11 @@ The standalone debugger extension script now lives under
 `tools/debugging/dbgext`, grouped with other manually invoked repo tools.
 
 Clang-oriented developer helpers now live under `tools/clang`, with
-`scripts/init/init.cmd` adding that folder to PATH so the short command names
+`tools/setup/init/init.cmd` adding that folder to PATH so the short command names
 remain available in initialized shells.
 
 Build wrapper commands now live under `tools/build`, with
-`scripts/init/init.cmd` adding that folder to PATH so commands such as `msb`,
+`tools/setup/init/init.cmd` adding that folder to PATH so commands such as `msb`,
 `bz`, `bcz`, and `clean` remain available in initialized shells. The main repo build command implementation
 also lives there now. The root-level `Build.cmd` compatibility wrapper was
 removed; repo-local callers should use `tools/build/Build.cmd` directly.

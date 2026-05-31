@@ -11,7 +11,7 @@ if ($Verbosity -eq 'quiet') {
 }
 
 $scriptsDir = $PSScriptRoot
-$customScriptsDir = "$repoRoot\scripts\"
+$customScriptsDir = "$repoRoot\tools\setup\custom\"
 $preInitScript = "$customScriptsDir\PreInit.ps1"
 $preRestoreToolsScript = "$customScriptsDir\PreRestoreTools.ps1"
 $postInitScript = "$scriptsDir\PostInit.ps1"

@@ -22,7 +22,7 @@ else
     }
 }
 
-Write-Host "scripts\init\GenerateTestPfx.ps1: shouldGenerate=$($shouldGenerate)"
+Write-Host "tools\setup\init\GenerateTestPfx.ps1: shouldGenerate=$($shouldGenerate)"
 
 if($shouldGenerate)
 {

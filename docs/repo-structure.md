@@ -10,7 +10,6 @@
 - [/external](#external)
 - [/generated](#generated)
 - [/packaging](#packaging)
-- [/scripts](#scripts)
 - [/src](#src)
 - [/tests](#tests)
 
@@ -126,11 +125,6 @@ under `/packaging/licenses`. IntelliSense drop processing lives under
 `/packaging/intellisense`. Package build targets that update generated package
 props also live under `/packaging/build`. The local package test feed lives
 under `/packaging/package-store`.
-
-## /scripts
-This folder contains repository initialization and shared utility scripts.
-Initialization helpers and entry points live under `/scripts/init`; repo root
-compatibility wrappers have been removed so scripts stay grouped by purpose.
 
 ## /src
 This is where source code for repo-local tools and source components outside the
