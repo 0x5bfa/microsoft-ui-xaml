@@ -520,7 +520,8 @@ Windows SDK override props and targets now live under `eng/sdkconfig`, keeping
 early SDK package import configuration together.
 
 Common build configuration props and ARM64EC target overrides now live under
-`eng/configuration`, grouping platform/configuration defaults together.
+`eng/configuration`, grouping repo-wide defaults and platform/configuration
+defaults together.
 
 Build-output consumption props and targets now live under `eng/consumebinaries`,
 keeping the ad hoc/test app hooks for consuming built WinUI binaries together.
