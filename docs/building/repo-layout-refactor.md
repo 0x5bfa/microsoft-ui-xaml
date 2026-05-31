@@ -829,7 +829,7 @@ checked-in stable XBF index inputs and the `scripts/runcodegen.cmd` wrapper. The
 XamlDiagnostics TAP test DLL moved under `tools/runtime/xamldiagnostics/tap`,
 with external tool tests consuming it through `$(XamlDiagTapPath)`. The
 AppAnalysis runtime diagnostics toolchain moved under `tools/runtime/AppAnalysis`,
-with command scripts under its local `scripts` leaves and shared references
+with AppAnalysisTool command scripts under `tool/scripts` and shared references
 flowing through `$(AppAnalysisPath)` and `$(AppAnalysisObjPath)`. The Unicode
 classification data generator script now lives under
 `tools/runtime/TextClassification/scripts`, its binary input remains under
