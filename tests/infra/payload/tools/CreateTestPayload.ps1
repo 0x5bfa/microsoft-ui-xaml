@@ -241,7 +241,7 @@ if ($Mode -eq "ScenarioTestSuite")
         Publish-Item "$binpath\Samples\WinUIGallery.Desktop_Test\Dependencies\$redistPlatform\*.msix" "$outpath\Test\"
     }
 
-    Publish-Item "$repoRoot\tests\samples\scripts\*" "$outpath"
+    Publish-Item "$repoRoot\tests\samples\tools\*" "$outpath"
 }
 
 if ($Mode -eq "PGO")

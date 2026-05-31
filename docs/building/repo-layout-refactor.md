@@ -205,7 +205,7 @@ WinUI Gallery test-data generator lives under `tests/controls/tools`.
 
 ## Sample test automation
 
-Sample test orchestration scripts now live under `tests/samples/scripts`. The
+Sample test orchestration tools now live under `tests/samples/tools`. The
 test payload still publishes them to the payload root, but their source location
 now matches their role as test assets rather than sample applications.
 
