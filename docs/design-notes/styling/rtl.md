@@ -84,7 +84,7 @@ It will not have any effect on images or icons.
 
 > *Xaml note* : `XamlRoot.Content.FlowDirection` is source of truth for the customer to determine if Xaml content is in RTL mode.
 
-![Xaml app with UI mirrored : RTL mode](../images/RTL1.png =1024x)
+![Xaml app with UI mirrored : RTL mode](../../images/RTL1.png =1024x)
 
 
 ### Xaml workflow proposal (what xaml sees and does)

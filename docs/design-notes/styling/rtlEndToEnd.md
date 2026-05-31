@@ -144,7 +144,7 @@ The System menu also appears RTL when the layout direction is RTL for both color
 titleBar as well as fully customized titleBar which is consistent with Win32 titleBar. So, no
 changes are necessary here. 
 
-![](images\appWindow-color-customized-TitleBar.png)
+![](images/appwindow-color-customized-titlebar.png)
 
 ## 3. [XAML] Client area rendering and extend into titleBar behavior:
 
@@ -175,7 +175,7 @@ once #4 is done.
 
 ## 6. Configure RTL property without using Win32 APIs to modify the child HWND’s style:
 
-![](images\topLevelToPopup-flowdiagram.png)
+![](images/topLevelToPopup-flowdiagram.png)
 
 ```csharp
     LIFTED_EXPERIMENTAL 
