@@ -48,7 +48,7 @@ WinUI depends:
 
 WinUI uses a series of build tasks contained in a nuget package for doing a successful build. These are fetched during
 the `init` step. If a modification needs to be made to the build tasks, it needs to be published to nuget store before
-they can be consumed by WinUI compilation. Refer [here](../../controls/tools/BuildTasks/CustomTasks/README.md) for instructions to
+they can be consumed by WinUI compilation. Refer [here](../../tools/controls/BuildTasks/CustomTasks/README.md) for instructions to
 build custom build tasks.
 
 ## Diagnosing GenXbf.dll build failures

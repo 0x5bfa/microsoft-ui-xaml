@@ -661,70 +661,70 @@ The Visual Studio developer command prompt setup implementation lives there too,
 and initialization scripts now call `tools/setup/DevCmd.cmd` directly.
 
 Controls shared build support files live under `controls/build`, while the
-controls build command implementation now lives under `controls/tools/Build`.
+controls build command implementation now lives under `tools/controls/Build`.
 The root-level `controls/Build.cmd` wrapper was removed and solution items now
-point at `controls/tools/Build/Build.cmd`. Root-level controls props files that
+point at `tools/controls/Build/Build.cmd`. Root-level controls props files that
 are discovered by MSBuild remain as thin wrappers over their implementations in
 `controls/build`. The controls `Directory.Build.props` and
 `Directory.Build.targets` implementations also live in `controls/build`, while
 the root files remain as MSBuild auto-discovery wrappers.
 
 Controls build machine maintenance helpers now live under
-`controls/tools/BuildMachine`, keeping the queue/build-machine scripts grouped
+`tools/controls/BuildMachine`, keeping the queue/build-machine scripts grouped
 with their shared ADAL-backed helper module.
 
 Controls new-control scaffolding helpers now live under
-`controls/tools/ControlGeneration`, with reusable `NEWCONTROL` templates under
+`tools/controls/ControlGeneration`, with reusable `NEWCONTROL` templates under
 that folder's `Templates` directory.
 
-Controls release helper scripts now live under `controls/tools/Release`,
+Controls release helper scripts now live under `tools/controls/Release`,
 keeping the interactive release workflow next to its ADAL authentication helper.
 
 Controls resource generation helpers now live under
-`controls/tools/ResourceGeneration`, including system DLL resource generation,
+`tools/controls/ResourceGeneration`, including system DLL resource generation,
 visual verification update, final-release theme resource trimming scripts, and
 the baseline resources generator app.
 
-Controls developer shell helpers now live under `controls/tools/Shell`,
+Controls developer shell helpers now live under `tools/controls/Shell`,
 including the developer command prompt implementation, command aliases, and the
 PowerShell profile loaded by `ps.bat`. The root-level `controls/DevCmd.cmd`
 wrapper was removed; controls developers should use
-`controls/tools/Shell/DevCmd.cmd` directly.
+`tools/controls/Shell/DevCmd.cmd` directly.
 
-Controls shared command wrappers now live under `controls/tools/Common`,
+Controls shared command wrappers now live under `tools/controls/Common`,
 including the NuGet and PowerShell wrappers used by controls tooling scripts.
 
 Controls custom MSBuild task sources and their test harness now live under
-`controls/tools/BuildTasks`, with the task NuGet packaging scripts kept under
+`tools/controls/BuildTasks`, with the task NuGet packaging scripts kept under
 the moved `CustomTasks/NuSpecs` tree and the dedicated build-task solution
 co-located with those tools. The cleanup project that invokes the custom
 `KillMSBuild` task also lives in this folder with its runtime config. The
 shared inline MSBuild task target file is grouped here too.
 
-Controls packaging helpers now live under `controls/tools/Packaging`,
+Controls packaging helpers now live under `tools/controls/Packaging`,
 including the framework package AppX creation wrapper used after controls
 builds, package-generation restore config, local signing stub, and build-drop
 publishing helper.
 
 Controls source maintenance helpers now live under
-`controls/tools/SourceMaintenance`, including namespace update, vcxitems page
+`tools/controls/SourceMaintenance`, including namespace update, vcxitems page
 reference cleanup, and text template processing scripts.
 
 Controls packaged test app deployment helpers now live under
-`controls/tools/TestAppDeployment`. Build integration still copies
+`tools/controls/TestAppDeployment`. Build integration still copies
 `CreateAppxDirectory.msbuildproj` and `InstallAppFromLayout.ps1` into the test
 app output directory with their original filenames, preserving runtime install
 script discovery. Test app dependency extraction and AppX dependency XML
 generation scripts also live in this folder. The desktop test-app install
-wrapper lives there too, with its package payload references still resolving to
-the shared `controls/tools/Test` payload location.
+wrapper lives there too, with its package payload references resolving through
+the `tools/controls/TestAppDeployment` payload helpers.
 
-Controls test reporting helpers now live under `controls/tools/TestReporting`,
+Controls test reporting helpers now live under `tools/controls/TestReporting`,
 grouping the unreliable-test report creation and console output scripts away
-from the `controls/tools` root.
+from the `tools/controls` root.
 
 Controls XAML processing and WinUI 2 migration helpers now live under
-`controls/tools/XamlProcessing`, including the generic XAML merge script used
+`tools/controls/XamlProcessing`, including the generic XAML merge script used
 by the controls build.
 
 Controls test-app build helpers now live under `tests/controls/build`, keeping

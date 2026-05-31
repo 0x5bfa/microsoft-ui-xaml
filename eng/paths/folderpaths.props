@@ -52,6 +52,7 @@
     <MuxControlsPath>$(ProjectRoot)controls</MuxControlsPath>
     <MuxControlsIdlPath>$(ProjectRoot)src\controls\idl\</MuxControlsIdlPath>
     <MuxControlsTestPath>$(ProjectRoot)tests\controls\</MuxControlsTestPath>
+    <MuxControlsToolsPath>$(ProjectRoot)tools\controls\</MuxControlsToolsPath>
     <MergedWinMDProjectRoot>$(ProjectRoot)src\metadata\MergedWinMD\</MergedWinMDProjectRoot>
   </PropertyGroup>
 

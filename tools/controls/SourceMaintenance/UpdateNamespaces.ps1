@@ -7,12 +7,13 @@ else
     $repoRoot = [System.IO.Path]::GetFullPath("$PSScriptRoot\..\..\..")
 }
 
-$muxcRoot = [System.IO.Path]::Combine($repoRoot, "controls")
+$controlsSourceRoot = [System.IO.Path]::Combine($repoRoot, "src", "controls")
+$controlsTestRoot = [System.IO.Path]::Combine($repoRoot, "tests", "controls")
 
-$cppFiles = (Get-ChildItem "$muxcRoot\dev" -Filter "*.cpp" -Recurse -File) + (Get-ChildItem "$muxcRoot\test" -Filter "*.cpp" -Recurse -File)
-$hFiles = (Get-ChildItem "$muxcRoot\dev" -Filter "*.h" -Recurse -File) + (Get-ChildItem "$muxcRoot\test" -Filter "*.h" -Recurse -File)
-$idlFiles = (Get-ChildItem "$muxcRoot\dev" -Filter "*.idl" -Recurse -File) + (Get-ChildItem "$muxcRoot\test" -Filter "*.idl" -Recurse -File)
-$csFiles = (Get-ChildItem "$muxcRoot\dev" -Filter "*.cs" -Recurse -File) + (Get-ChildItem "$muxcRoot\test" -Filter "*.cs" -Recurse -File)
+$cppFiles = (Get-ChildItem $controlsSourceRoot -Filter "*.cpp" -Recurse -File) + (Get-ChildItem $controlsTestRoot -Filter "*.cpp" -Recurse -File)
+$hFiles = (Get-ChildItem $controlsSourceRoot -Filter "*.h" -Recurse -File) + (Get-ChildItem $controlsTestRoot -Filter "*.h" -Recurse -File)
+$idlFiles = (Get-ChildItem $controlsSourceRoot -Filter "*.idl" -Recurse -File) + (Get-ChildItem $controlsTestRoot -Filter "*.idl" -Recurse -File)
+$csFiles = (Get-ChildItem $controlsSourceRoot -Filter "*.cs" -Recurse -File) + (Get-ChildItem $controlsTestRoot -Filter "*.cs" -Recurse -File)
 
 foreach ($sourceFile in ($cppFiles + $hFiles + $idlFiles + $csFiles) | Sort-Object -Property @{Expression = {$_.Name}})
 {

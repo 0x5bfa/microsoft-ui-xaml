@@ -181,7 +181,7 @@
     <Content Include="$(XamlBuildOutputRoot)tests\controls\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.dll" />
   </ItemGroup>
 
-  <Import Project="$(MUXCProjectRoot)tools\BuildTasks\CustomInlineTasks.targets" />
+  <Import Project="$(MUXControlsToolsRoot)BuildTasks\CustomInlineTasks.targets" />
   <Import Project="..\..\build\RetargetCopyLocalFiles.targets" />
   <Import Project="..\..\build\TestApp.targets" />
 
@@ -199,7 +199,7 @@
   </Target>
 
   <Target Name="CustomAfterGenerateAppPackages" AfterTargets="_GenerateAppxPackage">
-    <RunPowershellScript Path="$(MUXCProjectRoot)tools\TestAppDeployment\ExtractPackageDependencies.ps1" Parameters="-sourceFile $(OutDir)\$(MSBuildProjectName).build.appxrecipe -platform $(PlatformName) -outputFile $(AppxPackageTestDir)$(AppxPackageName).dependencies.txt" FilesWritten="$(AppxPackageTestDir)$(AppxPackageName).dependencies.txt">
+    <RunPowershellScript Path="$(MUXControlsToolsRoot)TestAppDeployment\ExtractPackageDependencies.ps1" Parameters="-sourceFile $(OutDir)\$(MSBuildProjectName).build.appxrecipe -platform $(PlatformName) -outputFile $(AppxPackageTestDir)$(AppxPackageName).dependencies.txt" FilesWritten="$(AppxPackageTestDir)$(AppxPackageName).dependencies.txt">
       <Output TaskParameter="MSBuildProcessId" ItemName="MSBuildProcessIdsToKill"/>
     </RunPowershellScript>
   </Target>

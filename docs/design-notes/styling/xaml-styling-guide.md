@@ -678,8 +678,8 @@ To know what themeresource to use, refer to the [Token Mapper](https://www.figma
 
 WinUI controls live under the `controls` directory. These scripts help set-up scaffolding for a new blank 
 control in the repo:
-- [GenerateNewControlInProject.cmd](../../controls/tools/ControlGeneration/GenerateNewControlInProject.cmd)
-- [GenerateNewControlProject.cmd](../../controls/tools/ControlGeneration/GenerateNewControlProject.cmd)
+- [GenerateNewControlInProject.cmd](../../../tools/controls/ControlGeneration/GenerateNewControlInProject.cmd)
+- [GenerateNewControlProject.cmd](../../../tools/controls/ControlGeneration/GenerateNewControlProject.cmd)
 
 _Note: They are quite outdated, and as such a lot of set-up needs to be done manually after running these scripts._
 

@@ -1,5 +1,5 @@
 $nugetVersion = ([xml](Get-Content -Raw $PSScriptRoot\MUXCustomBuildTasks.nuspec)).package.metadata.version
-$projectRoot = Resolve-Path "$PSScriptRoot\..\..\..\.."
+$projectRoot = Resolve-Path "$PSScriptRoot\..\..\..\..\.."
 
 $packagesConfigReferences = @(
     "$projectRoot\eng\packages\packages.config",

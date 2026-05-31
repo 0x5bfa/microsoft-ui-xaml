@@ -66,7 +66,7 @@ if ($env:_BuildType)
     $BuildType = $env:_BuildType
 }
 
-$outDir = "$BuildOutputRoot\$BuildArch$BuildType\controls\tools\"
+$outDir = "$BuildOutputRoot\$BuildArch$BuildType\tools\controls\"
 [System.Collections.Generic.List[string]]$xamlFilesHandled = [System.Collections.Generic.List[string]]::new()
 
 Get-ChildItem "$repoRoot\src\controls" -Filter "*.vcxitems" -Recurse | ForEach-Object {
@@ -76,7 +76,7 @@ Get-ChildItem "$repoRoot\src\controls" -Filter "*.vcxitems" -Recurse | ForEach-O
     foreach ($xamlFile in $xamlFiles)
     {
         Write-Host "Merging $xamlFile..."
-        $winUI2XamlPath = "$($xamlFile.Directory.FullName.Replace("$repoRoot\controls", $WinUI2RepoRoot))\"
+        $winUI2XamlPath = "$($xamlFile.Directory.FullName.Replace("$repoRoot\src\controls", $WinUI2RepoRoot))\"
 
         if ($xamlFile.Name.Contains("themeresources"))
         {
