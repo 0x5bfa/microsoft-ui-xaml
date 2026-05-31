@@ -97,13 +97,13 @@ These are paths for Microsoft.UI.Xaml.Controls.
 ## ScrollPresenter
 
 - Product: \src\controls\ScrollPresenter
-- Test: \src\controls\ScrollPresenter\APITests & \tests\controls\interactiontests\ScrollPresenter
+- Test: \tests\controls\apitests\ScrollPresenter & \tests\controls\interactiontests\ScrollPresenter
 
 
 ## ScrollView
 
 - Product: \src\controls\ScrollView
-- Test: \src\controls\ScrollView\APITests & \tests\controls\interactiontests\ScrollView
+- Test: \tests\controls\apitests\ScrollView & \tests\controls\interactiontests\ScrollView
 
 
 # ScrollView XAML markup resources

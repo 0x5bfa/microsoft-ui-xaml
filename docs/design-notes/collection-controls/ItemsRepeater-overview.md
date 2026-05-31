@@ -99,7 +99,7 @@ and s_IsVerboseDebugOutputEnabled (for verbose) flags set to true.
 These are paths for Microsoft.UI.Xaml.Controls.
 
 - Product: \src\controls\Repeater
-- Test: \src\controls\Repeater\APITests & \tests\controls\interactiontests\Repeater
+- Test: \tests\controls\apitests\Repeater & \tests\controls\interactiontests\Repeater
 - MuxControlsTestApp test pages: \tests\controls\testui\Repeater
 
 
