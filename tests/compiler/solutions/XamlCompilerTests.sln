@@ -7,185 +7,185 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Regression Tests", "Regress
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BindTestbed", "BindTestbed", "{052B3BC4-869D-49CE-979B-FA0A2D666E2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindTestbedModel", "RegressionProjects\Features\CompiledBinding\BindTestbedModel\BindTestbedModel.csproj", "{0748B16E-2455-494B-9D33-0231960FF58A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindTestbedModel", "..\RegressionProjects\Features\CompiledBinding\BindTestbedModel\BindTestbedModel.csproj", "{0748B16E-2455-494B-9D33-0231960FF58A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCXModel", "RegressionProjects\Features\CompiledBinding\BindTestbedCXModel\BindTestbedCXModel.vcxproj", "{6EB67720-B6ED-486B-9BED-98A4C3696CEC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCXModel", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCXModel\BindTestbedCXModel.vcxproj", "{6EB67720-B6ED-486B-9BED-98A4C3696CEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindTestbedCS", "RegressionProjects\Features\CompiledBinding\BindTestbedCS\BindTestbedCS.csproj", "{FBF7AE18-C8C1-43CF-9473-614151B933A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindTestbedCS", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCS\BindTestbedCS.csproj", "{FBF7AE18-C8C1-43CF-9473-614151B933A0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6EB67720-B6ED-486B-9BED-98A4C3696CEC} = {6EB67720-B6ED-486B-9BED-98A4C3696CEC}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCX", "RegressionProjects\Features\CompiledBinding\BindTestbedCX\BindTestbedCX.vcxproj", "{0C50041D-0427-4969-BCE6-4C5A10A36DB6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCX", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCX\BindTestbedCX.vcxproj", "{0C50041D-0427-4969-BCE6-4C5A10A36DB6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{A06EA086-68AA-40FC-9BD2-ED8980BBD9E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCS", "RegressionProjects\Basic\CSharp\Simple\SimpleCS.csproj", "{C52C740E-9BF5-4AFD-BF8D-A142EB60B14F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCS", "..\RegressionProjects\Basic\CSharp\Simple\SimpleCS.csproj", "{C52C740E-9BF5-4AFD-BF8D-A142EB60B14F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleCX", "RegressionProjects\Basic\VC\Simple\Simple.vcxproj", "{35E8CE4A-A9CA-480E-A6C0-8C61376170CA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleCX", "..\RegressionProjects\Basic\VC\Simple\Simple.vcxproj", "{35E8CE4A-A9CA-480E-A6C0-8C61376170CA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventHandlingCX_968976", "RegressionProjects\Basic\VC\EventHandling_968976\EventHandling_968976.vcxproj", "{C47F609A-D2FB-49FC-8B85-78B1B54F5343}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventHandlingCX_968976", "..\RegressionProjects\Basic\VC\EventHandling_968976\EventHandling_968976.vcxproj", "{C47F609A-D2FB-49FC-8B85-78B1B54F5343}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{FE020E0B-1493-4F28-9E28-024000A25ADB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Old_Behaviors_SDK", "RegressionProjects\Basic\OldPlatformsReferences\VC_Old_Behaviors_SDK\VC_Exe\VC_Exe.vcxproj", "{963AA03B-DAE1-422B-82DE-CA45ED7F9CEF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Old_Behaviors_SDK", "..\RegressionProjects\Basic\OldPlatformsReferences\VC_Old_Behaviors_SDK\VC_Exe\VC_Exe.vcxproj", "{963AA03B-DAE1-422B-82DE-CA45ED7F9CEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExe", "RegressionProjects\Basic\References\CSharpExe\CSharpExe.csproj", "{F6DD84FA-F970-45D9-B8D9-628070A39D92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExe", "..\RegressionProjects\Basic\References\CSharpExe\CSharpExe.csproj", "{F6DD84FA-F970-45D9-B8D9-628070A39D92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLib", "RegressionProjects\Basic\References\CSharpLib\CSharpLib.csproj", "{0CF7CDC7-2C50-4281-93D6-8CEFF7087534}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLib", "..\RegressionProjects\Basic\References\CSharpLib\CSharpLib.csproj", "{0CF7CDC7-2C50-4281-93D6-8CEFF7087534}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWinrtComponent", "RegressionProjects\Basic\References\CSharpWinrtComponent\CSharpWinrtComponent.csproj", "{67EF82C8-21A5-411B-BB01-3A706AFFCEEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWinrtComponent", "..\RegressionProjects\Basic\References\CSharpWinrtComponent\CSharpWinrtComponent.csproj", "{67EF82C8-21A5-411B-BB01-3A706AFFCEEC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VCExe", "RegressionProjects\Basic\References\VCExe\VCExe.vcxproj", "{8705F877-B9FB-4CBC-9803-20A847120ECC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VCExe", "..\RegressionProjects\Basic\References\VCExe\VCExe.vcxproj", "{8705F877-B9FB-4CBC-9803-20A847120ECC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VCWinrtComponent", "RegressionProjects\Basic\References\VCWinrtComponent\VCWinrtComponent.vcxproj", "{E44D2AD9-5898-4AB3-8F03-BF174971B48C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VCWinrtComponent", "..\RegressionProjects\Basic\References\VCWinrtComponent\VCWinrtComponent.vcxproj", "{E44D2AD9-5898-4AB3-8F03-BF174971B48C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindPhasingTestBedCpp", "RegressionProjects\Features\BindPhasingTestBedCpp\BindPhasingTestBedCpp\BindPhasingTestBedCpp.vcxproj", "{F686D0A2-5D43-43A7-8E76-A62908FD4AEA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindPhasingTestBedCpp", "..\RegressionProjects\Features\BindPhasingTestBedCpp\BindPhasingTestBedCpp\BindPhasingTestBedCpp.vcxproj", "{F686D0A2-5D43-43A7-8E76-A62908FD4AEA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeferLoadStrategy", "DeferLoadStrategy", "{BF2C0FFE-0873-40A1-8F83-DF9115803892}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "RegressionProjects\Features\DeferLoadStrategy\CSharp\CSharp.csproj", "{39151802-23CB-4CB2-8409-383F4BDF4369}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "..\RegressionProjects\Features\DeferLoadStrategy\CSharp\CSharp.csproj", "{39151802-23CB-4CB2-8409-383F4BDF4369}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VC", "RegressionProjects\Features\DeferLoadStrategy\VC\VC.vcxproj", "{7974C35F-CC66-40B0-8413-C70BB70F2F6B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VC", "..\RegressionProjects\Features\DeferLoadStrategy\VC\VC.vcxproj", "{7974C35F-CC66-40B0-8413-C70BB70F2F6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReduceProviderLoading", "ReduceProviderLoading", "{54978541-9E93-47A0-8123-913BA710CDB5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsumerCpp", "RegressionProjects\Features\ReduceProviderLoading\ConsumerProvider\ConsumerCpp\ConsumerCpp.vcxproj", "{5019C58E-E658-4C44-B346-F12E4CB463BB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsumerCpp", "..\RegressionProjects\Features\ReduceProviderLoading\ConsumerProvider\ConsumerCpp\ConsumerCpp.vcxproj", "{5019C58E-E658-4C44-B346-F12E4CB463BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerCs", "RegressionProjects\Features\ReduceProviderLoading\ConsumerProvider\ConsumerCs\ConsumerCs.csproj", "{01252924-2A45-47A5-8404-740BD3ABD71D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerCs", "..\RegressionProjects\Features\ReduceProviderLoading\ConsumerProvider\ConsumerCs\ConsumerCs.csproj", "{01252924-2A45-47A5-8404-740BD3ABD71D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProviderCpp", "RegressionProjects\Features\ReduceProviderLoading\ConsumerProvider\ProviderCpp\ProviderCpp.vcxproj", "{2F37EBFC-5E76-4882-83FA-0F58519009BD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProviderCpp", "..\RegressionProjects\Features\ReduceProviderLoading\ConsumerProvider\ProviderCpp\ProviderCpp.vcxproj", "{2F37EBFC-5E76-4882-83FA-0F58519009BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderCs", "RegressionProjects\Features\ReduceProviderLoading\ConsumerProvider\ProviderCs\ProviderCs.csproj", "{B86D196A-7FC3-491A-A5EE-9194E3BA447B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderCs", "..\RegressionProjects\Features\ReduceProviderLoading\ConsumerProvider\ProviderCs\ProviderCs.csproj", "{B86D196A-7FC3-491A-A5EE-9194E3BA447B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MultipleViewsTestbed", "MultipleViewsTestbed", "{EAC7E883-4C58-457A-AB8D-C99FA8B5CD51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleViewsTestbedCS", "RegressionProjects\Features\MultiXamlFiles\MultipleViewsTestbed\MultipleViewsTestbedCS.csproj", "{1FAA19BF-436E-43CD-84F9-EF6DA16D674C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleViewsTestbedCS", "..\RegressionProjects\Features\MultiXamlFiles\MultipleViewsTestbed\MultipleViewsTestbedCS.csproj", "{1FAA19BF-436E-43CD-84F9-EF6DA16D674C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultipleViewsTestbedCPP", "RegressionProjects\Features\MultiXamlFiles\MultipleViewsTestbedCPP\MultipleViewsTestbedCPP.vcxproj", "{5CF29EAB-1436-492D-B838-47DA4E2A0C58}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultipleViewsTestbedCPP", "..\RegressionProjects\Features\MultiXamlFiles\MultipleViewsTestbedCPP\MultipleViewsTestbedCPP.vcxproj", "{5CF29EAB-1436-492D-B838-47DA4E2A0C58}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conditionals", "Conditionals", "{76832FAE-E192-4104-B4FA-F6B33080FC9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalControls", "RegressionProjects\Features\Conditionals\ConditionalControls\ConditionalControls.csproj", "{1B3D74A7-0500-4FAF-97FC-F7622DDB0F89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalControls", "..\RegressionProjects\Features\Conditionals\ConditionalControls\ConditionalControls.csproj", "{1B3D74A7-0500-4FAF-97FC-F7622DDB0F89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalsCS", "RegressionProjects\Features\Conditionals\ConditionalsCS\ConditionalsCS.csproj", "{A40ED4B3-E7F5-4741-93C3-83B98A03942E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalsCS", "..\RegressionProjects\Features\Conditionals\ConditionalsCS\ConditionalsCS.csproj", "{A40ED4B3-E7F5-4741-93C3-83B98A03942E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConditionalsCX", "RegressionProjects\Features\Conditionals\ConditionalsCX\ConditionalsCX.vcxproj", "{54E3AF05-2C9D-4C8F-B574-61AB18F349D4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConditionalsCX", "..\RegressionProjects\Features\Conditionals\ConditionalsCX\ConditionalsCX.vcxproj", "{54E3AF05-2C9D-4C8F-B574-61AB18F349D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalsModel", "RegressionProjects\Features\Conditionals\ConditionalsModel\ConditionalsModel.csproj", "{F692FC21-3DCB-45FF-8C15-EEB55B9128AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalsModel", "..\RegressionProjects\Features\Conditionals\ConditionalsModel\ConditionalsModel.csproj", "{F692FC21-3DCB-45FF-8C15-EEB55B9128AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BindTestbed Backcompat", "BindTestbed Backcompat", "{8E13A4A4-B28D-4429-B024-7788F3DB1D40}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RS1", "RS1", "{5F56FBD0-D3B3-4BD1-A3D8-B580F1D1C90F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindTestbedCS_RS1", "RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedCS\BindTestbedCS_RS1.csproj", "{4C6923F1-B50E-45C4-90DC-0B0347683E0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindTestbedCS_RS1", "..\RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedCS\BindTestbedCS_RS1.csproj", "{4C6923F1-B50E-45C4-90DC-0B0347683E0A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{57834594-5CE8-44D7-AFF3-75117C0A99E9} = {57834594-5CE8-44D7-AFF3-75117C0A99E9}
 		{08294AFD-B102-4E20-95E9-79AFB76ED4E7} = {08294AFD-B102-4E20-95E9-79AFB76ED4E7}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindTestbedModel_RS1", "RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedModel\BindTestbedModel_RS1.csproj", "{57834594-5CE8-44D7-AFF3-75117C0A99E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindTestbedModel_RS1", "..\RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedModel\BindTestbedModel_RS1.csproj", "{57834594-5CE8-44D7-AFF3-75117C0A99E9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCXIncremental", "RegressionProjects\Features\CompiledBinding\BindTestbedCX\BindTestbedCXIncremental.vcxproj", "{5D17902C-AF47-499B-8A4C-E6DF327B8E98}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCXIncremental", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCX\BindTestbedCXIncremental.vcxproj", "{5D17902C-AF47-499B-8A4C-E6DF327B8E98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupExtensionsComponents", "RegressionProjects\Features\MarkupExtensions\MarkupExtensionsComponents\MarkupExtensionsComponents.csproj", "{734A489C-C169-46AE-8E96-2F7EEE247C5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupExtensionsComponents", "..\RegressionProjects\Features\MarkupExtensions\MarkupExtensionsComponents\MarkupExtensionsComponents.csproj", "{734A489C-C169-46AE-8E96-2F7EEE247C5F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Markup Extensions", "Markup Extensions", "{F973C1D3-4AC3-4F2C-9E85-9B7B36E10F14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupExtensionsCS", "RegressionProjects\Features\MarkupExtensions\MarkupExtensionsCS\MarkupExtensionsCS.csproj", "{13DD843D-C8A4-4D27-A9AF-9D62172107D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupExtensionsCS", "..\RegressionProjects\Features\MarkupExtensions\MarkupExtensionsCS\MarkupExtensionsCS.csproj", "{13DD843D-C8A4-4D27-A9AF-9D62172107D8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MarkupExtensionsCX", "RegressionProjects\Features\MarkupExtensions\MarkupExtensionsCX\MarkupExtensionsCX.vcxproj", "{775A5D79-85EF-4995-A28C-9FF4B3150425}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MarkupExtensionsCX", "..\RegressionProjects\Features\MarkupExtensions\MarkupExtensionsCX\MarkupExtensionsCX.vcxproj", "{775A5D79-85EF-4995-A28C-9FF4B3150425}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleCppWinRT", "RegressionProjects\Basic\CppWinRT\Simple\SimpleCppWinRT.vcxproj", "{54400C1F-F0F7-40DF-86D3-FE0FA6DCA763}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleCppWinRT", "..\RegressionProjects\Basic\CppWinRT\Simple\SimpleCppWinRT.vcxproj", "{54400C1F-F0F7-40DF-86D3-FE0FA6DCA763}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCppWinRT", "RegressionProjects\Features\CompiledBinding\BindTestbedCppWinRT\BindTestbedCppWinRT.vcxproj", "{E5DA2CDF-ECD8-40EC-871C-4F87D5BDD540}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCppWinRT", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCppWinRT\BindTestbedCppWinRT.vcxproj", "{E5DA2CDF-ECD8-40EC-871C-4F87D5BDD540}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCppWinRTIncremental", "RegressionProjects\Features\CompiledBinding\BindTestbedCppWinRT\BindTestbedCppWinRTIncremental.vcxproj", "{2821AD7B-C730-4384-B24C-52ACB3387913}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCppWinRTIncremental", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCppWinRT\BindTestbedCppWinRTIncremental.vcxproj", "{2821AD7B-C730-4384-B24C-52ACB3387913}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E5DA2CDF-ECD8-40EC-871C-4F87D5BDD540} = {E5DA2CDF-ECD8-40EC-871C-4F87D5BDD540}
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform Conditionals", "Platform Conditionals", "{267AA803-B3DA-47C3-8A25-B3BA636CEE19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformConditionalsCS", "RegressionProjects\Features\Conditionals\Platform Conditionals\PlatformConditionalsCS\PlatformConditionalsCS.csproj", "{AF6DDE55-67AC-4F91-9D79-8A05F0155F76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformConditionalsCS", "..\RegressionProjects\Features\Conditionals\Platform Conditionals\PlatformConditionalsCS\PlatformConditionalsCS.csproj", "{AF6DDE55-67AC-4F91-9D79-8A05F0155F76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformConditionalsModel", "RegressionProjects\Features\Conditionals\Platform Conditionals\PlatformConditionalsModel\PlatformConditionalsModel.csproj", "{E81A2700-4DDB-4D87-B34F-623495397F41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformConditionalsModel", "..\RegressionProjects\Features\Conditionals\Platform Conditionals\PlatformConditionalsModel\PlatformConditionalsModel.csproj", "{E81A2700-4DDB-4D87-B34F-623495397F41}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MetadataTestbedCX", "RegressionProjects\Features\Metadata\MetadataTestbedCX\MetadataTestbedCX.vcxproj", "{D0E4280D-7841-4A9F-B9C7-41B452BE2956}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MetadataTestbedCX", "..\RegressionProjects\Features\Metadata\MetadataTestbedCX\MetadataTestbedCX.vcxproj", "{D0E4280D-7841-4A9F-B9C7-41B452BE2956}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metadata", "Metadata", "{5B14D6E2-DD37-4863-858C-3A409AA110AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataTestbedCS", "RegressionProjects\Features\Metadata\MetadataTestbedCS\MetadataTestbedCS.csproj", "{6831FE88-9812-41C7-B5DD-DE5C50C7E3DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataTestbedCS", "..\RegressionProjects\Features\Metadata\MetadataTestbedCS\MetadataTestbedCS.csproj", "{6831FE88-9812-41C7-B5DD-DE5C50C7E3DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedMD", "LinkedMD", "{354312F9-1228-4544-A60E-EBCF635958DA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMdSubControlsCX", "RegressionProjects\Features\LinkedMD\SubControlsCX\SubControlsCX.vcxproj", "{5335A7CB-AF30-44B4-8338-F3D1021139C1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMdSubControlsCX", "..\RegressionProjects\Features\LinkedMD\SubControlsCX\SubControlsCX.vcxproj", "{5335A7CB-AF30-44B4-8338-F3D1021139C1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMdControlsCX", "RegressionProjects\Features\LinkedMD\ControlsCX\ControlsCX.vcxproj", "{1C6DAC82-D6FC-41C7-881B-751845730215}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMdControlsCX", "..\RegressionProjects\Features\LinkedMD\ControlsCX\ControlsCX.vcxproj", "{1C6DAC82-D6FC-41C7-881B-751845730215}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMdAppCX", "RegressionProjects\Features\LinkedMD\AppCX\AppCX.vcxproj", "{7AC9E1F4-7B0D-4A70-8069-31727525B1F4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMdAppCX", "..\RegressionProjects\Features\LinkedMD\AppCX\AppCX.vcxproj", "{7AC9E1F4-7B0D-4A70-8069-31727525B1F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedMdAppCS", "RegressionProjects\Features\LinkedMD\LinkedMdAppCS\LinkedMdAppCS.csproj", "{999C2B2E-BF99-4313-BFD3-999F4B9D77CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedMdAppCS", "..\RegressionProjects\Features\LinkedMD\LinkedMdAppCS\LinkedMdAppCS.csproj", "{999C2B2E-BF99-4313-BFD3-999F4B9D77CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedMdControlsCS", "RegressionProjects\Features\LinkedMD\LinkedMdControlsCS\LinkedMdControlsCS.csproj", "{D43B25F7-0DD8-4353-8E31-E164EF8DA434}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedMdControlsCS", "..\RegressionProjects\Features\LinkedMD\LinkedMdControlsCS\LinkedMdControlsCS.csproj", "{D43B25F7-0DD8-4353-8E31-E164EF8DA434}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedMdSubControlsCS", "RegressionProjects\Features\LinkedMD\LinkedMdSubControlsCS\LinkedMdSubControlsCS.csproj", "{1FE72265-68B7-4AE2-AE78-554D011256B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedMdSubControlsCS", "..\RegressionProjects\Features\LinkedMD\LinkedMdSubControlsCS\LinkedMdSubControlsCS.csproj", "{1FE72265-68B7-4AE2-AE78-554D011256B9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMDSubControlsCppWinRT", "RegressionProjects\Features\LinkedMD\LinkedMDSubControlsCppWinRT\LinkedMDSubControlsCppWinRT.vcxproj", "{329CCBA9-8ED1-462D-A2D4-C887087FD816}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMDSubControlsCppWinRT", "..\RegressionProjects\Features\LinkedMD\LinkedMDSubControlsCppWinRT\LinkedMDSubControlsCppWinRT.vcxproj", "{329CCBA9-8ED1-462D-A2D4-C887087FD816}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMDControlsCppWinRT", "RegressionProjects\Features\LinkedMD\LinkedMDControlsCppWinRT\LinkedMDControlsCppWinRT.vcxproj", "{ECAB1852-F97A-4F5B-9D20-077155B8AD06}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMDControlsCppWinRT", "..\RegressionProjects\Features\LinkedMD\LinkedMDControlsCppWinRT\LinkedMDControlsCppWinRT.vcxproj", "{ECAB1852-F97A-4F5B-9D20-077155B8AD06}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMDAppCppWinRT", "RegressionProjects\Features\LinkedMD\LinkedMDAppCppWinRT\LinkedMDAppCppWinRT.vcxproj", "{9F5A0AD9-BF10-447F-BC9F-C189B8C389F8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedMDAppCppWinRT", "..\RegressionProjects\Features\LinkedMD\LinkedMDAppCppWinRT\LinkedMDAppCppWinRT.vcxproj", "{9F5A0AD9-BF10-447F-BC9F-C189B8C389F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StaticLibs", "StaticLibs", "{6CA59CE9-B007-4409-A4AA-6824232A6226}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticLibInApp", "RegressionProjects\Features\StaticLibs\StaticLibInApp\StaticLibInApp.vcxproj", "{A058064D-28BC-4224-9E11-FC0D61409427}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticLibInApp", "..\RegressionProjects\Features\StaticLibs\StaticLibInApp\StaticLibInApp.vcxproj", "{A058064D-28BC-4224-9E11-FC0D61409427}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticControlsLib", "RegressionProjects\Features\StaticLibs\StaticControlsLib\StaticControlsLib.vcxproj", "{48E9166B-84BF-4D4E-9CAA-8EC56AC4305F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticControlsLib", "..\RegressionProjects\Features\StaticLibs\StaticControlsLib\StaticControlsLib.vcxproj", "{48E9166B-84BF-4D4E-9CAA-8EC56AC4305F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticLibInRuntimeComponent", "RegressionProjects\Features\StaticLibs\StaticLibInRuntimeComponent\StaticLibInRuntimeComponent.vcxproj", "{7CCA3287-11D2-4ADB-90E4-CBC51252FE58}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticLibInRuntimeComponent", "..\RegressionProjects\Features\StaticLibs\StaticLibInRuntimeComponent\StaticLibInRuntimeComponent.vcxproj", "{7CCA3287-11D2-4ADB-90E4-CBC51252FE58}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RuntimeComponentWithStaticLibInApp", "RegressionProjects\Features\StaticLibs\RuntimeComponentWithStaticLibInApp\RuntimeComponentWithStaticLibInApp.vcxproj", "{E48260EC-423A-4C98-8ECB-C2EDE3CCABE9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RuntimeComponentWithStaticLibInApp", "..\RegressionProjects\Features\StaticLibs\RuntimeComponentWithStaticLibInApp\RuntimeComponentWithStaticLibInApp.vcxproj", "{E48260EC-423A-4C98-8ECB-C2EDE3CCABE9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConditionalsCppWinRT", "RegressionProjects\Features\Conditionals\ConditionalsCppWinRT\ConditionalsCppWinRT.vcxproj", "{58DCA9CD-3A59-4CB6-9558-44F173FF35D4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConditionalsCppWinRT", "..\RegressionProjects\Features\Conditionals\ConditionalsCppWinRT\ConditionalsCppWinRT.vcxproj", "{58DCA9CD-3A59-4CB6-9558-44F173FF35D4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MarkupExtensionsCppWinRT", "RegressionProjects\Features\MarkupExtensions\MarkupExtensionsCppWinRT\MarkupExtensionsCppWinRT.vcxproj", "{EBB89B87-105B-4DB5-89CC-89D593A758C5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MarkupExtensionsCppWinRT", "..\RegressionProjects\Features\MarkupExtensions\MarkupExtensionsCppWinRT\MarkupExtensionsCppWinRT.vcxproj", "{EBB89B87-105B-4DB5-89CC-89D593A758C5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultipleViewsTestbedCppWinRT", "RegressionProjects\Features\MultiXamlFiles\MultipleViewsTestbedCppWinRT\MultipleViewsTestbedCppWinRT.vcxproj", "{AD901B96-F719-404E-A17D-2E1EB944B6C0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultipleViewsTestbedCppWinRT", "..\RegressionProjects\Features\MultiXamlFiles\MultipleViewsTestbedCppWinRT\MultipleViewsTestbedCppWinRT.vcxproj", "{AD901B96-F719-404E-A17D-2E1EB944B6C0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NonStandardCX", "RegressionProjects\NonStandard\NonStandardCX\NonStandardCX\NonStandardCX.vcxproj", "{A733D7BB-467F-4C50-9AC4-86B70D983072}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NonStandardCX", "..\RegressionProjects\NonStandard\NonStandardCX\NonStandardCX\NonStandardCX.vcxproj", "{A733D7BB-467F-4C50-9AC4-86B70D983072}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NonStandard", "NonStandard", "{7FF06DEF-576D-4D97-8305-F6DC50DA5892}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionProviderTestCS", "ReflectionProviderTestCS\ReflectionProviderTestCS.csproj", "{CD7E831E-462D-4D5A-9BC3-540B63F865D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionProviderTestCS", "..\ReflectionProviderTestCS\ReflectionProviderTestCS.csproj", "{CD7E831E-462D-4D5A-9BC3-540B63F865D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NoLocalAppTypes", "NoLocalAppTypes", "{D3288545-8D01-4ACB-BC46-B0DF96782725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankProviderCS", "NoLocalAppTypes\ProviderCS\BlankProviderCS.csproj", "{4AC01664-FAC9-4340-8AC1-E30CDB6D3AFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankProviderCS", "..\NoLocalAppTypes\ProviderCS\BlankProviderCS.csproj", "{4AC01664-FAC9-4340-8AC1-E30CDB6D3AFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankConsumerAppCS", "NoLocalAppTypes\BlankConsumerAppCS\BlankConsumerAppCS.csproj", "{EBD0AC0A-3908-4927-BC70-2EBB5AF9571E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankConsumerAppCS", "..\NoLocalAppTypes\BlankConsumerAppCS\BlankConsumerAppCS.csproj", "{EBD0AC0A-3908-4927-BC70-2EBB5AF9571E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCppWinRT_RS1", "RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedCppWinRT\BindTestbedCppWinRT_RS1.vcxproj", "{27281366-094E-42D1-B906-84EEB5CC55DC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCppWinRT_RS1", "..\RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedCppWinRT\BindTestbedCppWinRT_RS1.vcxproj", "{27281366-094E-42D1-B906-84EEB5CC55DC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCX_RS1", "RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedCX\BindTestbedCX_RS1.vcxproj", "{E07C4126-572A-418E-9045-6271B21477A4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCX_RS1", "..\RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedCX\BindTestbedCX_RS1.vcxproj", "{E07C4126-572A-418E-9045-6271B21477A4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCXModel_RS1", "RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedCXModel\BindTestbedCXModel_RS1.vcxproj", "{08294AFD-B102-4E20-95E9-79AFB76ED4E7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCXModel_RS1", "..\RegressionProjects\Features\CompiledBinding\BindTestbedBackcompat\RS1\BindTestbedCXModel\BindTestbedCXModel_RS1.vcxproj", "{08294AFD-B102-4E20-95E9-79AFB76ED4E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAppXaml", "RegressionProjects\Features\CustomAppXaml\CustomAppXaml\CustomAppXaml.csproj", "{055991B7-7C4A-4137-BD31-66CE88C9C08D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAppXaml", "..\RegressionProjects\Features\CustomAppXaml\CustomAppXaml\CustomAppXaml.csproj", "{055991B7-7C4A-4137-BD31-66CE88C9C08D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomAppXaml", "CustomAppXaml", "{FDB6A94C-F11E-46C3-B012-5EFD584F6384}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindTestbedModelDesktop", "RegressionProjects\Features\CompiledBinding\BindTestbedModel\BindTestbedModelDesktop.csproj", "{6A4B6BD7-F32E-4E74-AE38-50994652E766}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindTestbedModelDesktop", "..\RegressionProjects\Features\CompiledBinding\BindTestbedModel\BindTestbedModelDesktop.csproj", "{6A4B6BD7-F32E-4E74-AE38-50994652E766}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindTestbedCSDesktop", "RegressionProjects\Features\CompiledBinding\BindTestbedCS\BindTestbedCSDesktop.csproj", "{C8C79F0D-C6C6-4F39-B3F1-5C7D3C2B62EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindTestbedCSDesktop", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCS\BindTestbedCSDesktop.csproj", "{C8C79F0D-C6C6-4F39-B3F1-5C7D3C2B62EA}"
 EndProject
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "BindTestbedCSDesktop(package)", "RegressionProjects\Features\CompiledBinding\BindTestbedCS\BindTestbedCSDesktop(package).wapproj", "{C7E2980B-C2D3-4F61-B2C9-7C15017D41D4}"
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "BindTestbedCSDesktop(package)", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCS\BindTestbedCSDesktop(package).wapproj", "{C7E2980B-C2D3-4F61-B2C9-7C15017D41D4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCppWinRTDesktop", "RegressionProjects\Features\CompiledBinding\BindTestbedCppWinRT\BindTestbedCppWinRTDesktop.vcxproj", "{07CCFCE0-4301-40FC-B6DD-CF0149636529}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindTestbedCppWinRTDesktop", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCppWinRT\BindTestbedCppWinRTDesktop.vcxproj", "{07CCFCE0-4301-40FC-B6DD-CF0149636529}"
 EndProject
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "BindTestbedCppWinRTDesktop(Package)", "RegressionProjects\Features\CompiledBinding\BindTestbedCppWinRT\BindTestbedCppWinRTDesktop(Package).wapproj", "{F4FF9764-59EE-4B41-A138-C5D3436D6F33}"
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "BindTestbedCppWinRTDesktop(Package)", "..\RegressionProjects\Features\CompiledBinding\BindTestbedCppWinRT\BindTestbedCppWinRTDesktop(Package).wapproj", "{F4FF9764-59EE-4B41-A138-C5D3436D6F33}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrecompiledHeader", "RegressionProjects\Basic\CppWinRT\PrecompiledHeader\PrecompiledHeader.vcxproj", "{A025676E-9F6C-4BAE-A58F-B2D142BD3509}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrecompiledHeader", "..\RegressionProjects\Basic\CppWinRT\PrecompiledHeader\PrecompiledHeader.vcxproj", "{A025676E-9F6C-4BAE-A58F-B2D142BD3509}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

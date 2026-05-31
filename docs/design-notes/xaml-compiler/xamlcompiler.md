@@ -165,7 +165,7 @@ ones are:
 
 * *src\compiler\solutions\XamlCompiler.sln*: the Xaml Compiler sollution that
 contains all the dev code.
-* *tests\compiler\XamlCompilerTests.sln*: contains the 59 and counting projects
+* *tests\compiler\solutions\XamlCompilerTests.sln*: contains the 59 and counting projects
 that make all regression and unit tests that we subject the compiler to in our
 daily work.
 
@@ -210,7 +210,7 @@ breakpoint should get hit at the point of failure.
 
 ### Regression and Unit Tests
 
-The tests\compiler\XamlCompilerTests.sln contains 50 some projects that test
+The tests\compiler\solutions\XamlCompilerTests.sln contains 50 some projects that test
 various features of the Xaml Compiler in 3 distinct ways:
 
 * *Unit Tests*: we have some 300 unit tests that ensure a limited number of

@@ -50,8 +50,9 @@ collection scripts, and compiler coverage instrumentation helper live there so
 ## Compiler test entry points
 
 Compiler-specific test entry points and support helpers now live under
-`tests/compiler`. `XamlCompilerTests.sln` moved there, while `runtests.cmd` and
-`copynewmasters.cmd` now live under `tests/compiler/tools/scripts`. The
+`tests/compiler`. `XamlCompilerTests.sln` now lives under
+`tests/compiler/solutions`, while `runtests.cmd` and `copynewmasters.cmd` now
+live under `tests/compiler/tools/scripts`. The
 `FixMasters` helper used by `copynewmasters.cmd` and the VcMeta hash validation
 helper remain under `tests/compiler/tools` instead of the compiler source tools
 folder. The compiler source solution references unit-test projects through
