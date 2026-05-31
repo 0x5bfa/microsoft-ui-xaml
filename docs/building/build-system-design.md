@@ -29,7 +29,7 @@ All build system related files are in the `\eng` directory located at the root o
 ### Single purpose files
 Each MSBuild `.props` or `.targets` file should have a single use that is easily understand by the name of the file. All files in the `\eng` folder should reflect this.
 
-For example: `eng\midl.props` and `eng\midl.targets` 
+For example: `eng\midl\midl.props` and `eng\midl\midl.targets`
 
 ### Managing import order
 Managing the import order of `.props` and `.targets` is one of the trickiest things to get right when working with MSBuild. MSBuild is highly sensitive to the order of imports, and trying to import a file twice will cause errors. Note that conditionally importing a file based on it already being imported **is not a solution**, this just hides the issue and adds complexity to the entire system.

@@ -336,7 +336,7 @@ The final product metadata strips out experimental types, by setting the `StripV
 </PropertyGroup>
 ```
 
-All of this build logic is in [eng\midl.targets](../../eng/midl.targets)
+All of this build logic is in [eng\midl\midl.targets](../../eng/midl/midl.targets)
 
 ### Precompiled Headers
 
