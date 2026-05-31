@@ -66,7 +66,7 @@ If you get warning related to version 8.0.x not found, 9.0.x was resolved instea
  Microsoft.NET.ILLink.Tasks 9.0.4 was resolved instead.
 ```
 It can result to a version mismatch. Run a clean build again after the internal feed is updated for the required version.
-`build.cmd /c`
+`tools\build\Build.cmd /c`
 
 After a successful build and launch of MuxControlsTestApp, if you get errors related to WindowsAppSdkMockCheck, like the following:
 ```

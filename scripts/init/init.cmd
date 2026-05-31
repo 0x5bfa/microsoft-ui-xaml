@@ -159,16 +159,16 @@ if "%EnvCheck%"=="true" (
         echo ERROR: Cannot use /envcheck because a full init has not been run yet.
         echo        Required tools and NuGet packages are missing.
         echo.
-        echo        Run a full init first:  init.cmd [flavor]
-        echo        Example:                init.cmd amd64chk
+        echo        Run a full init first:  scripts\init\init.cmd [flavor]
+        echo        Example:                scripts\init\init.cmd amd64chk
         exit /b 1
     )
     if not exist "%RepoRoot%\.tools" (
         echo ERROR: Cannot use /envcheck because a full init has not been run yet.
         echo        Required tools and NuGet packages are missing.
         echo.
-        echo        Run a full init first:  init.cmd [flavor]
-        echo        Example:                init.cmd amd64chk
+        echo        Run a full init first:  scripts\init\init.cmd [flavor]
+        echo        Example:                scripts\init\init.cmd amd64chk
         exit /b 1
     )
 )
@@ -229,13 +229,13 @@ where msbuild >nul 2>&1
 if errorlevel 1 goto :NeedDevCmd
 goto :SkipDevCmd
 :NeedDevCmd
-    echo DevEnvDir environment variable not set or msbuild unavailable. Running DevCmd.cmd to get a developer command prompt...
+    echo DevEnvDir environment variable not set or msbuild unavailable. Running tools\setup\DevCmd.cmd to get a developer command prompt...
     if "%ARM64EC%"=="1" (
-        call %RepoRoot%\DevCmd.cmd /PreserveContext /prerelease -arch=amd64 -host_arch=amd64
+        call %RepoRoot%\tools\setup\DevCmd.cmd /PreserveContext /prerelease -arch=amd64 -host_arch=amd64
     ) else if "%ARM64%"=="1" (
-        call %RepoRoot%\DevCmd.cmd /PreserveContext /prerelease -arch=arm64 -host_arch=amd64
+        call %RepoRoot%\tools\setup\DevCmd.cmd /PreserveContext /prerelease -arch=arm64 -host_arch=amd64
     ) else (
-        call %RepoRoot%\DevCmd.cmd /PreserveContext /prerelease -arch=%_BuildArch% -host_arch=amd64
+        call %RepoRoot%\tools\setup\DevCmd.cmd /PreserveContext /prerelease -arch=%_BuildArch% -host_arch=amd64
     )
     if errorlevel 1 (echo Could not set up a developer command prompt && exit /b %ERRORLEVEL%)
 :SkipDevCmd

@@ -60,10 +60,11 @@ through `$(CompilerTestPath)`.
 
 ## Shared test infrastructure
 
-The top-level test payload entry points and Helix orchestration now live under
+Test payload entry points and Helix orchestration now live under
 `tests/infra`. `CreateTestPayload.cmd`, `CreateTestPayload.ps1`, their
-companion scripts, and the `Helix` project/scripts tree moved there so
-repo-level test orchestration is grouped with other separated test assets.
+companion scripts, and Helix payload scripts now live under
+`tests/infra/payload` and `tests/infra/Helix/payload` so payload construction
+and payload runtime files are grouped together.
 
 ## Runtime test tools
 
@@ -205,9 +206,9 @@ hook. Command prompt and PowerShell alias definitions are co-located there as
 initialization shell helpers. They are part of repository initialization rather
 than package construction, leaving the `build` folder focused on packaging
 inputs and build-time transforms. The command prompt init, PowerShell init, and
-initialized-command runner implementations also live under `scripts/init`, while
-the root-level `init.cmd`, `init.ps1`, and `initrun.ps1` remain the stable entry
-points used by docs, skills, and automation.
+initialized-command runner entry points also live under `scripts/init`; the
+root-level compatibility wrappers were removed so repo-local callers use the
+implementation paths directly.
 
 ## Packaging inputs
 
@@ -620,35 +621,34 @@ The local NuGet package test feed now lives under `packaging/package-store`.
 Package construction scripts, NuGet.config, and cleanup helpers point there
 instead of keeping a single-purpose `PackageStore` folder at the repo root.
 The WinUI component package command implementation now lives under
-`tools/packaging`, while the root-level `pack.component.cmd` remains the stable
-entry point used by developer docs and build scripts.
+`tools/packaging`. The repo root compatibility wrapper was removed; repo-local
+callers should use `tools/packaging/pack.component.cmd` directly.
 
 The standalone debugger extension script now lives under
 `tools/debugging/dbgext`, grouped with other manually invoked repo tools.
 
-Clang-oriented developer helpers now live under `tools/clang`, with `init.cmd`
-adding that folder to PATH so the short command names remain available in
-initialized shells.
+Clang-oriented developer helpers now live under `tools/clang`, with
+`scripts/init/init.cmd` adding that folder to PATH so the short command names
+remain available in initialized shells.
 
-Build wrapper commands now live under `tools/build`, with `init.cmd` adding
-that folder to PATH so commands such as `msb`, `bz`, `bcz`, and `clean` remain
-available in initialized shells. The main repo build command implementation
-also lives there now, with the root-level `Build.cmd` preserved as the stable
-entry point used by docs, skills, and automation.
+Build wrapper commands now live under `tools/build`, with
+`scripts/init/init.cmd` adding that folder to PATH so commands such as `msb`,
+`bz`, `bcz`, and `clean` remain available in initialized shells. The main repo build command implementation
+also lives there now. The root-level `Build.cmd` compatibility wrapper was
+removed; repo-local callers should use `tools/build/Build.cmd` directly.
 
 Shared command wrappers used by multiple repo tools now live under
 `tools/common`, keeping the `tools` root focused on tool categories.
 
 Developer environment setup helpers now live under `tools/setup`. The
-root-level `OneTimeSetup.cmd` wrapper remains the stable entry point, while the
-PowerShell implementation is grouped with other manually invoked repo tools.
+`OneTimeSetup.cmd` entry point moved there next to its PowerShell
+implementation.
 The Visual Studio developer command prompt setup implementation lives there too,
-with the root-level `DevCmd.cmd` preserved as the stable entry point used by
-initialization scripts.
+and initialization scripts now call `tools/setup/DevCmd.cmd` directly.
 
 Controls build command implementation and shared build support files live under
-`controls/build`, while the root-level `controls/Build.cmd` remains the stable
-entry point used by solution files and developer workflows. Root-level controls
+`controls/build`. The root-level `controls/Build.cmd` wrapper was removed and
+solution items now point at `controls/build/Build.cmd`. Root-level controls
 props files that are discovered by MSBuild remain as thin wrappers over their
 implementations in `controls/build`. The controls `Directory.Build.props` and
 `Directory.Build.targets` implementations also live in `controls/build`, while
@@ -673,7 +673,8 @@ the baseline resources generator app.
 Controls developer shell helpers now live under `controls/tools/Shell`,
 including the developer command prompt implementation, command aliases, and the
 PowerShell profile loaded by `ps.bat`. The root-level `controls/DevCmd.cmd`
-remains the stable entry point for controls developers.
+wrapper was removed; controls developers should use
+`controls/tools/Shell/DevCmd.cmd` directly.
 
 Controls shared command wrappers now live under `controls/tools/Common`,
 including the NuGet and PowerShell wrappers used by controls tooling scripts.

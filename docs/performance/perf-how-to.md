@@ -77,7 +77,7 @@ The results will be found on the perf analysis network share under `experiments\
 
 First, you need to build needed components for testing.  After executing `init <arch><flavor>` on VS Dev Command Prompt:
 
-* Go to `perf\scenarios` directory and execute `init.cmd <build-version>`.  If you'd like to use local build, don't specify `<build-version>` (but be sure to build.cmd & pack.cmd first).
+* Go to `perf\scenarios` directory and execute `scripts\init\init.cmd <build-version>`.  If you'd like to use local build, don't specify `<build-version>` (but be sure to tools\build\Build.cmd & pack.cmd first).
 * Run `msb MeasureMUX-set.sln` or the solution which contains your measurement app.
 * Go to `perf\scripts` directory.
 * **If you want to run tests on dedicated hardware:** run `provision.cmd <directory>`, where `<directory>` is a directory which will receive all necessary files that need to be copied to test machine.  Once the command completes, copy the files to your test machine.

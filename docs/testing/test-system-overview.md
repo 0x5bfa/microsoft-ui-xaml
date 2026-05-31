@@ -56,11 +56,11 @@ When the Pipeline runs, the following takes place.
 
 1. Runs the Build stage (this builds both product and test binaries)
 2. The Run Tests Stage starts. [**WinUI-RunTests-Stage.yml**](../../build/AzurePipelinesTemplates/WinUI-RunTests-Stage.yml)
-3. The output of the Build job is downloaded. [**CreateTestPayload.ps1**](../../tests/infra/CreateTestPayload.ps1) is run to produce the TestPayload.
+3. The output of the Build job is downloaded. [**CreateTestPayload.ps1**](../../tests/infra/payload/CreateTestPayload.ps1) is run to produce the TestPayload.
 4. We discover the tests from the build and generate the HelixWorkItems. This is done by [**GenerateHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/GenerateHelixWorkItems.ps1).
 5. The TestPayload and the work items xml is published to the Pipeline as an artifact.
 6. We execute batches of the test work items in parallel on agent VMs that are running the version of Windows that we want to target. We execute [**RunTestPassSliceOnBuildAgent.ps1**](../../tests/infra/Helix/common/pipeline/RunTestPassSliceOnBuildAgent.ps1) on these test machines.
-7. Test machine setup ([**testmachine-prerun.cmd**](../../tests/infra/scripts/testmachine-prerun.cmd))
+7. Test machine setup ([**testmachine-prerun.cmd**](../../tests/infra/payload/scripts/testmachine-prerun.cmd))
 8. Failing tests are re-tried as needed
 9. Test results are published to the Pipeline.
 10. In the case of failing or unreliable tests, we upload supporting files to the HelixTestOutput artifact.

@@ -128,8 +128,8 @@ under `/packaging/package-store`.
 
 ## /scripts
 This folder contains repository initialization and shared utility scripts.
-Initialization helpers live under `/scripts/init`; root entry points such as
-`init.cmd`, `init.ps1`, and `initrun.ps1` are kept for compatibility where needed.
+Initialization helpers and entry points live under `/scripts/init`; repo root
+compatibility wrappers have been removed so scripts stay grouped by purpose.
 
 ## /src
 This is where source code for repo-local tools and source components outside the

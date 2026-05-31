@@ -15,10 +15,10 @@
     The command and arguments to run after initialization.
 
 .EXAMPLE
-    .\initrun.ps1 build.cmd mux /q
-    .\initrun.ps1 msb "src\runtime\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj" /q
-    .\initrun.ps1 -Flavor arm64fre build.cmd mux /q
-    .\initrun.ps1 run-tests-vm.ps1 *CommandBar*
+    .\scripts\init\initrun.ps1 build.cmd mux /q
+    .\scripts\init\initrun.ps1 msb "src\runtime\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj" /q
+    .\scripts\init\initrun.ps1 -Flavor arm64fre build.cmd mux /q
+    .\scripts\init\initrun.ps1 run-tests-vm.ps1 *CommandBar*
 #>
 param(
     [Alias("i")]
@@ -42,7 +42,7 @@ try {
     & (Join-Path $PSScriptRoot "init.ps1") $Flavor /envcheck /notitle
 } catch {
     Write-Host "ERROR: init.ps1 $Flavor /envcheck failed: $_" -ForegroundColor Red
-    Write-Host "Run a full init first: .\init.ps1 $Flavor" -ForegroundColor Red
+    Write-Host "Run a full init first: .\scripts\init\init.ps1 $Flavor" -ForegroundColor Red
     exit 1
 }
 

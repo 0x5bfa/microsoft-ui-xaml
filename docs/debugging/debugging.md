@@ -23,7 +23,7 @@ these docs if you have anything to add or amend.
 
 ## Manual Testing
 
-You first need to perform a full build using the `build.cmd` script in the root of the repo.
+You first need to perform a full build using `tools\build\Build.cmd`.
 
 To build and test any of the sample apps in the repo, including the WinUI Gallery, see 
 [building sample apps](../building/building-sample-apps.md)
