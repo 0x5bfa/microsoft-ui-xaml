@@ -245,7 +245,7 @@
   <Import Project="$(MUXControlsTestRoot)testui\Repeater\Repeater_TestUI.projitems" Label="Shared" Condition="$(FeatureRepeaterEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\ScrollPresenter\ScrollPresenter_TestUI.projitems" Label="Shared" Condition="$(FeatureScrollPresenterEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\ScrollView\ScrollView_TestUI.projitems" Label="Shared" Condition="$(FeatureScrollViewEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)ItemsView\TestUI\ItemsView_TestUI.projitems" Label="Shared" Condition="$(FeatureItemsViewEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)testui\ItemsView\ItemsView_TestUI.projitems" Label="Shared" Condition="$(FeatureItemsViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\SplitButton\SplitButton_TestUI.projitems" Label="Shared" Condition="$(FeatureSplitButtonEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\SwipeControl\SwipeControl_TestUI.projitems" Label="Shared" Condition="$(FeatureSwipeControlEnabled) == 'true'" />
   <Import Project="$(MUXControlsTestRoot)testui\TeachingTip\TeachingTip_TestUI.projitems" Label="Shared" Condition="$(FeatureTeachingTipEnabled) == 'true'" />
