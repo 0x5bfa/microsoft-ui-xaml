@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdHocCSharpApp", "AdHocCSharpApp", "{0F494EED-4FF7-4A19-B8B0-7931A1F36927}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocCSharpApp", "AdHocCSharpApp\AdHocCSharpApp\AdHocCSharpApp.csproj", "{0D310064-C58C-4037-A221-009BF7A199BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdHocCSharpApp", "..\adhoc\AdHocCSharpApp\AdHocCSharpApp\AdHocCSharpApp.csproj", "{0D310064-C58C-4037-A221-009BF7A199BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

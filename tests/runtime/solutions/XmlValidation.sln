@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidation", "XmlValidation\XmlValidation.csproj", "{0AF9EADA-BB7D-48DA-B169-1C91F8E011D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidation", "..\tools\XmlValidation\XmlValidation\XmlValidation.csproj", "{0AF9EADA-BB7D-48DA-B169-1C91F8E011D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{02A5AB77-1C04-4F45-AAFD-469C3509FBCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "..\tools\XmlValidation\UnitTests\UnitTests.csproj", "{02A5AB77-1C04-4F45-AAFD-469C3509FBCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

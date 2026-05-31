@@ -909,6 +909,12 @@ scripts, and scripted runtime build entry points can also avoid spelling
 `src\runtime\xcp` repeatedly. Runtime tool wrappers should consume `XcpRoot`
 when they need the runtime source root.
 
+## Runtime test solutions
+
+Runtime test solution files live under `tests/runtime/solutions`. Runtime test
+source, infrastructure, and tool projects stay in their purpose folders under
+`tests/runtime`, while Visual Studio entry points are grouped in one place.
+
 ## Compiler solutions
 
 Compiler solution files live under `src/compiler/solutions`. The parsing
