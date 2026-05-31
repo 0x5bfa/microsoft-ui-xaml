@@ -76,7 +76,7 @@ $projectPackages = @(
     (Join-Path $repoRoot 'eng\restore\Microsoft.MaestroRestore.csproj'),
     (Join-Path $repoRoot 'src\controls\dll\packages.config'),
     (Join-Path $repoRoot 'src\compiler\solutions\XamlCompilerPrerequisites.sln'),
-    (Join-Path $repoRoot 'src\runtime\Microsoft.UI.Xaml.sln'),
+    (Join-Path $repoRoot 'src\runtime\solutions\Microsoft.UI.Xaml.sln'),
     (Join-Path $repoRoot 'tools\runtime\XbfParser\XbfParser.sln'),
     (Join-Path $repoRoot 'src\compiler\solutions\XamlCompiler.sln')
 )
