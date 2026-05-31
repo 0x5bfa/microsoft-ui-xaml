@@ -137,7 +137,8 @@ This folder contains test assets that have been separated from product source
 trees. Compiler test entry points and support tools live under
 `/tests/compiler`; controls test apps and infrastructure live under
 `/tests/controls`; shared test payload and Helix infrastructure lives under
-`/tests/infra`; runtime test resources live under `/tests/runtime/resources`,
-with resource maintenance helpers under `/tests/runtime/resources/scripts`;
-runtime test package maintenance helpers live under
+`/tests/infra`; runtime test tools live under `/tests/runtime/tools`; runtime
+test resources live under `/tests/runtime/resources`, with resource maintenance
+helpers under `/tests/runtime/resources/scripts`; runtime test package
+maintenance helpers live under
 `/tests/runtime/packages/*/scripts`.
