@@ -764,6 +764,19 @@ DebugSettings and AnnotatedScrollBar specs moved there too, with design-note
 overviews linking to their spec-owned locations. The ItemContainer functional
 spec moved under `docs/specs/ItemContainer` with its local images.
 
+## Developer documentation
+
+Developer-facing markdown now lives under purpose-named folders below `docs`.
+Build/setup workflows live under `docs/building`, test and validation workflows
+under `docs/testing`, debugging and telemetry notes under `docs/debugging`,
+release and Windows App SDK integration notes under `docs/publishing`, and
+contributor-facing guidance under `docs/external`. Design-oriented architecture
+notes live under `docs/design-notes`, grouped by feature or runtime area.
+
+The `docs` root is intentionally limited to the developer documentation index
+and repository structure overview. New docs should pick an existing category
+folder before adding another root-level markdown file.
+
 ## Runtime path preparation
 
 Runtime source now lives under `src/runtime/xcp`. Shared MSBuild entry points
