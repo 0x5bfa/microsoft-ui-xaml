@@ -6,12 +6,19 @@
 
 use strict;
 use Fcntl;
+use FindBin;
+use File::Spec;
+use Cwd 'abs_path';
 
-my $inputBin = "../UcdData.bin";
-my $outputCpp = "UcdData.cpp";
+my $repoRoot = abs_path(File::Spec->catdir($FindBin::Bin, "..", "..", ".."))
+    or die "Unable to resolve repository root.\n";
+my $classificationDir = File::Spec->catdir($repoRoot, "src", "runtime", "xcp", "core", "text", "Classification");
 
-sysopen(BIN, $inputBin, O_RDONLY|O_BINARY);
-open(CPP, ">" . $outputCpp);
+my $inputBin = File::Spec->catfile($classificationDir, "UcdData.bin");
+my $outputCpp = File::Spec->catfile($classificationDir, "build", "UcdData.cpp");
+
+sysopen(BIN, $inputBin, O_RDONLY|O_BINARY) or die "Unable to open '$inputBin'.\n";
+open(CPP, ">" . $outputCpp) or die "Unable to write '$outputCpp'.\n";
 
 print "Reading binary classification data from '$inputBin'.\n";
 print "Writing c++ formatted data to '$outputCpp'.\n";
