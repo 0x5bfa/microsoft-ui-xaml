@@ -95,7 +95,7 @@
             This project is responsible for binplacing and packaging all the external winmds and binaries that we put into 
             our nuget. That's done here by including adding them to PackageContent.
             
-            Do not add binaries to this list of externals, instead add them to eng\ProductMetadata.props, which are then
+            Do not add binaries to this list of externals, instead add them to eng\productmetadata\productmetadata.props, which are then
             referenced here (for example in ExternalBinaries). Header files are listed here though.
         -->
       <PackageContent Include="@(ExternalWinMDs)" Exclude="@(IxpWinMds)" PackageLocation="$(WinMDPackageLocation)"/>

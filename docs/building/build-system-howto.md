@@ -129,7 +129,7 @@ To add a new binary or winmd file to the nuget package, you need to specify it i
 some project that is built. If the project is being built in the WinUI repository, this is fairly straightforward – you
 add the binary as in the example above. If the content comes from an external source and is being repackaged in our
 nuget, then add the content to the `ExternalBinaries` or `ExternalWinMDs` item groups in
-[productmetadata.props](../../eng/productmetadata.props). This same metadata is used throughout test projects to ensure
+[productmetadata.props](../../eng/productmetadata/productmetadata.props). This same metadata is used throughout test projects to ensure
 they are configured properly.
 
 #### Static packaging content
@@ -143,7 +143,7 @@ We use the standard MSBuild `ProjectReference` and `Reference` items to specify 
 the `eng` folder should be designed with this in mind, so that we don't burden devs with a deep understanding of the
 entire build system.
 
-There are some common `ItemGroups` defined in [productmetadata.props](../../eng/productmetadata.props) that can be used if
+There are some common `ItemGroups` defined in [productmetadata.props](../../eng/productmetadata/productmetadata.props) that can be used if
 needing to reference common well-known assemblies:
 
 - `ExternalWinMDs`: contains winmds that we consume as part of our build that make it into the final product. Currently
