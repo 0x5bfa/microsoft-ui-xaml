@@ -6,13 +6,13 @@ Generally, it is encouraged to collect binlog files through the CLI of MSBuild a
 ## Collecting binlogs through Visual Studio
 1. Download the VS Project System Tools extension: [For VS 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools) | [For VS 2022](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools2022)
 3. Set the **Build Log File** verbosity to `Diagnostics`: `Tools->Options->Projects and Solutions->MSBuild project build log file verbosity`:<br/>
-![Screenshot of Build and run options](./images/binlog-images/buildandrunoptions.png)
+![Screenshot of Build and run options](images/binlog/buildandrunoptions.png)
 
 3. Go to View->Other Windows->Build Logging:<br/>
-![Screenshot of Build Logging menu item](./images/binlog-images/buildlogging_menuitem.png)
+![Screenshot of Build Logging menu item](images/binlog/buildlogging_menuitem.png)
 
 4. To start taking logs, press the play button:<br/>
-![Screenshot of Build Logging window](./images/binlog-images/buildlogging_window.png)
+![Screenshot of Build Logging window](images/binlog/buildlogging_window.png)
 
 5. Run the steps that resulted in errors, e.g. building your project. The steps that failed show up as "Failed". Those files have the file extension ".binlog" and can be shared to help debugging build and packaging issues.
 
