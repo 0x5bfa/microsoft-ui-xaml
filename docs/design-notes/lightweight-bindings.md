@@ -82,8 +82,8 @@ IFC_RETURN(DXamlCore::SetDirectBinding(
 
 ### Files
 
-- `dxaml/xcp/dxaml/lib/DirectSourceBindingExpression.h` - Header
-- `dxaml/xcp/dxaml/lib/DirectSourceBindingExpression.cpp` - Implementation
+- `src/runtime/xcp/dxaml/lib/DirectSourceBindingExpression.h` - Header
+- `src/runtime/xcp/dxaml/lib/DirectSourceBindingExpression.cpp` - Implementation
 
 ## When to Use Each
 

@@ -333,7 +333,7 @@ deserve its own architecture document.  What is important to understand is that 
 measure, and arrange runs on a line. The runs themselves are provided by XAML, along with information about the runs,
 through callbacks into XAML. This section details what happens in those callbacks. Only the most important callbacks are
 covered here, see
-[LineServicesCallbacks.cpp](../../dxaml/xcp/core/text/RichTextServices/TextFormatter/lineservicescallbacks.cpp) if you
+[LineServicesCallbacks.cpp](../../src/runtime/xcp/core/text/RichTextServices/TextFormatter/lineservicescallbacks.cpp) if you
 want to see the full set of callbacks XAML implements.
 
 #### LineServicesFetchRun():
@@ -520,7 +520,7 @@ cases here:
    population. There are two possible values for the breaking class: `BreakAllowed` and `NoBreak`.
 
 There are some really great comments in
-[LineBreaking.cpp](../../dxaml/xcp/core/text/RichTextServices/UnicodeData/LineBreaking.cpp) that cover a lot of the
+[LineBreaking.cpp](../../src/runtime/xcp/core/text/RichTextServices/UnicodeData/LineBreaking.cpp) that cover a lot of the
 details about how we leverage DWrite for our line breaking and how LineServices does breaking as well, so I’ve pasted
 them below:
 

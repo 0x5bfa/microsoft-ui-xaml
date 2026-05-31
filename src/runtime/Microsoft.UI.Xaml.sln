@@ -891,37 +891,37 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "..\..\tests\ru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidation", "..\..\tests\runtime\tools\XmlValidation\XmlValidation\XmlValidation.csproj", "{0AF9EADA-BB7D-48DA-B169-1C91F8E011D6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "..\..\dxaml\xcp\common\common.vcxproj", "{4D75F86E-1C8E-40B3-9767-D8A7CDCA82EB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "xcp\common\common.vcxproj", "{4D75F86E-1C8E-40B3-9767-D8A7CDCA82EB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Experimental", "..\..\dxaml\xcp\components\experimental\Microsoft.UI.Xaml.Experimental.vcxproj", "{E179FCE0-A041-4D3D-B501-E09E8AEE5ABF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Experimental", "xcp\components\experimental\Microsoft.UI.Xaml.Experimental.vcxproj", "{E179FCE0-A041-4D3D-B501-E09E8AEE5ABF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.PerfGuard", "..\..\dxaml\xcp\components\perf_guard\Microsoft.UI.Xaml.PerfGuard.vcxproj", "{FF74FCE3-4DFB-4EA3-87C7-05AC85D38DDC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.PerfGuard", "xcp\components\perf_guard\Microsoft.UI.Xaml.PerfGuard.vcxproj", "{FF74FCE3-4DFB-4EA3-87C7-05AC85D38DDC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Scaling", "..\..\dxaml\xcp\components\scaling\Microsoft.UI.Xaml.Scaling.vcxproj", "{D0680CCB-B663-416E-8A9A-D214C989E81C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Scaling", "xcp\components\scaling\Microsoft.UI.Xaml.Scaling.vcxproj", "{D0680CCB-B663-416E-8A9A-D214C989E81C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Instrumentation", "..\..\dxaml\xcp\components\Telemetry\Microsoft.UI.Xaml.Instrumentation.vcxproj", "{073BB1FB-9CE9-4B52-BECB-47BD8A77C6CA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Instrumentation", "xcp\components\Telemetry\Microsoft.UI.Xaml.Instrumentation.vcxproj", "{073BB1FB-9CE9-4B52-BECB-47BD8A77C6CA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.UIBridgeFocus", "..\..\dxaml\xcp\components\UIBridgeFocus\Microsoft.UI.Xaml.UIBridgeFocus.vcxproj", "{BD943A8A-C5CB-454A-82C2-4B7E6C14CB75}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.UIBridgeFocus", "xcp\components\UIBridgeFocus\Microsoft.UI.Xaml.UIBridgeFocus.vcxproj", "{BD943A8A-C5CB-454A-82C2-4B7E6C14CB75}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKAccessKey", "..\..\dxaml\xcp\components\AccessKeys\AccessKey\lib\AccessKeys.AKAccessKey.vcxproj", "{F43AD9AE-A7C4-4E99-8D9F-FE2DBED5A568}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKAccessKey", "xcp\components\AccessKeys\AccessKey\lib\AccessKeys.AKAccessKey.vcxproj", "{F43AD9AE-A7C4-4E99-8D9F-FE2DBED5A568}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey", "..\..\tests\runtime\native\isolated\xaml\accessKeys\accessKey\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKAccessKey.vcxproj", "{AD3FA5E1-3712-4ECB-A2AD-D8219C41277A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKExport", "..\..\dxaml\xcp\components\AccessKeys\Export\lib\AccessKeys.AKExport.vcxproj", "{753E2DE1-40B0-45D8-A231-5B41CF4CD88E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKExport", "xcp\components\AccessKeys\Export\lib\AccessKeys.AKExport.vcxproj", "{753E2DE1-40B0-45D8-A231-5B41CF4CD88E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor", "..\..\tests\runtime\native\isolated\xaml\accessKeys\inputInterceptor\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.InputInterceptor.vcxproj", "{73D9C6F0-F662-4DF5-BD64-90F77F898731}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.KeyTips", "..\..\dxaml\xcp\components\AccessKeys\KeyTips\lib\AccessKeys.KeyTips.vcxproj", "{FF31E3F5-8C72-4428-9BFD-1F3589FF0F1E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.KeyTips", "xcp\components\AccessKeys\KeyTips\lib\AccessKeys.KeyTips.vcxproj", "{FF31E3F5-8C72-4428-9BFD-1F3589FF0F1E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips", "..\..\tests\runtime\native\isolated\xaml\accessKeys\keyTips\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.KeyTips.vcxproj", "{85356D48-EA39-4204-8E1A-F2D2A6E39F01}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKModeContainer", "..\..\dxaml\xcp\components\AccessKeys\ModeContainer\lib\AccessKeys.AKModeContainer.vcxproj", "{02E9EC89-0748-495E-B70E-A2403C88381E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKModeContainer", "xcp\components\AccessKeys\ModeContainer\lib\AccessKeys.AKModeContainer.vcxproj", "{02E9EC89-0748-495E-B70E-A2403C88381E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer", "..\..\tests\runtime\native\isolated\xaml\accessKeys\modeContainer\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AccessKeyModeContainer.vcxproj", "{A8CA0489-7254-4603-AE5D-2C60A3AA2B02}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner", "..\..\tests\runtime\native\isolated\xaml\accessKeys\owner\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKOwner.vcxproj", "{E479825C-ACAB-41D6-A644-969A9E3457AF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKParser", "..\..\dxaml\xcp\components\AccessKeys\Parser\lib\AccessKeys.AKParser.vcxproj", "{ED253C25-0512-4FD8-B050-3C3C6835F2EF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccessKeys.AKParser", "xcp\components\AccessKeys\Parser\lib\AccessKeys.AKParser.vcxproj", "{ED253C25-0512-4FD8-B050-3C3C6835F2EF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser", "..\..\tests\runtime\native\isolated\xaml\accessKeys\parser\Microsoft.UI.Xaml.Tests.Isolated.AccessKeys.AKParser.vcxproj", "{8DFF014B-FA6B-487C-A0A7-E80DD69EB981}"
 EndProject
@@ -933,221 +933,221 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer", "..\..\tests\runtime\native\isolated\xaml\accessKeys\treeAnalyzer\Microsoft.UI.Xaml.Tests.Isolated.Xaml.AccessKeys.TreeAnalyzer.vcxproj", "{391A3BF0-8C98-47C5-A944-F98812FAF01C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Allocation", "..\..\dxaml\xcp\components\allocation\lib\Microsoft.UI.Xaml.Allocation.vcxproj", "{502B46A0-DF35-4692-8275-CE66E7FDD741}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Allocation", "xcp\components\allocation\lib\Microsoft.UI.Xaml.Allocation.vcxproj", "{502B46A0-DF35-4692-8275-CE66E7FDD741}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Allocation.Stubs", "..\..\dxaml\xcp\components\allocation\stubs\Microsoft.UI.Xaml.Allocation.Stubs.vcxproj", "{9E88D331-0324-428D-B7BC-70953F4B65D9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Allocation.Stubs", "xcp\components\allocation\stubs\Microsoft.UI.Xaml.Allocation.Stubs.vcxproj", "{9E88D331-0324-428D-B7BC-70953F4B65D9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Animation", "..\..\dxaml\xcp\components\animation\lib\Microsoft.UI.Xaml.Animation.vcxproj", "{BB0522D9-7E95-40A1-9522-88B6F42B2DB6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Animation", "xcp\components\animation\lib\Microsoft.UI.Xaml.Animation.vcxproj", "{BB0522D9-7E95-40A1-9522-88B6F42B2DB6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation", "..\..\tests\runtime\native\isolated\foundation\animation\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Animation.vcxproj", "{866995B2-99A9-46C6-8178-E41637BEC689}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Associative", "..\..\tests\runtime\native\isolated\foundation\associative\Microsoft.UI.Xaml.Tests.Isolated.Associative.vcxproj", "{26D94725-0A9D-4F65-B9A3-78B9A83445D8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Base", "..\..\dxaml\xcp\components\base\lib\Microsoft.UI.Xaml.Base.vcxproj", "{47C659B9-130A-4EB2-B367-C556A179D0CB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Base", "xcp\components\base\lib\Microsoft.UI.Xaml.Base.vcxproj", "{47C659B9-130A-4EB2-B367-C556A179D0CB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Base", "..\..\tests\runtime\native\isolated\foundation\base\Microsoft.UI.Xaml.Tests.Isolated.Base.vcxproj", "{6C86F180-592C-41D0-B99D-FD27942922CD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Brushes", "..\..\dxaml\xcp\components\brushes\lib\Microsoft.UI.Xaml.Brushes.vcxproj", "{83BA909B-3BF5-4A36-8118-7F398B52CC3E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Brushes", "xcp\components\brushes\lib\Microsoft.UI.Xaml.Brushes.vcxproj", "{83BA909B-3BF5-4A36-8118-7F398B52CC3E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes", "..\..\tests\runtime\native\isolated\foundation\brushes\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Brushes.vcxproj", "{2BBFD800-5E50-403C-A1C9-49CCA9F7491C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Collection", "..\..\dxaml\xcp\components\Collection\Lib\Microsoft.UI.Xaml.Collection.vcxproj", "{808BC3A6-A9E1-4E36-BDF7-1F3C12DE8464}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Collection", "xcp\components\Collection\Lib\Microsoft.UI.Xaml.Collection.vcxproj", "{808BC3A6-A9E1-4E36-BDF7-1F3C12DE8464}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Collection", "..\..\tests\runtime\native\isolated\foundation\collection\Microsoft.UI.Xaml.Tests.Isolated.Collection.vcxproj", "{8BE7A3D8-890F-4AC2-8A36-BD1F736FC2C1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Colors", "..\..\dxaml\xcp\components\colors\lib\Microsoft.UI.Xaml.Colors.vcxproj", "{6B5AED1F-FD5D-47BC-9B9A-37D56E2C2E97}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Colors", "xcp\components\colors\lib\Microsoft.UI.Xaml.Colors.vcxproj", "{6B5AED1F-FD5D-47BC-9B9A-37D56E2C2E97}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Colors", "..\..\tests\runtime\native\isolated\foundation\colors\Microsoft.UI.Xaml.Tests.Isolated.Colors.vcxproj", "{A778B546-E905-468D-9B44-54C1703048C6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Com", "..\..\dxaml\xcp\components\com\lib\Microsoft.UI.Xaml.Com.vcxproj", "{38506CDD-C34A-404C-B6E2-4D1ED278DA88}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Com", "xcp\components\com\lib\Microsoft.UI.Xaml.Com.vcxproj", "{38506CDD-C34A-404C-B6E2-4D1ED278DA88}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Com", "..\..\tests\runtime\native\isolated\foundation\com\Microsoft.UI.Xaml.Tests.Isolated.Com.vcxproj", "{0B3ED62A-77EE-479C-99C5-3F065BF9903A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.CompTree", "..\..\dxaml\xcp\components\comptree\lib\Microsoft.UI.Xaml.CompTree.vcxproj", "{BE2A3CDF-01E2-4600-8E77-305065C1FCC0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.CompTree", "xcp\components\comptree\lib\Microsoft.UI.Xaml.CompTree.vcxproj", "{BE2A3CDF-01E2-4600-8E77-305065C1FCC0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ContentRoot", "..\..\dxaml\xcp\components\ContentRoot\lib\Microsoft.UI.Xaml.ContentRoot.vcxproj", "{87D264CE-4220-4861-B0B9-B257B022FDD6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ContentRoot", "xcp\components\ContentRoot\lib\Microsoft.UI.Xaml.ContentRoot.vcxproj", "{87D264CE-4220-4861-B0B9-B257B022FDD6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls.InputValidation", "..\..\dxaml\xcp\components\controls\InputValidation\lib\Microsoft.UI.Xaml.Controls.InputValidation.vcxproj", "{79B93B13-006C-4166-A260-A6CCFAB809B8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls.InputValidation", "xcp\components\controls\InputValidation\lib\Microsoft.UI.Xaml.Controls.InputValidation.vcxproj", "{79B93B13-006C-4166-A260-A6CCFAB809B8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls.KeyDownUp", "..\..\dxaml\xcp\components\controls\KeyDownUp\lib\Microsoft.UI.Xaml.Controls.KeyDownUp.vcxproj", "{C9731A36-C282-4686-B9D3-F2DB67ED7F85}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls.KeyDownUp", "xcp\components\controls\KeyDownUp\lib\Microsoft.UI.Xaml.Controls.KeyDownUp.vcxproj", "{C9731A36-C282-4686-B9D3-F2DB67ED7F85}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.CriticalSection", "..\..\dxaml\xcp\components\criticalsection\lib\Microsoft.UI.Xaml.CriticalSection.vcxproj", "{EE89D265-0C07-49A3-B39C-D2A40ADF9D19}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.CriticalSection", "xcp\components\criticalsection\lib\Microsoft.UI.Xaml.CriticalSection.vcxproj", "{EE89D265-0C07-49A3-B39C-D2A40ADF9D19}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.CValue", "..\..\dxaml\xcp\components\CValue\lib\Microsoft.UI.Xaml.CValue.vcxproj", "{A96CF4EA-7170-4AFF-90A5-5FCE1055270F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.CValue", "xcp\components\CValue\lib\Microsoft.UI.Xaml.CValue.vcxproj", "{A96CF4EA-7170-4AFF-90A5-5FCE1055270F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue", "..\..\tests\runtime\native\isolated\framework\CValue\Microsoft.UI.Xaml.Tests.Isolated.Framework.CValue.vcxproj", "{5CAE5B49-FAD9-4F7F-B3D0-832E5BEE83E2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Deferral", "..\..\dxaml\xcp\components\deferral\lib\Microsoft.UI.Xaml.Deferral.vcxproj", "{B686A4D4-EF60-411C-98C7-FD43225DC80F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Deferral", "xcp\components\deferral\lib\Microsoft.UI.Xaml.Deferral.vcxproj", "{B686A4D4-EF60-411C-98C7-FD43225DC80F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral", "..\..\tests\runtime\native\isolated\framework\deferral\Microsoft.UI.Xaml.Tests.Isolated.Framework.Deferral.vcxproj", "{31CF3222-2966-4A79-8586-4BDDE928B561}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyLocator", "..\..\dxaml\xcp\components\dependencyLocator\lib\Microsoft.UI.Xaml.DependencyLocator.vcxproj", "{E2FFD843-5C31-491B-B58E-8A0BF55875CA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyLocator", "xcp\components\dependencyLocator\lib\Microsoft.UI.Xaml.DependencyLocator.vcxproj", "{E2FFD843-5C31-491B-B58E-8A0BF55875CA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator", "..\..\tests\runtime\native\isolated\framework\dependencyLocator\Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyLocator.vcxproj", "{BAB1B581-BFA3-4932-AA23-22BAAFED1793}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyObject", "..\..\dxaml\xcp\components\DependencyObject\lib\Microsoft.UI.Xaml.DependencyObject.vcxproj", "{F7139209-4407-43F4-B04B-CDDFCBFD5A65}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyObject", "xcp\components\DependencyObject\lib\Microsoft.UI.Xaml.DependencyObject.vcxproj", "{F7139209-4407-43F4-B04B-CDDFCBFD5A65}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyObjectMin", "..\..\dxaml\xcp\components\DependencyObject\minlib\Microsoft.UI.Xaml.DependencyObjectMin.vcxproj", "{E0DD7555-841B-40E4-967A-B6EC2DF39258}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DependencyObjectMin", "xcp\components\DependencyObject\minlib\Microsoft.UI.Xaml.DependencyObjectMin.vcxproj", "{E0DD7555-841B-40E4-967A-B6EC2DF39258}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject", "..\..\tests\runtime\native\isolated\framework\dependencyObject\Microsoft.UI.Xaml.Tests.Isolated.Framework.DependencyObject.vcxproj", "{FB5FB4BA-A7A6-4F8F-96BA-F87D41141EDD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DesktopUtility", "..\..\dxaml\xcp\components\DesktopUtility\lib\Microsoft.UI.Xaml.DesktopUtility.vcxproj", "{62B946C2-099D-499A-991C-A47B7CDF5263}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DesktopUtility", "xcp\components\DesktopUtility\lib\Microsoft.UI.Xaml.DesktopUtility.vcxproj", "{62B946C2-099D-499A-991C-A47B7CDF5263}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DiagnosticsInterop", "..\..\dxaml\xcp\components\diagnosticsInterop\lib\Microsoft.UI.Xaml.DiagnosticsInterop.vcxproj", "{F16E6FEE-0A31-46D5-A6C9-CF19855E7266}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DiagnosticsInterop", "xcp\components\diagnosticsInterop\lib\Microsoft.UI.Xaml.DiagnosticsInterop.vcxproj", "{F16E6FEE-0A31-46D5-A6C9-CF19855E7266}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Elements", "..\..\dxaml\xcp\components\elements\lib\Microsoft.UI.Xaml.Elements.vcxproj", "{425451F3-E2FE-49A1-A7F5-A3776E963B5E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Elements", "xcp\components\elements\lib\Microsoft.UI.Xaml.Elements.vcxproj", "{425451F3-E2FE-49A1-A7F5-A3776E963B5E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Elements.SharedStubs", "..\..\dxaml\xcp\components\elements\sharedstubs\Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj", "{D704E322-E366-4C87-B394-28D2F4CCB481}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Elements.SharedStubs", "xcp\components\elements\sharedstubs\Microsoft.UI.Xaml.Elements.SharedStubs.vcxproj", "{D704E322-E366-4C87-B394-28D2F4CCB481}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Elements", "..\..\tests\runtime\native\isolated\foundation\elements\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Elements.vcxproj", "{E7D0B682-1E73-407A-8028-91C16E49874A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.EventArgs", "..\..\dxaml\xcp\components\eventArgs\lib\Microsoft.UI.Xaml.EventArgs.vcxproj", "{B79375FB-FE8F-4B96-B48E-52548BAE6141}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.EventArgs", "xcp\components\eventArgs\lib\Microsoft.UI.Xaml.EventArgs.vcxproj", "{B79375FB-FE8F-4B96-B48E-52548BAE6141}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ExtMetadataProvider", "..\..\dxaml\xcp\components\ExtMetadataProvider\lib\Microsoft.UI.Xaml.ExtMetadataProvider.vcxproj", "{F9A1E93C-35DC-4ECE-A464-8346C4126E30}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ExtMetadataProvider", "xcp\components\ExtMetadataProvider\lib\Microsoft.UI.Xaml.ExtMetadataProvider.vcxproj", "{F9A1E93C-35DC-4ECE-A464-8346C4126E30}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Flyweight", "..\..\dxaml\xcp\components\flyweight\lib\Microsoft.UI.Xaml.Flyweight.vcxproj", "{88536608-BAB9-49F1-9CC6-36B7F8E73D8A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Flyweight", "xcp\components\flyweight\lib\Microsoft.UI.Xaml.Flyweight.vcxproj", "{88536608-BAB9-49F1-9CC6-36B7F8E73D8A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Flyweight", "..\..\tests\runtime\native\isolated\foundation\flyweight\Microsoft.UI.Xaml.Tests.Isolated.Flyweight.vcxproj", "{8E64B605-59BF-4176-8D85-05BF0DD2D646}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusObserver", "..\..\dxaml\xcp\components\focus\FocusObserver\Microsoft.UI.Xaml.Focus.FocusObserver.vcxproj", "{1FFF959E-2082-4106-AFB3-543842FCD029}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusObserver", "xcp\components\focus\FocusObserver\Microsoft.UI.Xaml.Focus.FocusObserver.vcxproj", "{1FFF959E-2082-4106-AFB3-543842FCD029}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.Export", "..\..\dxaml\xcp\components\focus\export\lib\Microsoft.UI.Xaml.Focus.Export.vcxproj", "{741E4AD7-D028-40F2-B010-CEF69FB91F1A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.Export", "xcp\components\focus\export\lib\Microsoft.UI.Xaml.Focus.Export.vcxproj", "{741E4AD7-D028-40F2-B010-CEF69FB91F1A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusProperties", "..\..\dxaml\xcp\components\focus\FocusProperties\lib\Microsoft.UI.Xaml.Focus.FocusProperties.vcxproj", "{61919B80-8852-43AB-810A-F013A6569048}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusProperties", "xcp\components\focus\FocusProperties\lib\Microsoft.UI.Xaml.Focus.FocusProperties.vcxproj", "{61919B80-8852-43AB-810A-F013A6569048}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusSelection", "..\..\dxaml\xcp\components\focus\FocusSelection\lib\Microsoft.UI.Xaml.Focus.FocusSelection.vcxproj", "{06EE2711-8CE5-4ABC-B80D-3B055D7DF537}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusSelection", "xcp\components\focus\FocusSelection\lib\Microsoft.UI.Xaml.Focus.FocusSelection.vcxproj", "{06EE2711-8CE5-4ABC-B80D-3B055D7DF537}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection", "..\..\tests\runtime\native\isolated\xaml\focus\focusSelection\Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.FocusSelection.vcxproj", "{A58DF0B7-52E9-4F7F-905B-0DD365BE71E9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusMovement", "..\..\dxaml\xcp\components\focus\Movement\lib\Microsoft.UI.Xaml.Focus.FocusMovement.vcxproj", "{978E84EE-1FBE-4EB1-B9D2-31D9814DBDC3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.FocusMovement", "xcp\components\focus\Movement\lib\Microsoft.UI.Xaml.Focus.FocusMovement.vcxproj", "{978E84EE-1FBE-4EB1-B9D2-31D9814DBDC3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.XYFocus", "..\..\dxaml\xcp\components\focus\XYFocus\lib\Microsoft.UI.Xaml.Focus.XYFocus.vcxproj", "{1BFC2F99-B08B-4F54-AD99-80CBF35C216C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Focus.XYFocus", "xcp\components\focus\XYFocus\lib\Microsoft.UI.Xaml.Focus.XYFocus.vcxproj", "{1BFC2F99-B08B-4F54-AD99-80CBF35C216C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus", "..\..\tests\runtime\native\isolated\xaml\focus\xyFocus\Microsoft.UI.Xaml.Tests.Isolated.Xaml.Focus.XYFocus.vcxproj", "{F6F263A2-4C98-4900-9DBB-0AD4A309F501}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.FocusRect", "..\..\dxaml\xcp\components\FocusRect\lib\Microsoft.UI.Xaml.FocusRect.vcxproj", "{C554E0D5-58E6-4772-BAD3-2E62E3579957}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.FocusRect", "xcp\components\FocusRect\lib\Microsoft.UI.Xaml.FocusRect.vcxproj", "{C554E0D5-58E6-4772-BAD3-2E62E3579957}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Gestures.Export", "..\..\dxaml\xcp\components\gestures\export\Microsoft.UI.Xaml.Gestures.Export.vcxproj", "{F5ADA118-91D4-4541-8713-46C3FC53A181}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Gestures.Export", "xcp\components\gestures\export\Microsoft.UI.Xaml.Gestures.Export.vcxproj", "{F5ADA118-91D4-4541-8713-46C3FC53A181}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Gestures", "..\..\dxaml\xcp\components\gestures\lib\Microsoft.UI.Xaml.Gestures.vcxproj", "{9EC4215F-0EBE-409C-8E49-65DF310C4BD0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Gestures", "xcp\components\gestures\lib\Microsoft.UI.Xaml.Gestures.vcxproj", "{9EC4215F-0EBE-409C-8E49-65DF310C4BD0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures", "..\..\tests\runtime\native\isolated\core\gestures\Microsoft.UI.Xaml.Tests.Isolated.Core.Gestures.vcxproj", "{ACEB545A-1DF8-4320-829C-7B009065FE2F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.GraphicsUtility", "..\..\dxaml\xcp\components\graphics\lib\Microsoft.UI.Xaml.GraphicsUtility.vcxproj", "{8B386F16-9CF2-44E0-82EC-5C5129593A3C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.GraphicsUtility", "xcp\components\graphics\lib\Microsoft.UI.Xaml.GraphicsUtility.vcxproj", "{8B386F16-9CF2-44E0-82EC-5C5129593A3C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Graphics", "..\..\tests\runtime\native\isolated\foundation\graphics\Microsoft.UI.Xaml.Tests.Isolated.Graphics.vcxproj", "{AC75A83E-1221-430E-8C9B-684A040EC84D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Media.Imaging", "..\..\dxaml\xcp\components\imaging\lib\Microsoft.UI.Xaml.Media.Imaging.vcxproj", "{CD13A3EF-0FED-4512-8B12-F1B6C96F65AB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Media.Imaging", "xcp\components\imaging\lib\Microsoft.UI.Xaml.Media.Imaging.vcxproj", "{CD13A3EF-0FED-4512-8B12-F1B6C96F65AB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging", "..\..\tests\runtime\native\isolated\foundation\imaging\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Imaging.vcxproj", "{547989FD-9376-4574-8DD7-2B9E07782D9B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Input", "..\..\dxaml\xcp\components\input\lib\Microsoft.UI.Xaml.Input.vcxproj", "{911DF019-BDA7-47D0-B3ED-3DB1807EEFE1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Input", "xcp\components\input\lib\Microsoft.UI.Xaml.Input.vcxproj", "{911DF019-BDA7-47D0-B3ED-3DB1807EEFE1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Core.Input", "..\..\tests\runtime\native\isolated\core\input\Microsoft.UI.Xaml.Tests.Isolated.Core.Input.vcxproj", "{662FBD01-58E4-43E5-852D-48726BE04818}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.InputPane", "..\..\dxaml\xcp\components\inputpane\lib\Microsoft.UI.Xaml.InputPane.vcxproj", "{9F887B18-729E-4C7A-A577-45523FF4BAF9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.InputPane", "xcp\components\inputpane\lib\Microsoft.UI.Xaml.InputPane.vcxproj", "{9F887B18-729E-4C7A-A577-45523FF4BAF9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ItemIndexRangeHelper", "..\..\dxaml\xcp\components\ItemIndexRangeHelper\lib\Microsoft.UI.Xaml.ItemIndexRangeHelper.vcxproj", "{7DA37D6D-D8A3-4A3A-82CA-A21084CC152D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ItemIndexRangeHelper", "xcp\components\ItemIndexRangeHelper\lib\Microsoft.UI.Xaml.ItemIndexRangeHelper.vcxproj", "{7DA37D6D-D8A3-4A3A-82CA-A21084CC152D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper", "..\..\tests\runtime\native\isolated\enterprise\itemIndexRangeHelper\Microsoft.UI.Xaml.Tests.Isolated.Enterprise.ItemIndexRangeHelper.vcxproj", "{86790730-176F-4E18-8052-473936BF2E30}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.KeyboardAcceleratorUtility", "..\..\dxaml\xcp\components\KeyboardAccelerator\lib\Microsoft.UI.Xaml.KeyboardAcceleratorUtility.vcxproj", "{FD988210-388A-45F0-B800-1B8C5251E527}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.KeyboardAcceleratorUtility", "xcp\components\KeyboardAccelerator\lib\Microsoft.UI.Xaml.KeyboardAcceleratorUtility.vcxproj", "{FD988210-388A-45F0-B800-1B8C5251E527}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Legacy", "..\..\dxaml\xcp\components\legacy\lib\Microsoft.UI.Xaml.Legacy.vcxproj", "{95D07701-4AF9-48E5-B726-0D42034811C8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Legacy", "xcp\components\legacy\lib\Microsoft.UI.Xaml.Legacy.vcxproj", "{95D07701-4AF9-48E5-B726-0D42034811C8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Legacy", "..\..\tests\runtime\native\isolated\foundation\legacy\Microsoft.UI.Xaml.Tests.Isolated.Legacy.vcxproj", "{3CE6BC3D-50C1-426E-944E-A5F8A141375D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Lifetime", "..\..\dxaml\xcp\components\lifetime\lib\Microsoft.UI.Xaml.Lifetime.vcxproj", "{71ADA981-D444-464C-833D-290206B05240}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Lifetime", "xcp\components\lifetime\lib\Microsoft.UI.Xaml.Lifetime.vcxproj", "{71ADA981-D444-464C-833D-290206B05240}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Lifetime", "..\..\tests\runtime\native\isolated\foundation\lifetime\Microsoft.UI.Xaml.Tests.Isolated.Lifetime.vcxproj", "{C84A4EE9-85FA-42F3-AD6D-567E93ACC5CF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.LiveReorderHelper", "..\..\dxaml\xcp\components\livereorderhelper\lib\Microsoft.UI.Xaml.LiveReorderHelper.vcxproj", "{CECCE5C4-D7C0-49B9-BB89-7E7EDFC0FA5B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.LiveReorderHelper", "xcp\components\livereorderhelper\lib\Microsoft.UI.Xaml.LiveReorderHelper.vcxproj", "{CECCE5C4-D7C0-49B9-BB89-7E7EDFC0FA5B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper", "..\..\tests\runtime\native\isolated\controls\liveReorderHelper\Microsoft.UI.Xaml.Tests.Isolated.LiveReorderHelper.vcxproj", "{8D396D52-C5A7-4CB0-A86E-D866475457C8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Math", "..\..\dxaml\xcp\components\math\lib\Microsoft.UI.Xaml.Math.vcxproj", "{BBABDB8F-DB10-4CA7-9D8E-0634B5B2A183}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Math", "xcp\components\math\lib\Microsoft.UI.Xaml.Math.vcxproj", "{BBABDB8F-DB10-4CA7-9D8E-0634B5B2A183}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Math", "..\..\tests\runtime\native\isolated\foundation\math\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Math.vcxproj", "{7CC30100-5A49-4145-8154-5A2136B906CA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DynamicMetadataStorage", "..\..\dxaml\xcp\components\metadata\DynamicMetadataStorage\Microsoft.UI.Xaml.DynamicMetadataStorage.vcxproj", "{91CDC786-7B41-4339-B3DC-5854C6F04D4F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.DynamicMetadataStorage", "xcp\components\metadata\DynamicMetadataStorage\Microsoft.UI.Xaml.DynamicMetadataStorage.vcxproj", "{91CDC786-7B41-4339-B3DC-5854C6F04D4F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Metadata", "..\..\dxaml\xcp\components\metadata\lib\Microsoft.UI.Xaml.Metadata.vcxproj", "{23637F36-0CB9-4142-A60C-888B0EFE9A4C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Metadata", "xcp\components\metadata\lib\Microsoft.UI.Xaml.Metadata.vcxproj", "{23637F36-0CB9-4142-A60C-888B0EFE9A4C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Components.Moco", "..\..\dxaml\xcp\components\moco\lib\Microsoft.UI.Xaml.Components.Moco.vcxproj", "{056BDEDC-7099-4B6A-A170-F59B55FFD8D8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Components.Moco", "xcp\components\moco\lib\Microsoft.UI.Xaml.Components.Moco.vcxproj", "{056BDEDC-7099-4B6A-A170-F59B55FFD8D8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco", "..\..\tests\runtime\native\isolated\controls\moco\Microsoft.UI.Xaml.Tests.Isolated.Controls.Moco.vcxproj", "{44BAF6B8-988A-4321-8C12-29B02A695B17}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Mrt", "..\..\dxaml\xcp\components\mrt\lib\Microsoft.UI.Xaml.Mrt.vcxproj", "{DD66FBF9-B48E-41AE-BCEE-B2548E39001B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Mrt", "xcp\components\mrt\lib\Microsoft.UI.Xaml.Mrt.vcxproj", "{DD66FBF9-B48E-41AE-BCEE-B2548E39001B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.NameScope", "..\..\dxaml\xcp\components\namescope\lib\Microsoft.UI.Xaml.NameScope.vcxproj", "{9589CB4A-53A6-42DC-A7EE-7E4374CD737D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.NameScope", "xcp\components\namescope\lib\Microsoft.UI.Xaml.NameScope.vcxproj", "{9589CB4A-53A6-42DC-A7EE-7E4374CD737D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.OfferableHeap", "..\..\dxaml\xcp\components\offerableheap\lib\Microsoft.UI.Xaml.OfferableHeap.vcxproj", "{64AE8B11-E468-4B1F-BB3A-B570D99FB4B2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.OfferableHeap", "xcp\components\offerableheap\lib\Microsoft.UI.Xaml.OfferableHeap.vcxproj", "{64AE8B11-E468-4B1F-BB3A-B570D99FB4B2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap", "..\..\tests\runtime\native\isolated\foundation\offerableheap\Microsoft.UI.Xaml.Tests.Isolated.Foundation.OfferableHeap.vcxproj", "{68EFE933-E49A-4F16-A2C5-4BD872D7993E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser", "..\..\tests\runtime\native\isolated\framework\parser\Microsoft.UI.Xaml.Tests.Isolated.Framework.Parser.vcxproj", "{0C22F3E2-D02F-40C7-B7B4-849E21242B94}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp", "..\..\dxaml\xcp\components\pch\prod\Microsoft.UI.Xaml.Precomp.vcxproj", "{CCC61973-BE99-4223-B935-353D03571E92}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp", "xcp\components\pch\prod\Microsoft.UI.Xaml.Precomp.vcxproj", "{CCC61973-BE99-4223-B935-353D03571E92}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp", "..\..\dxaml\xcp\components\pch\prodexcept\Microsoft.UI.Xaml.Precomp.vcxproj", "{D4B4D716-47D2-4B4B-8765-F879A171F1A2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp", "xcp\components\pch\prodexcept\Microsoft.UI.Xaml.Precomp.vcxproj", "{D4B4D716-47D2-4B4B-8765-F879A171F1A2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp", "..\..\dxaml\xcp\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj", "{0EE23677-77E1-49C9-8B89-AD1A1FD0C6F4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp", "xcp\components\pch\ut\Microsoft.UI.Xaml.Precomp.vcxproj", "{0EE23677-77E1-49C9-8B89-AD1A1FD0C6F4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp", "..\..\dxaml\xcp\components\pch\ut-nohybrid\Microsoft.UI.Xaml.Precomp.vcxproj", "{33A6C9EA-636F-42FB-9CEB-15E54ABAB8E6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Precomp", "xcp\components\pch\ut-nohybrid\Microsoft.UI.Xaml.Precomp.vcxproj", "{33A6C9EA-636F-42FB-9CEB-15E54ABAB8E6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Pivot", "..\..\dxaml\xcp\components\pivot\lib\Microsoft.UI.Xaml.Pivot.vcxproj", "{80037DD4-5988-441F-8A1E-390A4B7C50EE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Pivot", "xcp\components\pivot\lib\Microsoft.UI.Xaml.Pivot.vcxproj", "{80037DD4-5988-441F-8A1E-390A4B7C50EE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot", "..\..\tests\runtime\native\isolated\controls\pivot\Microsoft.UI.Xaml.Tests.Isolated.Controls.Pivot.vcxproj", "{08A6E6D8-217C-42F6-BF54-D1DD5C08ED66}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.PrimitiveDependencyObjects", "..\..\dxaml\xcp\components\primitiveDependencyObjects\lib\Microsoft.UI.Xaml.PrimitiveDependencyObjects.vcxproj", "{4BAF458D-DF02-4F8C-BB5A-97CEEB30027C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.PrimitiveDependencyObjects", "xcp\components\primitiveDependencyObjects\lib\Microsoft.UI.Xaml.PrimitiveDependencyObjects.vcxproj", "{4BAF458D-DF02-4F8C-BB5A-97CEEB30027C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Qualifiers", "..\..\dxaml\xcp\components\qualifiers\lib\Microsoft.UI.Xaml.Qualifiers.vcxproj", "{664BB810-5217-4EB3-85C0-C7AB5E34060B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Qualifiers", "xcp\components\qualifiers\lib\Microsoft.UI.Xaml.Qualifiers.vcxproj", "{664BB810-5217-4EB3-85C0-C7AB5E34060B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers", "..\..\tests\runtime\native\isolated\adaptability\qualifiers\Microsoft.UI.Xaml.Tests.Isolated.Adaptability.Qualifiers.vcxproj", "{D82C40B8-9902-4565-8248-4C629F9E9024}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.OneCoreTransforms", "..\..\dxaml\xcp\components\OneCoreTransforms\lib\Microsoft.UI.Xaml.OneCoreTransforms.vcxproj", "{4D59A898-7E24-4650-BAA0-7FE2BB6C82D4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.OneCoreTransforms", "xcp\components\OneCoreTransforms\lib\Microsoft.UI.Xaml.OneCoreTransforms.vcxproj", "{4D59A898-7E24-4650-BAA0-7FE2BB6C82D4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.RelativePanel", "..\..\dxaml\xcp\components\relativepanel\lib\Microsoft.UI.Xaml.RelativePanel.vcxproj", "{5CED1575-13FC-4C58-85E7-D5A44848AA6F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.RelativePanel", "xcp\components\relativepanel\lib\Microsoft.UI.Xaml.RelativePanel.vcxproj", "{5CED1575-13FC-4C58-85E7-D5A44848AA6F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel", "..\..\tests\runtime\native\isolated\controls\relativePanel\Microsoft.UI.Xaml.Tests.Isolated.Controls.RelativePanel.vcxproj", "{18E1385F-A460-4F60-BF09-FA8936E5AD99}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XamlResources", "..\..\dxaml\xcp\components\resources\lib\Microsoft.UI.Xaml.XamlResources.vcxproj", "{834D7BB9-3CC6-43F5-8DF9-2AC39EC2D8EF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XamlResources", "xcp\components\resources\lib\Microsoft.UI.Xaml.XamlResources.vcxproj", "{834D7BB9-3CC6-43F5-8DF9-2AC39EC2D8EF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.RuntimeEnabledFeatures", "..\..\dxaml\xcp\components\runtimeEnabledFeatures\lib\Microsoft.UI.Xaml.RuntimeEnabledFeatures.vcxproj", "{968DC6E1-0F0A-4211-97CC-57AB0754206B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.RuntimeEnabledFeatures", "xcp\components\runtimeEnabledFeatures\lib\Microsoft.UI.Xaml.RuntimeEnabledFeatures.vcxproj", "{968DC6E1-0F0A-4211-97CC-57AB0754206B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector", "..\..\tests\runtime\native\isolated\framework\runtimeEnabledFeatures\Microsoft.UI.Xaml.Tests.Isolated.Framework.RuntimeEnabledFeatureDetector.vcxproj", "{7B6887D9-6AF1-4EA6-8842-F8D2075132A2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.SatelliteBase", "..\..\dxaml\xcp\components\SatelliteBase\lib\Microsoft.UI.Xaml.SatelliteBase.vcxproj", "{A0C77691-0C3E-4497-9837-178ED492F063}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.SatelliteBase", "xcp\components\SatelliteBase\lib\Microsoft.UI.Xaml.SatelliteBase.vcxproj", "{A0C77691-0C3E-4497-9837-178ED492F063}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Framework.SimpleProperties", "..\..\dxaml\xcp\components\simple\lib\Microsoft.UI.Xaml.Framework.SimpleProperties.vcxproj", "{4A1F0CE8-0B6E-4D29-9799-A629C067543A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Framework.SimpleProperties", "xcp\components\simple\lib\Microsoft.UI.Xaml.Framework.SimpleProperties.vcxproj", "{4A1F0CE8-0B6E-4D29-9799-A629C067543A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties", "..\..\tests\runtime\native\isolated\framework\simple\Microsoft.UI.Xaml.Tests.Isolated.Framework.SimpleProperties.vcxproj", "{FA8AA2F0-A4B0-4CDE-842A-211380204264}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.StaticPal", "..\..\dxaml\xcp\components\staticpal\lib\Microsoft.UI.Xaml.StaticPal.vcxproj", "{C766B284-6B02-474B-9A87-58B2A997BC59}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.StaticPal", "xcp\components\staticpal\lib\Microsoft.UI.Xaml.StaticPal.vcxproj", "{C766B284-6B02-474B-9A87-58B2A997BC59}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Style", "..\..\dxaml\xcp\components\style\lib\Microsoft.UI.Xaml.Style.vcxproj", "{A62EF27A-9759-4647-A1B9-C52EC131CB34}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Style", "xcp\components\style\lib\Microsoft.UI.Xaml.Style.vcxproj", "{A62EF27A-9759-4647-A1B9-C52EC131CB34}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.TerminateProcessOnOOM", "..\..\dxaml\xcp\components\terminateProcessOnOOM\lib\Microsoft.UI.Xaml.TerminateProcessOnOOM.vcxproj", "{950D68B3-B34B-4453-96F9-5D1517F539CA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.TerminateProcessOnOOM", "xcp\components\terminateProcessOnOOM\lib\Microsoft.UI.Xaml.TerminateProcessOnOOM.vcxproj", "{950D68B3-B34B-4453-96F9-5D1517F539CA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Text", "..\..\dxaml\xcp\components\text\lib\Microsoft.UI.Xaml.Text.vcxproj", "{DF854298-841F-4DD5-9DDF-FEFBC280A6D1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Text", "xcp\components\text\lib\Microsoft.UI.Xaml.Text.vcxproj", "{DF854298-841F-4DD5-9DDF-FEFBC280A6D1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Text", "..\..\tests\runtime\native\isolated\foundation\text\Microsoft.UI.Xaml.Tests.Isolated.Text.vcxproj", "{70EB3E6F-12C8-4402-9D4D-9B0E462BD039}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ThemeAnimationsHelper", "..\..\dxaml\xcp\components\themeanimationshelper\lib\Microsoft.UI.Xaml.ThemeAnimationsHelper.vcxproj", "{C9CBA2D3-6D77-464C-B0D9-B02DA694B0C2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ThemeAnimationsHelper", "xcp\components\themeanimationshelper\lib\Microsoft.UI.Xaml.ThemeAnimationsHelper.vcxproj", "{C9CBA2D3-6D77-464C-B0D9-B02DA694B0C2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper", "..\..\tests\runtime\native\isolated\foundation\themeanimationshelper\Microsoft.UI.Xaml.Tests.Isolated.Foundation.ThemeAnimationsHelper.vcxproj", "{2BE58F46-4EB3-4C10-AC55-5033F1520153}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Theming", "..\..\dxaml\xcp\components\theming\lib\Microsoft.UI.Xaml.Theming.vcxproj", "{EB1E79FA-171B-4812-B0EE-FD162A81DC3B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Theming", "xcp\components\theming\lib\Microsoft.UI.Xaml.Theming.vcxproj", "{EB1E79FA-171B-4812-B0EE-FD162A81DC3B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming", "..\..\tests\runtime\native\isolated\controls\theming\Microsoft.UI.Xaml.Tests.Isolated.Controls.Theming.vcxproj", "{5FD60B9C-3241-4BBC-8C99-BC7A8F776D7B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ThemingInterop", "..\..\dxaml\xcp\components\theminginterop\lib\Microsoft.UI.Xaml.ThemingInterop.vcxproj", "{ED34E0C6-AA5E-45C8-B793-58E3A4171E19}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ThemingInterop", "xcp\components\theminginterop\lib\Microsoft.UI.Xaml.ThemingInterop.vcxproj", "{ED34E0C6-AA5E-45C8-B793-58E3A4171E19}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Threading", "..\..\dxaml\xcp\components\threading\lib\Microsoft.UI.Xaml.Threading.vcxproj", "{84B53D4A-4ACA-45FA-ABED-71590C405915}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Threading", "xcp\components\threading\lib\Microsoft.UI.Xaml.Threading.vcxproj", "{84B53D4A-4ACA-45FA-ABED-71590C405915}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading", "..\..\tests\runtime\native\isolated\foundation\threading\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Threading.vcxproj", "{96149DD6-9516-4684-8FD8-00B1F8BF9443}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Transforms", "..\..\dxaml\xcp\components\transforms\lib\Microsoft.UI.Xaml.Transforms.vcxproj", "{365CDABF-7F04-445D-A598-BA372821B5A6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Transforms", "xcp\components\transforms\lib\Microsoft.UI.Xaml.Transforms.vcxproj", "{365CDABF-7F04-445D-A598-BA372821B5A6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms", "..\..\tests\runtime\native\isolated\foundation\transforms\Microsoft.UI.Xaml.Tests.Isolated.Foundation.Transforms.vcxproj", "{8C1D8872-59A8-48B6-8C93-5C9A073BF1AE}"
 EndProject
@@ -1155,111 +1155,111 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExternalTestMocks", "..\..\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Stubs", "..\..\tests\runtime\native\isolated\shared\stubs\Microsoft.UI.Xaml.Stubs.vcxproj", "{EC5BFAB1-619B-45CB-B8EC-DB81F3C7811B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ValueBoxer", "..\..\dxaml\xcp\components\valueboxer\lib\Microsoft.UI.Xaml.ValueBoxer.vcxproj", "{BBDD985F-5AB4-40F4-8EB9-18AB4A76169A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.ValueBoxer", "xcp\components\valueboxer\lib\Microsoft.UI.Xaml.ValueBoxer.vcxproj", "{BBDD985F-5AB4-40F4-8EB9-18AB4A76169A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer", "..\..\tests\runtime\native\isolated\framework\valueboxer\Microsoft.UI.Xaml.Tests.Isolated.Framework.ValueBoxer.vcxproj", "{0BC11D27-A210-429D-AFEC-41101DE977A4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.VisualStatesHelper", "..\..\dxaml\xcp\components\visualstateshelper\lib\Microsoft.UI.Xaml.VisualStatesHelper.vcxproj", "{ED49C070-4A08-47C9-9B7F-3106ACEE9FD1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.VisualStatesHelper", "xcp\components\visualstateshelper\lib\Microsoft.UI.Xaml.VisualStatesHelper.vcxproj", "{ED49C070-4A08-47C9-9B7F-3106ACEE9FD1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper", "..\..\tests\runtime\native\isolated\enterprise\visualStatesHelper\Microsoft.UI.Xaml.Tests.Isolated.Enterprise.VisualStatesHelper.vcxproj", "{68724E7D-566C-46D1-95B3-77E748D9B3F2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.VisualStateMachine", "..\..\dxaml\xcp\components\vsm\lib\Microsoft.UI.Xaml.VisualStateMachine.vcxproj", "{AE6A3CB3-2D5F-4A15-843A-7D1DAC6395D3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.VisualStateMachine", "xcp\components\vsm\lib\Microsoft.UI.Xaml.VisualStateMachine.vcxproj", "{AE6A3CB3-2D5F-4A15-843A-7D1DAC6395D3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winuri", "..\..\dxaml\xcp\components\winuri\lib\winuri.vcxproj", "{0C3C2872-56A3-4ACF-B2F7-8C05710B93AE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winuri", "xcp\components\winuri\lib\winuri.vcxproj", "{0C3C2872-56A3-4ACF-B2F7-8C05710B93AE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri", "..\..\tests\runtime\native\isolated\framework\winuri\Microsoft.UI.Xaml.Tests.Isolated.Framework.WinUri.vcxproj", "{BE35AAD3-6382-4427-BD91-92182D5FA1D9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xamlom", "..\..\dxaml\xcp\components\xamlDiagnostics\idl\xamlom.vcxproj", "{C6E1E90C-EE33-4352-A8DE-067B013C7CC9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xamlom", "xcp\components\xamlDiagnostics\idl\xamlom.vcxproj", "{C6E1E90C-EE33-4352-A8DE-067B013C7CC9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XamlDiagnostics", "..\..\dxaml\xcp\components\xamlDiagnostics\lib\Microsoft.UI.Xaml.XamlDiagnostics.vcxproj", "{0E6EFB75-5844-4F7A-90AA-EABA4F6B76A9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XamlDiagnostics", "xcp\components\xamlDiagnostics\lib\Microsoft.UI.Xaml.XamlDiagnostics.vcxproj", "{0E6EFB75-5844-4F7A-90AA-EABA4F6B76A9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics", "..\..\tests\runtime\native\isolated\xaml\diagnostics\Microsoft.UI.Xaml.Tests.Isolated.XamlDiagnostics.vcxproj", "{184A3886-DEDB-4515-9AEB-4697E55472B2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XboxUtility", "..\..\dxaml\xcp\components\XboxUtility\lib\Microsoft.UI.Xaml.XboxUtility.vcxproj", "{B69373ED-EC7E-46EE-9FE6-76645661A3CB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XboxUtility", "xcp\components\XboxUtility\lib\Microsoft.UI.Xaml.XboxUtility.vcxproj", "{B69373ED-EC7E-46EE-9FE6-76645661A3CB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XString", "..\..\dxaml\xcp\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj", "{F9DA8380-5504-4ACC-BDE0-72CD5981826D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.XString", "xcp\components\xstring\lib\Microsoft.UI.Xaml.XString.vcxproj", "{F9DA8380-5504-4ACC-BDE0-72CD5981826D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Strings", "..\..\tests\runtime\native\isolated\foundation\xstring\Microsoft.UI.Xaml.Tests.Isolated.Strings.vcxproj", "{A60D1F91-0FAF-4E03-93ED-BFF510A10EFB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "download", "..\..\dxaml\xcp\control\download\download.vcxproj", "{D94B047D-1978-4BCD-A124-7302766133B6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "download", "xcp\control\download\download.vcxproj", "{D94B047D-1978-4BCD-A124-7302766133B6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "controlBase", "..\..\dxaml\xcp\control\common\shared\sl\controlBase.vcxproj", "{4DD81164-31B9-4127-8A64-F3BF1E544067}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "controlBase", "xcp\control\common\shared\sl\controlBase.vcxproj", "{4DD81164-31B9-4127-8A64-F3BF1E544067}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw", "..\..\dxaml\xcp\core\hw\hw.vcxproj", "{D78BEA58-BF05-4BBD-A310-B4A99052C6F8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw", "xcp\core\hw\hw.vcxproj", "{D78BEA58-BF05-4BBD-A310-B4A99052C6F8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Input", "..\..\dxaml\xcp\core\input\Input.vcxproj", "{D087F47A-69F5-42D4-98B6-31C2C8E330B8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Input", "xcp\core\input\Input.vcxproj", "{D087F47A-69F5-42D4-98B6-31C2C8E330B8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreControlsGenerated", "..\..\dxaml\xcp\core\controls\generated\CoreControlsGenerated.vcxproj", "{D4D488D4-440D-4D95-A10F-226D34E9B790}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreControlsGenerated", "xcp\core\controls\generated\CoreControlsGenerated.vcxproj", "{D4D488D4-440D-4D95-A10F-226D34E9B790}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements", "..\..\dxaml\xcp\core\core\elements\lib\elements.vcxproj", "{37935E07-B46A-4D00-B1F5-7FB7D99BFADB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements", "xcp\core\core\elements\lib\elements.vcxproj", "{37935E07-B46A-4D00-B1F5-7FB7D99BFADB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements2", "..\..\dxaml\xcp\core\core\elements\lib2\elements2.vcxproj", "{1F4E7D98-44F1-4655-9B72-B1A7C91C510D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements2", "xcp\core\core\elements\lib2\elements2.vcxproj", "{1F4E7D98-44F1-4655-9B72-B1A7C91C510D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements.except", "..\..\dxaml\xcp\core\core\elements\libexcept\elements.except.vcxproj", "{27E82EC4-58F3-4B2D-AFB8-4E902212C3EA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements.except", "xcp\core\core\elements\libexcept\elements.except.vcxproj", "{27E82EC4-58F3-4B2D-AFB8-4E902212C3EA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements.pch", "..\..\dxaml\xcp\core\core\elements\pch\elements.pch.vcxproj", "{04CF55F2-F07D-452A-B1C6-279ECA9312E6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements.pch", "xcp\core\core\elements\pch\elements.pch.vcxproj", "{04CF55F2-F07D-452A-B1C6-279ECA9312E6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements.except.pch", "..\..\dxaml\xcp\core\core\elements\pchexcept\elements.except.pch.vcxproj", "{96F6E5AF-3FE0-4D11-881B-F4CC87A2A414}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements.except.pch", "xcp\core\core\elements\pchexcept\elements.except.pch.vcxproj", "{96F6E5AF-3FE0-4D11-881B-F4CC87A2A414}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dynamicmetadata", "..\..\dxaml\xcp\core\metadata\dynamic\dynamicmetadata.vcxproj", "{3C27ADDA-177E-4DA8-BB12-546633922531}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dynamicmetadata", "xcp\core\metadata\dynamic\dynamicmetadata.vcxproj", "{3C27ADDA-177E-4DA8-BB12-546633922531}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mediaengine", "..\..\dxaml\xcp\core\native\media\mediaengine.vcxproj", "{D3EE2594-DBB3-44A0-B2E1-303CC27CE041}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mediaengine", "xcp\core\native\media\mediaengine.vcxproj", "{D3EE2594-DBB3-44A0-B2E1-303CC27CE041}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Native.Text.Common", "..\..\dxaml\xcp\core\native\text\Common\Native.Text.Common.vcxproj", "{C2443329-1A74-46FD-BE03-D66534FE58A6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Native.Text.Common", "xcp\core\native\text\Common\Native.Text.Common.vcxproj", "{C2443329-1A74-46FD-BE03-D66534FE58A6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Native.Text.Controls", "..\..\dxaml\xcp\core\native\text\Controls\Native.Text.Controls.vcxproj", "{9B1C4EC5-7142-4445-9C75-CABAF74B09E6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Native.Text.Controls", "xcp\core\native\text\Controls\Native.Text.Controls.vcxproj", "{9B1C4EC5-7142-4445-9C75-CABAF74B09E6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.Core", "..\..\dxaml\xcp\core\parser\core\Parser.Core.vcxproj", "{4C54CA57-3FDB-4BD4-A5CD-6F89F8F3D46B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.Core", "xcp\core\parser\core\Parser.Core.vcxproj", "{4C54CA57-3FDB-4BD4-A5CD-6F89F8F3D46B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.pch", "..\..\dxaml\xcp\core\parser\pch\Parser.pch.vcxproj", "{1CCE739D-864A-4FEB-BE21-4CFBF758243F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.pch", "xcp\core\parser\pch\Parser.pch.vcxproj", "{1CCE739D-864A-4FEB-BE21-4CFBF758243F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.Runtime", "..\..\dxaml\xcp\core\parser\runtime\Parser.Runtime.vcxproj", "{92E5E794-20B0-46DF-B0B8-1C5856CD0A6C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.Runtime", "xcp\core\parser\runtime\Parser.Runtime.vcxproj", "{92E5E794-20B0-46DF-B0B8-1C5856CD0A6C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.Core.Static", "..\..\dxaml\xcp\core\parser\staticcore\Parser.Core.Static.vcxproj", "{BC600EB1-A9FD-45D5-8DFF-28D793544E20}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.Core.Static", "xcp\core\parser\staticcore\Parser.Core.Static.vcxproj", "{BC600EB1-A9FD-45D5-8DFF-28D793544E20}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.pch", "..\..\dxaml\xcp\core\parser\staticpch\Parser.pch.vcxproj", "{0E9ADEA7-7E96-4F7C-9CE1-7B82FF6F70C4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser.pch", "xcp\core\parser\staticpch\Parser.pch.vcxproj", "{0E9ADEA7-7E96-4F7C-9CE1-7B82FF6F70C4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "manifest", "..\..\dxaml\xcp\dxaml\manifest\manifest.vcxproj", "{439D8D30-7118-4DA6-956B-EE0C5B92D6A9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "manifest", "xcp\dxaml\manifest\manifest.vcxproj", "{439D8D30-7118-4DA6-956B-EE0C5B92D6A9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Phone", "..\..\dxaml\xcp\dxaml\dllsrv\exts\phone\Microsoft.UI.Xaml.Phone.vcxproj", "{BE2D8FE3-D933-404E-BFE4-88435D96D8E4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Phone", "xcp\dxaml\dllsrv\exts\phone\Microsoft.UI.Xaml.Phone.vcxproj", "{BE2D8FE3-D933-404E-BFE4-88435D96D8E4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml", "..\..\dxaml\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj", "{D6A86B75-C0D2-4761-844C-9D83A130AF69}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml", "xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj", "{D6A86B75-C0D2-4761-844C-9D83A130AF69}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.resources.19h1", "..\..\dxaml\xcp\dxaml\dllsrv\winrt\res\19h1\Microsoft.ui.xaml.resources.19h1.vcxproj", "{C0955FBB-8FB9-40C1-A7E4-A93A0757FF66}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.resources.19h1", "xcp\dxaml\dllsrv\winrt\res\19h1\Microsoft.ui.xaml.resources.19h1.vcxproj", "{C0955FBB-8FB9-40C1-A7E4-A93A0757FF66}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.resources.common", "..\..\dxaml\xcp\dxaml\dllsrv\winrt\res\common\Microsoft.ui.xaml.resources.common.vcxproj", "{15C55795-CD51-415E-AA93-DFB42B6565E1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.resources.common", "xcp\dxaml\dllsrv\winrt\res\common\Microsoft.ui.xaml.resources.common.vcxproj", "{15C55795-CD51-415E-AA93-DFB42B6565E1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "microsoft.ui.xaml-com", "..\..\dxaml\xcp\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj", "{A1EB01C3-AC8B-45A8-97C8-C459B77ED690}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "microsoft.ui.xaml-com", "xcp\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj", "{A1EB01C3-AC8B-45A8-97C8-C459B77ED690}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.controls.controls", "..\..\dxaml\xcp\dxaml\idl\winrt\controls\Microsoft.ui.xaml.controls.controls.vcxproj", "{F24B3ECB-BD87-4626-B17C-D8CC3E253F32}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.controls.controls", "xcp\dxaml\idl\winrt\controls\Microsoft.ui.xaml.controls.controls.vcxproj", "{F24B3ECB-BD87-4626-B17C-D8CC3E253F32}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.coretypes", "..\..\dxaml\xcp\dxaml\idl\winrt\core\Microsoft.ui.xaml.coretypes.vcxproj", "{F021A52A-6162-4E8D-B109-847EE5362DF9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.coretypes", "xcp\dxaml\idl\winrt\core\Microsoft.ui.xaml.coretypes.vcxproj", "{F021A52A-6162-4E8D-B109-847EE5362DF9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml-main", "..\..\dxaml\xcp\dxaml\idl\winrt\main\Microsoft.ui.xaml-main.vcxproj", "{5876E568-B204-4219-8C08-9E8124EDAB9C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml-main", "xcp\dxaml\idl\winrt\main\Microsoft.ui.xaml-main.vcxproj", "{5876E568-B204-4219-8C08-9E8124EDAB9C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlautomation", "..\..\dxaml\xcp\dxaml\lib\winrtautomation\wrtdxamlautomation.vcxproj", "{418CB7C6-A4F4-452A-9087-439AB8A61A66}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlautomation", "xcp\dxaml\lib\winrtautomation\wrtdxamlautomation.vcxproj", "{418CB7C6-A4F4-452A-9087-439AB8A61A66}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlcontrols", "..\..\dxaml\xcp\dxaml\lib\winrtcontrols\wrtdxamlcontrols.vcxproj", "{1FF2008D-A3AE-4601-8F01-F4FD23C4FB88}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlcontrols", "xcp\dxaml\lib\winrtcontrols\wrtdxamlcontrols.vcxproj", "{1FF2008D-A3AE-4601-8F01-F4FD23C4FB88}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlcontrols2", "..\..\dxaml\xcp\dxaml\lib\winrtcontrols2\wrtdxamlcontrols2.vcxproj", "{5FC5D82E-A0FC-4309-BF13-806F022E9AB9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlcontrols2", "xcp\dxaml\lib\winrtcontrols2\wrtdxamlcontrols2.vcxproj", "{5FC5D82E-A0FC-4309-BF13-806F022E9AB9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlcontrols3", "..\..\dxaml\xcp\dxaml\lib\winrtcontrols3\wrtdxamlcontrols3.vcxproj", "{3CF1ECD0-3B72-49BB-B83E-9E44B9558718}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlcontrols3", "xcp\dxaml\lib\winrtcontrols3\wrtdxamlcontrols3.vcxproj", "{3CF1ECD0-3B72-49BB-B83E-9E44B9558718}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlexceptions", "..\..\dxaml\xcp\dxaml\lib\winrtexcept\wrtdxamlexceptions.vcxproj", "{8835FD69-17AB-452E-BA7D-74A82D3E8F42}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlexceptions", "xcp\dxaml\lib\winrtexcept\wrtdxamlexceptions.vcxproj", "{8835FD69-17AB-452E-BA7D-74A82D3E8F42}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlfactories", "..\..\dxaml\xcp\dxaml\lib\winrtfactories\wrtdxamlfactories.vcxproj", "{62B922B3-B978-4230-BB5E-4ABB77C84C5F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlfactories", "xcp\dxaml\lib\winrtfactories\wrtdxamlfactories.vcxproj", "{62B922B3-B978-4230-BB5E-4ABB77C84C5F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlfoundation", "..\..\dxaml\xcp\dxaml\lib\winrtfoundation\wrtdxamlfoundation.vcxproj", "{10313621-37BF-4039-9DFE-E8B49D131758}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlfoundation", "xcp\dxaml\lib\winrtfoundation\wrtdxamlfoundation.vcxproj", "{10313621-37BF-4039-9DFE-E8B49D131758}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlfoundation2", "..\..\dxaml\xcp\dxaml\lib\winrtfoundation2\wrtdxamlfoundation2.vcxproj", "{FEBE7793-7794-4F61-A5D5-1C56FD4B09B1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlfoundation2", "xcp\dxaml\lib\winrtfoundation2\wrtdxamlfoundation2.vcxproj", "{FEBE7793-7794-4F61-A5D5-1C56FD4B09B1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlgeneratedclasses", "..\..\dxaml\xcp\dxaml\lib\winrtgeneratedclasses\wrtdxamlgeneratedclasses.vcxproj", "{046BCE01-1F2D-4215-875C-566FB1F88C53}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlgeneratedclasses", "xcp\dxaml\lib\winrtgeneratedclasses\wrtdxamlgeneratedclasses.vcxproj", "{046BCE01-1F2D-4215-875C-566FB1F88C53}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlpch", "..\..\dxaml\xcp\dxaml\lib\winrtpch\wrtdxamlpch.vcxproj", "{845D8296-BEC7-4E97-8DA9-DB26A3A6D8C9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlpch", "xcp\dxaml\lib\winrtpch\wrtdxamlpch.vcxproj", "{845D8296-BEC7-4E97-8DA9-DB26A3A6D8C9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlpch.excep", "..\..\dxaml\xcp\dxaml\lib\winrtpchexcept\wrtdxamlpch.excep.vcxproj", "{894A4D21-D7AA-4F73-AA74-2D365519A311}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtdxamlpch.excep", "xcp\dxaml\lib\winrtpchexcept\wrtdxamlpch.excep.vcxproj", "{894A4D21-D7AA-4F73-AA74-2D365519A311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenAllXbf", "..\..\dxaml\xcp\dxaml\themes\autogen\GenAllXbf.csproj", "{0D1EAEAA-7BEF-44A1-91E8-5E05E18F348E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenAllXbf", "xcp\dxaml\themes\autogen\GenAllXbf.csproj", "{0D1EAEAA-7BEF-44A1-91E8-5E05E18F348E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.Diagnostics.AppAnalysis", "..\..\tools\runtime\AppAnalysis\dll\Microsoft.Diagnostics.AppAnalysis.vcxproj", "{2443059A-FAD7-4812-B0E6-243E33F11A01}"
 EndProject
@@ -1285,19 +1285,19 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Iso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XamlDiagnosticsTap", "..\..\tools\runtime\xamldiagnostics\tap\XamlDiagnosticsTap.vcxproj", "{66C7FECE-EBB2-4D67-8FA8-BFC1C250E2EE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PALDebug", "..\..\dxaml\xcp\pal\debug\PALDebug.vcxproj", "{F1BEDBAB-6F95-4A90-8352-F54BF17F6FD0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PALDebug", "xcp\pal\debug\PALDebug.vcxproj", "{F1BEDBAB-6F95-4A90-8352-F54BF17F6FD0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "platwinbrowserdesktop", "..\..\dxaml\xcp\plat\win\browserdesktop\platwinbrowserdesktop.vcxproj", "{ABFA3EDA-0917-4FCF-8166-B70D5763B743}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "platwinbrowserdesktop", "xcp\plat\win\browserdesktop\platwinbrowserdesktop.vcxproj", "{ABFA3EDA-0917-4FCF-8166-B70D5763B743}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "platwindesktop", "..\..\dxaml\xcp\plat\win\desktop\platwindesktop.vcxproj", "{F868D210-0440-4A29-8CC5-285F4CD86BF4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "platwindesktop", "xcp\plat\win\desktop\platwindesktop.vcxproj", "{F868D210-0440-4A29-8CC5-285F4CD86BF4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XamlETW", "..\..\dxaml\xcp\plat\win\etw\XamlETW.vcxproj", "{D45628A0-BCC5-4EF0-8645-1C0C452F98C6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XamlETW", "xcp\plat\win\etw\XamlETW.vcxproj", "{D45628A0-BCC5-4EF0-8645-1C0C452F98C6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hostpalplatmisc", "..\..\dxaml\xcp\hostpalplatmisc.vcxproj", "{379AA0E5-75BD-4AC3-9E9D-2168F400F1B0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hostpalplatmisc", "xcp\hostpalplatmisc.vcxproj", "{379AA0E5-75BD-4AC3-9E9D-2168F400F1B0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xcpcore", "..\..\dxaml\xcp\core\xcpcore.vcxproj", "{86EAB859-48AA-4EFE-B2C2-8C6A345A318A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xcpcore", "xcp\core\xcpcore.vcxproj", "{86EAB859-48AA-4EFE-B2C2-8C6A345A318A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coretext", "..\..\dxaml\xcp\core\text\coretext.vcxproj", "{8F008900-E6E3-4443-92ED-34FBAD8042B3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coretext", "xcp\core\text\coretext.vcxproj", "{8F008900-E6E3-4443-92ED-34FBAD8042B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpXbf", "..\..\tools\runtime\DumpXbf\DumpXbf.csproj", "{8632C717-C327-4FBD-A7E2-85F73C859333}"
 EndProject
@@ -1307,9 +1307,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleXbfViewer", "..\..\to
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WidgetSpinner", "..\..\tools\runtime\XbfParser\WidgetSpinner\WidgetSpinner.csproj", "{767D7345-33A0-43A3-9625-DB78B24DD1CD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shared", "..\..\dxaml\xcp\win\shared\sl\shared.vcxproj", "{E5804231-9D90-4E97-812D-855BA72B8426}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shared", "xcp\win\shared\sl\shared.vcxproj", "{E5804231-9D90-4E97-812D-855BA72B8426}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uiutils", "..\..\dxaml\xcp\win\UIUtils\winrt\uiutils.vcxproj", "{C9184280-7438-4601-91C5-8BC9322AC599}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uiutils", "xcp\win\UIUtils\winrt\uiutils.vcxproj", "{C9184280-7438-4601-91C5-8BC9322AC599}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "..\metadata\MergedWinMD\MergedWinMD.vcxproj", "{25CF9F3C-2B8C-438B-92AD-0FE7CC47C30E}"
 EndProject
@@ -1395,9 +1395,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "merged", "merged", "{28F56F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "private", "private", "{DF7C6FC7-BE8F-4FA0-ABD9-421DECC32731}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml-merged", "..\..\dxaml\xcp\dxaml\idl\winrt\merged\Microsoft.UI.Xaml.vcxproj", "{869EA267-A81A-49ED-8404-812C2A03E25A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml-merged", "xcp\dxaml\idl\winrt\merged\Microsoft.UI.Xaml.vcxproj", "{869EA267-A81A-49ED-8404-812C2A03E25A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml", "..\..\dxaml\xcp\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj", "{D638A8EF-3A48-45F2-913C-88B29FED03CB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml", "xcp\dxaml\idl\winrt\merged\private\Microsoft.UI.Xaml.vcxproj", "{D638A8EF-3A48-45F2-913C-88B29FED03CB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.External.Adaptability.CustomTypes", "..\..\tests\runtime\native\external\adaptability\customtypes\CustomTypes.vcxproj", "{504CD4B5-11D7-489B-B8ED-AA12CBFEE7D1}"
 EndProject
@@ -1415,7 +1415,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "packages", "..\..\tests\run
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "resources", "..\..\tests\runtime\resources\res\resources.csproj", "{0315018D-47C9-4D39-996F-737F202FDA56}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sounds", "..\..\dxaml\xcp\dxaml\sounds\sounds.csproj", "{5075E59E-390C-4C0C-92D6-B865DA7FC7FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sounds", "xcp\dxaml\sounds\sounds.csproj", "{5075E59E-390C-4C0C-92D6-B865DA7FC7FA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\..\packaging\Microsoft.WinUI.csproj", "{3EF6EAE7-3BFC-4B43-BF1B-DE3134E75E5B}"
 EndProject
@@ -1445,7 +1445,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowChrome", "WindowChrome", "{99B40D98-B965-4132-BEB7-BBC25FAF0F58}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.WindowChrome", "..\..\dxaml\xcp\components\WindowChrome\Microsoft.UI.Xaml.WindowChrome.vcxproj", "{950FF51A-B772-4185-BC1C-0065FDD2CEFD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.WindowChrome", "xcp\components\WindowChrome\Microsoft.UI.Xaml.WindowChrome.vcxproj", "{950FF51A-B772-4185-BC1C-0065FDD2CEFD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata", "..\..\tests\runtime\native\isolated\shared\mocks\metadata\Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj", "{2B9A325F-17AF-40F1-98C9-2AA7856B77E7}"
 EndProject

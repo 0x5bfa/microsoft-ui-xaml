@@ -60,7 +60,7 @@ can see in the above table, when we do a release build we exclude the experiment
 them into a private WinMD so we can still run tests.  In experimental builds, the experimental APIs
 are left in the shipping WinMD, and marked as "experimental".
 
-In [featureflags.h](../../dxaml/xcp/inc/featureflags.h), we define feature flags that allow us to
+In [featureflags.h](../../src/runtime/xcp/inc/featureflags.h), we define feature flags that allow us to
 specify which APIs should be present, absent, and marked as experimental.  Our IDL files describes
 which APIs are controlled by which feature flags with the feature attribute, like this:
 `[feature(Feature_MyExperimentalFeature)]`.  Please see the featureflags.h file for more

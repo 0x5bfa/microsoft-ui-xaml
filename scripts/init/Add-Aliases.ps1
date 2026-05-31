@@ -9,7 +9,7 @@
 
 if (-not $env:XcpRoot)
 {
-    $env:XcpRoot = "$env:reporoot\dxaml\xcp"
+    $env:XcpRoot = "$env:reporoot\src\runtime\xcp"
 }
 
 function global:root { pushd $env:reporoot }

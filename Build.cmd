@@ -143,7 +143,7 @@ if not "%_initFlavor%" == "" (
     exit /b 1
 )
 
-if "%XcpRoot%" == "" set XcpRoot=%reporoot%\dxaml\xcp
+if "%XcpRoot%" == "" set XcpRoot=%reporoot%\src\runtime\xcp
 
 if "%_clean%"=="1" (
     call :callScript "%RepoRoot%\tools\build\clean.cmd" /all

@@ -50,8 +50,8 @@ the two layers.
 ## Xaml Core
 
 The *Xaml core* - not to be confused with the Core *layer* in the Xaml code - is made up of 2 objects, each 
-corresponding to one of the layers: a [`DxamlCore`](../../dxaml/xcp/dxaml/lib/DxamlCore.h) object at the Dxaml layer 
-and a [`CCoreServices`](../../dxaml/xcp/core/inc/corep.h) object at the Core layer. Together they make up a **Xaml 
+corresponding to one of the layers: a [`DxamlCore`](../../src/runtime/xcp/dxaml/lib/DxamlCore.h) object at the Dxaml layer
+and a [`CCoreServices`](../../src/runtime/xcp/core/inc/corep.h) object at the Core layer. Together they make up a **Xaml
 instance**, which is one per-thread because WinUI is a single-threaded framework.
 
 ## Peer objects
@@ -151,7 +151,7 @@ with it effortlessly ([WinUI Pointers](./pointers.md))
 
 `FxCallbacks` is yet another abstraction file which is used for certain common actions where a function needs to talk 
 from Core to Dxaml layer. 
-`dxaml/xcp/dxaml/lib/FxCallbacks.cpp`
+`src/runtime/xcp/dxaml/lib/FxCallbacks.cpp`
 
 Like the `pinvokes.cpp` file, FxCallbacks is a port of code in Silverlight that called
 from Core to `System.Windows`, meaning it was a file full of reverse pinvokes.

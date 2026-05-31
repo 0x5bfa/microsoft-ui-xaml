@@ -147,7 +147,7 @@ There are several ways to initialize `Application::Current`:
 1. **Explicitly by the app.**  This is by far the most common way, we may want to even delete the others.
    The app would instantiate a `Application` (the `FrameworkApplication` class in Xaml) or an
    app-derived subclass, and Xaml's
-   `FrameworkApplication::Initialize` (in `dxaml/xcp/dxaml/lib/FrameworkApplication_Partial.cpp`)
+   `FrameworkApplication::Initialize` (in `src/runtime/xcp/dxaml/lib/FrameworkApplication_Partial.cpp`)
    would register it as the global g_pApplication variable, to be returned by `Application::Current`. This object would
    be ready to go when Xaml initializes in `WindowsXamlManager::XamlCore::Initialize`.
 

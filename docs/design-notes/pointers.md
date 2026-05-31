@@ -115,7 +115,7 @@ ptr.try_as<winrt::typeB>()   // dynamic cast
 * Optimised pointer which does COM pointer like ref counting but for non-COM XAML objects in core layer as AddRef and 
   Release functions are not virtual functions. xref_ptr is templated and can make direct (compile type computed) calls for each type.
 
-File: [`dxaml/xcp/components/base/inc/inc/xref_ptr.h`](../../dxaml/xcp/components/base/inc/inc/xref_ptr.h)
+File: [`src/runtime/xcp/components/base/inc/inc/xref_ptr.h`](../../src/runtime/xcp/components/base/inc/inc/xref_ptr.h)
 
 #### Usage
 ```c++
@@ -141,7 +141,7 @@ ptr = checked_cast<T>(raw_pointer);  //better as it does better checks to make s
 * Bool operator overloaded, can be used directly in boolean cases like if statements. `==` and `!=` are also overloaded but and works with raw pointers and `nullptr`
 * A detailed discussion exists here: [XAML/C# Object Lifetime Design](./xaml-object-lifetime.md)
 
-File: [`dxaml/xcp/components/lifetime/inc/TrackerPtr.h`](../../dxaml/xcp/components/lifetime/inc/TrackerPtr.h)
+File: [`src/runtime/xcp/components/lifetime/inc/TrackerPtr.h`](../../src/runtime/xcp/components/lifetime/inc/TrackerPtr.h)
 
 ### ctl::WeakRefPtr
 
@@ -257,7 +257,7 @@ Then we can examine this memory address to peek into the reference semantics for
 * Easier and simpler than using token system
 * New event types need to be added in the definition file given below
 
-Files : `dxaml/xcp/dxaml/lib/EventCallbacks.h` and `dxaml/xcp/dxaml/lib/EventCallbacks.cpp`
+Files : `src/runtime/xcp/dxaml/lib/EventCallbacks.h` and `src/runtime/xcp/dxaml/lib/EventCallbacks.cpp`
 
 #### Usage
 

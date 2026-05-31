@@ -104,6 +104,6 @@ The drag regions are provided by calling `Microsoft.UI.Input.InputNonClientPoint
 heavy lifting of creating glass windows, caption button windows and handling and responding to `NCHITTEST` messages by the OS.
 
 * `WindowChrome` Control:
-  * Dxaml layer: [`dxaml/xcp/dxaml/lib/WindowChrome_Partial.cpp`](../../dxaml/xcp/dxaml/lib/WindowChrome_Partial.cpp)
-  * Core layer: [`dxaml/xcp/components/WindowChrome/CWindowChrome.cpp`](../../dxaml/xcp/components/WindowChrome/CWindowChrome.cpp)
+  * Dxaml layer: [`src/runtime/xcp/dxaml/lib/WindowChrome_Partial.cpp`](../../src/runtime/xcp/dxaml/lib/WindowChrome_Partial.cpp)
+  * Core layer: [`src/runtime/xcp/components/WindowChrome/CWindowChrome.cpp`](../../src/runtime/xcp/components/WindowChrome/CWindowChrome.cpp)
 * InputNonClientPointerSource: See the Windows App SDK documentation for this API.

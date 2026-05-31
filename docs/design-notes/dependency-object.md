@@ -38,7 +38,7 @@ Microsoft_UI_Xaml!CDependencyObject::SetValue
 ...
 ```
 
-`CDependencyObject::VerifyCanAssociate` (in `dxaml/xcp/components/DependencyObject/PropertySystem.cpp`)
+`CDependencyObject::VerifyCanAssociate` (in `src/runtime/xcp/components/DependencyObject/PropertySystem.cpp`)
 has an if statement that is triggered when:
 1. The new object is already associated (i.e. already has a parent),
 2. The property being set is has association restrictions (i.e. an unassociated object being set on this property becomes associated), and
@@ -67,7 +67,7 @@ Microsoft_UI_Xaml!CCollection::Add
 ...
 ```
 
-`CDOCollection::PreAddToCollection` (in `dxaml/xcp/components/Collection/DOCollection.cpp`)
+`CDOCollection::PreAddToCollection` (in `src/runtime/xcp/components/Collection/DOCollection.cpp`)
 checks whether the new object is associated already, and if so raises an error.
 
 Note that unlike the property system code path, all CDOCollections enforce that their contents can't have multiple
@@ -79,12 +79,12 @@ When it comes to marking an object as associated, there are the same two cases:
 
 1. **Via the property system.**
    `CDependencyObject::EnterEffectiveValue` and
-   `CDependencyObject::LeaveEffectiveValue` (in `dxaml/xcp/components/DependencyObject/PropertySystem.cpp`)
+   `CDependencyObject::LeaveEffectiveValue` (in `src/runtime/xcp/components/DependencyObject/PropertySystem.cpp`)
    are the places that set and clear associations. They only set the association if either the property cares about
    multiple associations or if the object is allowed to have multiple parents. This excludes cases like
    `ItemsControl.ItemsHost` from touching associations.
 
 2. **Via `CDOCollection`.**
-   `CDOCollection::SetChildParent` (in `dxaml/xcp/components/Collection/DOCollection.cpp`)
+   `CDOCollection::SetChildParent` (in `src/runtime/xcp/components/Collection/DOCollection.cpp`)
    is the method that does this, and it's called from the modification APIs like `Append`, `Insert`, `RemoveAt`, and
    `Neat` (which clears the collection).

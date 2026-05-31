@@ -41,34 +41,34 @@ It generates the following:
 
 * IDLs
   * src/runtime/phone/idl
-  * dxaml/xcp/components/maps/idl
-  * dxaml/xcp/dxaml/idl
+  * src/runtime/xcp/components/maps/idl
+  * src/runtime/xcp/dxaml/idl
 * Metadata:
-  * dxaml/xcp/components/metadata
-  * dxaml/xcp/core/metadata
+  * src/runtime/xcp/components/metadata
+  * src/runtime/xcp/core/metadata
 * XBF indexes
-  * dxaml/xcp/core/parser
+  * src/runtime/xcp/core/parser
   * tools/runtime/XCPTypesAutoGen/XamlGen/StableXbf*.csv
 * Core partials (cpp/h)
-  * dxaml/xcp/core/controls/generated
-  * dxaml/xcp/core/elements
+  * src/runtime/xcp/core/controls/generated
+  * src/runtime/xcp/core/elements
 * Framework partials (cpp/h)
-  * dxaml/xcp/dxaml/lib/winrtfactories
-  * dxaml/xcp/dxaml/lib/winrtgeneratedclasses
+  * src/runtime/xcp/dxaml/lib/winrtfactories
+  * src/runtime/xcp/dxaml/lib/winrtgeneratedclasses
 * Manifests (Core, Phone, maps)
-  * dxaml/xcp/dxaml/dllsrv/exts/maps
-  * dxaml/xcp/dxaml/dllsrv/exts/phone
-  * dxaml/xcp/dxaml/manifest
+  * src/runtime/xcp/dxaml/dllsrv/exts/maps
+  * src/runtime/xcp/dxaml/dllsrv/exts/phone
+  * src/runtime/xcp/dxaml/manifest
 
 `XCPTypesAutoGen.exe` aka The Old Code Generator no longer exists. It used to build these projects that are now built by
 the new code generator, `XamlGen.exe`:
 
 * Extension type infos (Phone, Maps)
-  * dxaml/xcp/components/maps/lib
+  * src/runtime/xcp/components/maps/lib
   * src/runtime/phone/lib
 * Extension XamlTypeInfo.g.h/rc/cpp
-  * dxaml/xcp/dxaml/dllsrv/exts/maps
-  * dxaml/xcp/dxaml/dllsrv/exts/phone
+  * src/runtime/xcp/dxaml/dllsrv/exts/maps
+  * src/runtime/xcp/dxaml/dllsrv/exts/phone
 
 Improvements in new `XamlGen.exe`
 

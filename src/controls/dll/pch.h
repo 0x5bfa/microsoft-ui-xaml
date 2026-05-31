@@ -37,7 +37,7 @@
 #include <guiddef.h>
 
 #ifdef DBG
-// Copied from dxaml\xcp\components\base\inc\AssertMacros.h to avoid taking a dependency.
+// Copied from src\runtime\xcp\components\base\inc\AssertMacros.h to avoid taking a dependency.
 #define XCPW(x) L##x
 
 #define ASSERT(cond, ...) \

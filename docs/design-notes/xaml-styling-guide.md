@@ -589,8 +589,8 @@ However, the resource names usually infer its usage. With time, one can generall
 
 Accent colors change according to System theme color settings. As such, they reference `SystemAccent*` colors 
 defined in at the dxaml level.
-- See [SystemThemingInterop.cpp](../../dxaml/xcp/components/theminginterop/SystemThemingInterop.cpp)
-and [FrameworkTheming.cpp](../../dxaml/xcp/components/theming/FrameworkTheming.cpp) for more info.
+- See [SystemThemingInterop.cpp](../../src/runtime/xcp/components/theminginterop/SystemThemingInterop.cpp)
+and [FrameworkTheming.cpp](../../src/runtime/xcp/components/theming/FrameworkTheming.cpp) for more info.
 
 ```xml
 <SolidColorBrush x:Key="AccentTextFillColorPrimaryBrush" Color="{ThemeResource SystemAccentColorDark2}" />

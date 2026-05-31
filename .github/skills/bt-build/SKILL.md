@@ -61,7 +61,7 @@ all write to `BuildOutput\` with names like:
 To pick:
 
 1. **Classify the change** by edited paths — test (table below) / mux
-   (`dxaml/xcp/` only) / **product** (everything else under `controls/dev`,
+   (`src/runtime/xcp/` only) / **product** (everything else under `controls/dev`,
    `controls/idl`, `dxaml/`, `src/`).
 2. **Pick the freshest binlog whose scope covers that classification**,
    preferring broader scopes (product covers Controls, etc.).

@@ -628,7 +628,7 @@ namespace Microsoft.UI.Xaml.Tests.MUXControls.ApiTests
             });
         }
 
-        // See \dxaml\xcp\dxaml\lib\FocusManager.cpp, line 433. FocusManagerFactory::FindNextFocusableElementImpl returns error E_UNEXPECTED, 'This API is not yet supported in WinUI desktop.'
+        // See \src\runtime\xcp\dxaml\lib\FocusManager.cpp, line 433. FocusManagerFactory::FindNextFocusableElementImpl returns error E_UNEXPECTED, 'This API is not yet supported in WinUI desktop.'
         [TestMethod]
         [TestProperty("Ignore", "True")] // Disabled until FocusManager supports FindNextFocusableElement in WinUI3.
         public void ValidateXYFocusNavigation()

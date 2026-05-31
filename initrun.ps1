@@ -16,7 +16,7 @@
 
 .EXAMPLE
     .\initrun.ps1 build.cmd mux /q
-    .\initrun.ps1 msb "dxaml\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj" /q
+    .\initrun.ps1 msb "src\runtime\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj" /q
     .\initrun.ps1 -Flavor arm64fre build.cmd mux /q
     .\initrun.ps1 run-tests-vm.ps1 *CommandBar*
 #>

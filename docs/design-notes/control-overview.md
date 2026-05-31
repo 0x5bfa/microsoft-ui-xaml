@@ -44,7 +44,7 @@ implemented using a Popup, that will be done here.
 ## Core
 
 The core part of the control resides in `xcp/core`. For Flyouts, the `CFlyout` class (in 
-[`flyout.cpp`](../../dxaml/xcp/core/core/elements/flyout.cpp)) is the core layer peer of `Flyout_partial` and handles 
+[`flyout.cpp`](../../src/runtime/xcp/core/core/elements/flyout.cpp)) is the core layer peer of `Flyout_partial` and handles
 the implementation details of the control. It is the place where its distinct 
 identity as a control is lost and it becomes part of the inner components. It interacts with DXaml Core. It takes care 
 of lifetime operations and entering and leaving visual tree.

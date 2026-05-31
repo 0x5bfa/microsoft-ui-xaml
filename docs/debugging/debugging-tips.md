@@ -257,17 +257,17 @@ machine you will need to force it to 64 bits using `dqs`.
 
 ```
 0:007> dps 0x000001d73fdb74f0
-000001d7`3fdb74f0  00007ff8`c0caf843 Microsoft_UI_Xaml!ctl::Details::CreateWeakReference+0x13 [<repo-root>\dxaml\xcp\components\com\inc\WeakReferenceImpl.h @ 128]
-000001d7`3fdb74f8  00007ff8`c0cb01bc Microsoft_UI_Xaml!ctl::ComBase::GetWeakReferenceImpl+0x7c [<repo-root>\dxaml\xcp\components\com\inc\ComBase.h @ 175]
-000001d7`3fdb7500  00007ff8`c0cb00fd Microsoft_UI_Xaml!ctl::WeakReferenceSourceNoThreadId::GetWeakReference+0x1d [<repo-root>\dxaml\xcp\components\lifetime\lib\WeakReferenceSourceNoThreadId.cpp @ 114]
-000001d7`3fdb7508  00007ff8`c0cb00cc Microsoft_UI_Xaml!ctl::interface_forwarder<IWeakReferenceSource,ctl::WeakReferenceSourceNoThreadId>::GetWeakReference+0x2c [<repo-root>\dxaml\xcp\components\lifetime\inc\WeakReferenceSourceNoThreadId.h @ 28]
-000001d7`3fdb7510  00007ff8`c0866c72 Microsoft_UI_Xaml!ctl::AsWeak<DirectUI::Window>+0x192 [<repo-root>\dxaml\xcp\components\com\inc\ComPtr.h @ 776]
-000001d7`3fdb7518  00007ff8`c0b281d9 Microsoft_UI_Xaml!DirectUI::TimePicker::OnLoaded+0x199 [<repo-root>\dxaml\xcp\dxaml\lib\TimePicker_Partial.cpp @ 113]
+000001d7`3fdb74f0  00007ff8`c0caf843 Microsoft_UI_Xaml!ctl::Details::CreateWeakReference+0x13 [<repo-root>\src\runtime\xcp\components\com\inc\WeakReferenceImpl.h @ 128]
+000001d7`3fdb74f8  00007ff8`c0cb01bc Microsoft_UI_Xaml!ctl::ComBase::GetWeakReferenceImpl+0x7c [<repo-root>\src\runtime\xcp\components\com\inc\ComBase.h @ 175]
+000001d7`3fdb7500  00007ff8`c0cb00fd Microsoft_UI_Xaml!ctl::WeakReferenceSourceNoThreadId::GetWeakReference+0x1d [<repo-root>\src\runtime\xcp\components\lifetime\lib\WeakReferenceSourceNoThreadId.cpp @ 114]
+000001d7`3fdb7508  00007ff8`c0cb00cc Microsoft_UI_Xaml!ctl::interface_forwarder<IWeakReferenceSource,ctl::WeakReferenceSourceNoThreadId>::GetWeakReference+0x2c [<repo-root>\src\runtime\xcp\components\lifetime\inc\WeakReferenceSourceNoThreadId.h @ 28]
+000001d7`3fdb7510  00007ff8`c0866c72 Microsoft_UI_Xaml!ctl::AsWeak<DirectUI::Window>+0x192 [<repo-root>\src\runtime\xcp\components\com\inc\ComPtr.h @ 776]
+000001d7`3fdb7518  00007ff8`c0b281d9 Microsoft_UI_Xaml!DirectUI::TimePicker::OnLoaded+0x199 [<repo-root>\src\runtime\xcp\dxaml\lib\TimePicker_Partial.cpp @ 113]
 000001d7`3fdb7520  00007ff8`c0b1ce45 Microsoft_UI_Xaml!std::invoke<long (__cdecl DirectUI::TimePicker::*&)(IInspectable *,ABI::Microsoft::UI::Xaml::IRoutedEventArgs *),DirectUI::TimePicker * &,IInspectable *,ABI::Microsoft::UI::Xaml::IRoutedEventArgs *>+0x75 [C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29910\include\type_traits @ 1615]
 ...
 000001d7`3fdb7550  00007ff8`c0b3280c Microsoft_UI_Xaml!std::_Func_impl_no_alloc<std::_Binder<std::_Unforced,long (__cdecl DirectUI::TimePicker::*)(IInspectable *,ABI::Microsoft::UI::Xaml::IRoutedEventArgs *),DirectUI::TimePicker *,std::_Ph<1> const &,std::_Ph<2> const &>,long,IInspectable *,ABI::Microsoft::UI::Xaml::IRoutedEventArgs *>::_Do_call+0x4c [C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29910\include\functional @ 939]
 ...
-000001d7`3fdb7568  00007ff8`bf897a89 Microsoft_UI_Xaml!DirectUI::CRoutedEventSourceBase<DirectUI::IUntypedEventSource,ABI::Microsoft::UI::Xaml::IRoutedEventHandler,IInspectable,ABI::Microsoft::UI::Xaml::IRoutedEventArgs>::Raise+0x399 [<repo-root>\dxaml\xcp\dxaml\lib\JoltClasses.h @ 937]
+000001d7`3fdb7568  00007ff8`bf897a89 Microsoft_UI_Xaml!DirectUI::CRoutedEventSourceBase<DirectUI::IUntypedEventSource,ABI::Microsoft::UI::Xaml::IRoutedEventHandler,IInspectable,ABI::Microsoft::UI::Xaml::IRoutedEventArgs>::Raise+0x399 [<repo-root>\src\runtime\xcp\dxaml\lib\JoltClasses.h @ 937]
 ``` 
 
 From the first entry on the stack we know we are allocating a weak reference block, which is creating the leak.  Looking
@@ -298,41 +298,41 @@ Microsoft_UI_Xaml!DirectUI::ButtonBase::OnClick:
 
 0:000> k
  # ChildEBP RetAddr      
-00 007bc2e8 0b2d932c     Microsoft_UI_Xaml!DirectUI::ButtonBase::OnClick [<repo-root>\dxaml\xcp\dxaml\lib\ButtonBase_Partial.cpp @ 869] 
-01 007bc2e8 0b2df837     Microsoft_UI_Xaml!DirectUI::ToggleButton::OnClick+0x5c [<repo-root>\dxaml\xcp\dxaml\lib\ToggleButton_Partial.cpp @ 182] 
-02 007bc2fc 0b2c5a83     Microsoft_UI_Xaml!DirectUI::AppBarToggleButton::OnClick+0x77 [<repo-root>\dxaml\xcp\dxaml\lib\AppBarToggleButton_Partial.cpp @ 251] 
-03 007bc324 0b2c520b     Microsoft_UI_Xaml!DirectUI::ButtonBase::PerformPointerUpAction+0xd3 [<repo-root>\dxaml\xcp\dxaml\lib\ButtonBase_Partial.cpp @ 788] 
-04 007bc3ac 0a5dbe00     Microsoft_UI_Xaml!DirectUI::ButtonBase::OnPointerReleased+0x4db [<repo-root>\dxaml\xcp\dxaml\lib\ButtonBase_Partial.cpp @ 768] 
-05 007bc3e4 0b25608c     Microsoft_UI_Xaml!DirectUI::ControlGenerated::OnPointerReleasedProtected+0x120 [<repo-root>\dxaml\xcp\dxaml\lib\winrtgeneratedclasses\Control.g.cpp @ 1407] 
-06 007bc4cc 0af4b7ed     Microsoft_UI_Xaml!DirectUI::Control::FireEvent+0x28c [<repo-root>\dxaml\xcp\dxaml\lib\Control_Partial.cpp @ 248] 
-07 007bc534 0af14969     Microsoft_UI_Xaml!DirectUI::DXamlCore::FireEvent+0x2fd [<repo-root>\dxaml\xcp\dxaml\lib\DXamlCore.cpp @ 1935] 
-08 007bc554 0af15fc1     Microsoft_UI_Xaml!AgCoreCallbacks::FireEvent+0x29 [<repo-root>\dxaml\xcp\dxaml\lib\FxCallbacks.cpp @ 86] 
-09 007bc574 09c4d991     Microsoft_UI_Xaml!FxCallbacks::JoltHelper_FireEvent+0x21 [<repo-root>\dxaml\xcp\dxaml\lib\FxCallbacks.cpp @ 890] 
-0a 007bc5e8 0a0f0816     Microsoft_UI_Xaml!CCoreServices::CLR_FireEvent+0x1a1 [<repo-root>\dxaml\xcp\core\dll\xcpcore.cpp @ 3094] 
-0b 007bc610 0ba0e76c     Microsoft_UI_Xaml!CommonBrowserHost::CLR_FireEvent+0x36 [<repo-root>\dxaml\xcp\control\common\shared\CommonBrowserHost.hpp @ 687] 
-0c 007bc694 0a1b3290     Microsoft_UI_Xaml!CControlBase::ScriptCallback+0x20c [<repo-root>\dxaml\xcp\control\common\shared\controlbase.cpp @ 213] 
-0d 007bc720 0a1b3400     Microsoft_UI_Xaml!CXcpDispatcher::OnScriptCallback+0x190 [<repo-root>\dxaml\xcp\win\shared\xcpwindow.cpp @ 1120] 
-0e 007bc784 0a1b37e3     Microsoft_UI_Xaml!CXcpDispatcher::OnWindowMessage+0x90 [<repo-root>\dxaml\xcp\win\shared\xcpwindow.cpp @ 891] 
-0f 007bc7b8 0a1b45d3     Microsoft_UI_Xaml!CXcpDispatcher::ProcessMessage+0x93 [<repo-root>\dxaml\xcp\win\shared\xcpwindow.cpp @ 727] 
-10 007bc7e8 75e382e2     Microsoft_UI_Xaml!CXcpDispatcher::WindowProc+0x53 [<repo-root>\dxaml\xcp\win\shared\xcpwindow.cpp @ 664] 
+00 007bc2e8 0b2d932c     Microsoft_UI_Xaml!DirectUI::ButtonBase::OnClick [<repo-root>\src\runtime\xcp\dxaml\lib\ButtonBase_Partial.cpp @ 869]
+01 007bc2e8 0b2df837     Microsoft_UI_Xaml!DirectUI::ToggleButton::OnClick+0x5c [<repo-root>\src\runtime\xcp\dxaml\lib\ToggleButton_Partial.cpp @ 182]
+02 007bc2fc 0b2c5a83     Microsoft_UI_Xaml!DirectUI::AppBarToggleButton::OnClick+0x77 [<repo-root>\src\runtime\xcp\dxaml\lib\AppBarToggleButton_Partial.cpp @ 251]
+03 007bc324 0b2c520b     Microsoft_UI_Xaml!DirectUI::ButtonBase::PerformPointerUpAction+0xd3 [<repo-root>\src\runtime\xcp\dxaml\lib\ButtonBase_Partial.cpp @ 788]
+04 007bc3ac 0a5dbe00     Microsoft_UI_Xaml!DirectUI::ButtonBase::OnPointerReleased+0x4db [<repo-root>\src\runtime\xcp\dxaml\lib\ButtonBase_Partial.cpp @ 768]
+05 007bc3e4 0b25608c     Microsoft_UI_Xaml!DirectUI::ControlGenerated::OnPointerReleasedProtected+0x120 [<repo-root>\src\runtime\xcp\dxaml\lib\winrtgeneratedclasses\Control.g.cpp @ 1407]
+06 007bc4cc 0af4b7ed     Microsoft_UI_Xaml!DirectUI::Control::FireEvent+0x28c [<repo-root>\src\runtime\xcp\dxaml\lib\Control_Partial.cpp @ 248]
+07 007bc534 0af14969     Microsoft_UI_Xaml!DirectUI::DXamlCore::FireEvent+0x2fd [<repo-root>\src\runtime\xcp\dxaml\lib\DXamlCore.cpp @ 1935]
+08 007bc554 0af15fc1     Microsoft_UI_Xaml!AgCoreCallbacks::FireEvent+0x29 [<repo-root>\src\runtime\xcp\dxaml\lib\FxCallbacks.cpp @ 86]
+09 007bc574 09c4d991     Microsoft_UI_Xaml!FxCallbacks::JoltHelper_FireEvent+0x21 [<repo-root>\src\runtime\xcp\dxaml\lib\FxCallbacks.cpp @ 890]
+0a 007bc5e8 0a0f0816     Microsoft_UI_Xaml!CCoreServices::CLR_FireEvent+0x1a1 [<repo-root>\src\runtime\xcp\core\dll\xcpcore.cpp @ 3094]
+0b 007bc610 0ba0e76c     Microsoft_UI_Xaml!CommonBrowserHost::CLR_FireEvent+0x36 [<repo-root>\src\runtime\xcp\control\common\shared\CommonBrowserHost.hpp @ 687]
+0c 007bc694 0a1b3290     Microsoft_UI_Xaml!CControlBase::ScriptCallback+0x20c [<repo-root>\src\runtime\xcp\control\common\shared\controlbase.cpp @ 213]
+0d 007bc720 0a1b3400     Microsoft_UI_Xaml!CXcpDispatcher::OnScriptCallback+0x190 [<repo-root>\src\runtime\xcp\win\shared\xcpwindow.cpp @ 1120]
+0e 007bc784 0a1b37e3     Microsoft_UI_Xaml!CXcpDispatcher::OnWindowMessage+0x90 [<repo-root>\src\runtime\xcp\win\shared\xcpwindow.cpp @ 891]
+0f 007bc7b8 0a1b45d3     Microsoft_UI_Xaml!CXcpDispatcher::ProcessMessage+0x93 [<repo-root>\src\runtime\xcp\win\shared\xcpwindow.cpp @ 727]
+10 007bc7e8 75e382e2     Microsoft_UI_Xaml!CXcpDispatcher::WindowProc+0x53 [<repo-root>\src\runtime\xcp\win\shared\xcpwindow.cpp @ 664]
 11 007bc814 75e1776a     USER32!_InternalCallWinProc+0x2a 
 12 (Inline) --------     USER32!InternalCallWinProc+0x1b 
 13 007bc904 75e16e72     USER32!UserCallWinProcCheckWow+0x4aa 
 14 007bc968 75e3e80c     USER32!SendMessageWorker+0x842
 15 007bc98c 75e162b6     USER32!SendMessageInternal+0x2d
 16 007bc9a8 0a1b3ef2     USER32!SendMessageW+0x46
-17 007bc9c4 0a0f50fa     Microsoft_UI_Xaml!CXcpDispatcher::SendMessageW+0x22 [<repo-root>\dxaml\xcp\win\shared\xcpwindow.cpp @ 638] 
-18 007bca1c 09ca0dfc     Microsoft_UI_Xaml!CXcpBrowserHost::SyncScriptCallbackRequest+0x18a [<repo-root>\dxaml\xcp\host\win\browserdesktop\WinBrowserHost.cpp @ 733] 
-19 007bca6c 09ca081a     Microsoft_UI_Xaml!CEventManager::RaiseControlEvents+0xdc [<repo-root>\dxaml\xcp\core\dll\eventmgr.cpp @ 1125] 
-1a 007bcb4c 09ca193a     Microsoft_UI_Xaml!CEventManager::Raise+0x2ca [<repo-root>\dxaml\xcp\core\dll\eventmgr.cpp @ 881] 
-1b 007bcbb8 09ca1738     Microsoft_UI_Xaml!CEventManager::RaiseRoutedEventBubbling+0x10a [<repo-root>\dxaml\xcp\core\dll\eventmgr.cpp @ 1323] 
-1c 007bcbf8 09ed972d     Microsoft_UI_Xaml!CEventManager::RaiseRoutedEvent+0x48 [<repo-root>\dxaml\xcp\core\dll\eventmgr.cpp @ 1233] 
-1d 007bcc68 09ed4c22     Microsoft_UI_Xaml!CInputServices::RaiseDelayedPointerUpEvent+0x2ad [<repo-root>\dxaml\xcp\core\input\InputServices.cpp @ 2578] 
-1e 007bcd30 09ed8cac     Microsoft_UI_Xaml!CInputServices::ProcessGestureInput+0x322 [<repo-root>\dxaml\xcp\core\input\InputServices.cpp @ 2329] 
-1f 007bcd74 09c651c2     Microsoft_UI_Xaml!CInputServices::ProcessTouchInteractionCallback+0xcc [<repo-root>\dxaml\xcp\core\input\InputServices.cpp @ 2227] 
-20 007bcd9c 0b92cb7b     Microsoft_UI_Xaml!CCoreServices::ProcessTouchInteractionCallback+0xe2 [<repo-root>\dxaml\xcp\core\dll\xcpcore.cpp @ 983] 
-21 007bce7c 0b928f58     Microsoft_UI_Xaml!GestureRecognizerAdapter::OnTapped+0x1ab [<repo-root>\dxaml\xcp\components\gestures\export\GestureRecognizerAdapter.cpp @ 166] 
-22 007bce98 0b92b55b     Microsoft_UI_Xaml!<lambda_dd3d8653348e55695c9f6ef7c590d5c1>::operator()+0x28 [<repo-root>\dxaml\xcp\components\gestures\export\GestureRecognizerAdapter.cpp @ 34] 
+17 007bc9c4 0a0f50fa     Microsoft_UI_Xaml!CXcpDispatcher::SendMessageW+0x22 [<repo-root>\src\runtime\xcp\win\shared\xcpwindow.cpp @ 638]
+18 007bca1c 09ca0dfc     Microsoft_UI_Xaml!CXcpBrowserHost::SyncScriptCallbackRequest+0x18a [<repo-root>\src\runtime\xcp\host\win\browserdesktop\WinBrowserHost.cpp @ 733]
+19 007bca6c 09ca081a     Microsoft_UI_Xaml!CEventManager::RaiseControlEvents+0xdc [<repo-root>\src\runtime\xcp\core\dll\eventmgr.cpp @ 1125]
+1a 007bcb4c 09ca193a     Microsoft_UI_Xaml!CEventManager::Raise+0x2ca [<repo-root>\src\runtime\xcp\core\dll\eventmgr.cpp @ 881]
+1b 007bcbb8 09ca1738     Microsoft_UI_Xaml!CEventManager::RaiseRoutedEventBubbling+0x10a [<repo-root>\src\runtime\xcp\core\dll\eventmgr.cpp @ 1323]
+1c 007bcbf8 09ed972d     Microsoft_UI_Xaml!CEventManager::RaiseRoutedEvent+0x48 [<repo-root>\src\runtime\xcp\core\dll\eventmgr.cpp @ 1233]
+1d 007bcc68 09ed4c22     Microsoft_UI_Xaml!CInputServices::RaiseDelayedPointerUpEvent+0x2ad [<repo-root>\src\runtime\xcp\core\input\InputServices.cpp @ 2578]
+1e 007bcd30 09ed8cac     Microsoft_UI_Xaml!CInputServices::ProcessGestureInput+0x322 [<repo-root>\src\runtime\xcp\core\input\InputServices.cpp @ 2329]
+1f 007bcd74 09c651c2     Microsoft_UI_Xaml!CInputServices::ProcessTouchInteractionCallback+0xcc [<repo-root>\src\runtime\xcp\core\input\InputServices.cpp @ 2227]
+20 007bcd9c 0b92cb7b     Microsoft_UI_Xaml!CCoreServices::ProcessTouchInteractionCallback+0xe2 [<repo-root>\src\runtime\xcp\core\dll\xcpcore.cpp @ 983]
+21 007bce7c 0b928f58     Microsoft_UI_Xaml!GestureRecognizerAdapter::OnTapped+0x1ab [<repo-root>\src\runtime\xcp\components\gestures\export\GestureRecognizerAdapter.cpp @ 166]
+22 007bce98 0b92b55b     Microsoft_UI_Xaml!<lambda_dd3d8653348e55695c9f6ef7c590d5c1>::operator()+0x28 [<repo-root>\src\runtime\xcp\components\gestures\export\GestureRecognizerAdapter.cpp @ 34]
 23 007bceb4 1ef050c8     Microsoft_UI_Xaml!Microsoft::WRL::Details::DelegateArgTraits<long (__stdcall ABI::Windows::Foundation::ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::Microsoft::UI::Input::Experimental::ExpGestureRecognizer *,]
 
 //COM layer and below omitted for brevity
