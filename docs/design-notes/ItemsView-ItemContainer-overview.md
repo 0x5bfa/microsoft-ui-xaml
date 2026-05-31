@@ -5,7 +5,7 @@ ItemsView/ItemContainer overviews
 
 The ItemsView is a new control dedicated to representing item collections. Each item is hosted in the new light-weight ItemContainer control.
 This is a new modern offering replacing the aging ListView/GridView collection controls. It is built on top of new building blocks: ItemsRepeater,
-SelectionModel and [ScrollView](ScrollView-overview.md).
+SelectionModel and [ScrollView](scrolling/ScrollView-overview.md).
 
 The ItemsView and ListView/GridView feature sets overlap but each has missing capabilities compared to the other.
 
