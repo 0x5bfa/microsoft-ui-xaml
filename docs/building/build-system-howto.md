@@ -372,7 +372,7 @@ like `Frame.Navigate` to work, the file containing the `Page` must be located ne
 ### Consuming WinUIDetails
 
 Consuming WinUIDetails is done automatically for projects, and the include path to the headers is included automatically.
-To see where this is done, or change the default behavior, see [eng\winuidetails.targets](../../eng/winuidetails.targets).
+To see where this is done, or change the default behavior, see [eng\winuidetails\winuidetails.targets](../../eng/winuidetails/winuidetails.targets).
 The default right now is that only `.vcxproj` files binplace the assembly. If you need to opt-out of the automatic
 inclusion, you can set the `UseWinUIDetails` property to `false`.
 
