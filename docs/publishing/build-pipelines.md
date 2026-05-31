@@ -25,7 +25,7 @@ We have a number of Azure Pipelines that we use to run builds and test passes.
 
 We have multiple different Pipelines in use in our repo. They execute similar jobs. They differ mostly in the specific
 configurations and stages that they run. The Pipelines are defined by the internal pipeline configuration.
-Repo-local Helix orchestration helpers live under `tests\infra\Helix\common\pipeline\scripts`.
+Repo-local Helix orchestration helpers live under `tests\infra\Helix\common\pipeline\tools\scripts`.
 
 Having multiple Pipelines allows us to control which configurations and stages get run at what times.
 
