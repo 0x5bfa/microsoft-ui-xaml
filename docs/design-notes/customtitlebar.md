@@ -12,7 +12,7 @@
 WinUI allows an app developer to use her own custom UI element as a title bar instead of a system provided one. More 
 details can be found in the public documentation for 
 [Window.SetTitleBar()](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.window.settitlebar?view=windows-app-sdk-1.2).
-[Spec document](./customtitlebar-spec.md)
+[Spec document](../specs/CustomTitleBar/customtitlebar-spec.md)
 ## Under the hood
 
 The implementation of this feature involves 3 important parts:
