@@ -29,7 +29,7 @@ Work with one of the API reps on the team.
 
 ## Creating the API spec
 The first step is to create an API spec. Create a markdown document in this repo under the path `docs\specs\api`.
-Use this doc as a template: https://github.com/microsoft/WindowsAppSDK/blob/main/specs/spec_template.md
+Use [api-spec-template.md](api-spec-template.md) as the template.
 
 When writing the spec you should write it with a particular audience in mind. You should assume that your reader is
 broadly familiar with Xaml but is NOT an expert. You should not write the document with a member of the Xaml dev
