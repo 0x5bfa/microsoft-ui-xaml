@@ -700,6 +700,13 @@ AppAnalysis runtime diagnostics toolchain moved under `tools/runtime/AppAnalysis
 with shared references flowing through `$(AppAnalysisPath)` and
 `$(AppAnalysisObjPath)`.
 
+## C#/WinRT projection source
+
+The WinUI C#/WinRT projection source lives under `src/projection`. Public
+projection type-forwarder source files now live under
+`src/projection/TypeForwarders`, keeping the projection root focused on project
+entry points and shared build configuration.
+
 ## Specs documentation
 
 Feature and API design specs now live under `docs/specs`. API review specs moved

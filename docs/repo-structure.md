@@ -148,6 +148,9 @@ also under `/src/runtime`.
 Metadata composition projects now live under `/src/metadata`. The MergedWinMD
 projects are referenced through `$(MergedWinMDProjectRoot)`.
 
+The WinUI C#/WinRT projection projects live under `/src/projection`, with public
+type-forwarder sources under `/src/projection/TypeForwarders`.
+
 ## /tests
 This folder contains test assets that have been separated from product source
 trees. Compiler test entry points and support tools live under
