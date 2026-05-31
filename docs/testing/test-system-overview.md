@@ -9,7 +9,7 @@ This document gives a high-level overview of our CI Build and Test System in Win
   - [Testing](#testing)
   - [The Process in Depth:](#the-process-in-depth)
     - [Create the test payload: CreateTestPayload.ps1](#create-the-test-payload-createtestpayloadps1)
-    - [Generating Helix Work Items: GenerateHelixWorkItems.ps1](#generating-helix-work-items-generatehelixworkitemsps1)
+    - [Generating Helix Work Items: GenerateWinUIHelixWorkItems.ps1](#generating-helix-work-items-generatewinuihelixworkitemsps1)
     - [Machine setup: testmachine-prerun.cmd](#machine-setup-testmachine-preruncmd)
     - [Test Re-try logic](#test-re-try-logic)
     - [Publish Test Results](#publish-test-results)
@@ -57,7 +57,7 @@ When the Pipeline runs, the following takes place.
 1. Runs the Build stage (this builds both product and test binaries)
 2. The Run Tests Stage starts. [**WinUI-RunTests-Stage.yml**](../../build/AzurePipelinesTemplates/WinUI-RunTests-Stage.yml)
 3. The output of the Build job is downloaded. [**CreateTestPayload.ps1**](../../tests/infra/payload/tools/CreateTestPayload.ps1) is run to produce the TestPayload.
-4. We discover the tests from the build and generate the HelixWorkItems. This is done by [**GenerateHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/GenerateHelixWorkItems.ps1).
+4. We discover the tests from the build and generate the HelixWorkItems. This is done by [**GenerateWinUIHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/GenerateWinUIHelixWorkItems.ps1).
 5. The TestPayload and the work items xml is published to the Pipeline as an artifact.
 6. We execute batches of the test work items in parallel on agent VMs that are running the version of Windows that we want to target. We execute [**RunTestPassSliceOnBuildAgent.ps1**](../../tests/infra/Helix/common/pipeline/scripts/RunTestPassSliceOnBuildAgent.ps1) on these test machines.
 7. Test machine setup ([**testmachine-prerun.cmd**](../../tests/infra/payload/scripts/testmachine-prerun.cmd))
@@ -72,7 +72,7 @@ Here's how the pipelines and scripts are organized to do this work:
     * Download build
     * Call **CreateTestPayload.ps1**
     * **WinUI-CreateHelixProjFile-Steps.yml**
-       * Call **GenerateHelixWorkItems.ps1**
+       * Call **GenerateWinUIHelixWorkItems.ps1**
          * Call **pipeline/scripts/GenerateHelixWorkItems.ps1**
            * Writes out a .proj file for each test group (You can see these in the pipeline artifacts at /helixworkitems).
   * **WinUI-RunTestPassOnPipeline-Job.yml**
@@ -95,7 +95,7 @@ Sources:
 * Build drop
 * Scripts copied from repo
 
-### Generating Helix Work Items: GenerateHelixWorkItems.ps1
+### Generating Helix Work Items: GenerateWinUIHelixWorkItems.ps1
 
 To execute the tests we batch the set of tests into 'work items'. When we execute the tests we use Azure Pipelines 
 parallelization to run multiple test Jobs at once. We distribute the set of work items across these Jobs so that we can
@@ -103,9 +103,10 @@ execute the tests in a reasonable amount of time.
 
 We could define a hard-coded set of work items, however this does not scale very well as the list of work items must 
 always be kept in sync with the test code as tests get added/removed/etc.  
-Instead, we generate the set of Work Items dynamically. This is done by 
-[**GenerateHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/GenerateHelixWorkItems.ps1).
-This script runs `te.exe /listproperties` against a set of test binaries and parses the output. It produces a set of 
+Instead, we generate the set of Work Items dynamically. WinUI-specific TAEF query construction is done by
+[**GenerateWinUIHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/GenerateWinUIHelixWorkItems.ps1),
+which calls the shared [**GenerateHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/GenerateHelixWorkItems.ps1).
+The shared script runs `te.exe /listproperties` against a set of test binaries and parses the output. It produces a set of
 work items from this.  
 There are two strategies the script uses to generate work items:
 * **CreateWorkItemPerModule**: We create a work item that runs all the tests in a given test dll.
