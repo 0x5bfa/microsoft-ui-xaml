@@ -100,7 +100,7 @@ WinRT class registration build rules live under `/eng/winrtclassregistration`.
 WinUIDetails package import rules live under `/eng/winuidetails`.
 
 ## Checked-In Dependencies And Generated Assets
-Header-only third-party dependencies live under `/src/runtime/thirdparty/include`.
+Header-only third-party dependencies live under `/src/thirdparty/include`.
 Generated controls dependency-property sources live under `/src/controls/generated/dependencyproperties`.
 Generated package IntelliSense XML lives under `/tools/packaging/intellisense/generated`.
 Visual test baselines live under `/tests/visualbaselines`.
