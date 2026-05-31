@@ -177,7 +177,7 @@ tools\build\scripts\Build.cmd
 ```
 
 Notes:
-+ This does an `msbuild /m` on `src\runtime\solutions\Microsoft.UI.Xaml.slnx` and `src\controls\solutions\MUXControls.slnx`
++ This does an `msbuild /m` on `src\runtime\solutions\Microsoft.UI.Xaml.Runtime.slnx` and `src\controls\solutions\MUXControls.slnx`
 + This builds the product and test binaries, it does not build WinUI Gallery or other samples
 + The `/m` allows the build to spawn up to as many as many processes as there are logical CPUs
 + Did your build fail due to memory errors?  Please see the "Swap Space" section above
