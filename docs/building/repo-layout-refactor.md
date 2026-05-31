@@ -783,6 +783,9 @@ WebView2 dependency update and version-history docs now live under
 implementation source tree.
 The WebView2 build/run guide now lives under `docs/building`, keeping sample
 workflow docs with the other build documentation.
+The WebView2 UIA and accessibility note now lives under
+`docs/design-notes/input`, next to the input architecture note that references
+it.
 
 The `docs` root is intentionally limited to the developer documentation index
 and repository structure overview. New docs should pick an existing category
