@@ -740,7 +740,9 @@ concrete app and test-infrastructure entry points.
 Controls test UI shared projects are moving under `tests/controls/testui`.
 `ItemContainer_TestUI` and `RadialGradientBrush_TestUI` moved first because
 they are small self-contained shared projects imported by MUXControlsTestApp and
-the controls solutions.
+the controls solutions. The next batch moved the small AutoSuggestBox,
+ColorPicker, ComboBox, DropDownButton, Expander, ImageIcon, InfoBadge, and
+PersonPicture TestUI projects into the same test-owned tree.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`
