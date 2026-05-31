@@ -1449,7 +1449,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.WindowChr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata", "..\..\tests\runtime\native\isolated\shared\mocks\metadata\Microsoft.UI.Xaml.Tests.Isolated.Mocks.Framework.Metadata.vcxproj", "{2B9A325F-17AF-40F1-98C9-2AA7856B77E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAugmentation", "..\..\eng\GraphAugmentation\Microsoft.UI.Xaml\GraphAugmentation.csproj", "{0503BA82-875F-498A-A2BE-E369676CA602}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphAugmentation", "..\..\eng\graph\augmentation\Microsoft.UI.Xaml\GraphAugmentation.csproj", "{0503BA82-875F-498A-A2BE-E369676CA602}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MockDComp", "..\..\tests\runtime\infra\MockDComp\MockDComp.vcxproj", "{A74E0D51-30FB-4DA3-9B41-A44762BF6C09}"
 EndProject

@@ -33,11 +33,11 @@
       <Targets>GetPackagingOutputs;GetTargetPathWithTargetPlatformMoniker</Targets>
       <Properties>Configuration=$(Configuration);Platform=$(WindowsSDKBuildToolsArchFolder);CurrentSolutionConfigurationContents=;ShouldUnsetParentConfigurationAndPlatform=false</Properties>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\eng\gencompheadersandidl\gencompheadersandidl.vcxproj">
+    <ProjectReference Include="$(ProjectRoot)eng\midl\gencompheadersandidl.vcxproj">
       <Targets>GetTargetPathWithTargetPlatformMoniker</Targets>
       <Properties>Configuration=$(Configuration);Platform=$(WindowsSDKBuildToolsArchFolder);CurrentSolutionConfigurationContents=;ShouldUnsetParentConfigurationAndPlatform=false</Properties>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\eng\genmrtheadersandidl\genmrtheadersandidl.vcxproj">
+    <ProjectReference Include="$(ProjectRoot)eng\midl\genmrtheadersandidl.vcxproj">
       <Targets>GetTargetPathWithTargetPlatformMoniker</Targets>
       <Properties>Configuration=$(Configuration);Platform=$(WindowsSDKBuildToolsArchFolder);CurrentSolutionConfigurationContents=;ShouldUnsetParentConfigurationAndPlatform=false</Properties>
     </ProjectReference>

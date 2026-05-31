@@ -563,8 +563,8 @@ environment hook with other named build rule buckets.
 WinUIDetails package import targets now live under `eng/winuidetails`, keeping
 that external package wrapper separate from root-level build imports.
 
-Graph build support targets now live under `eng/graph`, separate from the
-GraphAugmentation helper projects that appear in solution files.
+Graph build support targets and GraphAugmentation helper projects now live
+under `eng/graph`, grouping graph-build scheduling support in one bucket.
 
 Final-release build defines now live under `eng/finalrelease`, keeping the
 `MUXFinalRelease` prerelease constants in a named build settings bucket.

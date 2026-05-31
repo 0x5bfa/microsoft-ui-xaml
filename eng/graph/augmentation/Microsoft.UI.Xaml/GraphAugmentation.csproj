@@ -1,10 +1,10 @@
 <Project ToolsVersion="Current">
   <Import Project="..\GraphAugmentation.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj">
+    <ProjectReference Include="$(ProjectRoot)src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj">
       <Targets>GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj">
+    <ProjectReference Include="$(ProjectRoot)controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj">
       <Targets>BuildGenerateSources;GetPackagingOutputs;GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
     <ProjectReference Include="$(XcpPhonePath)\idl\phone.vcxproj">
@@ -46,16 +46,16 @@
     <ProjectReference Include="$(XcpPath)\pal\debug\PALDebug.vcxproj">
       <Targets>GetTargetFrameworks;GetTargetFrameworksWithPlatformForSingleTargetFramework</Targets>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\eng\gencompheadersandidl\gencompheadersandidl.vcxproj">
+    <ProjectReference Include="$(ProjectRoot)eng\midl\gencompheadersandidl.vcxproj">
       <Targets>GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\eng\genmrtheadersandidl\genmrtheadersandidl.vcxproj">
+    <ProjectReference Include="$(ProjectRoot)eng\midl\genmrtheadersandidl.vcxproj">
       <Targets>GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\src\projection\Microsoft.WinUI.csproj">
+    <ProjectReference Include="$(ProjectRoot)src\projection\Microsoft.WinUI.csproj">
       <Targets>GetTargetFrameworks;GetTargetPathWithTargetPlatformMoniker;GetNativeManifest;GetCopyToOutputDirectoryItems;GetTargetFrameworksWithPlatformForSingleTargetFramework</Targets>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\src\projection\private\Microsoft.WinUI.csproj">
+    <ProjectReference Include="$(ProjectRoot)src\projection\private\Microsoft.WinUI.csproj">
       <Targets>GetTargetPathWithTargetPlatformMoniker</Targets>
     </ProjectReference>
   </ItemGroup>
