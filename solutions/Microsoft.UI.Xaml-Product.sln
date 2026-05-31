@@ -1,39 +1,39 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml", "src\runtime\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj", "{D6A86B75-C0D2-4761-844C-9D83A130AF69}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml", "..\src\runtime\xcp\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj", "{D6A86B75-C0D2-4761-844C-9D83A130AF69}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "microsoft.ui.xaml-com", "src\runtime\xcp\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj", "{A1EB01C3-AC8B-45A8-97C8-C459B77ED690}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "microsoft.ui.xaml-com", "..\src\runtime\xcp\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj", "{A1EB01C3-AC8B-45A8-97C8-C459B77ED690}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.resources.19h1", "src\runtime\xcp\dxaml\dllsrv\winrt\res\19h1\Microsoft.ui.xaml.resources.19h1.vcxproj", "{C0955FBB-8FB9-40C1-A7E4-A93A0757FF66}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.resources.19h1", "..\src\runtime\xcp\dxaml\dllsrv\winrt\res\19h1\Microsoft.ui.xaml.resources.19h1.vcxproj", "{C0955FBB-8FB9-40C1-A7E4-A93A0757FF66}"
 	ProjectSection(ProjectDependencies) = postProject
 		{42577057-854D-443D-AB59-F4E44C8F5207} = {42577057-854D-443D-AB59-F4E44C8F5207}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.resources.common", "src\runtime\xcp\dxaml\dllsrv\winrt\res\common\Microsoft.ui.xaml.resources.common.vcxproj", "{15C55795-CD51-415E-AA93-DFB42B6565E1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.ui.xaml.resources.common", "..\src\runtime\xcp\dxaml\dllsrv\winrt\res\common\Microsoft.ui.xaml.resources.common.vcxproj", "{15C55795-CD51-415E-AA93-DFB42B6565E1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{42577057-854D-443D-AB59-F4E44C8F5207} = {42577057-854D-443D-AB59-F4E44C8F5207}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Phone", "src\runtime\xcp\dxaml\dllsrv\exts\phone\Microsoft.UI.Xaml.Phone.vcxproj", "{BE2D8FE3-D933-404E-BFE4-88435D96D8E4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Phone", "..\src\runtime\xcp\dxaml\dllsrv\exts\phone\Microsoft.UI.Xaml.Phone.vcxproj", "{BE2D8FE3-D933-404E-BFE4-88435D96D8E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packaging", "packaging", "{7C473C3A-1061-438A-95AC-BE2391AC6593}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "projection", "projection", "{3F656DBB-CE40-4288-BC97-1F253CE00FE3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "src\projection\Microsoft.WinUI.csproj", "{F83CC646-1BE3-4CB6-944E-BBDEA489BF3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\src\projection\Microsoft.WinUI.csproj", "{F83CC646-1BE3-4CB6-944E-BBDEA489BF3F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{5C938342-381C-477C-A3E3-F42240C8E7D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinplaceTestDependencies", "tests\runtime\infra\BinplaceTestDependencies.csproj", "{F601430F-FFE4-47C0-9B51-7996974407BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinplaceTestDependencies", "..\tests\runtime\infra\BinplaceTestDependencies.csproj", "{F601430F-FFE4-47C0-9B51-7996974407BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "packaging\Microsoft.WinUI.csproj", "{4F815569-DAD9-47CB-AB1B-19467941674F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WinUI", "..\packaging\Microsoft.WinUI.csproj", "{4F815569-DAD9-47CB-AB1B-19467941674F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "src\metadata\MergedWinMD\MergedWinMD.vcxproj", "{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergedWinMD", "..\src\metadata\MergedWinMD\MergedWinMD.vcxproj", "{52B2ED64-1CFC-401B-8C5B-6D1E1DEADF98}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenXbf", "tools\runtime\GenXbfDLL\GenXbf.vcxproj", "{42577057-854D-443D-AB59-F4E44C8F5207}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenXbf", "..\tools\runtime\GenXbfDLL\GenXbf.vcxproj", "{42577057-854D-443D-AB59-F4E44C8F5207}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
