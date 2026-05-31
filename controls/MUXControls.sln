@@ -584,7 +584,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ItemContainer_APITests", ".
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ItemContainer_InteractionTests", "..\src\controls\ItemContainer\InteractionTests\ItemContainer_InteractionTests.shproj", "{691C1630-4AD5-4C8B-B72D-B25C99B823E8}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ItemContainer_TestUI", "..\src\controls\ItemContainer\TestUI\ItemContainer_TestUI.shproj", "{22F762C8-9D06-4288-8AE3-2617E7D8DBF1}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ItemContainer_TestUI", "..\tests\controls\testui\ItemContainer\ItemContainer_TestUI.shproj", "{22F762C8-9D06-4288-8AE3-2617E7D8DBF1}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ItemsView_APITests", "..\src\controls\ItemsView\APITests\ItemsView_APITests.shproj", "{283C02A7-CE19-5FD9-C66B-2640029D9876}"
 EndProject
@@ -1608,7 +1608,7 @@ Global
 		..\src\controls\ProgressRing\APITests\ProgressRing_APITests.projitems*{222ef6f6-0845-49e7-81f2-9686cef85c67}*SharedItemsImports = 13
 		..\src\controls\PagerControl\TestUI\PagerControl_TestUI.projitems*{225c4174-3141-49b8-ade2-c7d3408d5103}*SharedItemsImports = 13
 		..\src\controls\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\ScrollViewerIRefreshInfoProviderAdapter.vcxitems*{22a3d1c4-4d1c-4b04-b695-8fec39bfed86}*SharedItemsImports = 9
-		..\src\controls\ItemContainer\TestUI\ItemContainer_TestUI.projitems*{22f762c8-9d06-4288-8ae3-2617e7d8dbf1}*SharedItemsImports = 13
+		..\tests\controls\testui\ItemContainer\ItemContainer_TestUI.projitems*{22f762c8-9d06-4288-8ae3-2617e7d8dbf1}*SharedItemsImports = 13
 		..\src\controls\Interactions\ButtonInteraction\ButtonInteraction.vcxitems*{2459bc06-2ae5-4c65-ba73-ab28090b6fab}*SharedItemsImports = 9
 		..\src\controls\ColorPicker\ColorPicker.vcxitems*{248cc96d-67a2-4359-a4e3-ab0dad110a1e}*SharedItemsImports = 9
 		..\src\controls\ItemContainer\ItemContainer.vcxitems*{248eda28-9e29-408a-90e8-ad0cdaed6ebb}*SharedItemsImports = 9
@@ -1721,7 +1721,7 @@ Global
 		..\src\controls\InfoBadge\TestUI\InfoBadge_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\InfoBar\TestUI\InfoBar_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\ItemContainer\APITests\ItemContainer_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\ItemContainer\TestUI\ItemContainer_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\ItemContainer\ItemContainer_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\ItemsView\APITests\ItemsView_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\ItemsView\TestUI\ItemsView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\LayoutPanel\APITests\LayoutPanel_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
