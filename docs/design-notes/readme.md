@@ -7,8 +7,8 @@ This is a collection of documentations which provide a high level design oriente
 ### Concepts
 
 * [Journey of a control](./control-overview.md) - a vertical slice of what makes up a WinUI control
-* [Xaml compiler overview](./xamlcompiler.md)
-* [Codegen](./codegen.md)
+* [Xaml compiler overview](./xaml-compiler/xamlcompiler.md)
+* [Codegen](./xaml-compiler/codegen.md)
 * [Xaml/C# Object Lifetime Design](./xaml-object-lifetime.md)
 * [Surfaces in Xaml](./surfaces-overview.md) - Use of Composition and Direct3D surfaces in Xaml
 * [Dxaml vs Core layers / Peer objects](./dxamlvscore.md) - A writeup explaning difference between Dxaml and core layers, peer objects and how to transition between the two objects for a given type 
