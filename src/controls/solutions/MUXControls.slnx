@@ -62,8 +62,6 @@
     </Project>
   </Folder>
   <Folder Name="/src-controls/ColorPicker/">
-    <File Path="../ColorPicker/improvements.md" />
-    <File Path="../ColorPicker/README.md" />
     <Project Path="../../../tests/controls/apitests/ColorPicker/ColorPicker_APITests.shproj" />
     <Project Path="../../../tests/controls/interactiontests/ColorPicker/ColorPicker_InteractionTests.shproj" />
     <Project Path="../../../tests/controls/testui/ColorPicker/ColorPicker_TestUI.shproj" />

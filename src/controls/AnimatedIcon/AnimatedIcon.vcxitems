@@ -51,9 +51,4 @@
     <Midl Include="$(MSBuildThisFileDirectory)AnimatedVisuals\AnimatedChevronUpDownSmallVisualSource.idl" />
     <Midl Include="$(MSBuildThisFileDirectory)AnimatedVisuals\AnimatedChevronRightDownSmallVisualSource.idl" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)AnimatedIconDevDesign.md" />
-    <None Include="$(MSBuildThisFileDirectory)Docs\MultiStateSegmentLookupProposal.md" />
-    <None Include="$(MSBuildThisFileDirectory)Docs\SingleStateSegmentLookup.md" />
-  </ItemGroup>
 </Project>

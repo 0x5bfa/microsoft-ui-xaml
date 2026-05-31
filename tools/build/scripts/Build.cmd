@@ -175,7 +175,7 @@ if EXIST "%reporoot%\src\compiler\BuildTasks\Microsoft\Lmr\XamlTypeUniverse.cs" 
 if "%_targetMux%" == "1" (
     call :buildSolution %XcpRoot%\dxaml\dllsrv\winrt\native\Microsoft.ui.xaml.vcxproj
 ) else if "%_targetProduct%" == "1" (
-   call :buildSolution %reporoot%\Microsoft.UI.Xaml-Product.slnx
+   call :buildSolution %reporoot%\Microsoft.UI.Xaml.slnx
    if ERRORLEVEL 1 goto:showDurationAndExit
    call :buildSolution %reporoot%\src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj
    if not "%_nomock%"=="1" call :buildMockPackage

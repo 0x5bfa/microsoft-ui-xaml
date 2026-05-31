@@ -35,8 +35,6 @@
     <Project Path="../Breadcrumb/Breadcrumb.vcxitems" />
   </Folder>
   <Folder Name="/src-controls/ColorPicker/">
-    <File Path="../ColorPicker/improvements.md" />
-    <File Path="../ColorPicker/README.md" />
     <Project Path="../../../tests/controls/apitests/ColorPicker/ColorPicker_APITests.shproj" />
     <Project Path="../../../tests/controls/interactiontests/ColorPicker/ColorPicker_InteractionTests.shproj" />
     <Project Path="../../../tests/controls/testui/ColorPicker/ColorPicker_TestUI.shproj" />
@@ -156,15 +154,10 @@
     <Project Path="../MonochromaticOverlayPresenter/MonochromaticOverlayPresenter.vcxitems" />
   </Folder>
   <Folder Name="/src-controls/NavigationView/">
-    <File Path="../NavigationView/README.md" />
     <Project Path="../../../tests/controls/apitests/NavigationView/NavigationView_ApiTests.shproj" />
     <Project Path="../../../tests/controls/interactiontests/NavigationView/NavigationView_InteractionTests.shproj" />
     <Project Path="../../../tests/controls/testui/NavigationView/NavigationView_TestUI.shproj" />
     <Project Path="../NavigationView/NavigationView.vcxitems" />
-  </Folder>
-  <Folder Name="/src-controls/NavigationView/docs/">
-    <File Path="../NavigationView/docs/NavigationViewItem.md" />
-    <File Path="../NavigationView/docs/rendering.md" />
   </Folder>
   <Folder Name="/src-controls/NumberBox/">
     <Project Path="../../../tests/controls/apitests/NumberBox/NumberBox_APITests.shproj" />
@@ -173,7 +166,6 @@
     <Project Path="../NumberBox/NumberBox.vcxitems" />
   </Folder>
   <Folder Name="/src-controls/PagerControl/">
-    <File Path="../PagerControl/README.md" />
     <Project Path="../../../tests/controls/apitests/PagerControl/PagerControl_APITests.shproj" />
     <Project Path="../../../tests/controls/interactiontests/PagerControl/PagerControl_InteractionTests.shproj" />
     <Project Path="../../../tests/controls/testui/PagerControl/PagerControl_TestUI.shproj" />
