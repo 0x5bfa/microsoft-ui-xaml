@@ -14,7 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ColorPicker", "ColorPicker", "{1F86207F-AF12-4C39-8ACD-AE751D312673}"
 	ProjectSection(SolutionItems) = preProject
 		..\src\controls\ColorPicker\improvements.md = ..\src\controls\ColorPicker\improvements.md
-		..\src\controls\ColorPicker\readme.md = ..\src\controls\ColorPicker\readme.md
+		..\src\controls\ColorPicker\README.md = ..\src\controls\ColorPicker\README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RatingControl", "RatingControl", "{3B0C114B-AC74-4BB1-975D-26FE5D505BD1}"

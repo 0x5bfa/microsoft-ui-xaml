@@ -17,7 +17,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ColorPicker", "ColorPicker", "{1F86207F-AF12-4C39-8ACD-AE751D312673}"
 	ProjectSection(SolutionItems) = preProject
 		..\src\controls\ColorPicker\improvements.md = ..\src\controls\ColorPicker\improvements.md
-		..\src\controls\ColorPicker\readme.md = ..\src\controls\ColorPicker\readme.md
+		..\src\controls\ColorPicker\README.md = ..\src\controls\ColorPicker\README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RatingControl", "RatingControl", "{3B0C114B-AC74-4BB1-975D-26FE5D505BD1}"
@@ -40,7 +40,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D3327F36-E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NavigationView", "NavigationView", "{05CB5DBD-A481-4DFF-B1A3-642F049D165C}"
 	ProjectSection(SolutionItems) = preProject
-		..\src\controls\NavigationView\readme.md = ..\src\controls\NavigationView\readme.md
+		..\src\controls\NavigationView\README.md = ..\src\controls\NavigationView\README.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NavigationView", "..\src\controls\NavigationView\NavigationView.vcxitems", "{1B8EF049-A38E-43E4-B88E-F1EBFCEF07D2}"
@@ -428,7 +428,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{6F7831A4-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PagerControl", "PagerControl", "{E7C2104F-770D-4375-8D3A-D173F222273A}"
 	ProjectSection(SolutionItems) = preProject
-		..\src\controls\PagerControl\readme.md = ..\src\controls\PagerControl\readme.md
+		..\src\controls\PagerControl\README.md = ..\src\controls\PagerControl\README.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PagerControl", "..\src\controls\PagerControl\PagerControl.vcxitems", "{AB3261A7-9A8D-4A27-AEA2-3AAC0419C889}"
