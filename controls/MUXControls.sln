@@ -689,7 +689,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SelectorBar_TestUI", "..\sr
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SelectorBar_APITests", "..\src\controls\SelectorBar\APITests\SelectorBar_APITests.shproj", "{F778ACAE-150F-4D7D-83C1-5BF2E1ACB399}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabViewTearOutApp", "test\TabViewTearOutApp\TabViewTearOutApp.vcxproj", "{86317243-45A8-4770-A4B2-768F721E5F9B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabViewTearOutApp", "test\apps\TabViewTearOutApp\TabViewTearOutApp.vcxproj", "{86317243-45A8-4770-A4B2-768F721E5F9B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WrapPanel", "WrapPanel", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
