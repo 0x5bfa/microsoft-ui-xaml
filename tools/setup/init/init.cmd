@@ -37,7 +37,7 @@ echo Could not find path: %~1
 exit /b 4
 
 :begin
-for %%I in ("%~dp0..\..") do set "RepoRoot=%%~fI"
+for %%I in ("%~dp0..\..\..") do set "RepoRoot=%%~fI"
 set XcpRoot=%RepoRoot%\src\runtime\xcp
 
 set EnvOnly=
@@ -159,16 +159,16 @@ if "%EnvCheck%"=="true" (
         echo ERROR: Cannot use /envcheck because a full init has not been run yet.
         echo        Required tools and NuGet packages are missing.
         echo.
-        echo        Run a full init first:  scripts\init\init.cmd [flavor]
-        echo        Example:                scripts\init\init.cmd amd64chk
+        echo        Run a full init first:  tools\setup\init\init.cmd [flavor]
+        echo        Example:                tools\setup\init\init.cmd amd64chk
         exit /b 1
     )
     if not exist "%RepoRoot%\.tools" (
         echo ERROR: Cannot use /envcheck because a full init has not been run yet.
         echo        Required tools and NuGet packages are missing.
         echo.
-        echo        Run a full init first:  scripts\init\init.cmd [flavor]
-        echo        Example:                scripts\init\init.cmd amd64chk
+        echo        Run a full init first:  tools\setup\init\init.cmd [flavor]
+        echo        Example:                tools\setup\init\init.cmd amd64chk
         exit /b 1
     )
 )
@@ -269,30 +269,30 @@ call :SetEnviromentVariable DOTNET_MULTILEVEL_LOOKUP 0
 
 set PATH=%DOTNET_ROOT%;%DOTNET_ROOT_x86%;%PATH%
 
-call %RepoRoot%\scripts\init\SetupDotNetFiles.cmd %RepoRoot%
+call %RepoRoot%\tools\setup\init\SetupDotNetFiles.cmd %RepoRoot%
 
-powershell -ExecutionPolicy Bypass -NoProfile %RepoRoot%\scripts\init\GenerateTestPfx.ps1 %RepoRoot%\build\WinUITest.pfx
+powershell -ExecutionPolicy Bypass -NoProfile %RepoRoot%\tools\setup\init\GenerateTestPfx.ps1 %RepoRoot%\build\WinUITest.pfx
 
 if "%EnvOnly%"=="" (
     rem For pipeline builds, submodules are checked out with authentication elsewhere
     rem For dev builds, ensure that submodules are populated with latest commits
     git submodule update --init --recursive
-    powershell -ExecutionPolicy Bypass -NoProfile -File %RepoRoot%\scripts\init\Initialize-Restore.ps1 -RepoRoot %RepoRoot% %Verbose%
+    powershell -ExecutionPolicy Bypass -NoProfile -File %RepoRoot%\tools\setup\init\Initialize-Restore.ps1 -RepoRoot %RepoRoot% %Verbose%
 )
 
 if "%ARM64EC%"=="1" (
-    if exist %RepoRoot%\scripts\MockArm64ECFolder.ps1 (
-        powershell -ExecutionPolicy Bypass -NoProfile -File %RepoRoot%\scripts\MockArm64ECFolder.ps1
+    if exist %RepoRoot%\tools\setup\custom\MockArm64ECFolder.ps1 (
+        powershell -ExecutionPolicy Bypass -NoProfile -File %RepoRoot%\tools\setup\custom\MockArm64ECFolder.ps1
     )
 )
 
-xcopy /d /y %RepoRoot%\scripts\winui.natvis "%USERPROFILE%\My Documents\Visual Studio 2022\Visualizers\" >nul 2>&1
+xcopy /d /y %RepoRoot%\tools\setup\custom\winui.natvis "%USERPROFILE%\My Documents\Visual Studio 2022\Visualizers\" >nul 2>&1
 
 set EnvironmentInitialized=1
 
 if "%NoTitle%"=="" (
    title DCPP %RepoRoot% - %_BuildArch%%_BuildType%
 )
-doskey /macrofile=%RepoRoot%\scripts\init\aliases
+doskey /macrofile=%RepoRoot%\tools\setup\init\aliases
 
 exit /b 0

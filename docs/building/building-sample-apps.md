@@ -48,14 +48,14 @@ In any case, the procedure is the same, supplying the package version to the bui
 **WinUI component package from a local build:**
 
 ```shell
-scripts\init\init.cmd
+tools\setup\init\init.cmd
 scripts\buildSample WinUIGallery 999.0.0-mock-3.0.0-dev
 ```
 
 **WinUI component package from a pipeline run:**
 
 ```shell
-scripts\init\init.cmd
+tools\setup\init\init.cmd
 scripts\buildSample WinUIGallery 999.0.0-mock-3.0.0-zmain.230101.1-CI
 ```
 
@@ -67,7 +67,7 @@ The WinUI-CI and WinUI-Nightly pipelines use this approach to build the Sample A
 **Published WindowsAppSDK:**
 
 ```shell
-scripts\init\init.cmd
+tools\setup\init\init.cmd
 scripts\buildSample WinUIGallery 1.2-stable
 ```
 

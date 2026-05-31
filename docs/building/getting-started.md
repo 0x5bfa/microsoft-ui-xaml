@@ -43,11 +43,11 @@ Starting with a command prompt or PowerShell at the root of your WinUI repo:
 
 2. Initialize to build ([details](#initialize-cmd-or-powershell-with-support-for-vs-build-tools)):
    ```
-   scripts\init\init.cmd
+   tools\setup\init\init.cmd
    ```
    Or, for PowerShell:
    ```
-   .\scripts\init\init.ps1
+   .\tools\setup\init\init.ps1
    ```
 
 3. Build the project:
@@ -200,12 +200,12 @@ excluding `Microsoft.UI.Xaml.Internal.dll` (which will not be OSS).
 
 At the CMD prompt, in the `src\` folder off the root of the repo, run (for an x64chk build):
 ```
-scripts\init\init.cmd
+tools\setup\init\init.cmd
 ```
 
 Or in PowerShell, run:
 ```
-.\scripts\init\init.ps1
+.\tools\setup\init\init.ps1
 ```
 
 > Note:  If you get an error saying it can't find msbuild, this is likely due to a pending Visual Studio update. To see
@@ -215,20 +215,20 @@ If so, try that first, then retry the init command.
 This script restores NuGet packages and initializes your build environment with the proper environment variables for
 specifying which platform and configuration you are building.
 
-> Any time you do a `git pull` you also need to re-run scripts\init\init.cmd
+> Any time you do a `git pull` you also need to re-run tools\setup\init\init.cmd
 
 The default environment is `x64` `Debug`. Below is a list of other possible Platform/Configuration combinations and the
 init command that sets them up.
 
 | Platform  | Configuration | Init command       |
 | :-------- | :----------   | :----------------- |
-| x86       | Debug         | scripts\init\init.cmd  x86chk   |
-| x86       | Release       | scripts\init\init.cmd  x86fre   |
-| x64       | Debug         | scripts\init\init.cmd           |
-| x64       | Debug         | scripts\init\init.cmd  x64chk   |
-| x64       | Release       | scripts\init\init.cmd  x64fre   |
-| arm64     | Debug         | scripts\init\init.cmd  arm64chk |
-| arm64     | Release       | scripts\init\init.cmd  arm64fre |
+| x86       | Debug         | tools\setup\init\init.cmd  x86chk   |
+| x86       | Release       | tools\setup\init\init.cmd  x86fre   |
+| x64       | Debug         | tools\setup\init\init.cmd           |
+| x64       | Debug         | tools\setup\init\init.cmd  x64chk   |
+| x64       | Release       | tools\setup\init\init.cmd  x64fre   |
+| arm64     | Debug         | tools\setup\init\init.cmd  arm64chk |
+| arm64     | Release       | tools\setup\init\init.cmd  arm64fre |
 
 ### Build failures
 

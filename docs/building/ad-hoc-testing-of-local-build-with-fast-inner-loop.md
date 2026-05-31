@@ -18,7 +18,7 @@ You should also be able to build this repo. See [developer guide](./developer-gu
 
 ## Initial Build of Lifted Xaml
 Build the repo as normal. See the [developer guide](./developer-guide.md) for more information.
-In short, run `scripts\init\init.cmd` and then run `tools\build\Build.cmd`. If you want you can skip building the test code by running `tools\build\Build.cmd product`.
+In short, run `tools\setup\init\init.cmd` and then run `tools\build\Build.cmd`. If you want you can skip building the test code by running `tools\build\Build.cmd product`.
 The test code is not necessary for this scenario.
 
 Assuming the build completes sucessfully it will create a local WinUI component package.
@@ -74,7 +74,7 @@ will get cached here, which is a little redundant, but it is a worthwhile trade-
 Open the .sln in Visual Studio again. 
 
 Update the build Configuration to match the Platform for your local build. The target platform that you build your app for 
-must match the platform that you built winui for locally. By default `scripts\init\init.cmd` targets x64, so update your test app project to build
+must match the platform that you built winui for locally. By default `tools\setup\init\init.cmd` targets x64, so update your test app project to build
 for x64 by changing the drop down from x86 to x64.
 
 This is important because the local WinUI component package only supports a single target platform unlike the real WinAppSDK package which supports

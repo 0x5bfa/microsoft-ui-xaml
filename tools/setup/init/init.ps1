@@ -15,7 +15,7 @@ function is-admin
     return $currentPrincipal.IsInRole( [Security.Principal.WindowsBuiltInRole]::Administrator )
 }
 
-$rootDir = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+$rootDir = (Resolve-Path (Join-Path $PSScriptRoot "..\..\..")).Path
 $initScriptsDir = $PSScriptRoot
 
 ## Command line options that are specific to PowerShell init (init.ps1)

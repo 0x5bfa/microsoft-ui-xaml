@@ -33,7 +33,7 @@ if "%1"=="/project" (
 
 :main
 if "%EnvironmentInitialized%" == "" (
-    echo Please run %RepoRoot%\scripts\init\init.cmd to ensure environment is properly initialized
+    echo Please run %RepoRoot%\tools\setup\init\init.cmd to ensure environment is properly initialized
     exit /b 1
 )
 

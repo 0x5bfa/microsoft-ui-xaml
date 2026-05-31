@@ -13,7 +13,7 @@ if ($arch -eq "ARM64EC")
     $arch = "amd64"
 }
 
-$reporoot = Join-Path $PSScriptRoot "..\.." -resolve
+$reporoot = Join-Path $PSScriptRoot "..\..\.." -resolve
 $outputDir = Join-Path $reporoot (Join-Path ".tools" $arch)
 $outputPath = Join-Path $outputDir "dotnet-windowsdesktop-runtime-installer.exe"
 

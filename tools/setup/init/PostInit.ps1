@@ -61,8 +61,8 @@ foreach ($pkg in $mainPkgs)
 Write-Host -ForegroundColor Green Done.
 Write-Progress "Restoring packages for build platform $buildPlatform..." -Completed
 
-. $repoRoot\scripts\init\DownloadDotNetCoreSdk.ps1
-. $repoRoot\scripts\init\DownloadDotNetRuntimeInstaller.ps1
+. $repoRoot\tools\setup\init\DownloadDotNetCoreSdk.ps1
+. $repoRoot\tools\setup\init\DownloadDotNetRuntimeInstaller.ps1
 
 Write-Host "Restoring Maestro and ensuring authentication..."
 msbuild -nologo -t:Restore $repoRoot\eng\restore\Microsoft.MaestroRestore.csproj -v:$Verbosity -p:Configuration=Release -p:NugetInteractive=true -p:PublishReadyToRun=true

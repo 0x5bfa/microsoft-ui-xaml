@@ -53,7 +53,7 @@
     <PropertyGroup>
       <PackagesDirectory>$(ProjectRoot)packages\</PackagesDirectory>
       <TempPackagesDirectory>$(OutDir)packages\</TempPackagesDirectory>
-      <BuildMockPackageScriptPath>$(ProjectRoot)scripts\buildMockWinAppSdkPackage.ps1</BuildMockPackageScriptPath>
+      <BuildMockPackageScriptPath>$(ProjectRoot)tools\packaging\UpdateMockWinAppSDKPackage\buildMockWinAppSdkPackage.ps1</BuildMockPackageScriptPath>
       <BuildMockPackageScriptParams>$(ProjectRoot) $(Platform) $(Configuration) $(WinUIVersion) 999.0.0-mock $(TempPackagesDirectory)</BuildMockPackageScriptParams>
     </PropertyGroup>
   </Target>
