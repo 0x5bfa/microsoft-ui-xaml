@@ -55,7 +55,8 @@ The Microsoft.UI.Xaml.Controls.dll implementation source lives under `/src/contr
 Controls-specific build support lives under `/controls/build`, including
 the controls build command implementation, feature-area selection, project
 import manifests, and shared props/targets. Root command entry points are kept
-for compatibility where needed.
+for compatibility where needed, and root controls props files are thin wrappers
+where MSBuild discovery depends on their names.
 Controls test-app build helpers live under `/controls/test/build`.
 
 See the [layout refactor notes](building/repo-layout-refactor.md) for more
