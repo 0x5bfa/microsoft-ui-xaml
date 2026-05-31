@@ -306,21 +306,21 @@ repo entry points.
 ## Generated controls sources
 
 Checked-in generated dependency-property sources for controls now live under
-`generated/controls/dependencyproperties`. Build inputs and authoring tools
+`src/controls/generated/dependencyproperties`. Build inputs and authoring tools
 refer to this location through `$(MUXControlsGeneratedSourceDir)` so generated
 output is separated from handwritten controls source.
 
 ## Generated package IntelliSense
 
 Checked-in package IntelliSense XML now lives under
-`generated/packaging/intellisense`. The package project consumes that directory
+`tools/packaging/intellisense/generated`. The package project consumes that directory
 through `$(IntellisenseFolder)`, while the docs-team drop input lives with the
 generation workflow under `tools/packaging/intellisense/drop`.
 
 ## Visual test baselines
 
 Checked-in visual test baseline assets now live under
-`generated/tests/visualbaselines`. The resource project that packages them now
+`tests/visualbaselines`. The resource project that packages them now
 lives under `tests/runtime/resources/masters` while continuing to expose
 `resources\masters` at runtime. The legacy command helper that can regenerate a
 masters RC file now lives under `tests/runtime/resources/scripts` so
@@ -835,7 +835,7 @@ classification data generator script now lives under
 `tools/runtime/TextClassification/scripts`, its binary input remains under
 `tools/runtime/TextClassification/data`, while the
 checked-in generated `UcdData.cpp` lives under
-`generated/runtime/text/Classification` and is consumed through
+`src/runtime/generated/text/Classification` and is consumed through
 `$(RuntimeTextClassificationGeneratedPath)`.
 Legacy `dxaml/tools/xamldiagnostics` references have been retired. Product
 XamlDiagnostics source is addressed through `$(XamlDiagnosticsComponentPath)`,

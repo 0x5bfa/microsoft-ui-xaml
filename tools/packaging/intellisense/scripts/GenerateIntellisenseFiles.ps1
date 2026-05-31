@@ -2,7 +2,7 @@ Set-StrictMode -Version 3.0
 $ErrorActionPreference = "Stop"
 
 # Processes the Intellisense .xml files in tools/packaging/intellisense/drop and generates new Intellisense
-# .xml files in generated/packaging/intellisense.
+# .xml files in tools/packaging/intellisense/generated.
 # See Intellisense.md for more information.
 
 $StartTime = Get-Date
@@ -19,7 +19,7 @@ if ($env:Configuration -eq '')
 }
 
 $NugetLibDir = "$RepoRoot\BuildOutput\packaging\$($env:Configuration)\lib"
-$OutputDir = Join-Path $RepoRoot "generated\packaging\intellisense"
+$OutputDir = Join-Path $RepoRoot "tools\packaging\intellisense\generated"
 $WorkingDir = "$RepoRoot\BuildOutput\Intellisense"
 
 if (Test-Path $WorkingDir)

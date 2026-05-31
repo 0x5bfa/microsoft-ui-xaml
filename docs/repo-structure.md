@@ -97,15 +97,11 @@ In-repo XAML compiler consumption hooks and helper build projects live under
 WinRT class registration build rules live under `/eng/winrtclassregistration`.
 WinUIDetails package import rules live under `/eng/winuidetails`.
 
-## /external
-This folder contains checked-in third-party dependencies. Header-only
-dependencies live under `/src/runtime/thirdparty/include`.
-
-## /generated
-This folder contains checked-in generated output and generated baselines.
-Generated controls dependency-property sources live under `/generated/controls/dependencyproperties`.
-Generated package IntelliSense XML lives under `/generated/packaging/intellisense`.
-Visual test baselines live under `/generated/tests/visualbaselines`.
+## Checked-In Dependencies And Generated Assets
+Header-only third-party dependencies live under `/src/runtime/thirdparty/include`.
+Generated controls dependency-property sources live under `/src/controls/generated/dependencyproperties`.
+Generated package IntelliSense XML lives under `/tools/packaging/intellisense/generated`.
+Visual test baselines live under `/tests/visualbaselines`.
 
 ## /src
 This is where source code for repo-local tools and source components outside the
@@ -117,7 +113,7 @@ compiler-specific tools and solutions.
 
 The WinUI controls implementation now lives under `/src/controls`. Controls
 IDL inputs live under `/src/controls/idl`. Controls solution and build-support
-entry points live under `/solutions/controls` and `/eng/controls`, and refer to
+entry points live under `/src/controls/solutions` and `/eng/controls`, and refer to
 the source tree through `$(MUXControlsSourceRoot)`.
 
 The Microsoft.UI.Xaml.dll runtime implementation now lives under

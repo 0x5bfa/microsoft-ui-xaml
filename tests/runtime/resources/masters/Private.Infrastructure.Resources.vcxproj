@@ -21,7 +21,7 @@
     <PropertyGroup>
         <ResourceOnlyDll>true</ResourceOnlyDll>
         <Mui>false</Mui>
-        <VisualTestBaselinesDir>$(ProjectRoot)generated\tests\visualbaselines\</VisualTestBaselinesDir>
+        <VisualTestBaselinesDir>$(ProjectRoot)tests\visualbaselines\</VisualTestBaselinesDir>
         <ProjectIncludeDirectories>$(ProjectIncludeDirectories);$(XcpPath)\inc;$(XamlBuildPath);</ProjectIncludeDirectories>
     </PropertyGroup>
 

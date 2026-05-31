@@ -14,8 +14,8 @@ in Visual Studio. We'll clean the strings before including them.
 1. Delete contents of **tools\packaging\intellisense\drop**
 2. Copy in the new Intellisense XML files into **tools\packaging\intellisense\drop**
 3. Run `powershell .\tools\packaging\intellisense\scripts\GenerateIntellisenseFiles.ps1` from the repo root.  This will read the files in the **drop** subdir and update
-the files in the **generated\packaging\intellisense** dir.  The build will pick up these files and include them in the
+the files in the **tools\packaging\intellisense\generated** dir.  The build will pick up these files and include them in the
 nuget package, alongside the dll/winmd it describes.
     * Note: This step requires outputs from a build, so be sure to run `tools\setup\init\scripts\init.cmd` and `tools\build\scripts\Build.cmd` first.
-4. Create a topic branch, add the files in **generated\packaging\intellisense**, and create a PR. Have a look at the
+4. Create a topic branch, add the files in **tools\packaging\intellisense\generated**, and create a PR. Have a look at the
 changes in `Coverage.txt` to see how the Intellisense coverage of the API surface may have changed.

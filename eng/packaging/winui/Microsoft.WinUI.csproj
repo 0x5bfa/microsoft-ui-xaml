@@ -9,7 +9,7 @@
     <ComponentNuGetLicensePath Condition="'$(ProductPrereleaseTag)'=='stable'">..\WindowsAppSDKConfig\NuGetLicense\release\license.txt</ComponentNuGetLicensePath>
     <!-- Fallback for local builds which don't have WindowsAppSDKConfig. -->
     <ComponentNuGetLicensePath Condition="!Exists('$(ComponentNuGetLicensePath)')">licenses\license.txt</ComponentNuGetLicensePath>
-    <IntellisenseFolder>$(ProjectRoot)generated\packaging\intellisense</IntellisenseFolder>
+    <IntellisenseFolder>$(ProjectRoot)tools\packaging\intellisense\generated</IntellisenseFolder>
   </PropertyGroup>
 
   <!--
