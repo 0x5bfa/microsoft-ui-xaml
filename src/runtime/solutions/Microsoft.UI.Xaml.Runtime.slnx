@@ -64,11 +64,6 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/tests/runtime/dcomp/" />
-  <Folder Name="/tests/runtime/dcomp/dll/" />
-  <Folder Name="/tests/runtime/dcomp/idl/" />
-  <Folder Name="/tests/runtime/dcomp/lib/" />
-  <Folder Name="/tests/runtime/dcomp/pch/" />
   <Folder Name="/tests/runtime/infra/">
     <Project Path="../../../tests/runtime/infra/taefhostapp/taefhostapp.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
@@ -381,12 +376,12 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/tests/runtime/native/external/tools/">
+  <Folder Name="/tests/runtime/tools/external/">
     <Project Path="../../../tests/runtime/tools/external/Microsoft.UI.Xaml.Tests.External.Tools.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/tests/runtime/native/external/tools/customTypes/">
+  <Folder Name="/tests/runtime/tools/customTypes/">
     <Project Path="../../../tests/runtime/tools/customTypes/customTypes.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -402,8 +397,7 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/tests/runtime/native/isolated/tools/" />
-  <Folder Name="/tests/runtime/native/isolated/tools/XbfGenerator/">
+  <Folder Name="/tests/runtime/tools/XbfGenerator/">
     <Project Path="../../../tests/runtime/tools/XbfGenerator/Microsoft.UI.Xaml.Tests.Isolated.Tools.XbfGenerator.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
@@ -1775,7 +1769,9 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Project Path="../../../tests/runtime/infra/MockDComp/MockDComp.vcxproj">
-    <BuildType Solution="Debug_test|*" Project="Debug" />
-  </Project>
+  <Folder Name="/tests/runtime/infra/MockDComp/">
+    <Project Path="../../../tests/runtime/infra/MockDComp/MockDComp.vcxproj">
+      <BuildType Solution="Debug_test|*" Project="Debug" />
+    </Project>
+  </Folder>
 </Solution>
