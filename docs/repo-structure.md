@@ -73,6 +73,7 @@ Compiler-related build infrastructure lives under `/eng/compiler`.
 WebView2-specific build workaround targets live under `/eng/webview2`.
 Shared signing inputs live under `/eng/signing`.
 Standalone build transform assets live under `/eng/transforms`.
+Build temp-folder setup lives under `/eng/tempfolder`.
 Project-based restore helpers live under `/eng/restore`.
 Common build configuration lives under `/eng/configuration`.
 Build-output consumption helpers live under `/eng/consumebinaries`.
