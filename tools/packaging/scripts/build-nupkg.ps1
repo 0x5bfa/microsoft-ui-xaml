@@ -52,7 +52,7 @@ else
 }
 
 # Record versions of dependent packages, for Project Reunion validation
-$VersionsPropsPath = Join-Path "$scriptDirectory\..\.." "eng\versioning\Versions.props"
+$VersionsPropsPath = Join-Path $repoRoot "eng\versioning\Versions.props"
 [xml]$VersionsPropsContent = Get-Content $VersionsPropsPath
 $versionPropsFilePropertyGroup = $VersionsPropsContent.Project.PropertyGroup[0]
 $IXP_Version = ''
@@ -62,7 +62,7 @@ $IXP_COMPONENT_VERSION = ''
 $CsWinRT_Version = $VersionsPropsContent.SelectSingleNode('//MicrosoftCsWinRTPackageVersion').InnerText
 $WEBVIEW2_Version = $VersionsPropsContent.SelectSingleNode('//WebView2PackageVersion').InnerText
 
-$VersionsDetailsPath = Join-Path "$scriptDirectory\..\.." "eng\versioning\Version.Details.xml"
+$VersionsDetailsPath = Join-Path $repoRoot "eng\versioning\Version.Details.xml"
 [xml]$versionDetails = Get-Content -Path $VersionsDetailsPath
 
 # Set up Map from the dependencies to its versions to reference later
@@ -91,7 +91,7 @@ foreach ($dependency in $versionDetails.Dependencies.ProductDependencies.Depende
 
 if ($UseDependencyOverrides)
 {
-    $foundationPkgPath = Join-Path "$scriptDirectory\..\.." "packages\microsoft.windowsappsdk.foundation"
+    $foundationPkgPath = Join-Path $repoRoot "packages\microsoft.windowsappsdk.foundation"
     if (!(Test-Path $foundationPkgPath))
     {
         Write-Error "Asked to use dependency overrides, but microsoft.windowsappsdk.foundation package not installed."
@@ -145,8 +145,8 @@ if ($lastexitcode -ne 0)
 
 if ($InstallPackage)
 {
-    $PackageCache = Join-Path "$scriptDirectory\..\.." "packages"
-    $NugetConfigPath = Join-Path "$scriptDirectory\..\.." "NuGet.config"
+    $PackageCache = Join-Path $repoRoot "packages"
+    $NugetConfigPath = Join-Path $repoRoot "NuGet.config"
     # Remove existing package if it exists to force reinstallation
     $ExistingPackagePath = Join-Path $PackageCache "Microsoft.WindowsAppSDK.WinUI.$VersionOverride"
     if (Test-Path $ExistingPackagePath)
