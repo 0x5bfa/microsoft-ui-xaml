@@ -4206,7 +4206,7 @@ namespace Microsoft { namespace UI { namespace Xaml { namespace Tests { namespac
         // CUIElement::EnterImpl passes visualTree=nullptr when entering the
         // ContextFlyout, so accelerators are registered on the vestigial CoreWindow ContentRoot
         // instead of the island's ContentRoot where keyboard input is actually processed.
-        // See docs/design-notes/context-flyout.md ("The visualTree=nullptr Problem").
+        // See docs/design-notes/popups/context-flyout.md ("The visualTree=nullptr Problem").
         LOG_OUTPUT(L"==> Press accelerator sequence before flyout has been opened: Ctrl + 2 (expect no invocation)");
         TestServices::KeyboardHelper->PressKeySequence(L"$d$_ctrlscan#$d$_2#$u$_2#$u$_ctrlscan");
         TestServices::WindowHelper->WaitForIdle();
