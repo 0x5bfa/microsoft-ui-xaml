@@ -21,15 +21,15 @@
     <ProjectRelativePath>$([MSBuild]::MakeRelative($(ProjectRoot), $(MSBuildProjectDirectory)))</ProjectRelativePath>
     <ProjectOutputRelativePath>$(ProjectRelativePath)</ProjectOutputRelativePath>
     <ProjectOutputRelativePath>$(ProjectOutputRelativePath.Replace("src\runtime\xcp", "dxaml\xcp"))</ProjectOutputRelativePath>
-    <ProjectOutputRelativePath Condition="'$(ProjectRelativePath)' == 'src\runtime\phone\idl'">dxaml\phone\idl</ProjectOutputRelativePath>
-    <ProjectOutputRelativePath Condition="'$(ProjectRelativePath)' == 'src\runtime\phone\lib'">dxaml\phone\lib</ProjectOutputRelativePath>
+    <ProjectOutputRelativePath Condition="'$(ProjectRelativePath)' == 'src\runtime\xcp\phone\idl'">dxaml\phone\idl</ProjectOutputRelativePath>
+    <ProjectOutputRelativePath Condition="'$(ProjectRelativePath)' == 'src\runtime\xcp\phone\lib'">dxaml\phone\lib</ProjectOutputRelativePath>
     <XamlSourcePath>$(ProjectRoot)src\runtime\</XamlSourcePath>
     <XamlTargetsPath>$(ProjectRoot)eng\</XamlTargetsPath>
     <XamlBuildSettingsPath>$(XamlTargetsPath)buildsettings\</XamlBuildSettingsPath>
     <XamlBuildRulesPath>$(XamlTargetsPath)xamlbuild\</XamlBuildRulesPath>
 
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
-    <XcpPhonePath>$(ProjectRoot)src\runtime\phone</XcpPhonePath>
+    <XcpPhonePath>$(XcpPath)\phone</XcpPhonePath>
     <RuntimeToolsPath>$(ProjectRoot)tools\runtime</RuntimeToolsPath>
     <RuntimeGeneratedControlsPath>$(XcpPath)\generated\core\controls</RuntimeGeneratedControlsPath>
     <RuntimeTextClassificationGeneratedPath>$(XcpPath)\generated\text\Classification</RuntimeTextClassificationGeneratedPath>

@@ -31,14 +31,14 @@
     </Project>
   </Folder>
   <Folder Name="/src/runtime/" />
-  <Folder Name="/src/runtime/phone/" />
-  <Folder Name="/src/runtime/phone/idl/">
-    <Project Path="phone/idl/phone.vcxproj">
+  <Folder Name="/src/runtime/xcp/phone/" />
+  <Folder Name="/src/runtime/xcp/phone/idl/">
+    <Project Path="xcp/phone/idl/phone.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/src/runtime/phone/lib/">
-    <Project Path="phone/lib/PhoneSignatureControls.vcxproj">
+  <Folder Name="/src/runtime/xcp/phone/lib/">
+    <Project Path="xcp/phone/lib/PhoneSignatureControls.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>

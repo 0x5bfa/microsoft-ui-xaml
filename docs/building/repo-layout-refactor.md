@@ -283,7 +283,7 @@ use `$(MSBuildThisFileDirectory)` relative paths instead, while
 
 ## Runtime phone source
 
-Phone-specific runtime source now lives under `src/runtime/phone`. It was a
+Phone-specific runtime source now lives under `src/runtime/xcp/phone`. It was a
 small runtime source slice that already had a centralized `$(XcpPhonePath)`,
 making it a safe first runtime-source move before relocating the much larger
 XCP tree. The phone projects keep their legacy `dxaml\phone` object layout so
@@ -962,7 +962,7 @@ repo-root-relative `src\runtime\xcp` paths.
 Runtime build-output references should prefer `$(XcpObjPath)` over spelling
 `dxaml\xcp` under `$(ArtifactsObjDir)` or `$(XamlBuildOutputRoot)` directly.
 Phone project references and include paths should use `$(XcpPhonePath)` instead
-of spelling either the current `src\runtime\phone` location or legacy
+of spelling either the current `src\runtime\xcp\phone` location or legacy
 `dxaml\phone` paths directly.
 Graph augmentation projects define the same minimal path properties locally so
 their lightweight project graph files can avoid hard-coded runtime-relative

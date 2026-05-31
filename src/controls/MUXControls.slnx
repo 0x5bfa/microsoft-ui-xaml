@@ -243,7 +243,7 @@
   <Project Path="../../tests/controls/apps/MUXControlsTestApp/MUXControlsTestApp.csproj">
     <BuildDependency Project="../../tools/packaging/UpdateMockWinAppSDKPackage/UpdateMockWinAppSDKPackage.csproj" />
     <BuildDependency Project="../projection/Microsoft.WinUI.csproj" />
-    <BuildDependency Project="../runtime/phone/idl/phone.vcxproj" />
+    <BuildDependency Project="../runtime/xcp/phone/idl/phone.vcxproj" />
     <BuildDependency Project="../runtime/xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj" />
     <BuildDependency Project="../runtime/xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj" />
     <BuildDependency Project="../runtime/xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj" />
@@ -357,7 +357,7 @@
     <BuildDependency Project="../metadata/MergedWinMD/MergedWinMD.vcxproj" />
     <BuildDependency Project="../metadata/MergedWinMD/private/MergedWinMD.Private.vcxproj" />
     <BuildDependency Project="../projection/Microsoft.WinUI.csproj" />
-    <BuildDependency Project="../runtime/phone/idl/phone.vcxproj" />
+    <BuildDependency Project="../runtime/xcp/phone/idl/phone.vcxproj" />
     <BuildDependency Project="../runtime/xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj" />
     <BuildDependency Project="../runtime/xcp/dxaml/idl/winrt/controls/Microsoft.ui.xaml.controls.controls.vcxproj" />
     <BuildDependency Project="../runtime/xcp/dxaml/idl/winrt/core/Microsoft.ui.xaml.coretypes.vcxproj" />
@@ -387,7 +387,7 @@
   <Project Path="../projection/private/Microsoft.WinUI.Private.csproj">
     <BuildType Solution="Debug_test|*" Project="Debug" />
   </Project>
-  <Project Path="../runtime/phone/idl/phone.vcxproj">
+  <Project Path="../runtime/xcp/phone/idl/phone.vcxproj">
     <BuildType Solution="Debug_test|*" Project="Debug" />
   </Project>
   <Project Path="../runtime/xcp/dxaml/idl/com/microsoft.ui.xaml-com.vcxproj">
