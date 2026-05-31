@@ -38,7 +38,7 @@ Generally speaking, debugging with VS is easier to configure and use.
 The easiest way to determine a series of actions taken between elements is to set actions on a series of relevant 
 breakpoints in Visual Studio, as demonstrated in the screenshot below.
 
-![](../images/vs-breakpoint-action.png)
+![](images/vs-breakpoint-action.png)
 
 The console output will display the message when the breakpoint is hit, but will not interrupt the ongoing action. You 
 can also print the value of variables in this output to determine a set of conditions with which you *do* want to break.
@@ -414,4 +414,4 @@ To override this, you need to enable this feature in Visual Studio by going to *
 **Environment** -> **Preview Features** -> **Use previews of the .NET Core SDK (requires restart)**. Your setting should
 look like this:
 
-![](../images/vs-enablepreview.png)
+![](images/vs-enablepreview.png)

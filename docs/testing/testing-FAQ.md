@@ -377,7 +377,7 @@ download the TestPayload from the build. Go to the build report page. Click 'pub
 folder or the 'ScenarioTestSuitePayload' folder (for Tests or Scenario App Tests). Unzip this file and use it the same
 way as described above (`testmachine-setup.cmd` and the `runtests.cmd`).
 
-![](../images/pipeline-testpayload-links.jpg)
+![](images/pipeline-testpayload-links.jpg)
 
 Note that these payloads do not contain symbols. If you want test failures to produce meaningful stacks from IFC
 failures, download Microsoft.UI.Xaml.pdb from the Symbols folder and put it alongside the test binaries inside the Test
@@ -454,7 +454,7 @@ RestApiException: The response contained an invalid status code 502 Bad Gateway
 When a test job runs, we collect up to three dumps in the c:\dumps folder on the test machine, and then upload
 them to the "artifacts" for that job.  Look for ".dmp" files in the artifacts:
 
-![a dump file on the pipeline artifacts page](../images/dump-file.png)
+![a dump file on the pipeline artifacts page](images/dump-file.png)
 
 Note that sometimes you may see crashes for jobs that passed.  This can be because either (a) the test was automatically
 re-run, and the re-run passed, or (b) the crash happened after a test reported a "pass".

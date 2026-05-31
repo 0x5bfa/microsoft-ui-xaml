@@ -60,7 +60,7 @@ The final build pipeline must be *explicitly* retained or it will be automatical
 
 Retain the build using the more-actions menu:
 
-![](../images/retain-pipeline-run.png)
+![](images/retain-pipeline-run.png)
 
 ### Tag the final commit
 
