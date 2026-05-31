@@ -6,7 +6,9 @@ This is a collection of documentations which provide a high level design oriente
 
 ### Concepts
 
-* [Journey of a control](./control-overview.md) - a vertical slice of what makes up a WinUI control
+* [Journey of a control](./architecture/control-overview.md) - a vertical slice of what makes up a WinUI control
+* [Consolidating the Microsoft.UI namespace to one package](./architecture/consolidate-microsoft-ui-namespace.md)
+* [Lightweight Bindings](./architecture/lightweight-bindings.md)
 * [Xaml compiler overview](./xaml-compiler/xamlcompiler.md)
 * [Codegen](./xaml-compiler/codegen.md)
 * [Xaml/C# Object Lifetime Design](./runtime-core/xaml-object-lifetime.md)
