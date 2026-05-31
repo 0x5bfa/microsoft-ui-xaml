@@ -454,4 +454,4 @@ stacking direction. It's a recurring performance trap for our customers.
 
 # Somewhat related doc
 
-The [ScrollView](ScrollView-spec.md) document compares the new ScrollView usages with the old ScrollViewer ones.
+The [ScrollView](../specs/ScrollingControls/ScrollView-spec.md) document compares the new ScrollView usages with the old ScrollViewer ones.

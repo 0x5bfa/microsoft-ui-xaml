@@ -231,7 +231,7 @@ to scroll the content (scroll bars or mouse wheel), and mouse wheel and keyboard
 The area that includes all of the content of the `ScrollView` is the *extent*. The visible area of the
 content is the *viewport*.
 
-![Viewport and Extent](images/ScrollView_ViewportAndExtent.jpg)
+![Viewport and Extent](images/ViewportAndExtent.jpg)
 
 A second kind of scrolling element, the `ScrollPresenter`, is more primitive, providing just clipping
 and translation of content, and not providing scroll bars and other features found in a `ScrollView`.
@@ -452,12 +452,12 @@ The following pictures show examples of this default behavior for the scroll bar
 1.  The `ScrollView`'s content is arranged to stay within the width of the viewport but not the height.
 Only the vertical scroll bar appears.
 
-![vertical scroll bar](images/ScrollView_VerticalScrollBar.png)
+![vertical scroll bar](images/VerticalScrollBar.png)
 
 2.  Because the `ScrollView`'s content is arranged larger than the viewport in both directions,
 the two scroll bars and their separator appear.
 
-![both scroll bars and separator](images/ScrollView_BothScrollBars.png)
+![both scroll bars and separator](images/BothScrollBars.png)
 
 
 #### Hiding both scroll bars
@@ -621,7 +621,7 @@ The most common scenario is an experience like the Microsoft Store application w
 scrollable lists are stacked vertically. By default the mouse wheel will scroll an inner horizontal list,
 but the user expects it to vertically scroll the outer list.
 
-![Xbox Store](images/ScrollView_MicrosoftStore.jpg)
+![Xbox Store](images/MicrosoftStore.jpg)
 
 In this example, the orange rectangle represents an inner `ScrollView` for a horizontal `ListView`.
 The red rectangle represents an outer vertical `ScrollView`. By default, the inner `ScrollView` would
@@ -635,7 +635,7 @@ In this example from a canvas-based design app, pen input is being used to direc
 surface or perform lasso selection instead of scrolling it. MouseWheel, Touch, etc. inputs remain active
 for scrolling.
 
-![Fonte app](images/ScrollView_FonteApp.png)
+![Fonte app](images/FonteApp.png)
 
 *`ScrollView` (new)*
 
@@ -665,7 +665,7 @@ This example shows a UI with a horizontal pivot control of pages. The first page
 contains a horizontally scrolling list that a user should be able to scroll left/right. When the
 user reaches the end of the horizontal list it should **not** cause the page to change.
 
-![enter image description here](images/ScrollView_HScrollInsidePivot.png)
+![enter image description here](images/HScrollInsidePivot.png)
 
 > **Credit**: Scenario and image taken from [this StackOverflow question](https://stackoverflow.com/questions/35207827/disable-pivot-swipe-during-scrolling-on-uwp-app/35765990#35765990)
 
@@ -819,7 +819,7 @@ Identical to above.
 The samples in this section focus on using properties and events that relate to the layout aspects
 of the `ScrollView` control.
 
-![ScrollView Properties](images/ScrollView_Props.png)
+![ScrollView Properties](images/ScrollViewProps.png)
 
 
 ### Shrink the extents by a certain percentage of the current factor
@@ -3135,7 +3135,7 @@ Example: Using the built-in StackPanel snap locations as mandatory snap points t
 
 1.  Vertical StackPanel
 
-![Vertical StackPanel Snap Points](images/ScrollView_VStackPanelSnapPoints.png)
+![Vertical StackPanel Snap Points](images/VStackPanelSnapPoints.png)
 
 *`ScrollView` (new)*
 
@@ -3158,7 +3158,7 @@ Similar to above
 
 2.  Horizontal StackPanel
 
-![Horizontal StackPanel Snap Points ](images/ScrollView_HStackPanelSnapPoints.png)
+![Horizontal StackPanel Snap Points ](images/HStackPanelSnapPoints.png)
 
 *`ScrollView` (new)*
 
@@ -3202,7 +3202,7 @@ ScrollView-specific members to add:
 
 Example: Centering the snap points in the viewport in a flip-view control
 
-![Snap points alignment](images/ScrollView_SnapPointsAlignment.png)
+![Snap points alignment](images/SnapPointsAlignment.png)
 
 *`ScrollView` (new)*
 

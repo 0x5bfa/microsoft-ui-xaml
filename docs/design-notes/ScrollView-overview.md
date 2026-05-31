@@ -226,5 +226,5 @@ The SwipeControl and PullToRefresh controls.
 
 # Related docs
 
-The [ScrollView](ScrollView-spec.md) & [ScrollPresenter](ScrollPresenter-spec) (for IScrollController too) documents provide lots of information 
+The [ScrollView](../specs/ScrollingControls/ScrollView-spec.md) & [ScrollPresenter](../specs/ScrollingControls/ScrollPresenter-spec.md) (for IScrollController too) documents provide lots of information
 about the expected behaviors.

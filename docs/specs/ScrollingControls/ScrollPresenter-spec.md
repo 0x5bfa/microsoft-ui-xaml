@@ -196,7 +196,7 @@ wheel to zoom it.
 The area that includes all of the content of the `ScrollPresenter` is the *extent*. The visible area of
 the content is the *viewport*.
 
-![Viewport and Extent](images/ScrollPresenter_ViewportAndExtent.jpg)
+![Viewport and Extent](images/ViewportAndExtent.jpg)
 
 The `ScrollPresenter` can be used as a primitive building block for controls like the `ScrollView` which
 adds the default user interaction widgets (scrollbars, scroll indicator, etc.) and policy.
@@ -326,7 +326,7 @@ negative and positive values respectively to effectively define an infinite doma
 
 In this example, a horizontal repeated snap point is defined at values -10, 50, 110, 170, 230 and 290.
 
-![Repeater Scroll Snap points](images/ScrollPresenter_RepeatedSnapPoints.png)
+![Repeater Scroll Snap points](images/RepeatedSnapPoints.png)
 
 The natural rest point is defined as the landing point after inertia if no snap points were present.
 That natural rest point defines which snap point value is activated.
@@ -364,7 +364,7 @@ That panel has 4 chidren elements of variable heights,
 each of them being assigned a snap point so that their center snaps vertically to the center of the viewport
 as much as possible.
 
-![Repeated Scroll Snap points](images/ScrollPresenter_VerticalScrollSnapPoints.png)
+![Repeated Scroll Snap points](images/VerticalScrollSnapPoints.png)
 
 The viewport is 610px tall, the 4 children are 360px, 290px, 220px and 160px tall.
 Since the desired alignment is `Center`, the content snap points will align to the middle of the viewport,
@@ -4028,7 +4028,7 @@ _scrollingPresenter.VerticalSnapPoints.Add(snapPoint2);
 _scrollingPresenter.VerticalSnapPoints.Add(snapPoint3);
 ```
 
-![Snap points custom active range](images/ScrollPresenter_SnapPointsCustomActiveRange.png)
+![Snap points custom active range](images/SnapPointsCustomActiveRange.png)
 
 snapPoint1's applicable range: (-inf, 140\]
 
