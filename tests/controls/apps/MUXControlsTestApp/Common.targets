@@ -79,7 +79,7 @@
       <AppxManifestReference Include="$(ArtifactsObjDir)phone\idl\Microsoft.UI.Xaml.Phone.winmd">
         <Implementation>Microsoft.UI.Xaml.Phone.dll</Implementation>
       </AppxManifestReference>
-      <AppxManifestReference Include="$(OutDir)..\..\..\idl\Unmerged\Microsoft.UI.Xaml.Controls.winmd">
+      <AppxManifestReference Include="$(XamlBuildOutputRoot)controls\idl\Unmerged\Microsoft.UI.Xaml.Controls.winmd">
         <Implementation>Microsoft.UI.Xaml.Controls.dll</Implementation>
       </AppxManifestReference>
       <AppxManifestReference Include="$(ArtifactsBinDir)Product\Microsoft.UI.Text.winmd">

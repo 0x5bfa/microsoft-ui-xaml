@@ -49,7 +49,7 @@ Controls test reporting helpers live under `/controls/tools/TestReporting`.
 Controls XAML processing and WinUI 2 migration helpers live under `/controls/tools/XamlProcessing`.
 
 ## /controls
-This folder contains controls solution, test, and tooling entry points.
+This folder contains controls solution and tooling entry points.
 The Microsoft.UI.Xaml.Controls.dll implementation source lives under `/src/controls`.
 Controls-specific build support lives under `/controls/build`, including
 feature-area selection, project import manifests, and shared props/targets.
@@ -57,8 +57,8 @@ The controls build command implementation lives under `/controls/tools/Build`.
 Root controls props files are thin wrappers where MSBuild discovery depends on
 their names. Controls-specific `Directory.Build.props` and
 `Directory.Build.targets` implementations also live under `/controls/build`.
-Controls test apps live under `/controls/test/apps` as they are migrated, and
-test-app build helpers live under `/controls/test/build`.
+Controls test apps, test infrastructure, and shared test helpers live under
+`/tests/controls`.
 
 See the [layout refactor notes](building/repo-layout-refactor.md) for more
 information about the controls section of the repo.
@@ -160,7 +160,8 @@ type-forwarder sources under `/src/projection/TypeForwarders`.
 ## /tests
 This folder contains test assets that have been separated from product source
 trees. Compiler test entry points and support tools live under
-`/tests/compiler`; shared test payload and Helix infrastructure lives under
+`/tests/compiler`; controls test apps and infrastructure live under
+`/tests/controls`; shared test payload and Helix infrastructure lives under
 `/tests/infra`; runtime test resources live under `/tests/runtime/resources`,
 with resource maintenance helpers under `/tests/runtime/resources/tools`; runtime
 test package maintenance helpers live under `/tests/runtime/packages/*/tools`.

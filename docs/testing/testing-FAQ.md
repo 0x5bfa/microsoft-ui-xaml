@@ -634,7 +634,7 @@ pipelines.
 
 ### How do the Sample App Test Automation tests work?
 The Sample App Tests install, launch and interact with the Sample Apps via UI Automation. They use the same test
-libraries as the MUXControls tests. The source code is under `controls\test\MUXControls.Test\ScenarioAppTests`. For now,
+libraries as the MUXControls tests. The source code is under `tests\controls\MUXControls.Test\ScenarioAppTests`. For now,
 these tests are compiled into MUXControls.Test.dll.
 
 ### How do I run the Sample App Tests?

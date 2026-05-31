@@ -9,7 +9,7 @@
     <UseXamlCompiler Condition="'$(UseXamlCompiler)'==''">false</UseXamlCompiler>
     <UseRidGraph>true</UseRidGraph>
   </PropertyGroup>
-  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\controls\Directory.Build.props" />
   <PropertyGroup>
     <WindowsSdkPath Condition="'$(WindowsSdkPath)' == ''">$(NugetPackageDirectory)\Microsoft.Windows.SDK.cpp.$(MicrosoftWindowsSDKCppNugetPackageVersion)\c\</WindowsSdkPath>
   </PropertyGroup>

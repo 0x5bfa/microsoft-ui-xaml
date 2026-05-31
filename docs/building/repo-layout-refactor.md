@@ -197,10 +197,10 @@ legacy project that does not consume the shared managed test props directly.
 
 Controls test infrastructure should live with the controls test projects it
 supports. `AppTestAutomationHelpers` now lives under
-`controls/test/testinfra` next to `MUXTestInfra` instead of under `Samples`, so
+`tests/controls/testinfra` next to `MUXTestInfra` instead of under `Samples`, so
 the sample-app tree stays focused on sample applications. Testinfra package
 creation helpers live under each testinfra package's `tools` folder, and the
-WinUI Gallery test-data generator lives under `controls/test/tools`.
+WinUI Gallery test-data generator lives under `tests/controls/tools`.
 
 ## Sample test automation
 
@@ -727,14 +727,12 @@ Controls XAML processing and WinUI 2 migration helpers now live under
 `controls/tools/XamlProcessing`, including the generic XAML merge script used
 by the controls build.
 
-Controls test-app build helpers now live under `controls/test/build`, keeping
+Controls test-app build helpers now live under `tests/controls/build`, keeping
 the controls test root focused on test entry points and automatically discovered
-MSBuild defaults. Controls test apps should move under `controls/test/apps` as
-their references are isolated; `IXMPTestApp`, `TabViewTearOutApp`,
-`TestAppCX`, and `MUXControlsTestApp` now live there as the first test-app
-moves.
+MSBuild defaults. `IXMPTestApp`, `TabViewTearOutApp`, `TestAppCX`, and
+`MUXControlsTestApp` now live under `tests/controls/apps`.
 Shared controls test-app utility code now lives under
-`controls/test/shared/TestAppUtils`, keeping shared test support separate from
+`tests/controls/shared/TestAppUtils`, keeping shared test support separate from
 concrete app and test-infrastructure entry points.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not

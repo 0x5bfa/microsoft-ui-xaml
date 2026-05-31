@@ -1,7 +1,7 @@
 Param(
     [Parameter(Mandatory = $true)]
     [String]$BuildId,
-    [string]$outputFolder = "..\test\apps\MUXControlsTestApp\verification"
+    [string]$outputFolder = (Join-Path $PSScriptRoot "..\..\..\tests\controls\apps\MUXControlsTestApp\verification")
 )
 
 # This script is responsible for updating the visual verification files that are checked into the project by comparing the tests result files to the files currently checked in.
@@ -19,7 +19,7 @@ function New-TemporaryDirectory {
     New-Item -ItemType Directory -Path (Join-Path $parent $name)
 }
 
-$currentVisualTreeVerificationFolder = "..\test\apps\MUXControlsTestApp\verification"
+$currentVisualTreeVerificationFolder = $outputFolder
 $maxOSVersionNumber = 8
 
 if( -Not (Test-Path $outputFolder) )

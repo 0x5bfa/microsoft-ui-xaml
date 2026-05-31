@@ -74,7 +74,7 @@ When this skill is invoked:
    | `tests/runtime/resources/**` (images, GIFs, masters) | `Isolated.Foundation.Imaging`, `External.Foundation` | None / WPF |
    | `tests/runtime/managed/**` | `Managed.*` | WPF |
    | `src/controls/**` (WinUI controls source) | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
-   | `controls/test/**` | `MUXControls.Test.dll` | None |
+   | `tests/controls/**` | `MUXControls.Test.dll` | None |
    | `src/controls/idl/**` | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
    | `src/compiler/**` | `Isolated.Tools.XbfGenerator` | None |
    | `src/runtime/xcp/dxaml/themes/**` | `External.Controls`, `External.Framework` | WPF |
@@ -508,7 +508,7 @@ All test DLLs are in `TestPayload\<platform><config>\Test\`. Here is the complet
 | `src/runtime/xcp/components/imaging/**` | `Isolated.Foundation.Imaging` |
 | `tests/runtime/native/external/<area>/**` | `External.<Area>` |
 | `tests/runtime/resources/` (GIF/image assets) | `Isolated.Foundation.Imaging`, `External.Foundation` |
-| `controls/test/**` | `MUXControls.Test.dll` |
+| `tests/controls/**` | `MUXControls.Test.dll` |
 
 ## OSS Package Coherence
 

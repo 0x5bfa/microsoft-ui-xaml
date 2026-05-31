@@ -174,7 +174,7 @@
     <Image Include="TabViewTearOutApp.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(MUXCProjectRoot)test\testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj">
+    <ProjectReference Include="$(MUXControlsTestRoot)testinfra\AppTestAutomationHelpers\AppTestAutomationHelpers.vcxproj">
       <Project>{128e6f7a-578c-48dc-bd3f-750ec662c268}</Project>
       <Name>AppTestAutomationHelpers</Name>
     </ProjectReference>
@@ -233,7 +233,7 @@
   </PropertyGroup>
   <Target Name="BinplaceOutDir" BeforeTargets="Binplace" DependsOnTargets="CopyPayloadFiles">
     <PropertyGroup>
-      <UnpackagedAppsDirectory>$(ArtifactsObjDir)controls\test\MUXControls.Test\UnpackagedApps\$(MSBuildProjectName)\</UnpackagedAppsDirectory>
+      <UnpackagedAppsDirectory>$(ArtifactsObjDir)tests\controls\MUXControls.Test\UnpackagedApps\$(MSBuildProjectName)\</UnpackagedAppsDirectory>
     </PropertyGroup>
     <ItemGroup>
       <BinplaceItem Include="$(OutDir)**\*" Exclude="$(GeneratedFilesDir)**\*;$(IntermediateOutputPath)**\*">

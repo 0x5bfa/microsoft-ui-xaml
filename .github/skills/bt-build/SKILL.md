@@ -82,14 +82,14 @@ Caveats:
 
 Anything under these directories is **test** scope:
 
-- `controls/test/MUXControls.Test/`
-- `controls/test/apps/MUXControlsTestApp/`
-- `controls/test/apps/TabViewTearOutApp/`
-- `controls/test/apps/TestAppCX/`
-- `controls/test/apps/IXMPTestApp/`
-- `controls/test/shared/TestAppUtils/`
-- `controls/test/testinfra/MUXTestInfra/`
-- `controls/test/testinfra/AppTestAutomationHelpers/`
+- `tests/controls/MUXControls.Test/`
+- `tests/controls/apps/MUXControlsTestApp/`
+- `tests/controls/apps/TabViewTearOutApp/`
+- `tests/controls/apps/TestAppCX/`
+- `tests/controls/apps/IXMPTestApp/`
+- `tests/controls/shared/TestAppUtils/`
+- `tests/controls/testinfra/MUXTestInfra/`
+- `tests/controls/testinfra/AppTestAutomationHelpers/`
 
 ## Common workflows
 

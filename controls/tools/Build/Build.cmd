@@ -41,7 +41,7 @@ if "%_targetMUXControls%" == "1" (
     call :buildSolution %reporoot%\controls\MUXControls.sln /m
 ) else if "%_targetTestRunner%" == "1" (
     call :buildMockPackage
-    call :buildSolution %reporoot%\controls\test\MUXControls.Test\MUXControls.Test.csproj /m
+    call :buildSolution %reporoot%\tests\controls\MUXControls.Test\MUXControls.Test.csproj /m
 ) else if "%_targetProject%" == "1" (
     call :buildSolution %reporoot%\controls\%_targetProjectPath% /m
 ) else if "%_targetProduct%" == "1" (
