@@ -9,9 +9,9 @@ This is a collection of documentations which provide a high level design oriente
 * [Journey of a control](./control-overview.md) - a vertical slice of what makes up a WinUI control
 * [Xaml compiler overview](./xaml-compiler/xamlcompiler.md)
 * [Codegen](./xaml-compiler/codegen.md)
-* [Xaml/C# Object Lifetime Design](./xaml-object-lifetime.md)
+* [Xaml/C# Object Lifetime Design](./runtime-core/xaml-object-lifetime.md)
 * [Surfaces in Xaml](./rendering/surfaces-overview.md) - Use of Composition and Direct3D surfaces in Xaml
-* [Dxaml vs Core layers / Peer objects](./dxamlvscore.md) - A writeup explaning difference between Dxaml and core layers, peer objects and how to transition between the two objects for a given type 
+* [Dxaml vs Core layers / Peer objects](./runtime-core/dxamlvscore.md) - A writeup explaning difference between Dxaml and core layers, peer objects and how to transition between the two objects for a given type
 * [XAML Rendering Architecture](./rendering/rendering.md) -  This document gives a high-level overview of how the XAML rendering engine works, primarily covering integration with the system compositor
 * [UI Thread ticking](./rendering/ui-thread-ticking.md) - A writeup on ticks in ui thread and how layout, animation and other parts of UI depend on it
 * [Xaml theming resources](./resources/resources.md) - A writeup on everthing about Xaml theming resources and how they are created and used

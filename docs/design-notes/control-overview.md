@@ -49,4 +49,4 @@ the implementation details of the control. It is the place where its distinct
 identity as a control is lost and it becomes part of the inner components. It interacts with DXaml Core. It takes care 
 of lifetime operations and entering and leaving visual tree.
 
-For more information on these layers, see [DXaml vs Core layers](./dxamlvscore.md).
+For more information on these layers, see [DXaml vs Core layers](./runtime-core/dxamlvscore.md).

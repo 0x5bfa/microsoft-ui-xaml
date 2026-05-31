@@ -139,7 +139,7 @@ ptr = checked_cast<T>(raw_pointer);  //better as it does better checks to make s
   cleanup decisions.   
 * Used in a class member to denote persistent, strong references to an owned object. 
 * Bool operator overloaded, can be used directly in boolean cases like if statements. `==` and `!=` are also overloaded but and works with raw pointers and `nullptr`
-* A detailed discussion exists here: [XAML/C# Object Lifetime Design](./xaml-object-lifetime.md)
+* A detailed discussion exists here: [XAML/C# Object Lifetime Design](./runtime-core/xaml-object-lifetime.md)
 
 File: [`src/runtime/xcp/components/lifetime/inc/TrackerPtr.h`](../../src/runtime/xcp/components/lifetime/inc/TrackerPtr.h)
 
