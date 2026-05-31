@@ -307,6 +307,8 @@ source-side component `unittests` folders.
 Runtime isolated foundation test projects are likewise shown under
 `/tests/runtime/native/isolated/foundation`, matching their project locations
 instead of the source component folders they exercise.
+Runtime isolated framework test projects are shown under
+`/tests/runtime/native/isolated/framework` for the same reason.
 
 The product-wide solution now lives at the repo root as
 `Microsoft.UI.Xaml.slnx`, preserving it as the repo-wide entry point without
