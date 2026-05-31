@@ -88,7 +88,8 @@ through `$(RuntimeToolsCustomTypesPath)` and generated includes through
 
 Runtime test AppX manifest inputs now live under `tests/runtime/packages/appx`.
 They are test packaging assets rather than runtime source, and the runtime
-solution references the package project from that test-owned location.
+solution references the package project from that test-owned location. AppX
+package maintenance helpers live under `tests/runtime/packages/appx/tools`.
 The temporary WebView2 Runtime installer staging path now lives under
 `tests/runtime/packages/edge` because it feeds the test-only
 `Microsoft.UI.DCPP.Dependencies.Edge` package.
