@@ -57,7 +57,7 @@
 
     <!--
       Projects that build midl don't need to reference WinUI details nuget. Importing the nuget adds the winmd to references, which
-      collides with the metadata specified in productmetadata.props, most notably that we don't merge Microsoft.UI.Text.winmd
+      collides with the metadata specified in eng\productmetadata\productmetadata.props, most notably that we don't merge Microsoft.UI.Text.winmd
     -->
     <UseWinUIDetails>false</UseWinUIDetails>
   </PropertyGroup>

@@ -2,7 +2,7 @@
 <Project>
   <!-- 
     Generates registrations for Lifted XAML activatable WinRT classes using the correct implementation DLLs.
-    This target uses the metadata defined in eng\productmetadata.props, as well as the winmd files that are
+    This target uses the metadata defined in eng\productmetadata\productmetadata.props, as well as the winmd files that are
     used as inputs to mdmerge. This ensures that our external partners, which may have an implementation
     that doesn't match the winmd work as expected, and also that the MUX types, which don't follow the 1-1
     mapping of winmd-.dll, also have the correct entries.

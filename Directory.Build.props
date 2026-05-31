@@ -47,7 +47,7 @@
   <Import Project="eng\folderpaths.props" />
   <Import Project="eng\tempfolder.props"/>
   <Import Project="eng\midl\midl.props" Condition="'$(IsWinmdProject)' == 'true'" />
-  <Import Project="eng\productmetadata.props" />
+  <Import Project="eng\productmetadata\productmetadata.props" />
   <Import Project="eng\packaging\packaging.props" />
   <Import Project="eng\xamlcompiler\usexamlcompiler.props" Condition="'$(UseXamlCompiler)'=='true'" />
   <Import Project="eng\testprojects\testprojects.props" Condition="'$(TestCode)'=='true'" />

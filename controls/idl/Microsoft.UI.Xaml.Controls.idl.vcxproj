@@ -58,7 +58,7 @@
   <Import Project="$(NuGetPackageRoot)\Microsoft.Web.WebView2.$(WebView2Version)\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Web.WebView2.$(WebView2Version)\build\native\Microsoft.Web.WebView2.targets')" />
 
   <ItemGroup>
-    <!-- Don't add winmds here, add them to ExternalWinMDs in eng\productmetadata.props -->
+    <!-- Don't add winmds here, add them to ExternalWinMDs in eng\productmetadata\productmetadata.props -->
     <Reference Include="@(ExternalWinMDs)" />
   </ItemGroup>
   <Import Project="$(MUXCProjectRoot)build\ProjectImports.targets" />
