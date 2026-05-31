@@ -574,6 +574,9 @@ root-level files limited to repository-wide entry points and configuration.
 The local NuGet package test feed now lives under `packaging/package-store`.
 Package construction scripts, NuGet.config, and cleanup helpers point there
 instead of keeping a single-purpose `PackageStore` folder at the repo root.
+The WinUI component package command implementation now lives under
+`tools/packaging`, while the root-level `pack.component.cmd` remains the stable
+entry point used by developer docs and build scripts.
 
 The standalone debugger extension script now lives under
 `tools/debugging/dbgext`, grouped with other manually invoked repo tools.
