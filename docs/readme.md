@@ -30,7 +30,7 @@ See [Testing In WinUI FAQ](./testing/testing-FAQ.md), [WinUI CI Test System Over
 For more detailed information on how to accomplish common tasks with the build system, see the [build system how-to doc](./building/build-system-howto.md) to help you accomplish your tasks
 
 ### Windows App SDK
-See [Windows App SDK Overview](winappsdk-overview.md) for an overview of WinUI 3 integration into the Windows App SDK.
+See [Windows App SDK Overview](./publishing/winappsdk-overview.md) for an overview of WinUI 3 integration into the Windows App SDK.
 
 ## Design docs
 * [Build system](./building/build-system-design.md)
