@@ -23,6 +23,7 @@ For the ongoing path cleanup direction, see the [repository layout refactor](./b
 
 ### Developer Guide
 The [developer guide](./building/developer-guide.md) contains information on how to do the day-to-day tasks in this repo, as well as the tools and setup required to get going.
+For an OSS-focused first build walkthrough, see [Getting started with building WinUI](./building/getting-started.md).
 For control authoring guidance, see [How to Author a Xaml Control](./building/how-to-author-a-xaml-control.md) and [Localization Process](./building/localization-process.md).
 For setup-specific caveats printed by repo initialization, see [init known issues](./building/init-known-issues.md).
 
