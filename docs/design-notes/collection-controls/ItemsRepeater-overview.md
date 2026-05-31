@@ -100,7 +100,7 @@ These are paths for Microsoft.UI.Xaml.Controls.
 
 - Product: \src\controls\Repeater
 - Test: \src\controls\Repeater\APITest & InteractionTests
-- MuxControlsTestApp test pages: \src\controls\Repeater\TestUI
+- MuxControlsTestApp test pages: \tests\controls\testui\Repeater
 
 
 # Key methods when debugging
