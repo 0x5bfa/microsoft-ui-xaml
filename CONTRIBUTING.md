@@ -34,7 +34,7 @@ You don't need to follow that process for bug fixes or other small changes.
 
 ### Contribution bar
 
-The WinUI team accepts code changes that improve WinUI or fix bugs, as long as they follow the processes outlined below and broadly align with our [roadmap](docs/roadmap.md).
+The WinUI team accepts code changes that improve WinUI or fix bugs, as long as they follow the processes outlined below and broadly align with our [roadmap](https://aka.ms/winappsdk/plans).
 
 While we strive to accept all community contributions that meet the guidelines outlined here, please note that we may not merge changes that have narrowly-defined benefits due to compatibility risks and maintenance costs. We may also revert changes if they are found to be breaking.
 
@@ -42,10 +42,10 @@ While we strive to accept all community contributions that meet the guidelines o
 
 For details see:
 
-* [Setup and build environment](docs/developer_guide.md#Prerequisites)
-* [Source code structure](docs/source_code_structure.md)
+* [Setup and build environment](docs/building/developer-guide.md)
+* [Source code structure](docs/repo-structure.md)
 * [Contribution workflow](docs/external/contribution_workflow.md)
-* [Coding style and conventions](docs/code_style_and_conventions.md)
+* [Documentation style guide](docs/external/docs-style-guide.md)
 
 ### Contributor License Agreement
 
