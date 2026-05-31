@@ -734,8 +734,9 @@ Shared controls test-app utility code now lives under
 `tests/controls/shared/TestAppUtils`, keeping shared test support separate from
 concrete app and test-infrastructure entry points.
 Controls test UI shared projects are moving under `tests/controls/testui`.
-`ItemContainer_TestUI` moved first because it is a small self-contained shared
-project imported only by MUXControlsTestApp and the controls solution.
+`ItemContainer_TestUI` and `RadialGradientBrush_TestUI` moved first because
+they are small self-contained shared projects imported by MUXControlsTestApp and
+the controls solutions.
 
 Runtime developer tools should move out of `src/runtime/xcp/tools` when they are not
 product source or test assets. `DumpXbf` now lives under `tools/runtime/DumpXbf`

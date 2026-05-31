@@ -288,7 +288,7 @@
   <Import Project="$(MUXControlsSourceRoot)SplitView\TestUI\SplitView_TestUI.projitems" Label="Shared" Condition="$(FeatureSplitViewEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)ProgressBar\TestUI\ProgressBar_TestUI.projitems" Label="Shared" Condition="$(FeatureProgressBarEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)ProgressRing\TestUI\ProgressRing_TestUI.projitems" Label="Shared" Condition="$(FeatureProgressRingEnabled) == 'true'" />
-  <Import Project="$(MUXControlsSourceRoot)RadialGradientBrush\TestUI\RadialGradientBrush_TestUI.projitems" Label="Shared" Condition="$(FeatureRadialGradientBrushEnabled) == 'true'" />
+  <Import Project="$(MUXControlsTestRoot)testui\RadialGradientBrush\RadialGradientBrush_TestUI.projitems" Label="Shared" Condition="$(FeatureRadialGradientBrushEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)InfoBar\TestUI\InfoBar_TestUI.projitems" Label="Shared" Condition="$(FeatureInfoBarEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)Expander\TestUI\Expander_TestUI.projitems" Label="Shared" Condition="$(FeatureExpanderEnabled) == 'true'" />
   <Import Project="$(MUXControlsSourceRoot)Expander\APITests\Expander_APITests.projitems" Label="Shared" Condition="$(FeatureExpanderEnabled) == 'true'" />

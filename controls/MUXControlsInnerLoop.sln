@@ -393,7 +393,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RadialGradientBrush", "Radi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RadialGradientBrush", "..\src\controls\RadialGradientBrush\RadialGradientBrush.vcxitems", "{8B056B8F-C1AB-4A80-BD17-DEACE9897E6A}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadialGradientBrush_TestUI", "..\src\controls\RadialGradientBrush\TestUI\RadialGradientBrush_TestUI.shproj", "{AE308818-AF18-48BA-BF33-89779083D297}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadialGradientBrush_TestUI", "..\tests\controls\testui\RadialGradientBrush\RadialGradientBrush_TestUI.shproj", "{AE308818-AF18-48BA-BF33-89779083D297}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadialGradientBrush_InteractionTests", "..\src\controls\RadialGradientBrush\InteractionTests\RadialGradientBrush_InteractionTests.shproj", "{74D18B1B-5F6B-4534-945B-131E8E3206FB}"
 EndProject
@@ -1006,7 +1006,7 @@ Global
 		..\src\controls\SplitButton\SplitButton.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
 		..\src\controls\Telemetry\Telemetry.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
 		..\src\controls\TestHooks\TestHooks.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
-		..\src\controls\RadialGradientBrush\TestUI\RadialGradientBrush_TestUI.projitems*{ae308818-af18-48ba-bf33-89779083d297}*SharedItemsImports = 13
+		..\tests\controls\testui\RadialGradientBrush\RadialGradientBrush_TestUI.projitems*{ae308818-af18-48ba-bf33-89779083d297}*SharedItemsImports = 13
 		..\src\controls\TreeView\InteractionTests\TreeView_InteractionTests.projitems*{ae638a24-2bc6-4d4f-a51e-715d198f01fd}*SharedItemsImports = 13
 		..\src\controls\RatingControl\InteractionTests\RatingControl_InteractionTests.projitems*{afaad014-132c-4d2a-a28e-4ef717d3e647}*SharedItemsImports = 13
 		..\src\controls\PersonPicture\InteractionTests\PersonPicture_InteractionTests.projitems*{b0c15318-1f57-4914-b860-ebf248841511}*SharedItemsImports = 13

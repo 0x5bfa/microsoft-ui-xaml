@@ -389,7 +389,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RadialGradientBrush", "Radi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RadialGradientBrush", "..\src\controls\RadialGradientBrush\RadialGradientBrush.vcxitems", "{8B056B8F-C1AB-4A80-BD17-DEACE9897E6A}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadialGradientBrush_TestUI", "..\src\controls\RadialGradientBrush\TestUI\RadialGradientBrush_TestUI.shproj", "{AE308818-AF18-48BA-BF33-89779083D297}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadialGradientBrush_TestUI", "..\tests\controls\testui\RadialGradientBrush\RadialGradientBrush_TestUI.shproj", "{AE308818-AF18-48BA-BF33-89779083D297}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RadialGradientBrush_InteractionTests", "..\src\controls\RadialGradientBrush\InteractionTests\RadialGradientBrush_InteractionTests.shproj", "{74D18B1B-5F6B-4534-945B-131E8E3206FB}"
 EndProject
@@ -1755,7 +1755,7 @@ Global
 		..\src\controls\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\APITests\APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\TestUI\ScrollViewerAdapter_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\PullToRefresh\TestUI\PTR_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\RadialGradientBrush\TestUI\RadialGradientBrush_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\RadialGradientBrush\RadialGradientBrush_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\RadioButtons\APITests\RadioButtons_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\RadioButtons\TestUI\RadioButtons_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\RadioMenuFlyoutItem\TestUI\RadioMenuFlyoutItem_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
@@ -1854,7 +1854,7 @@ Global
 		..\src\controls\Materials\Acrylic\TestUI\AcrylicBrush_TestUI.projitems*{a800e818-7212-4fd7-ae3a-1dcab539db87}*SharedItemsImports = 13
 		..\src\controls\PagerControl\PagerControl.vcxitems*{ab3261a7-9a8d-4a27-aea2-3aac0419c889}*SharedItemsImports = 9
 		..\src\controls\WebView2\WebView2.vcxitems*{ad144714-93fc-4281-b500-a5c2193dbc60}*SharedItemsImports = 9
-		..\src\controls\RadialGradientBrush\TestUI\RadialGradientBrush_TestUI.projitems*{ae308818-af18-48ba-bf33-89779083d297}*SharedItemsImports = 13
+		..\tests\controls\testui\RadialGradientBrush\RadialGradientBrush_TestUI.projitems*{ae308818-af18-48ba-bf33-89779083d297}*SharedItemsImports = 13
 		..\src\controls\TreeView\InteractionTests\TreeView_InteractionTests.projitems*{ae638a24-2bc6-4d4f-a51e-715d198f01fd}*SharedItemsImports = 13
 		..\src\controls\TitleBar\InteractionTests\TitleBar_InteractionTests.projitems*{aec0baee-7a86-4539-9e07-a5363f7b9a8c}*SharedItemsImports = 13
 		..\src\controls\RatingControl\InteractionTests\RatingControl_InteractionTests.projitems*{afaad014-132c-4d2a-a28e-4ef717d3e647}*SharedItemsImports = 13
