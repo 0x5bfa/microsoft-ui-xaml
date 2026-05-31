@@ -91,6 +91,14 @@ test props and precompiled-header project. The external tools AppAnalysis
 integration tests now live under `tests/runtime/appanalysis/integration`, with
 the external tools test DLL consuming them through `$(AppAnalysisTestPath)`.
 
+## Runtime XamlDiagnostics test support
+
+The external tools XamlDiagnostics integration tests now live under
+`tests/runtime/xamldiagnostics/integration`. `$(XamlDiagnosticsTestPath)`
+provides the shared test root, while XamlDiagnostics TAP binaries remain under
+`tools/runtime/xamldiagnostics/tap` and continue flowing through
+`$(XamlDiagTapPath)`.
+
 ## Runtime ad hoc test apps
 
 Runtime ad hoc test applications now live under `tests/runtime/adhoc`. These

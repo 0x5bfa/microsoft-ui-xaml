@@ -23,7 +23,7 @@
         %(AdditionalIncludeDirectories);
         $(AppAnalysisTestPath)\integration;
         $(MSBuildThisFileDirectory)\bindingHelpers;
-        $(MSBuildThisFileDirectory)\diag;
+        $(XamlDiagnosticsTestPath)\integration;
         $(MSBuildThisFileDirectory)\ETW\InputEvents;
         $(MSBuildThisFileDirectory)\ETW\LayoutCausality;
         $(CompilerTestPath)\native\compiledBindings;
@@ -68,21 +68,21 @@
     <ClInclude Include="$(AppAnalysisTestPath)\integration\RuleTesterHelper.h" />
     <ClInclude Include="$(AppAnalysisTestPath)\integration\TestHelpers.h" />
     <ClInclude Include="bindingHelpers\XamlBindingHelperTests.h" />
-    <ClInclude Include="diag\AddRemoveDictionaryItems.h" />
-    <ClInclude Include="diag\AnimatedValueTests.h" />
-    <ClInclude Include="diag\CollectionTests.h" />
-    <ClInclude Include="diag\CompositionGraphicsDevice.h" />
-    <ClInclude Include="diag\ElementStateChangedTests.h" />
-    <ClInclude Include="diag\MemoryInfoTests.h" />
-    <ClInclude Include="diag\MultipleWindowTests.h" />
-    <ClInclude Include="diag\ReplaceResourceTests.h" />
-    <ClInclude Include="diag\ResolveResourceTests.h" />
-    <ClInclude Include="diag\SourceInfoTests.h" />
-    <ClInclude Include="diag\StyleTests.h" />
-    <ClInclude Include="diag\Win32InteropTests.h" />
-    <ClInclude Include="diag\XamlDiagnosticsTestBase.h" />
-    <ClInclude Include="diag\XamlDiagnosticsTestHelpers.h" />
-    <ClInclude Include="diag\XamlDiagnosticsTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\AddRemoveDictionaryItems.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\AnimatedValueTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\CollectionTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\CompositionGraphicsDevice.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\ElementStateChangedTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\MemoryInfoTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\MultipleWindowTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\ReplaceResourceTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\ResolveResourceTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\SourceInfoTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\StyleTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\Win32InteropTests.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\XamlDiagnosticsTestBase.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\XamlDiagnosticsTestHelpers.h" />
+    <ClInclude Include="$(XamlDiagnosticsTestPath)\integration\XamlDiagnosticsTests.h" />
     <ClInclude Include="ETW\InputEvents\AppBarTests.h" />
     <ClInclude Include="ETW\InputEvents\DragInputTests.h" />
     <ClInclude Include="ETW\InputEvents\KeyboardInputTests.h" />
@@ -103,20 +103,20 @@
     <ClCompile Include="$(AppAnalysisTestPath)\integration\ResourceUsingXNameRuleIntegrationTests.cpp" />
     <ClCompile Include="$(AppAnalysisTestPath)\integration\NonVirtualizingPanelRuleIntegrationTests.cpp" />
     <ClCompile Include="bindingHelpers\XamlBindingHelperTests.cpp" />
-    <ClCompile Include="diag\XamlDiagnosticsTests.cpp" />
-    <ClCompile Include="diag\SourceInfoTests.cpp" />
-    <ClCompile Include="diag\ReplaceResourceTests.cpp" />
-    <ClCompile Include="diag\AnimatedValueTests.cpp" />
-    <ClCompile Include="diag\CollectionTests.cpp" />
-    <ClCompile Include="diag\MultipleWindowTests.cpp" />
-    <ClCompile Include="diag\CompositionGraphicsDevice.cpp" />
-    <ClCompile Include="diag\ResolveResourceTests.cpp" />
-    <ClCompile Include="diag\AddRemoveDictionaryItems.cpp" />
-    <ClCompile Include="diag\XamlDiagnosticsTestHelpers.cpp" />
-    <ClCompile Include="diag\ElementStateChangedTests.cpp" />
-    <ClCompile Include="diag\MemoryInfoTests.cpp" />
-    <ClCompile Include="diag\Win32InteropTests.cpp" />
-    <ClCompile Include="diag\StyleTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\XamlDiagnosticsTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\SourceInfoTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\ReplaceResourceTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\AnimatedValueTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\CollectionTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\MultipleWindowTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\CompositionGraphicsDevice.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\ResolveResourceTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\AddRemoveDictionaryItems.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\XamlDiagnosticsTestHelpers.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\ElementStateChangedTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\MemoryInfoTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\Win32InteropTests.cpp" />
+    <ClCompile Include="$(XamlDiagnosticsTestPath)\integration\StyleTests.cpp" />
     <ClCompile Include="ETW\InputEvents\PointerInputTests.cpp" />
     <ClCompile Include="ETW\InputEvents\TouchInputTests.cpp" />
     <ClCompile Include="ETW\InputEvents\DragInputTests.cpp" />
