@@ -507,6 +507,9 @@ Ad hoc app build props, targets, and registration support now live under
 Shared signing inputs now live under `eng/signing`, starting with the strong
 name key used by compiler and projection assemblies.
 
+Shared MIDL props and targets now live under `eng/midl`, keeping WinMD build
+composition rules together.
+
 The Visual Studio helper project that refreshes the mock Windows App SDK package
 now lives under `tools/packaging/UpdateMockWinAppSDKPackage`, keeping
 root-level files limited to repository-wide entry points and configuration.

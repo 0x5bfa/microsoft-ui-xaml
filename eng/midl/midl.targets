@@ -141,12 +141,12 @@
 
   <!-- If the lifted ixp idl is needed add a project reference to the project that ensures this will be generated -->
   <ItemGroup Condition="$(ProjectIncludeDirectories.Contains('$(LiftedIXPGeneratedIdlPath)'))">
-    <ProjectReference Include="$(MSBuildThisFileDirectory)gencompheadersandidl\gencompheadersandidl.vcxproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\gencompheadersandidl\gencompheadersandidl.vcxproj" />
   </ItemGroup>
 
   <!-- If the lifted MRT idl is needed add a project reference to the project that ensures this will be generated -->
   <ItemGroup Condition="$(ProjectIncludeDirectories.Contains('$(LiftedMRTGeneratedIdlPath)'))">
-    <ProjectReference Include="$(MSBuildThisFileDirectory)genmrtheadersandidl\genmrtheadersandidl.vcxproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\genmrtheadersandidl\genmrtheadersandidl.vcxproj" />
   </ItemGroup>
 
   <!-- This target copies the public headers to a known location, so that location can be included in others projects' include directories -->

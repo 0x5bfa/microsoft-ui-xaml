@@ -46,7 +46,7 @@
   <Import Project="eng\sdkconfig.props" Condition = "'$(UseLocalSDK)' != 'true'" />
   <Import Project="eng\folderpaths.props" />
   <Import Project="eng\tempfolder.props"/>
-  <Import Project="eng\midl.props" Condition="'$(IsWinmdProject)' == 'true'" />
+  <Import Project="eng\midl\midl.props" Condition="'$(IsWinmdProject)' == 'true'" />
   <Import Project="eng\productmetadata.props" />
   <Import Project="eng\packaging.props" />
   <Import Project="eng\usexamlcompiler.props" Condition="'$(UseXamlCompiler)'=='true'" />
