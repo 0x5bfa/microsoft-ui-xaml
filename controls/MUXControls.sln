@@ -81,11 +81,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RefreshVisualizer", "Refres
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RefreshContainer", "RefreshContainer", "{337D78D3-9499-4B35-BB9F-52F37BB33D9A}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RefreshVisualizer_TestUI", "..\src\controls\PullToRefresh\RefreshVisualizer\TestUI\RefreshVisualizer_TestUI.shproj", "{BF236EE7-B31D-4150-A777-2B91492A84E2}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RefreshVisualizer_TestUI", "..\tests\controls\testui\PullToRefresh\RefreshVisualizer\RefreshVisualizer_TestUI.shproj", "{BF236EE7-B31D-4150-A777-2B91492A84E2}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RefreshVisualizer_APITests", "..\src\controls\PullToRefresh\RefreshVisualizer\APITests\RefreshVisualizer_APITests.shproj", "{C0D77E37-D2D0-4E37-B6A1-8E6EAE28945D}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RefreshContainer_TestUI", "..\src\controls\PullToRefresh\RefreshContainer\TestUI\RefreshContainer_TestUI.shproj", "{DDB468E4-7B64-4301-8FCB-1BEBBB1E689F}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RefreshContainer_TestUI", "..\tests\controls\testui\PullToRefresh\RefreshContainer\RefreshContainer_TestUI.shproj", "{DDB468E4-7B64-4301-8FCB-1BEBBB1E689F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RefreshVisualizer", "..\src\controls\PullToRefresh\RefreshVisualizer\RefreshVisualizer.vcxitems", "{ED7DBA65-8F09-44F3-8D25-7BB5A7A89609}"
 EndProject
@@ -159,7 +159,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SwipeControl_APITests", "..
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SwipeControl_InteractionTests", "..\src\controls\SwipeControl\SwipeControl_InteractionTests\SwipeControl_InteractionTests.shproj", "{9A8DA438-193C-4950-A046-2952DE2D3B0B}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SwipeControl_TestUI", "..\src\controls\SwipeControl\SwipeControl_TestUI\SwipeControl_TestUI.shproj", "{BC75C32B-F63A-4F2D-902C-8142DB31A2E7}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SwipeControl_TestUI", "..\tests\controls\testui\SwipeControl\SwipeControl_TestUI.shproj", "{BC75C32B-F63A-4F2D-902C-8142DB31A2E7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestAppCX", "..\tests\controls\apps\TestAppCX\TestAppCX.vcxproj", "{92081F61-98BB-4105-A90F-B6D524B4F5C9}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -221,7 +221,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ButtonInteraction_Interacti
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ButtonInteraction", "..\src\controls\Interactions\ButtonInteraction\ButtonInteraction.vcxitems", "{2459BC06-2AE5-4C65-BA73-AB28090B6FAB}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ButtonInteraction_TestUI", "..\src\controls\Interactions\ButtonInteraction\TestUI\ButtonInteraction_TestUI.shproj", "{11B35F24-72B2-4228-9960-0D1EA283E1AF}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ButtonInteraction_TestUI", "..\tests\controls\testui\Interactions\ButtonInteraction\ButtonInteraction_TestUI.shproj", "{11B35F24-72B2-4228-9960-0D1EA283E1AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SliderInteraction", "SliderInteraction", "{F518C300-1796-49AB-9A4F-0530BB285245}"
 EndProject
@@ -231,15 +231,15 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SliderInteraction_APITests"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SliderInteraction_InteractionTests", "..\src\controls\Interactions\SliderInteraction\InteractionTests\SliderInteraction_InteractionTests.shproj", "{BBBB0ADD-4E05-430C-9FFD-08A299FD1B06}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SliderInteraction_TestUI", "..\src\controls\Interactions\SliderInteraction\TestUI\SliderInteraction_TestUI.shproj", "{80F1F883-D49B-407D-9E77-C9B0E62B61A9}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SliderInteraction_TestUI", "..\tests\controls\testui\Interactions\SliderInteraction\SliderInteraction_TestUI.shproj", "{80F1F883-D49B-407D-9E77-C9B0E62B61A9}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PTR_TestUI", "..\src\controls\PullToRefresh\TestUI\PTR_TestUI.shproj", "{549C8EB7-E099-4EAB-A1F6-FAA3FA79B9E0}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PTR_TestUI", "..\tests\controls\testui\PullToRefresh\PTR_TestUI.shproj", "{549C8EB7-E099-4EAB-A1F6-FAA3FA79B9E0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MenuBar", "MenuBar", "{49AE2707-4958-4B14-AC41-11ABD042FEA9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MenuBar", "..\src\controls\MenuBar\MenuBar.vcxitems", "{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MenuBar_TestUI", "..\src\controls\MenuBar\MenuBar_TestUI\MenuBar_TestUI.shproj", "{55CB08CA-19FE-4DB9-8160-A4EC47984B95}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MenuBar_TestUI", "..\tests\controls\testui\MenuBar\MenuBar_TestUI.shproj", "{55CB08CA-19FE-4DB9-8160-A4EC47984B95}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MenuBar_InteractionTests", "..\src\controls\MenuBar\MenuBar_InteractionTests\MenuBar_InteractionTests.shproj", "{1440A7B7-D3CA-4390-8C85-E1E9A7DF8542}"
 EndProject
@@ -539,7 +539,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MonochromaticOverlayPresent
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PipsPager", "..\src\controls\PipsPager\PipsPager.vcxitems", "{D1EB61D8-C689-4AD1-BD61-FDAA50362563}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollViewerAdapter_TestUI", "..\src\controls\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\TestUI\ScrollViewerAdapter_TestUI.shproj", "{7DC019ED-239F-4A84-B623-3E377DB02A70}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ScrollViewerAdapter_TestUI", "..\tests\controls\testui\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\ScrollViewerAdapter_TestUI.shproj", "{7DC019ED-239F-4A84-B623-3E377DB02A70}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TitleBar", "TitleBar", "{FBDF77D8-BBA9-46CF-A140-020B766035C1}"
 EndProject
@@ -1587,7 +1587,7 @@ Global
 		..\src\controls\ScrollPresenter\TestUI\ScrollPresenter_TestUI.projitems*{0ec52fd5-42fe-3eb4-84e0-79ec9b5a014e}*SharedItemsImports = 13
 		..\src\controls\ProgressBar\ProgressBar.vcxitems*{0f61c8bd-d066-4812-a02b-e95ce18a985d}*SharedItemsImports = 9
 		..\tests\controls\testui\RatingControl\RatingControl_TestUI.projitems*{10c52fd4-52fc-43b3-94af-895c9b5a014c}*SharedItemsImports = 13
-		..\src\controls\Interactions\ButtonInteraction\TestUI\ButtonInteraction_TestUI.projitems*{11b35f24-72b2-4228-9960-0d1ea283e1af}*SharedItemsImports = 13
+		..\tests\controls\testui\Interactions\ButtonInteraction\ButtonInteraction_TestUI.projitems*{11b35f24-72b2-4228-9960-0d1ea283e1af}*SharedItemsImports = 13
 		..\src\controls\CommandBarFlyout\CommandBarFlyout.vcxitems*{11c085ff-8f68-48ee-9949-6eecbd0cbe6c}*SharedItemsImports = 9
 		..\src\controls\WrapPanel\APITests\WrapPanel_APITests.projitems*{1277dfd3-5c9e-4e19-ac50-38e89f2529c5}*SharedItemsImports = 13
 		..\src\controls\TwoPaneView\InteractionTests\TwoPaneView_InteractionTests.projitems*{1294409d-9bad-40cc-a74d-9ab29b343071}*SharedItemsImports = 13
@@ -1731,7 +1731,7 @@ Global
 		..\src\controls\Materials\Acrylic\TestUI\AcrylicBrush_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\Materials\Reveal\APITests\Reveal_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\Materials\Reveal\TestUI\Reveal_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\MenuBar\MenuBar_TestUI\MenuBar_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\MenuBar\MenuBar_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\MonochromaticOverlayPresenter\MonochromaticOverlayPresenter_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\NavigationView\NavigationView_ApiTests\NavigationView_ApiTests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\NavigationView\TestUI\NavigationView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
@@ -1749,12 +1749,12 @@ Global
 		..\tests\controls\testui\ProgressBar\ProgressBar_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\ProgressRing\APITests\ProgressRing_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\ProgressRing\ProgressRing_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\PullToRefresh\RefreshContainer\TestUI\RefreshContainer_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\PullToRefresh\RefreshContainer\RefreshContainer_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\PullToRefresh\RefreshVisualizer\APITests\RefreshVisualizer_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\PullToRefresh\RefreshVisualizer\TestUI\RefreshVisualizer_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\PullToRefresh\RefreshVisualizer\RefreshVisualizer_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\APITests\APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\TestUI\ScrollViewerAdapter_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\PullToRefresh\TestUI\PTR_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\ScrollViewerAdapter_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\PullToRefresh\PTR_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\RadialGradientBrush\RadialGradientBrush_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\RadioButtons\APITests\RadioButtons_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\RadioButtons\RadioButtons_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
@@ -1773,7 +1773,7 @@ Global
 		..\tests\controls\testui\SplitButton\SplitButton_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\tests\controls\testui\SplitView\SplitView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\SwipeControl\SwipeControl_APITests\SwipeControl_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
-		..\src\controls\SwipeControl\SwipeControl_TestUI\SwipeControl_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
+		..\tests\controls\testui\SwipeControl\SwipeControl_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\TabView\APITests\TabView_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\TabView\TestUI\TabView_TestUI.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
 		..\src\controls\TeachingTip\APITests\TeachingTip_APITests.projitems*{4e6f8103-9e20-40dd-8fe0-1e73964bb800}*SharedItemsImports = 5
@@ -1792,8 +1792,8 @@ Global
 		..\tests\controls\testui\RadioMenuFlyoutItem\RadioMenuFlyoutItem_TestUI.projitems*{50e838a2-a886-46c9-ab0b-a57f510ce643}*SharedItemsImports = 13
 		..\src\controls\PersonPicture\APITests\PersonPicture_APITests.projitems*{5243ef2c-f250-48bd-b633-39cc2a0a38aa}*SharedItemsImports = 13
 		..\tests\controls\testui\MonochromaticOverlayPresenter\MonochromaticOverlayPresenter_TestUI.projitems*{52aaa6ed-e5a0-41bb-8858-66249333a8d4}*SharedItemsImports = 13
-		..\src\controls\PullToRefresh\TestUI\PTR_TestUI.projitems*{549c8eb7-e099-4eab-a1f6-faa3fa79b9e0}*SharedItemsImports = 13
-		..\src\controls\MenuBar\MenuBar_TestUI\MenuBar_TestUI.projitems*{55cb08ca-19fe-4db9-8160-a4ec47984b95}*SharedItemsImports = 13
+		..\tests\controls\testui\PullToRefresh\PTR_TestUI.projitems*{549c8eb7-e099-4eab-a1f6-faa3fa79b9e0}*SharedItemsImports = 13
+		..\tests\controls\testui\MenuBar\MenuBar_TestUI.projitems*{55cb08ca-19fe-4db9-8160-a4ec47984b95}*SharedItemsImports = 13
 		..\src\controls\Breadcrumb\Breadcrumb.vcxitems*{563fe343-c6b0-447b-831a-b0ce3aa7a688}*SharedItemsImports = 9
 		..\src\controls\Materials\Acrylic\APITests\AcrylicBrush_ApiTests.projitems*{593e15d8-f6f9-4aba-ba65-c6927c178dbd}*SharedItemsImports = 13
 		..\src\controls\Materials\Reveal\TestUI\Reveal_TestUI.projitems*{5bf80ae9-29df-4be9-858a-f095c8073473}*SharedItemsImports = 13
@@ -1811,11 +1811,11 @@ Global
 		..\src\controls\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\InteractionTests\ScrollViewerAdapter_InteractionTests.projitems*{79863454-1dbf-45bb-b3d3-420b8f5e8705}*SharedItemsImports = 13
 		..\src\controls\ItemsView\ItemsView.vcxitems*{7b5f5ca3-084c-58a0-97da-b8c488cc3e30}*SharedItemsImports = 9
 		..\src\controls\MapControl\MapControl.vcxitems*{7c60c2ae-6abc-4762-a0ef-1f50cdd0ba1e}*SharedItemsImports = 9
-		..\src\controls\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\TestUI\ScrollViewerAdapter_TestUI.projitems*{7dc019ed-239f-4a84-b623-3e377db02a70}*SharedItemsImports = 13
+		..\tests\controls\testui\PullToRefresh\ScrollViewerIRefreshInfoProviderAdapter\ScrollViewerAdapter_TestUI.projitems*{7dc019ed-239f-4a84-b623-3e377db02a70}*SharedItemsImports = 13
 		..\src\controls\NavigationView\TestUI\NavigationView_TestUI.projitems*{7ee5e585-090a-44bf-a950-80636e242327}*SharedItemsImports = 13
 		..\src\controls\Common\Common.vcxitems*{80ad7f51-8997-47b9-bb41-078b81cff9b0}*SharedItemsImports = 9
 		..\src\controls\NumberBox\APITests\NumberBox_APITests.projitems*{80af98ca-bc1d-4011-8460-5671799ec419}*SharedItemsImports = 13
-		..\src\controls\Interactions\SliderInteraction\TestUI\SliderInteraction_TestUI.projitems*{80f1f883-d49b-407d-9e77-c9b0e62b61a9}*SharedItemsImports = 13
+		..\tests\controls\testui\Interactions\SliderInteraction\SliderInteraction_TestUI.projitems*{80f1f883-d49b-407d-9e77-c9b0e62b61a9}*SharedItemsImports = 13
 		..\tests\controls\testui\RadioButtons\RadioButtons_TestUI.projitems*{833a6892-a079-469a-81c7-54d4cd88029b}*SharedItemsImports = 13
 		..\tests\controls\testui\AnimatedIcon\AnimatedIcon_TestUI.projitems*{83fd36c0-189f-4e95-8002-9b73905ca301}*SharedItemsImports = 13
 		..\src\controls\AutoSuggestBox\APITests\AutoSuggestBox_APITests.projitems*{84673739-208c-427e-a19e-e090ec3733ce}*SharedItemsImports = 13
@@ -1868,9 +1868,9 @@ Global
 		..\src\controls\TabView\TabView.vcxitems*{b9f81fef-1e8d-4fe1-a46b-7002d4c109d2}*SharedItemsImports = 9
 		..\src\controls\CommonStyles\APITests\CommonStyles_ApiTests.projitems*{ba914f48-e924-4fd2-aee1-264f67db6c9f}*SharedItemsImports = 13
 		..\src\controls\Interactions\SliderInteraction\InteractionTests\SliderInteraction_InteractionTests.projitems*{bbbb0add-4e05-430c-9ffd-08a299fd1b06}*SharedItemsImports = 13
-		..\src\controls\SwipeControl\SwipeControl_TestUI\SwipeControl_TestUI.projitems*{bc75c32b-f63a-4f2d-902c-8142db31a2e7}*SharedItemsImports = 13
+		..\tests\controls\testui\SwipeControl\SwipeControl_TestUI.projitems*{bc75c32b-f63a-4f2d-902c-8142db31a2e7}*SharedItemsImports = 13
 		..\tests\controls\testui\ComboBox\ComboBox_TestUI.projitems*{bcdf880a-41eb-4943-aae2-54a1a1159600}*SharedItemsImports = 13
-		..\src\controls\PullToRefresh\RefreshVisualizer\TestUI\RefreshVisualizer_TestUI.projitems*{bf236ee7-b31d-4150-a777-2b91492a84e2}*SharedItemsImports = 13
+		..\tests\controls\testui\PullToRefresh\RefreshVisualizer\RefreshVisualizer_TestUI.projitems*{bf236ee7-b31d-4150-a777-2b91492a84e2}*SharedItemsImports = 13
 		..\src\controls\ParallaxView\InteractionTests\ParallaxView_InteractionTests.projitems*{bfaad014-132c-4d2a-a28e-4ef717d3e648}*SharedItemsImports = 13
 		..\src\controls\ScrollView\InteractionTests\ScrollView_InteractionTests.projitems*{bfaad015-232d-5d2b-b28f-5ef717d3e648}*SharedItemsImports = 13
 		..\src\controls\PullToRefresh\RefreshVisualizer\APITests\RefreshVisualizer_APITests.projitems*{c0d77e37-d2d0-4e37-b6a1-8e6eae28945d}*SharedItemsImports = 13
@@ -1895,7 +1895,7 @@ Global
 		..\src\controls\AnimatedIcon\APITests\AnimatedIcon_APITests.projitems*{db15ff28-ab3a-4fed-a1d5-004a095a3fd5}*SharedItemsImports = 13
 		..\tests\controls\testui\AnimatedVisualPlayer\AnimatedVisualPlayer_TestUI.projitems*{dbec0be4-ba3f-41c9-a303-af98201be6dc}*SharedItemsImports = 13
 		..\src\controls\ProgressBar\APITests\ProgressBar_APITests.projitems*{dd024665-31da-4290-993e-2e46eb370c77}*SharedItemsImports = 13
-		..\src\controls\PullToRefresh\RefreshContainer\TestUI\RefreshContainer_TestUI.projitems*{ddb468e4-7b64-4301-8fcb-1bebbb1e689f}*SharedItemsImports = 13
+		..\tests\controls\testui\PullToRefresh\RefreshContainer\RefreshContainer_TestUI.projitems*{ddb468e4-7b64-4301-8fcb-1bebbb1e689f}*SharedItemsImports = 13
 		..\tests\controls\testui\ImageIcon\ImageIcon_TestUI.projitems*{dde1c022-6f9a-4067-89c2-81f2eeaf249f}*SharedItemsImports = 13
 		..\src\controls\TreeView\APITests\TreeView_APITests.projitems*{de885c66-929c-464e-bac4-3e076ec46483}*SharedItemsImports = 13
 		..\src\controls\SplitButton\InteractionTests\SplitButton_InteractionTests.projitems*{e1c861e2-c4d9-41e1-aed7-5e203451bd4d}*SharedItemsImports = 13
