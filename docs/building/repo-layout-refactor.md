@@ -778,6 +778,9 @@ under `docs/testing`, debugging and telemetry notes under `docs/debugging`,
 release and Windows App SDK integration notes under `docs/publishing`, and
 contributor-facing guidance under `docs/external`. Design-oriented architecture
 notes live under `docs/design-notes`, grouped by feature or runtime area.
+WebView2 dependency update and version-history docs now live under
+`docs/publishing`, keeping dependency publishing workflows out of the controls
+implementation source tree.
 
 The `docs` root is intentionally limited to the developer documentation index
 and repository structure overview. New docs should pick an existing category

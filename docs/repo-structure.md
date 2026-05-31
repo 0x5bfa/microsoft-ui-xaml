@@ -69,7 +69,8 @@ under `/docs/specs/api`.
 Developer workflows are grouped by purpose under folders such as
 `/docs/building`, `/docs/testing`, `/docs/debugging`, `/docs/publishing`,
 and `/docs/external`. Architecture and design notes are grouped under
-`/docs/design-notes`.
+`/docs/design-notes`. WebView2 dependency update and version-history docs live
+under `/docs/publishing`.
 
 Note that developer usage documentation can be found separately on docs.microsoft.com.
 
