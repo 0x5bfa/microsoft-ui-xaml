@@ -29,7 +29,7 @@ An object -- an instance of a class -- has a pointer to each interface vtable, w
 implementation. So the more interfaces a class has, the bigger every one of its object instances are in memory, due to 
 all the pointers the object instance has to have to its interface vtables.
 
-![example of an object and its vtables](../../images/fastabi1.jpg)
+![example of an object and its vtables](images/fastabi1.jpg)
 
 And when a class has a base, each of the classes in the hierarchy has its own multiple interfaces. For example, a 
 `Button` instance has to point to roughly two dozen WinRT interface vtables (plus a few COM interface vtables):

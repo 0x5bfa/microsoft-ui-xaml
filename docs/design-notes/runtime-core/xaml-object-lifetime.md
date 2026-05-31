@@ -32,7 +32,7 @@ button.Click += (s, a) => { grid.ToString(); };
 ```
 
 … creating this object graph:
-![](../../images/lifetime1.png)
+![](images/lifetime1.png)
 
 (An RCW is a Runtime Callable Wrapper; a CLR object that acts as a proxy to a WinRT object.  
 A CCW is a Com Callable Wrapper; a COM object that acts as a proxy to a CLR object.)
@@ -49,7 +49,7 @@ The basic algorithm of a GC system:
 In the CLR's standard COM interop, the CCW is a root.  So in the above diagram it keeps the lambda alive, which keeps the RCW alive, which keeps the Grid alive (via a COM ref), which keeps the Button alive.  That is, all the C# objects in the above diagram get their flag set, indicating that they're reachable from a root, and thus protecting them from being deleted by GC.  So there's no external references to any of these objects, but they don't ever get GC'd.
 This leak could be fixed by weakening the reference to the CCW.  For example, update that in the above example (and also add the Grid to the main Window):
 
-![](../../images/lifetime2.png)
+![](images/lifetime2.png)
 
 But now there's a new problem; a premature collection.  That is, since there's no COM ref on the CCW, it will be deleted.  And then since nothing is protecting the Lambda, it will be collected by GC, which will allow the RCW to be collected.  Now the Grid and the Button are still in place, but all the CLR objects are gone.  And that means that the Button.Click handler is gone; the user clicks on the Button and the app no longer responds.   
 So the goal is to not leak, but also not prematurely collect:
@@ -64,17 +64,17 @@ The solution is to allow Xaml to:
 * Identify which CCWs can be reached via Xaml references from an RCW (preventing the premature collection).
 Walking this through an example, take the previous diagrams and add a reference to the RCW from the application:
 
-![](../../images/lifetime3.png)
+![](images/lifetime3.png)
 
 In this example, Xaml is effectively keeping only a weak reference on the CCW; i.e. telling it that it should not be a GC root.  But Xaml told the CLR that there's a reference path from the RCW to the CCW.  This causes the RCW to create a reference (a “dependent handle”) to the CCW.  So the Button's not protecting the CCW, but the RCW is, and the app has a reference on the RCW, so the whole graph is protected from GC.
 Now say the application is not keeping a reference on the RCW, but the Grid is in the live tree.  The graph becomes:
 
-![](../../images/lifetime4.png)
+![](images/lifetime4.png)
 
 Note now that the Button is keeping a strong reference on the CCW.  Because of this, the Lambda and RCW are still protected from GC.
 Now remove the Grid from the live tree:
 
-![](../../images/lifetime5.png)
+![](images/lifetime5.png)
 
 Now the Button's reference on the CCW is weak again.  And nothing in the application is referencing any of the CLR objects.  At this point, GC will correctly collect the CLR objects.  Even though the RCW still has a reference on the CCW, it doesn't protect the CCW from GC, because the RCW gets removed by GC.  So GC will collect all of the managed objects, the RCW will Release() the Grid, which will Release() the Button.  The whole graph will be correctly destroyed.
 
