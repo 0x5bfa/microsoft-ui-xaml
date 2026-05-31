@@ -18,8 +18,8 @@
     <!-- traditional XCP directories. In time as we move more of Jupiter into -->
     <!-- this new model we'll be able to depricate these.                     -->
     <PropertyGroup>
-        <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
-        <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
+        <XamlDiagPath>$(XamlDiagnosticsComponentPath)</XamlDiagPath>
+        <XamlDiagObjPath>$(XamlDiagnosticsComponentObjPath)</XamlDiagObjPath>
         <LegacyIncludes>
             $(XcpPath)\inc;
             $(XcpPath)\core\compositor;

@@ -12,8 +12,8 @@
     <Import Project="$(XcpPath)\projectbase.props"/>
 
     <PropertyGroup>
-        <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
-        <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
+        <XamlDiagPath>$(XamlDiagnosticsComponentPath)</XamlDiagPath>
+        <XamlDiagObjPath>$(XamlDiagnosticsComponentObjPath)</XamlDiagObjPath>
     </PropertyGroup>
 
     <Import Project="$(XcpPath)\components\common.props"/>

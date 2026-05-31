@@ -28,8 +28,8 @@
     <PropertyGroup>
         <Dllentry>_DllMainCRTStartup</Dllentry>
         <TargetDestination>$(TestBinplaceDestinationPath)</TargetDestination>
-        <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
-        <XamlDiagObjPath>$(XcpObjPath)\components\xamldiagnostics</XamlDiagObjPath>
+        <XamlDiagPath>$(XamlDiagnosticsComponentPath)</XamlDiagPath>
+        <XamlDiagObjPath>$(XamlDiagnosticsComponentObjPath)</XamlDiagObjPath>
         <Mui>false</Mui>
         <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions) _WCTYPE_INLINE_DEFINED; UNICODE; _UNICODE;</ProjectPreprocessorDefinitions>
     </PropertyGroup>

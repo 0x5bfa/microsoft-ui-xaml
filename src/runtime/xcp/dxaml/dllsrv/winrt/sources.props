@@ -21,8 +21,8 @@
             $(XcpPath)\dxaml\dllsrv\winrt;
             $(XcpPath)\dxaml\lib;
             $(XcpPath)\dxaml\lib\winrtgeneratedclasses;
-            $(XcpPath)\dxaml\tools\xamldiagnostics\lib;
-            $(XcpPath)\dxaml\tools\xamldiagnostics\inc;
+            $(XamlDiagnosticsComponentPath)\lib;
+            $(XamlDiagnosticsComponentPath)\inc;
             $(XcpPath);
             $(XcpPath)\pal\inc;
             $(XcpPath)\core\inc;
@@ -186,7 +186,7 @@
         <ProjectReference Include="$(XcpPath)\components\Collection\lib\Microsoft.UI.Xaml.Collection.vcxproj" Project="{808bc3a6-a9e1-4e36-bdf7-1f3c12de8464}"/>
         <ProjectReference Include="$(XcpPath)\components\FocusRect\lib\Microsoft.UI.Xaml.FocusRect.vcxproj" Project="{c554e0d5-58e6-4772-bad3-2e62e3579957}"/>
         <ProjectReference Include="$(XcpPath)\components\UIBridgeFocus\Microsoft.UI.Xaml.UIBridgeFocus.vcxproj" Project="{bd943a8a-c5cb-454a-82c2-4b7e6c14cb75}"/>
-        <ProjectReference Include="$(XcpPath)\components\xamldiagnostics\lib\Microsoft.UI.Xaml.XamlDiagnostics.vcxproj" Project="{0e6efb75-5844-4f7a-90aa-eaba4f6b76a9}"/>
+        <ProjectReference Include="$(XamlDiagnosticsComponentPath)\lib\Microsoft.UI.Xaml.XamlDiagnostics.vcxproj" Project="{0e6efb75-5844-4f7a-90aa-eaba4f6b76a9}"/>
         <ProjectReference Include="$(XcpPath)\components\flyweight\lib\Microsoft.UI.Xaml.Flyweight.vcxproj" Project="{88536608-bab9-49f1-9cc6-36b7f8e73d8a}"/>
         <ProjectReference Include="$(XcpPath)\components\simple\lib\Microsoft.UI.Xaml.Framework.SimpleProperties.vcxproj" Project="{4a1f0ce8-0b6e-4d29-9799-a629c067543a}"/>
         <ProjectReference Include="$(XcpPath)\components\WindowChrome\Microsoft.UI.Xaml.WindowChrome.vcxproj" Project="{950ff51a-b772-4185-bc1c-0065fdd2cefd}"/>

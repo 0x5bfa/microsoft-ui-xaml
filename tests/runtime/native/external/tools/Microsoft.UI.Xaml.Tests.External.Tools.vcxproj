@@ -11,8 +11,8 @@
   <Import Project="$(RuntimeTestPath)\common.props" />
   <Import Project="$(RuntimeNativeExternalTestPath)\common.props" />
   <PropertyGroup>
-    <XamlDiagPath>$(XcpPath)\components\xamldiagnostics</XamlDiagPath>
-    <XamlDiagObjPath>$(XamlBinaryPath)\xcp\components\xamldiagnostics</XamlDiagObjPath>
+    <XamlDiagPath>$(XamlDiagnosticsComponentPath)</XamlDiagPath>
+    <XamlDiagObjPath>$(XamlDiagnosticsComponentObjPath)</XamlDiagObjPath>
     <!-- $REVIEW: This comment is probably not correct and is probably as a result of a multiline comment being placed on a single value in a multivalue property set -->
     <!-- Some types appear in microsoft.diagnostics.appanalysis.winmd that are expected in another 'assembly'. -->
     <ProjectPreprocessorDefinitions>$(ProjectPreprocessorDefinitions);MIDL_NS_PREFIX;</ProjectPreprocessorDefinitions>
@@ -31,13 +31,11 @@
         $(RuntimeToolsCustomTypesObjPath)\generated;
         $(LiftedIXPIncludePaths);
         $(RuntimeNativeExternalTestPath)\enterprise\inc;
-        $(XamlBinaryPath)\xcp\components\xamldiagnostics\idl;
         $(XamlDiagObjPath)\idl;
         $(XamlDiagPath)\idl\;
         $(XamlDiagPath)\inc\;
         $(XamlDiagTapPath)\;
         $(XcpPath)\components\base\inc;
-        $(XcpPath)\components\xamldiagnostics\inc;
         $(AppAnalysisPath)\dll;
         $(WinUIDetailsIncludePath)\abi;
         $(WinUIDetailsIncludePath)\MockDComp;

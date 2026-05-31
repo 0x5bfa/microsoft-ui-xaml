@@ -8,6 +8,7 @@
     <XamlSourcePath>$(ProjectRoot)src\runtime\</XamlSourcePath>
     <XcpPath>$(XamlSourcePath)xcp</XcpPath>
     <XcpPhonePath>$(ProjectRoot)src\runtime\phone</XcpPhonePath>
+    <XamlDiagnosticsComponentPath>$(XcpPath)\components\xamldiagnostics</XamlDiagnosticsComponentPath>
     <WindowsSDKBuildToolsArchFolder Condition="'$(WindowsSDKBuildToolsArchFolder)' == '' And '$([System.Runtime.InteropServices.RuntimeInformation]::ProcessArchitecture)'== 'X64'">x64</WindowsSDKBuildToolsArchFolder>
     <WindowsSDKBuildToolsArchFolder Condition="'$(WindowsSDKBuildToolsArchFolder)' == ''">x86</WindowsSDKBuildToolsArchFolder>
   </PropertyGroup>

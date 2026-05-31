@@ -36,12 +36,12 @@
             $(XcpPath)\core\Parser;
             $(XcpPath)\dxaml\lib;
             $(XcpPath)\dxaml\lib\winrtgeneratedclasses;
-            $(XcpObjPath)\components\xamlDiagnostics\idl\;
+            $(XamlDiagnosticsComponentObjPath)\idl\;
         </ProjectIncludeDirectories>
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="$(XcpPath)\components\xamlDiagnostics\idl\xamlom.vcxproj" Project="{c6e1e90c-ee33-4352-a8de-067b013c7cc9}"/>
+        <ProjectReference Include="$(XamlDiagnosticsComponentPath)\idl\xamlom.vcxproj" Project="{c6e1e90c-ee33-4352-a8de-067b013c7cc9}"/>
         <ProjectReference Include="$(XcpPath)\components\pch\prodexcept\Microsoft.UI.Xaml.Precomp.vcxproj" Project="{d4b4d716-47d2-4b4b-8765-f879a171f1a2}"/>
     </ItemGroup>
 
