@@ -248,7 +248,7 @@ changes.
 
 # References
 
--   WinUI Title bar developer design notes: See [customtitlebar.md](customtitlebar.md)
+-   WinUI Title bar developer design notes: See [customtitlebar.md](../../design-notes/styling/customtitlebar.md)
 
 -   Microsoft docs on [ExtendsContentIntoTitle
     bar](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.window.extendscontentintotitlebar)
