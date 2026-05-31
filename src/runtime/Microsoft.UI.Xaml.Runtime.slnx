@@ -376,8 +376,8 @@
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/tests/runtime/tools/external/">
-    <Project Path="../../tests/runtime/tools/external/Microsoft.UI.Xaml.Tests.External.Tools.vcxproj">
+  <Folder Name="/tests/runtime/native/external/tools/">
+    <Project Path="../../tests/runtime/native/external/tools/Microsoft.UI.Xaml.Tests.External.Tools.vcxproj">
       <BuildType Solution="Debug_test|*" Project="Debug" />
     </Project>
   </Folder>
