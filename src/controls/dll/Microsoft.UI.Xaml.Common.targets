@@ -30,7 +30,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup>
     <Midl>
-      <AdditionalIncludeDirectories>$(MUXControlsSourceRoot);$(MUXCProjectRoot)idl;$(MiniWindowsSDKIncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MUXControlsSourceRoot);$(MUXControlsIdlRoot);$(MiniWindowsSDKIncludePath)</AdditionalIncludeDirectories>
       <Enumclass>false</Enumclass>
     </Midl>
     <Link>

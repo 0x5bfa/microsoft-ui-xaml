@@ -38,8 +38,8 @@
       Double-writes across projects are not good for build performance but allow specific ones to unblock.
 
       === NoiseAsset_256x256_PNG.png ===
-      Both controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj and src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj are writing this file.
-        controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj copies the file via src\controls\Materials\Acrylic\AcrylicBrush.vcxitems via a PackageContent item.
+      Both src\controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj and src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj are writing this file.
+        src\controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj copies the file via src\controls\Materials\Acrylic\AcrylicBrush.vcxitems via a PackageContent item.
         src\controls\dll\Microsoft.UI.Xaml.Controls.vcxproj copies the file via a BinplaceItem in src\controls\dll\Microsoft.UI.Xaml.Common.targets.
       Attempting to remove either of these leads to various downstream issues.
 

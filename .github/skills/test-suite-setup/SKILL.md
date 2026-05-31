@@ -75,7 +75,7 @@ When this skill is invoked:
    | `tests/runtime/managed/**` | `Managed.*` | WPF |
    | `src/controls/**` (WinUI controls source) | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
    | `controls/test/**` | `MUXControls.Test.dll` | None |
-   | `controls/idl/**` | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
+   | `src/controls/idl/**` | `MUXControls.Test.dll`, `External.Controls` | None / WPF |
    | `src/compiler/**` | `Isolated.Tools.XbfGenerator` | None |
    | `src/runtime/xcp/dxaml/themes/**` | `External.Controls`, `External.Framework` | WPF |
    | `Samples/**` or sample app project drops | ScenarioTestSuite (sample app tests, separate payload) | N/A |

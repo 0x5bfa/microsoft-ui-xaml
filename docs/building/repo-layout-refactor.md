@@ -522,14 +522,15 @@ with the controls isolated test tree without changing project participation.
 
 ## Controls source
 
-The WinUI controls implementation now lives under `src/controls`. The
-`controls` tree remains the home for controls solution files, IDL, tests, and
-authoring tools. Shared MSBuild entry points use `$(MUXControlsSourceRoot)` so
-those support projects can reference controls source without reintroducing the
-old `controls/dev` path segment.
+The WinUI controls implementation now lives under `src/controls`, including
+the controls IDL inputs under `src/controls/idl`. The `controls` tree remains
+the home for controls solution files, tests, and authoring tools. Shared MSBuild
+entry points use `$(MUXControlsSourceRoot)` and `$(MUXControlsIdlRoot)` so those
+support projects can reference controls source without reintroducing the old
+`controls/dev` or `controls/idl` path segments.
 
 Controls-specific build support files are moving under `controls/build` in
-small pieces. The shared MIDL props and targets live there first, with IDL and
+small pieces. The shared MIDL props and targets live there, with IDL and
 controls DLL projects importing them through `$(MUXCProjectRoot)build`. Native
 C++/WinRT, CRT, SDK-version, package-version, shared project-configuration
 settings, feature-area selection, inner-loop feature overrides, and shared

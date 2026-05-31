@@ -399,7 +399,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NumberBox_APITests", "..\sr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "idl", "idl", "{6C8385C7-2898-493F-ADBB-B5896A12F1EB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls.idl", "idl\Microsoft.UI.Xaml.Controls.idl.vcxproj", "{DE10DFE2-5EA3-452A-B055-FC60E330AFBB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.UI.Xaml.Controls.idl", "..\src\controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj", "{DE10DFE2-5EA3-452A-B055-FC60E330AFBB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "microsoft.ui.xaml-com", "..\src\runtime\xcp\dxaml\idl\com\microsoft.ui.xaml-com.vcxproj", "{A1EB01C3-AC8B-45A8-97C8-C459B77ED690}"
 EndProject

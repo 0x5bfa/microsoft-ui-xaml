@@ -3,13 +3,13 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemDefinitionGroup>
     <Midl>
-      <AdditionalIncludeDirectories>$(MUXControlsSourceRoot);$(MUXCProjectRoot)idl</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MUXControlsSourceRoot);$(MUXControlsIdlRoot)</AdditionalIncludeDirectories>
       <Enumclass>false</Enumclass>
       <PreprocessorDefinitions Condition="'$(Configuration)'=='Debug'">%(PreprocessorDefinitions);DEBUG;DBG</PreprocessorDefinitions>
       <AdditionalOptions>%(Midl.AdditionalOptions) %40"$(IntDir)$(MSBuildProjectFile).midlrt.rsp" /noattributename</AdditionalOptions>
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Midl Include="$(MUXCProjectRoot)idl\Microsoft.UI.Xaml.Controls.idl" />
+    <Midl Include="$(MUXControlsIdlRoot)Microsoft.UI.Xaml.Controls.idl" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 <Project ToolsVersion="Current">
   <Import Project="..\GraphAugmentation.targets" />
   <ItemGroup>
-    <ProjectReference Include="$(ProjectRoot)controls\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj">
+    <ProjectReference Include="$(MuxControlsIdlPath)Microsoft.UI.Xaml.Controls.idl.vcxproj">
       <Targets>BuildGenerateSources</Targets>
     </ProjectReference>
     <ProjectReference Include="$(XcpPhonePath)\idl\phone.vcxproj">

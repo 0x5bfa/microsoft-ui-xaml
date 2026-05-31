@@ -56,7 +56,7 @@
       reference around to ensure proper build order
     -->
     <Reference Include="@(MuxControlsWinMD)" />
-    <ProjectReference Include="$(MuxControlsPath)\idl\Microsoft.UI.Xaml.Controls.idl.vcxproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="$(MuxControlsIdlPath)Microsoft.UI.Xaml.Controls.idl.vcxproj" ReferenceOutputAssembly="false" />
   </ItemGroup>
 
   <ItemGroup>

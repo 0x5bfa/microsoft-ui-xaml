@@ -49,7 +49,7 @@ Controls test reporting helpers live under `/controls/tools/TestReporting`.
 Controls XAML processing and WinUI 2 migration helpers live under `/controls/tools/XamlProcessing`.
 
 ## /controls
-This folder contains controls solution, IDL, test, and tooling entry points.
+This folder contains controls solution, test, and tooling entry points.
 The Microsoft.UI.Xaml.Controls.dll implementation source lives under `/src/controls`.
 Controls-specific build support lives under `/controls/build`, including
 feature-area selection, project import manifests, and shared props/targets.
@@ -141,8 +141,9 @@ compiler build tasks, executable host, parsing projects, MSBuild targets, and
 compiler-specific tools and solutions.
 
 The WinUI controls implementation now lives under `/src/controls`. Controls
-solution, IDL, test, and tooling entry points continue to live under `/controls`
-and refer to the source tree through `$(MUXControlsSourceRoot)`.
+IDL inputs live under `/src/controls/idl`. Controls solution, test, and tooling
+entry points continue to live under `/controls` and refer to the source tree
+through `$(MUXControlsSourceRoot)`.
 
 The Microsoft.UI.Xaml.dll runtime implementation now lives under
 `/src/runtime/xcp`, with runtime solution entry points and phone-specific source

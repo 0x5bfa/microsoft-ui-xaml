@@ -50,6 +50,7 @@
     <ManagedTestPath>$(RuntimeManagedTestPath)</ManagedTestPath>
 
     <MuxControlsPath>$(ProjectRoot)controls</MuxControlsPath>
+    <MuxControlsIdlPath>$(ProjectRoot)src\controls\idl\</MuxControlsIdlPath>
     <MergedWinMDProjectRoot>$(ProjectRoot)src\metadata\MergedWinMD\</MergedWinMDProjectRoot>
   </PropertyGroup>
 
