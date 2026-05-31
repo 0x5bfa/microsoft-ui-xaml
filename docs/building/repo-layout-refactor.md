@@ -627,7 +627,9 @@ visual verification update, final-release theme resource trimming scripts, and
 the baseline resources generator app.
 
 Controls developer shell helpers now live under `controls/tools/Shell`,
-including command aliases and the PowerShell profile loaded by `ps.bat`.
+including the developer command prompt implementation, command aliases, and the
+PowerShell profile loaded by `ps.bat`. The root-level `controls/DevCmd.cmd`
+remains the stable entry point for controls developers.
 
 Controls shared command wrappers now live under `controls/tools/Common`,
 including the NuGet and PowerShell wrappers used by controls tooling scripts.

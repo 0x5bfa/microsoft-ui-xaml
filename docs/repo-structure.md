@@ -40,7 +40,8 @@ Controls custom MSBuild task sources, targets, and solution live under `/control
 Controls scaffolding helpers live under `/controls/tools/ControlGeneration`.
 Controls release helper scripts live under `/controls/tools/Release`.
 Controls resource generation helpers live under `/controls/tools/ResourceGeneration`.
-Controls developer shell helpers live under `/controls/tools/Shell`.
+Controls developer shell helpers and command implementation live under
+`/controls/tools/Shell`.
 Controls shared command wrappers live under `/controls/tools/Common`.
 Controls packaging helpers live under `/controls/tools/Packaging`.
 Controls source maintenance helpers live under `/controls/tools/SourceMaintenance`.
