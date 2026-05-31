@@ -593,8 +593,8 @@ A PR that updates the OSS-pinned versions:
 
 When you need to know **what CI runs and how it runs it**, these two files are the source of truth:
 
-- **`build/AzurePipelinesTemplates/WinUI-CreateTestPayload-Job.yml`** — defines each test work item: `testFilePathPattern` (which DLL or AppX) + `hostingMode`.
-- **`Helix/common/pipeline/scripts/workitems/GenerateWinUIHelixWorkItems.ps1`** — look for the line that generates the TAEF command:
+- **`tests/infra/Helix/RunTestsInHelix.proj`** — imports the generated Helix work-item project files by suite.
+- **`tests/infra/Helix/common/pipeline/scripts/workitems/GenerateWinUIHelixWorkItems.ps1`** — defines generated test work items, including `testFilePathPattern` (which DLL or AppX) + `hostingMode`; look for the line that generates the TAEF command:
 
   ```powershell
   $taefExtraParameters = "/p:HostingMode=$HostingMode"
@@ -638,7 +638,7 @@ The mirror uses `targetRepositorySubdirectory: "src"`. A file at ADO `eng/Versio
 
 ### Exclusions
 
-`build/PipelineScripts/WinUISourceMirroringExclusions.txt` controls what does NOT mirror.
+Mirror exclusions are owned by the internal mirror pipeline configuration rather than the repo-local test infrastructure.
 
 | Syntax | Meaning |
 |---|---|

@@ -654,7 +654,7 @@ Microsoft.UI.Xaml/Microsoft.UI.Xaml.Controls. You may encounter failures when ad
 ### How do I run static tests locally?
 
 See the
-RunStaticTests section in the [build pipelines doc](../publishing/build-pipelines.md). TL;DR is to run build\PipelineScripts\VerifyWinMDCompat.ps1.
+RunStaticTests section in the [build pipelines doc](../publishing/build-pipelines.md). TL;DR is to run the WinMD compat verification from the internal pipeline tooling.
 
 ## Experimental
 

@@ -254,7 +254,7 @@ Generated Files/
 !TrexDefs/*
 
 # Localization sources dynamically downloaded from the Reach localization platform
-build/Localization/LocRepo/**/*.lcl
+eng/localization/LocRepo/**/*.lcl
 
 # Local code coverage run output
 CodeCoverageOutput/

@@ -306,6 +306,12 @@ projects discover it by walking parent directories.
 The Maestro restore helper project lives under `eng/restore`, keeping
 project-based restore orchestration with other initialization restore inputs.
 
+## Localization scratch inputs
+
+Touchdown localization scratch files are treated as engineering pipeline
+working data and should live under `eng/localization/LocRepo` rather than a
+root `build` folder.
+
 ## PGO build inputs
 
 PGO build configuration now lives under `eng/pgo`. The PGO props file is

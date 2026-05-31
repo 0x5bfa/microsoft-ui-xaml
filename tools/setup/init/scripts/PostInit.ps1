@@ -24,16 +24,6 @@ else
     $buildPlatform = $env:BUILDPLATFORM
 }
 
-if (Test-Path "$repoRoot\build\PipelineScripts\GetLKGCompilerPackageInfoIfNeeded.ps1")
-{
-    # Trigger install of the LKG toolset by default, allowing customization.
-    # Retrieve default package info if needed.
-    . $repoRoot\build\PipelineScripts\GetLKGCompilerPackageInfoIfNeeded.ps1 -SourceDirectory $repoRoot
-    
-    # The following call skips download of the package if it already exists locally.
-    . $repoRoot\build\PipelineScripts\DownloadLKGCompiler.ps1 -SourceDirectory $repoRoot
-}
-
 [System.Collections.Generic.List[string]]$mainPkgs = @()
 
 # Regardless of the WinUI flavor we're building,

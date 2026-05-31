@@ -55,7 +55,7 @@ When the Pipeline runs, the following takes place.
 **Steps:**
 
 1. Runs the Build stage (this builds both product and test binaries)
-2. The Run Tests Stage starts. [**WinUI-RunTests-Stage.yml**](../../build/AzurePipelinesTemplates/WinUI-RunTests-Stage.yml)
+2. The Run Tests Stage starts and uses the repo-local Helix orchestration under [**tests/infra/Helix**](../../tests/infra/Helix).
 3. The output of the Build job is downloaded. [**CreateTestPayload.ps1**](../../tests/infra/payload/scripts/create/CreateTestPayload.ps1) is run to produce the TestPayload.
 4. We discover the tests from the build and generate the HelixWorkItems. This is done by [**GenerateWinUIHelixWorkItems.ps1**](../../tests/infra/Helix/common/pipeline/scripts/workitems/GenerateWinUIHelixWorkItems.ps1).
 5. The TestPayload and the work items xml is published to the Pipeline as an artifact.
@@ -67,15 +67,15 @@ When the Pipeline runs, the following takes place.
 
 Here's how the pipelines and scripts are organized to do this work:
 * Run the Build stage (this builds both product and test binaries)
-* The RunTests Stage runs.  **WinUI-RunTests-Stage.yml**
-  * Create the test payload.  **WinUI-CreateTestPayload-Job.yml**
+* The RunTests Stage runs from the internal pipeline configuration.
+  * Create the test payload.
     * Download build
     * Call **CreateTestPayload.ps1**
-    * **WinUI-CreateHelixProjFile-Steps.yml**
+    * Generate Helix project files.
        * Call **GenerateWinUIHelixWorkItems.ps1**
          * Call **pipeline/scripts/workitems/GenerateHelixWorkItems.ps1**
            * Writes out a .proj file for each test group (You can see these in the pipeline artifacts at /helixworkitems).
-  * **WinUI-RunTestPassOnPipeline-Job.yml**
+  * Run each test pass on pipeline agents.
     * Runs 20 agents in parallel.  On each agent, we:
       * Download artifacts
       * Call **RunTestPassSliceOnBuildAgent.ps1**
