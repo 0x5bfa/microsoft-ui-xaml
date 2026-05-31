@@ -11,7 +11,7 @@
     <Import Project="eng\configuration\configuration.arm64ec.targets" Condition="'$(Platform)'=='ARM64EC'"/>
     <Import Project="eng\sdkconfig\sdkconfig.targets" />
     <Import Project="eng\crtstl\crtstl.targets" Condition="('$(UseLocalSDK)' != 'true' and '$(ResourceOnlyDll)' != 'true') and '$(MSBuildProjectExtension)' == '.vcxproj'" />
-    <Import Project="eng\winuidetails.targets" />
+    <Import Project="eng\winuidetails\winuidetails.targets" />
     <Import Project="eng\binplace\binplace.targets"/>
     <Import Project="eng\externalbinaries\externalbinaries.targets"/>
     <Import Project="eng\midl\midl.targets" Condition="'$(IsWinmdProject)' == 'true'" />
