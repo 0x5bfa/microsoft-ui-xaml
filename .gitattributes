@@ -10,3 +10,17 @@
 *proj text eol=crlf
 *.cmd text eol=crlf
 *.ps1 text eol=crlf
+
+# GitHub Linguist: include only C++ and C# in language stats.
+* -linguist-detectable
+
+*.cpp linguist-detectable linguist-language=C++
+*.cxx linguist-detectable linguist-language=C++
+*.cc linguist-detectable linguist-language=C++
+*.c linguist-detectable linguist-language=C++
+*.h linguist-detectable linguist-language=C++
+*.hpp linguist-detectable linguist-language=C++
+*.hxx linguist-detectable linguist-language=C++
+*.inl linguist-detectable linguist-language=C++
+
+*.cs linguist-detectable linguist-language=C#
