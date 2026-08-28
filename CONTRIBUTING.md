@@ -10,7 +10,7 @@ Note that all community interactions must abide by the [Code of Conduct](CODE_OF
 
 For reporting security issues please see the [Security Policy](SECURITY.md).
 
-Contributions from the community in the form of feature requests and bugs are handled according to our [contribution handling](docs/external/contribution_handling.md) guidelines.
+Contributions from the community in the form of feature requests and bugs are handled according to our [contribution handling](docs/contributing/contribution-handling.md) guidelines.
 
 ## New contributors
 
@@ -28,7 +28,7 @@ Another great way to help is by voting and commenting on feature proposals:
 1. **Fork** the repository on GitHub
 2. **Clone** your fork locally
 3. **Create a branch** for your changes (`git checkout -b my-feature`)
-4. **Build** the project — see [Getting Started](GettingStarted.md) for build prerequisites and instructions
+4. **Build** the project — see [Getting Started](docs/getting-started/building-winui.md) for build prerequisites and instructions
 5. **Make your changes** and add tests where appropriate
 6. **Push** your branch to your fork and open a **Pull Request** against `main`
 
@@ -48,8 +48,8 @@ PRs are merged using **squash merge** by default.
 
 ### Proposing new public APIs or UI
 
-Please follow the [New Feature or API Process](docs/external/feature_proposal_process.md) before adding, removing, or changing public APIs or UI.  
-All new public APIs, new UI, or breaking changes to existing features **must** go through that process before submitting code changes.  
+Please follow the [New Feature or API Process](docs/contributing/feature-proposal-process.md) before adding, removing, or changing public APIs or UI.
+All new public APIs, new UI, or breaking changes to existing features **must** go through that process before submitting code changes.
 You don't need to follow that process for bug fixes or other small changes.
 
 ### Contribution bar
@@ -62,8 +62,8 @@ While we strive to accept all community contributions that meet the guidelines o
 
 For details see:
 
-* [Getting Started — build prerequisites and instructions](GettingStarted.md)
-* [Contribution workflow](docs/external/contribution_workflow.md)
+* [Getting Started — build prerequisites and instructions](docs/getting-started/building-winui.md)
+* [Contribution workflow](docs/contributing/contribution-workflow.md)
 
 ### Contributor License Agreement
 

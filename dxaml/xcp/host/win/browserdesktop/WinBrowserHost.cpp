@@ -719,7 +719,7 @@ HRESULT CALLBACK CXcpBrowserHost::SyncScriptCallbackRequest(
         // ICoreDropOperationTarget methods are implemented by dispatching internal events, which are then
         // routed to user event handlers.  This part of the stack does not require a reentrancy guard, which
         // would otherwise interfere with a handler's ability to call back into Xaml for event arg properties, etc.
-        // For details, refer to docs/design-notes/reentrancy.md
+        // For details, refer to docs/architecture/design-notes/reentrancy.md
         || eventInfo.Event == KnownEventIndex::UIElement_DragEnter
         || eventInfo.Event == KnownEventIndex::UIElement_DragLeave
         || eventInfo.Event == KnownEventIndex::UIElement_DragOver

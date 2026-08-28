@@ -18,7 +18,7 @@ body:
         It's fine if you don't have all the details: you can start with the Summary and Rationale.
 
         This link describes the WinUI feature/API proposal process:
-        https://github.com/Microsoft/microsoft-ui-xaml/blob/main/docs/feature_proposal_process.md
+        https://github.com/Microsoft/microsoft-ui-xaml/blob/main/docs/contributing/feature-proposal-process.md
   - type: textarea
     validations:
       required: true

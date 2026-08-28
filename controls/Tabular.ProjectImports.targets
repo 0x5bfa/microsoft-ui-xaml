@@ -7,7 +7,7 @@
   MUXC's controls\ProjectImports.targets), which avoids duplicate-type collisions when the
   Tabular DLL references the MUXC winmd for ItemsRepeater / ScrollView / ScrollPresenter
   (which stay in MUXC).
-  See docs/design-notes/TabularControls/TableView-dev-spec.md.
+  See docs/architecture/design-notes/TabularControls/TableView-dev-spec.md.
 -->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemDefinitionGroup>

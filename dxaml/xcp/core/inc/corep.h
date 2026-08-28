@@ -581,7 +581,7 @@ public:
     // namespaces, calls DllGetActivationFactory directly on the target DLL
     // instead of going through RoGetActivationFactory (which is expensive).
     // Falls back to RoGetActivationFactory for unknown namespaces or on failure.
-    // See docs/design-notes/fast-activation-factory-lookup.md for details.
+    // See docs/architecture/design-notes/fast-activation-factory-lookup.md for details.
     template <typename T>
     HRESULT MuxGetActivationFactory(_In_ HSTRING activatableClassId, _COM_Outptr_ T** factory)
     {
